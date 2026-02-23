@@ -71,8 +71,20 @@ export default function SearchBar({animes,compact,autoFocus,placeholder="Buscar 
 
       <AnimatePresence>
         {open&&(
-          <motion.ul initial={{opacity:0,y:-6,scale:0.98}} animate={{opacity:1,y:0,scale:1}} exit={{opacity:0,y:-6,scale:0.98}}
-            transition={{duration:0.15}} className="absolute top-full left-0 right-0 mt-2 glass-strong rounded-xl overflow-hidden z-50 shadow-2xl shadow-black/60">
+          <motion.ul
+  initial={{ opacity: 0, y: -6, scale: 0.98 }}
+  animate={{ opacity: 1, y: 0, scale: 1 }}
+  exit={{ opacity: 0, y: -6, scale: 0.98 }}
+  transition={{ duration: 0.15 }}
+  className="
+    absolute top-full left-0 right-0 mt-2
+    bg-black/40
+    glass
+    backdrop-blur-xl
+    rounded-xl overflow-hidden
+    z-50 shadow-2xl shadow-black/60
+  "
+>
             {results.map((anime,i)=>(
               <motion.li key={anime.id} initial={{opacity:0,x:-8}} animate={{opacity:1,x:0}} transition={{delay:i*0.03}}
                 onClick={()=>go(anime)}

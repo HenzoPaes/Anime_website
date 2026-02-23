@@ -8,9 +8,17 @@ import AnimeCard from "../components/AnimeCard";
 import SkeletonCard from "../components/SkeletonCard";
 import SearchBar from "../components/SearchBar";
 import AudioBadge from "../components/AudioBadge";
+import CustomDropdown, { DropdownOption } from "../components/CustomDropdown";
 
 const PAGE = { initial:{opacity:0}, animate:{opacity:1,transition:{duration:0.3}}, exit:{opacity:0} };
 const WL_STATUSES: WatchStatus[] = ["assistindo","quero-ver","concluido","droppado"];
+
+const sortOptions: DropdownOption<string>[] = [
+  { value: "rating", label: "Melhor avaliados" },
+  { value: "newest",  label: "Mais recentes" },
+  { value: "episodes",label: "Mais episódios" },
+  { value: "title",   label: "Título A-Z" },
+];
 
 export default function HomePage() {
   const { animes, loading, error } = useAnimes();
@@ -117,12 +125,15 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-3 mb-4">
                 <div className="flex-1"><SearchBar animes={animes} placeholder="Buscar por título, gênero, tag…" /></div>
                 <div className="flex gap-2 flex-shrink-0">
-                  <select value={sortBy} onChange={e=>setSortBy(e.target.value)} className="input-field text-sm py-2 w-auto">
-                    <option value="rating">Melhor avaliados</option>
-                    <option value="newest">Mais recentes</option>
-                    <option value="episodes">Mais episódios</option>
-                    <option value="title">Título A-Z</option>
-                  </select>
+                <div style={{ minWidth: 180 }}>
+                  <CustomDropdown
+                     label=""
+                     options={sortOptions}
+                     value={sortBy}
+                     onChange={(v) => setSortBy(v)}
+                     size="md"
+                   />
+                </div>
                   <button onClick={()=>setShowFilters(v=>!v)}
                     className={`btn-ghost text-sm py-2 px-3 flex items-center gap-1.5 flex-shrink-0 ${showFilters?"border-brand-500 text-brand-400":""}`}>
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -182,8 +193,8 @@ export default function HomePage() {
                 <h2 className="font-display text-2xl text-white tracking-wide">
                   Todos os Animes <span className="text-base text-gray-500 font-body font-normal">({catalogAnimes.length})</span>
                 </h2>
-                <button onClick={handleRandom} className="btn-ghost text-sm py-1.5 px-3 flex items-center gap-2 group">
-                  <span className="group-hover:rotate-180 inline-block transition-transform duration-500">🎲</span>
+                <button onClick={handleRandom} className="btn-ghost text-sm py-1.7 px-. flex items-center gap-2 group">
+                  <span className="group-hover:rotate-45 inline-block transition-transform duration-500">🎲</span>
                   Aleatório
                 </button>
               </div>

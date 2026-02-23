@@ -1,7 +1,8 @@
 import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Anime } from "../types";
+import { Anime } from "../types"; // kept for compatibility if needed
+import { FlatAnime } from "../hooks/useAnimes";
 import AudioBadge from "./AudioBadge";
 import { useWatchlist, WATCHLIST_COLORS, WATCHLIST_LABELS } from "../hooks/useWatchlist";
 
@@ -27,17 +28,12 @@ const CARD_VARIANTS = {
   }),
 };
 
-const AnimeCard = memo(({ anime, index = 0, watchedCount = 0 }: { anime: Anime; index?: number; watchedCount?: number }) => {
+const AnimeCard = memo(({ anime, index = 0, watchedCount = 0, onClick }: { anime: FlatAnime; index?: number; watchedCount?: number; onClick?: (anime: FlatAnime) => void; }) => {
   const { getStatus } = useWatchlist();
   const wlStatus = getStatus(String(anime.id));
 
-  // segurança: garantir que episodesLength seja um número válido
-  const episodesLength =
-    Array.isArray(anime.episodes) && typeof anime.episodes.length === "number"
-      ? anime.episodes.length
-      : typeof anime.episodeCount === "number"
-      ? anime.episodeCount
-      : 0;
+  // segurança: usar only episodeCount já presente em FlatAnime
+  const episodesLength = typeof anime.episodeCount === "number" ? anime.episodeCount : 0;
 
   // calcular progresso e clamp entre 0..100 (evita NaN e >100)
   const rawProgress = episodesLength > 0 ? (Number(watchedCount) / episodesLength) * 100 : 0;
@@ -67,7 +63,12 @@ const AnimeCard = memo(({ anime, index = 0, watchedCount = 0 }: { anime: Anime; 
       whileHover={{ y: -6, transition: { type: "spring", stiffness: 320, damping: 22 } }}
       className="group relative card-glow overflow-hidden"
     >
-      <Link to={`/anime/${encodeURIComponent(String(anime.id))}`} className="block" aria-label={`Abrir ${anime.title}`}>
+      <Link
+          to={`/anime/${encodeURIComponent(String(anime.id))}`}
+          className="block"
+          aria-label={`Abrir ${anime.title}`}
+          onClick={() => onClick?.(anime)}
+        >
         <div className="relative rounded-xl bg-dark-800 border border-white/5 overflow-hidden isolate">
           <div className="relative aspect-[2/3] overflow-hidden">
             <div

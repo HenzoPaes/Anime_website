@@ -1,0 +1,80 @@
+{
+  "audio": "BOTH",
+  "episodeList": [
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-1",
+      "number": 1,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 1",
+      "season": "3",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/uFcb68XbIxlEGor\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/b5i2qq52pt0uej7\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-2",
+      "number": 2,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 2",
+      "season": "3",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/GK1eOaTcklqST7f\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/bkd6tjz43ne00bj\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-3",
+      "number": 3,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 3",
+      "season": "3",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/n7EY0iXBVVWMHHB\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/dfhg74njjzrfqwf\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-4",
+      "number": 4,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 4",
+      "season": "3",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/QlTIVBKqv8VBnwj\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/jw29kau0tvx93f1\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-5",
+      "number": 5,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 5",
+      "season": "3",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/aurJHjrJpLavUX1\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ixCMuiaMyzGtF3b\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-6",
+      "number": 6,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 6",
+      "season": "3",
+      "embeds": {
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/D5kNScbTNhy0g78\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-7",
+      "number": 7,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 7",
+      "season": "3",
+      "embeds": {
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/KwzDHIKHM91Wetc\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    }
+  ]
+}

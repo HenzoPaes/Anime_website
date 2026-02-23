@@ -3,15 +3,28 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Episode } from "../types";
 import { parseIframe, detectProvider } from "../utils/iframe";
 
-interface Props { episode:Episode; animeTitle:string; cinemaMode?:boolean; onToggleCinema?:()=>void; }
+interface Props {
+  episode: Episode & { embedUrl?: string; embeds?: { sub?: string; dub?: string } };
+  animeTitle:string;
+  cinemaMode?:boolean;
+  onToggleCinema?:()=>void;
+}
 const ICONS: Record<string,string> = {YouTube:"🎬",Vimeo:"🎞️","Google Drive":"📁",Dailymotion:"📺",Twitch:"🟣","Player Externo":"⚡"};
 
 export default function EpisodePlayer({episode,animeTitle,cinemaMode,onToggleCinema}:Props) {
   const [loaded,setLoaded]=useState(false);
   const [error,setError]=useState(false);
   const [showCode,setShowCode]=useState(false);
-  const parsed=useMemo(()=>parseIframe(episode.embedUrl),[episode.embedUrl]);
-  const provider=detectProvider(episode.embedUrl);
+
+  // decide qual URL será usada pelo player, aceitando campo legado e novo formato
+  const embedSrc = useMemo(() => {
+    if ((episode as any).embedUrl) return (episode as any).embedUrl;
+    const em = episode.embeds || {};
+    return em.sub || em.dub || "";
+  }, [episode]);
+
+  const parsed=useMemo(()=>parseIframe(embedSrc),[embedSrc]);
+  const provider=detectProvider(embedSrc);
   const credit=episode.embedCredit||provider;
   useMemo(()=>{setLoaded(false);setError(false);},[episode.id]);
 

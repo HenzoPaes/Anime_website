@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, useCallback } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAnime } from "../hooks/useAnimes";
 import { useWatched } from "../hooks/useWatchlist";
@@ -20,6 +20,24 @@ export default function EpisodePage() {
 
   const episode  = useMemo(()=>anime?.episodes.find(e=>e.id===epId), [anime,epId]);
   const epIdx    = useMemo(()=>anime?.episodes.findIndex(e=>e.id===epId)??-1, [anime,epId]);
+
+  const location = useLocation();
+  const requestedAudio = useMemo(() => {
+    try { return new URLSearchParams(location.search).get("audio") || undefined; }
+    catch { return undefined; }
+  }, [location.search]);
+
+  // pega URL de embed de acordo com o formato atual ou antigo e, quando
+  // informado, prioriza o `audio` pedido via query param (ex: ?audio=dub)
+  const embedSrc = useMemo(() => {
+    if (!episode) return "";
+    // legacy field
+    if ((episode as any).embedUrl) return (episode as any).embedUrl;
+    // nova estrutura
+    const embeds = (episode as any).embeds || {};
+    if (requestedAudio && (embeds as any)[requestedAudio]) return (embeds as any)[requestedAudio];
+    return embeds.sub || embeds.dub || "";
+  }, [episode, requestedAudio]);
   const prevEp   = useMemo(()=>epIdx>0?anime?.episodes[epIdx-1]:null, [anime,epIdx]);
   const nextEp   = useMemo(()=>anime&&epIdx<anime.episodes.length-1?anime.episodes[epIdx+1]:null, [anime,epIdx]);
 
@@ -36,8 +54,14 @@ export default function EpisodePage() {
   }, [anime,episode]);
 
   const handleKey = useCallback((e:KeyboardEvent)=>{
-    if (e.key==="ArrowLeft"&&prevEp&&anime) navigate(`/anime/${encodeURIComponent(anime.id)}/ep/${prevEp.id}`);
-    if (e.key==="ArrowRight"&&nextEp&&anime) navigate(`/anime/${encodeURIComponent(anime.id)}/ep/${nextEp.id}`);
+    if (e.key==="ArrowLeft"&&prevEp&&anime) {
+      const path = requestedAudio ? `/anime/${encodeURIComponent(anime.id)}/ep/${prevEp.id}?audio=${requestedAudio}` : `/anime/${encodeURIComponent(anime.id)}/ep/${prevEp.id}`;
+      navigate(path);
+    }
+    if (e.key==="ArrowRight"&&nextEp&&anime) {
+      const path = requestedAudio ? `/anime/${encodeURIComponent(anime.id)}/ep/${nextEp.id}?audio=${requestedAudio}` : `/anime/${encodeURIComponent(anime.id)}/ep/${nextEp.id}`;
+      navigate(path);
+    }
     if (e.key==="c"||e.key==="C") setCinemaMode(v=>!v);
     if (e.key==="Escape") setCinemaMode(false);
   }, [prevEp,nextEp,anime]);
@@ -108,14 +132,17 @@ export default function EpisodePage() {
               </div>
             </div>
 
-            <EpisodePlayer episode={episode} animeTitle={anime.title} />
+            <EpisodePlayer
+              episode={{ ...episode, embedUrl: embedSrc }}
+              animeTitle={anime.title}
+            />
 
             <p className="text-xs text-gray-700 mt-2 text-center">← → mudar ep • C = modo cinema</p>
 
             {/* Prev/Next */}
             <motion.div initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} transition={{delay:0.35}} className="flex items-center gap-3 mt-6">
               {prevEp
-                ? <Link to={`/anime/${encodeURIComponent(anime.id)}/ep/${prevEp.id}`} className="flex-1 btn-ghost flex items-center gap-2 justify-center">
+                ? <Link to={requestedAudio ? `/anime/${encodeURIComponent(anime.id)}/ep/${prevEp.id}?audio=${requestedAudio}` : `/anime/${encodeURIComponent(anime.id)}/ep/${prevEp.id}`} className="flex-1 btn-ghost flex items-center gap-2 justify-center">
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7"/></svg>
                     <span className="text-sm"><span className="text-gray-500 text-xs block">Anterior</span>Ep. {prevEp.number}</span>
                   </Link>
@@ -125,7 +152,7 @@ export default function EpisodePage() {
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
               </Link>
               {nextEp
-                ? <Link to={`/anime/${encodeURIComponent(anime.id)}/ep/${nextEp.id}`} className="flex-1 btn-primary flex items-center gap-2 justify-center">
+                ? <Link to={requestedAudio ? `/anime/${encodeURIComponent(anime.id)}/ep/${nextEp.id}?audio=${requestedAudio}` : `/anime/${encodeURIComponent(anime.id)}/ep/${nextEp.id}`} className="flex-1 btn-primary flex items-center gap-2 justify-center">
                     <span className="text-sm"><span className="text-gray-200 text-xs block">Próximo</span>Ep. {nextEp.number}</span>
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
                   </Link>
@@ -152,7 +179,7 @@ export default function EpisodePage() {
                   const isCurrent = ep.id===epId;
                   const epWatched = isWatched(anime.id,ep.id);
                   return (
-                    <Link key={ep.id} to={`/anime/${encodeURIComponent(anime.id)}/ep/${ep.id}`}
+                    <Link key={ep.id} to={requestedAudio ? `/anime/${encodeURIComponent(anime.id)}/ep/${ep.id}?audio=${requestedAudio}` : `/anime/${encodeURIComponent(anime.id)}/ep/${ep.id}`}
                       className={`flex items-center gap-3 px-4 py-3 transition-all border-b border-white/5 last:border-0
                         ${isCurrent?"bg-brand-500/20 border-l-2 border-l-brand-500":"hover:bg-white/5"}`}>
                       <div className={`w-2 h-2 rounded-full flex-shrink-0

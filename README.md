@@ -52,17 +52,27 @@ No painel admin, insira a chave no campo no topo da página. O padrão em dev é
 
 ## 📺 Formatos de embed aceitos
 
-No campo `embedUrl` de cada episódio, você pode colocar:
+O esquema antigo usava um único campo `embedUrl`. Ele continua funcionando (há compatibilidade
+no código), mas agora os apegos de áudio são melhor tratados com o objeto `embeds`:
 
 ```json
-// 1. URL simples
-"embedUrl": "https://www.youtube.com/embed/XXXXXXX"
-
-// 2. Código <iframe> completo (copie direto do site)
-"embedUrl": "<iframe src=\"https://anidrive.click/token/XYZ\" width=\"800\" height=\"450\" frameborder=\"0\" allowfullscreen></iframe>"
+"embeds": {
+  "sub": "<iframe src=\"https://example.com/sub-url\" ...>...</iframe>",
+  "dub": "<iframe src=\"https://example.com/dub-url\" ...>...</iframe>"
+},
+"embedCredit": "anidrive, googlevideo etc."
 ```
 
-O sistema extrai o `src` automaticamente e renderiza sempre responsivo.
+- `sub` e `dub` são strings HTML contendo a iframe ou URL de origem.
+- Se você quiser apenas o link único, continue usando `embedUrl` como antes.
+
+O player agora escolhe automaticamente `sub` ou `dub` quando houver ambos disponíveis. Além
+disso, a lista de episódios na página de detalhes filtra por áudio: se você selecionar **Legenda**
+serão mostrados somente os episódios que possuem `embeds.sub`; ao mudar para **Dublado**, só os
+com `embeds.dub` aparecem.
+
+Por baixo dos panos, `EpisodePlayer` mantém compatibilidade com `embedUrl` e as rotas de episódio
+funcionam da mesma forma.
 
 ---
 

@@ -2,8 +2,17 @@ export interface Episode {
   id: string;
   number: number;
   title: string;
-  embedUrl: string;
+  /**
+   * Support both the old single-url (`embedUrl`) and the new object format.
+   * The conversion helpers in the code will prefer `embeds` when available.
+   */
+  embeds: {
+    sub?: string;
+    dub?: string;
+  };
   embedCredit?: string;
+  // legacy field still tolerated, not used in new entries
+  embedUrl?: string;
 }
 
 export type AudioType = "legendado" | "dublado" | "dual-audio" | "";

@@ -1,4 +1,4 @@
-import { useLocalStorage } from "./useLocalStorage";
+import { useLocalStorage } from "./uselocalstorage";
 import { PersonalList, ListStatus } from "../types";
 
 export function usePersonalList() {

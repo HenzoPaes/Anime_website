@@ -1,4 +1,4 @@
-import { useLocalStorage } from "./useLocalStorage";
+import { useLocalStorage } from "./uselocalstorage";
 
 export type WatchStatus = "assistindo" | "concluido" | "droppado" | "quero-ver";
 

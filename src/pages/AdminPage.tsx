@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useAnimes, saveAnime, deleteAnime, fetchBackups, restoreBackup } from "../hooks/useAnimes";
-import { useWatched } from "../hooks/useWatchlist";
+import { useAnimes, saveAnime, deleteAnime, fetchBackups, restoreBackup } from "../hooks/useanimes";
+import { useWatched } from "../hooks/usewatchlist";
 import { parseIframe, detectProvider } from "../utils/iframe";
 import { Anime, Episode } from "../types";
 

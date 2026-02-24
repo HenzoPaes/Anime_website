@@ -1,14 +1,14 @@
 import { useState, useMemo, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
-import { useAnimes } from "../hooks/useAnimes";
-import { useWatched, useWatchlist, WATCHLIST_LABELS, WATCHLIST_COLORS } from "../hooks/useWatchlist";
-import type { WatchStatus } from "../hooks/useWatchlist";
-import AnimeCard from "../components/AnimeCard";
-import SkeletonCard from "../components/SkeletonCard";
-import SearchBar from "../components/SearchBar";
-import AudioBadge from "../components/AudioBadge";
-import CustomDropdown, { DropdownOption } from "../components/CustomDropdown";
+import { useAnimes } from "../hooks/useanimes";
+import { useWatched, useWatchlist, WATCHLIST_LABELS, WATCHLIST_COLORS } from "../hooks/usewatchlist";
+import type { WatchStatus } from "../hooks/usewatchlist";
+import AnimeCard from "../components/animecard";
+import SkeletonCard from "../components/skeletoncard";
+import SearchBar from "../components/searchbar";
+import AudioBadge from "../components/audiobadge";
+import CustomDropdown, { DropdownOption } from "../components/customdropdown";
 
 const PAGE = { initial:{opacity:0}, animate:{opacity:1,transition:{duration:0.3}}, exit:{opacity:0} };
 const WL_STATUSES: WatchStatus[] = ["assistindo","quero-ver","concluido","droppado"];

@@ -1,18 +1,18 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import PageLoader from "./components/PageLoader";
-import { useTheme } from "./hooks/useTheme";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import PageLoader from "./components/pageloader";
+import { useTheme } from "./hooks/usethemes";
 
-const HomePage        = lazy(()=>import("./pages/HomePage"));
-const AnimeDetailPage = lazy(()=>import("./pages/AnimeDetailPage"));
-const EpisodePage     = lazy(()=>import("./pages/EpisodePage"));
-const SearchPage      = lazy(()=>import("./pages/SearchPage"));
-const AdminPage       = lazy(()=>import("./pages/AdminPage"));
+const HomePage        = lazy(()=>import("./pages/homepage"));
+const AnimeDetailPage = lazy(()=>import("./pages/animedetailpage"));
+const EpisodePage     = lazy(()=>import("./pages/episodepage"));
+const SearchPage      = lazy(()=>import("./pages/searchpage"));
+const AdminPage       = lazy(()=>import("./pages/adminpage"));
 //const MyListPage      = lazy(()=>import("./pages/MyListPage"));
-const NotFoundPage    = lazy(()=>import("./pages/NotFoundPage"));
+const NotFoundPage    = lazy(()=>import("./pages/notfounpage"));
 
 export default function App() {
   const location = useLocation();

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Fuse from "fuse.js";
 import { Anime } from "../types";
-import AudioBadge from "./AudioBadge";
+import AudioBadge from "./audiobadge";
 
 const FUSE_OPTS = {
   keys:[

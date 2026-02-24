@@ -2,9 +2,9 @@ import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Anime } from "../types"; // kept for compatibility if needed
-import { FlatAnime } from "../hooks/useAnimes";
-import AudioBadge from "./AudioBadge";
-import { useWatchlist, WATCHLIST_COLORS, WATCHLIST_LABELS } from "../hooks/useWatchlist";
+import { FlatAnime } from "../hooks/useanimes";
+import AudioBadge from "./audiobadge";
+import { useWatchlist, WATCHLIST_COLORS, WATCHLIST_LABELS } from "../hooks/usewatchlist";
 
 const STATUS_COLOR: Record<string, string> = {
   "em-andamento": "bg-green-500/20 text-green-400 border-green-500/30",

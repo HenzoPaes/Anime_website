@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useState, useCallback } from "react";
 import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { useAnime } from "../hooks/useAnimes";
-import { useWatched } from "../hooks/useWatchlist";
-import EpisodePlayer from "../components/EpisodePlayer";
-import AudioBadge from "../components/AudioBadge";
+import { useAnime } from "../hooks/useanimes";
+import { useWatched } from "../hooks/usewatchlist";
+import EpisodePlayer from "../components/episodeplayer";
+import AudioBadge from "../components/audiobadge";
 import WatchlistButton from "../components/WatchlistButton";
-import PageLoader from "../components/PageLoader";
+import PageLoader from "../components/pageloader";
 
 const PAGE = { initial:{opacity:0,x:24}, animate:{opacity:1,x:0,transition:{duration:0.3}}, exit:{opacity:0,x:-24,transition:{duration:0.2}} };
 

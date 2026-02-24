@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { useAnimes } from "../hooks/useAnimes";
-import SearchBar from "./SearchBar";
+import { useAnimes } from "../hooks/useanimes";
+import SearchBar from "./searchbar";
 
 interface Props { theme:"dark"|"light"; toggleTheme:()=>void; }
 

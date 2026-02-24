@@ -2,10 +2,10 @@ import { useEffect, useState, useMemo, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import Fuse from "fuse.js";
-import { useAnimes } from "../hooks/useAnimes";
-import { useWatched } from "../hooks/useWatchlist";
-import AnimeCard from "../components/AnimeCard";
-import SkeletonCard from "../components/SkeletonCard";
+import { useAnimes } from "../hooks/useanimes";
+import { useWatched } from "../hooks/usewatchlist";
+import AnimeCard from "../components/animecard";
+import SkeletonCard from "../components/skeletoncard";
 import { Anime } from "../types";
 
 const FUSE_OPTS = {

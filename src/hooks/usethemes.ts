@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useLocalStorage } from "./useLocalStorage";
+import { useLocalStorage } from "./uselocalstorage";
 
 export function useTheme() {
   const [theme, setTheme] = useLocalStorage<"dark" | "light">("theme", "dark");

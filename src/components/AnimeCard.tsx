@@ -69,7 +69,7 @@ const AnimeCard = memo(({ anime, index = 0, watchedCount = 0, onClick }: { anime
           aria-label={`Abrir ${anime.title}`}
           onClick={() => onClick?.(anime)}
         >
-        <div className="relative rounded-xl bg-dark-800 border border-white/5 overflow-hidden isolate">
+        <div className="relative rounded-xl bg-transparent border border-white/5 overflow-hidden isolate">
           <div className="relative aspect-[2/3] overflow-hidden">
             <div
               className="absolute inset-0 scale-110 blur-sm opacity-60"
@@ -121,7 +121,7 @@ const AnimeCard = memo(({ anime, index = 0, watchedCount = 0, onClick }: { anime
             </div>
           </div>
 
-          <div className="p-3">
+          <div className="p-3 flex flex-col flex-1 ">
             <h2 className="font-bold text-sm text-white line-clamp-2 leading-tight mb-1.5 group-hover:text-brand-300 transition-colors duration-200">
               {anime.title}
             </h2>
@@ -131,7 +131,7 @@ const AnimeCard = memo(({ anime, index = 0, watchedCount = 0, onClick }: { anime
               <span className={`badge border text-[10px] ${STATUS_COLOR[anime.status] ?? ""}`}>{STATUS_LABEL[anime.status] ?? anime.status ?? "—"}</span>
             </div>
 
-            <div className="flex items-center gap-1 text-xs text-gray-500">
+            <div className="flex items-center gap-1 text-xs text-gray-500 mt-auto">
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4v16M17 4v16M3 8h4m10 0h4M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
               </svg>

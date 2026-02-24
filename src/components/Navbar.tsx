@@ -12,16 +12,22 @@ export default function Navbar({ theme, toggleTheme }: Props) {
   const { animes } = useAnimes();
   <main className="pt-16"> </main>
 
-  const links = [{to:"/",label:"Início"},{to:"/search",label:"Explorar"},{to:"/admin",label:"Admin"}];
-//,{to:"/minha-lista",label:"❤️ Minha Lista"}
+  const links = [{to:"/",label:"Início"},{to:"/search",label:"Explorar"}];
+//,{to:"/minha-lista",label:"❤️ Minha Lista"} {to:"/admin",label:"Admin"}
   return (
     <motion.header initial={{y:-70}} animate={{y:0}} transition={{type:"spring",stiffness:280,damping:28}}
       className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-dark-900/70 border-b border-white/5">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group flex-shrink-0">
-          <div className="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-brand-500/30">
-            <span className="text-white font-display text-lg leading-none">A</span>
+          <div className="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center 
+                group-hover:scale-110 transition-transform 
+                shadow-lg shadow-brand-500/30 overflow-hidden">
+          <img
+            src="/public/Logo.png"
+            alt="Anime Verse Logo"
+            className="w-6 h-6 object-contain drop-shadow-lg"
+          />
           </div>
           <span className="font-display text-2xl tracking-wider text-white hidden sm:block">
             Anime<span className="text-brand-500">Verse</span>
@@ -50,12 +56,12 @@ export default function Navbar({ theme, toggleTheme }: Props) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
               </svg>Entrar
             </button>
-            <div className="absolute right-0 top-full mt-2 w-52 glass-strong rounded-xl p-3 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50 shadow-xl">
+            <div className="absolute right-0 top-full mt-2 w-52 rounded-xl p-3 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50 shadow-xl">
               <div className="flex items-center gap-2 mb-1">
                 <span className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"/>
                 <span className="text-yellow-400 text-xs font-bold uppercase">Em breve!</span>
               </div>
-              <p className="text-gray-400 text-xs">Login e cadastro chegando em breve. 🚀</p>
+              <p className="text-gray-400 text-xs ">Login e cadastro chegando em breve. 🚀</p>
             </div>
           </div>
           {/* Theme toggle */}

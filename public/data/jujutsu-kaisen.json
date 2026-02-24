@@ -1,0 +1,72 @@
+{
+  "id": "jujutsu-kaisen",
+  "title": "Jujutsu Kaisen",
+  "titleRomaji": "Jujutsu Kaisen",
+  "titleJapanese": "呪術廻戦",
+  "genre": ["Ação", "Sobrenatural", "Shounen"],
+  "studio": "MAPPA",
+  "recommended": true,
+  "recommendationReason": "Um dos animes mais aguardados do ano, com animações espetaculares da MAPPA.",
+  "tags": ["popular", "destaque"],
+  "malId": 40748,
+  "coverImage": "https://cdn.myanimelist.net/images/anime/1171/109222.jpg",
+  "bannerImage": "https://cdn.myanimelist.net/images/anime/1171/109222l.jpg",
+  "seasons": [
+    {
+      "season": 1,
+      "seasonLabel": "1ª Temporada",
+      "year": 2020,
+      "episodes": 24,
+      "currentEpisode": 24,
+      "status": "finished",
+      "score": 8.6,
+      "synopsis": "Yuji Itadori é um garoto comum com força física extraordinária. Sua vida muda quando ele engole um dedo amaldiçoado de Ryomen Sukuna, o Rei das Maldições, tornando-se seu hospedeiro e ingressando no mundo dos feiticeiros.",
+      "trailer": "https://www.youtube.com/watch?v=4A_X-Dvl0ws",
+      "audios": [
+        { "type": "sub", "label": "Legendado (PT-BR)", "available": true, "episodesAvailable": 24 },
+        { "type": "dub", "label": "Dublado (PT-BR)", "available": true, "episodesAvailable": 24 }
+      ],
+      "episodeList": [
+        { "id": "jujutsu-kaisen-1", "number": 1, "title": "Jujutsu Kaisen - Episódio 1", "season": "1", "embeds": { "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/jr6xu2JWadQzeNk\" frameborder=\"0\" allowfullscreen></iframe>", "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/cefuelCa2XATEgz\" frameborder=\"0\" allowfullscreen></iframe>" }, "embedCredit": "anidrive.click" },
+        { "id": "jujutsu-kaisen-2", "number": 2, "title": "Jujutsu Kaisen - Episódio 2", "season": "1", "embeds": { "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Pe33hHUI5NJt84V\" frameborder=\"0\" allowfullscreen></iframe>", "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/tipUVkFwbqZElYE\" frameborder=\"0\" allowfullscreen></iframe>" }, "embedCredit": "anidrive.click" },
+        { "id": "jujutsu-kaisen-3", "number": 3, "title": "Jujutsu Kaisen - Episódio 3", "season": "1", "embeds": { "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Ak5gh1eY1QgfMJM\" frameborder=\"0\" allowfullscreen></iframe>", "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/VcI37Dy9DRBBqKx\" frameborder=\"0\" allowfullscreen></iframe>" }, "embedCredit": "anidrive.click" }
+      ]
+    },
+    {
+      "season": 2,
+      "seasonLabel": "2ª Temporada",
+      "year": 2023,
+      "episodes": 23,
+      "currentEpisode": 23,
+      "status": "finished",
+      "score": 8.7,
+      "synopsis": "A segunda temporada apresenta o arco do passado de Gojo e sua relação com Geto Suguru, seguido pelo devastador arco de Shibuya.",
+      "trailer": "https://www.youtube.com/watch?v=muPtCQ_HQLY",
+      "audios": [
+        { "type": "sub", "label": "Legendado (PT-BR)", "available": true, "episodesAvailable": 23 },
+        { "type": "dub", "label": "Dublado (PT-BR)", "available": true, "episodesAvailable": 23 }
+      ],
+      "episodeList": [
+        { "id": "jujutsu-kaisen-2nd-season-1", "number": 1, "title": "Jujutsu Kaisen 2nd Season - Episódio 1", "season": "2", "embeds": { "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/IJCkylg4kjWBYkG\" frameborder=\"0\" allowfullscreen></iframe>", "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/xvs9lyw7dlt7n3x\" frameborder=\"0\" allowfullscreen></iframe>" }, "embedCredit": "anidrive.click" }
+      ]
+    },
+    {
+      "season": 3,
+      "seasonLabel": "3ª Temporada",
+      "year": 2026,
+      "episodes": 24,
+      "currentEpisode": 7,
+      "status": "ongoing",
+      "score": 8.9,
+      "synopsis": "O arco do Culling Game coloca feiticeiros numa batalha mortal por pontos com regras cruéis.",
+      "trailer": "https://www.youtube.com/watch?v=PKdFHpCCIBw",
+      "audios": [
+        { "type": "sub", "label": "Legendado (PT-BR)", "available": true, "episodesAvailable": 24 },
+        { "type": "dub", "label": "Dublado (PT-BR)", "available": true, "episodesAvailable": 24 }
+      ],
+      "episodeList": [
+        { "id": "jujutsu-kaisen-shimetsu-kaiyuu-1", "number": 1, "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 1", "season": "3", "embeds": { "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/uFcb68XbIxlEGor\" frameborder=\"0\" allowfullscreen></iframe>", "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/b5i2qq52pt0uej7\" frameborder=\"0\" allowfullscreen></iframe>" }, "embedCredit": "anidrive.click" }
+      ]
+    }
+  ]
+}

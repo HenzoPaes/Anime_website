@@ -1,0 +1,52 @@
+{
+  "id": "yofukashi-no-uta",
+  "title": "Yofukashi no Uta",
+  "titleRomaji": "Yofukashi no Uta",
+  "titleJapanese": "よふかしのうた",
+  "genre": ["Romance", "Vampiro", "Slice of Life"],
+  "studio": "Liden Films",
+  "recommended": true,
+  "recommendationReason": "Atmosfera noturna única com trilha sonora incrível e romance diferente do comum. | ⭐ Favorito do editor!",
+  "tags": ["vampiro", "underground"],
+  "malId": 50346,
+  "coverImage": "https://animesonline.io/wp-content/uploads/2025/04/1745340988-7094-123711l.jpg",
+  "bannerImage": "https://animesonline.io/wp-content/uploads/2025/04/1745340988-7094-123711l.jpg",
+  "seasons": [
+    {
+      "season": 1,
+      "seasonLabel": "1ª Temporada",
+      "year": 2022,
+      "episodes": 13,
+      "currentEpisode": 13,
+      "status": "finished",
+      "score": 7.6,
+      "synopsis": "Kou Yamori não consegue dormir e começa a perambular pelas ruas à noite, onde encontra Nazuna Nanakusa, uma vampira. Para se tornar um vampiro, ele precisa se apaixonar por ela.",
+      "trailer": "https://www.youtube.com/watch?v=ukO-ZdWS3j8",
+      "audios": [
+        { "type": "sub", "label": "Legendado (PT-BR)", "available": true, "episodesAvailable": 13 }
+      ],
+      "episodeList": [
+        { "id": "yofukashi-no-uta-1", "number": 1, "title": "Yofukashi no Uta - Episódio 1", "season": "1", "embeds": { "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/EXAMPLE1\" frameborder=\"0\" allowfullscreen></iframe>" }, "embedCredit": "anidrive.click" },
+        { "id": "yofukashi-no-uta-2", "number": 2, "title": "Yofukashi no Uta - Episódio 2", "season": "1", "embeds": { "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/EXAMPLE2\" frameborder=\"0\" allowfullscreen></iframe>" }, "embedCredit": "anidrive.click" },
+        { "id": "yofukashi-no-uta-3", "number": 3, "title": "Yofukashi no Uta - Episódio 3", "season": "1", "embeds": { "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/EXAMPLE3\" frameborder=\"0\" allowfullscreen></iframe>" }, "embedCredit": "anidrive.click" }
+      ]
+    },
+    {
+      "season": 2,
+      "seasonLabel": "2ª Temporada",
+      "year": 2025,
+      "episodes": 12,
+      "currentEpisode": 12,
+      "status": "finished",
+      "score": 7.8,
+      "synopsis": "Kou e Nazuna aprofundam seus laços enquanto novos vampiros e conflitos surgem nas sombras da cidade.",
+      "trailer": "https://www.youtube.com/watch?v=e5eEjoMKnQc",
+      "audios": [
+        { "type": "sub", "label": "Legendado (PT-BR)", "available": true, "episodesAvailable": 12 }
+      ],
+      "episodeList": [
+        { "id": "yofukashi-no-uta-season-2-1", "number": 1, "title": "Yofukashi no Uta Season 2 - Episódio 1", "season": "2", "embeds": { "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/EXAMPLE4\" frameborder=\"0\" allowfullscreen></iframe>" }, "embedCredit": "anidrive.click" }
+      ]
+    }
+  ]
+}

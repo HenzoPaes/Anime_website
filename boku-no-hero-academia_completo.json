@@ -1,0 +1,156 @@
+{
+  "id": "boku-no-hero-academia",
+  "title": "Boku no Hero Academia",
+  "titleRomaji": "Boku no Hero Academia",
+  "titleJapanese": "僕のヒーローアカデミア",
+  "genre": [
+    "Action"
+  ],
+  "studio": "Bones",
+  "recommended": true,
+  "recommendationReason": "Extraído automaticamente | ⭐ Favorito!",
+  "tags": [
+    "action"
+  ],
+  "malId": 31964,
+  "coverImage": "https://cdn.myanimelist.net/images/anime/10/78745l.jpg",
+  "bannerImage": "https://cdn.myanimelist.net/images/anime/10/78745l.jpg",
+  "seasons": [
+    {
+      "season": 1,
+      "seasonLabel": "1ª Temporada",
+      "year": 2016,
+      "episodes": 11,
+      "currentEpisode": 11,
+      "status": "finished",
+      "score": 7.83,
+      "synopsis": "The appearance of \"quirks,\" newly discovered super powers, has been steadily increasing over the years, with 80 percent of humanity possessing various abilities from manipulation of elements to shapeshifting. This leaves the remainder of the world completely powerless, and Izuku Midoriya is one such individual.\n\nSince he was a child, the ambitious middle schooler has wanted nothing more than to be a hero. Izuku's unfair fate leaves him admiring heroes and taking notes on them whenever he can. But it seems that his persistence has borne some fruit: Izuku meets the number one hero and his personal idol, All Might. All Might's quirk is a unique ability that can be inherited, and he has chosen Izuku to be his successor!\n\nEnduring many months of grueling training, Izuku enrolls in UA High, a prestigious high school famous for its excellent hero training program, and this year's freshmen look especially promising. With his bizarre but talented classmates and the looming threat of a villainous organization, Izuku will soon learn what it really means to be a hero.\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "sub",
+          "label": "Legendado (PT-BR)",
+          "available": true,
+          "episodesAvailable": 11
+        },
+        {
+          "type": "dub",
+          "label": "Dublado (PT-BR)",
+          "available": true,
+          "episodesAvailable": 11
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "boku-no-hero-academia-s1-ep1",
+          "number": 1,
+          "title": "Boku no Hero Academia - T1 Episódio 1",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/lGAb2AQVW0vOOa3\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/engij8lws2v5xyb\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "boku-no-hero-academia-s1-ep2",
+          "number": 2,
+          "title": "Boku no Hero Academia - T1 Episódio 2",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ZF1wDHaBeUucxim\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "boku-no-hero-academia-s1-ep3",
+          "number": 3,
+          "title": "Boku no Hero Academia - T1 Episódio 3",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/aO6V2Q0faj3B2zC\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "boku-no-hero-academia-s1-ep4",
+          "number": 4,
+          "title": "Boku no Hero Academia - T1 Episódio 4",
+          "season": "1",
+          "embeds": {},
+          "embedCredit": "animesonlinecc.to"
+        },
+        {
+          "id": "boku-no-hero-academia-s1-ep5",
+          "number": 5,
+          "title": "Boku no Hero Academia - T1 Episódio 5",
+          "season": "1",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/xkjx398xklod7g9\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "boku-no-hero-academia-s1-ep6",
+          "number": 6,
+          "title": "Boku no Hero Academia - T1 Episódio 6",
+          "season": "1",
+          "embeds": {},
+          "embedCredit": "animesonlinecc.to"
+        },
+        {
+          "id": "boku-no-hero-academia-s1-ep7",
+          "number": 7,
+          "title": "Boku no Hero Academia - T1 Episódio 7",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/RY2vAtvWfDHgIEp\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "boku-no-hero-academia-s1-ep8",
+          "number": 8,
+          "title": "Boku no Hero Academia - T1 Episódio 8",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/3wgN7I43FTZ9BCe\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/7p2edd37atpo8cx\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "boku-no-hero-academia-s1-ep9",
+          "number": 9,
+          "title": "Boku no Hero Academia - T1 Episódio 9",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/z25n7RJiOtzacPA\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "boku-no-hero-academia-s1-ep10",
+          "number": 10,
+          "title": "Boku no Hero Academia - T1 Episódio 10",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/QFUAp6Y0Mnr4Vao\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/lg5q7k5nb16bga4\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "boku-no-hero-academia-s1-ep11",
+          "number": 11,
+          "title": "Boku no Hero Academia - T1 Episódio 11",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/gDf2iM8PP4FNrRq\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        }
+      ]
+    }
+  ]
+}

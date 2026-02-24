@@ -85,62 +85,24 @@ function flatten(anime: Anime): FlatAnime {
   };
 }
 
-// --- Runtime data source: prefer override in localStorage (dev fallback) ---
-const readRawAnimes = (): Anime[] => {
-  try {
-    if (typeof window !== "undefined") {
-      const override = window.localStorage.getItem("animes_override");
-      if (override) return JSON.parse(override) as Anime[];
-    }
-  } catch {
-    // ignore
-  }
-  return animesData as Anime[];
-};
+const rawAnimes   = animesData as Anime[];
+const flatAnimes  = rawAnimes.map(flatten);
 
-let rawAnimes = readRawAnimes();
-let flatAnimes = rawAnimes.map(flatten);
-
-// --- Helpers para atualizar override/localStorage quando fallback é usado ---
-function persistOverride(animes: Anime[]) {
-  try {
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem("animes_override", JSON.stringify(animes));
-      rawAnimes = animes;
-      flatAnimes = rawAnimes.map(flatten);
-    }
-  } catch (e) {
-    // ignore
-  }
-}
-
-function pushBackup(name: string, data: Anime[]) {
-  try {
-    if (typeof window === "undefined") return;
-    const backupsRaw = window.localStorage.getItem("animes_backups");
-    const backups = backupsRaw ? JSON.parse(backupsRaw) as Record<string,string> : {};
-    backups[name] = JSON.stringify(data);
-    window.localStorage.setItem("animes_backups", JSON.stringify(backups));
-  } catch {}
-}
-
-// --- Hook principal — mesma assinatura de antes ──────────────────────────────
+// ─── Hook principal — mesma assinatura de antes ──────────────────────────────
 export function useAnimes() {
   const [loading, setLoading] = useState(true);
   const [error,   setError  ] = useState<string | null>(null);
-  const [animes, setAnimes] = useState<FlatAnime[]>(() => flatAnimes);
 
   useEffect(() => {
     try {
       setLoading(false);
-      setAnimes(flatAnimes);
     } catch {
       setError("Erro ao carregar animes.");
       setLoading(false);
     }
   }, []);
 
-  return { animes, loading, error, refetch: () => { rawAnimes = readRawAnimes(); flatAnimes = rawAnimes.map(flatten); setAnimes(flatAnimes); } };
+  return { animes: flatAnimes, loading, error };
 }
 
 // ─── Hooks auxiliares ─────────────────────────────────────────────────────────
@@ -186,96 +148,3 @@ export function useGenres(): string[] {
 }
 
 export { flatAnimes as allAnimes };
-
-// -----------------------------------------------------------------------------
-// Admin helpers: saveAnime, deleteAnime, fetchBackups, restoreBackup
-// - Tentam usar endpoints HTTP (/api/admin/...) com header x-admin-key
-// - Se a chamada falhar (dev), caem para um fallback que grava em localStorage
-// -----------------------------------------------------------------------------
-
-const API_PREFIX = "/api/admin";
-
-async function apiRequest(path: string, opts: RequestInit = {}, apiKey?: string) {
-  const headers: Record<string,string> = {
-    ...(opts.headers as Record<string,string> || {}),
-  };
-  if (apiKey) headers["x-admin-key"] = apiKey;
-  try {
-    const res = await fetch(`${API_PREFIX}${path}`, {
-      ...opts,
-      headers,
-      credentials: "same-origin",
-    });
-    const text = await res.text();
-    try { return { ok: res.ok, data: text ? JSON.parse(text) : null, status: res.status }; } catch { return { ok: res.ok, data: text, status: res.status }; }
-  } catch (e) {
-    return { ok: false, error: e };
-  }
-}
-
-export async function saveAnime(anime: Anime, apiKey?: string): Promise<{ success: boolean; message: string }> {
-  // Try HTTP API first
-  const r = await apiRequest("/save", { method: "POST", body: JSON.stringify({ anime }), headers: { "Content-Type": "application/json" } }, apiKey);
-  if (r.ok) return { success: true, message: (r.data && (r.data.message || JSON.stringify(r.data))) || "Salvo com sucesso." };
-
-  // Fallback: save to localStorage override and create backup
-  try {
-    const current = readRawAnimes();
-    pushBackup(`backup_${new Date().toISOString()}`, current);
-    const updated = current.filter(a => a.id !== anime.id).concat([anime]);
-    persistOverride(updated);
-    return { success: true, message: "Salvo localmente (fallback)." };
-  } catch (e:any) {
-    return { success: false, message: e?.message || "Erro ao salvar." };
-  }
-}
-
-export async function deleteAnime(id: string, apiKey?: string): Promise<{ success: boolean; message: string }> {
-  const r = await apiRequest("/delete", { method: "POST", body: JSON.stringify({ id }), headers: { "Content-Type": "application/json" } }, apiKey);
-  if (r.ok) return { success: true, message: (r.data && (r.data.message || JSON.stringify(r.data))) || "Deletado com sucesso." };
-
-  try {
-    const current = readRawAnimes();
-    pushBackup(`backup_${new Date().toISOString()}`, current);
-    const updated = current.filter(a => a.id !== id);
-    persistOverride(updated);
-    return { success: true, message: "Deletado localmente (fallback)." };
-  } catch (e:any) {
-    return { success: false, message: e?.message || "Erro ao deletar." };
-  }
-}
-
-export async function fetchBackups(apiKey?: string): Promise<string[]> {
-  const r = await apiRequest("/backups", { method: "GET" }, apiKey);
-  if (r.ok && Array.isArray(r.data)) return r.data as string[];
-
-  try {
-    if (typeof window === "undefined") return [];
-    const raw = window.localStorage.getItem("animes_backups");
-    if (!raw) return [];
-    const obj = JSON.parse(raw) as Record<string,string>;
-    return Object.keys(obj).sort().reverse();
-  } catch {
-    return [];
-  }
-}
-
-export async function restoreBackup(name: string, apiKey?: string): Promise<{ success: boolean; message: string }> {
-  const r = await apiRequest("/restore", { method: "POST", body: JSON.stringify({ name }), headers: { "Content-Type": "application/json" } }, apiKey);
-  if (r.ok) return { success: true, message: (r.data && (r.data.message || JSON.stringify(r.data))) || "Restaurado com sucesso." };
-
-  try {
-    if (typeof window === "undefined") return { success: false, message: "Ambiente sem window." };
-    const raw = window.localStorage.getItem("animes_backups");
-    if (!raw) return { success: false, message: "Backup não encontrado." };
-    const obj = JSON.parse(raw) as Record<string,string>;
-    const data = obj[name];
-    if (!data) return { success: false, message: "Backup não encontrado." };
-    const parsed = JSON.parse(data) as Anime[];
-    // Overwrite override + refresh in-memory
-    persistOverride(parsed);
-    return { success: true, message: "Backup restaurado localmente (fallback)." };
-  } catch (e:any) {
-    return { success: false, message: e?.message || "Erro ao restaurar backup." };
-  }
-}

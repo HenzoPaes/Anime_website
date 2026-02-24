@@ -1,0 +1,65 @@
+{
+  "id": "asd",
+  "title": "Boku no Hero Academia",
+  "titleRomaji": "Boku no Hero Academia",
+  "titleJapanese": "僕のヒーローアカデミア",
+  "genre": [
+    "Action"
+  ],
+  "studio": "Bones",
+  "recommended": true,
+  "recommendationReason": "Extraído automaticamente | ⭐ Favorito!",
+  "tags": [
+    "action"
+  ],
+  "malId": 31964,
+  "coverImage": "https://cdn.myanimelist.net/images/anime/10/78745l.jpg",
+  "bannerImage": "https://cdn.myanimelist.net/images/anime/10/78745l.jpg",
+  "seasons": [
+    {
+      "season": 1,
+      "seasonLabel": "1ª Temporada",
+      "year": 2016,
+      "episodes": 1,
+      "currentEpisode": 1,
+      "status": "finished",
+      "score": 7.83,
+      "synopsis": "The appearance of \"quirks,\" newly discovered super powers, has been steadily increasing over the years, with 80 percent of humanity possessing various abilities from manipulation of elements to shapeshifting. This leaves the remainder of the world completely powerless, and Izuku Midoriya is one such individual.\n\nSince he was a child, the ambitious middle schooler has wanted nothing more than to be a hero. Izuku's unfair fate leaves him admiring heroes and taking notes on them whenever he can. But it seems that his persistence has borne some fruit: Izuku meets the number one hero and his personal idol, All Might. All Might's quirk is a unique ability that can be inherited, and he has chosen Izuku to be his successor!\n\nEnduring many months of grueling training, Izuku enrolls in UA High, a prestigious high school famous for its excellent hero training program, and this year's freshmen look especially promising. With his bizarre but talented classmates and the looming threat of a villainous organization, Izuku will soon learn what it really means to be a hero.\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "sub",
+          "label": "Legendado (PT-BR)",
+          "available": true,
+          "episodesAvailable": 1
+        },
+        {
+          "type": "dub",
+          "label": "Dublado (PT-BR)",
+          "available": true,
+          "episodesAvailable": 1
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "asd-s1-ep1",
+          "number": 1,
+          "title": "Boku no Hero Academia - T1 Episódio 1",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://www.blogger.com/video.g?token=AD6v5dzlSSEikjrZVFjyhZYP-V9MD0UkHm_GuV28TMMvanaC1F9b2piooat82oTyCGkJH5Py9ckMFnZ-WJLJbvgLVlqjivoTLcxL4ZF5fQx1NUBLfS1ElkIW-UNNxagcriURRlDvo6M\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://www.blogger.com/video.g?token=AD6v5dzlSSEikjrZVFjyhZYP-V9MD0UkHm_GuV28TMMvanaC1F9b2piooat82oTyCGkJH5Py9ckMFnZ-WJLJbvgLVlqjivoTLcxL4ZF5fQx1NUBLfS1ElkIW-UNNxagcriURRlDvo6M\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "animesonlinecc.to"
+        }
+      ],
+      "extracted": 1,
+      "failed": 0
+    }
+  ],
+  "meta": {
+    "totalExtractedEpisodes": 1,
+    "totalMissingEpisodes": 0,
+    "generatedAt": "2026-02-23 21:25:51"
+  }
+}

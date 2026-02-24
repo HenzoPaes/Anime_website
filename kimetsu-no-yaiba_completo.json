@@ -1,0 +1,820 @@
+{
+  "id": "kimetsu-no-yaiba",
+  "title": "Kimetsu no Yaiba",
+  "titleRomaji": "Kimetsu no Yaiba",
+  "titleJapanese": "鬼滅の刃",
+  "genre": [
+    "Action",
+    "Award Winning",
+    "Supernatural"
+  ],
+  "studio": "ufotable",
+  "tags": [
+    "action",
+    "award winning",
+    "supernatural"
+  ],
+  "malId": 38000,
+  "coverImage": "https://cdn.myanimelist.net/images/anime/1286/99889l.jpg",
+  "bannerImage": "https://cdn.myanimelist.net/images/anime/1286/99889l.jpg",
+  "seasons": [
+    {
+      "season": 1,
+      "seasonLabel": "1ª Temporada",
+      "year": 2019,
+      "episodes": 26,
+      "currentEpisode": 26,
+      "status": "finished",
+      "score": 8.41,
+      "synopsis": "Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjoy a relatively peaceful and happy life. One day, Tanjirou decides to go down to the local village to make a little money selling charcoal. On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man, who warns him of the existence of flesh-eating demons that lurk in the woods at night.\n\nWhen he finally arrives back home the next day, he is met with a horrifying sight—his whole family has been slaughtered. Worse still, the sole survivor is his sister Nezuko, who has been turned into a bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to avenge his family and stay by his only remaining sibling. Alongside the mysterious group calling themselves the Demon Slayer Corps, Tanjirou will do whatever it takes to slay the demons and protect the remnants of his beloved sister's humanity.\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "sub",
+          "label": "Legendado (PT-BR)",
+          "available": true,
+          "episodesAvailable": 26
+        },
+        {
+          "type": "dub",
+          "label": "Dublado (PT-BR)",
+          "available": true,
+          "episodesAvailable": 26
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "kimetsu-no-yaiba-s1-ep1",
+          "number": 1,
+          "title": "Kimetsu no Yaiba - T1 Episódio 1",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ZkFFR0wpNGTUIXt\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/mBIFbk6ReLKkD8W\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep2",
+          "number": 2,
+          "title": "Kimetsu no Yaiba - T1 Episódio 2",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/gyzfVaWvzPSRTnA\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/VxFcf472BV6Rh4d\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep3",
+          "number": 3,
+          "title": "Kimetsu no Yaiba - T1 Episódio 3",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/LpqfnM2TilQ9kaQ\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/2JJzbUdx71hDLko\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep4",
+          "number": 4,
+          "title": "Kimetsu no Yaiba - T1 Episódio 4",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/OlMUpXvHLOOoqOz\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ADwqaW2MFymwJHL\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep5",
+          "number": 5,
+          "title": "Kimetsu no Yaiba - T1 Episódio 5",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/9PcQUoHagbV8zdu\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/7q981jMNdR1D9aL\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep6",
+          "number": 6,
+          "title": "Kimetsu no Yaiba - T1 Episódio 6",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/NwCmmq6CKPwXbAa\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/1PNFVKdoBpi5eFw\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep7",
+          "number": 7,
+          "title": "Kimetsu no Yaiba - T1 Episódio 7",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/iMPL0tnCjGKVL0A\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/U2vaLNdBgEIFdze\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep8",
+          "number": 8,
+          "title": "Kimetsu no Yaiba - T1 Episódio 8",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/aevEIFCISgt5aiu\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/tgYQ19fjuSvnaio\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep9",
+          "number": 9,
+          "title": "Kimetsu no Yaiba - T1 Episódio 9",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/B0z0XMA03kOWI3b\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/vyxvFg6NY2LcmAy\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep10",
+          "number": 10,
+          "title": "Kimetsu no Yaiba - T1 Episódio 10",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/U4mdm0joouf6GIh\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/K5PErI68aEZUUgj\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep11",
+          "number": 11,
+          "title": "Kimetsu no Yaiba - T1 Episódio 11",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/CCJJMuRSeRneJ77\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/5mcoRdqkaRCNqXf\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep12",
+          "number": 12,
+          "title": "Kimetsu no Yaiba - T1 Episódio 12",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/g7IFmimXeUdKyyh\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/EWEb8OmLmeKFtU4\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep13",
+          "number": 13,
+          "title": "Kimetsu no Yaiba - T1 Episódio 13",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Ve8kgRbQCm89f7k\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/kvYDocGTp8wdJFC\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep14",
+          "number": 14,
+          "title": "Kimetsu no Yaiba - T1 Episódio 14",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/zid1B5DNYntuxa1\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ApE5avcDYdUj7Y6\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep15",
+          "number": 15,
+          "title": "Kimetsu no Yaiba - T1 Episódio 15",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/FL1rcDamSwx4hvR\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/AyiUdHkwMVdDabV\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep16",
+          "number": 16,
+          "title": "Kimetsu no Yaiba - T1 Episódio 16",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/rRzWbV3X2JB5JiK\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/LnDu7vZUGxR1zt9\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep17",
+          "number": 17,
+          "title": "Kimetsu no Yaiba - T1 Episódio 17",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/TycuYc87h1kadKM\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/tF6QfTdl04AkPrk\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep18",
+          "number": 18,
+          "title": "Kimetsu no Yaiba - T1 Episódio 18",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/YBFrSFpJS1MlGIB\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/D9PHllGG8JTwb5l\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep19",
+          "number": 19,
+          "title": "Kimetsu no Yaiba - T1 Episódio 19",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/r7b9fcJ11KRd3f1\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/YkgFEWxquhTdxxa\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep20",
+          "number": 20,
+          "title": "Kimetsu no Yaiba - T1 Episódio 20",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/nfURFxIlg90BFCP\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/n22FEaaSn0SxkKv\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep21",
+          "number": 21,
+          "title": "Kimetsu no Yaiba - T1 Episódio 21",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/GyIYYhpkomPRalv\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/6pnSArdaf3ALqny\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep22",
+          "number": 22,
+          "title": "Kimetsu no Yaiba - T1 Episódio 22",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/NZGbqhCeyhI2RPZ\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/HEIkFyPct3l1aHO\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep23",
+          "number": 23,
+          "title": "Kimetsu no Yaiba - T1 Episódio 23",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/uqlFJxRCDBC6mOm\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/3TcijC9l8qLmVlK\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep24",
+          "number": 24,
+          "title": "Kimetsu no Yaiba - T1 Episódio 24",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/FO9BZEee1SCo8BU\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/l6xB542G54UnwPK\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep25",
+          "number": 25,
+          "title": "Kimetsu no Yaiba - T1 Episódio 25",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/FNdjbCkKQKanTvr\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/uBUvO3EDfXbMOzi\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s1-ep26",
+          "number": 26,
+          "title": "Kimetsu no Yaiba - T1 Episódio 26",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/7Q4MuFkyXveE8tz\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/a2nPup9tqwg5LTa\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "seasonLabel": "2ª Temporada",
+      "year": 2019,
+      "episodes": 7,
+      "currentEpisode": 7,
+      "status": "finished",
+      "score": 8.41,
+      "synopsis": "Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjoy a relatively peaceful and happy life. One day, Tanjirou decides to go down to the local village to make a little money selling charcoal. On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man, who warns him of the existence of flesh-eating demons that lurk in the woods at night.\n\nWhen he finally arrives back home the next day, he is met with a horrifying sight—his whole family has been slaughtered. Worse still, the sole survivor is his sister Nezuko, who has been turned into a bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to avenge his family and stay by his only remaining sibling. Alongside the mysterious group calling themselves the Demon Slayer Corps, Tanjirou will do whatever it takes to slay the demons and protect the remnants of his beloved sister's humanity.\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "dub",
+          "label": "Dublado (PT-BR)",
+          "available": true,
+          "episodesAvailable": 7
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "kimetsu-no-yaiba-s2-ep1",
+          "number": 1,
+          "title": "Kimetsu no Yaiba - T2 Episódio 1",
+          "season": "2",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/OD7zJMLrKJwZKNc\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s2-ep2",
+          "number": 2,
+          "title": "Kimetsu no Yaiba - T2 Episódio 2",
+          "season": "2",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/fc3Xk4Hid7elIHm\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s2-ep3",
+          "number": 3,
+          "title": "Kimetsu no Yaiba - T2 Episódio 3",
+          "season": "2",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/m9tXumXT43WdGMq\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s2-ep4",
+          "number": 4,
+          "title": "Kimetsu no Yaiba - T2 Episódio 4",
+          "season": "2",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/SqGnHWaRg0lIFo6\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s2-ep5",
+          "number": 5,
+          "title": "Kimetsu no Yaiba - T2 Episódio 5",
+          "season": "2",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/jdebBfmTIoBn3UI\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s2-ep6",
+          "number": 6,
+          "title": "Kimetsu no Yaiba - T2 Episódio 6",
+          "season": "2",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/EA8Pdp7M4DA8Hrv\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s2-ep7",
+          "number": 7,
+          "title": "Kimetsu no Yaiba - T2 Episódio 7",
+          "season": "2",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/t4QwIXDGflohKQE\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "seasonLabel": "3ª Temporada",
+      "year": 2019,
+      "episodes": 11,
+      "currentEpisode": 11,
+      "status": "finished",
+      "score": 8.41,
+      "synopsis": "Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjoy a relatively peaceful and happy life. One day, Tanjirou decides to go down to the local village to make a little money selling charcoal. On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man, who warns him of the existence of flesh-eating demons that lurk in the woods at night.\n\nWhen he finally arrives back home the next day, he is met with a horrifying sight—his whole family has been slaughtered. Worse still, the sole survivor is his sister Nezuko, who has been turned into a bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to avenge his family and stay by his only remaining sibling. Alongside the mysterious group calling themselves the Demon Slayer Corps, Tanjirou will do whatever it takes to slay the demons and protect the remnants of his beloved sister's humanity.\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "dub",
+          "label": "Dublado (PT-BR)",
+          "available": true,
+          "episodesAvailable": 11
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "kimetsu-no-yaiba-s3-ep1",
+          "number": 1,
+          "title": "Kimetsu no Yaiba - T3 Episódio 1",
+          "season": "3",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/UASctPP78chIEcX\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s3-ep2",
+          "number": 2,
+          "title": "Kimetsu no Yaiba - T3 Episódio 2",
+          "season": "3",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/BACMpw2hBW6E2fr\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s3-ep3",
+          "number": 3,
+          "title": "Kimetsu no Yaiba - T3 Episódio 3",
+          "season": "3",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/U3RbPybgVDoailh\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s3-ep4",
+          "number": 4,
+          "title": "Kimetsu no Yaiba - T3 Episódio 4",
+          "season": "3",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/CCK0wzQoQYCJKa2\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s3-ep5",
+          "number": 5,
+          "title": "Kimetsu no Yaiba - T3 Episódio 5",
+          "season": "3",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/nDvK70iZMU1ic2X\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s3-ep6",
+          "number": 6,
+          "title": "Kimetsu no Yaiba - T3 Episódio 6",
+          "season": "3",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/u2FrDydYhHXa9ER\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s3-ep7",
+          "number": 7,
+          "title": "Kimetsu no Yaiba - T3 Episódio 7",
+          "season": "3",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/bar0OrNtQPbwKaB\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s3-ep8",
+          "number": 8,
+          "title": "Kimetsu no Yaiba - T3 Episódio 8",
+          "season": "3",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Jp4T9w7AVCz72vS\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s3-ep9",
+          "number": 9,
+          "title": "Kimetsu no Yaiba - T3 Episódio 9",
+          "season": "3",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/LDbVfyZOnu8elOi\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s3-ep10",
+          "number": 10,
+          "title": "Kimetsu no Yaiba - T3 Episódio 10",
+          "season": "3",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Sx9Ewlx7o12SyBu\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s3-ep11",
+          "number": 11,
+          "title": "Kimetsu no Yaiba - T3 Episódio 11",
+          "season": "3",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/SLgfC2fZVCbjSYH\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "seasonLabel": "4ª Temporada",
+      "year": 2019,
+      "episodes": 11,
+      "currentEpisode": 11,
+      "status": "finished",
+      "score": 8.41,
+      "synopsis": "Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjoy a relatively peaceful and happy life. One day, Tanjirou decides to go down to the local village to make a little money selling charcoal. On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man, who warns him of the existence of flesh-eating demons that lurk in the woods at night.\n\nWhen he finally arrives back home the next day, he is met with a horrifying sight—his whole family has been slaughtered. Worse still, the sole survivor is his sister Nezuko, who has been turned into a bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to avenge his family and stay by his only remaining sibling. Alongside the mysterious group calling themselves the Demon Slayer Corps, Tanjirou will do whatever it takes to slay the demons and protect the remnants of his beloved sister's humanity.\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "dub",
+          "label": "Dublado (PT-BR)",
+          "available": true,
+          "episodesAvailable": 11
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "kimetsu-no-yaiba-s4-ep1",
+          "number": 1,
+          "title": "Kimetsu no Yaiba - T4 Episódio 1",
+          "season": "4",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Bedx32PgpB275ho\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s4-ep2",
+          "number": 2,
+          "title": "Kimetsu no Yaiba - T4 Episódio 2",
+          "season": "4",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/YoW2aH46nSDF2m7\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s4-ep3",
+          "number": 3,
+          "title": "Kimetsu no Yaiba - T4 Episódio 3",
+          "season": "4",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/MFzzMeXOp5fpeqH\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s4-ep4",
+          "number": 4,
+          "title": "Kimetsu no Yaiba - T4 Episódio 4",
+          "season": "4",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/RD9n95PbKcq440J\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s4-ep5",
+          "number": 5,
+          "title": "Kimetsu no Yaiba - T4 Episódio 5",
+          "season": "4",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/n2NJquMwCe3UF2J\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s4-ep6",
+          "number": 6,
+          "title": "Kimetsu no Yaiba - T4 Episódio 6",
+          "season": "4",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/m35HDWg2d3XkTvP\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s4-ep7",
+          "number": 7,
+          "title": "Kimetsu no Yaiba - T4 Episódio 7",
+          "season": "4",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/wZeVQV5JO5iAE96\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s4-ep8",
+          "number": 8,
+          "title": "Kimetsu no Yaiba - T4 Episódio 8",
+          "season": "4",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/T4CuTkqNlpdS0bw\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s4-ep9",
+          "number": 9,
+          "title": "Kimetsu no Yaiba - T4 Episódio 9",
+          "season": "4",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Aa84aILaHZryD1u\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s4-ep10",
+          "number": 10,
+          "title": "Kimetsu no Yaiba - T4 Episódio 10",
+          "season": "4",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/80xJpAU2WZzCgPQ\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s4-ep11",
+          "number": 11,
+          "title": "Kimetsu no Yaiba - T4 Episódio 11",
+          "season": "4",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/VZxICAFYt7SeZS9\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        }
+      ]
+    },
+    {
+      "season": 5,
+      "seasonLabel": "5ª Temporada",
+      "year": 2019,
+      "episodes": 8,
+      "currentEpisode": 8,
+      "status": "finished",
+      "score": 8.41,
+      "synopsis": "Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjoy a relatively peaceful and happy life. One day, Tanjirou decides to go down to the local village to make a little money selling charcoal. On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man, who warns him of the existence of flesh-eating demons that lurk in the woods at night.\n\nWhen he finally arrives back home the next day, he is met with a horrifying sight—his whole family has been slaughtered. Worse still, the sole survivor is his sister Nezuko, who has been turned into a bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to avenge his family and stay by his only remaining sibling. Alongside the mysterious group calling themselves the Demon Slayer Corps, Tanjirou will do whatever it takes to slay the demons and protect the remnants of his beloved sister's humanity.\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "dub",
+          "label": "Dublado (PT-BR)",
+          "available": true,
+          "episodesAvailable": 8
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "kimetsu-no-yaiba-s5-ep1",
+          "number": 1,
+          "title": "Kimetsu no Yaiba - T5 Episódio 1",
+          "season": "5",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/1R9uydxGt7HcHNI\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s5-ep2",
+          "number": 2,
+          "title": "Kimetsu no Yaiba - T5 Episódio 2",
+          "season": "5",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/fDSSEaJzAgQI3KJ\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s5-ep3",
+          "number": 3,
+          "title": "Kimetsu no Yaiba - T5 Episódio 3",
+          "season": "5",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/7Zx3GG0uHeLv8ma\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s5-ep4",
+          "number": 4,
+          "title": "Kimetsu no Yaiba - T5 Episódio 4",
+          "season": "5",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/tj7EGhECHed2oaf\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s5-ep5",
+          "number": 5,
+          "title": "Kimetsu no Yaiba - T5 Episódio 5",
+          "season": "5",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/qIKgd0SNrl4t5Dx\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s5-ep6",
+          "number": 6,
+          "title": "Kimetsu no Yaiba - T5 Episódio 6",
+          "season": "5",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/YF3jAl1HnNadlev\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s5-ep7",
+          "number": 7,
+          "title": "Kimetsu no Yaiba - T5 Episódio 7",
+          "season": "5",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/gcem05V6Dxt607W\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        },
+        {
+          "id": "kimetsu-no-yaiba-s5-ep8",
+          "number": 8,
+          "title": "Kimetsu no Yaiba - T5 Episódio 8",
+          "season": "5",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/YEZONIqcig5amvq\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        }
+      ]
+    },
+    {
+      "season": 6,
+      "seasonLabel": "Castelo Infinito - filme 1",
+      "year": 2025,
+      "episodes": 1,
+      "currentEpisode": 1,
+      "status": "finished",
+      "score": 9.2,
+      "synopsis": "Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjoy a relatively peaceful and happy life. One day, Tanjirou decides to go down to the local village to make a little money selling charcoal. On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man, who warns him of the existence of flesh-eating demons that lurk in the woods at night.\n\nWhen he finally arrives back home the next day, he is met with a horrifying sight—his whole family has been slaughtered. Worse still, the sole survivor is his sister Nezuko, who has been turned into a bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to avenge his family and stay by his only remaining sibling. Alongside the mysterious group calling themselves the Demon Slayer Corps, Tanjirou will do whatever it takes to slay the demons and protect the remnants of his beloved sister's humanity.\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "dub",
+          "label": "Dublado (PT-BR)",
+          "available": true,
+          "episodesAvailable": 1
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "kimetsu-no-yaiba-InfinityCastle-ep1",
+          "number": 1,
+          "title": "Kimetsu no Yaiba - Castelo Infinito Episódio 1",
+          "season": "6",
+          "embeds": {
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/rS2cNX62qKHKQSt\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "anidrive.click"
+        }
+      ]
+    }
+  ]
+}

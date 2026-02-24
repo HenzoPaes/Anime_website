@@ -30,7 +30,7 @@ export default function App() {
               <Route path="/anime/:id"          element={<AnimeDetailPage/>}/>
               <Route path="/anime/:id/ep/:epId" element={<EpisodePage/>}/>
               <Route path="/search"             element={<SearchPage/>}/>
-              <Route path="/admin"              element={<AdminPage/>}/>
+              <Route path="/kz82lmq9xq19zpan8d2ksl4v1mf93qxtq84zmn2r7plxk21b9as0mf3w2zn8dk6"              element={<AdminPage/>}/>
               <Route path="*"                   element={<NotFoundPage/>}/>
             </Routes>
           </Suspense>

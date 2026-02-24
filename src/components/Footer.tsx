@@ -6,9 +6,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-7 h-7 bg-brand-500 rounded-lg flex items-center justify-center shadow-lg shadow-brand-500/30">
-                <span className="text-white font-display text-lg leading-none">A</span>
-              </div>
+              <div className="w-7 h-7 bg-brand-500 rounded-lg flex items-center justify-center 
+                group-hover:scale-110 transition-transform 
+                shadow-lg shadow-brand-500/30 overflow-hidden">
+          <img
+            src="/public/Logo.png"
+            alt="Anime Verse Logo"
+            className="w-5 h-5 object-contain drop-shadow-lg"
+          />
+          </div>
               <span className="font-display text-xl text-white">Anime<span className="text-brand-500">Verse</span></span>
             </div>
             <p className="text-sm text-gray-500">Seu portal de animes legendados e dublados. 🎌</p>

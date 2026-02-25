@@ -11,14 +11,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "strict": false,
-    "forceConsistentCasingInFileNames": false,
-    "target": "ESNext",
-    "module": "ESNext",
-    "jsx": "react-jsx",
-    "strict": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true
+    "strict": false
   },
   "include": ["src", "vite.config.ts"]
 }

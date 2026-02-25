@@ -6,7 +6,7 @@ import express from "express";
 import cors from "cors"; // 👈 IMPORTANTE: Adicionado o CORS
 
 // Apontar diretamente para a pasta usada pelas APIs estáticas
-const ANIMES_DIR = path.join(process.cwd(), "api", "Animes");
+const ANIMES_DIR = path.join(process.cwd(), "Api", "Animes");
 const BACKUP_DIR = path.join(process.cwd(), "backups");
 const API_KEY = process.env.API_KEY || "dev-key";
 

@@ -103,7 +103,7 @@ export const config = {
 
 export async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = 8080;
 
   // 👈 IMPORTANTE: Permite que o seu React (localhost:5173 ou outro) leia a API
   app.use(cors()); 

@@ -16,5 +16,10 @@ export default defineConfig({
         // 👇 A LINHA 'rewrite' FOI APAGADA DAQUI! 
       },
     },
+    allowedHosts: [
+      "animeverse-cket.onrender.com",
+      "localhost",
+      "127.0.0.1"
+    ]
   },
 });

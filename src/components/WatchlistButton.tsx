@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useWatchlist, WatchStatus, WATCHLIST_LABELS, WATCHLIST_COLORS } from "../hooks/usewatchlist";
+import { useWatchlist, WatchStatus, WATCHLIST_LABELS, WATCHLIST_COLORS } from "../hooks/useWatchlist";
 
 const STATUSES: WatchStatus[] = ["assistindo", "quero-ver", "concluido", "droppado"];
 

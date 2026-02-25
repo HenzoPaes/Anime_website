@@ -1,0 +1,659 @@
+{
+    "id": "jujutsu-kaisen",
+    "title": "Jujutsu Kaisen",
+    "titleRomaji": "Jujutsu Kaisen",
+    "titleJapanese": "呪術廻戦",
+    "genre": ["Ação", "Sobrenatural", "Shounen"],
+    "studio": "MAPPA",
+    "recommended": true,
+    "recommendationReason": "Um dos animes mais aguardados do ano, com animações espetaculares da MAPPA.",
+    "tags": ["popular", "destaque"],
+    "malId": 40748,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1171/109222.jpg",
+    "bannerImage": "https://cdn.myanimelist.net/images/anime/1171/109222l.jpg",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2020,
+        "episodes": 24,
+        "currentEpisode": 24,
+        "status": "finished",
+        "score": 8.6,
+        "synopsis": "Yuji Itadori é um garoto comum com força física extraordinária. Sua vida muda quando ele engole um dedo amaldiçoado de Ryomen Sukuna, o Rei das Maldições, tornando-se seu hospedeiro e ingressando no mundo dos feiticeiros.",
+        "trailer": "https://www.youtube.com/watch?v=4A_X-Dvl0ws",
+        "audios": [
+          { "type": "sub", "label": "Legendado (PT-BR)", "available": true, "episodesAvailable": 24 },
+          { "type": "dub", "label": "Dublado (PT-BR)", "available": true, "episodesAvailable": 24 }
+        ],
+        "episodeList": [
+    {
+      "id": "jujutsu-kaisen-1",
+      "number": 1,
+      "title": "Jujutsu Kaisen - Episódio 1",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/jr6xu2JWadQzeNk\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/cefuelCa2XATEgz\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2",
+      "number": 2,
+      "title": "Jujutsu Kaisen - Episódio 2",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Pe33hHUI5NJt84V\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/tipUVkFwbqZElYE\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-3",
+      "number": 3,
+      "title": "Jujutsu Kaisen - Episódio 3",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Ak5gh1eY1QgfMJM\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/VcI37Dy9DRBBqKx\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-4",
+      "number": 4,
+      "title": "Jujutsu Kaisen - Episódio 4",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/NoUBq5urb70EdNt\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Y7K5mRJpQPKd1L0\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-5",
+      "number": 5,
+      "title": "Jujutsu Kaisen - Episódio 5",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Ty7MgTdzubkg3jP\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/yHT3V3uo5uaG91X\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-6",
+      "number": 6,
+      "title": "Jujutsu Kaisen - Episódio 6",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/46PefiaJgJ0B4av\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/230i92wevi7yiPe\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-7",
+      "number": 7,
+      "title": "Jujutsu Kaisen - Episódio 7",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/V9YX2qMXmO7b2qh\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/rizZji20OC0wb2y\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-8",
+      "number": 8,
+      "title": "Jujutsu Kaisen - Episódio 8",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/fZOXXMT6yKL5zhS\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/cKUQKNyw0HNa9X5\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-9",
+      "number": 9,
+      "title": "Jujutsu Kaisen - Episódio 9",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/DLgubxBnLtxfkya\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/VxX6DWd7UqbTV5c\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-10",
+      "number": 10,
+      "title": "Jujutsu Kaisen - Episódio 10",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/elXa5bhJnu7liNH\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ak1LB3FoNmkaREk\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-11",
+      "number": 11,
+      "title": "Jujutsu Kaisen - Episódio 11",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/oXxgEcDZzDwBXTz\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/NMDlULBwMKc6m0f\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-12",
+      "number": 12,
+      "title": "Jujutsu Kaisen - Episódio 12",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/UWlA3bEmKB3UXXw\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/LtohUJdaSDZ1vxg\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-13",
+      "number": 13,
+      "title": "Jujutsu Kaisen - Episódio 13",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/RPxJ5Tut2GzKDaV\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/lTU0D2kTDHDWycf\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-14",
+      "number": 14,
+      "title": "Jujutsu Kaisen - Episódio 14",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/yDDqHHx6Y3MYwKN\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/xuyk0G9R09ecepm\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-15",
+      "number": 15,
+      "title": "Jujutsu Kaisen - Episódio 15",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/7eY5Kur4qdzN9mG\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/CXURX8hXjA3iZ0E\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-16",
+      "number": 16,
+      "title": "Jujutsu Kaisen - Episódio 16",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/3JlEKtadYIqNrgo\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/dbXhPSBnZBaFwet\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-17",
+      "number": 17,
+      "title": "Jujutsu Kaisen - Episódio 17",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/pckNkXn8YpFKY4I\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Uour2AEQkjgXAlj\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-18",
+      "number": 18,
+      "title": "Jujutsu Kaisen - Episódio 18",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/gjAepawHW4YpcOW\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/xIaS8aEwfEgQ1VP\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-19",
+      "number": 19,
+      "title": "Jujutsu Kaisen - Episódio 19",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/arIMQRaYL8BN4oc\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/V3aVb6JV3P927IO\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-20",
+      "number": 20,
+      "title": "Jujutsu Kaisen - Episódio 20",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/4wb8tyBcMJNDbJH\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ajvTkNojXNHa5LT\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-21",
+      "number": 21,
+      "title": "Jujutsu Kaisen - Episódio 21",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Liraw8bcZaDnR97\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/bQS28crO0ymTDiF\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-22",
+      "number": 22,
+      "title": "Jujutsu Kaisen - Episódio 22",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/F9YGa6OZEa5zolh\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/kkT9LXareUCkSQr\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-23",
+      "number": 23,
+      "title": "Jujutsu Kaisen - Episódio 23",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/Ln9OS62OzfWuXDH\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/RGa0H0tkpMM6PhY\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-24",
+      "number": 24,
+      "title": "Jujutsu Kaisen - Episódio 24",
+      "season": "1",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/NIZyJjfaJSfMbNK\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/bOfgRmTE1pHQ46v\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    }
+  ]
+      },
+      {
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "year": 2023,
+        "episodes": 23,
+        "currentEpisode": 23,
+        "status": "finished",
+        "score": 8.7,
+        "synopsis": "A segunda temporada apresenta o arco do passado de Gojo e sua relação com Geto Suguru, seguido pelo devastador arco de Shibuya, onde feiticeiros amaldiçoados lançam um ataque em larga escala à cidade.",
+        "trailer": "https://www.youtube.com/watch?v=muPtCQ_HQLY",
+        "audios": [
+          { "type": "sub", "label": "Legendado (PT-BR)", "available": true, "episodesAvailable": 23 },
+          { "type": "dub", "label": "Dublado (PT-BR)", "available": true, "episodesAvailable": 23 }
+        ],
+        "episodeList": [
+    {
+      "id": "jujutsu-kaisen-2nd-season-1",
+      "number": 1,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 1",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/IJCkylg4kjWBYkG\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/xvs9lyw7dlt7n3x\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-2",
+      "number": 2,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 2",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/1dzIXLzRk83uMVN\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/or5p2c201249bxc\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-3",
+      "number": 3,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 3",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/0gPArzlyjPXr7CD\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/pz1w6elhgbxi7sj\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-4",
+      "number": 4,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 4",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/QFLzbUn2NVUQH5f\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ggu5bzhdt0dgngt\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-5",
+      "number": 5,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 5",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/RvpIBX9SSdCv1Sg\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/zwzj7uzjg285cmy\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-6",
+      "number": 6,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 6",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/hh4ydbqdJH2wfaW\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/dpj5sgii3qja981\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-7",
+      "number": 7,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 7",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/QiEcknNmCKwlRtQ\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/zp2kkv14i2u8n8x\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-8",
+      "number": 8,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 8",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/zMwnTIrGutCkVOE\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/78ocplll3r0a02e\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-9",
+      "number": 9,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 9",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ObcauZXpJz8BS4P\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ln3g8nfgmazs10c\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-10",
+      "number": 10,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 10",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/qQnbkSnDlkDrZtA\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/xbmy6sgh5msfhfy\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-11",
+      "number": 11,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 11",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/MOjUfGLLWkawOQ0\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/qub7rn2wkr5mdnd\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-12",
+      "number": 12,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 12",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/UWtVAr8xrUkEDPI\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/1pi7mo6b7rsxvk4\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-13",
+      "number": 13,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 13",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/zoQ1df4FcxH7rP1\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/wypz70h3pihbw9y\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-14",
+      "number": 14,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 14",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/6hlVjOwGHiJRGVf\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/fbmf71no73iryan\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-15",
+      "number": 15,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 15",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ZDV5ELy2XWRh5wl\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/6qmchht14u9sh92\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-16",
+      "number": 16,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 16",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/w3jvOGXq9MBgwdh\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/fox5dype3ckmrk3\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-17",
+      "number": 17,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 17",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/hJoLl8Z5SNDMB3Z\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/evlaanyqpn8ojv7\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-18",
+      "number": 18,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 18",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/gju8aOTuzjrcTJV\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/92ssu1llviqeksd\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-19",
+      "number": 19,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 19",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/h4KZL1hVrQ3YZiB\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/rabcg5xnk2d4x8l\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-20",
+      "number": 20,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 20",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/HuBQvYjLBKW8czV\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/78mt5k05qe7excw\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-21",
+      "number": 21,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 21",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/wIGmAdnvCxpzVjO\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/dh40ox2o488216h\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-22",
+      "number": 22,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 22",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ux6aWUfkiikuX4U\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/bzxaly8zxo3tohg\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-2nd-season-23",
+      "number": 23,
+      "title": "Jujutsu Kaisen 2nd Season - Episódio 23",
+      "season": "2",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/GoaQ8MSKA6AqWA3\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/bj5fevjko065k48\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    }
+  ]
+      },
+      {
+        "season": 3,
+        "seasonLabel": "3ª Temporada",
+        "year": 2026,
+        "episodes": 24,
+        "currentEpisode": 7,
+        "status": "ongoing",
+        "score": 8.9,
+        "synopsis": "O arco do Culling Game coloca feiticeiros numa batalha mortal por pontos com regras cruéis. Yuji e seus aliados enfrentam adversários nunca vistos enquanto tentam salvar os participantes presos no jogo.",
+        "trailer": "https://www.youtube.com/watch?v=PKdFHpCCIBw",
+        "audios": [
+          { "type": "sub", "label": "Legendado (PT-BR)", "available": true, "episodesAvailable": 24 },
+          { "type": "dub", "label": "Dublado (PT-BR)", "available": true, "episodesAvailable": 24 }
+        ],
+        "episodeList": [
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-1",
+      "number": 1,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 1",
+      "season": "3",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/uFcb68XbIxlEGor\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/b5i2qq52pt0uej7\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-2",
+      "number": 2,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 2",
+      "season": "3",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/GK1eOaTcklqST7f\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/bkd6tjz43ne00bj\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-3",
+      "number": 3,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 3",
+      "season": "3",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/n7EY0iXBVVWMHHB\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/dfhg74njjzrfqwf\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-4",
+      "number": 4,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 4",
+      "season": "3",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/QlTIVBKqv8VBnwj\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/jw29kau0tvx93f1\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-5",
+      "number": 5,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 5",
+      "season": "3",
+      "embeds": {
+        "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/aurJHjrJpLavUX1\" frameborder=\"0\" allowfullscreen></iframe>",
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ixCMuiaMyzGtF3b\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-6",
+      "number": 6,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 6",
+      "season": "3",
+      "embeds": {
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/D5kNScbTNhy0g78\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    },
+    {
+      "id": "jujutsu-kaisen-shimetsu-kaiyuu-7",
+      "number": 7,
+      "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 7",
+      "season": "3",
+      "embeds": {
+        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/KwzDHIKHM91Wetc\" frameborder=\"0\" allowfullscreen></iframe>"
+      },
+      "embedCredit": "anidrive.click"
+    }
+  ]
+      }
+    ]
+  }

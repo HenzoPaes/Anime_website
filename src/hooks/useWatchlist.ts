@@ -16,10 +16,10 @@ export const WATCHLIST_LABELS: Record<WatchStatus, string> = {
 };
 
 export const WATCHLIST_COLORS: Record<WatchStatus, string> = {
-  assistindo:   "bg-blue-500/20 text-blue-300 border-blue-500/30",
-  concluido:    "bg-green-500/20 text-green-300 border-green-500/30",
-  droppado:     "bg-red-500/20 text-red-300 border-red-500/30",
-  "quero-ver":  "bg-yellow-500/20 text-yellow-300 border-yellow-500/30",
+  assistindo:   "bg-blue-500/40 text-blue-300 border-blue-500/30",
+  concluido:    "bg-green-500/40 text-green-300 border-green-500/30",
+  droppado:     "bg-red-500/40 text-red-300 border-red-500/30",
+  "quero-ver":  "bg-yellow-500/40 text-yellow-300 border-yellow-500/30",
 };
 
 export function useWatchlist() {

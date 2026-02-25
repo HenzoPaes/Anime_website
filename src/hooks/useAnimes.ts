@@ -1,12 +1,11 @@
 // src/hooks/useAnimes.ts
+// ⚠️  NÃO importa animes.json — lê da API /api/animes que lê da pasta Animes/
 import { useState, useEffect, useMemo } from "react";
 import { Anime, AnimeSeason } from "../types/anime";
 import { Episode } from "../types";
-import animesData from "../../animes.json";
 
-// ─── FlatAnime: compatível com HomePage (campos antigos) + AnimeCard (seasons) ──
+// ─── FlatAnime ────────────────────────────────────────────────────────────────
 export interface FlatAnime {
-  // Campos legados que o HomePage já usa
   id:           string;
   title:        string;
   rating:       number;
@@ -18,8 +17,6 @@ export interface FlatAnime {
   cover:        string;
   synopsis:     string;
   year:         number;
-
-  // Campos novos (AnimeCard, AnimeDetailPage)
   titleRomaji:          string;
   titleJapanese:        string;
   studio:               string;
@@ -31,120 +28,168 @@ export interface FlatAnime {
   bannerImage:          string;
   genre:                string[];
   seasons:              AnimeSeason[];
-  // Lista plana de episódios (usada pelo player / EpisodePage)
   episodes:             Episode[];
 }
 
-// Mapa de status novo → antigo
 function mapStatus(s: string): FlatAnime["status"] {
   if (s === "ongoing")  return "em-andamento";
   if (s === "finished") return "completo";
   return "pausado";
 }
 
-// Deriva audioType da temporada mais recente
-function deriveAudioType(season: AnimeSeason): FlatAnime["audioType"] {
-  const hasSub = season.audios.some((a) => a.type === "sub" && a.available);
-  const hasDub = season.audios.some((a) => a.type === "dub" && a.available);
+function deriveAudioType(season?: AnimeSeason): FlatAnime["audioType"] {
+  if (!season?.audios) return "legendado";
+  const hasSub = season.audios.some(a => a.type === "sub" && a.available);
+  const hasDub = season.audios.some(a => a.type === "dub" && a.available);
   if (hasSub && hasDub) return "dual-audio";
   if (hasDub)           return "dublado";
   return "legendado";
 }
 
-// Converte Anime (JSON novo) → FlatAnime
-function flatten(anime: Anime): FlatAnime {
-  const latest = anime.seasons[anime.seasons.length - 1];
-  // Agrega episódios detalhados por temporada quando disponíveis
-  const episodesList: Episode[] = anime.seasons.flatMap((s) =>
-    (s.episodeList || []).map((e) => ({ ...e, season: s.season }))
+export function flatten(raw: any): FlatAnime {
+  const seasons: AnimeSeason[] = raw.seasons ?? [];
+  const latest = seasons[seasons.length - 1];
+  const episodesList: Episode[] = seasons.flatMap((s: any) =>
+    (s.episodeList ?? []).map((e: any) => ({ ...e, season: s.season }))
   );
   return {
-    id:           anime.id,
-    title:        anime.title,
-    rating:       latest.score,
-    audioType:    deriveAudioType(latest),
-    status:       mapStatus(latest.status),
-    genres:       anime.genre,
-    episodeCount: episodesList.length > 0 ? episodesList.length : latest.episodes,
-    banner:       anime.bannerImage,
-    cover:        anime.coverImage,
-    synopsis:     latest.synopsis,
-    year:         latest.year,
-    titleRomaji:          anime.titleRomaji,
-    titleJapanese:        anime.titleJapanese,
-    studio:               anime.studio,
-    recommended:          anime.recommended,
-    recommendationReason: anime.recommendationReason,
-    tags:                 anime.tags,
-    malId:                anime.malId,
-    coverImage:           anime.coverImage,
-    bannerImage:          anime.bannerImage,
-    genre:                anime.genre,
-    seasons:              anime.seasons,
+    id:                   raw.id ?? "",
+    title:                raw.title ?? "",
+    rating:               latest?.score ?? 0,
+    audioType:            deriveAudioType(latest),
+    status:               mapStatus(latest?.status ?? "finished"),
+    genres:               raw.genre ?? [],
+    episodeCount:         episodesList.length > 0 ? episodesList.length : (latest?.episodes ?? 0),
+    banner:               raw.bannerImage ?? "",
+    cover:                raw.coverImage ?? "",
+    synopsis:             latest?.synopsis ?? "",
+    year:                 latest?.year ?? new Date().getFullYear(),
+    titleRomaji:          raw.titleRomaji ?? raw.title ?? "",
+    titleJapanese:        raw.titleJapanese ?? raw.title ?? "",
+    studio:               raw.studio ?? "Desconhecido",
+    recommended:          raw.recommended ?? false,
+    recommendationReason: raw.recommendationReason ?? null,
+    tags:                 raw.tags ?? [],
+    malId:                raw.malId ?? 0,
+    coverImage:           raw.coverImage ?? "",
+    bannerImage:          raw.bannerImage ?? "",
+    genre:                raw.genre ?? [],
+    seasons,
     episodes:             episodesList,
   };
 }
 
-const rawAnimes   = animesData as Anime[];
-const flatAnimes  = rawAnimes.map(flatten);
+// ─── Cache em memória ────────────────────────────────────────────────────────
+let _cache: FlatAnime[] | null = null;
+let _promise: Promise<FlatAnime[]> | null = null;
 
-// ─── Hook principal — mesma assinatura de antes ──────────────────────────────
+function loadAnimes(): Promise<FlatAnime[]> {
+  if (_cache) return Promise.resolve(_cache);
+  if (_promise) return _promise;
+  _promise = fetch("/api/animes")
+    .then(r => r.json())
+    .then((data: any[]) => {
+      _cache = data.map(flatten);
+      _promise = null;
+      return _cache;
+    })
+    .catch(err => {
+      console.error("[useAnimes] Erro ao carregar:", err);
+      _promise = null;
+      _cache = [];
+      return [];
+    });
+  return _promise;
+}
+
+// ─── Hook principal ───────────────────────────────────────────────────────────
 export function useAnimes() {
-  const [loading, setLoading] = useState(true);
+  const [animes, setAnimes] = useState<FlatAnime[]>(_cache ?? []);
+  const [loading, setLoading] = useState(_cache === null);
   const [error,   setError  ] = useState<string | null>(null);
 
   useEffect(() => {
-    try {
-      setLoading(false);
-    } catch {
-      setError("Erro ao carregar animes.");
-      setLoading(false);
-    }
+    if (_cache !== null) { setAnimes(_cache); setLoading(false); return; }
+    setLoading(true);
+    loadAnimes()
+      .then(data => { setAnimes(data); setLoading(false); })
+      .catch(() => { setError("Erro ao carregar animes."); setLoading(false); });
   }, []);
 
-  return { animes: flatAnimes, loading, error };
+  const refetch = async () => {
+    _cache = null;
+    _promise = null;
+    setLoading(true);
+    const data = await loadAnimes();
+    setAnimes(data);
+    setLoading(false);
+  };
+
+  return { animes, loading, error, refetch };
 }
 
 // ─── Hooks auxiliares ─────────────────────────────────────────────────────────
 export function useAnimeById(id: string): FlatAnime | undefined {
-  return useMemo(() => flatAnimes.find((a) => a.id === id), [id]);
+  const { animes } = useAnimes();
+  return useMemo(() => animes.find(a => a.id === id), [animes, id]);
 }
 
 export function useAnime(id: string) {
-  const [loading, setLoading] = useState(false);
-  const anime = useAnimeById(id);
-  useEffect(() => { setLoading(false); }, [id]);
+  const { animes, loading } = useAnimes();
+  const anime = useMemo(() => animes.find(a => a.id === id), [animes, id]);
   return { anime, loading };
 }
 
-export function useRecommended(): FlatAnime[] {
-  return useMemo(() => flatAnimes.filter((a) => a.recommended), []);
-}
-
-export function useFeatured(): FlatAnime[] {
-  return useMemo(() => flatAnimes.filter((a) => a.tags.includes("destaque")), []);
-}
-
-export function useOngoing(): FlatAnime[] {
-  return useMemo(() => flatAnimes.filter((a) => a.status === "em-andamento"), []);
-}
-
 export function useRelated(anime?: FlatAnime): FlatAnime[] {
+  const { animes } = useAnimes();
   return useMemo(() => {
     if (!anime) return [];
-    return flatAnimes
-      .filter((a) => a.id !== anime.id && a.genres.some((g) => anime.genres.includes(g)))
+    return animes
+      .filter(a => a.id !== anime.id && a.genres.some(g => anime.genres.includes(g)))
       .sort((a, b) => b.rating - a.rating)
       .slice(0, 5);
-  }, [anime]);
+  }, [anime, animes]);
 }
 
 export function useGenres(): string[] {
+  const { animes } = useAnimes();
   return useMemo(() => {
     const set = new Set<string>();
-    flatAnimes.forEach((a) => a.genres.forEach((g) => set.add(g)));
+    animes.forEach(a => a.genres.forEach(g => set.add(g)));
     return Array.from(set).sort();
-  }, []);
+  }, [animes]);
 }
 
-export { flatAnimes as allAnimes };
+// ─── Funções admin ────────────────────────────────────────────────────────────
+export async function saveAnime(anime: any, apiKey: string) {
+  const res = await fetch("/api/animes", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "x-api-key": apiKey },
+    body: JSON.stringify(anime),
+  });
+  _cache = null; _promise = null;
+  return res.json();
+}
+
+export async function deleteAnime(id: string, apiKey: string) {
+  const res = await fetch(`/api/animes/${id}`, {
+    method: "DELETE",
+    headers: { "x-api-key": apiKey },
+  });
+  _cache = null; _promise = null;
+  return res.json();
+}
+
+export async function fetchBackups(apiKey: string): Promise<string[]> {
+  const res = await fetch("/api/backups", { headers: { "x-api-key": apiKey } });
+  return res.json();
+}
+
+export async function restoreBackup(name: string, apiKey: string) {
+  const res = await fetch(`/api/backups/${name}/restore`, {
+    method: "POST",
+    headers: { "x-api-key": apiKey },
+  });
+  _cache = null; _promise = null;
+  return res.json();
+}

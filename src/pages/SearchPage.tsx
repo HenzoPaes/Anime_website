@@ -2,11 +2,12 @@ import { useEffect, useState, useMemo, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import Fuse from "fuse.js";
-import { useAnimes } from "../hooks/useanimes";
-import { useWatched } from "../hooks/usewatchlist";
-import AnimeCard from "../components/animecard";
-import SkeletonCard from "../components/skeletoncard";
+import { useAnimes } from "../hooks/useAnimes";
+import { useWatched } from "../hooks/useWatchlist";
+import AnimeCard from "../components/AnimeCard";
+import SkeletonCard from "../components/SkeletonCard";
 import { Anime } from "../types";
+import CustomDropdown from "../components/CustomDropdown";
 
 const FUSE_OPTS = {
   keys:[{name:"title",weight:0.5},{name:"alt_titles",weight:0.3},{name:"tags",weight:0.1},{name:"genres",weight:0.1}],
@@ -81,14 +82,17 @@ export default function SearchPage() {
         ))}
       </div>
 
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-6" >
         <p className="text-sm text-gray-500"><span className="text-white font-bold">{results.length}</span> animes</p>
-        <select value={sortBy} onChange={e=>setSortBy(e.target.value)} className="input-field text-sm py-1.5 w-auto">
-          <option value="relevance">Relevância</option>
-          <option value="newest">Mais recentes</option>
-          <option value="rating">Melhor avaliados</option>
-          <option value="title">Título A-Z</option>
-        </select>
+        <div style={{ minWidth: 180 }} className="ml-auto">
+          <CustomDropdown
+             label=""
+            options={[{value:"relevance",label:"Relevância"},{value:"newest",label:"Mais recentes"},{value:"rating",label:"Melhor avaliados"},{value:"title",label:"Título A-Z"}]}
+             value={sortBy}
+             onChange={(v) => setSortBy(v)}
+             size="md"
+            />
+         </div>
       </div>
 
       {loading

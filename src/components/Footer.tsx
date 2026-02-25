@@ -10,10 +10,10 @@ export default function Footer() {
                 group-hover:scale-110 transition-transform 
                 shadow-lg shadow-brand-500/30 overflow-hidden">
           <img
-            src="/public/Logo.png"
-            alt="Anime Verse Logo"
-            className="w-5 h-5 object-contain drop-shadow-lg"
-          />
+  src="/Logo.png"
+  alt="Anime Verse Logo"
+  className="w-5 h-5 object-contain drop-shadow-lg"
+/>
           </div>
               <span className="font-display text-xl text-white">Anime<span className="text-brand-500">Verse</span></span>
             </div>
@@ -22,7 +22,7 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-white mb-3 text-xs uppercase tracking-wider">Navegar</h3>
             <ul className="space-y-2">
-              {[{to:"/",l:"Início"},{to:"/search",l:"Explorar"},{to:"/minha-lista",l:"❤️ Minha Lista"},{to:"/admin",l:"Painel Admin"}].map(({to,l})=>(
+              {[{to:"/",l:"Início"},{to:"/search",l:"Explorar"},{to:"/historico",l:"Histórico"}].map(({to,l})=>(
                 <li key={to}><Link to={to} className="text-sm text-gray-500 hover:text-brand-400 transition-colors">{l}</Link></li>
               ))}
             </ul>

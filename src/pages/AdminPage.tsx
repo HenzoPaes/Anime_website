@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useAnimes, saveAnime, deleteAnime, fetchBackups, restoreBackup } from "../hooks/useanimes";
-import { useWatched } from "../hooks/usewatchlist";
+import { useAnimes, saveAnime, deleteAnime, fetchBackups, restoreBackup } from "../hooks/useAnimes";
+import { useWatched } from "../hooks/useWatchlist";
 import { parseIframe, detectProvider } from "../utils/iframe";
 import { Anime, Episode } from "../types";
 
@@ -159,7 +159,25 @@ export default function AdminPage() {
   const edit = (a:Anime) => { setEditing({...a}); setGenreInput(a.genres.join(", ")); setTagInput((a.tags||[]).join(", ")); setTab("edit"); };
   const newA  = () => { setEditing({...BLANK}); setGenreInput(""); setTagInput(""); setTab("edit"); };
 
-  const addEp = () => setEditing(e=>({...e, episodes:[...e.episodes,{id:`ep${Date.now()}`,number:e.episodes.length+1,title:"",embedUrl:"",embedCredit:""}]}));
+  const addEp = () => {
+  setEditing(e => {
+      if (!e) return e;
+
+      return {
+        ...e,
+        episodes: [
+          ...e.episodes,
+          {
+            id: `ep${Date.now()}`,
+            number: e.episodes.length + 1,
+            title: "",
+            embedUrl: "",
+            embedCredit: ""
+          }
+        ]
+      };
+    });
+  };
   const updEp = (i:number, f:keyof Episode, v:string|number) => setEditing(e=>{ const eps=[...e.episodes]; eps[i]={...eps[i],[f]:v}; return {...e,episodes:eps}; });
   const remEp = (i:number) => setEditing(e=>({...e,episodes:e.episodes.filter((_,j)=>j!==i)}));
 

@@ -1,3 +1,3 @@
 // Backwards compatibility re-export
-export { useWatched, useWatchlist } from "./usewatchlist";
-export type { WatchStatus, WatchlistEntry } from "./usewatchlist";
+export { useWatched, useWatchlist } from "./useWatchlist";
+export type { WatchStatus, WatchlistEntry } from "./useWatchlist";

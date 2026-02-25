@@ -11,7 +11,7 @@ export default defineConfig({
     port: 3000, // Seu site (React) vai abrir aqui!
     proxy: {
       "/api": {
-        target: "animeverse-cket.onrender.com", // Sua API (Express) vai responder aqui!
+        target: "http://localhost:8080", // Sua API (Express) vai responder aqui!
         changeOrigin: true,
         // 👇 A LINHA 'rewrite' FOI APAGADA DAQUI! 
       },

@@ -1,9 +1,9 @@
 // src/lib/supabase.ts
 // Cliente Supabase centralizado — importado pelos hooks e serverless functions
-import { createClient } from "@supabase/supabase-js";
+import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl  = import.meta.env.VITE_SUPABASE_URL as string;
-const supabaseAnon = import.meta.env.VITE_SUPABASE_ANON_KEY as string;
+const supabaseUrl  = "https://mcqygugvwrnhhwqolavz.supabase.co";
+const supabaseAnon = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1jcXlndWd2d3JuaGh3cW9sYXZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5OTYxMTMsImV4cCI6MjA4NzU3MjExM30.f-1BmXnLtqosrNfas_xdPMXSgHwPoZuNxYOIkqujtBs";
 
 if (!supabaseUrl || !supabaseAnon) {
   throw new Error("Faltam as variáveis VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY no .env");

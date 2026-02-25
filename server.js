@@ -30,8 +30,13 @@ console.log("Arquivos:", (await readAllAnimes()).length, "carregados");
 app.use(express.json({ limit: "20mb" }));
 
 function auth(req, res, next) {
-  if (!checkAuth(req.headers["x-api-key"] as string))
+  const apiKey = req.headers["x-api-key"];
+
+  // Verifica se existe e se é válida
+  if (!apiKey || !checkAuth(apiKey)) {
     return res.status(401).json({ error: "Unauthorized" });
+  }
+
   next();
 }
 
@@ -76,7 +81,8 @@ app.post("/api/backups/:name/restore", auth, (req, res) => {
     const data = restoreBackup(req.params.name);
     res.json({ success: true, message: `Restaurado: ${req.params.name}` });
   } catch (err) {
-    res.status(404).json({ error: (err as any).message });
+    // Em JS puro, só acessa err.message
+    res.status(404).json({ error: err.message });
   }
 });
 

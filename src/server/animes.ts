@@ -2,7 +2,8 @@
 import fs from "fs";
 import path from "path";
 
-const ANIMES_DIR = path.join(process.cwd(), "Animes");
+// apontar diretamente para a pasta usada pelas APIs estáticas
+const ANIMES_DIR = path.join(process.cwd(), "Api", "Animes");
 const BACKUP_DIR = path.join(process.cwd(), "backups");
 const API_KEY = process.env.API_KEY || "dev-key";
 
@@ -13,7 +14,7 @@ export function ensureDirs() {
 }
 
 export async function readAllAnimes() {
-  // first try local files
+  // apenas lê arquivos locais; nenhuma tentativa de baixar do GitHub
   try {
     const local = fs
       .readdirSync(ANIMES_DIR)
@@ -27,44 +28,9 @@ export async function readAllAnimes() {
         }
       })
       .filter(Boolean);
-    if (local.length > 0) return local;
+    return local;
   } catch (e) {
     console.error("Erro ao listar Animes/:", (e as any).message);
-    // fall through to remote
-  }
-
-  // if we got here, either directory empty or had error -> fetch from GitHub
-  try {
-    console.log("Downloading anime list from GitHub fallback...");
-    const apiUrl =
-      "https://api.github.com/repos/HenzoPaes/Anime_website/contents/Animes";
-    const listRes = await fetch(apiUrl);
-    if (!listRes.ok)
-      throw new Error(`${listRes.status} ${listRes.statusText}`);
-    const list = await listRes.json();
-    if (!Array.isArray(list)) return [];
-    const animes = [];
-    for (const file of list.filter(
-      (f: any) => f.name && f.name.endsWith(".json")
-    )) {
-      try {
-        const animeRes = await fetch(file.download_url);
-        if (!animeRes.ok) throw new Error(`${animeRes.status}`);
-        const anime = await animeRes.json();
-        animes.push(anime);
-      } catch (err) {
-        console.error(
-          `Erro ao baixar ${file.name} de GitHub:`,
-          (err as any).message || err
-        );
-      }
-    }
-    return animes;
-  } catch (err) {
-    console.error(
-      "Erro ao baixar animes do GitHub:",
-      (err as any).message || err
-    );
     return [];
   }
 }
@@ -74,20 +40,12 @@ export async function readAnime(id: string) {
   if (fs.existsSync(p)) {
     try {
       return JSON.parse(fs.readFileSync(p, "utf-8"));
-    } catch {
-      /* continue to remote */
+    } catch (e) {
+      console.error(`Erro ao parsear ${id}.json:`, (e as any).message);
+      return null;
     }
   }
-  // fallback to GitHub raw file
-  try {
-    const url = `https://raw.githubusercontent.com/HenzoPaes/Anime_website/main/Animes/${id}.json`;
-    const res = await fetch(url);
-    if (!res.ok) return null;
-    return await res.json();
-  } catch (err) {
-    console.error(`Erro ao buscar anime ${id} no GitHub:`, (err as any).message || err);
-    return null;
-  }
+  return null; // não faz download remoto
 }
 
 export function writeAnime(anime: any) {

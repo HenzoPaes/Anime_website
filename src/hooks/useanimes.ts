@@ -1,6 +1,5 @@
-// src/hooks/useAnimes.ts  — versão Supabase
+// src/hooks/useAnimes.ts  — busca via API (sem dependência direta do Supabase)
 import { useState, useEffect, useMemo } from "react";
-import { supabase } from "../lib/supabase";
 import { AnimeSeason } from "../types/anime";
 import { Episode } from "../types";
 
@@ -86,18 +85,18 @@ async function loadAnimes(): Promise<FlatAnime[]> {
   if (_cache) return _cache;
   if (_promise) return _promise;
 
-  _promise = supabase
-    .from("animes")
-    .select("data")
-    .order("created_at", { ascending: true })
-    .then(({ data, error }) => {
-      if (error) throw error;
-      _cache = (data ?? []).map((row: any) => flatten(row.data));
+  _promise = fetch("/api/animes")
+    .then(res => {
+      if (!res.ok) throw new Error(`status ${res.status}`);
+      return res.json();
+    })
+    .then((data: any[]) => {
+      _cache = data.map(flatten);
       _promise = null;
       return _cache!;
     })
     .catch((err) => {
-      console.error("[useAnimes] Erro Supabase:", err);
+      console.error("[useAnimes] Erro API:", err);
       _promise = null;
       _cache = [];
       return [];

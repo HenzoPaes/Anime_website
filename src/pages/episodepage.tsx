@@ -7,7 +7,7 @@ import { useWatched } from "../hooks/usewatchlist";
 import { useEpisodeHistory } from "../hooks/useepisodehistory";
 import EpisodePlayer from "../components/episodeplayer";
 import AudioBadge from "../components/audiobadge";
-import WatchlistButton from "../components/WatchlistButton";
+import WatchlistButton from "../components/watchlistbutton";
 import PageLoader from "../components/pageloader";
 
 const PAGE = {

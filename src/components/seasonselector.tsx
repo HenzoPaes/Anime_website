@@ -1,5 +1,5 @@
 import React from "react";
-import CustomDropdown, { DropdownOption } from "./CustomDropdown";
+import CustomDropdown, { DropdownOption } from "./customdropdown";
 
 export interface SeasonEntry {
   id: string;

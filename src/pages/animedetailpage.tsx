@@ -1,8 +1,8 @@
 import { useState, useMemo, useEffect } from "react";
-import { useAnimeById, useRelated, FlatAnime } from "../hooks/useAnimes";
+import { useAnimeById, useRelated, FlatAnime } from "../hooks/useanimes";
 import { AnimeSeason, AnimeType } from "../types/anime";
-import { CustomDropdown, DropdownOption } from "../components/CustomDropdown";
-import AnimeCard from "../components/AnimeCard";
+import { CustomDropdown, DropdownOption } from "../components/customdropdown";
+import AnimeCard from "../components/animecard";
 // Se for usado com React Router v6, podemos extrair o parâmetro diretamente
 import { useParams, useNavigate } from "react-router-dom";
 import WatchButton from "../components/WatchButton";

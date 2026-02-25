@@ -1,7 +1,7 @@
 // src/pages/HistoryPage.tsx
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
-import { useEpisodeHistory } from "../hooks/useEpisodeHistory";
+import { useEpisodeHistory } from "../hooks/useepisodehistory";
 
 const PAGE = { initial: { opacity: 0 }, animate: { opacity: 1 }, exit: { opacity: 0 } };
 

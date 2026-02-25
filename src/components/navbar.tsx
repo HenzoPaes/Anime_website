@@ -2,10 +2,10 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { useAnimes } from "../hooks/useAnimes";
-import { useNotifications } from "../hooks/useNotifications";
-import SearchBar from "./SearchBar";
-import NotificationBell from "./NotificationBell";
+import { useAnimes } from "../hooks/useanimes";
+import { useNotifications } from "../hooks/usenotifications";
+import SearchBar from "./searchbar";
+import NotificationBell from "./notficationbell";
 
 interface Props { theme: "dark" | "light"; toggleTheme: () => void; }
 

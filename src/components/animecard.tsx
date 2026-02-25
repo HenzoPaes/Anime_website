@@ -2,8 +2,8 @@
 import React, { memo, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FlatAnime } from "../hooks/useAnimes";
-import { useWatchlist, WATCHLIST_COLORS, WATCHLIST_LABELS } from "../hooks/useWatchlist";
+import { FlatAnime } from "../hooks/useanimes";
+import { useWatchlist, WATCHLIST_COLORS, WATCHLIST_LABELS } from "../hooks/usewatchlist";
 
 const STATUS_DOT: Record<string, string> = {
   "em-andamento": "bg-green-400",

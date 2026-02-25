@@ -1,7 +1,7 @@
 // src/components/NotificationBell.tsx
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { EpisodeNotification } from "../hooks/useNotifications";
+import { EpisodeNotification } from "../hooks/usenotifications";
 
 interface Props {
   notifications: EpisodeNotification[];

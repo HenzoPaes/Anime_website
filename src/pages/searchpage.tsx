@@ -2,12 +2,12 @@ import { useEffect, useState, useMemo, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import Fuse from "fuse.js";
-import { useAnimes } from "../hooks/useAnimes";
-import { useWatched } from "../hooks/useWatchlist";
-import AnimeCard from "../components/AnimeCard";
-import SkeletonCard from "../components/SkeletonCard";
+import { useAnimes } from "../hooks/useanimes";
+import { useWatched } from "../hooks/usewatchlist";
+import AnimeCard from "../components/animecard";
+import SkeletonCard from "../components/skeletoncard";
 import { Anime } from "../types";
-import CustomDropdown from "../components/CustomDropdown";
+import CustomDropdown from "../components/customdropdown";
 
 const FUSE_OPTS = {
   keys:[{name:"title",weight:0.5},{name:"alt_titles",weight:0.3},{name:"tags",weight:0.1},{name:"genres",weight:0.1}],

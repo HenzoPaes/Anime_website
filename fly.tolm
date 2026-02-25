@@ -1,0 +1,35 @@
+app = "animeverse"       # nome do seu app no Fly.io
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[build]
+  # Build é feito com Node.js padrão
+  image = "node:20-alpine"
+
+[env]
+  API_KEY = "dev-key"    # coloque sua chave se tiver
+  NODE_ENV = "production"
+  PORT = "3000"          # Fly.io recomenda usar porta 8080
+
+[experimental]
+  allowed_public_ports = [3000]
+  auto_rollback = true
+
+[[services]]
+  internal_port = 3000
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+
+  [[services.tcp_checks]]
+    interval = 10000
+    timeout = 2000
+    grace_period = "5s"
+    restart_limit = 0

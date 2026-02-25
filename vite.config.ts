@@ -8,6 +8,13 @@ export default defineConfig({
   },
   server: {
     host: true,
-    port: 3000,
+    port: 3000, // Seu site (React) vai abrir aqui!
+    proxy: {
+      "/api": {
+        target: "http://localhost:8080", // Sua API (Express) vai responder aqui!
+        changeOrigin: true,
+        // 👇 A LINHA 'rewrite' FOI APAGADA DAQUI! 
+      },
+    },
   },
 });

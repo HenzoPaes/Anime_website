@@ -1,4 +1,4 @@
-// src/hooks/useAnimes.ts  — busca via API (sem dependência direta do Supabase)
+// src/hooks/useAnimes.ts  — busca via API
 import { useState, useEffect, useMemo } from "react";
 import { AnimeSeason } from "../types/anime";
 import { Episode } from "../types";
@@ -182,5 +182,5 @@ export async function deleteAnime(id: string, apiKey: string) {
 
 export async function fetchBackups(_apiKey: string): Promise<string[]> { return []; }
 export async function restoreBackup(_name: string, _apiKey: string) {
-  return { success: false, message: "Backups não disponíveis com Supabase." };
+  return { success: false, message: "Backups não disponíveis." };
 }

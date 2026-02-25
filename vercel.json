@@ -5,11 +5,11 @@
   "rewrites": [
     {
       "source": "/api/animes/:id",
-      "destination": "/api/animes/[id]"
+      "destination": "/api/Animes/[id].js"
     },
     {
       "source": "/api/animes",
-      "destination": "/api/animes"
+      "destination": "/api/animes.js"
     },
     {
       "source": "/((?!api/).*)",

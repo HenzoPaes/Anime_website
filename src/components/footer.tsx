@@ -22,7 +22,7 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-white mb-3 text-xs uppercase tracking-wider">Navegar</h3>
             <ul className="space-y-2">
-              {[{to:"/",l:"Início"},{to:"/search",l:"Explorar"},{to:"/historico",l:"Histórico"}].map(({to,l})=>(
+              {[{to:"/",l:"Início"},{to:"/search",l:"Explorar"},{to:"/historico",l:"Histórico"}, { to: "/sugestao", l: "Sugestões" }].map(({to,l})=>(
                 <li key={to}><Link to={to} className="text-sm text-gray-500 hover:text-brand-400 transition-colors">{l}</Link></li>
               ))}
             </ul>

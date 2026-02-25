@@ -12,6 +12,7 @@ const AnimeDetailPage = lazy(() => import("./pages/animedetailpage"));
 const EpisodePage     = lazy(() => import("./pages/episodepage"));
 const SearchPage      = lazy(() => import("./pages/searchpage"));
 const HistoryPage     = lazy(() => import("./pages/historypage"));
+const SuggestionsPage = lazy(() => import("./pages/suggestionspage"));
 const AdminPage       = lazy(() => import("./pages/adminpage"));
 const NotFoundPage    = lazy(() => import("./pages/notfoundpage"));
 
@@ -32,6 +33,7 @@ export default function App() {
               <Route path="/anime/:id/ep/:epId" element={<EpisodePage />} />
               <Route path="/search"             element={<SearchPage />} />
               <Route path="/historico"          element={<HistoryPage />} />
+              <Route path="/sugestao"          element={<SuggestionsPage />} />
               <Route path="/kz82lmq9xq19zpan8d2ksl4v1mf93qxtq84zmn2r7plxk21b9as0mf3w2zn8dk6"
                 element={<AdminPage />} />
               <Route path="*"                   element={<NotFoundPage />} />

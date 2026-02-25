@@ -23,6 +23,7 @@ export default function Navbar({ theme, toggleTheme }: Props) {
     { to: "/", label: "Início" },
     { to: "/search", label: "Explorar" },
     { to: "/historico", label: "Histórico" },
+    { to: "/sugestao", label: "Sugestões" },
   ];
 
   return (

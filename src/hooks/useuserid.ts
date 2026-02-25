@@ -1,6 +1,6 @@
 // src/hooks/useUserId.ts
 // Gera um ID único para o usuário anônimo e persiste no localStorage.
-// Isso permite salvar watchlist e histórico no Supabase sem precisar de login.
+// Isso permite salvar watchlist e histórico localmente sem precisar de login.
 
 let _cached: string | null = null;
 

@@ -1,9 +1,12 @@
 // src/server/animes.ts
 import fs from "fs";
 import path from "path";
+import "dotenv/config";
+import express from "express";
+import cors from "cors"; // 👈 IMPORTANTE: Adicionado o CORS
 
-// apontar diretamente para a pasta usada pelas APIs estáticas
-const ANIMES_DIR = path.join(process.cwd(), "Api", "Animes");
+// Apontar diretamente para a pasta usada pelas APIs estáticas
+const ANIMES_DIR = path.join(process.cwd(), "api", "Animes");
 const BACKUP_DIR = path.join(process.cwd(), "backups");
 const API_KEY = process.env.API_KEY || "dev-key";
 
@@ -14,7 +17,6 @@ export function ensureDirs() {
 }
 
 export async function readAllAnimes() {
-  // apenas lê arquivos locais; nenhuma tentativa de baixar do GitHub
   try {
     const local = fs
       .readdirSync(ANIMES_DIR)
@@ -27,11 +29,11 @@ export async function readAllAnimes() {
           return null;
         }
       })
-      .filter(Boolean);
+      .filter(Boolean); // Remove os nulos caso algum JSON esteja quebrado
     return local;
   } catch (e) {
     console.error("Erro ao listar Animes/:", (e as any).message);
-    return [];
+    return[];
   }
 }
 
@@ -45,13 +47,12 @@ export async function readAnime(id: string) {
       return null;
     }
   }
-  return null; // não faz download remoto
+  return null;
 }
 
 export function writeAnime(anime: any) {
   const id = anime.id;
   const p = path.join(ANIMES_DIR, `${id}.json`);
-  // Backup antes de sobrescrever
   if (fs.existsSync(p)) {
     const ts = new Date().toISOString().replace(/[:.]/g, "-");
     fs.copyFileSync(p, path.join(BACKUP_DIR, `backup_${id}_${ts}.json`));
@@ -80,7 +81,7 @@ export function fetchBackupsSync(): string[] {
         .readdirSync(BACKUP_DIR)
         .filter(f => f.endsWith(".json"))
         .reverse()
-    : [];
+    :[];
 }
 
 export function restoreBackup(name: string) {
@@ -97,3 +98,82 @@ export const config = {
   BACKUP_DIR,
   API_KEY,
 };
+
+// ── Servidor API ─────────────────────────────────────────────────────
+
+export async function startServer() {
+  const app = express();
+  const PORT = 8080;
+
+  // 👈 IMPORTANTE: Permite que o seu React (localhost:5173 ou outro) leia a API
+  app.use(cors()); 
+  
+  app.use(express.json({ limit: "20mb" }));
+
+  console.log("ANIMES_DIR:", config.ANIMES_DIR);
+
+  ensureDirs();
+  const loadedAnimes = await readAllAnimes();
+  console.log("Existe pasta?", fs.existsSync(config.ANIMES_DIR));
+  console.log("Arquivos:", loadedAnimes.length, "carregados");
+
+  function auth(req: any, res: any, next: any) {
+    const apiKey = req.headers["x-api-key"];
+    if (!apiKey || !checkAuth(apiKey)) {
+      return res.status(401).json({ error: "Unauthorized" });
+    }
+    next();
+  }
+
+  app.get("/api/animes", async (_req, res) => {
+    const data = await readAllAnimes();
+    res.json(data);
+  });
+
+  app.get("/api/animes/:id", async (req, res) => {
+    const anime = await readAnime(req.params.id);
+    if (!anime) return res.status(404).json({ error: "Not found" });
+    res.json(anime);
+  });
+
+  app.post("/api/animes", auth, (req, res) => {
+    const anime = req.body;
+    if (!anime?.id || !anime?.title)
+      return res.status(400).json({ error: "id e title são obrigatórios" });
+    writeAnime(anime);
+    res.json({
+      success: true,
+      message: `${anime.title} salvo em Animes/${anime.id}.json!`,
+      anime,
+    });
+  });
+
+  app.delete("/api/animes/:id", auth, (req, res) => {
+    const ok = removeAnime(req.params.id);
+    if (!ok) return res.status(404).json({ error: "Not found" });
+    res.json({ success: true, message: "Removido! Backup salvo." });
+  });
+
+  app.get("/api/backups", auth, (_req, res) => {
+    const files = fetchBackupsSync();
+    res.json(files);
+  });
+
+  app.post("/api/backups/:name/restore", auth, (req, res) => {
+    try {
+      const data = restoreBackup(req.params.name);
+      res.json({ success: true, message: `Restaurado: ${req.params.name}` });
+    } catch (err) {
+      res.status(404).json({ error: (err as any).message });
+    }
+  });
+
+  app.listen(PORT, () => {
+    console.log(`\n🚀 API em http://localhost:${PORT}`);
+    console.log(`📁 Animes carregados de: ${config.ANIMES_DIR}`);
+    console.log(`🔑 API_KEY: ${config.API_KEY === "dev-key" ? "dev-key (mude no .env!)" : "✓ definida"}\n`);
+  });
+}
+
+// Inicia o servidor automaticamente
+startServer();

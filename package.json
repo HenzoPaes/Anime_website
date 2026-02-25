@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.97.0",
     "an-anime-scraper": "^2.0.0",
     "anime-vostfr": "^1.2.3",
     "cors": "^2.8.5",

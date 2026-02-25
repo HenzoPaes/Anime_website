@@ -5,7 +5,7 @@ import { CustomDropdown, DropdownOption } from "../components/customdropdown";
 import AnimeCard from "../components/animecard";
 // Se for usado com React Router v6, podemos extrair o parâmetro diretamente
 import { useParams, useNavigate } from "react-router-dom";
-import WatchButton from "../components/WatchButton";
+import WatchButton from "../components/watchbutton";
 import { motion, AnimatePresence } from "framer-motion";
 
 // ── Adapte conforme seu router ──────────────────────────────────────────────

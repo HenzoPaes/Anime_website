@@ -1,22 +1,21 @@
-// src/hooks/useAnimes.ts
-// ⚠️  NÃO importa animes.json — lê da API /api/animes que lê da pasta Animes/
+// src/hooks/useAnimes.ts  — versão Supabase
 import { useState, useEffect, useMemo } from "react";
-import { Anime, AnimeSeason } from "../types/anime";
+import { supabase } from "../lib/supabase";
+import { AnimeSeason } from "../types/anime";
 import { Episode } from "../types";
 
-// ─── FlatAnime ────────────────────────────────────────────────────────────────
 export interface FlatAnime {
-  id:           string;
-  title:        string;
-  rating:       number;
-  audioType:    "legendado" | "dublado" | "dual-audio";
-  status:       "em-andamento" | "completo" | "pausado";
-  genres:       string[];
-  episodeCount: number;
-  banner:       string;
-  cover:        string;
-  synopsis:     string;
-  year:         number;
+  id:                   string;
+  title:                string;
+  rating:               number;
+  audioType:            "legendado" | "dublado" | "dual-audio";
+  status:               "em-andamento" | "completo" | "pausado";
+  genres:               string[];
+  episodeCount:         number;
+  banner:               string;
+  cover:                string;
+  synopsis:             string;
+  year:                 number;
   titleRomaji:          string;
   titleJapanese:        string;
   studio:               string;
@@ -79,34 +78,38 @@ export function flatten(raw: any): FlatAnime {
   };
 }
 
-// ─── Cache em memória ────────────────────────────────────────────────────────
+// Cache em memória
 let _cache: FlatAnime[] | null = null;
 let _promise: Promise<FlatAnime[]> | null = null;
 
-function loadAnimes(): Promise<FlatAnime[]> {
-  if (_cache) return Promise.resolve(_cache);
+async function loadAnimes(): Promise<FlatAnime[]> {
+  if (_cache) return _cache;
   if (_promise) return _promise;
-  _promise = fetch("/api/animes")
-    .then(r => r.json())
-    .then((data: any[]) => {
-      _cache = data.map(flatten);
+
+  _promise = supabase
+    .from("animes")
+    .select("data")
+    .order("created_at", { ascending: true })
+    .then(({ data, error }) => {
+      if (error) throw error;
+      _cache = (data ?? []).map((row: any) => flatten(row.data));
       _promise = null;
-      return _cache;
+      return _cache!;
     })
-    .catch(err => {
-      console.error("[useAnimes] Erro ao carregar:", err);
+    .catch((err) => {
+      console.error("[useAnimes] Erro Supabase:", err);
       _promise = null;
       _cache = [];
       return [];
     });
+
   return _promise;
 }
 
-// ─── Hook principal ───────────────────────────────────────────────────────────
 export function useAnimes() {
   const [animes, setAnimes] = useState<FlatAnime[]>(_cache ?? []);
   const [loading, setLoading] = useState(_cache === null);
-  const [error,   setError  ] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     if (_cache !== null) { setAnimes(_cache); setLoading(false); return; }
@@ -117,8 +120,7 @@ export function useAnimes() {
   }, []);
 
   const refetch = async () => {
-    _cache = null;
-    _promise = null;
+    _cache = null; _promise = null;
     setLoading(true);
     const data = await loadAnimes();
     setAnimes(data);
@@ -128,8 +130,7 @@ export function useAnimes() {
   return { animes, loading, error, refetch };
 }
 
-// ─── Hooks auxiliares ─────────────────────────────────────────────────────────
-export function useAnimeById(id: string): FlatAnime | undefined {
+export function useAnimeById(id: string) {
   const { animes } = useAnimes();
   return useMemo(() => animes.find(a => a.id === id), [animes, id]);
 }
@@ -160,7 +161,7 @@ export function useGenres(): string[] {
   }, [animes]);
 }
 
-// ─── Funções admin ────────────────────────────────────────────────────────────
+// Admin: salvar/deletar passam pela serverless function (usa service key no backend)
 export async function saveAnime(anime: any, apiKey: string) {
   const res = await fetch("/api/animes", {
     method: "POST",
@@ -180,16 +181,7 @@ export async function deleteAnime(id: string, apiKey: string) {
   return res.json();
 }
 
-export async function fetchBackups(apiKey: string): Promise<string[]> {
-  const res = await fetch("/api/backups", { headers: { "x-api-key": apiKey } });
-  return res.json();
-}
-
-export async function restoreBackup(name: string, apiKey: string) {
-  const res = await fetch(`/api/backups/${name}/restore`, {
-    method: "POST",
-    headers: { "x-api-key": apiKey },
-  });
-  _cache = null; _promise = null;
-  return res.json();
+export async function fetchBackups(_apiKey: string): Promise<string[]> { return []; }
+export async function restoreBackup(_name: string, _apiKey: string) {
+  return { success: false, message: "Backups não disponíveis com Supabase." };
 }

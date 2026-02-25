@@ -1,0 +1,19 @@
+{
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/api/animes/:id",
+      "destination": "/api/animes/[id]"
+    },
+    {
+      "source": "/api/animes",
+      "destination": "/api/animes"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ import { useEpisodeHistory } from "../hooks/useEpisodeHistory";
 import EpisodePlayer from "../components/EpisodePlayer";
 import AudioBadge from "../components/AudioBadge";
 import WatchlistButton from "../components/WatchlistButton";
-import PageLoader from "../components/pageloader";
+import PageLoader from "../components/PageLoader";
 
 const PAGE = {
   initial: { opacity: 0, x: 24 },

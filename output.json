@@ -13,7 +13,7 @@
     ],
     "malId": 31964,
     "coverImage": "https://cdn.myanimelist.net/images/anime/10/78745l.jpg",
-    "bannerImage": "https://cdn.myanimelist.net/images/anime/10/78745l.jpg",
+    "bannerImage": "https://wallpaperaccess.com/full/693425.jpg",
     "seasons": [
       {
         "season": 1,
@@ -2074,6 +2074,8 @@
       "Romance",
       "Sci-Fi"
     ],
+    "recommended": true,
+    "recommendationReason": "Um dos animes mais aguardados do ano, com animações espetaculares da MAPPA. | ⭐ Favorito do editor.",
     "studio": "A-1 Pictures",
     "tags": [
       "drama",
@@ -2082,7 +2084,7 @@
     ],
     "malId": 35849,
     "coverImage": "https://cdn.myanimelist.net/images/anime/1614/90408l.jpg",
-    "bannerImage": "https://cdn.myanimelist.net/images/anime/1614/90408l.jpg",
+    "bannerImage": "https://wallpaperaccess.com/full/3308270.jpg",
     "seasons": [
       {
         "season": 1,
@@ -3212,7 +3214,7 @@
     ],
     "malId": 50346,
     "coverImage": "https://animesonline.io/wp-content/uploads/2025/04/1745340988-7094-123711l.jpg",
-    "bannerImage": "https://animesonline.io/wp-content/uploads/2025/04/1745340988-7094-123711l.jpg",
+    "bannerImage": "https://wallpaperaccess.com/full/8405363.png",
     "seasons": [
       {
         "season": 1,
@@ -3501,6 +3503,169 @@
             "season": "2",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/XJM7V2G5HETAW2d\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "anidrive.click"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu",
+    "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e",
+    "titleRomaji": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e",
+    "titleJapanese": "ようこそ実力至上主義の教室へ",
+    "genre": [
+      "Drama",
+      "Suspense"
+    ],
+    "studio": "Lerche",
+    "malId": 35507,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/5/86830l.jpg",
+    "bannerImage": "https://wallpaperaccess.com/full/2044032.jpg",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2017,
+        "episodes": 12,
+        "currentEpisode": 12,
+        "status": "finished",
+        "score": 7.83,
+        "synopsis": "On the surface, Koudo Ikusei Senior High School is a utopia. The students enjoy an unparalleled amount of freedom, and it is ranked highly in Japan. However, the reality is less than ideal. Four classes, A through D, are ranked in order of merit, and only the top classes receive favorable treatment.\n\nKiyotaka Ayanokouji is a student of Class D, where the school dumps its worst. There he meets the unsociable Suzune Horikita, who believes she was placed in Class D by mistake and desires to climb all the way to Class A, and the seemingly amicable class idol Kikyou Kushida, whose aim is to make as many friends as possible.\n\nWhile class membership is permanent, class rankings are not; students in lower ranked classes can rise in rankings if they score better than those in the top ones. Additionally, in Class D, there are no bars on what methods can be used to get ahead. In this cutthroat school, can they prevail against the odds and reach the top?\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": false,
+            "episodesAvailable": 12
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 12
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-s1-ep1",
+            "number": 1,
+            "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e - T1 Episódio 1",
+            "season": "1",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/fn0tOX8lvGiMcpN\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "anidrive.click"
+          },
+          {
+            "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-s1-ep2",
+            "number": 2,
+            "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e - T1 Episódio 2",
+            "season": "1",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/uFzZLgmRBAlyhvS\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "anidrive.click"
+          },
+          {
+            "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-s1-ep3",
+            "number": 3,
+            "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e - T1 Episódio 3",
+            "season": "1",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/eZgiwXfi4VHCzIf\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "anidrive.click"
+          },
+          {
+            "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-s1-ep4",
+            "number": 4,
+            "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e - T1 Episódio 4",
+            "season": "1",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/JDiNfhNNTf1JQM5\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "anidrive.click"
+          },
+          {
+            "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-s1-ep5",
+            "number": 5,
+            "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e - T1 Episódio 5",
+            "season": "1",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/9qkyurV3gS9z7kR\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "anidrive.click"
+          },
+          {
+            "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-s1-ep6",
+            "number": 6,
+            "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e - T1 Episódio 6",
+            "season": "1",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/TMgc2KHQGuiEZ9S\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "anidrive.click"
+          },
+          {
+            "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-s1-ep7",
+            "number": 7,
+            "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e - T1 Episódio 7",
+            "season": "1",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/VdL9hrJq52rVQdU\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "anidrive.click"
+          },
+          {
+            "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-s1-ep8",
+            "number": 8,
+            "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e - T1 Episódio 8",
+            "season": "1",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/FICacPa13vOYT0w\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "anidrive.click"
+          },
+          {
+            "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-s1-ep9",
+            "number": 9,
+            "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e - T1 Episódio 9",
+            "season": "1",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/1kVKkdKdMI0onUb\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "anidrive.click"
+          },
+          {
+            "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-s1-ep10",
+            "number": 10,
+            "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e - T1 Episódio 10",
+            "season": "1",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/1bVqzSiRo4LaMEj\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "anidrive.click"
+          },
+          {
+            "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-s1-ep11",
+            "number": 11,
+            "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e - T1 Episódio 11",
+            "season": "1",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/DaYEqi9ge6YMAJN\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "anidrive.click"
+          },
+          {
+            "id": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-s1-ep12",
+            "number": 12,
+            "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e - T1 Episódio 12",
+            "season": "1",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/HejLPRd7y4dK9Yx\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "anidrive.click"
           }

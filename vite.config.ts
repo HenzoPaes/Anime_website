@@ -1,25 +1,26 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
-  plugins: [react()],
-  build: {
-    outDir: "dist",
-  },
-  server: {
-    host: true,
-    port: 3000, // Seu site (React) vai abrir aqui!
-    proxy: {
-      "/api": {
-        target: "http://localhost:8080", // Sua API (Express) vai responder aqui!
-        changeOrigin: true,
-        // 👇 A LINHA 'rewrite' FOI APAGADA DAQUI! 
-      },
-    },
-    allowedHosts: [
-      "animeverse-cket.onrender.com",
-      "localhost",
-      "127.0.0.1"
-    ]
-  },
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: "autoUpdate",
+      includeAssets: ["favicon.svg", "Logo.png"],
+      manifest: {
+        name: "AnimeVerse Official",
+        short_name: "AnimeVerse",
+        description: "Assista seus animes licenciados favoritos",
+        theme_color: "#0a0a0a",
+        background_color: "#0a0a0a",
+        display: "standalone",
+        icons: [
+          { src: "Logo.png", sizes: "192x192", type: "image/png" },
+          { src: "Logo.png", sizes: "512x512", type: "image/png", purpose: "any maskable" }
+        ]
+      }
+    })
+  ],
+  // ... resto do seu server e proxy
 });

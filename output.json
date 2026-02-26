@@ -3057,6 +3057,7 @@
             "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 6",
             "season": "3",
             "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ekh3l8btzdzgq8c\" frameborder=\"0\" allowfullscreen></iframe>",
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/D5kNScbTNhy0g78\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "anidrive.click"
@@ -3070,6 +3071,15 @@
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/KwzDHIKHM91Wetc\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "anidrive.click"
+          },
+          {
+            "id": "jujutsu-kaisen-shimetsu-kaiyuu-8",
+            "number": 8,
+            "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - Episódio 8",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/qbjtsittgkzdfjo\" frameborder=\"0\" allowfullscreen></iframe>"
+            }
           }
         ]
       }

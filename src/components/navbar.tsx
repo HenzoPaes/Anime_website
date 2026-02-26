@@ -19,11 +19,12 @@ export default function Navbar({ theme, toggleTheme }: Props) {
   }));
   const { notifications, totalNew, dismissNotification, dismissAll } = useNotifications(notifAnimes);
 
-  const links = [
+const links = [
     { to: "/", label: "Início" },
     { to: "/search", label: "Explorar" },
     { to: "/historico", label: "Histórico" },
     { to: "/sugestao", label: "Sugestões" },
+    { to: "/download", label: "Download", isButton: true },
   ];
 
   return (
@@ -48,12 +49,19 @@ export default function Navbar({ theme, toggleTheme }: Props) {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-5">
+<nav className="hidden md:flex items-center gap-5">
           {links.map(l => (
-            <Link key={l.to} to={l.to}
-              className={`text-sm font-semibold transition-all hover:text-brand-400 ${location.pathname === l.to ? "text-brand-400" : "text-gray-400"}`}>
-              {l.label}
-            </Link>
+            l.isButton ? (
+              <Link key={l.to} to={l.to}
+                className="text-sm font-semibold px-4 py-2 rounded-lg bg-brand-500 text-white hover:bg-brand-600 transition-all shadow-lg shadow-brand-500/30">
+                {l.label}
+              </Link>
+            ) : (
+              <Link key={l.to} to={l.to}
+                className={`text-sm font-semibold transition-all hover:text-brand-400 ${location.pathname === l.to ? "text-brand-400" : "text-gray-400"}`}>
+                {l.label}
+              </Link>
+            )
           ))}
         </nav>
 
@@ -95,10 +103,15 @@ export default function Navbar({ theme, toggleTheme }: Props) {
           <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }}
             className="md:hidden border-t border-white/5 overflow-hidden">
             <div className="px-4 py-3 space-y-2">
-              <SearchBar animes={animes} />
+<SearchBar animes={animes} />
               {links.map(l => (
-                <Link key={l.to} to={l.to} onClick={() => setMenuOpen(false)}
-                  className="block py-2 text-gray-300 hover:text-brand-400 font-semibold transition-colors">{l.label}</Link>
+                l.isButton ? (
+                  <Link key={l.to} to={l.to} onClick={() => setMenuOpen(false)}
+                    className="block py-2 text-brand-400 font-semibold transition-colors">{l.label}</Link>
+                ) : (
+                  <Link key={l.to} to={l.to} onClick={() => setMenuOpen(false)}
+                    className="block py-2 text-gray-300 hover:text-brand-400 font-semibold transition-colors">{l.label}</Link>
+                )
               ))}
             </div>
           </motion.div>

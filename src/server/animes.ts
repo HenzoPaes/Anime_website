@@ -4,7 +4,7 @@ import cors from "cors";
 import "dotenv/config";
 
 // URL para o arquivo JSON com os dados dos animes
-const ANIME_DATA_URL = "https://raw.githubusercontent.com/HenzoPaes/Anime_website/refs/heads/main/output.json?token=GHSAT0AAAAAADUWSGS6BY7TPP5C4YJGOGBU2NAM5LQ";
+const ANIME_DATA_URL = "https://raw.githubusercontent.com/HenzoPaes/Anime_website/refs/heads/main/output.json?token=GHSAT0AAAAAADUWSGS6UBMKKL3WIP5BWXJW2NASJOA";
 
 // Cache em memória para os dados dos animes
 let animesCache: any[] = [];

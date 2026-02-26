@@ -134,8 +134,8 @@ export default function DownloadPage() {
               DISPONÍVEL PARA DOWNLOAD
             </motion.div>
             
-            <motion.h1 variants={ITEM_UP} className="text-5xl md:text-7xl font-display font-black mb-6 leading-[0.9] tracking-tighter">
-              SEUS ANIMES <br /> <span className="text-red-600 drop-shadow-[0_0_30px_rgba(220,38,38,0.3)]">MUITO MAIS</span> <br /> LEGAIS!
+            <motion.h1 variants={ITEM_UP} className="text-5xl md:text-8xl font-display font-black mb-10 leading-[0.9]">
+              SEUS ANIMES <br /> <span className="text-red-600 drop-shadow-[0_0_30px_rgba(220,38,38,0.3)]">EM UM LUGAR</span> <br /> SÓ!
             </motion.h1>
             
             <motion.p variants={ITEM_UP} className="text-gray-400 text-lg mb-8 max-w-md leading-relaxed">
@@ -167,7 +167,7 @@ export default function DownloadPage() {
           >
             <div className="absolute inset-0 bg-red-600/20 blur-[100px] rounded-full animate-pulse" />
             <img 
-              src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1000&auto=format&fit=crop" 
+              src="https://github.com/HenzoPaes/Anime_website/blob/main/Print.png?raw=true" 
               alt="App Preview" 
               className="relative rounded-[2rem] border border-white/10 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-700"
             />

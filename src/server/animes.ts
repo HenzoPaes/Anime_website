@@ -3,8 +3,7 @@ import fs from "fs";
 import path from "path";
 import "dotenv/config";
 import express from "express";
-import cors from "cors"; // 👈 IMPORTANTE: Adicionado o CORS
-
+import cors from "cors";
 
 // Apontar diretamente para a pasta usada pelas APIs estáticas
 const ANIMES_DIR = path.join(process.cwd(), "Api", "Animes");
@@ -18,10 +17,6 @@ export function ensureDirs() {
 }
 
 export async function readAllAnimes() {
-
-
-
-
   try {
     const local = fs
       .readdirSync(ANIMES_DIR)
@@ -34,11 +29,11 @@ export async function readAllAnimes() {
           return null;
         }
       })
-      .filter(Boolean); // Remove os nulos caso algum JSON esteja quebrado
+      .filter(Boolean);
     return local;
   } catch (e) {
     console.error("Erro ao listar Animes/:", (e as any).message);
-    return[];
+    return [];
   }
 }
 
@@ -51,11 +46,6 @@ export async function readAnime(id: string) {
       console.error(`Erro ao parsear ${id}.json:`, (e as any).message);
       return null;
     }
-
-
-
-
-
   }
   return null;
 }
@@ -91,7 +81,7 @@ export function fetchBackupsSync(): string[] {
         .readdirSync(BACKUP_DIR)
         .filter(f => f.endsWith(".json"))
         .reverse()
-    :[];
+    : [];
 }
 
 export function restoreBackup(name: string) {
@@ -101,8 +91,6 @@ export function restoreBackup(name: string) {
   const data = JSON.parse(fs.readFileSync(src, "utf-8"));
   writeAnime(data);
   return data;
-
-
 }
 
 export const config = {
@@ -115,16 +103,14 @@ export const config = {
 
 export async function startServer() {
   const app = express();
-  const PORT = 8080;
+  // Use PORT from environment (Render sets this to 3000)
+  const PORT = process.env.PORT || 8080;
 
-  // 👈 IMPORTANTE: Permite que o seu React (localhost:5173 ou outro) leia a API
-  app.use(cors()); 
-
+  // Permite que o frontend akses a API
+  app.use(cors());
   app.use(express.json({ limit: "20mb" }));
 
-
   console.log("ANIMES_DIR:", config.ANIMES_DIR);
-
 
   ensureDirs();
   const loadedAnimes = await readAllAnimes();
@@ -139,12 +125,11 @@ export async function startServer() {
     next();
   }
 
-
+  // API Routes
   app.get("/api/animes", async (_req, res) => {
     const data = await readAllAnimes();
     res.json(data);
   });
-
 
   app.get("/api/animes/:id", async (req, res) => {
     const anime = await readAnime(req.params.id);
@@ -182,7 +167,15 @@ export async function startServer() {
     } catch (err) {
       res.status(404).json({ error: (err as any).message });
     }
+  });
 
+  // Serve static files from dist folder (frontend)
+  const distPath = path.resolve(process.cwd(), "dist");
+  app.use(express.static(distPath));
+
+  // SPA fallback - serve index.html for all non-API routes
+  app.get("*", (_req, res) => {
+    res.sendFile(path.join(distPath, "index.html"));
   });
 
   app.listen(PORT, () => {

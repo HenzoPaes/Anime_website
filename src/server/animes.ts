@@ -2,6 +2,12 @@
 import express from "express";
 import cors from "cors";
 import "dotenv/config";
+import path from "path";
+import { fileURLToPath } from "url";
+
+// Get __dirname equivalent in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // URL para o arquivo JSON com os dados dos animes
 const ANIME_DATA_URL = "https://raw.githubusercontent.com/HenzoPaes/Anime_website/refs/heads/main/output.json?token=GHSAT0AAAAAADUWSGS6UBMKKL3WIP5BWXJW2NASJOA";
@@ -55,7 +61,7 @@ export async function startServer() {
   setInterval(fetchAnimes, 30000);
 
   const app = express();
-  const PORT = process.env.PORT || 8080;
+  const PORT = 8080;
 
   // Permite que o frontend acesse a API
   app.use(cors());
@@ -74,6 +80,15 @@ export async function startServer() {
       return res.status(404).json({ error: "Anime não encontrado" });
     }
     res.json(anime);
+  });
+
+  // Use process.cwd() which points to project root - works in both dev and production
+  const distPath = path.resolve(process.cwd(), "dist");
+  app.use(express.static(distPath));
+
+  // SPA fallback - serve index.html for all non-API routes
+  app.get("*", (_req, res) => {
+    res.sendFile(path.join(distPath, "index.html"));
   });
 
   app.listen(PORT, () => {

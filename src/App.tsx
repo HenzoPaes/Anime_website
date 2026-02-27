@@ -12,6 +12,7 @@ import { usePWACheck } from "./hooks/usePWACheck";
 // pages (lazy)
 const HomePage         = lazy(() => import("./pages/homepage"));
 const AnimeDetailPage  = lazy(() => import("./pages/animedetailpage"));
+const MovieDetailPage  = lazy(() => import("./pages/moviedetailpage"));
 const EpisodePage      = lazy(() => import("./pages/episodepage"));
 const SearchPage       = lazy(() => import("./pages/searchpage"));
 const HistoryPage      = lazy(() => import("./pages/historypage"));
@@ -129,12 +130,13 @@ export default function App() {
         <AnimatePresence mode="wait" initial={false}>
           <Suspense fallback={<PageLoader />}>
             <Routes location={location} key={location.pathname}>
-              <Route path="/"                   element={showFullApp ? <HomePage /> : <DownloadPage />} />
-              <Route path="/anime/:id"          element={showFullApp ? <AnimeDetailPage /> : <DownloadPage />} />
-              <Route path="/anime/:id/ep/:epId" element={showFullApp ? <EpisodePage /> : <DownloadPage />} />
-              <Route path="/search"             element={showFullApp ? <SearchPage /> : <DownloadPage />} />
-              <Route path="/historico"          element={showFullApp ? <HistoryPage /> : <DownloadPage />} />
-              <Route path="/sugestao"           element={showFullApp ? <SuggestionsPage /> : <DownloadPage />} />
+              <Route path="/"                         element={showFullApp ? <HomePage /> : <DownloadPage />} />
+              <Route path="/anime/:id"                element={showFullApp ? <AnimeDetailPage /> : <DownloadPage />} />
+              <Route path="/anime/:id/filme/:season?" element={showFullApp ? <MovieDetailPage /> : <DownloadPage />} />
+              <Route path="/anime/:id/ep/:epId"       element={showFullApp ? <EpisodePage /> : <DownloadPage />} />
+              <Route path="/search"                   element={showFullApp ? <SearchPage /> : <DownloadPage />} />
+              <Route path="/historico"                element={showFullApp ? <HistoryPage /> : <DownloadPage />} />
+              <Route path="/sugestao"                 element={showFullApp ? <SuggestionsPage /> : <DownloadPage />} />
               <Route path="/kz82lmq9xq19zpan8d2ksl4v1mf93qxtq84zmn2r7plxk21b9as0mf3w2zn8dk6"
                 element={showFullApp ? <AdminPage /> : <DownloadPage />} />
               <Route path="/download"           element={<DownloadPage />} />

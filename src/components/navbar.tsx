@@ -31,7 +31,7 @@ const links = [
     <motion.header
       initial={{ y: -70 }} animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 280, damping: 28 }}
-      className="sticky top-0 left-0 w-full z-50 backdrop-blur-xl bg-dark-900/70 border-b border-white/5"
+      className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-dark-900/70 border-b border-white/5"
     >
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
         {/* Logo */}

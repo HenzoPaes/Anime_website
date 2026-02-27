@@ -1,5 +1,5 @@
 {
-  "id": "boku-no-hero-academia",
+  "id": "My-Hero-Academia",
   "title": "Boku no Hero Academia",
   "titleRomaji": "Boku no Hero Academia",
   "titleJapanese": "僕のヒーローアカデミア",
@@ -10,6 +10,6 @@
   "recommended": true,
   "malId": 31964,
   "coverImage": "https://cdn.myanimelist.net/images/anime/10/78745l.jpg",
-  "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GYE5MPJ0R-backdrop_wide",
+  "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/G6NQ5DWZ6-backdrop_wide",
   "seasons": []
 }

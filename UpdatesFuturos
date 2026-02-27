@@ -1,6 +1,6 @@
-Adicionar uma faixa verde quando o episodio for assistido!: X
-Botão: Assistir do Inicio ter funcionalidade: X
-Minha lista ter butão: X
+Adicionar uma faixa verde quando o episodio for assistido!: v
+Botão: Assistir do Inicio ter funcionalidade: v
+Minha lista ter butão: v
 animes colocados p/ atualização: 3/15
 {
   darling in the franxx,
@@ -9,3 +9,7 @@ animes colocados p/ atualização: 3/15
 }
 
 Mudar Logo: V
+
+lista de animes para atualizar:
+  - Jujutsu Kaisen - Toda quinta as 16:00
+  - Seihantai na Kimi to Boku - Toda domingo as 16:00?

@@ -113,7 +113,7 @@ export default function EpisodePage() {
       </AnimatePresence>
 
       <motion.div variants={PAGE} initial="initial" animate="animate" exit="exit"
-        className={`max-w-7xl mx-auto px-4 py-6 ${cinemaMode ? "relative z-50" : ""}`}>
+        className={`max-w-7xl mx-auto px-4 pt-16 pb-6 ${cinemaMode ? "relative z-50" : ""}`}>
 
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-gray-500 mb-5 flex-wrap">

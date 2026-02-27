@@ -3,7 +3,7 @@ import re
 import time
 import json
 import requests
-from urllib.parse import urlparse, urljoin
+from urllib.parse import urlparse, urljoin, quote_plus
 from playwright.sync_api import sync_playwright
 
 # Regex para detectar links de vídeo e IDs numéricos
@@ -25,6 +25,103 @@ def fetch_mal_info(query):
     except Exception as e:
         print(f"[MAL] Erro ao buscar dados na API Jikan: {e}")
     return None
+
+
+CR_KEYART_RE = re.compile(r'/keyart/([A-Z0-9]+)-', re.IGNORECASE)
+
+def build_crunchyroll_banner_url(keyart_id, width=1920, quality=85, blur=0, variant="backdrop_wide"):
+    """
+    Monta a URL direta da CDN da Crunchyroll a partir do keyart ID.
+
+    Parâmetros configuráveis:
+      - width   : largura em px          (padrão 1920)
+      - quality : qualidade 0-100        (padrão 85)
+      - blur    : desfoque 0-100         (padrão 0  = nítido)
+      - variant : sufixo do keyart       (padrão 'backdrop_wide')
+                  outras opções: 'backdrop_tall', 'portrait', etc.
+
+    Exemplo de URL gerada:
+      https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,
+      quality=85,width=1920,blur=0/keyart/GT00365624-backdrop_wide
+    """
+    return (
+        f"https://imgsrv.crunchyroll.com/cdn-cgi/image/"
+        f"fit=cover,format=auto,quality={quality},width={width},blur={blur}"
+        f"/keyart/{keyart_id}-{variant}"
+    )
+
+def fetch_crunchyroll_banner(anime_name, context, width=1920, quality=85, blur=0, variant="backdrop_wide"):
+    """
+    Busca o banner do anime na Crunchyroll extraindo o keyart ID da página
+    e montando a URL direta da CDN com os parâmetros desejados.
+
+    Retorna a URL do banner como string, ou None se não encontrar.
+    """
+    print(f"\n[CR] Buscando banner da Crunchyroll para '{anime_name}'...")
+    search_url = f"https://www.crunchyroll.com/pt-br/search?q={quote_plus(anime_name)}"
+    page = context.new_page()
+    try:
+        page.set_extra_http_headers({
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        })
+
+        # 1) Busca na Crunchyroll
+        page.goto(search_url, wait_until="domcontentloaded", timeout=20000)
+        try:
+            page.wait_for_selector("a[href*='/series/']", timeout=10000)
+        except Exception:
+            print("[CR] Nenhum resultado de série encontrado na busca.")
+            return None
+
+        # 2) Acessa a página da série
+        series_href = page.locator("a[href*='/series/']").first.get_attribute("href")
+        if not series_href:
+            print("[CR] href da série não encontrado.")
+            return None
+        series_url = urljoin("https://www.crunchyroll.com", series_href)
+        print(f"[CR] Acessando: {series_url}")
+        page.goto(series_url, wait_until="domcontentloaded", timeout=20000)
+
+        # 3) Extrai o keyart ID de qualquer srcset ou src que contenha /keyart/
+        try:
+            page.wait_for_selector("source[srcset*='keyart']", timeout=8000)
+        except Exception:
+            pass  # tenta mesmo assim
+
+        keyart_id = None
+
+        # Tenta primeiro nos srcset dos <source>
+        for source in page.locator("source[srcset*='keyart']").all():
+            srcset = source.get_attribute("srcset") or ""
+            m = CR_KEYART_RE.search(srcset)
+            if m:
+                keyart_id = m.group(1)
+                break
+
+        # Fallback: procura em qualquer atributo src/srcset da página inteira
+        if not keyart_id:
+            html = page.content()
+            m = CR_KEYART_RE.search(html)
+            if m:
+                keyart_id = m.group(1)
+
+        if not keyart_id:
+            print("[CR] keyart ID não encontrado na página.")
+            return None
+
+        banner_url = build_crunchyroll_banner_url(keyart_id, width=width, quality=quality, blur=blur, variant=variant)
+        print(f"[CR] Banner montado (ID={keyart_id}): {banner_url}")
+        return banner_url
+
+    except Exception as e:
+        print(f"[CR] Erro ao buscar banner: {e}")
+        return None
+    finally:
+        try:
+            page.close()
+        except Exception:
+            pass
+
 
 def extract_anidrive_iframe(page):
     try:
@@ -71,7 +168,6 @@ def extract_animesonlinecc_iframes(page):
 def extract_next_episode_from_animesonline(page, anime_name=None):
     """
     Procura pelo link do 'Proximo episodio' entre os <div class="item">.
-    Se anime_name for fornecido, confere se o title do <a> contém esse nome (ajuda a diferenciar itens semelhantes).
     """
     try:
         items = page.locator("div.item a")
@@ -89,7 +185,6 @@ def extract_next_episode_from_animesonline(page, anime_name=None):
                         return urljoin(page.url, href) if href else None
                 else:
                     return urljoin(page.url, href) if href else None
-        # fallback: procurar qualquer <a> com span 'Proximo episodio' (sem div.item)
         anchors = page.locator("a:has-text('Proximo episodio')")
         if anchors.count() > 0:
             href = anchors.first.get_attribute("href")
@@ -97,7 +192,6 @@ def extract_next_episode_from_animesonline(page, anime_name=None):
     except:
         pass
     return None
-# --- FIM: animesonlinecc extras ---
 
 def extract_episode_links_from_animesdigital(context, sample_ep_url):
     if not sample_ep_url:
@@ -136,14 +230,6 @@ def extract_episode_links_from_animesdigital(context, sample_ep_url):
         except: pass
 
 def extract_for_episode(context, ep_url, desired_audio=None, is_animes_online=False, is_animesdigital=False, is_animesonlinecc=False):
-    """
-    desired_audio: 'dub' ou 'sub' quando aplicável (para sites com múltiplas opções).
-    Handle cases:
-      - is_animes_online: antigo animesonline (usa pembed)
-      - is_animesdigital: animesdigital
-      - is_animesonlinecc: novo site animesonlinecc.to (usa option-1/option-2)
-      - fallback: escuta requests e procura mp4/m3u8 etc.
-    """
     if not ep_url: return None
     page = context.new_page()
     try:
@@ -153,31 +239,24 @@ def extract_for_episode(context, ep_url, desired_audio=None, is_animes_online=Fa
             print(f"   [!] Erro {response.status} ao carregar página: {ep_url}")
             return None
 
-        # animesonline antigo (pembed)
         if is_animes_online:
             src = extract_anidrive_iframe(page)
             if src:
                 return src
 
-        # animesonlinecc específico
         if is_animesonlinecc:
-            # pega os dois iframes possívels e decide qual retornar conforme desired_audio
             mapping = extract_animesonlinecc_iframes(page)
             if mapping:
                 if desired_audio == "dub":
                     return mapping.get("dub") or mapping.get("sub")
                 if desired_audio == "sub":
                     return mapping.get("sub") or mapping.get("dub")
-                # se não especificado, retorna sub primeiro (mais comum)
                 return mapping.get("sub") or mapping.get("dub")
 
-            # se não encontrou, tenta pegar o próximo ep link (caso precise)
             next_ep = extract_next_episode_from_animesonline(page)
             if next_ep:
-                # tentativa rápida: abrir next ep e extrair iframe
                 try:
                     page.wait_for_timeout(500)
-                    # seguimos para next_ep e tentamos extrair lá
                     page.goto(next_ep, wait_until="domcontentloaded", timeout=15000)
                     mapping = extract_animesonlinecc_iframes(page)
                     if mapping:
@@ -189,13 +268,11 @@ def extract_for_episode(context, ep_url, desired_audio=None, is_animes_online=Fa
                 except:
                     pass
 
-        # animesdigital (player padrão)
         if is_animesdigital:
             src = extract_animesdigital_iframe(page)
             if src:
                 return src
 
-        # default: escutar requisições por mp4/m3u8 etc.
         found_network = []
         def on_response(res):
             try:
@@ -211,7 +288,6 @@ def extract_for_episode(context, ep_url, desired_audio=None, is_animes_online=Fa
         except:
             pass
 
-        # tenta clicar em possíveis botões play
         possible_play_selectors = [
             "button.play", ".play-button", ".jw-play-btn", ".plyr__controls .play",
             ".vjs-big-play-button", ".play", "#play", ".watch-btn", ".btn-play"
@@ -227,7 +303,6 @@ def extract_for_episode(context, ep_url, desired_audio=None, is_animes_online=Fa
         if found_network:
             return found_network[0]
 
-        # fallback: procura iframes com m3u8/mp4 no src
         if page.locator("iframe").count() > 0:
             for i in range(page.locator("iframe").count()):
                 try:
@@ -250,12 +325,9 @@ def extract_for_episode(context, ep_url, desired_audio=None, is_animes_online=Fa
         except: pass
 
 def build_base_info_from_url(url):
-    """
-    Detecta se o URL é do animesonline, animesdigital ou animesonlinecc e devolve metadados úteis.
-    """
     if not url: return None
     domain = urlparse(url).netloc.lower()
-    is_ao = "animesonline" in domain  # cobre animesonlinecc.to também
+    is_ao = "animesonline" in domain
     is_ad = "animesdigital" in domain
     is_ao_cc = "animesonlinecc" in domain or "animesonlinecc.to" in domain
     match = ID_RE.search(url)
@@ -352,6 +424,13 @@ def main():
         browser = p.chromium.launch(headless=True)
         context = browser.new_context()
 
+        # ── NOVO: busca o banner na Crunchyroll ──────────────────────────────
+        banner_image = fetch_crunchyroll_banner(anime_name, context)
+        if not banner_image:
+            print("[CR] Banner não encontrado, usando coverImage como fallback.")
+            banner_image = cover_image  # fallback para a capa do MAL
+        # ─────────────────────────────────────────────────────────────────────
+
         for s_data in seasons_input:
             s_num = s_data["season_num"]
             total_eps = s_data["total_eps"]
@@ -359,7 +438,6 @@ def main():
             dub_info = build_base_info_from_url(s_data["url_dub"]) if s_data["url_dub"] else None
             sub_info = build_base_info_from_url(s_data["url_sub"]) if s_data["url_sub"] else None
             
-            # animesdigital lists
             dub_episode_list = []
             sub_episode_list = []
             if not is_safe_mode:
@@ -403,11 +481,9 @@ def main():
                     is_ao_cc_dub = dub_info["is_animesonlinecc"] if dub_info else False
                     is_ao_cc_sub = sub_info["is_animesonlinecc"] if sub_info else False
 
-                # Extração Real (note: pass desired_audio)
                 d_link = extract_for_episode(context, current_url_dub, desired_audio="dub", is_animes_online=is_ao_dub, is_animesdigital=is_ad_dub, is_animesonlinecc=is_ao_cc_dub) if current_url_dub else None
                 s_link = extract_for_episode(context, current_url_sub, desired_audio="sub", is_animes_online=is_ao_sub, is_animesdigital=is_ad_sub, is_animesonlinecc=is_ao_cc_sub) if current_url_sub else None
 
-                # Montagem do Embed
                 embeds = {}
                 embed_credit = "animesonlinecc.to"
                 if s_link:
@@ -448,9 +524,17 @@ def main():
         browser.close()
 
     final_json = {
-        "id": id_prefix, "title": title_romaji, "titleRomaji": title_romaji,
-        "titleJapanese": title_japanese, "genre": genres, "studio": studio_name,
-        "recommended": True, "malId": mal_id, "coverImage": cover_image, "bannerImage": cover_image,
+        "id": id_prefix,
+        "title": title_romaji,
+        "titleRomaji": title_romaji,
+        "titleJapanese": title_japanese,
+        "genre": genres,
+        "studio": studio_name,
+        "recommended": True,
+        "malId": mal_id,
+        "coverImage": cover_image,
+        # ── bannerImage agora vem da Crunchyroll ──
+        "bannerImage": banner_image,
         "seasons": all_seasons_data
     }
 

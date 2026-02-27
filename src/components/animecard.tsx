@@ -82,7 +82,7 @@ const AnimeCard = memo(({
           animate={{
             y: hovered ? -5 : 0,
             boxShadow: hovered
-              ? "0 20px 50px rgba(0,0,0,0.7), 0 0 0 1px rgba(124,58,237,0.35), 0 8px 30px rgba(124,58,237,0.12)"
+              ? "0 20px 50px rgba(0,0,0,0.7), 0 0 0 1px rgba(220,38,38,0.3), 0 8px 30px rgba(220,38,38,0.1)"
               : "0 4px 20px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.05)",
           }}
           transition={{ type: "spring", stiffness: 340, damping: 28 }}
@@ -188,24 +188,28 @@ const AnimeCard = memo(({
             )}
 
             {/* ── Play button ───────────────────────────────────────────── */}
-            <motion.div
-              animate={{ opacity: hovered ? 1 : 0, scale: hovered ? 1 : 0.75 }}
-              transition={{ duration: 0.22, ease: "easeOut" }}
-              style={{
-                position: "absolute",
-                top: "50%", left: "50%",
-                transform: "translate(-50%, -50%)",
-                width: 50, height: 50, borderRadius: "50%",
-                background: "rgba(124,58,237,0.9)",
-                backdropFilter: "blur(6px)",
-                display: "flex", alignItems: "center", justifyContent: "center",
-                boxShadow: "0 0 0 8px rgba(124,58,237,0.15), 0 8px 30px rgba(124,58,237,0.5)",
-              }}
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style={{ marginLeft: 3 }}>
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </motion.div>
+            <div style={{
+              position: "absolute", inset: 0,
+              display: "flex", alignItems: "center", justifyContent: "center",
+              pointerEvents: "none",
+            }}>
+              <motion.div
+                animate={{ opacity: hovered ? 1 : 0, scale: hovered ? 1 : 0.72 }}
+                transition={{ duration: 0.22, ease: "easeOut" }}
+                style={{
+                  width: 52, height: 52, borderRadius: "50%",
+                  background: "rgba(220,38,38,0.92)",
+                  backdropFilter: "blur(6px)",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  boxShadow: "0 0 0 10px rgba(220,38,38,0.14), 0 8px 32px rgba(220,38,38,0.55)",
+                }}
+              >
+                {/* SVG play icon — truly centered with viewBox offset */}
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+                  <polygon points="7,4 20,12 7,20" />
+                </svg>
+              </motion.div>
+            </div>
 
             {/* ── Hover quick-info panel ────────────────────────────────── */}
             <AnimatePresence>
@@ -263,7 +267,7 @@ const AnimeCard = memo(({
             {progress > 0 && (
               <div style={{
                 position: "absolute", bottom: 0, left: 0, right: 0,
-                height: 2.5, background: "rgba(255,255,255,0.06)",
+                height: 6, background: "rgba(255,255,255,0.07)",
               }}>
                 <motion.div
                   initial={{ width: 0 }}
@@ -273,10 +277,11 @@ const AnimeCard = memo(({
                     height: "100%",
                     background: progress >= 100
                       ? "linear-gradient(90deg, #22c55e, #4ade80)"
-                      : "linear-gradient(90deg, #7c3aed, #a855f7)",
+                      : "linear-gradient(90deg, #dc2626, #ef4444)",
                     boxShadow: progress >= 100
-                      ? "0 0 6px rgba(34,197,94,0.6)"
-                      : "0 0 6px rgba(124,58,237,0.6)",
+                      ? "0 0 8px rgba(34,197,94,0.7)"
+                      : "0 0 8px rgba(220,38,38,0.7)",
+                    borderRadius: "0 3px 3px 0",
                   }}
                 />
               </div>
@@ -287,11 +292,11 @@ const AnimeCard = memo(({
           <div style={{ padding: "10px 12px 12px" }}>
             {/* Title */}
             <h2 style={{
-              fontSize: 13, fontWeight: 700, lineHeight: 1.35,
-              marginBottom: 7, letterSpacing: "-0.01em",
+              fontSize: 15, fontWeight: 700, lineHeight: 1.35,
+              marginBottom: 8, letterSpacing: "-0.01em",
               display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical",
               overflow: "hidden",
-              color: hovered ? "#e9d5ff" : "#f1f5f9",
+              color: hovered ? "#fecdd3" : "#f1f5f9",
               transition: "color 0.2s",
             }}>
               {anime.title}
@@ -305,15 +310,15 @@ const AnimeCard = memo(({
               {/* Status pill */}
               <div style={{ display: "flex", alignItems: "center", gap: 5 }}>
                 <span style={{
-                  width: 5, height: 5, borderRadius: "50%",
+                  width: 6, height: 6, borderRadius: "50%",
                   background: statusCfg.color, flexShrink: 0,
-                  boxShadow: `0 0 5px ${statusCfg.color}80`,
+                  boxShadow: `0 0 6px ${statusCfg.color}90`,
                 }} />
                 <span style={{
-                  fontSize: 10, fontWeight: 500,
-                  color: "rgba(255,255,255,0.4)",
+                  fontSize: 12, fontWeight: 500,
+                  color: "rgba(255,255,255,0.45)",
                   whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
-                  maxWidth: 90,
+                  maxWidth: 100,
                 }}>
                   {statusCfg.label}
                 </span>
@@ -321,7 +326,7 @@ const AnimeCard = memo(({
 
               {/* Year */}
               {anime.year && (
-                <span style={{ fontSize: 10, color: "rgba(255,255,255,0.25)", flexShrink: 0 }}>
+                <span style={{ fontSize: 12, color: "rgba(255,255,255,0.28)", flexShrink: 0 }}>
                   {anime.year}
                 </span>
               )}
@@ -330,16 +335,16 @@ const AnimeCard = memo(({
             {/* Watch progress text */}
             {watchedCount > 0 && eps > 0 && (
               <div style={{
-                marginTop: 7, paddingTop: 7,
+                marginTop: 8, paddingTop: 8,
                 borderTop: "1px solid rgba(255,255,255,0.05)",
                 display: "flex", alignItems: "center", justifyContent: "space-between",
               }}>
-                <span style={{ fontSize: 10, color: "rgba(255,255,255,0.3)" }}>
+                <span style={{ fontSize: 12, color: "rgba(255,255,255,0.3)" }}>
                   Progresso
                 </span>
                 <span style={{
-                  fontSize: 10, fontWeight: 700,
-                  color: progress >= 100 ? "#4ade80" : "#a78bfa",
+                  fontSize: 12, fontWeight: 700,
+                  color: progress >= 100 ? "#4ade80" : "#fca5a5",
                 }}>
                   {watchedCount}/{eps}
                   {progress >= 100 && " ✓"}

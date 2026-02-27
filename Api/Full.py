@@ -10,6 +10,33 @@ from playwright.sync_api import sync_playwright
 VIDEO_EXT_RE = re.compile(r'\.(mp4|m3u8|mpd|mkv)(?:\?.*)?$', re.IGNORECASE)
 ID_RE = re.compile(r'/(\d+)/?$')
 
+# ── AniVideo (animesdigital.org novo) ────────────────────────────────────────
+# Extrai o stream_path do tipo "y/yofukashi-no-uta-2" de uma URL anivideo
+ANIVIDEO_STREAM_RE = re.compile(
+    r'cdn-s\d+\.mywallpaper-4k-image\.net/stream/([a-z]/[^/]+)/',
+    re.IGNORECASE
+)
+ANIVIDEO_WRAPPER  = "https://api.anivideo.net/videohls.php"
+ANIVIDEO_CDN_BASE = "https://cdn-s01.mywallpaper-4k-image.net/stream"
+
+def build_anivideo_ep_url(stream_path: str, ep_num: int) -> str:
+    """
+    Monta a URL final do episódio para o player anivideo.net.
+
+    stream_path: ex. "y/yofukashi-no-uta-2"  (letra/slug-temporada)
+    ep_num     : numero do episodio (inteiro)
+
+    URL gerada:
+      https://api.anivideo.net/videohls.php
+        ?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/08.mp4/index.m3u8
+        &nocache<timestamp>
+    """
+    ep_str  = f"{ep_num:02d}"               # 1 -> "01", 12 -> "12"
+    cdn_url = f"{ANIVIDEO_CDN_BASE}/{stream_path}/{ep_str}.mp4/index.m3u8"
+    nocache = int(time.time() * 1000)       # timestamp em ms como cache-buster
+    return f"{ANIVIDEO_WRAPPER}?d={cdn_url}&nocache{nocache}"
+# ─────────────────────────────────────────────────────────────────────────────
+
 # --- FUNÇÕES DE EXTRAÇÃO ---
 
 def fetch_mal_info(query):
@@ -229,8 +256,14 @@ def extract_episode_links_from_animesdigital(context, sample_ep_url):
         try: page.close()
         except: pass
 
-def extract_for_episode(context, ep_url, desired_audio=None, is_animes_online=False, is_animesdigital=False, is_animesonlinecc=False):
+def extract_for_episode(context, ep_url, desired_audio=None, is_animes_online=False, is_animesdigital=False, is_animesonlinecc=False, is_anivideo=False):
     if not ep_url: return None
+
+    # AniVideo: URL ja e a URL final do player, sem necessidade de browser
+    if is_anivideo:
+        print(f"   [AV] URL direta (sem browser): {ep_url[:80]}...")
+        return ep_url
+
     page = context.new_page()
     try:
         page.set_extra_http_headers({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"})
@@ -327,24 +360,39 @@ def extract_for_episode(context, ep_url, desired_audio=None, is_animes_online=Fa
 def build_base_info_from_url(url):
     if not url: return None
     domain = urlparse(url).netloc.lower()
-    is_ao = "animesonline" in domain
-    is_ad = "animesdigital" in domain
+    is_ao    = "animesonline" in domain
+    is_ad    = "animesdigital" in domain
     is_ao_cc = "animesonlinecc" in domain or "animesonlinecc.to" in domain
+
+    # AniVideo: detecta pela URL do CDN ou pelo wrapper anivideo.net
+    is_av = "anivideo.net" in url or "mywallpaper-4k-image.net/stream" in url
+    av_stream_path = None
+    if is_av:
+        m = ANIVIDEO_STREAM_RE.search(url)
+        if m:
+            av_stream_path = m.group(1)   # ex: "y/yofukashi-no-uta-2"
+            print(f"   [AV] stream_path detectado: {av_stream_path}")
+        else:
+            print("   [AV] URL anivideo detectada mas stream_path nao encontrado.")
+            is_av = False
+
     match = ID_RE.search(url)
     start_id = int(match.group(1)) if match else None
     base_site = None
     base_fire = None
     if is_ao and start_id is not None:
         base_site = url.split(str(start_id))[0]
-    if not is_ao and not is_ad:
+    if not is_ao and not is_ad and not is_av:
         base_fire = re.sub(r'/\d+/?$', '', url)
     return {
-        "is_animesonline": is_ao,
-        "is_animesdigital": is_ad,
+        "is_animesonline":   is_ao,
+        "is_animesdigital":  is_ad,
         "is_animesonlinecc": is_ao_cc,
-        "start_id": start_id,
-        "base_site": base_site,
-        "base_fire": base_fire
+        "is_anivideo":       is_av,
+        "av_stream_path":    av_stream_path,
+        "start_id":          start_id,
+        "base_site":         base_site,
+        "base_fire":         base_fire,
     }
 
 def make_iframe_html(src):
@@ -464,25 +512,36 @@ def main():
                     is_ad_sub = "animesdigital" in (current_url_sub or "")
                     is_ao_cc_dub = "animesonlinecc" in (current_url_dub or "")
                     is_ao_cc_sub = "animesonlinecc" in (current_url_sub or "")
+                    is_av_dub    = "anivideo.net" in (current_url_dub or "") or "mywallpaper-4k-image.net" in (current_url_dub or "")
+                    is_av_sub    = "anivideo.net" in (current_url_sub or "") or "mywallpaper-4k-image.net" in (current_url_sub or "")
                 else:
-                    if dub_info and dub_info.get("is_animesdigital") and dub_episode_list:
+                    # ── AniVideo: gera URL direto pelo stream_path + ep number ──────
+                    if dub_info and dub_info.get("is_anivideo"):
+                        current_url_dub = build_anivideo_ep_url(dub_info["av_stream_path"], i)
+                    elif dub_info and dub_info.get("is_animesdigital") and dub_episode_list:
                         current_url_dub = dub_episode_list[i-1] if i-1 < len(dub_episode_list) else None
                     else:
                         current_url_dub = (f'{dub_info["base_site"]}{dub_info["start_id"] + i - 1}/' if dub_info and dub_info.get("is_animesonline") else (f'{dub_info["base_fire"]}/{i}' if dub_info else None))
-                    if sub_info and sub_info.get("is_animesdigital") and sub_episode_list:
+
+                    if sub_info and sub_info.get("is_anivideo"):
+                        current_url_sub = build_anivideo_ep_url(sub_info["av_stream_path"], i)
+                    elif sub_info and sub_info.get("is_animesdigital") and sub_episode_list:
                         current_url_sub = sub_episode_list[i-1] if i-1 < len(sub_episode_list) else None
                     else:
                         current_url_sub = (f'{sub_info["base_site"]}{sub_info["start_id"] + i - 1}/' if sub_info and sub_info.get("is_animesonline") else (f'{sub_info["base_fire"]}/{i}' if sub_info else None))
+                    # ─────────────────────────────────────────────────────────────────
 
-                    is_ao_dub = dub_info["is_animesonline"] if dub_info else False
-                    is_ao_sub = sub_info["is_animesonline"] if sub_info else False
-                    is_ad_dub = dub_info["is_animesdigital"] if dub_info else False
-                    is_ad_sub = sub_info["is_animesdigital"] if sub_info else False
+                    is_ao_dub    = dub_info["is_animesonline"]   if dub_info else False
+                    is_ao_sub    = sub_info["is_animesonline"]   if sub_info else False
+                    is_ad_dub    = dub_info["is_animesdigital"]  if dub_info else False
+                    is_ad_sub    = sub_info["is_animesdigital"]  if sub_info else False
                     is_ao_cc_dub = dub_info["is_animesonlinecc"] if dub_info else False
                     is_ao_cc_sub = sub_info["is_animesonlinecc"] if sub_info else False
+                    is_av_dub    = dub_info["is_anivideo"]       if dub_info else False
+                    is_av_sub    = sub_info["is_anivideo"]       if sub_info else False
 
-                d_link = extract_for_episode(context, current_url_dub, desired_audio="dub", is_animes_online=is_ao_dub, is_animesdigital=is_ad_dub, is_animesonlinecc=is_ao_cc_dub) if current_url_dub else None
-                s_link = extract_for_episode(context, current_url_sub, desired_audio="sub", is_animes_online=is_ao_sub, is_animesdigital=is_ad_sub, is_animesonlinecc=is_ao_cc_sub) if current_url_sub else None
+                d_link = extract_for_episode(context, current_url_dub, desired_audio="dub", is_animes_online=is_ao_dub, is_animesdigital=is_ad_dub, is_animesonlinecc=is_ao_cc_dub, is_anivideo=is_av_dub) if current_url_dub else None
+                s_link = extract_for_episode(context, current_url_sub, desired_audio="sub", is_animes_online=is_ao_sub, is_animesdigital=is_ad_sub, is_animesonlinecc=is_ao_cc_sub, is_anivideo=is_av_sub) if current_url_sub else None
 
                 embeds = {}
                 embed_credit = "animesonlinecc.to"

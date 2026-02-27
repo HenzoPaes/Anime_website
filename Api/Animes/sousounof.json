@@ -1,0 +1,435 @@
+{
+  "id": "sousounof",
+  "title": "Sousou no Frieren",
+  "titleRomaji": "Sousou no Frieren",
+  "titleJapanese": "葬送のフリーレン",
+  "genre": [
+    "Adventure",
+    "Drama",
+    "Fantasy"
+  ],
+  "studio": "Madhouse",
+  "recommended": false,
+  "malId": 52991,
+  "coverImage": "https://cdn.myanimelist.net/images/anime/1015/138006l.jpg",
+  "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GG5H5XQX4-backdrop_wide",
+  "seasons": [
+    {
+      "season": 1,
+      "seasonLabel": "1ª Temporada",
+      "year": 2023,
+      "episodes": 28,
+      "currentEpisode": 28,
+      "status": "finished",
+      "score": 9.28,
+      "synopsis": "During their decade-long quest to defeat the Demon King, the members of the hero's party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through adventures and battles, creating unforgettable precious memories for most of them.\n\nHowever, the time that Frieren spends with her comrades is equivalent to merely a fraction of her life, which has lasted over a thousand years. When the party disbands after their victory, Frieren casually returns to her \"usual\" routine of collecting spells across the continent. Due to her different sense of time, she seemingly holds no strong feelings toward the experiences she went through.\n\nAs the years pass, Frieren gradually realizes how her days in the hero's party truly impacted her. Witnessing the deaths of two of her former companions, Frieren begins to regret having taken their presence for granted; she vows to better understand humans and create real personal connections. Although the story of that once memorable journey has long ended, a new tale is about to begin.\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "sub",
+          "label": "Legendado",
+          "available": true,
+          "episodesAvailable": 28
+        },
+        {
+          "type": "dub",
+          "label": "Dublado",
+          "available": true,
+          "episodesAvailable": 28
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "sousounof-s1-ep1",
+          "number": 1,
+          "title": "Sousou no Frieren - T1 Episódio 1",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/01.mp4/index.m3u8&nocache1772205056252\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/01.mp4/index.m3u8&nocache1772205056252\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep2",
+          "number": 2,
+          "title": "Sousou no Frieren - T1 Episódio 2",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/02.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/02.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep3",
+          "number": 3,
+          "title": "Sousou no Frieren - T1 Episódio 3",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/03.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/03.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep4",
+          "number": 4,
+          "title": "Sousou no Frieren - T1 Episódio 4",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/04.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/04.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep5",
+          "number": 5,
+          "title": "Sousou no Frieren - T1 Episódio 5",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/05.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/05.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep6",
+          "number": 6,
+          "title": "Sousou no Frieren - T1 Episódio 6",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/06.mp4/index.m3u8&nocache1772205056254\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/06.mp4/index.m3u8&nocache1772205056254\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep7",
+          "number": 7,
+          "title": "Sousou no Frieren - T1 Episódio 7",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/07.mp4/index.m3u8&nocache1772205056254\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/07.mp4/index.m3u8&nocache1772205056254\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep8",
+          "number": 8,
+          "title": "Sousou no Frieren - T1 Episódio 8",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/08.mp4/index.m3u8&nocache1772205056255\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/08.mp4/index.m3u8&nocache1772205056255\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep9",
+          "number": 9,
+          "title": "Sousou no Frieren - T1 Episódio 9",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/09.mp4/index.m3u8&nocache1772205056255\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/09.mp4/index.m3u8&nocache1772205056255\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep10",
+          "number": 10,
+          "title": "Sousou no Frieren - T1 Episódio 10",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/10.mp4/index.m3u8&nocache1772205056255\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/10.mp4/index.m3u8&nocache1772205056255\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep11",
+          "number": 11,
+          "title": "Sousou no Frieren - T1 Episódio 11",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/11.mp4/index.m3u8&nocache1772205056256\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/11.mp4/index.m3u8&nocache1772205056256\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep12",
+          "number": 12,
+          "title": "Sousou no Frieren - T1 Episódio 12",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/12.mp4/index.m3u8&nocache1772205056256\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/12.mp4/index.m3u8&nocache1772205056256\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep13",
+          "number": 13,
+          "title": "Sousou no Frieren - T1 Episódio 13",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/13.mp4/index.m3u8&nocache1772205056256\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/13.mp4/index.m3u8&nocache1772205056256\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep14",
+          "number": 14,
+          "title": "Sousou no Frieren - T1 Episódio 14",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/14.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/14.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep15",
+          "number": 15,
+          "title": "Sousou no Frieren - T1 Episódio 15",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/15.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/15.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep16",
+          "number": 16,
+          "title": "Sousou no Frieren - T1 Episódio 16",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/16.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/16.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep17",
+          "number": 17,
+          "title": "Sousou no Frieren - T1 Episódio 17",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/17.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/17.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep18",
+          "number": 18,
+          "title": "Sousou no Frieren - T1 Episódio 18",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/18.mp4/index.m3u8&nocache1772205056258\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/18.mp4/index.m3u8&nocache1772205056258\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep19",
+          "number": 19,
+          "title": "Sousou no Frieren - T1 Episódio 19",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/19.mp4/index.m3u8&nocache1772205056258\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/19.mp4/index.m3u8&nocache1772205056258\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep20",
+          "number": 20,
+          "title": "Sousou no Frieren - T1 Episódio 20",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/20.mp4/index.m3u8&nocache1772205056258\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/20.mp4/index.m3u8&nocache1772205056258\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep21",
+          "number": 21,
+          "title": "Sousou no Frieren - T1 Episódio 21",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/21.mp4/index.m3u8&nocache1772205056259\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/21.mp4/index.m3u8&nocache1772205056259\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep22",
+          "number": 22,
+          "title": "Sousou no Frieren - T1 Episódio 22",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/22.mp4/index.m3u8&nocache1772205056259\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/22.mp4/index.m3u8&nocache1772205056259\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep23",
+          "number": 23,
+          "title": "Sousou no Frieren - T1 Episódio 23",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/23.mp4/index.m3u8&nocache1772205056259\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/23.mp4/index.m3u8&nocache1772205056259\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep24",
+          "number": 24,
+          "title": "Sousou no Frieren - T1 Episódio 24",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/24.mp4/index.m3u8&nocache1772205056260\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/24.mp4/index.m3u8&nocache1772205056260\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep25",
+          "number": 25,
+          "title": "Sousou no Frieren - T1 Episódio 25",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/25.mp4/index.m3u8&nocache1772205056260\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/25.mp4/index.m3u8&nocache1772205056260\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep26",
+          "number": 26,
+          "title": "Sousou no Frieren - T1 Episódio 26",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/26.mp4/index.m3u8&nocache1772205056261\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/26.mp4/index.m3u8&nocache1772205056261\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep27",
+          "number": 27,
+          "title": "Sousou no Frieren - T1 Episódio 27",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/27.mp4/index.m3u8&nocache1772205056261\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/27.mp4/index.m3u8&nocache1772205056261\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s1-ep28",
+          "number": 28,
+          "title": "Sousou no Frieren - T1 Episódio 28",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/28.mp4/index.m3u8&nocache1772205056262\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/28.mp4/index.m3u8&nocache1772205056262\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "seasonLabel": "2ª Temporada",
+      "year": 2023,
+      "episodes": 5,
+      "currentEpisode": 5,
+      "status": "finished",
+      "score": 9.28,
+      "synopsis": "During their decade-long quest to defeat the Demon King, the members of the hero's party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through adventures and battles, creating unforgettable precious memories for most of them.\n\nHowever, the time that Frieren spends with her comrades is equivalent to merely a fraction of her life, which has lasted over a thousand years. When the party disbands after their victory, Frieren casually returns to her \"usual\" routine of collecting spells across the continent. Due to her different sense of time, she seemingly holds no strong feelings toward the experiences she went through.\n\nAs the years pass, Frieren gradually realizes how her days in the hero's party truly impacted her. Witnessing the deaths of two of her former companions, Frieren begins to regret having taken their presence for granted; she vows to better understand humans and create real personal connections. Although the story of that once memorable journey has long ended, a new tale is about to begin.\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "sub",
+          "label": "Legendado",
+          "available": true,
+          "episodesAvailable": 5
+        },
+        {
+          "type": "dub",
+          "label": "Dublado",
+          "available": true,
+          "episodesAvailable": 3
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "sousounof-s2-ep1",
+          "number": 1,
+          "title": "Sousou no Frieren - T2 Episódio 1",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/01.mp4/index.m3u8&nocache1772205056262\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/01.mp4/index.m3u8&nocache1772205056262\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s2-ep2",
+          "number": 2,
+          "title": "Sousou no Frieren - T2 Episódio 2",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/02.mp4/index.m3u8&nocache1772205056262\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/02.mp4/index.m3u8&nocache1772205056262\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s2-ep3",
+          "number": 3,
+          "title": "Sousou no Frieren - T2 Episódio 3",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/03.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/03.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s2-ep4",
+          "number": 4,
+          "title": "Sousou no Frieren - T2 Episódio 4",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/04.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/04.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "sousounof-s2-ep5",
+          "number": 5,
+          "title": "Sousou no Frieren - T2 Episódio 5",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/05.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/05.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        }
+      ]
+    }
+  ]
+}

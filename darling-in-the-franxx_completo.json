@@ -13,5 +13,297 @@
   "malId": 35849,
   "coverImage": "https://cdn.myanimelist.net/images/anime/1614/90408l.jpg",
   "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GY8VEQ95Y-backdrop_wide",
-  "seasons": []
+  "seasons": [
+    {
+      "season": 1,
+      "seasonLabel": "1ª Temporada",
+      "year": 2018,
+      "episodes": 24,
+      "currentEpisode": 24,
+      "status": "finished",
+      "score": 7.2,
+      "synopsis": "In the distant future, humanity has been driven to near-extinction by giant beasts known as Klaxosaurs, forcing the surviving humans to take refuge in massive fortress cities called Plantations. Children raised here are trained to pilot giant mechas known as FranXX—the only weapons known to be effective against the Klaxosaurs—in boy-girl pairs. Bred for the sole purpose of piloting these machines, these children know nothing of the outside world and are only able to prove their existence by defending their race.  \n\nHiro, an aspiring FranXX pilot, has lost his motivation and self-confidence after failing an aptitude test. Skipping out on his class' graduation ceremony, Hiro retreats to a forest lake, where he encounters a mysterious girl with two horns growing out of her head. She introduces herself by her codename Zero Two, which is known to belong to an infamous FranXX pilot known as the \"Partner Killer.\" Before Hiro can digest the encounter, the Plantation is rocked by a sudden Klaxosaur attack. Zero Two engages the creature in her FranXX, but it is heavily damaged in the skirmish and crashes near Hiro. Finding her partner dead, Zero Two invites Hiro to pilot the mecha with her, and the duo easily defeats the Klaxosaur in the ensuing fight. With a new partner by his side, Hiro has been given a chance at redemption for his past failures, but at what cost?\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "sub",
+          "label": "Legendado",
+          "available": true,
+          "episodesAvailable": 24
+        },
+        {
+          "type": "dub",
+          "label": "Dublado",
+          "available": true,
+          "episodesAvailable": 24
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "darling-in-the-franxx-s1-ep1",
+          "number": 1,
+          "title": "Darling in the FranXX - T1 Episódio 1",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/01.mp4/index.m3u8&nocache1772205734563\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/01.mp4/index.m3u8&nocache1772205734563\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep2",
+          "number": 2,
+          "title": "Darling in the FranXX - T1 Episódio 2",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/02.mp4/index.m3u8&nocache1772205734563\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/02.mp4/index.m3u8&nocache1772205734563\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep3",
+          "number": 3,
+          "title": "Darling in the FranXX - T1 Episódio 3",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/03.mp4/index.m3u8&nocache1772205734563\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/03.mp4/index.m3u8&nocache1772205734563\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep4",
+          "number": 4,
+          "title": "Darling in the FranXX - T1 Episódio 4",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/04.mp4/index.m3u8&nocache1772205734564\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/04.mp4/index.m3u8&nocache1772205734564\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep5",
+          "number": 5,
+          "title": "Darling in the FranXX - T1 Episódio 5",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/05.mp4/index.m3u8&nocache1772205734564\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/05.mp4/index.m3u8&nocache1772205734564\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep6",
+          "number": 6,
+          "title": "Darling in the FranXX - T1 Episódio 6",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/06.mp4/index.m3u8&nocache1772205734565\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/06.mp4/index.m3u8&nocache1772205734565\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep7",
+          "number": 7,
+          "title": "Darling in the FranXX - T1 Episódio 7",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/07.mp4/index.m3u8&nocache1772205734565\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/07.mp4/index.m3u8&nocache1772205734565\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep8",
+          "number": 8,
+          "title": "Darling in the FranXX - T1 Episódio 8",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/08.mp4/index.m3u8&nocache1772205734565\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/08.mp4/index.m3u8&nocache1772205734565\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep9",
+          "number": 9,
+          "title": "Darling in the FranXX - T1 Episódio 9",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/09.mp4/index.m3u8&nocache1772205734566\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/09.mp4/index.m3u8&nocache1772205734566\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep10",
+          "number": 10,
+          "title": "Darling in the FranXX - T1 Episódio 10",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/10.mp4/index.m3u8&nocache1772205734566\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/10.mp4/index.m3u8&nocache1772205734566\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep11",
+          "number": 11,
+          "title": "Darling in the FranXX - T1 Episódio 11",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/11.mp4/index.m3u8&nocache1772205734566\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/11.mp4/index.m3u8&nocache1772205734566\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep12",
+          "number": 12,
+          "title": "Darling in the FranXX - T1 Episódio 12",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/12.mp4/index.m3u8&nocache1772205734567\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/12.mp4/index.m3u8&nocache1772205734567\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep13",
+          "number": 13,
+          "title": "Darling in the FranXX - T1 Episódio 13",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/13.mp4/index.m3u8&nocache1772205734567\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/13.mp4/index.m3u8&nocache1772205734567\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep14",
+          "number": 14,
+          "title": "Darling in the FranXX - T1 Episódio 14",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/14.mp4/index.m3u8&nocache1772205734567\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/14.mp4/index.m3u8&nocache1772205734567\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep15",
+          "number": 15,
+          "title": "Darling in the FranXX - T1 Episódio 15",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/15.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/15.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep16",
+          "number": 16,
+          "title": "Darling in the FranXX - T1 Episódio 16",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/16.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/16.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep17",
+          "number": 17,
+          "title": "Darling in the FranXX - T1 Episódio 17",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/17.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/17.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep18",
+          "number": 18,
+          "title": "Darling in the FranXX - T1 Episódio 18",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/18.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/18.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep19",
+          "number": 19,
+          "title": "Darling in the FranXX - T1 Episódio 19",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/19.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/19.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep20",
+          "number": 20,
+          "title": "Darling in the FranXX - T1 Episódio 20",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/20.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/20.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep21",
+          "number": 21,
+          "title": "Darling in the FranXX - T1 Episódio 21",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/21.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/21.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep22",
+          "number": 22,
+          "title": "Darling in the FranXX - T1 Episódio 22",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/22.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/22.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep23",
+          "number": 23,
+          "title": "Darling in the FranXX - T1 Episódio 23",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/23.mp4/index.m3u8&nocache1772205734570\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/23.mp4/index.m3u8&nocache1772205734570\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "darling-in-the-franxx-s1-ep24",
+          "number": 24,
+          "title": "Darling in the FranXX - T1 Episódio 24",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/24.mp4/index.m3u8&nocache1772205734570\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/24.mp4/index.m3u8&nocache1772205734570\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        }
+      ]
+    }
+  ]
 }

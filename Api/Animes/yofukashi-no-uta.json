@@ -1,298 +1,321 @@
 {
-    "id": "yofukashi-no-uta",
-    "title": "Yofukashi no Uta",
-    "titleRomaji": "Yofukashi no Uta",
-    "titleJapanese": "よふかしのうた",
-    "genre": ["Romance", "Vampiro", "Slice of Life"],
-    "studio": "Liden Films",
-    "recommended": true,
-    "recommendationReason": "Atmosfera noturna única com trilha sonora incrível e romance diferente do comum. | ⭐ Favorito do editor!",
-    "tags": ["vampiro", "underground"],
-    "malId": 50346,
-    "coverImage": "https://animesonline.io/wp-content/uploads/2025/04/1745340988-7094-123711l.jpg",
-    "bannerImage": "https://wallpaperaccess.com/full/8405363.png",
-    "seasons": [
-      {
-        "season": 1,
-        "seasonLabel": "1ª Temporada",
-        "year": 2022,
-        "episodes": 13,
-        "currentEpisode": 13,
-        "status": "finished",
-        "score": 7.6,
-        "synopsis": "Kou Yamori não consegue dormir e começa a perambular pelas ruas à noite, onde encontra Nazuna Nanakusa, uma vampira. Para se tornar um vampiro, ele precisa se apaixonar por ela.",
-        "trailer": "https://www.youtube.com/watch?v=ukO-ZdWS3j8&pp=ygUheW9mdWthc2hpIG5vIHV0YSB0cmFpbGVyIHNlYXNvbiAx0gcJCaIKAYcqIYzv",
-        "audios": [
-          { "type": "sub", "label": "Legendado (PT-BR)", "available": true, "episodesAvailable": 13 }
-        ],
-        "episodeList": [
-          {
-            "id": "yofukashi-no-uta-1",
-            "number": 1,
-            "title": "Yofukashi no Uta - Episódio 1",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://rr2---sn-c5gcvn5-cnce.googlevideo.com/videoplayback?expire=1771930148&ei=pBGdaYDDH4zp3rsPl7OHgAI&ip=177.234.182.61&id=718f3e3f08babc77&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1771901348,&mh=F_&mm=31&mn=sn-c5gcvn5-cnce&ms=au&mv=m&mvi=2&pl=24&rms=au,au&susc=bl&svpuc=1&eaua=EGZcU3I1yKo&mime=video/mp4&vprv=1&rqh=1&dur=1420.527&lmt=1657347951396623&mt=1771901112&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AJEij0EwRQIhAN0pGfakfNDfnw7WwuFtKNYDx886uUNWaeF4D0bb-raZAiAv0cnzWCMP5dneoo8xa91Pt4iODZfwEQLwvU4f8k-VVQ==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhAIkG6nSx0ZWg8MVSAp2a1pm6wDg4vD6X2GeIda1ZZlZPAiBF_3iah0_1E9OkL2lkWiyyGsVVnkgA4esQtUOWFU35og==&cpn=4aMnXxHv6goYuw7w&c=WEB_EMBEDDED_PLAYER&cver=1.20260217.11.00\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          },
-          {
-            "id": "yofukashi-no-uta-2",
-            "number": 2,
-            "title": "Yofukashi no Uta - Episódio 2",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://video.wixstatic.com/video/9bfdce_1a39df39f76b4fc5bb7f55ec978a57f3/720p/mp4/file.mp4\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          },
-          {
-            "id": "yofukashi-no-uta-3",
-            "number": 3,
-            "title": "Yofukashi no Uta - Episódio 3",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://video.wixstatic.com/video/9bfdce_d517851762e14998ba18ba99759748f2/720p/mp4/file.mp4\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          },
-          {
-            "id": "yofukashi-no-uta-4",
-            "number": 4,
-            "title": "Yofukashi no Uta - Episódio 4",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://video.wixstatic.com/video/9bfdce_caeaa27cd1bb43cca132a499e102c069/720p/mp4/file.mp4\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          },
-          {
-            "id": "yofukashi-no-uta-5",
-            "number": 5,
-            "title": "Yofukashi no Uta - Episódio 5",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://video.wixstatic.com/video/9bfdce_220dedcd592f40ee98c472c4ceaf4c6f/720p/mp4/file.mp4\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          },
-          {
-            "id": "yofukashi-no-uta-6",
-            "number": 6,
-            "title": "Yofukashi no Uta - Episódio 6",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://video.wixstatic.com/video/9bfdce_729bcbe3233c4104b3d164fdb3761bd9/720p/mp4/file.mp4\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          },
-          {
-            "id": "yofukashi-no-uta-7",
-            "number": 7,
-            "title": "Yofukashi no Uta - Episódio 7",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://video.wixstatic.com/video/9bfdce_38f051cc3d5c4986a70f0d833f4cd694/720p/mp4/file.mp4\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          },
-          {
-            "id": "yofukashi-no-uta-8",
-            "number": 8,
-            "title": "Yofukashi no Uta - Episódio 8",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://rr1---sn-c5gcvn5-cncl.googlevideo.com/videoplayback?expire=1771891316&ei=9HmcaaSZE6C8xOEP8eu3gAE&ip=177.234.182.61&id=2ac6e3263c0f4c79&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1771862516,&mh=lQ&mm=31&mn=sn-c5gcvn5-cncl&ms=au&mv=m&mvi=1&pl=24&rms=au,au&susc=bl&svpuc=1&eaua=EGZcU3I1yKo&mime=video/mp4&vprv=1&rqh=1&dur=1421.572&lmt=1661459510182976&mt=1771862035&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AJEij0EwRQIgIuFbLzMCeQ-aSi94eYYvJTWaRvqOrLg3dWYC3yi8ahkCIQCx0UvjU0MusAwsE4_jrq_GMeEiGWkCTXr5MjxLGWfJ7w==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgA29RnbrMmwwlQgFqHeeQkaUZIIOuaqiqv5S-WaEBpPcCIFYJXDgujdLor8eY3rKRCZdwT7aE2Cs4wbmSWPlFOB9E&cpn=axt0O-6EP7sn4nFF&c=WEB_EMBEDDED_PLAYER&cver=1.20260217.11.00\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          },
-          {
-            "id": "yofukashi-no-uta-9",
-            "number": 9,
-            "title": "Yofukashi no Uta - Episódio 9",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://rr2---sn-c5gcvn5-cncl.googlevideo.com/videoplayback?expire=1771891329&ei=AXqcafCtKLb03rsP67j6yAo&ip=177.234.182.61&id=615dfd8934ad1dfc&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1771862529,&mh=AU&mm=31&mn=sn-c5gcvn5-cncl&ms=au&mv=m&mvi=2&pl=24&rms=au,au&susc=bl&svpuc=1&eaua=EGZcU3I1yKo&mime=video/mp4&vprv=1&rqh=1&dur=1421.572&lmt=1662064749658230&mt=1771862035&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AJEij0EwRQIhANinzuGdv1O80eLSlSVzukXJLoJITKLWZSoqxzKoFjulAiB1ddQlbCHbh-2Lsj5WmpvfqcVNnyEwHThnSCgTfojbxg==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhAPBCsND6GuREPBvYG7WWnv2iARvyNPyMqUIGe7AAOFuCAiAn0ERGjiIqPMGaVViHNNyCMc-ishHl3BBmQAevTyZ0nw==&cpn=e7IlQMO-2nTpAh5x&c=WEB_EMBEDDED_PLAYER&cver=1.20260217.11.00\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          },
-          {
-            "id": "yofukashi-no-uta-10",
-            "number": 10,
-            "title": "Yofukashi no Uta - Episódio 10",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://rr2---sn-c5gcvn5-cnce.googlevideo.com/videoplayback?expire=1771891347&ei=E3qcafP6DJLKvPIP_sOy8AY&ip=177.234.182.61&id=045fb5934e2989bb&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1771862547,&mh=c_&mm=31&mn=sn-c5gcvn5-cnce&ms=au&mv=m&mvi=2&pl=24&rms=au,au&susc=bl&svpuc=1&eaua=EGZcU3I1yKo&mime=video/mp4&vprv=1&rqh=1&dur=1415.511&lmt=1662719014464149&mt=1771862035&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AJEij0EwRQIhAIVUaZBeHEkzhxwGa7QTT28v27wbdnLbL4ZwiVReYGHrAiAr2tD6i63hY3OqlHdhGsgW_ANIQmKv5srfVjSfbv2kUg==&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIgbP3scYfEoL_8woqwD1Qd4Rk2IcDCk-goRaU5zp55Q_kCIQDx9USnUluLFxMdAXNgEJwmxGvOBDRvfFUtK9G84mLDVg==&cpn=Sz_ZnooP-s9_guRL&c=WEB_EMBEDDED_PLAYER&cver=1.20260217.11.00\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          },
-          {
-            "id": "yofukashi-no-uta-11",
-            "number": 11,
-            "title": "Yofukashi no Uta - Episódio 11",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://rr2---sn-c5gcvn5-cncz.googlevideo.com/videoplayback?expire=1771891357&ei=HXqcaeDnNbyV3rsPjrfGmA4&ip=177.234.182.61&id=c157647a1ec7cc7f&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1771862557,&mh=GF&mm=31&mn=sn-c5gcvn5-cncz&ms=au&mv=m&mvi=2&pl=24&rms=au,au&susc=bl&svpuc=1&eaua=EGZcU3I1yKo&mime=video/mp4&vprv=1&rqh=1&dur=1421.572&lmt=1663314741877107&mt=1771862035&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AJEij0EwRAIgLohwhC9G_3TWJ0qs2tWMKEMf9Gn2d6trhQGdx8h08PwCIAVUZ9mtZMTyEbab1L6Y19aFlznAchN6JQreufp_CWq9&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgNrZNaIDtp-Bd_zyM0_K-wyeJJOkmEabmviLUtfjvWpcCIA2GYcvk0CpQ4Ef1aZU7z3g2cW5rfDs-aGpqbJXsw6aA&cpn=GhUJIAkYGkZfF_7Z&c=WEB_EMBEDDED_PLAYER&cver=1.20260217.11.00\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          },
-          {
-            "id": "yofukashi-no-uta-12",
-            "number": 12,
-            "title": "Yofukashi no Uta - Episódio 12",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://rr2---sn-c5gcvn5-cnce.googlevideo.com/videoplayback?expire=1771891369&ei=KXqcafzkHLb03rsP67j6yAo&ip=177.234.182.61&id=c9886e8fe475ab70&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1771862569,&mh=v2&mm=31&mn=sn-c5gcvn5-cnce&ms=au&mv=m&mvi=2&pl=24&rms=au,au&susc=bl&svpuc=1&eaua=EGZcU3I1yKo&mime=video/mp4&vprv=1&rqh=1&dur=1414.513&lmt=1663927518836453&mt=1771862284&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AJEij0EwRAIgSzTnOSwR2okfK7jLgk2plMn69sTR6ONBA2x9o5T-oLICIDbeUgNBGd8Yt18JzJCo0iQ55Yp7-uuJwfau6YaFEmd-&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhAOPPlIkifLixAa0oo4ZIcT9fVzb3k3C9gjr0L7c4WKZUAiBlmFIMBIs6-CUyHca5-vCv9kSXWfQKpW7LPAUWn71trQ==&cpn=NfIru1gCcOtYE5Vy&c=WEB_EMBEDDED_PLAYER&cver=1.20260217.11.00\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          },
-          {
-            "id": "yofukashi-no-uta-13",
-            "number": 13,
-            "title": "Yofukashi no Uta - Episódio 13",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://rr2---sn-c5gcvn5-cncz.googlevideo.com/videoplayback?expire=1771890825&ei=CXicabOlCfCJvPIP8t7G-A0&ip=177.234.182.61&id=43e644a8a23ce5fc&itag=18&source=blogger&requiressl=yes&xpc=Egho7Zf3LnoBAQ==&met=1771862025,&mh=9l&mm=31&mn=sn-c5gcvn5-cncz&ms=au&mv=m&mvi=2&pl=24&rms=au,au&susc=bl&svpuc=1&eaua=EGZcU3I1yKo&mime=video/mp4&vprv=1&rqh=1&dur=1421.572&lmt=1698512260076314&mt=1771861549&txp=1311224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,svpuc,eaua,mime,vprv,rqh,dur,lmt&sig=AJEij0EwRgIhAL9FMqrILNl2Xit3IfoIrcXXJ8vFOo_5L8ND_JqCFvzDAiEAxxGIbP2sEA-rlwSyHaKJg9lbzDYksgWl_jtUj0qClo=&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhALD80I2_gF7vovrgGjNWguALqyZQZHxD68CDq87-cI4SAiBQ8qQwZeurMCa81vHPsAHLnCBJStmJf9xhMnc5rpRLgQ==&cpn=R_KjYKiXYIHWC2uZ&c=WEB_EMBEDDED_PLAYER&cver=1.20260217.11.00\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "animesonlinecc.to"
-          }
-        ]
-      },
-      {
-        "season": 2,
-        "seasonLabel": "2ª Temporada",
-        "year": 2025,
-        "episodes": 12,
-        "currentEpisode": 12,
-        "status": "finished",
-        "score": 7.8,
-        "synopsis": "Kou e Nazuna aprofundam seus laços enquanto novos vampiros e conflitos surgem nas sombras da cidade. A jornada noturna continua com mais personagens e revelações sobre o mundo dos vampiros.",
-        "trailer": "https://www.youtube.com/watch?v=e5eEjoMKnQc&pp=ygUYdHJhaWxlciB5b2Z1a2FzaGkgbm8gdXRh0gcJCaIKAYcqIYzv",
-        "audios": [
-          { "type": "sub", "label": "Legendado (PT-BR)", "available": true, "episodesAvailable": 12 }
-        ],
-        "episodeList": [
+  "id": "yofukashi-no-uta",
+  "title": "Yofukashi no Uta",
+  "titleRomaji": "Yofukashi no Uta",
+  "titleJapanese": "よふかしのうた",
+  "genre": [
+    "Romance",
+    "Supernatural"
+  ],
+  "studio": "LIDENFILMS",
+  "recommended": true,
+  "malId": 50346,
+  "coverImage": "https://cdn.myanimelist.net/images/anime/1045/123711l.jpg",
+  "bannerImage": "https://wallpaperaccess.com/full/8405363.png",
+  "seasons": [
     {
-      "id": "yofukashi-no-uta-season-2-1",
-      "number": 1,
-      "title": "Yofukashi no Uta Season 2 - Episódio 1",
-      "season": "2",
-      "embeds": {
-        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/9FdduUatxHQuwy3\" frameborder=\"0\" allowfullscreen></iframe>"
-      },
-      "embedCredit": "anidrive.click"
+      "season": 1,
+      "seasonLabel": "1ª Temporada",
+      "year": 2022,
+      "episodes": 13,
+      "currentEpisode": 13,
+      "status": "finished",
+      "score": 7.94,
+      "synopsis": "Kou Yamori is an average middle school student who struggles with grasping the complex concept of love. Because he sees little sense in surrendering to the norm, he soon stops going to school. Plagued with insomnia due to his idleness, Kou begins roaming the lonesome streets at night.\n\nOne night, Kou encounters a bizarre girl named Nazuna Nanakusa who believes that people stay awake during the night because they are dissatisfied with how they spent their day and cannot rest until they release their inhibitions. Nazuna offers to help Kou with his sleep issues and invites him over to her place, where she convinces him to share a futon with her. Feeling uncomfortable, Kou only pretends to doze off—which is when Nazuna suddenly bites his neck, revealing herself to be a vampire!\n\nWhile Kou thinks the bite will turn him into a vampire, the specifics of transforming are not that simple. In order to change, he must be bitten by someone he truly loves. Ready to let go of his dreary mortal life, Kou decides on a new goal: he will fall in love with Nazuna and become a vampire himself.\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "sub",
+          "label": "Legendado",
+          "available": true,
+          "episodesAvailable": 13
+        },
+        {
+          "type": "dub",
+          "label": "Dublado",
+          "available": false,
+          "episodesAvailable": 13
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "yofukashi-no-uta-s1-ep1",
+          "number": 1,
+          "title": "Yofukashi no Uta - T1 Episódio 1",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/01.mp4/index.m3u8&nocache1772205367964\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s1-ep2",
+          "number": 2,
+          "title": "Yofukashi no Uta - T1 Episódio 2",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/02.mp4/index.m3u8&nocache1772205367965\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s1-ep3",
+          "number": 3,
+          "title": "Yofukashi no Uta - T1 Episódio 3",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/03.mp4/index.m3u8&nocache1772205367965\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s1-ep4",
+          "number": 4,
+          "title": "Yofukashi no Uta - T1 Episódio 4",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/04.mp4/index.m3u8&nocache1772205367965\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s1-ep5",
+          "number": 5,
+          "title": "Yofukashi no Uta - T1 Episódio 5",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/05.mp4/index.m3u8&nocache1772205367965\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s1-ep6",
+          "number": 6,
+          "title": "Yofukashi no Uta - T1 Episódio 6",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/06.mp4/index.m3u8&nocache1772205367965\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s1-ep7",
+          "number": 7,
+          "title": "Yofukashi no Uta - T1 Episódio 7",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/07.mp4/index.m3u8&nocache1772205367966\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s1-ep8",
+          "number": 8,
+          "title": "Yofukashi no Uta - T1 Episódio 8",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/08.mp4/index.m3u8&nocache1772205367966\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s1-ep9",
+          "number": 9,
+          "title": "Yofukashi no Uta - T1 Episódio 9",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/09.mp4/index.m3u8&nocache1772205367967\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s1-ep10",
+          "number": 10,
+          "title": "Yofukashi no Uta - T1 Episódio 10",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/10.mp4/index.m3u8&nocache1772205367967\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s1-ep11",
+          "number": 11,
+          "title": "Yofukashi no Uta - T1 Episódio 11",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/11.mp4/index.m3u8&nocache1772205367967\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s1-ep12",
+          "number": 12,
+          "title": "Yofukashi no Uta - T1 Episódio 12",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/12.mp4/index.m3u8&nocache1772205367967\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s1-ep13",
+          "number": 13,
+          "title": "Yofukashi no Uta - T1 Episódio 13",
+          "season": "1",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/13.mp4/index.m3u8&nocache1772205367967\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        }
+      ]
     },
     {
-      "id": "yofukashi-no-uta-season-2-2",
-      "number": 2,
-      "title": "Yofukashi no Uta Season 2 - Episódio 2",
-      "season": "2",
-      "embeds": {
-        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/c4RUiMq6EbUitxU\" frameborder=\"0\" allowfullscreen></iframe>"
-      },
-      "embedCredit": "anidrive.click"
-    },
-    {
-      "id": "yofukashi-no-uta-season-2-3",
-      "number": 3,
-      "title": "Yofukashi no Uta Season 2 - Episódio 3",
-      "season": "2",
-      "embeds": {
-        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/qXjtUrfvTnxacVV\" frameborder=\"0\" allowfullscreen></iframe>"
-      },
-      "embedCredit": "anidrive.click"
-    },
-    {
-      "id": "yofukashi-no-uta-season-2-4",
-      "number": 4,
-      "title": "Yofukashi no Uta Season 2 - Episódio 4",
-      "season": "2",
-      "embeds": {
-        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/ypVK8EpcP40Rua0\" frameborder=\"0\" allowfullscreen></iframe>"
-      },
-      "embedCredit": "anidrive.click"
-    },
-    {
-      "id": "yofukashi-no-uta-season-2-5",
-      "number": 5,
-      "title": "Yofukashi no Uta Season 2 - Episódio 5",
-      "season": "2",
-      "embeds": {
-        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/wTeh9WMWMXfJzLI\" frameborder=\"0\" allowfullscreen></iframe>"
-      },
-      "embedCredit": "anidrive.click"
-    },
-    {
-      "id": "yofukashi-no-uta-season-2-6",
-      "number": 6,
-      "title": "Yofukashi no Uta Season 2 - Episódio 6",
-      "season": "2",
-      "embeds": {
-        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/S3tTOzPWCISXZW6\" frameborder=\"0\" allowfullscreen></iframe>"
-      },
-      "embedCredit": "anidrive.click"
-    },
-    {
-      "id": "yofukashi-no-uta-season-2-7",
-      "number": 7,
-      "title": "Yofukashi no Uta Season 2 - Episódio 7",
-      "season": "2",
-      "embeds": {
-        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/PVNyYbbwZILAE5e\" frameborder=\"0\" allowfullscreen></iframe>"
-      },
-      "embedCredit": "anidrive.click"
-    },
-    {
-      "id": "yofukashi-no-uta-season-2-8",
-      "number": 8,
-      "title": "Yofukashi no Uta Season 2 - Episódio 8",
-      "season": "2",
-      "embeds": {
-        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/aXZ8GLSXhLFzv1S\" frameborder=\"0\" allowfullscreen></iframe>"
-      },
-      "embedCredit": "anidrive.click"
-    },
-    {
-      "id": "yofukashi-no-uta-season-2-9",
-      "number": 9,
-      "title": "Yofukashi no Uta Season 2 - Episódio 9",
-      "season": "2",
-      "embeds": {
-        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/jkywakeHX0adOj0\" frameborder=\"0\" allowfullscreen></iframe>"
-      },
-      "embedCredit": "anidrive.click"
-    },
-    {
-      "id": "yofukashi-no-uta-season-2-10",
-      "number": 10,
-      "title": "Yofukashi no Uta Season 2 - Episódio 10",
-      "season": "2",
-      "embeds": {
-        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/om39aIBnNJVrPuh\" frameborder=\"0\" allowfullscreen></iframe>"
-      },
-      "embedCredit": "anidrive.click"
-    },
-    {
-      "id": "yofukashi-no-uta-season-2-11",
-      "number": 11,
-      "title": "Yofukashi no Uta Season 2 - Episódio 11",
-      "season": "2",
-      "embeds": {
-        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/wuVOjfZtSfB625C\" frameborder=\"0\" allowfullscreen></iframe>"
-      },
-      "embedCredit": "anidrive.click"
-    },
-    {
-      "id": "yofukashi-no-uta-season-2-12",
-      "number": 12,
-      "title": "Yofukashi no Uta Season 2 - Episódio 12",
-      "season": "2",
-      "embeds": {
-        "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/XJM7V2G5HETAW2d\" frameborder=\"0\" allowfullscreen></iframe>"
-      },
-      "embedCredit": "anidrive.click"
+      "season": 2,
+      "seasonLabel": "2ª Temporada",
+      "year": 2022,
+      "episodes": 12,
+      "currentEpisode": 12,
+      "status": "finished",
+      "score": 7.94,
+      "synopsis": "Kou Yamori is an average middle school student who struggles with grasping the complex concept of love. Because he sees little sense in surrendering to the norm, he soon stops going to school. Plagued with insomnia due to his idleness, Kou begins roaming the lonesome streets at night.\n\nOne night, Kou encounters a bizarre girl named Nazuna Nanakusa who believes that people stay awake during the night because they are dissatisfied with how they spent their day and cannot rest until they release their inhibitions. Nazuna offers to help Kou with his sleep issues and invites him over to her place, where she convinces him to share a futon with her. Feeling uncomfortable, Kou only pretends to doze off—which is when Nazuna suddenly bites his neck, revealing herself to be a vampire!\n\nWhile Kou thinks the bite will turn him into a vampire, the specifics of transforming are not that simple. In order to change, he must be bitten by someone he truly loves. Ready to let go of his dreary mortal life, Kou decides on a new goal: he will fall in love with Nazuna and become a vampire himself.\n\n[Written by MAL Rewrite]",
+      "trailer": null,
+      "audios": [
+        {
+          "type": "sub",
+          "label": "Legendado",
+          "available": true,
+          "episodesAvailable": 12
+        },
+        {
+          "type": "dub",
+          "label": "Dublado",
+          "available": false,
+          "episodesAvailable": 12
+        }
+      ],
+      "episodeList": [
+        {
+          "id": "yofukashi-no-uta-s2-ep1",
+          "number": 1,
+          "title": "Yofukashi no Uta - T2 Episódio 1",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/01.mp4/index.m3u8&nocache1772205367968\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s2-ep2",
+          "number": 2,
+          "title": "Yofukashi no Uta - T2 Episódio 2",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/02.mp4/index.m3u8&nocache1772205367968\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s2-ep3",
+          "number": 3,
+          "title": "Yofukashi no Uta - T2 Episódio 3",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/03.mp4/index.m3u8&nocache1772205367968\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s2-ep4",
+          "number": 4,
+          "title": "Yofukashi no Uta - T2 Episódio 4",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/04.mp4/index.m3u8&nocache1772205367968\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s2-ep5",
+          "number": 5,
+          "title": "Yofukashi no Uta - T2 Episódio 5",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/05.mp4/index.m3u8&nocache1772205367969\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s2-ep6",
+          "number": 6,
+          "title": "Yofukashi no Uta - T2 Episódio 6",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/06.mp4/index.m3u8&nocache1772205367969\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s2-ep7",
+          "number": 7,
+          "title": "Yofukashi no Uta - T2 Episódio 7",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/07.mp4/index.m3u8&nocache1772205367969\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s2-ep8",
+          "number": 8,
+          "title": "Yofukashi no Uta - T2 Episódio 8",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/08.mp4/index.m3u8&nocache1772205367969\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s2-ep9",
+          "number": 9,
+          "title": "Yofukashi no Uta - T2 Episódio 9",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/09.mp4/index.m3u8&nocache1772205367970\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s2-ep10",
+          "number": 10,
+          "title": "Yofukashi no Uta - T2 Episódio 10",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/10.mp4/index.m3u8&nocache1772205367970\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s2-ep11",
+          "number": 11,
+          "title": "Yofukashi no Uta - T2 Episódio 11",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/11.mp4/index.m3u8&nocache1772205367970\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        },
+        {
+          "id": "yofukashi-no-uta-s2-ep12",
+          "number": 12,
+          "title": "Yofukashi no Uta - T2 Episódio 12",
+          "season": "2",
+          "embeds": {
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/12.mp4/index.m3u8&nocache1772205367970\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "embedCredit": "api.anivideo.net"
+        }
+      ]
     }
   ]
-      }
-    ]
-  }
+}

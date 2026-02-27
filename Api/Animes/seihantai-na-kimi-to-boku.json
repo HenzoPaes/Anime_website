@@ -8,16 +8,17 @@
     "Romance"
   ],
   "studio": "Lapin Track",
+  "recommended": false,
   "malId": 60371,
   "coverImage": "https://cdn.myanimelist.net/images/anime/1140/154457l.jpg",
-  "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GT00365624-backdrop_wide",
+  "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GYE5MPJ0R-backdrop_wide",
   "seasons": [
     {
       "season": 1,
       "seasonLabel": "1ª Temporada",
       "year": 2026,
-      "episodes": 7,
-      "currentEpisode": 7,
+      "episodes": 6,
+      "currentEpisode": 6,
       "status": "ongoing",
       "score": 8.19,
       "synopsis": "Next to Miyu Suzuki, a trendy and bubbly high school girl, sits Yuusuke Tani, a quiet and frank boy. Their interactions are brief, limited to Suzuki's unprompted random questions and Tani's succinct answers. Yet, beneath these simple exchanges, feelings of love are quietly blossoming.\n\nSuzuki sees Tani for who he is: a straightforward boy who respects everyone equally, completely unconcerned about fitting in. Unlike Tani, she is too hung up on what everyone else thinks, desperate to keep her crush a secret. However, a slight misunderstanding leads to Suzuki confessing her feelings—and to her delight, Tani feels the same. Jittery with excitement, the young couple starts dating, embarking on a wonderful journey of friendship and love.\n\n[Written by MAL Rewrite]",
@@ -27,13 +28,13 @@
           "type": "sub",
           "label": "Legendado",
           "available": true,
-          "episodesAvailable": 7
+          "episodesAvailable": 6
         },
         {
           "type": "dub",
           "label": "Dublado",
           "available": true,
-          "episodesAvailable": 7
+          "episodesAvailable": 6
         }
       ],
       "episodeList": [
@@ -43,10 +44,10 @@
           "title": "Seihantai na Kimi to Boku - T1 Episódio 1",
           "season": "1",
           "embeds": {
-            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/n7xiragudmnkt0s\" frameborder=\"0\" allowfullscreen></iframe>",
-            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/3pmjjngjh73eoiy\" frameborder=\"0\" allowfullscreen></iframe>"
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/01.mp4/index.m3u8&nocache1772205949591\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/01.mp4/index.m3u8&nocache1772205949591\" frameborder=\"0\" allowfullscreen></iframe>"
           },
-          "embedCredit": "anidrive.click"
+          "embedCredit": "api.anivideo.net"
         },
         {
           "id": "seihantai-na-kimi-to-boku-s1-ep2",
@@ -54,10 +55,10 @@
           "title": "Seihantai na Kimi to Boku - T1 Episódio 2",
           "season": "1",
           "embeds": {
-            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/6e4phgs0j2ui2kz\" frameborder=\"0\" allowfullscreen></iframe>",
-            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/pKYXitgrglLyjaP\" frameborder=\"0\" allowfullscreen></iframe>"
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/02.mp4/index.m3u8&nocache1772205949591\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/02.mp4/index.m3u8&nocache1772205949591\" frameborder=\"0\" allowfullscreen></iframe>"
           },
-          "embedCredit": "anidrive.click"
+          "embedCredit": "api.anivideo.net"
         },
         {
           "id": "seihantai-na-kimi-to-boku-s1-ep3",
@@ -65,10 +66,10 @@
           "title": "Seihantai na Kimi to Boku - T1 Episódio 3",
           "season": "1",
           "embeds": {
-            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/hnxa28uhpbj4x8k\" frameborder=\"0\" allowfullscreen></iframe>",
-            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/n3s4sskzc6arrnb\" frameborder=\"0\" allowfullscreen></iframe>"
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/03.mp4/index.m3u8&nocache1772205949591\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/03.mp4/index.m3u8&nocache1772205949591\" frameborder=\"0\" allowfullscreen></iframe>"
           },
-          "embedCredit": "anidrive.click"
+          "embedCredit": "api.anivideo.net"
         },
         {
           "id": "seihantai-na-kimi-to-boku-s1-ep4",
@@ -76,10 +77,10 @@
           "title": "Seihantai na Kimi to Boku - T1 Episódio 4",
           "season": "1",
           "embeds": {
-            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/bzrpfg45na5cvl8\" frameborder=\"0\" allowfullscreen></iframe>",
-            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/m07vzhgeklvbi7c\" frameborder=\"0\" allowfullscreen></iframe>"
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/04.mp4/index.m3u8&nocache1772205949592\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/04.mp4/index.m3u8&nocache1772205949592\" frameborder=\"0\" allowfullscreen></iframe>"
           },
-          "embedCredit": "anidrive.click"
+          "embedCredit": "api.anivideo.net"
         },
         {
           "id": "seihantai-na-kimi-to-boku-s1-ep5",
@@ -87,10 +88,10 @@
           "title": "Seihantai na Kimi to Boku - T1 Episódio 5",
           "season": "1",
           "embeds": {
-            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/wh18vv39dmfdczd\" frameborder=\"0\" allowfullscreen></iframe>",
-            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/m07vzhgeklvbi7c\" frameborder=\"0\" allowfullscreen></iframe>"
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/05.mp4/index.m3u8&nocache1772205949592\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/05.mp4/index.m3u8&nocache1772205949592\" frameborder=\"0\" allowfullscreen></iframe>"
           },
-          "embedCredit": "anidrive.click"
+          "embedCredit": "api.anivideo.net"
         },
         {
           "id": "seihantai-na-kimi-to-boku-s1-ep6",
@@ -98,23 +99,12 @@
           "title": "Seihantai na Kimi to Boku - T1 Episódio 6",
           "season": "1",
           "embeds": {
-            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/58i4k8frflk869g\" frameborder=\"0\" allowfullscreen></iframe>",
-            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/na5mjb7sq0lsgw6\" frameborder=\"0\" allowfullscreen></iframe>"
+            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/06.mp4/index.m3u8&nocache1772205949593\" frameborder=\"0\" allowfullscreen></iframe>",
+            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/06.mp4/index.m3u8&nocache1772205949593\" frameborder=\"0\" allowfullscreen></iframe>"
           },
-          "embedCredit": "anidrive.click"
-        },
-        {
-          "id": "seihantai-na-kimi-to-boku-s1-ep7",
-          "number": 7,
-          "title": "Seihantai na Kimi to Boku - T1 Episódio 7",
-          "season": "1",
-          "embeds": {
-            "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/yu1p7z8mn31z0h0\" frameborder=\"0\" allowfullscreen></iframe>",
-            "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://anidrive.click/token/c6zqb82a5c1w6wn\" frameborder=\"0\" allowfullscreen></iframe>"
-          },
-          "embedCredit": "anidrive.click"
+          "embedCredit": "api.anivideo.net"
         }
       ]
     }
   ]
-  }
+}

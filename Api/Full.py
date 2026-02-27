@@ -35,6 +35,40 @@ def build_anivideo_ep_url(stream_path: str, ep_num: int) -> str:
     cdn_url = f"{ANIVIDEO_CDN_BASE}/{stream_path}/{ep_str}.mp4/index.m3u8"
     nocache = int(time.time() * 1000)       # timestamp em ms como cache-buster
     return f"{ANIVIDEO_WRAPPER}?d={cdn_url}&nocache{nocache}"
+def extract_av_base_slug(stream_path: str):
+    """
+    A partir de um stream_path completo, extrai a letra e o slug-base limpo.
+
+    Exemplos:
+      "j/jujutsu-kaisen-3-dublado" -> ("j", "jujutsu-kaisen")
+      "y/yofukashi-no-uta-2"       -> ("y", "yofukashi-no-uta")
+      "j/jujutsu-kaisen"           -> ("j", "jujutsu-kaisen")
+      "j/jujutsu-kaisen-dublado"   -> ("j", "jujutsu-kaisen")
+    """
+    parts = stream_path.split("/", 1)
+    letter = parts[0]
+    slug   = parts[1] if len(parts) > 1 else ""
+    slug   = re.sub(r"-dublado$", "", slug, flags=re.IGNORECASE)  # remove -dublado
+    slug   = re.sub(r"-\d+$",     "", slug)                       # remove -N (numero da temporada)
+    return letter.lower(), slug
+
+def build_anivideo_stream_path(letter: str, base_slug: str, season_num: int, is_dub: bool = False) -> str:
+    """
+    Monta o stream_path para uma temporada e audio especificos.
+
+    Regras:
+      - T1 sub  ->  letter/base_slug
+      - T1 dub  ->  letter/base_slug-dublado
+      - T2 sub  ->  letter/base_slug-2
+      - T2 dub  ->  letter/base_slug-2-dublado
+      - T3 dub  ->  letter/base_slug-3-dublado
+    """
+    path = f"{letter}/{base_slug}"
+    if season_num > 1:
+        path += f"-{season_num}"
+    if is_dub:
+        path += "-dublado"
+    return path
 # ─────────────────────────────────────────────────────────────────────────────
 
 # --- FUNÇÕES DE EXTRAÇÃO ---
@@ -418,6 +452,28 @@ def main():
     
     is_safe_mode = normalize_yesno(input("\n>>> ATIVAR MODO SEGURO? (Pede o link de CADA episódio manualmente) (s/n): "))
 
+    # ── Detecção antecipada do AniVideo ──────────────────────────────────────
+    is_anivideo_site = normalize_yesno(input("\nUsar animesdigital.org (anivideo)? (s/n): "))
+    av_letter    = None
+    av_base_slug = None
+    if is_anivideo_site and not is_safe_mode:
+        print("\n[AV] Cole a URL de qualquer episodio do anime (ex: ep 1 T1 sub ou dub).")
+        print("     O slug-base e a letra serao extraidos automaticamente.")
+        ref_url = prompt_nonempty("URL de referencia anivideo: ")
+        m_av = ANIVIDEO_STREAM_RE.search(ref_url)
+        if m_av:
+            av_letter, av_base_slug = extract_av_base_slug(m_av.group(1))
+            print(f"   [AV] Letra   : '{av_letter}'")
+            print(f"   [AV] Slug-base: '{av_base_slug}'")
+            print(f"   [AV] Exemplo T1 sub  : {build_anivideo_stream_path(av_letter, av_base_slug, 1, False)}")
+            print(f"   [AV] Exemplo T1 dub  : {build_anivideo_stream_path(av_letter, av_base_slug, 1, True)}")
+            print(f"   [AV] Exemplo T2 sub  : {build_anivideo_stream_path(av_letter, av_base_slug, 2, False)}")
+            print(f"   [AV] Exemplo T2 dub  : {build_anivideo_stream_path(av_letter, av_base_slug, 2, True)}")
+        else:
+            print("[AV] AVISO: nao foi possivel extrair stream_path. Desativando anivideo.")
+            is_anivideo_site = False
+    # ─────────────────────────────────────────────────────────────────────────
+
     try:
         total_seasons = int(prompt_nonempty("Quantas temporadas?: "))
     except ValueError: return
@@ -426,7 +482,7 @@ def main():
     for s in range(1, total_seasons + 1):
         print(f"\n--- Configurando Temporada {s} ---")
         try:
-            total_eps = int(prompt_nonempty(f"Total de episódios da Temporada {s}: "))
+            total_eps = int(prompt_nonempty(f"Total de episodios da Temporada {s}: "))
         except ValueError: return
 
         has_dub = normalize_yesno(input(f"Tem Dublado? (s/n): "))
@@ -434,7 +490,8 @@ def main():
 
         url_dub_base = None
         url_sub_base = None
-        if not is_safe_mode:
+        if not is_safe_mode and not is_anivideo_site:
+            # Sites normais: pede URL do ep 1 de cada temporada
             url_dub_base = prompt_nonempty(f"Link do Ep 1 Dublado: ") if has_dub else None
             url_sub_base = prompt_nonempty(f"Link do Ep 1 Legendado: ") if has_leg else None
 
@@ -515,30 +572,39 @@ def main():
                     is_av_dub    = "anivideo.net" in (current_url_dub or "") or "mywallpaper-4k-image.net" in (current_url_dub or "")
                     is_av_sub    = "anivideo.net" in (current_url_sub or "") or "mywallpaper-4k-image.net" in (current_url_sub or "")
                 else:
-                    # ── AniVideo: gera URL direto pelo stream_path + ep number ──────
-                    if dub_info and dub_info.get("is_anivideo"):
-                        current_url_dub = build_anivideo_ep_url(dub_info["av_stream_path"], i)
+                    # ── AniVideo: monta URL pelo slug-base + temporada + audio ───────
+                    if is_anivideo_site and av_letter and av_base_slug:
+                        if s_data["has_dub"]:
+                            sp_dub = build_anivideo_stream_path(av_letter, av_base_slug, s_num, is_dub=True)
+                            current_url_dub = build_anivideo_ep_url(sp_dub, i)
+                        else:
+                            current_url_dub = None
+                        if s_data["has_leg"]:
+                            sp_sub = build_anivideo_stream_path(av_letter, av_base_slug, s_num, is_dub=False)
+                            current_url_sub = build_anivideo_ep_url(sp_sub, i)
+                        else:
+                            current_url_sub = None
+                    # ── Outros sites: usa dub_info/sub_info como antes ───────────────
                     elif dub_info and dub_info.get("is_animesdigital") and dub_episode_list:
                         current_url_dub = dub_episode_list[i-1] if i-1 < len(dub_episode_list) else None
                     else:
                         current_url_dub = (f'{dub_info["base_site"]}{dub_info["start_id"] + i - 1}/' if dub_info and dub_info.get("is_animesonline") else (f'{dub_info["base_fire"]}/{i}' if dub_info else None))
 
-                    if sub_info and sub_info.get("is_anivideo"):
-                        current_url_sub = build_anivideo_ep_url(sub_info["av_stream_path"], i)
-                    elif sub_info and sub_info.get("is_animesdigital") and sub_episode_list:
-                        current_url_sub = sub_episode_list[i-1] if i-1 < len(sub_episode_list) else None
-                    else:
-                        current_url_sub = (f'{sub_info["base_site"]}{sub_info["start_id"] + i - 1}/' if sub_info and sub_info.get("is_animesonline") else (f'{sub_info["base_fire"]}/{i}' if sub_info else None))
+                    if not is_anivideo_site:
+                        if sub_info and sub_info.get("is_animesdigital") and sub_episode_list:
+                            current_url_sub = sub_episode_list[i-1] if i-1 < len(sub_episode_list) else None
+                        else:
+                            current_url_sub = (f'{sub_info["base_site"]}{sub_info["start_id"] + i - 1}/' if sub_info and sub_info.get("is_animesonline") else (f'{sub_info["base_fire"]}/{i}' if sub_info else None))
                     # ─────────────────────────────────────────────────────────────────
 
-                    is_ao_dub    = dub_info["is_animesonline"]   if dub_info else False
-                    is_ao_sub    = sub_info["is_animesonline"]   if sub_info else False
-                    is_ad_dub    = dub_info["is_animesdigital"]  if dub_info else False
-                    is_ad_sub    = sub_info["is_animesdigital"]  if sub_info else False
-                    is_ao_cc_dub = dub_info["is_animesonlinecc"] if dub_info else False
-                    is_ao_cc_sub = sub_info["is_animesonlinecc"] if sub_info else False
-                    is_av_dub    = dub_info["is_anivideo"]       if dub_info else False
-                    is_av_sub    = sub_info["is_anivideo"]       if sub_info else False
+                    is_ao_dub    = (dub_info["is_animesonline"]   if dub_info else False) if not is_anivideo_site else False
+                    is_ao_sub    = (sub_info["is_animesonline"]   if sub_info else False) if not is_anivideo_site else False
+                    is_ad_dub    = (dub_info["is_animesdigital"]  if dub_info else False) if not is_anivideo_site else False
+                    is_ad_sub    = (sub_info["is_animesdigital"]  if sub_info else False) if not is_anivideo_site else False
+                    is_ao_cc_dub = (dub_info["is_animesonlinecc"] if dub_info else False) if not is_anivideo_site else False
+                    is_ao_cc_sub = (sub_info["is_animesonlinecc"] if sub_info else False) if not is_anivideo_site else False
+                    is_av_dub    = is_anivideo_site and s_data["has_dub"]
+                    is_av_sub    = is_anivideo_site and s_data["has_leg"]
 
                 d_link = extract_for_episode(context, current_url_dub, desired_audio="dub", is_animes_online=is_ao_dub, is_animesdigital=is_ad_dub, is_animesonlinecc=is_ao_cc_dub, is_anivideo=is_av_dub) if current_url_dub else None
                 s_link = extract_for_episode(context, current_url_sub, desired_audio="sub", is_animes_online=is_ao_sub, is_animesdigital=is_ad_sub, is_animesonlinecc=is_ao_cc_sub, is_anivideo=is_av_sub) if current_url_sub else None

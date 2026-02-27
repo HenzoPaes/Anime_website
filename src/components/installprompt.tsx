@@ -62,6 +62,8 @@ export default function InstallPrompt() {
     const { outcome } = await prompt.userChoice;
     if (outcome === "accepted") {
       setIsInstalled(true);
+      // Salva no localStorage para detectar como instalado
+      localStorage.setItem('pwaInstalled', 'true');
     }
     setShow(false);
     promptRef.current = null;

@@ -81,6 +81,8 @@ export default function DownloadPage() {
     if (outcome === "accepted") {
       setIsInstalled(true);
       setDeferredPrompt(null);
+      // Salva no localStorage para detectar como instalado
+      localStorage.setItem('pwaInstalled', 'true');
     }
   };
 

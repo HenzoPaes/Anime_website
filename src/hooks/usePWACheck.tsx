@@ -1,34 +1,37 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export function usePWACheck() {
   const [isPWA, setIsPWA] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const navigate = useNavigate();
+  const checkedRef = useRef(false);
 
   useEffect(() => {
+    // Evita verificação dupla
+    if (checkedRef.current) return;
+    checkedRef.current = true;
+
     // Verifica se está rodando como PWA instalado
     const checkPWA = () => {
+      // Só verifica uma vez na inicialização
+      // Não reage a mudanças de display-mode para evitar conflitos com cinema mode
       const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
       const isInWebAppiOS = (window.navigator as any).standalone === true;
+      const isInstalled = localStorage.getItem('pwaInstalled') === 'true';
       
-      setIsPWA(isStandalone || isInWebAppiOS);
+      setIsPWA(isStandalone || isInWebAppiOS || isInstalled);
       setIsLoading(false);
     };
 
     checkPWA();
-
-    // Também ouve mudanças no display-mode
-    const mediaQuery = window.matchMedia('(display-mode: standalone)');
-    const handleChange = (e: MediaQueryListEvent) => {
-      setIsPWA(e.matches);
-    };
-    
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
 
   return { isPWA, isLoading };
+}
+
+// Função para marcar como instalado
+export function setPWAInstalled() {
+  localStorage.setItem('pwaInstalled', 'true');
 }
 
 // Componente que redireciona se não for PWA

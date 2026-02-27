@@ -23,6 +23,7 @@ const DownloadPage     = lazy(() => import("./pages/downloadpage"));
 // Dev-only lazy components (used by the /dev playground)
 const DevAnimeCard = lazy(() => import("./components/animecard"));
 const DevSearchBar = lazy(() => import("./components/searchbar"));
+const DevWatchListB = lazy(() => import("./components/watchlistbutton"));
 
 /**
  * DevPlayground
@@ -61,7 +62,7 @@ function DevPlayground({ theme, toggleTheme }: { theme: "dark" | "light"; toggle
         <h1 className="text-2xl font-bold mb-4">Dev Playground — Componentes isolados</h1>
 
         <div className="flex gap-2 flex-wrap mb-6">
-          {["Navbar","Footer","PageLoader","InstallPrompt","AnimeCard","SearchBar"].map(c => (
+          {["Navbar","Footer","PageLoader","InstallPrompt","AnimeCard","SearchBar","WatchListButton"].map(c => (
             <button key={c}
               onClick={() => setSelected(c)}
               className={`px-3 py-1 rounded text-sm ${selected === c ? "bg-brand-500 text-black" : "bg-white/5 text-gray-300"}`}>
@@ -81,6 +82,7 @@ function DevPlayground({ theme, toggleTheme }: { theme: "dark" | "light"; toggle
             {selected === "InstallPrompt" && <InstallPrompt />}
             {selected === "AnimeCard" && <DevAnimeCard anime={mockAnime} index={0} watchedCount={2} />}
             {selected === "SearchBar" && <DevSearchBar animes={mockAnimes} compact={false} autoFocus={false} />}
+            {selected === "WatchListButton" && <DevWatchListB anime={mockAnime} />}
           </Suspense>
         </div>
 
@@ -138,7 +140,7 @@ export default function App() {
               <Route path="/download"           element={<DownloadPage />} />
 
               {/* Dev playground (visualizar componentes isolados) */}
-              <Route path="/dev" element={isLocalhost ? <DevPlayground theme={theme} toggleTheme={toggleTheme} /> : <DownloadPage />} />
+              <Route path="/dev" element={isLocalhost ? <DevPlayground theme={theme} toggleTheme={toggleTheme} /> : <NotFoundPage />} />
 
               <Route path="*"                   element={<NotFoundPage />} />
             </Routes>

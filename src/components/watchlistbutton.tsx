@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useWatchlist, WatchStatus, WATCHLIST_LABELS, WATCHLIST_COLORS } from "../hooks/usewatchlist";
 
-const STATUSES: WatchStatus[] = ["assistindo", "quero-ver", "concluido", "droppado"];
+const STATUSES: WatchStatus[] = ["assistindo", "quero-ver", "concluido", "droppado", "reassistindo"];
 
 interface Props { animeId: string; compact?: boolean; }
 

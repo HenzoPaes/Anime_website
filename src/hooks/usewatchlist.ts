@@ -2,7 +2,7 @@
 import { useCallback } from "react";
 import { useLocalStorage } from "./uselocalstorage";
 
-export type WatchStatus = "assistindo" | "concluido" | "droppado" | "quero-ver";
+export type WatchStatus = "assistindo" | "concluido" | "droppado" | "quero-ver" | "reassistindo";
 
 export interface WatchlistEntry {
   status: WatchStatus;
@@ -11,10 +11,11 @@ export interface WatchlistEntry {
 }
 
 export const WATCHLIST_LABELS: Record<WatchStatus, string> = {
-  assistindo:  "📺 Assistindo",
-  concluido:   "✅ Concluído",
-  droppado:    "❌ Droppado",
-  "quero-ver": "🔖 Quero Ver",
+  assistindo:       "📺 Assistindo",
+  concluido:        "✅ Concluído",
+  droppado:         "❌ Droppado",
+  "quero-ver":      "🔖 Quero Ver",
+  "reassistindo":   "🔁 Reassistindo",
 };
 
 export const WATCHLIST_COLORS: Record<WatchStatus, string> = {
@@ -22,6 +23,7 @@ export const WATCHLIST_COLORS: Record<WatchStatus, string> = {
   concluido:   "bg-green-500/40 text-green-300 border-green-500/30",
   droppado:    "bg-red-500/40 text-red-300 border-red-500/30",
   "quero-ver": "bg-yellow-500/40 text-yellow-300 border-yellow-500/30",
+  "reassistindo": "bg-purple-500/40 text-purple-300 border-purple-500/30",
 };
 
 type WatchlistMap = Record<string, WatchlistEntry>;

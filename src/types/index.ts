@@ -17,7 +17,7 @@ export interface Episode {
 
 export type AudioType = "legendado" | "dublado" | "dual-audio" | "";
 export type AnimeStatus = "em-andamento" | "completo" | "pausado" | "cancelado" | "";
-export type ListStatus = "assistindo" | "concluido" | "droppado" | "quero-ver";
+export type ListStatus = "assistindo" | "concluido" | "droppado" | "quero-ver" | "reassistindo";
 
 export interface Anime {
   id: string;

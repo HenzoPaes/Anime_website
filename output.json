@@ -7846,11 +7846,11 @@
         ]
       },
       {
-        "season": 2,
-        "seasonLabel": "2ª Temporada",
+        "season": 1.1,
+        "seasonLabel": "Continuação da 1ª Temporada",
         "year": 2022,
-        "episodes": 12,
-        "currentEpisode": 12,
+        "episodes": 13,
+        "currentEpisode": 13,
         "status": "finished",
         "score": 8.43,
         "synopsis": "Corrupt politicians, frenzied nationalists, and other warmongering forces constantly jeopardize the thin veneer of peace between neighboring countries Ostania and Westalis. In spite of their plots, renowned spy and master of disguise \"Twilight\" fulfills dangerous missions one after another in the hope that no child will have to experience the horrors of war.\n\nIn the bustling Ostanian city of Berlint, Twilight dons the alias of \"Loid Forger,\" an esteemed psychiatrist. However, his true intention is to gather intelligence on prominent politician Donovan Desmond, who only appears rarely in public at his sons' school: the prestigious Eden Academy. Enlisting the help of unmarried city hall clerk Yor Briar to act as his wife and adopting the curious six-year-old orphan Anya as his daughter, Loid enacts his master plan. He will enroll Anya in Eden Academy, where Loid hopes she will excel and give him the opportunity to meet Donovan without arousing suspicion. \n\nUnfortunately for Loid, even a man of his talents has trouble playing the figure of a loving father and husband. And just like Loid is hiding his true identity, Yor—who is an underground assassin known as \"Thorn Princess\"—and Anya—an esper who can read people's minds—have no plans to disclose their own secrets either. Although this picture-perfect family is founded on deception, the Forgers gradually come to understand that the love they share for one another trumps all else.\n\n[Written by MAL Rewrite]",
@@ -7860,13 +7860,13 @@
             "type": "sub",
             "label": "Legendado",
             "available": true,
-            "episodesAvailable": 12
+            "episodesAvailable": 13
           },
           {
             "type": "dub",
             "label": "Dublado",
             "available": true,
-            "episodesAvailable": 12
+            "episodesAvailable": 13
           }
         ],
         "episodeList": [
@@ -7876,8 +7876,8 @@
             "title": "Spy x Family - T2 Ep 1",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2/01.mp4/index.m3u8&nocache1772310053605\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2-dublado/01.mp4/index.m3u8&nocache1772310053605\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/01.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/01.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -7887,8 +7887,8 @@
             "title": "Spy x Family - T2 Ep 2",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2/02.mp4/index.m3u8&nocache1772310053605\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2-dublado/02.mp4/index.m3u8&nocache1772310053605\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/02.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/02.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -7898,8 +7898,8 @@
             "title": "Spy x Family - T2 Ep 3",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2/03.mp4/index.m3u8&nocache1772310053605\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2-dublado/03.mp4/index.m3u8&nocache1772310053605\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/03.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/03.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -7909,8 +7909,8 @@
             "title": "Spy x Family - T2 Ep 4",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2/04.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2-dublado/04.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/04.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/04.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -7920,8 +7920,8 @@
             "title": "Spy x Family - T2 Ep 5",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2/05.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2-dublado/05.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/05.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/05.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -7931,8 +7931,8 @@
             "title": "Spy x Family - T2 Ep 6",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2/06.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2-dublado/06.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/06.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/06.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -7942,8 +7942,8 @@
             "title": "Spy x Family - T2 Ep 7",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2/07.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2-dublado/07.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/07.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/07.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -7953,8 +7953,8 @@
             "title": "Spy x Family - T2 Ep 8",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2/08.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2-dublado/08.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/08.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/08.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -7964,8 +7964,8 @@
             "title": "Spy x Family - T2 Ep 9",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2/09.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2-dublado/09.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/09.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/09.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -7975,8 +7975,8 @@
             "title": "Spy x Family - T2 Ep 10",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2/10.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2-dublado/10.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/10.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/10.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -7986,8 +7986,8 @@
             "title": "Spy x Family - T2 Ep 11",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2/11.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2-dublado/11.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/11.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/11.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -7997,13 +7997,25 @@
             "title": "Spy x Family - T2 Ep 12",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2/12.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-season-2-dublado/12.mp4/index.m3u8&nocache1772310053606\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/12.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/12.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "spy-x-family-s2-ep13",
+            "number": 13,
+            "title": "Spy x Family - T2 Ep 13",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2/13.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-family-2-dublado/13.mp4/index.m3u8&nocache1772309834887\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }
         ]
       }
+
     ]
   }
 ]

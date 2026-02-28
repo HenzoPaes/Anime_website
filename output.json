@@ -1330,8 +1330,7 @@
             "title": "Jujutsu Kaisen - T3 Episódio 7",
             "season": "3",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/07.mp4/index.m3u8&nocache1772201703131\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3-dublado/07.mp4/index.m3u8&nocache1772201703131\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/07.mp4/index.m3u8&nocache1772201703131\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -1341,8 +1340,7 @@
             "title": "Jujutsu Kaisen - T3 Episódio 8",
             "season": "3",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/08.mp4/index.m3u8&nocache1772201703133\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3-dublado/08.mp4/index.m3u8&nocache1772201703133\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/08.mp4/index.m3u8&nocache1772201703133\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }
@@ -1370,7 +1368,7 @@
         "seasonLabel": "1ª Temporada",
         "year": 2026,
         "episodes": 12,
-        "currentEpisode": 6,
+        "currentEpisode": 7,
         "status": "ongoing",
         "score": 8.19,
         "synopsis": "Next to Miyu Suzuki, a trendy and bubbly high school girl, sits Yuusuke Tani, a quiet and frank boy. Their interactions are brief, limited to Suzuki's unprompted random questions and Tani's succinct answers. Yet, beneath these simple exchanges, feelings of love are quietly blossoming.\n\nSuzuki sees Tani for who he is: a straightforward boy who respects everyone equally, completely unconcerned about fitting in. Unlike Tani, she is too hung up on what everyone else thinks, desperate to keep her crush a secret. However, a slight misunderstanding leads to Suzuki confessing her feelings—and to her delight, Tani feels the same. Jittery with excitement, the young couple starts dating, embarking on a wonderful journey of friendship and love.\n\n[Written by MAL Rewrite]",
@@ -1380,13 +1378,13 @@
             "type": "sub",
             "label": "Legendado",
             "available": true,
-            "episodesAvailable": 6
+            "episodesAvailable": 7
           },
           {
             "type": "dub",
             "label": "Dublado",
             "available": true,
-            "episodesAvailable": 6
+            "episodesAvailable": 7
           }
         ],
         "episodeList": [
@@ -1453,6 +1451,17 @@
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/06.mp4/index.m3u8&nocache1772205949593\" frameborder=\"0\" allowfullscreen></iframe>",
               "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/06.mp4/index.m3u8&nocache1772205949593\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "seihantai-na-kimi-to-boku-s1-ep7",
+            "number": 7,
+            "title": "Seihantai na Kimi to Boku - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/07.mp4/index.m3u8&nocache1772302814405\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/07.mp4/index.m3u8&nocache1772302814862\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }
@@ -1832,7 +1841,7 @@
             "type": "dub",
             "label": "Dublado",
             "available": true,
-            "episodesAvailable": 3
+            "episodesAvailable": 4
           }
         ],
         "episodeList": [
@@ -1876,7 +1885,7 @@
             "season": "2",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/04.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/04.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/04.mp4/index.m3u8&nocache1772303562396\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -1886,8 +1895,7 @@
             "title": "Sousou no Frieren - T2 Episódio 5",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/05.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/05.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/05.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -1897,8 +1905,7 @@
             "title": "Sousou no Frieren - T2 Episódio 6",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/06.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/06.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/06.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }

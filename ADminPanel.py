@@ -211,7 +211,7 @@ def check_next_ep_per_audio(anime: dict) -> list[dict]:
 def try_add_next_ep(anime: dict) -> list[str]:
     """
     Verifica e adiciona próximo episódio para SUB e DUB de forma independente.
-    Cada áudio pode estar em episódios diferentes.
+    Cada áudio é tratado separadamente para evitar contaminação entre valores.
     """
     logs = []
     for season in anime.get("seasons", []):
@@ -227,55 +227,63 @@ def try_add_next_ep(anime: dict) -> list[str]:
 
         logs.append(f"  ── S{s_num} — {season.get('seasonLabel', '')} ──")
 
-        # Monta mapa ep_num -> embeds existentes
-        ep_map: dict[int, dict] = {ep["number"]: ep for ep in ep_list}
+        # mapa ep_num -> episodio (facilita atualizações)
+        ep_map: dict[int, dict] = {int(ep["number"]): ep for ep in ep_list}
 
-        # Acha path e contagem atual para sub e dub separadamente
-        sub_path = dub_path = None
-        sub_cur  = dub_cur  = 0
+        # ---- Encontrar último ep com embed SUB e DUB independentemente ----
+        last_sub_num = 0
+        last_sub_path = None
+        last_dub_num = 0
+        last_dub_path = None
 
-        for ep in reversed(ep_list):
-            embeds = ep.get("embeds", {})
-            if sub_path is None and embeds.get("sub"):
-                sub_path = extract_av_path(embeds["sub"])
-                sub_cur  = ep["number"]
-            if dub_path is None and embeds.get("dub"):
-                dub_path = extract_av_path(embeds["dub"])
-                dub_cur  = ep["number"]
-            if sub_path and dub_path:
-                break
+        for ep in ep_list:
+            num = int(ep["number"])
+            embeds = ep.get("embeds", {}) or {}
+            sub_embed = embeds.get("sub")
+            dub_embed = embeds.get("dub")
+            if sub_embed:
+                last_sub_num = max(last_sub_num, num)
+                # extrai path baseado no embed (mantém o último encontrado)
+                p = extract_av_path(sub_embed)
+                if p:
+                    last_sub_path = p
+            if dub_embed:
+                last_dub_num = max(last_dub_num, num)
+                p = extract_av_path(dub_embed)
+                if p:
+                    last_dub_path = p
 
-        # Usa episodesAvailable como referência
-        for aud in audios:
-            if aud["type"] == "sub" and aud.get("available"):
-                sub_cur = max(sub_cur, aud.get("episodesAvailable", sub_cur))
-            if aud["type"] == "dub" and aud.get("available"):
-                dub_cur = max(dub_cur, aud.get("episodesAvailable", dub_cur))
+        # ---- Usar episodesAvailable (se estiver) para ajustar contagens ----
+        aud_sub_available = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "sub" and a.get("available")), 0)
+        aud_dub_available = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "dub" and a.get("available")), 0)
+
+        sub_cur = max(last_sub_num, int(aud_sub_available or 0))
+        dub_cur = max(last_dub_num, int(aud_dub_available or 0))
 
         any_added = False
 
-        # ── Verifica e adiciona SUB independentemente ──
-        if sub_path:
+        # ---- Checar e adicionar SUB ----
+        if last_sub_path:
             sub_next = sub_cur + 1
             if not (max_e and sub_next > max_e):
                 logs.append(f"    [LEG] Atual: ep {sub_cur:02d} → Checando ep {sub_next:02d}...")
-                if av_ep_exists(sub_path, sub_next):
+                if av_ep_exists(last_sub_path, sub_next):
                     logs.append(f"    [LEG] ✅ Ep {sub_next:02d} disponível!")
-                    # Adiciona ou atualiza embed no ep correspondente
+                    # adiciona/atualiza embed
                     if sub_next in ep_map:
-                        ep_map[sub_next]["embeds"]["sub"] = make_iframe(anivideo_url(sub_path, sub_next))
+                        ep_map[sub_next].setdefault("embeds", {})["sub"] = make_iframe(anivideo_url(last_sub_path, sub_next))
                     else:
                         ep_map[sub_next] = {
                             "id":     f"{anime['id']}-s{s_num}-ep{sub_next}",
                             "number": sub_next,
                             "title":  f"{anime.get('titleRomaji', anime['title'])} - T{s_num} Ep {sub_next}",
                             "season": str(s_num),
-                            "embeds": {"sub": make_iframe(anivideo_url(sub_path, sub_next))},
+                            "embeds": {"sub": make_iframe(anivideo_url(last_sub_path, sub_next))},
                             "embedCredit": "api.anivideo.net",
                         }
-                    # Atualiza contagem de áudio
+                    # atualizar episodesAvailable no objeto de áudio correspondente
                     for aud in audios:
-                        if aud["type"] == "sub":
+                        if aud.get("type") == "sub":
                             aud["episodesAvailable"] = sub_next
                     any_added = True
                 else:
@@ -283,26 +291,26 @@ def try_add_next_ep(anime: dict) -> list[str]:
         else:
             logs.append(f"    [LEG] ⚠️  sem stream_path — pulando.")
 
-        # ── Verifica e adiciona DUB independentemente ──
-        if dub_path:
+        # ---- Checar e adicionar DUB ----
+        if last_dub_path:
             dub_next = dub_cur + 1
             if not (max_e and dub_next > max_e):
                 logs.append(f"    [DUB] Atual: ep {dub_cur:02d} → Checando ep {dub_next:02d}...")
-                if av_ep_exists(dub_path, dub_next):
+                if av_ep_exists(last_dub_path, dub_next):
                     logs.append(f"    [DUB] ✅ Ep {dub_next:02d} disponível!")
                     if dub_next in ep_map:
-                        ep_map[dub_next]["embeds"]["dub"] = make_iframe(anivideo_url(dub_path, dub_next))
+                        ep_map[dub_next].setdefault("embeds", {})["dub"] = make_iframe(anivideo_url(last_dub_path, dub_next))
                     else:
                         ep_map[dub_next] = {
                             "id":     f"{anime['id']}-s{s_num}-ep{dub_next}",
                             "number": dub_next,
                             "title":  f"{anime.get('titleRomaji', anime['title'])} - T{s_num} Ep {dub_next}",
                             "season": str(s_num),
-                            "embeds": {"dub": make_iframe(anivideo_url(dub_path, dub_next))},
+                            "embeds": {"dub": make_iframe(anivideo_url(last_dub_path, dub_next))},
                             "embedCredit": "api.anivideo.net",
                         }
                     for aud in audios:
-                        if aud["type"] == "dub":
+                        if aud.get("type") == "dub":
                             aud["episodesAvailable"] = dub_next
                     any_added = True
                 else:
@@ -310,17 +318,17 @@ def try_add_next_ep(anime: dict) -> list[str]:
         else:
             logs.append(f"    [DUB] ⚠️  sem stream_path — pulando.")
 
+        # ---- Se adicionou algo, atualiza season ----
         if any_added:
-            # Reconstrói ep_list ordenada por número
-            season["episodeList"] = sorted(ep_map.values(), key=lambda x: x["number"])
-            # Atualiza currentEpisode = maior ep que tem qualquer embed
-            all_nums = [ep["number"] for ep in season["episodeList"] if ep.get("embeds")]
+            season["episodeList"] = sorted(ep_map.values(), key=lambda x: int(x["number"]))
+            # atualiza currentEpisode = maior ep que tem qualquer embed
+            all_nums = [int(ep["number"]) for ep in season["episodeList"] if ep.get("embeds")]
             if all_nums:
                 season["currentEpisode"] = max(all_nums)
-            # Verifica se finalizou
-            sub_done = next((a.get("episodesAvailable",0) for a in audios if a["type"]=="sub"), 0)
-            dub_done = next((a.get("episodesAvailable",0) for a in audios if a["type"]=="dub"), 0)
-            if max_e and min(sub_done, dub_done) >= max_e:
+            # verifica finalização (considera min(sub_done, dub_done))
+            sub_done = next((a.get("episodesAvailable",0) for a in audios if a.get("type")=="sub"), 0)
+            dub_done = next((a.get("episodesAvailable",0) for a in audios if a.get("type")=="dub"), 0)
+            if max_e and min(int(sub_done or 0), int(dub_done or 0)) >= max_e:
                 season["status"] = "finished"
                 logs.append(f"    🏁 Temporada {s_num} concluída!")
 

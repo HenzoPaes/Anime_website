@@ -660,7 +660,7 @@ class Dialog(ctk.CTkToplevel):
 
 class AddAnimeDialog(Dialog):
     def __init__(self, master, on_submit):
-        super().__init__(master, "Adicionar Anime", 520, 560)
+        super().__init__(master, "Adicionar Anime", 520, 720)
         self._on_submit = on_submit
         self._build()
 
@@ -669,6 +669,7 @@ class AddAnimeDialog(Dialog):
         scroll = ctk.CTkScrollableFrame(self, fg_color="transparent")
         scroll.pack(fill="both", expand=True, padx=20)
 
+        # --- Campos básicos ---
         self._name    = self._field(scroll, "Nome do anime (busca MAL)", placeholder="ex: Jujutsu Kaisen")
         self._slug    = self._field(scroll, "ID Slug (vazio = auto)", placeholder="ex: jujutsu-kaisen")
         self._eps     = self._field(scroll, "Episódios disponíveis", "0")
@@ -676,42 +677,154 @@ class AddAnimeDialog(Dialog):
         self._season  = self._field(scroll, "Número da temporada", "1")
         self._avslug  = self._field(scroll, "AniVideo slug base (vazio = pular)", placeholder="ex: jujutsu-kaisen")
 
+        # include season switch
         self._include_season = ctk.BooleanVar(value=True)
-
         row2 = ctk.CTkFrame(scroll, fg_color="transparent")
-        row2.pack(fill="x", pady=(4,8))
+        row2.pack(fill="x", pady=(6,6))
         ctk.CTkLabel(row2, text="Incluir número da temporada no link?", text_color=TEXT_DIM).pack(side="left")
         ctk.CTkSwitch(row2, variable=self._include_season, text="").pack(side="right")
 
+        # type (serie/filme) com callback para toggle
         row = ctk.CTkFrame(scroll, fg_color="transparent")
-        row.pack(fill="x")
+        row.pack(fill="x", pady=(4,6))
         ctk.CTkLabel(row, text="Tipo:", text_color=TEXT_DIM, font=("Segoe UI",12)).pack(side="left")
-        self._type = ctk.CTkSegmentedButton(row, values=["Serie", "Filme"],
-                                             selected_color=ACCENT, font=("Segoe UI",12))
+        self._type = ctk.CTkSegmentedButton(
+            row,
+            values=["Serie", "Filme"],
+            selected_color=ACCENT,
+            font=("Segoe UI",12),
+            command=self._toggle_movie_fields
+        )
         self._type.set("Serie")
         self._type.pack(side="right")
 
+        # audios
         self._has_sub = self._switch(scroll, "Tem Legendado?", True)
         self._has_dub = self._switch(scroll, "Tem Dublado?", False)
 
+        # --- Frame oculto para campos de FILME (só aparece se escolher "Filme") ---
+        self._movie_frame = ctk.CTkFrame(scroll, fg_color="transparent")
+
+        # Campos do filme — criados dentro do frame (mas não empacotados inicialmente)
+        self._movie_season_label = self._field(self._movie_frame, "Season Label (nome exibido)", placeholder="ex: Chainsaw Man – Reze Arc")
+        self._movie_title = self._field(self._movie_frame, "Título do Filme", placeholder="ex: Chainsaw Man – Reze Arc")
+        self._tagline = self._field(self._movie_frame, "Tagline (curta)", "")
+        self._runtime = self._field(self._movie_frame, "Runtime (min)", "")
+        self._director = self._field(self._movie_frame, "Director", "")
+        self._age_rating = self._field(self._movie_frame, "Age Rating", "ex: 16+")
+
+        self._poster = self._field(self._movie_frame, "Poster Image URL", "")
+
+        # stills (comma separated)
+        self._stills = self._field(self._movie_frame, "Stills (vírgula separados):", "url1, url2, ...")
+
+        # cast -> multiline textbox (cada linha: Personagem|voice|voiceDub)
+        ctk.CTkLabel(self._movie_frame, text="Cast (linhas: personagem|voice|voiceDub):", text_color=TEXT_DIM,
+                     font=("Segoe UI", 12)).pack(anchor="w")
+        self._cast_widget = ctk.CTkTextbox(self._movie_frame, height=100, fg_color=BG3, text_color=TEXT, font=("Consolas", 11))
+        self._cast_widget.pack(fill="x", pady=(4,8))
+        # placeholder opcional
+        self._cast_widget.insert("1.0", "Denji|Kikunosuke Toya|Ryan Colt Levy\nReze|Reina Ueda|—")
+
+        # awards (comma separated)
+        self._awards = self._field(self._movie_frame, "Awards (vírgula separados):", "")
+
+        # accent color picker (mostrado no frame de filme)
+        self._accent_color = ctk.StringVar(value="#FF2E2E")
+        row_color = ctk.CTkFrame(self._movie_frame, fg_color="transparent")
+        row_color.pack(fill="x", pady=(6,8))
+        ctk.CTkLabel(row_color, text="Accent color:", text_color=TEXT_DIM, font=("Segoe UI", 12)).pack(side="left")
+
+        color_entry = ctk.CTkEntry(row_color, textvariable=self._accent_color,
+                                   height=36, corner_radius=8, fg_color=BG3, border_color=BORDER,
+                                   text_color=TEXT, width=160)
+        color_entry.pack(side="right", padx=(6,0))
+
+        def _pick_color():
+            from tkinter import colorchooser
+            col = colorchooser.askcolor(color=self._accent_color.get())
+            if col and col[1]:
+                self._accent_color.set(col[1])
+
+        ctk.CTkButton(row_color, text="Escolher cor", width=120, fg_color=ACCENT,
+                      hover_color=ACCENT2, command=_pick_color).pack(side="right", padx=6)
+
+        # inicialmente o frame fica escondido (já é, porque não empacotamos)
+        # self._movie_frame.pack_forget()  # não necessário, já não está empacotado
+
+        # botões
         self._buttons(scroll, "Adicionar", ACCENT, self.destroy, self._submit)
 
+    def _toggle_movie_fields(self, value):
+        """Mostra ou esconde os campos de filme dependendo do selector."""
+        # quando o widget chama a função via command, passa o VALUE selecionado; quando chamamos manualmente, self._type.get()
+        val = value if isinstance(value, str) else self._type.get()
+        if val == "Filme":
+            # packar o frame do filme se ainda não estiver
+            try:
+                # evita pack duplicado
+                if not self._movie_frame.winfo_ismapped():
+                    self._movie_frame.pack(fill="x", pady=(10, 6))
+            except Exception:
+                self._movie_frame.pack(fill="x", pady=(10, 6))
+            # opcional: desativar include_season por padrão para filmes
+            # self._include_season.set(False)
+        else:
+            # esconder
+            try:
+                self._movie_frame.pack_forget()
+            except Exception:
+                pass
+
     def _submit(self):
-        self._on_submit({
+        # coletar cast do textbox (linhas)
+        cast_text = self._cast_widget.get("1.0", "end").strip()
+
+        data = {
             "name":    self._name.get().strip(),
             "slug":    self._slug.get().strip(),
             "eps":     self._eps.get().strip(),
             "max_eps": self._max_eps.get().strip(),
             "season":  self._season.get().strip(),
             "avslug":  self._avslug.get().strip(),
-            "is_movie":self._type.get() == "Filme",
-            "has_sub": self._has_sub.get(),
-            "has_dub": self._has_dub.get(),
+            "is_movie": self._type.get() == "Filme",
+            "has_sub":  self._has_sub.get(),
+            "has_dub":  self._has_dub.get(),
             "include_season": self._include_season.get(),
-        })
+            # defaults para metadados (serão preenchidos só se is_movie == True)
+            "tagline": "",
+            "runtime": "",
+            "director": "",
+            "ageRating": "",
+            "accentColor": self._accent_color.get().strip(),
+            "posterImage": "",
+            "stills": "",
+            "cast": "",
+            "awards": "",
+            "seasonLabel": "",
+            "movieTitle": "",
+        }
+
+        # somente incluir campos de filme se is_movie == True
+        if data["is_movie"]:
+            data.update({
+                "seasonLabel": self._movie_season_label.get().strip(),
+                "movieTitle": self._movie_title.get().strip(),
+                "tagline": self._tagline.get().strip(),
+                "runtime": self._runtime.get().strip(),
+                "director": self._director.get().strip(),
+                "ageRating": self._age_rating.get().strip(),
+                "accentColor": self._accent_color.get().strip(),
+                "posterImage": self._poster.get().strip(),
+                "stills": self._stills.get().strip(),
+                "cast": cast_text,
+                "awards": self._awards.get().strip(),
+            })
+
+        # envia para o callback
+        self._on_submit(data)
         self.destroy()
-
-
+    
 class EditAnimeDialog(Dialog):
     def __init__(self, master, anime: dict, on_submit):
         super().__init__(master, "Editar Anime", 520, 520)

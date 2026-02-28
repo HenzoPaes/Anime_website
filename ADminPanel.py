@@ -61,7 +61,8 @@ MOVIE     = "#f59e0b"
 def make_iframe(src):
     return f'<iframe width="100%" height="100%" src="{src}" frameborder="0" allowfullscreen></iframe>'
 
-def anivideo_url(path, ep):
+def anivideo_url(path: str, ep: int) -> str:
+    """Mantém compatibilidade com o resto do código (path já deve estar pronto)."""
     ep_s = f"{ep:02d}"
     cdn  = f"{ANIVIDEO_CDN}/{path}/{ep_s}.mp4/index.m3u8"
     nc   = int(time.time() * 1000)
@@ -675,6 +676,13 @@ class AddAnimeDialog(Dialog):
         self._season  = self._field(scroll, "Número da temporada", "1")
         self._avslug  = self._field(scroll, "AniVideo slug base (vazio = pular)", placeholder="ex: jujutsu-kaisen")
 
+        self._include_season = ctk.BooleanVar(value=True)
+
+        row2 = ctk.CTkFrame(scroll, fg_color="transparent")
+        row2.pack(fill="x", pady=(4,8))
+        ctk.CTkLabel(row2, text="Incluir número da temporada no link?", text_color=TEXT_DIM).pack(side="left")
+        ctk.CTkSwitch(row2, variable=self._include_season, text="").pack(side="right")
+
         row = ctk.CTkFrame(scroll, fg_color="transparent")
         row.pack(fill="x")
         ctk.CTkLabel(row, text="Tipo:", text_color=TEXT_DIM, font=("Segoe UI",12)).pack(side="left")
@@ -699,6 +707,7 @@ class AddAnimeDialog(Dialog):
             "is_movie":self._type.get() == "Filme",
             "has_sub": self._has_sub.get(),
             "has_dub": self._has_dub.get(),
+            "include_season": self._include_season.get(),
         })
         self.destroy()
 
@@ -1192,10 +1201,20 @@ class AnimeAdminApp(ctk.CTk):
                 status_api="ongoing"
                 wlog("⚠️ MAL não encontrado. Usando defaults.")
 
+            # montar season_data (mesma lógica sua)
             av_sub = av_dub = None
             if avslug:
                 letter = avslug[0].lower()
-                av_sub = f"{letter}/{avslug}" + (f"-{s_num}" if s_num > 1 else "")
+                include_season = data.get("include_season", True)
+                
+                av_sub = f"{letter}/{avslug}"
+                
+                if is_movie:
+                    include_season = False
+
+                if include_season and s_num > 1:
+                   av_sub += f"-{s_num}"
+
                 av_dub = av_sub + "-dublado"
                 wlog(f"AniVideo sub: {av_sub}")
                 wlog(f"AniVideo dub: {av_dub}")
@@ -1230,17 +1249,51 @@ class AnimeAdminApp(ctk.CTk):
                 season_data["movieTitle"] = title_r
                 season_data["seasonLabel"] = title_r
 
-            new_anime = {
-                "id": id_slug, "title": title_r, "titleRomaji": title_r,
-                "titleJapanese": title_j, "genre": genres, "studio": studio,
-                "recommended": False, "malId": mal_id, "coverImage": cover,
-                "bannerImage": cover, "seasons": [season_data],
-            }
-            self.db = [a for a in self.db if a.get("id") != id_slug]
-            self.db.append(new_anime)
-            save_db(self.db)
-            wlog(f"✅ '{title_r}' adicionado com {total_eps} eps!")
-            self.after(0, self._set_status, f"'{title_r}' adicionado!")
+            # --- novo comportamento: se anime já existe, append/merge seasons ao invés de sobrescrever ---
+            existing = next((a for a in self.db if a.get("id") == id_slug), None)
+            if existing:
+                wlog(f"Anime com id '{id_slug}' já existe — integrando temporada {s_num}...")
+                # atualiza metadados se vierem novos
+                existing["title"] = title_r or existing.get("title", title_r)
+                existing["titleRomaji"] = title_r
+                existing["titleJapanese"] = title_j
+                existing["studio"] = studio or existing.get("studio", studio)
+                if cover:
+                   existing["coverImage"] = cover
+                if existing.get("bannerImage") in (None, "", existing.get("coverImage")):
+                    existing["bannerImage"] = cover
+
+               # verifica se temporada já existe -> substituir; senão -> append
+                replaced = False
+                for idx, s in enumerate(existing.get("seasons", [])):
+                    if int(s.get("season", 0)) == int(s_num):
+                        existing["seasons"][idx] = season_data
+                        replaced = True
+                        wlog(f"Substituída temporada {s_num} do anime '{title_r}'.")
+                        break
+                if not replaced:
+                    existing.setdefault("seasons", []).append(season_data)
+                    wlog(f"Adicionada temporada {s_num} ao anime '{title_r}'.")
+
+                # ordenar seasons por número
+                existing["seasons"] = sorted(existing.get("seasons", []), key=lambda x: int(x.get("season", 0)))
+                # garantir que currentEpisode/episodesAvailable façam sentido (opcional: sincronizar)
+                save_db(self.db)
+                self.after(0, self._set_status, f"'{title_r}' atualizado com nova temporada!")
+                wlog(f"✅ '{title_r}' atualizado (temporadas: {len(existing['seasons'])}).")
+            else:
+                # cria novo anime (com uma ou mais seasons — aqui apenas 1)
+                new_anime = {
+                    "id": id_slug, "title": title_r, "titleRomaji": title_r,
+                    "titleJapanese": title_j, "genre": genres, "studio": studio,
+                    "recommended": False, "malId": mal_id, "coverImage": cover,
+                    "bannerImage": cover, "seasons": [season_data],
+                }
+                self.db = [a for a in self.db if a.get("id") != id_slug]
+                self.db.append(new_anime)
+                save_db(self.db)
+                wlog(f"✅ '{title_r}' adicionado com {total_eps} eps (T{s_num})!")
+                self.after(0, self._set_status, f"'{title_r}' adicionado!")
 
         threading.Thread(target=_worker, daemon=True).start()
 

@@ -571,7 +571,7 @@
     "studio": "MAPPA",
     "recommended": true,
     "malId": 40748,
-    "coverImage": "https://cdn.myanimelist.net/images/anime/1171/109222l.jpg",
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1659/154920.jpg",
     "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GRDV0019R-backdrop_wide",
     "seasons": [
       {
@@ -1350,8 +1350,8 @@
   },
   {
     "id": "seihantai-na-kimi-to-boku",
-    "title": "Seihantai na Kimi to Boku",
-    "titleRomaji": "Seihantai na Kimi to Boku",
+    "title": "You and I Are Polar Opposites",
+    "titleRomaji": "You and I Are Polar Opposites",
     "titleJapanese": "正反対な君と僕",
     "genre": [
       "Comedy",
@@ -1361,7 +1361,7 @@
     "recommended": false,
     "malId": 60371,
     "coverImage": "https://cdn.myanimelist.net/images/anime/1140/154457l.jpg",
-    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GYE5MPJ0R-backdrop_wide",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GT00365624-backdrop_wide",
     "seasons": [
       {
         "season": 1,
@@ -1372,7 +1372,7 @@
         "status": "ongoing",
         "score": 8.19,
         "synopsis": "Next to Miyu Suzuki, a trendy and bubbly high school girl, sits Yuusuke Tani, a quiet and frank boy. Their interactions are brief, limited to Suzuki's unprompted random questions and Tani's succinct answers. Yet, beneath these simple exchanges, feelings of love are quietly blossoming.\n\nSuzuki sees Tani for who he is: a straightforward boy who respects everyone equally, completely unconcerned about fitting in. Unlike Tani, she is too hung up on what everyone else thinks, desperate to keep her crush a secret. However, a slight misunderstanding leads to Suzuki confessing her feelings—and to her delight, Tani feels the same. Jittery with excitement, the young couple starts dating, embarking on a wonderful journey of friendship and love.\n\n[Written by MAL Rewrite]",
-        "trailer": null,
+        "trailer": "",
         "audios": [
           {
             "type": "sub",
@@ -2555,10 +2555,10 @@
       "Sci-Fi"
     ],
     "studio": "Kinema Citrus",
-    "recommended": false,
+    "recommended": true,
     "malId": 34599,
     "coverImage": "https://cdn.myanimelist.net/images/anime/6/86733l.jpg",
-    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GQWH0M77N-backdrop_wide",
+    "bannerImage": "https://imgs.search.brave.com/dlMfDnCGbhq_a5eMFpGBRjjcFR0hfbolNaElk6Y2iQM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9teWhv/dHBvc3RlcnMuY29t/L2Nkbi9zaG9wL3By/b2R1Y3RzL21MMDIz/OV8xMDI0eDEwMjQu/anBnP3Y9MTc0ODUz/ODEyNg",
     "seasons": [
       {
         "season": 1,

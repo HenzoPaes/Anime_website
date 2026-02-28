@@ -1370,7 +1370,7 @@
         "seasonLabel": "1ª Temporada",
         "year": 2026,
         "episodes": 12,
-        "currentEpisode": 7,
+        "currentEpisode": 6,
         "status": "ongoing",
         "score": 8.19,
         "synopsis": "Next to Miyu Suzuki, a trendy and bubbly high school girl, sits Yuusuke Tani, a quiet and frank boy. Their interactions are brief, limited to Suzuki's unprompted random questions and Tani's succinct answers. Yet, beneath these simple exchanges, feelings of love are quietly blossoming.\n\nSuzuki sees Tani for who he is: a straightforward boy who respects everyone equally, completely unconcerned about fitting in. Unlike Tani, she is too hung up on what everyone else thinks, desperate to keep her crush a secret. However, a slight misunderstanding leads to Suzuki confessing her feelings—and to her delight, Tani feels the same. Jittery with excitement, the young couple starts dating, embarking on a wonderful journey of friendship and love.\n\n[Written by MAL Rewrite]",
@@ -1380,13 +1380,13 @@
             "type": "sub",
             "label": "Legendado",
             "available": true,
-            "episodesAvailable": 7
+            "episodesAvailable": 6
           },
           {
             "type": "dub",
             "label": "Dublado",
             "available": true,
-            "episodesAvailable": 7
+            "episodesAvailable": 6
           }
         ],
         "episodeList": [
@@ -1453,17 +1453,6 @@
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/06.mp4/index.m3u8&nocache1772205949593\" frameborder=\"0\" allowfullscreen></iframe>",
               "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/06.mp4/index.m3u8&nocache1772205949593\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
-          },
-          {
-            "id": "seihantai-na-kimi-to-boku-s1-ep7",
-            "number": 7,
-            "title": "Seihantai na Kimi to Boku - T1 Ep 7",
-            "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/07.mp4/index.m3u8&nocache1772300319898\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/07.mp4/index.m3u8&nocache1772300320333\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }
@@ -2231,6 +2220,314 @@
             "season": "2",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/12.mp4/index.m3u8&nocache1772205367970\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gachiakuta",
+    "title": "Gachiakuta",
+    "titleRomaji": "Gachiakuta",
+    "titleJapanese": "ガチアクタ",
+    "genre": [
+      "Action",
+      "Fantasy"
+    ],
+    "studio": "Bones Film",
+    "recommended": false,
+    "malId": 59062,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1682/150432l.jpg",
+    "bannerImage": "https://cdn.myanimelist.net/images/anime/1682/150432l.jpg",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2025,
+        "episodes": 24,
+        "currentEpisode": 24,
+        "status": "finished",
+        "score": 8.22,
+        "synopsis": "The inhabitants of a certain wealthy town think nothing of throwing objects away. However, their waste is priceless to Rudo, a resident of the town's slums. Despite the constant warnings from his adoptive father Regto, Rudo spends his days searching for reusable materials that would otherwise be sent to the giant disposal area known as the Pit. Due to its vastness, the Pit doubles as a means of criminal punishment; those dropped in are never to return again.\n\nWhen Regto is murdered by a mysterious assailant, Rudo is falsely accused of the crime and thrown into the Pit. To his surprise, he awakens in a trash-filled area inhabited by enormous monsters formed from the junk. As the toxic air and Trash Beasts push Rudo to the brink of death, he is saved by Enjin, one of the Cleaners who wield weapons known as Vital Instruments to fight the monstrosities. Having gained his own Vital Instrument, Rudo soon joins the Cleaners in the hopes of finding a way to escape the Pit and avenge his father.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 24
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 24
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "gachiakuta-s1-ep1",
+            "number": 1,
+            "title": "Gachiakuta - T1 Ep 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/01.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/01.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep2",
+            "number": 2,
+            "title": "Gachiakuta - T1 Ep 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/02.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/02.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep3",
+            "number": 3,
+            "title": "Gachiakuta - T1 Ep 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/03.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/03.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep4",
+            "number": 4,
+            "title": "Gachiakuta - T1 Ep 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/04.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/04.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep5",
+            "number": 5,
+            "title": "Gachiakuta - T1 Ep 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/05.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/05.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep6",
+            "number": 6,
+            "title": "Gachiakuta - T1 Ep 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/06.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/06.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep7",
+            "number": 7,
+            "title": "Gachiakuta - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/07.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/07.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep8",
+            "number": 8,
+            "title": "Gachiakuta - T1 Ep 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/08.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/08.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep9",
+            "number": 9,
+            "title": "Gachiakuta - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/09.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/09.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep10",
+            "number": 10,
+            "title": "Gachiakuta - T1 Ep 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/10.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/10.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep11",
+            "number": 11,
+            "title": "Gachiakuta - T1 Ep 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/11.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/11.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep12",
+            "number": 12,
+            "title": "Gachiakuta - T1 Ep 12",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/12.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/12.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep13",
+            "number": 13,
+            "title": "Gachiakuta - T1 Ep 13",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/13.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/13.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep14",
+            "number": 14,
+            "title": "Gachiakuta - T1 Ep 14",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/14.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/14.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep15",
+            "number": 15,
+            "title": "Gachiakuta - T1 Ep 15",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/15.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/15.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep16",
+            "number": 16,
+            "title": "Gachiakuta - T1 Ep 16",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/16.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/16.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep17",
+            "number": 17,
+            "title": "Gachiakuta - T1 Ep 17",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/17.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/17.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep18",
+            "number": 18,
+            "title": "Gachiakuta - T1 Ep 18",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/18.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/18.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep19",
+            "number": 19,
+            "title": "Gachiakuta - T1 Ep 19",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/19.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/19.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep20",
+            "number": 20,
+            "title": "Gachiakuta - T1 Ep 20",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/20.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/20.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep21",
+            "number": 21,
+            "title": "Gachiakuta - T1 Ep 21",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/21.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/21.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep22",
+            "number": 22,
+            "title": "Gachiakuta - T1 Ep 22",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/22.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/22.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep23",
+            "number": 23,
+            "title": "Gachiakuta - T1 Ep 23",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/23.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/23.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "gachiakuta-s1-ep24",
+            "number": 24,
+            "title": "Gachiakuta - T1 Ep 24",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957/24.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta/05.mp4/index.m3u8&nocache1770952957-dublado/24.mp4/index.m3u8&nocache1772299440974\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }

@@ -1,0 +1,2241 @@
+[
+  {
+    "id": "chainsaw-man",
+    "title": "Chainsaw Man",
+    "titleRomaji": "Chainsaw Man",
+    "titleJapanese": "チェンソーマン",
+    "genre": [
+      "Action",
+      "Fantasy"
+    ],
+    "studio": "MAPPA",
+    "recommended": true,
+    "malId": 44511,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1806/126216l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GVDHX8QNW-backdrop_wide",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2022,
+        "episodes": 12,
+        "currentEpisode": 12,
+        "status": "finished",
+        "score": 8.43,
+        "synopsis": "Denji is robbed of a normal teenage life, left with nothing but his deadbeat father's overwhelming debt. His only companion is his pet, the chainsaw devil Pochita, with whom he slays devils for money that inevitably ends up in the yakuza's pockets. All Denji can do is dream of a good, simple life: one with delicious food and a beautiful girlfriend by his side. But an act of greedy betrayal by the yakuza leads to Denji's brutal, untimely death, crushing all hope of him ever achieving happiness.\n\nRemarkably, an old contract allows Pochita to merge with the deceased Denji and bestow devil powers on him, changing him into a hybrid able to transform his body parts into chainsaws. Because Denji's new abilities pose a significant risk to society, the Public Safety Bureau's elite devil hunter Makima takes him in, letting him live as long as he obeys her command. Guided by the promise of a content life alongside an attractive woman, Denji devotes everything and fights with all his might to make his naive dreams a reality.\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 12
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 12
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "chainsaw-man-s1-ep1",
+            "number": 1,
+            "title": "Chainsaw Man - T1 Episódio 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/01.mp4/index.m3u8&nocache1772229673955\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/01.mp4/index.m3u8&nocache1772229673955\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep2",
+            "number": 2,
+            "title": "Chainsaw Man - T1 Episódio 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/02.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/02.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep3",
+            "number": 3,
+            "title": "Chainsaw Man - T1 Episódio 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/03.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/03.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep4",
+            "number": 4,
+            "title": "Chainsaw Man - T1 Episódio 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/04.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/04.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep5",
+            "number": 5,
+            "title": "Chainsaw Man - T1 Episódio 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/05.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/05.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep6",
+            "number": 6,
+            "title": "Chainsaw Man - T1 Episódio 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/06.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/06.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep7",
+            "number": 7,
+            "title": "Chainsaw Man - T1 Episódio 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/07.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/07.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep8",
+            "number": 8,
+            "title": "Chainsaw Man - T1 Episódio 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/08.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/08.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep9",
+            "number": 9,
+            "title": "Chainsaw Man - T1 Episódio 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/09.mp4/index.m3u8&nocache1772229673959\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/09.mp4/index.m3u8&nocache1772229673959\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep10",
+            "number": 10,
+            "title": "Chainsaw Man - T1 Episódio 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/10.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/10.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep11",
+            "number": 11,
+            "title": "Chainsaw Man - T1 Episódio 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/11.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/11.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep12",
+            "number": 12,
+            "title": "Chainsaw Man - T1 Episódio 12",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/12.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/12.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "type": "movie",
+        "seasonLabel": "Chainsaw Man – Reze Arc",
+        "movieTitle": "Chainsaw Man – Reze Arc",
+        "tagline": "Amor pode ser mais perigoso que demônios.",
+        "year": 2025,
+        "episodes": 1,
+        "currentEpisode": 1,
+        "status": "finished",
+        "score": 9.5,
+        "runtime": 110,
+        "director": "Tatsuya Yoshihara",
+        "ageRating": "16+",
+        "accentColor": "#FF2E2E",
+        "posterImage": "https://animesdigital.org/wp-content/uploads/2025/12/Chainsaw-Man-Movie-Reze-hen-categoria.jpg",
+        "stills": [
+          "https://imgs.search.brave.com/48cKGo3ot_LXA2M6blukodoGrGTRZJLucN-3EYu2olE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzEyL2Rlbmpp/LTMuanBnP3E9NzAm/Zml0PWNyb3Amdz04/MjUmZHByPTE",
+          "https://imgs.search.brave.com/CGd7fO36O5hYng0EzPmTebPXKUCnbzfS3kKu58R5k4Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzEwLzk0OTFm/OWZkLWQ3N2MtNDBl/YS1hYzI3LTdjY2Vm/ZjAxZDVjMy5qcGVn/P3E9NDkmZml0PWNy/b3Amdz04MjUmZHBy/PTI",
+          "https://images8.alphacoders.com/140/thumbbig-1403574.webp"
+        ],
+        "cast": [
+          {
+            "character": "Denji",
+            "voice": "Kikunosuke Toya",
+            "voiceDub": "Ryan Colt Levy"
+          },
+          {
+            "character": "Reze",
+            "voice": "Reina Ueda",
+            "voiceDub": "—"
+          },
+          {
+            "character": "Makima",
+            "voice": "Tomori Kusunoki",
+            "voiceDub": "Suzie Yeung"
+          },
+          {
+            "character": "Aki Hayakawa",
+            "voice": "Shogo Sakata",
+            "voiceDub": "Reagan Murdock"
+          }
+        ],
+        "awards": [],
+        "synopsis": "Denji conhece Reze, uma garota misteriosa que parece oferecer a ele algo simples e raro: carinho genuíno. Porém, por trás do romance surge um conflito explosivo envolvendo demônios, traição e escolhas impossíveis.",
+        "trailer": "https://www.youtube.com/watch?v=WSCSZFNsm4g",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 1
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 1
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "chainsaw-man-reze-filme",
+            "number": 1,
+            "title": "Chainsaw Man – Reze Arc (Mini-review)",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width='100%' height='100%' src='https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-movie-reze-hen/01.mp4/index.m3u8&nocache1772220374' frameborder='0' allowfullscreen></iframe>",
+              "dub": "<iframe width='100%' height='100%' src='https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-movie-reze-hen-dublado/01.mp4/index.m3u8&nocache1772220374' frameborder='0' allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "darling-in-the-franxx",
+    "title": "Darling in the FranXX",
+    "titleRomaji": "Darling in the FranXX",
+    "titleJapanese": "ダーリン・イン・ザ・フランキス",
+    "genre": [
+      "Drama",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "studio": "A-1 Pictures",
+    "recommended": true,
+    "malId": 35849,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1614/90408l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GY8VEQ95Y-backdrop_wide",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2018,
+        "episodes": 24,
+        "currentEpisode": 24,
+        "status": "finished",
+        "score": 7.2,
+        "synopsis": "In the distant future, humanity has been driven to near-extinction by giant beasts known as Klaxosaurs, forcing the surviving humans to take refuge in massive fortress cities called Plantations. Children raised here are trained to pilot giant mechas known as FranXX—the only weapons known to be effective against the Klaxosaurs—in boy-girl pairs. Bred for the sole purpose of piloting these machines, these children know nothing of the outside world and are only able to prove their existence by defending their race.  \n\nHiro, an aspiring FranXX pilot, has lost his motivation and self-confidence after failing an aptitude test. Skipping out on his class' graduation ceremony, Hiro retreats to a forest lake, where he encounters a mysterious girl with two horns growing out of her head. She introduces herself by her codename Zero Two, which is known to belong to an infamous FranXX pilot known as the \"Partner Killer.\" Before Hiro can digest the encounter, the Plantation is rocked by a sudden Klaxosaur attack. Zero Two engages the creature in her FranXX, but it is heavily damaged in the skirmish and crashes near Hiro. Finding her partner dead, Zero Two invites Hiro to pilot the mecha with her, and the duo easily defeats the Klaxosaur in the ensuing fight. With a new partner by his side, Hiro has been given a chance at redemption for his past failures, but at what cost?\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 24
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 24
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "darling-in-the-franxx-s1-ep1",
+            "number": 1,
+            "title": "Darling in the FranXX - T1 Episódio 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/01.mp4/index.m3u8&nocache1772205734563\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/01.mp4/index.m3u8&nocache1772205734563\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep2",
+            "number": 2,
+            "title": "Darling in the FranXX - T1 Episódio 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/02.mp4/index.m3u8&nocache1772205734563\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/02.mp4/index.m3u8&nocache1772205734563\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep3",
+            "number": 3,
+            "title": "Darling in the FranXX - T1 Episódio 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/03.mp4/index.m3u8&nocache1772205734563\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/03.mp4/index.m3u8&nocache1772205734563\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep4",
+            "number": 4,
+            "title": "Darling in the FranXX - T1 Episódio 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/04.mp4/index.m3u8&nocache1772205734564\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/04.mp4/index.m3u8&nocache1772205734564\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep5",
+            "number": 5,
+            "title": "Darling in the FranXX - T1 Episódio 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/05.mp4/index.m3u8&nocache1772205734564\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/05.mp4/index.m3u8&nocache1772205734564\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep6",
+            "number": 6,
+            "title": "Darling in the FranXX - T1 Episódio 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/06.mp4/index.m3u8&nocache1772205734565\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/06.mp4/index.m3u8&nocache1772205734565\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep7",
+            "number": 7,
+            "title": "Darling in the FranXX - T1 Episódio 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/07.mp4/index.m3u8&nocache1772205734565\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/07.mp4/index.m3u8&nocache1772205734565\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep8",
+            "number": 8,
+            "title": "Darling in the FranXX - T1 Episódio 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/08.mp4/index.m3u8&nocache1772205734565\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/08.mp4/index.m3u8&nocache1772205734565\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep9",
+            "number": 9,
+            "title": "Darling in the FranXX - T1 Episódio 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/09.mp4/index.m3u8&nocache1772205734566\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/09.mp4/index.m3u8&nocache1772205734566\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep10",
+            "number": 10,
+            "title": "Darling in the FranXX - T1 Episódio 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/10.mp4/index.m3u8&nocache1772205734566\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/10.mp4/index.m3u8&nocache1772205734566\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep11",
+            "number": 11,
+            "title": "Darling in the FranXX - T1 Episódio 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/11.mp4/index.m3u8&nocache1772205734566\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/11.mp4/index.m3u8&nocache1772205734566\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep12",
+            "number": 12,
+            "title": "Darling in the FranXX - T1 Episódio 12",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/12.mp4/index.m3u8&nocache1772205734567\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/12.mp4/index.m3u8&nocache1772205734567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep13",
+            "number": 13,
+            "title": "Darling in the FranXX - T1 Episódio 13",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/13.mp4/index.m3u8&nocache1772205734567\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/13.mp4/index.m3u8&nocache1772205734567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep14",
+            "number": 14,
+            "title": "Darling in the FranXX - T1 Episódio 14",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/14.mp4/index.m3u8&nocache1772205734567\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/14.mp4/index.m3u8&nocache1772205734567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep15",
+            "number": 15,
+            "title": "Darling in the FranXX - T1 Episódio 15",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/15.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/15.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep16",
+            "number": 16,
+            "title": "Darling in the FranXX - T1 Episódio 16",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/16.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/16.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep17",
+            "number": 17,
+            "title": "Darling in the FranXX - T1 Episódio 17",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/17.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/17.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep18",
+            "number": 18,
+            "title": "Darling in the FranXX - T1 Episódio 18",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/18.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/18.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep19",
+            "number": 19,
+            "title": "Darling in the FranXX - T1 Episódio 19",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/19.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/19.mp4/index.m3u8&nocache1772205734568\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep20",
+            "number": 20,
+            "title": "Darling in the FranXX - T1 Episódio 20",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/20.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/20.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep21",
+            "number": 21,
+            "title": "Darling in the FranXX - T1 Episódio 21",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/21.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/21.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep22",
+            "number": 22,
+            "title": "Darling in the FranXX - T1 Episódio 22",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/22.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/22.mp4/index.m3u8&nocache1772205734569\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep23",
+            "number": 23,
+            "title": "Darling in the FranXX - T1 Episódio 23",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/23.mp4/index.m3u8&nocache1772205734570\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/23.mp4/index.m3u8&nocache1772205734570\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "darling-in-the-franxx-s1-ep24",
+            "number": 24,
+            "title": "Darling in the FranXX - T1 Episódio 24",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx/24.mp4/index.m3u8&nocache1772205734570\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/darling-in-the-franxx-dublado/24.mp4/index.m3u8&nocache1772205734570\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jujutsu-kaisen",
+    "title": "Jujutsu Kaisen",
+    "titleRomaji": "Jujutsu Kaisen",
+    "titleJapanese": "呪術廻戦",
+    "genre": [
+      "Action",
+      "Award Winning",
+      "Supernatural"
+    ],
+    "studio": "MAPPA",
+    "recommended": true,
+    "malId": 40748,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1171/109222l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GRDV0019R-backdrop_wide",
+    "seasons": [
+      {
+        "season": 0,
+        "type": "movie",
+        "seasonLabel": "Filme 0",
+        "movieTitle": "Jujutsu Kaisen 0",
+        "tagline": "Antes de Itadori, havia Yuta.",
+        "year": 2021,
+        "episodes": 1,
+        "currentEpisode": 1,
+        "status": "finished",
+        "score": 8.51,
+        "runtime": 105,
+        "director": "Sunghoo Park",
+        "ageRating": "14+",
+        "accentColor": "#5B21B6",
+        "posterImage": "https://animesdigital.org/wp-content/uploads/2023/06/jujutsu-kaisen-0-categoria.jpg",
+        "stills": [
+          "https://www.themarysue.com/wp-content/uploads/2022/01/JJK_Movie_16x9_Twitter-Post-V2.jpg?resize=1200%2C675/",
+          "https://imgs.search.brave.com/q8gMZA_0TTJnq20WY2uJi9MTA0F-rzEcoEhST5e0szs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cy5v/cmljb24tZ3JvdXAu/Y29tL3VwaW1nL2Rl/dGFpbC8yMDAwLzI4/NDgvaW1nNjYwL0pK/Sy1FUDAlMjAoMzgp/LmpwZw",
+          "https://www.themarysue.com/wp-content/uploads/2021/11/JJK-0-trailer.jpg?w=1200",
+          "https://imgs.search.brave.com/GQJodzdpbJszVC7Y1KYYMZ-vW2MesoE9UG2Ya1auJTQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzhiLzI1/LzhmLzhiMjU4Zjc0/ZWQ2ZDI5NjFhODI4/NzE4ZGVmNmNiMTdh/LmpwZw"
+        ],
+        "cast": [
+          {
+            "character": "Yuta Okkotsu",
+            "voice": "Megumi Ogata",
+            "voiceDub": "Kayleigh McKee"
+          },
+          {
+            "character": "Rika Orimoto",
+            "voice": "Kana Hanazawa",
+            "voiceDub": "Anairis Quiñones"
+          },
+          {
+            "character": "Satoru Gojo",
+            "voice": "Yuichi Nakamura",
+            "voiceDub": "Caitlin Glass"
+          },
+          {
+            "character": "Maki Zenin",
+            "voice": "Mikako Komatsu",
+            "voiceDub": "Anne Yatco"
+          },
+          {
+            "character": "Toge Inumaki",
+            "voice": "Koki Uchiyama",
+            "voiceDub": "Xander Mobus"
+          },
+          {
+            "character": "Panda",
+            "voice": "Tomokazu Seki",
+            "voiceDub": "Matthew David Rudd"
+          }
+        ],
+        "awards": [
+          "Melhor Filme de Animação — Anime Awards 2022",
+          "Melhor Trilha Sonora — Crunchyroll Awards 2022"
+        ],
+        "synopsis": "Infortúnios violentos ocorrem frequentemente em torno de Yuuta Okkotsu, de 16 anos, uma vítima tímida de bullying no colégio. Yuuta é sobrecarregado com uma maldição monstruosa, um poder que distribui vingança brutal contra seus agressores. Rika Orimoto, a maldição de Yuuta, é uma sombra de sua infância trágica e uma ameaça potencialmente letal para qualquer um que se atreva a prejudicá-lo.",
+        "trailer": "https://www.youtube.com/watch?v=lHCFONPMGdE",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 1
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 1
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "jujutsu-kaisen-Filme-0",
+            "number": 1,
+            "title": "Jujutsu Kaisen - Filme 0",
+            "season": "0",
+            "embeds": {
+              "sub": "<iframe width='100%' height='100%' src='https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-filme-0/01.mp4/index.m3u8&nocache1764342383' frameborder='0' allowfullscreen></iframe>",
+              "dub": "<iframe width='100%' height='100%' src='https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-filme-0-dublado/01.mp4/index.m3u8&nocache1764342383' frameborder='0' allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2020,
+        "episodes": 24,
+        "currentEpisode": 24,
+        "status": "finished",
+        "score": 8.51,
+        "synopsis": "Idly indulging in baseless paranormal activities with the Occult Club, high schooler Yuuji Itadori spends his days at either the clubroom or the hospital, where he visits his bedridden grandfather. However, this leisurely lifestyle soon takes a turn for the strange when he unknowingly encounters a cursed item. Triggering a chain of supernatural occurrences, Yuuji finds himself suddenly thrust into the world of Curses—dreadful beings formed from human malice and negativity—after swallowing the said item, revealed to be a finger belonging to the demon Sukuna Ryoumen, the King of Curses.\n\nYuuji experiences first-hand the threat these Curses pose to society as he discovers his own newfound powers. Introduced to the Tokyo Prefectural Jujutsu High School, he begins to walk down a path from which he cannot return—the path of a Jujutsu sorcerer.\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 24
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 24
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "jujutsu-kaisen-s1-ep1",
+            "number": 1,
+            "title": "Jujutsu Kaisen - T1 Episódio 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/01.mp4/index.m3u8&nocache1772201703099\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/01.mp4/index.m3u8&nocache1772201703099\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep2",
+            "number": 2,
+            "title": "Jujutsu Kaisen - T1 Episódio 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/02.mp4/index.m3u8&nocache1772201703099\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/02.mp4/index.m3u8&nocache1772201703099\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep3",
+            "number": 3,
+            "title": "Jujutsu Kaisen - T1 Episódio 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/03.mp4/index.m3u8&nocache1772201703101\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/03.mp4/index.m3u8&nocache1772201703101\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep4",
+            "number": 4,
+            "title": "Jujutsu Kaisen - T1 Episódio 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/04.mp4/index.m3u8&nocache1772201703102\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/04.mp4/index.m3u8&nocache1772201703102\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep5",
+            "number": 5,
+            "title": "Jujutsu Kaisen - T1 Episódio 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/05.mp4/index.m3u8&nocache1772201703103\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/05.mp4/index.m3u8&nocache1772201703103\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep6",
+            "number": 6,
+            "title": "Jujutsu Kaisen - T1 Episódio 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/06.mp4/index.m3u8&nocache1772201703104\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/06.mp4/index.m3u8&nocache1772201703104\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep7",
+            "number": 7,
+            "title": "Jujutsu Kaisen - T1 Episódio 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/07.mp4/index.m3u8&nocache1772201703104\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/07.mp4/index.m3u8&nocache1772201703104\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep8",
+            "number": 8,
+            "title": "Jujutsu Kaisen - T1 Episódio 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/08.mp4/index.m3u8&nocache1772201703106\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/08.mp4/index.m3u8&nocache1772201703106\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep9",
+            "number": 9,
+            "title": "Jujutsu Kaisen - T1 Episódio 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/09.mp4/index.m3u8&nocache1772201703106\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/09.mp4/index.m3u8&nocache1772201703106\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep10",
+            "number": 10,
+            "title": "Jujutsu Kaisen - T1 Episódio 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/10.mp4/index.m3u8&nocache1772201703108\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/10.mp4/index.m3u8&nocache1772201703108\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep11",
+            "number": 11,
+            "title": "Jujutsu Kaisen - T1 Episódio 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/11.mp4/index.m3u8&nocache1772201703108\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/11.mp4/index.m3u8&nocache1772201703108\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep12",
+            "number": 12,
+            "title": "Jujutsu Kaisen - T1 Episódio 12",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/12.mp4/index.m3u8&nocache1772201703109\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/12.mp4/index.m3u8&nocache1772201703109\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep13",
+            "number": 13,
+            "title": "Jujutsu Kaisen - T1 Episódio 13",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/13.mp4/index.m3u8&nocache1772201703109\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/13.mp4/index.m3u8&nocache1772201703109\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep14",
+            "number": 14,
+            "title": "Jujutsu Kaisen - T1 Episódio 14",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/14.mp4/index.m3u8&nocache1772201703109\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/14.mp4/index.m3u8&nocache1772201703109\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep15",
+            "number": 15,
+            "title": "Jujutsu Kaisen - T1 Episódio 15",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/15.mp4/index.m3u8&nocache1772201703109\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/15.mp4/index.m3u8&nocache1772201703109\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep16",
+            "number": 16,
+            "title": "Jujutsu Kaisen - T1 Episódio 16",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/16.mp4/index.m3u8&nocache1772201703110\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/16.mp4/index.m3u8&nocache1772201703110\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep17",
+            "number": 17,
+            "title": "Jujutsu Kaisen - T1 Episódio 17",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/17.mp4/index.m3u8&nocache1772201703110\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/17.mp4/index.m3u8&nocache1772201703110\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep18",
+            "number": 18,
+            "title": "Jujutsu Kaisen - T1 Episódio 18",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/18.mp4/index.m3u8&nocache1772201703110\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/18.mp4/index.m3u8&nocache1772201703110\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep19",
+            "number": 19,
+            "title": "Jujutsu Kaisen - T1 Episódio 19",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/19.mp4/index.m3u8&nocache1772201703111\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/19.mp4/index.m3u8&nocache1772201703111\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep20",
+            "number": 20,
+            "title": "Jujutsu Kaisen - T1 Episódio 20",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/20.mp4/index.m3u8&nocache1772201703111\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/20.mp4/index.m3u8&nocache1772201703111\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep21",
+            "number": 21,
+            "title": "Jujutsu Kaisen - T1 Episódio 21",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/21.mp4/index.m3u8&nocache1772201703112\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/21.mp4/index.m3u8&nocache1772201703112\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep22",
+            "number": 22,
+            "title": "Jujutsu Kaisen - T1 Episódio 22",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/22.mp4/index.m3u8&nocache1772201703113\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/22.mp4/index.m3u8&nocache1772201703113\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep23",
+            "number": 23,
+            "title": "Jujutsu Kaisen - T1 Episódio 23",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/23.mp4/index.m3u8&nocache1772201703114\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/23.mp4/index.m3u8&nocache1772201703114\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s1-ep24",
+            "number": 24,
+            "title": "Jujutsu Kaisen - T1 Episódio 24",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen/24.mp4/index.m3u8&nocache1772201703114\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-dublado/24.mp4/index.m3u8&nocache1772201703114\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "year": 2022,
+        "episodes": 23,
+        "currentEpisode": 23,
+        "status": "finished",
+        "score": 8.51,
+        "synopsis": "Idly indulging in baseless paranormal activities with the Occult Club, high schooler Yuuji Itadori spends his days at either the clubroom or the hospital, where he visits his bedridden grandfather. However, this leisurely lifestyle soon takes a turn for the strange when he unknowingly encounters a cursed item. Triggering a chain of supernatural occurrences, Yuuji finds himself suddenly thrust into the world of Curses—dreadful beings formed from human malice and negativity—after swallowing the said item, revealed to be a finger belonging to the demon Sukuna Ryoumen, the King of Curses.\n\nYuuji experiences first-hand the threat these Curses pose to society as he discovers his own newfound powers. Introduced to the Tokyo Prefectural Jujutsu High School, he begins to walk down a path from which he cannot return—the path of a Jujutsu sorcerer.\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 23
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 23
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "jujutsu-kaisen-s2-ep1",
+            "number": 1,
+            "title": "Jujutsu Kaisen - T2 Episódio 1",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/01.mp4/index.m3u8&nocache1772201703115\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/01.mp4/index.m3u8&nocache1772201703115\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep2",
+            "number": 2,
+            "title": "Jujutsu Kaisen - T2 Episódio 2",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/02.mp4/index.m3u8&nocache1772201703115\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/02.mp4/index.m3u8&nocache1772201703115\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep3",
+            "number": 3,
+            "title": "Jujutsu Kaisen - T2 Episódio 3",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/03.mp4/index.m3u8&nocache1772201703116\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/03.mp4/index.m3u8&nocache1772201703116\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep4",
+            "number": 4,
+            "title": "Jujutsu Kaisen - T2 Episódio 4",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/04.mp4/index.m3u8&nocache1772201703116\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/04.mp4/index.m3u8&nocache1772201703116\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep5",
+            "number": 5,
+            "title": "Jujutsu Kaisen - T2 Episódio 5",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/05.mp4/index.m3u8&nocache1772201703117\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/05.mp4/index.m3u8&nocache1772201703117\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep6",
+            "number": 6,
+            "title": "Jujutsu Kaisen - T2 Episódio 6",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/06.mp4/index.m3u8&nocache1772201703118\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/06.mp4/index.m3u8&nocache1772201703118\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep7",
+            "number": 7,
+            "title": "Jujutsu Kaisen - T2 Episódio 7",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/07.mp4/index.m3u8&nocache1772201703118\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/07.mp4/index.m3u8&nocache1772201703118\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep8",
+            "number": 8,
+            "title": "Jujutsu Kaisen - T2 Episódio 8",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/08.mp4/index.m3u8&nocache1772201703119\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/08.mp4/index.m3u8&nocache1772201703119\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep9",
+            "number": 9,
+            "title": "Jujutsu Kaisen - T2 Episódio 9",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/09.mp4/index.m3u8&nocache1772201703119\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/09.mp4/index.m3u8&nocache1772201703119\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep10",
+            "number": 10,
+            "title": "Jujutsu Kaisen - T2 Episódio 10",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/10.mp4/index.m3u8&nocache1772201703119\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/10.mp4/index.m3u8&nocache1772201703119\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep11",
+            "number": 11,
+            "title": "Jujutsu Kaisen - T2 Episódio 11",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/11.mp4/index.m3u8&nocache1772201703120\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/11.mp4/index.m3u8&nocache1772201703120\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep12",
+            "number": 12,
+            "title": "Jujutsu Kaisen - T2 Episódio 12",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/12.mp4/index.m3u8&nocache1772201703120\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/12.mp4/index.m3u8&nocache1772201703120\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep13",
+            "number": 13,
+            "title": "Jujutsu Kaisen - T2 Episódio 13",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/13.mp4/index.m3u8&nocache1772201703121\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/13.mp4/index.m3u8&nocache1772201703121\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep14",
+            "number": 14,
+            "title": "Jujutsu Kaisen - T2 Episódio 14",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/14.mp4/index.m3u8&nocache1772201703121\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/14.mp4/index.m3u8&nocache1772201703121\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep15",
+            "number": 15,
+            "title": "Jujutsu Kaisen - T2 Episódio 15",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/15.mp4/index.m3u8&nocache1772201703122\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/15.mp4/index.m3u8&nocache1772201703122\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep16",
+            "number": 16,
+            "title": "Jujutsu Kaisen - T2 Episódio 16",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/16.mp4/index.m3u8&nocache1772201703122\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/16.mp4/index.m3u8&nocache1772201703122\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep17",
+            "number": 17,
+            "title": "Jujutsu Kaisen - T2 Episódio 17",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/17.mp4/index.m3u8&nocache1772201703123\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/17.mp4/index.m3u8&nocache1772201703123\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep18",
+            "number": 18,
+            "title": "Jujutsu Kaisen - T2 Episódio 18",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/18.mp4/index.m3u8&nocache1772201703123\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/18.mp4/index.m3u8&nocache1772201703123\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep19",
+            "number": 19,
+            "title": "Jujutsu Kaisen - T2 Episódio 19",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/19.mp4/index.m3u8&nocache1772201703123\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/19.mp4/index.m3u8&nocache1772201703123\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep20",
+            "number": 20,
+            "title": "Jujutsu Kaisen - T2 Episódio 20",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/20.mp4/index.m3u8&nocache1772201703124\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/20.mp4/index.m3u8&nocache1772201703124\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep21",
+            "number": 21,
+            "title": "Jujutsu Kaisen - T2 Episódio 21",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/21.mp4/index.m3u8&nocache1772201703124\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/21.mp4/index.m3u8&nocache1772201703124\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep22",
+            "number": 22,
+            "title": "Jujutsu Kaisen - T2 Episódio 22",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/22.mp4/index.m3u8&nocache1772201703125\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/22.mp4/index.m3u8&nocache1772201703125\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s2-ep23",
+            "number": 23,
+            "title": "Jujutsu Kaisen - T2 Episódio 23",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2/23.mp4/index.m3u8&nocache1772201703125\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-2-dublado/23.mp4/index.m3u8&nocache1772201703125\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "seasonLabel": "3ª Temporada",
+        "year": 2026,
+        "episodes": 24,
+        "currentEpisode": 8,
+        "status": "ongoing",
+        "score": 8.51,
+        "synopsis": "Idly indulging in baseless paranormal activities with the Occult Club, high schooler Yuuji Itadori spends his days at either the clubroom or the hospital, where he visits his bedridden grandfather. However, this leisurely lifestyle soon takes a turn for the strange when he unknowingly encounters a cursed item. Triggering a chain of supernatural occurrences, Yuuji finds himself suddenly thrust into the world of Curses—dreadful beings formed from human malice and negativity—after swallowing the said item, revealed to be a finger belonging to the demon Sukuna Ryoumen, the King of Curses.\n\nYuuji experiences first-hand the threat these Curses pose to society as he discovers his own newfound powers. Introduced to the Tokyo Prefectural Jujutsu High School, he begins to walk down a path from which he cannot return—the path of a Jujutsu sorcerer.\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 8
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 6
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "jujutsu-kaisen-s3-ep1",
+            "number": 1,
+            "title": "Jujutsu Kaisen - T3 Episódio 1",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/01.mp4/index.m3u8&nocache1772201703126\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3-dublado/01.mp4/index.m3u8&nocache1772201703126\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s3-ep2",
+            "number": 2,
+            "title": "Jujutsu Kaisen - T3 Episódio 2",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/02.mp4/index.m3u8&nocache1772201703126\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3-dublado/02.mp4/index.m3u8&nocache1772201703126\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s3-ep3",
+            "number": 3,
+            "title": "Jujutsu Kaisen - T3 Episódio 3",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/03.mp4/index.m3u8&nocache1772201703127\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3-dublado/03.mp4/index.m3u8&nocache1772201703127\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s3-ep4",
+            "number": 4,
+            "title": "Jujutsu Kaisen - T3 Episódio 4",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/04.mp4/index.m3u8&nocache1772201703128\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3-dublado/04.mp4/index.m3u8&nocache1772201703128\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s3-ep5",
+            "number": 5,
+            "title": "Jujutsu Kaisen - T3 Episódio 5",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/05.mp4/index.m3u8&nocache1772201703128\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3-dublado/05.mp4/index.m3u8&nocache1772201703128\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s3-ep6",
+            "number": 6,
+            "title": "Jujutsu Kaisen - T3 Episódio 6",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/06.mp4/index.m3u8&nocache1772201703129\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3-dublado/06.mp4/index.m3u8&nocache1772201703129\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s3-ep7",
+            "number": 7,
+            "title": "Jujutsu Kaisen - T3 Episódio 7",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/07.mp4/index.m3u8&nocache1772201703131\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3-dublado/07.mp4/index.m3u8&nocache1772201703131\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s3-ep8",
+            "number": 8,
+            "title": "Jujutsu Kaisen - T3 Episódio 8",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/08.mp4/index.m3u8&nocache1772201703133\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3-dublado/08.mp4/index.m3u8&nocache1772201703133\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "seihantai-na-kimi-to-boku",
+    "title": "Seihantai na Kimi to Boku",
+    "titleRomaji": "Seihantai na Kimi to Boku",
+    "titleJapanese": "正反対な君と僕",
+    "genre": [
+      "Comedy",
+      "Romance"
+    ],
+    "studio": "Lapin Track",
+    "recommended": false,
+    "malId": 60371,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1140/154457l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GYE5MPJ0R-backdrop_wide",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2026,
+        "episodes": 12,
+        "currentEpisode": 7,
+        "status": "ongoing",
+        "score": 8.19,
+        "synopsis": "Next to Miyu Suzuki, a trendy and bubbly high school girl, sits Yuusuke Tani, a quiet and frank boy. Their interactions are brief, limited to Suzuki's unprompted random questions and Tani's succinct answers. Yet, beneath these simple exchanges, feelings of love are quietly blossoming.\n\nSuzuki sees Tani for who he is: a straightforward boy who respects everyone equally, completely unconcerned about fitting in. Unlike Tani, she is too hung up on what everyone else thinks, desperate to keep her crush a secret. However, a slight misunderstanding leads to Suzuki confessing her feelings—and to her delight, Tani feels the same. Jittery with excitement, the young couple starts dating, embarking on a wonderful journey of friendship and love.\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 7
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 7
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "seihantai-na-kimi-to-boku-s1-ep1",
+            "number": 1,
+            "title": "Seihantai na Kimi to Boku - T1 Episódio 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/01.mp4/index.m3u8&nocache1772205949591\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/01.mp4/index.m3u8&nocache1772205949591\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "seihantai-na-kimi-to-boku-s1-ep2",
+            "number": 2,
+            "title": "Seihantai na Kimi to Boku - T1 Episódio 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/02.mp4/index.m3u8&nocache1772205949591\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/02.mp4/index.m3u8&nocache1772205949591\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "seihantai-na-kimi-to-boku-s1-ep3",
+            "number": 3,
+            "title": "Seihantai na Kimi to Boku - T1 Episódio 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/03.mp4/index.m3u8&nocache1772205949591\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/03.mp4/index.m3u8&nocache1772205949591\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "seihantai-na-kimi-to-boku-s1-ep4",
+            "number": 4,
+            "title": "Seihantai na Kimi to Boku - T1 Episódio 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/04.mp4/index.m3u8&nocache1772205949592\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/04.mp4/index.m3u8&nocache1772205949592\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "seihantai-na-kimi-to-boku-s1-ep5",
+            "number": 5,
+            "title": "Seihantai na Kimi to Boku - T1 Episódio 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/05.mp4/index.m3u8&nocache1772205949592\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/05.mp4/index.m3u8&nocache1772205949592\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "seihantai-na-kimi-to-boku-s1-ep6",
+            "number": 6,
+            "title": "Seihantai na Kimi to Boku - T1 Episódio 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/06.mp4/index.m3u8&nocache1772205949593\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/06.mp4/index.m3u8&nocache1772205949593\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "seihantai-na-kimi-to-boku-s1-ep7",
+            "number": 7,
+            "title": "Seihantai na Kimi to Boku - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/07.mp4/index.m3u8&nocache1772300319898\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku-dublado/07.mp4/index.m3u8&nocache1772300320333\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sousounof",
+    "title": "Sousou no Frieren",
+    "titleRomaji": "Sousou no Frieren",
+    "titleJapanese": "葬送のフリーレン",
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "studio": "Madhouse",
+    "recommended": false,
+    "malId": 52991,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1015/138006l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GG5H5XQX4-backdrop_wide",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2023,
+        "episodes": 28,
+        "currentEpisode": 28,
+        "status": "finished",
+        "score": 9.28,
+        "synopsis": "During their decade-long quest to defeat the Demon King, the members of the hero's party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through adventures and battles, creating unforgettable precious memories for most of them.\n\nHowever, the time that Frieren spends with her comrades is equivalent to merely a fraction of her life, which has lasted over a thousand years. When the party disbands after their victory, Frieren casually returns to her \"usual\" routine of collecting spells across the continent. Due to her different sense of time, she seemingly holds no strong feelings toward the experiences she went through.\n\nAs the years pass, Frieren gradually realizes how her days in the hero's party truly impacted her. Witnessing the deaths of two of her former companions, Frieren begins to regret having taken their presence for granted; she vows to better understand humans and create real personal connections. Although the story of that once memorable journey has long ended, a new tale is about to begin.\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 28
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 28
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "sousounof-s1-ep1",
+            "number": 1,
+            "title": "Sousou no Frieren - T1 Episódio 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/01.mp4/index.m3u8&nocache1772205056252\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/01.mp4/index.m3u8&nocache1772205056252\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep2",
+            "number": 2,
+            "title": "Sousou no Frieren - T1 Episódio 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/02.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/02.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep3",
+            "number": 3,
+            "title": "Sousou no Frieren - T1 Episódio 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/03.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/03.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep4",
+            "number": 4,
+            "title": "Sousou no Frieren - T1 Episódio 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/04.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/04.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep5",
+            "number": 5,
+            "title": "Sousou no Frieren - T1 Episódio 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/05.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/05.mp4/index.m3u8&nocache1772205056253\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep6",
+            "number": 6,
+            "title": "Sousou no Frieren - T1 Episódio 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/06.mp4/index.m3u8&nocache1772205056254\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/06.mp4/index.m3u8&nocache1772205056254\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep7",
+            "number": 7,
+            "title": "Sousou no Frieren - T1 Episódio 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/07.mp4/index.m3u8&nocache1772205056254\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/07.mp4/index.m3u8&nocache1772205056254\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep8",
+            "number": 8,
+            "title": "Sousou no Frieren - T1 Episódio 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/08.mp4/index.m3u8&nocache1772205056255\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/08.mp4/index.m3u8&nocache1772205056255\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep9",
+            "number": 9,
+            "title": "Sousou no Frieren - T1 Episódio 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/09.mp4/index.m3u8&nocache1772205056255\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/09.mp4/index.m3u8&nocache1772205056255\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep10",
+            "number": 10,
+            "title": "Sousou no Frieren - T1 Episódio 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/10.mp4/index.m3u8&nocache1772205056255\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/10.mp4/index.m3u8&nocache1772205056255\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep11",
+            "number": 11,
+            "title": "Sousou no Frieren - T1 Episódio 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/11.mp4/index.m3u8&nocache1772205056256\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/11.mp4/index.m3u8&nocache1772205056256\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep12",
+            "number": 12,
+            "title": "Sousou no Frieren - T1 Episódio 12",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/12.mp4/index.m3u8&nocache1772205056256\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/12.mp4/index.m3u8&nocache1772205056256\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep13",
+            "number": 13,
+            "title": "Sousou no Frieren - T1 Episódio 13",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/13.mp4/index.m3u8&nocache1772205056256\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/13.mp4/index.m3u8&nocache1772205056256\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep14",
+            "number": 14,
+            "title": "Sousou no Frieren - T1 Episódio 14",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/14.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/14.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep15",
+            "number": 15,
+            "title": "Sousou no Frieren - T1 Episódio 15",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/15.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/15.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep16",
+            "number": 16,
+            "title": "Sousou no Frieren - T1 Episódio 16",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/16.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/16.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep17",
+            "number": 17,
+            "title": "Sousou no Frieren - T1 Episódio 17",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/17.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/17.mp4/index.m3u8&nocache1772205056257\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep18",
+            "number": 18,
+            "title": "Sousou no Frieren - T1 Episódio 18",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/18.mp4/index.m3u8&nocache1772205056258\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/18.mp4/index.m3u8&nocache1772205056258\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep19",
+            "number": 19,
+            "title": "Sousou no Frieren - T1 Episódio 19",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/19.mp4/index.m3u8&nocache1772205056258\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/19.mp4/index.m3u8&nocache1772205056258\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep20",
+            "number": 20,
+            "title": "Sousou no Frieren - T1 Episódio 20",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/20.mp4/index.m3u8&nocache1772205056258\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/20.mp4/index.m3u8&nocache1772205056258\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep21",
+            "number": 21,
+            "title": "Sousou no Frieren - T1 Episódio 21",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/21.mp4/index.m3u8&nocache1772205056259\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/21.mp4/index.m3u8&nocache1772205056259\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep22",
+            "number": 22,
+            "title": "Sousou no Frieren - T1 Episódio 22",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/22.mp4/index.m3u8&nocache1772205056259\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/22.mp4/index.m3u8&nocache1772205056259\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep23",
+            "number": 23,
+            "title": "Sousou no Frieren - T1 Episódio 23",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/23.mp4/index.m3u8&nocache1772205056259\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/23.mp4/index.m3u8&nocache1772205056259\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep24",
+            "number": 24,
+            "title": "Sousou no Frieren - T1 Episódio 24",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/24.mp4/index.m3u8&nocache1772205056260\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/24.mp4/index.m3u8&nocache1772205056260\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep25",
+            "number": 25,
+            "title": "Sousou no Frieren - T1 Episódio 25",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/25.mp4/index.m3u8&nocache1772205056260\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/25.mp4/index.m3u8&nocache1772205056260\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep26",
+            "number": 26,
+            "title": "Sousou no Frieren - T1 Episódio 26",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/26.mp4/index.m3u8&nocache1772205056261\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/26.mp4/index.m3u8&nocache1772205056261\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep27",
+            "number": 27,
+            "title": "Sousou no Frieren - T1 Episódio 27",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/27.mp4/index.m3u8&nocache1772205056261\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/27.mp4/index.m3u8&nocache1772205056261\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s1-ep28",
+            "number": 28,
+            "title": "Sousou no Frieren - T1 Episódio 28",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren/28.mp4/index.m3u8&nocache1772205056262\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/28.mp4/index.m3u8&nocache1772205056262\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "year": 2026,
+        "episodes": 24,
+        "currentEpisode": 6,
+        "status": "ongoing",
+        "score": 9.28,
+        "synopsis": "During their decade-long quest to defeat the Demon King, the members of the hero's party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through adventures and battles, creating unforgettable precious memories for most of them.\n\nHowever, the time that Frieren spends with her comrades is equivalent to merely a fraction of her life, which has lasted over a thousand years. When the party disbands after their victory, Frieren casually returns to her \"usual\" routine of collecting spells across the continent. Due to her different sense of time, she seemingly holds no strong feelings toward the experiences she went through.\n\nAs the years pass, Frieren gradually realizes how her days in the hero's party truly impacted her. Witnessing the deaths of two of her former companions, Frieren begins to regret having taken their presence for granted; she vows to better understand humans and create real personal connections. Although the story of that once memorable journey has long ended, a new tale is about to begin.\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 6
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 3
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "sousounof-s2-ep1",
+            "number": 1,
+            "title": "Sousou no Frieren - T2 Episódio 1",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/01.mp4/index.m3u8&nocache1772205056262\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/01.mp4/index.m3u8&nocache1772205056262\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s2-ep2",
+            "number": 2,
+            "title": "Sousou no Frieren - T2 Episódio 2",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/02.mp4/index.m3u8&nocache1772205056262\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/02.mp4/index.m3u8&nocache1772205056262\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s2-ep3",
+            "number": 3,
+            "title": "Sousou no Frieren - T2 Episódio 3",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/03.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/03.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s2-ep4",
+            "number": 4,
+            "title": "Sousou no Frieren - T2 Episódio 4",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/04.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/04.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s2-ep5",
+            "number": 5,
+            "title": "Sousou no Frieren - T2 Episódio 5",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/05.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/05.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s2-ep6",
+            "number": 6,
+            "title": "Sousou no Frieren - T2 Episódio 6",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/06.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/06.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "yofukashi-no-uta",
+    "title": "Yofukashi no Uta",
+    "titleRomaji": "Yofukashi no Uta",
+    "titleJapanese": "よふかしのうた",
+    "genre": [
+      "Romance",
+      "Supernatural"
+    ],
+    "studio": "LIDENFILMS",
+    "recommended": true,
+    "malId": 50346,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1045/123711l.jpg",
+    "bannerImage": "https://wallpaperaccess.com/full/8405363.png",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2022,
+        "episodes": 13,
+        "currentEpisode": 13,
+        "status": "finished",
+        "score": 7.94,
+        "synopsis": "Kou Yamori is an average middle school student who struggles with grasping the complex concept of love. Because he sees little sense in surrendering to the norm, he soon stops going to school. Plagued with insomnia due to his idleness, Kou begins roaming the lonesome streets at night.\n\nOne night, Kou encounters a bizarre girl named Nazuna Nanakusa who believes that people stay awake during the night because they are dissatisfied with how they spent their day and cannot rest until they release their inhibitions. Nazuna offers to help Kou with his sleep issues and invites him over to her place, where she convinces him to share a futon with her. Feeling uncomfortable, Kou only pretends to doze off—which is when Nazuna suddenly bites his neck, revealing herself to be a vampire!\n\nWhile Kou thinks the bite will turn him into a vampire, the specifics of transforming are not that simple. In order to change, he must be bitten by someone he truly loves. Ready to let go of his dreary mortal life, Kou decides on a new goal: he will fall in love with Nazuna and become a vampire himself.\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 13
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 13
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "yofukashi-no-uta-s1-ep1",
+            "number": 1,
+            "title": "Yofukashi no Uta - T1 Episódio 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/01.mp4/index.m3u8&nocache1772205367964\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s1-ep2",
+            "number": 2,
+            "title": "Yofukashi no Uta - T1 Episódio 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/02.mp4/index.m3u8&nocache1772205367965\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s1-ep3",
+            "number": 3,
+            "title": "Yofukashi no Uta - T1 Episódio 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/03.mp4/index.m3u8&nocache1772205367965\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s1-ep4",
+            "number": 4,
+            "title": "Yofukashi no Uta - T1 Episódio 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/04.mp4/index.m3u8&nocache1772205367965\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s1-ep5",
+            "number": 5,
+            "title": "Yofukashi no Uta - T1 Episódio 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/05.mp4/index.m3u8&nocache1772205367965\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s1-ep6",
+            "number": 6,
+            "title": "Yofukashi no Uta - T1 Episódio 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/06.mp4/index.m3u8&nocache1772205367965\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s1-ep7",
+            "number": 7,
+            "title": "Yofukashi no Uta - T1 Episódio 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/07.mp4/index.m3u8&nocache1772205367966\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s1-ep8",
+            "number": 8,
+            "title": "Yofukashi no Uta - T1 Episódio 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/08.mp4/index.m3u8&nocache1772205367966\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s1-ep9",
+            "number": 9,
+            "title": "Yofukashi no Uta - T1 Episódio 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/09.mp4/index.m3u8&nocache1772205367967\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s1-ep10",
+            "number": 10,
+            "title": "Yofukashi no Uta - T1 Episódio 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/10.mp4/index.m3u8&nocache1772205367967\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s1-ep11",
+            "number": 11,
+            "title": "Yofukashi no Uta - T1 Episódio 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/11.mp4/index.m3u8&nocache1772205367967\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s1-ep12",
+            "number": 12,
+            "title": "Yofukashi no Uta - T1 Episódio 12",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/12.mp4/index.m3u8&nocache1772205367967\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s1-ep13",
+            "number": 13,
+            "title": "Yofukashi no Uta - T1 Episódio 13",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta/13.mp4/index.m3u8&nocache1772205367967\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "year": 2022,
+        "episodes": 12,
+        "currentEpisode": 12,
+        "status": "finished",
+        "score": 7.94,
+        "synopsis": "Kou Yamori is an average middle school student who struggles with grasping the complex concept of love. Because he sees little sense in surrendering to the norm, he soon stops going to school. Plagued with insomnia due to his idleness, Kou begins roaming the lonesome streets at night.\n\nOne night, Kou encounters a bizarre girl named Nazuna Nanakusa who believes that people stay awake during the night because they are dissatisfied with how they spent their day and cannot rest until they release their inhibitions. Nazuna offers to help Kou with his sleep issues and invites him over to her place, where she convinces him to share a futon with her. Feeling uncomfortable, Kou only pretends to doze off—which is when Nazuna suddenly bites his neck, revealing herself to be a vampire!\n\nWhile Kou thinks the bite will turn him into a vampire, the specifics of transforming are not that simple. In order to change, he must be bitten by someone he truly loves. Ready to let go of his dreary mortal life, Kou decides on a new goal: he will fall in love with Nazuna and become a vampire himself.\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 12
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 12
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "yofukashi-no-uta-s2-ep1",
+            "number": 1,
+            "title": "Yofukashi no Uta - T2 Episódio 1",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/01.mp4/index.m3u8&nocache1772205367968\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s2-ep2",
+            "number": 2,
+            "title": "Yofukashi no Uta - T2 Episódio 2",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/02.mp4/index.m3u8&nocache1772205367968\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s2-ep3",
+            "number": 3,
+            "title": "Yofukashi no Uta - T2 Episódio 3",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/03.mp4/index.m3u8&nocache1772205367968\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s2-ep4",
+            "number": 4,
+            "title": "Yofukashi no Uta - T2 Episódio 4",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/04.mp4/index.m3u8&nocache1772205367968\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s2-ep5",
+            "number": 5,
+            "title": "Yofukashi no Uta - T2 Episódio 5",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/05.mp4/index.m3u8&nocache1772205367969\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s2-ep6",
+            "number": 6,
+            "title": "Yofukashi no Uta - T2 Episódio 6",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/06.mp4/index.m3u8&nocache1772205367969\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s2-ep7",
+            "number": 7,
+            "title": "Yofukashi no Uta - T2 Episódio 7",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/07.mp4/index.m3u8&nocache1772205367969\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s2-ep8",
+            "number": 8,
+            "title": "Yofukashi no Uta - T2 Episódio 8",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/08.mp4/index.m3u8&nocache1772205367969\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s2-ep9",
+            "number": 9,
+            "title": "Yofukashi no Uta - T2 Episódio 9",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/09.mp4/index.m3u8&nocache1772205367970\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s2-ep10",
+            "number": 10,
+            "title": "Yofukashi no Uta - T2 Episódio 10",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/10.mp4/index.m3u8&nocache1772205367970\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s2-ep11",
+            "number": 11,
+            "title": "Yofukashi no Uta - T2 Episódio 11",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/11.mp4/index.m3u8&nocache1772205367970\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "yofukashi-no-uta-s2-ep12",
+            "number": 12,
+            "title": "Yofukashi no Uta - T2 Episódio 12",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/y/yofukashi-no-uta-2/12.mp4/index.m3u8&nocache1772205367970\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
+  }
+]

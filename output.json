@@ -2558,7 +2558,7 @@
     "recommended": false,
     "malId": 34599,
     "coverImage": "https://cdn.myanimelist.net/images/anime/6/86733l.jpg",
-    "bannerImage": "https://cdn.myanimelist.net/images/anime/6/86733l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/G6X0490PY-backdrop_wide",
     "seasons": [
       {
         "season": 1,
@@ -2901,7 +2901,16 @@
           }
         ],
         "type": "movie",
-        "movieTitle": "Made in Abyss"
+        "movieTitle": "Made in Abyss",
+        "tagline": "",
+        "director": "",
+        "ageRating": "",
+        "accentColor": "#FF2E2E",
+        "posterImage": "",
+        "stills": [],
+        "awards": [],
+        "runtime": 0,
+        "cast": []
       }
     ]
   },
@@ -2918,7 +2927,7 @@
     "recommended": false,
     "malId": 24833,
     "coverImage": "https://cdn.myanimelist.net/images/anime/5/75639l.jpg",
-    "bannerImage": "https://cdn.myanimelist.net/images/anime/5/75639l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GRVN8MNQY-backdrop_wide",
     "seasons": [
       {
         "season": 1,
@@ -3205,7 +3214,7 @@
     "recommended": false,
     "malId": 269,
     "coverImage": "https://cdn.myanimelist.net/images/anime/1541/147774l.jpg",
-    "bannerImage": "https://cdn.myanimelist.net/images/anime/1541/147774l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GRE50KV36-backdrop_wide",
     "seasons": [
       {
         "season": 1,
@@ -7275,7 +7284,7 @@
     "recommended": false,
     "malId": 52034,
     "coverImage": "https://cdn.myanimelist.net/images/anime/1812/134736l.jpg",
-    "bannerImage": "https://cdn.myanimelist.net/images/anime/1812/134736l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GT00366791-backdrop_wide",
     "seasons": [
       {
         "season": 1,

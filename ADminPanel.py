@@ -1226,7 +1226,7 @@ class AnimeAdminApp(ctk.CTk):
                 "id": id_slug, "title": title_r, "titleRomaji": title_r,
                 "titleJapanese": title_j, "genre": genres, "studio": studio,
                 "recommended": False, "malId": mal_id, "coverImage": cover,
-                "bannerImage": fetch_crunchyroll_banner(title_r), "seasons": [season_data],
+                "bannerImage": cover, "seasons": [season_data],
             }
             self.db = [a for a in self.db if a.get("id") != id_slug]
             self.db.append(new_anime)

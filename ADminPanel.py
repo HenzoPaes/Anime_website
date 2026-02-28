@@ -111,50 +111,217 @@ def find_anime(db, q):
             return a
     return None
 
-def try_add_next_ep(anime):
-    logs = []
+def get_audio_ep_counts(anime: dict) -> list[dict]:
+    """
+    Retorna a contagem atual de episódios por áudio para cada temporada.
+    Ex: [{"season": 1, "label": "1ª Temporada", "sub": 12, "dub": 10, "max": 24}]
+    """
+    result = []
     for season in anime.get("seasons", []):
-        is_movie = season.get("type") == "movie"
-        if season.get("status") == "finished" and not is_movie:
-            continue
-        cur    = season.get("currentEpisode", 0)
-        max_e  = season.get("episodes", 0)
-        next_e = cur + 1
-        if max_e and next_e > max_e:
+        audios = season.get("audios", [])
+        sub_count = next((a.get("episodesAvailable", 0) for a in audios if a["type"] == "sub"), 0)
+        dub_count = next((a.get("episodesAvailable", 0) for a in audios if a["type"] == "dub"), 0)
+        has_sub   = next((a.get("available", False) for a in audios if a["type"] == "sub"), False)
+        has_dub   = next((a.get("available", False) for a in audios if a["type"] == "dub"), False)
+        result.append({
+            "season":   season.get("season", "?"),
+            "label":    season.get("seasonLabel", f"S{season.get('season','?')}"),
+            "type":     season.get("type", "series"),
+            "sub":      sub_count if has_sub else None,
+            "dub":      dub_count if has_dub else None,
+            "max":      season.get("episodes", 0),
+            "status":   season.get("status", "?"),
+        })
+    return result
+
+def check_next_ep_per_audio(anime: dict) -> list[dict]:
+    """
+    Verifica CDN para sub e dub SEPARADAMENTE.
+    Retorna lista de resultados por temporada/audio.
+    Ex: [{"season":1, "audio":"sub", "next_ep":13, "available":True, "path":"s/..."}]
+    """
+    results = []
+    for season in anime.get("seasons", []):
+        if season.get("status") == "finished" and season.get("type") != "movie":
             continue
         ep_list = season.get("episodeList", [])
         if not ep_list:
             continue
-        last  = ep_list[-1]
-        sub_p = extract_av_path(last.get("embeds", {}).get("sub", ""))
-        dub_p = extract_av_path(last.get("embeds", {}).get("dub", ""))
-        chk   = sub_p or dub_p
-        if not chk:
-            logs.append(f"  S{season['season']}: stream_path nao encontrado")
+        audios = season.get("audios", [])
+        s_num  = season["season"]
+
+        # Busca o path de sub e dub no último episódio que tiver cada um
+        sub_path = None
+        dub_path = None
+        sub_cur  = 0
+        dub_cur  = 0
+
+        # Percorre a lista de episódios de trás pra frente para achar o último com sub/dub
+        for ep in reversed(ep_list):
+            embeds = ep.get("embeds", {})
+            if sub_path is None and embeds.get("sub"):
+                sub_path = extract_av_path(embeds["sub"])
+                sub_cur  = ep["number"]
+            if dub_path is None and embeds.get("dub"):
+                dub_path = extract_av_path(embeds["dub"])
+                dub_cur  = ep["number"]
+            if sub_path and dub_path:
+                break
+
+        # Usa episodesAvailable dos audios como referência mais confiável
+        for aud in audios:
+            if aud["type"] == "sub" and aud.get("available") and sub_path:
+                cur    = aud.get("episodesAvailable", sub_cur)
+                next_e = cur + 1
+                max_e  = season.get("episodes", 0)
+                if max_e and next_e > max_e:
+                    continue
+                results.append({
+                    "season":    s_num,
+                    "label":     season.get("seasonLabel", f"S{s_num}"),
+                    "audio":     "sub",
+                    "audio_label": "Legendado",
+                    "current":   cur,
+                    "next_ep":   next_e,
+                    "max":       max_e,
+                    "path":      sub_path,
+                    "available": None,   # será preenchido ao checar CDN
+                })
+            if aud["type"] == "dub" and aud.get("available") and dub_path:
+                cur    = aud.get("episodesAvailable", dub_cur)
+                next_e = cur + 1
+                max_e  = season.get("episodes", 0)
+                if max_e and next_e > max_e:
+                    continue
+                results.append({
+                    "season":    s_num,
+                    "label":     season.get("seasonLabel", f"S{s_num}"),
+                    "audio":     "dub",
+                    "audio_label": "Dublado",
+                    "current":   cur,
+                    "next_ep":   next_e,
+                    "max":       max_e,
+                    "path":      dub_path,
+                    "available": None,
+                })
+    return results
+
+def try_add_next_ep(anime: dict) -> list[str]:
+    """
+    Verifica e adiciona próximo episódio para SUB e DUB de forma independente.
+    Cada áudio pode estar em episódios diferentes.
+    """
+    logs = []
+    for season in anime.get("seasons", []):
+        if season.get("status") == "finished" and season.get("type") != "movie":
             continue
-        logs.append(f"  Checando ep {next_e:02d} (S{season['season']})...")
-        if not av_ep_exists(chk, next_e):
-            logs.append(f"  Ep {next_e:02d} nao disponivel.")
+        s_num   = season["season"]
+        ep_list = season.get("episodeList", [])
+        audios  = season.get("audios", [])
+        max_e   = season.get("episodes", 0)
+
+        if not ep_list:
             continue
-        embeds = {}
-        if sub_p: embeds["sub"] = make_iframe(anivideo_url(sub_p, next_e))
-        if dub_p: embeds["dub"] = make_iframe(anivideo_url(dub_p, next_e))
-        s_num = season["season"]
-        ep_list.append({
-            "id":     f"{anime['id']}-s{s_num}-ep{next_e}",
-            "number": next_e,
-            "title":  f"{anime.get('titleRomaji', anime['title'])} - T{s_num} Ep {next_e}",
-            "season": str(s_num),
-            "embeds": embeds,
-            "embedCredit": "api.anivideo.net",
-        })
-        season["currentEpisode"] = next_e
-        for aud in season.get("audios", []):
-            if aud["type"] == "sub" and sub_p: aud["episodesAvailable"] = next_e
-            if aud["type"] == "dub" and dub_p: aud["episodesAvailable"] = next_e
-        if max_e and next_e >= max_e:
-            season["status"] = "finished"
-        logs.append(f"  [OK] Ep {next_e:02d} adicionado!")
+
+        logs.append(f"  ── S{s_num} — {season.get('seasonLabel', '')} ──")
+
+        # Monta mapa ep_num -> embeds existentes
+        ep_map: dict[int, dict] = {ep["number"]: ep for ep in ep_list}
+
+        # Acha path e contagem atual para sub e dub separadamente
+        sub_path = dub_path = None
+        sub_cur  = dub_cur  = 0
+
+        for ep in reversed(ep_list):
+            embeds = ep.get("embeds", {})
+            if sub_path is None and embeds.get("sub"):
+                sub_path = extract_av_path(embeds["sub"])
+                sub_cur  = ep["number"]
+            if dub_path is None and embeds.get("dub"):
+                dub_path = extract_av_path(embeds["dub"])
+                dub_cur  = ep["number"]
+            if sub_path and dub_path:
+                break
+
+        # Usa episodesAvailable como referência
+        for aud in audios:
+            if aud["type"] == "sub" and aud.get("available"):
+                sub_cur = max(sub_cur, aud.get("episodesAvailable", sub_cur))
+            if aud["type"] == "dub" and aud.get("available"):
+                dub_cur = max(dub_cur, aud.get("episodesAvailable", dub_cur))
+
+        any_added = False
+
+        # ── Verifica e adiciona SUB independentemente ──
+        if sub_path:
+            sub_next = sub_cur + 1
+            if not (max_e and sub_next > max_e):
+                logs.append(f"    [LEG] Atual: ep {sub_cur:02d} → Checando ep {sub_next:02d}...")
+                if av_ep_exists(sub_path, sub_next):
+                    logs.append(f"    [LEG] ✅ Ep {sub_next:02d} disponível!")
+                    # Adiciona ou atualiza embed no ep correspondente
+                    if sub_next in ep_map:
+                        ep_map[sub_next]["embeds"]["sub"] = make_iframe(anivideo_url(sub_path, sub_next))
+                    else:
+                        ep_map[sub_next] = {
+                            "id":     f"{anime['id']}-s{s_num}-ep{sub_next}",
+                            "number": sub_next,
+                            "title":  f"{anime.get('titleRomaji', anime['title'])} - T{s_num} Ep {sub_next}",
+                            "season": str(s_num),
+                            "embeds": {"sub": make_iframe(anivideo_url(sub_path, sub_next))},
+                            "embedCredit": "api.anivideo.net",
+                        }
+                    # Atualiza contagem de áudio
+                    for aud in audios:
+                        if aud["type"] == "sub":
+                            aud["episodesAvailable"] = sub_next
+                    any_added = True
+                else:
+                    logs.append(f"    [LEG] ❌ Ep {sub_next:02d} não disponível.")
+        else:
+            logs.append(f"    [LEG] ⚠️  sem stream_path — pulando.")
+
+        # ── Verifica e adiciona DUB independentemente ──
+        if dub_path:
+            dub_next = dub_cur + 1
+            if not (max_e and dub_next > max_e):
+                logs.append(f"    [DUB] Atual: ep {dub_cur:02d} → Checando ep {dub_next:02d}...")
+                if av_ep_exists(dub_path, dub_next):
+                    logs.append(f"    [DUB] ✅ Ep {dub_next:02d} disponível!")
+                    if dub_next in ep_map:
+                        ep_map[dub_next]["embeds"]["dub"] = make_iframe(anivideo_url(dub_path, dub_next))
+                    else:
+                        ep_map[dub_next] = {
+                            "id":     f"{anime['id']}-s{s_num}-ep{dub_next}",
+                            "number": dub_next,
+                            "title":  f"{anime.get('titleRomaji', anime['title'])} - T{s_num} Ep {dub_next}",
+                            "season": str(s_num),
+                            "embeds": {"dub": make_iframe(anivideo_url(dub_path, dub_next))},
+                            "embedCredit": "api.anivideo.net",
+                        }
+                    for aud in audios:
+                        if aud["type"] == "dub":
+                            aud["episodesAvailable"] = dub_next
+                    any_added = True
+                else:
+                    logs.append(f"    [DUB] ❌ Ep {dub_next:02d} não disponível.")
+        else:
+            logs.append(f"    [DUB] ⚠️  sem stream_path — pulando.")
+
+        if any_added:
+            # Reconstrói ep_list ordenada por número
+            season["episodeList"] = sorted(ep_map.values(), key=lambda x: x["number"])
+            # Atualiza currentEpisode = maior ep que tem qualquer embed
+            all_nums = [ep["number"] for ep in season["episodeList"] if ep.get("embeds")]
+            if all_nums:
+                season["currentEpisode"] = max(all_nums)
+            # Verifica se finalizou
+            sub_done = next((a.get("episodesAvailable",0) for a in audios if a["type"]=="sub"), 0)
+            dub_done = next((a.get("episodesAvailable",0) for a in audios if a["type"]=="dub"), 0)
+            if max_e and min(sub_done, dub_done) >= max_e:
+                season["status"] = "finished"
+                logs.append(f"    🏁 Temporada {s_num} concluída!")
+
     return logs
 
 def do_git_push(msg):
@@ -652,6 +819,7 @@ class AnimeAdminApp(ctk.CTk):
         self._selected_anime: dict | None = None
         self._content_frames: dict[str, ctk.CTkFrame] = {}
         self._log: LogBox | None = None
+        self.current_page: str = "dashboard"
         self._build_ui()
         self.after(200, self._on_mount)
 
@@ -696,6 +864,7 @@ class AnimeAdminApp(ctk.CTk):
         # Clear content
         for w in self._content.winfo_children():
             w.destroy()
+        self.current_page = page
 
         titles = {
             "dashboard": "🏠  Dashboard",
@@ -850,48 +1019,82 @@ class AnimeAdminApp(ctk.CTk):
 
     def _run_update(self, log: LogBox, dry=False):
         log.clear()
-        mode = "DRY RUN" if dry else "UPDATE"
-        log.write(f"=== Auto-Update ALL ({mode}) ===\n")
+        mode = "VERIFICAÇÃO (dry run)" if dry else "UPDATE COMPLETO"
+        log.write(f"╔══ {mode} ══╗\n")
         def _worker():
             changed = []
             for anime in self.db:
-                if not any(s.get("status")=="ongoing" for s in anime.get("seasons",[])):
+                seasons = anime.get("seasons", [])
+                has_ongoing = any(s.get("status") == "ongoing" for s in seasons)
+                if not has_ongoing:
                     continue
-                self.after(0, log.write, f">>> {anime['title']}")
+
+                title = anime["title"]
+                self.after(0, log.write, f"\n▶  {title}")
+                self.after(0, log.write,  "─" * 50)
+
+                # Mostra situação atual por temporada/áudio
+                for info in get_audio_ep_counts(anime):
+                    if info["status"] == "finished" and info["type"] != "movie":
+                        continue
+                    parts = []
+                    if info["sub"] is not None:
+                        parts.append(f"LEG: {info['sub']:02d} eps")
+                    if info["dub"] is not None:
+                        parts.append(f"DUB: {info['dub']:02d} eps")
+                    max_str = f"/{info['max']}" if info["max"] else ""
+                    self.after(0, log.write,
+                        f"  [{info['label']}]  {' | '.join(parts)}{max_str}")
+
                 if dry:
-                    for season in anime.get("seasons",[]):
-                        if season.get("status")=="finished": continue
-                        cur  = season.get("currentEpisode",0)
-                        epl  = season.get("episodeList",[])
-                        if not epl: continue
-                        last  = epl[-1]
-                        sub_p = extract_av_path(last.get("embeds",{}).get("sub",""))
-                        dub_p = extract_av_path(last.get("embeds",{}).get("dub",""))
-                        chk   = sub_p or dub_p
-                        if not chk: continue
-                        next_e = cur + 1
-                        self.after(0, log.write, f"  Checando ep {next_e:02d}...")
-                        if av_ep_exists(chk, next_e):
-                            self.after(0, log.write, f"  ✅ DISPONÍVEL!")
-                            changed.append(anime["title"])
+                    # Verifica SUB e DUB separadamente no CDN
+                    checks = check_next_ep_per_audio(anime)
+                    if not checks:
+                        self.after(0, log.write, "  (sem temporadas em andamento)")
+                        continue
+
+                    anime_changed = False
+                    for chk in checks:
+                        audio_tag  = "LEG" if chk["audio"] == "sub" else "DUB"
+                        cur        = chk["current"]
+                        next_e     = chk["next_ep"]
+                        max_e      = chk["max"]
+                        max_str    = f"/{max_e}" if max_e else ""
+                        self.after(0, log.write,
+                            f"  [{audio_tag}] S{chk['season']} — atual: {cur:02d}{max_str} → checando {next_e:02d}...")
+                        exists = av_ep_exists(chk["path"], next_e)
+                        if exists:
+                            self.after(0, log.write,
+                                f"  [{audio_tag}] ✅  Ep {next_e:02d} DISPONÍVEL!")
+                            anime_changed = True
                         else:
-                            self.after(0, log.write, f"  ❌ Não disponível.")
+                            self.after(0, log.write,
+                                f"  [{audio_tag}] ❌  Ep {next_e:02d} não disponível.")
+
+                    if anime_changed:
+                        changed.append(title)
                 else:
+                    # Update real
                     msgs = try_add_next_ep(anime)
                     for m in msgs:
                         self.after(0, log.write, m)
-                    if any("OK" in m for m in msgs):
-                        changed.append(anime["title"])
+                    if any("✅" in m or "[OK]" in m for m in msgs):
+                        changed.append(title)
 
             if not dry and changed:
                 save_db(self.db)
+                self.after(0, self._refresh_list_if_open)
 
-            summary = f"\n✅ {len(changed)} anime(s) com novos eps:" if changed else "\nℹ️ Nenhum novo episódio."
-            self.after(0, log.write, summary)
-            for c in changed:
-                self.after(0, log.write, f"  + {c}")
-            self.after(0, log.write, "\n=== Finalizado. ===")
-            self.after(0, self._set_status, f"Update completo! {len(changed)} alteração(ões).")
+            self.after(0, log.write, "")
+            if changed:
+                self.after(0, log.write, f"╔══ ✅  {len(changed)} anime(s) com novos eps ══╗")
+                for c in changed:
+                    self.after(0, log.write, f"  ✓  {c}")
+            else:
+                self.after(0, log.write, "╔══ ℹ️  Nenhum episódio novo encontrado ══╗")
+            self.after(0, log.write, "╚══ Finalizado ══╝")
+            self.after(0, self._set_status,
+                f"{'Verificação' if dry else 'Update'} completo! {len(changed)} novidade(s).")
 
         threading.Thread(target=_worker, daemon=True).start()
 
@@ -1055,17 +1258,37 @@ class AnimeAdminApp(ctk.CTk):
         self._set_status(f"'{anime['title']}' removido!", WARNING)
         self._navigate("list")
 
+    def _refresh_list_if_open(self):
+        """Atualiza a lista de animes se a página de lista estiver ativa."""
+        if self.current_page == "list":
+            self._refresh_list()
+
     def _do_update_one_anime(self, anime: dict):
         self._navigate("update")
         def _worker():
             log = self._log
             def wlog(m): self.after(0, log.write, m)
-            wlog(f"Atualizando: {anime['title']}")
+
+            wlog(f"▶  Atualizando: {anime['title']}")
+            wlog("─" * 50)
+
+            # Mostra estado atual por áudio
+            for info in get_audio_ep_counts(anime):
+                parts = []
+                if info["sub"] is not None: parts.append(f"LEG: {info['sub']:02d} eps")
+                if info["dub"] is not None: parts.append(f"DUB: {info['dub']:02d} eps")
+                max_str = f"/{info['max']}" if info["max"] else ""
+                wlog(f"  [{info['label']}]  {' | '.join(parts)}{max_str}")
+
+            wlog("")
             msgs = try_add_next_ep(anime)
-            for m in msgs: wlog(m)
+            for m in msgs:
+                wlog(m)
+
             save_db(self.db)
-            wlog("✅ Concluído!")
-            self.after(0, self._set_status, "Anime atualizado!")
+            wlog("\n✅ Concluído!")
+            self.after(0, self._set_status, f"'{anime['title']}' atualizado!")
+
         threading.Thread(target=_worker, daemon=True).start()
 
     def _do_import(self, path: str):

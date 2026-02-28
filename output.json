@@ -1,5 +1,255 @@
 [
   {
+    "id": "chainsaw-man",
+    "title": "Chainsaw Man",
+    "titleRomaji": "Chainsaw Man",
+    "titleJapanese": "チェンソーマン",
+    "genre": [
+      "Action",
+      "Fantasy"
+    ],
+    "studio": "MAPPA",
+    "recommended": true,
+    "malId": 44511,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1806/126216l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GVDHX8QNW-backdrop_wide",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2022,
+        "episodes": 12,
+        "currentEpisode": 12,
+        "status": "finished",
+        "score": 8.43,
+        "synopsis": "Denji is robbed of a normal teenage life, left with nothing but his deadbeat father's overwhelming debt. His only companion is his pet, the chainsaw devil Pochita, with whom he slays devils for money that inevitably ends up in the yakuza's pockets. All Denji can do is dream of a good, simple life: one with delicious food and a beautiful girlfriend by his side. But an act of greedy betrayal by the yakuza leads to Denji's brutal, untimely death, crushing all hope of him ever achieving happiness.\n\nRemarkably, an old contract allows Pochita to merge with the deceased Denji and bestow devil powers on him, changing him into a hybrid able to transform his body parts into chainsaws. Because Denji's new abilities pose a significant risk to society, the Public Safety Bureau's elite devil hunter Makima takes him in, letting him live as long as he obeys her command. Guided by the promise of a content life alongside an attractive woman, Denji devotes everything and fights with all his might to make his naive dreams a reality.\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 12
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 12
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "chainsaw-man-s1-ep1",
+            "number": 1,
+            "title": "Chainsaw Man - T1 Episódio 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/01.mp4/index.m3u8&nocache1772229673955\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/01.mp4/index.m3u8&nocache1772229673955\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep2",
+            "number": 2,
+            "title": "Chainsaw Man - T1 Episódio 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/02.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/02.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep3",
+            "number": 3,
+            "title": "Chainsaw Man - T1 Episódio 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/03.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/03.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep4",
+            "number": 4,
+            "title": "Chainsaw Man - T1 Episódio 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/04.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/04.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep5",
+            "number": 5,
+            "title": "Chainsaw Man - T1 Episódio 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/05.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/05.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep6",
+            "number": 6,
+            "title": "Chainsaw Man - T1 Episódio 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/06.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/06.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep7",
+            "number": 7,
+            "title": "Chainsaw Man - T1 Episódio 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/07.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/07.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep8",
+            "number": 8,
+            "title": "Chainsaw Man - T1 Episódio 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/08.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/08.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep9",
+            "number": 9,
+            "title": "Chainsaw Man - T1 Episódio 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/09.mp4/index.m3u8&nocache1772229673959\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/09.mp4/index.m3u8&nocache1772229673959\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep10",
+            "number": 10,
+            "title": "Chainsaw Man - T1 Episódio 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/10.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/10.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep11",
+            "number": 11,
+            "title": "Chainsaw Man - T1 Episódio 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/11.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/11.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "chainsaw-man-s1-ep12",
+            "number": 12,
+            "title": "Chainsaw Man - T1 Episódio 12",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/12.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/12.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "type": "movie",
+        "seasonLabel": "Chainsaw Man – Reze Arc",
+        "movieTitle": "Chainsaw Man – Reze Arc",
+        "tagline": "Amor pode ser mais perigoso que demônios.",
+        "year": 2025,
+        "episodes": 1,
+        "currentEpisode": 1,
+        "status": "finished",
+        "score": 9.5,
+        "runtime": 110,
+        "director": "Tatsuya Yoshihara",
+        "ageRating": "16+",
+        "accentColor": "#FF2E2E",
+        "posterImage": "https://animesdigital.org/wp-content/uploads/2025/12/Chainsaw-Man-Movie-Reze-hen-categoria.jpg",
+        "stills": [
+          "https://imgs.search.brave.com/48cKGo3ot_LXA2M6blukodoGrGTRZJLucN-3EYu2olE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzEyL2Rlbmpp/LTMuanBnP3E9NzAm/Zml0PWNyb3Amdz04/MjUmZHByPTE",
+          "https://imgs.search.brave.com/CGd7fO36O5hYng0EzPmTebPXKUCnbzfS3kKu58R5k4Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzEwLzk0OTFm/OWZkLWQ3N2MtNDBl/YS1hYzI3LTdjY2Vm/ZjAxZDVjMy5qcGVn/P3E9NDkmZml0PWNy/b3Amdz04MjUmZHBy/PTI",
+          "https://images8.alphacoders.com/140/thumbbig-1403574.webp"
+        ],
+        "cast": [
+          {
+            "character": "Denji",
+            "voice": "Kikunosuke Toya",
+            "voiceDub": "Ryan Colt Levy"
+          },
+          {
+            "character": "Reze",
+            "voice": "Reina Ueda",
+            "voiceDub": "—"
+          },
+          {
+            "character": "Makima",
+            "voice": "Tomori Kusunoki",
+            "voiceDub": "Suzie Yeung"
+          },
+          {
+            "character": "Aki Hayakawa",
+            "voice": "Shogo Sakata",
+            "voiceDub": "Reagan Murdock"
+          }
+        ],
+        "awards": [],
+        "synopsis": "Denji conhece Reze, uma garota misteriosa que parece oferecer a ele algo simples e raro: carinho genuíno. Porém, por trás do romance surge um conflito explosivo envolvendo demônios, traição e escolhas impossíveis.",
+        "trailer": "https://www.youtube.com/watch?v=WSCSZFNsm4g",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 1
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 1
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "chainsaw-man-reze-filme",
+            "number": 1,
+            "title": "Chainsaw Man – Reze Arc (Mini-review)",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width='100%' height='100%' src='https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-movie-reze-hen/01.mp4/index.m3u8&nocache1772220374' frameborder='0' allowfullscreen></iframe>",
+              "dub": "<iframe width='100%' height='100%' src='https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-movie-reze-hen-dublado/01.mp4/index.m3u8&nocache1772220374' frameborder='0' allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "darling-in-the-franxx",
     "title": "Darling in the FranXX",
     "titleRomaji": "Darling in the FranXX",

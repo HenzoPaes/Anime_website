@@ -7576,7 +7576,7 @@
         "seasonLabel": "3ª Temporada",
         "year": 2023,
         "episodes": 12,
-        "currentEpisode": 6,
+        "currentEpisode": 7,
         "status": "ongoing",
         "score": 8.54,
         "synopsis": "In the entertainment world, celebrities often show exaggerated versions of themselves to the public, concealing their true thoughts and struggles beneath elaborate lies. Fans buy into these fabrications, showering their idols with undying love and support, until something breaks the illusion. Sixteen-year-old rising star Ai Hoshino of pop idol group B Komachi has the world captivated; however, when she announces a hiatus due to health concerns, the news causes many to become worried.\n\nAs a huge fan of Ai, gynecologist Gorou Amemiya cheers her on from his countryside medical practice, wishing he could meet her in person one day. His wish comes true when Ai shows up at his hospital—not sick, but pregnant with twins! While the doctor promises Ai to safely deliver her children, he wonders if this encounter with the idol will forever change the nature of his relationship with her.\n\n[Written by MAL Rewrite]",
@@ -7586,7 +7586,7 @@
             "type": "sub",
             "label": "Legendado",
             "available": true,
-            "episodesAvailable": 6
+            "episodesAvailable": 7
           },
           {
             "type": "dub",
@@ -7653,6 +7653,16 @@
             "season": "3",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-3/06.mp4/index.m3u8&nocache1772308419817\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "oshi-no-ko-s3-ep7",
+            "number": 7,
+            "title": "[Oshi no Ko] - T3 Ep 7",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-3/07.mp4/index.m3u8&nocache1772308531603\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }

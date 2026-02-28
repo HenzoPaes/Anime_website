@@ -19,5 +19,19 @@
     "title": "Git Push: Banner Upd",
     "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   0a6846b..14c1f0b  data -> data",
     "level": "info"
+  },
+  {
+    "ts": "2026-02-28 19:42:34",
+    "kind": "git",
+    "title": "Git Push: Hotfix",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   14c1f0b..5df8ca9  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-02-28 19:44:16",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
   }
 ]

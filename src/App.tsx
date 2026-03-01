@@ -109,9 +109,9 @@ export default function App() {
     || window.location.hostname.endsWith(".local")
   );
 
-  // Se não é PWA e não está na página de download, redireciona para download.
-  // EXCEÇÃO: se estivermos em localhost (dev), mostramos o app normalmente.
-  const showFullApp = isPWA || isDownloadPage || isLocalhost;
+  // Allow app to work on the web (not just PWA)
+  // Users can use the app in regular browsers without installing PWA
+  const showFullApp = true;
 
   // Loading
   if (isLoading) {

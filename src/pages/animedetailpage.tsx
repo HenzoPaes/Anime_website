@@ -1,7 +1,7 @@
 // src/pages/AnimeDetailPage.tsx
 import { useState, useMemo, useEffect, useRef } from "react";
 import { useAnimeById, useRelated, FlatAnime } from "../hooks/useanimes";
-import { AnimeSeason, AnimeType } from "../types/anime";
+import { AnimeSeason, AnimeType, isAdultAnime } from "../types/anime";
 import { CustomDropdown, DropdownOption } from "../components/customdropdown";
 import AnimeCard from "../components/animecard";
 import { useParams, useNavigate } from "react-router-dom";
@@ -413,7 +413,7 @@ export function AnimeDetailPage({
   const subscribed = isSubscribed(animeId);
 
   // ── Adult Content Gate ────────────────────────────────────────────────────
-  const isAdult = !!(anime as any)?.adultContent;
+  const isAdult = isAdultAnime(anime);
   const [adultAccepted, setAdultAccepted] = useState(() => {
     // Verifica na sessão atual (sem persistir entre abas fechadas)
     try { return sessionStorage.getItem(`adult-ok:${animeId}`) === "yes"; }

@@ -8394,8 +8394,8 @@
   },
   {
     "id": "dandadan",
-    "title": "Dandadan",
-    "titleRomaji": "Dandadan",
+    "title": "Dan da dan",
+    "titleRomaji": "Dan da dan",
     "titleJapanese": "ダンダダン",
     "genre": [
       "Action",
@@ -8403,10 +8403,10 @@
       "Supernatural"
     ],
     "studio": "Science SARU",
-    "recommended": false,
+    "recommended": true,
     "malId": 57334,
-    "coverImage": "https://cdn.myanimelist.net/images/anime/1721/149001l.jpg",
-    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/G6P5WVEQ6-backdrop_wide",
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1584/143719l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GG5H5XQ0D-backdrop_wide",
     "seasons": [
       {
         "season": 1,

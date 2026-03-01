@@ -9074,5 +9074,159 @@
         ]
       }
     ]
+  },
+  {
+    "id": "cyberpunk-edgerunners",
+    "title": "Cyberpunk: Edgerunners",
+    "titleRomaji": "Cyberpunk: Edgerunners",
+    "titleJapanese": "サイバーパンク エッジランナーズ",
+    "genre": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "studio": "Trigger",
+    "recommended": false,
+    "malId": 42310,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1818/126435l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GR09Z7W7R-backdrop_wide",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2022,
+        "episodes": 10,
+        "currentEpisode": 10,
+        "status": "finished",
+        "score": 8.62,
+        "synopsis": "Dreams are doomed to die in Night City, a futuristic Californian metropolis. As a teenager living in the city's slums, David Martinez is trying to fulfill his mother's lifelong wish for him to reach the top of Arasaka, the world's leading security corporation. To this end, he attends the prestigious Arasaka Academy while his mother works tirelessly to keep their family afloat.\n\nWhen an incident with a street gang leaves David's life in tatters, he stumbles upon Sandevistan cyberware—a prosthetic that grants its wearer superhuman speed. Fueled by rage, David implants the device in his back, using it to exact revenge on one of his tormentors. This gets him expelled from the academy, shattering his hopes of ever making his mother proud.\n\nAfter witnessing David's newfound abilities, the beautiful data thief Lucyna \"Lucy\" Kushinada offers to team up with him, handing him a ticket to salvation. However, associating with Lucy introduces David to the world of Edgerunners—cyborg criminals who will break any law for money. Edgerunners often lose their lives, if the cyberware does not break their minds first; but in his fight for survival inside a corrupt system, David is ready to risk it all.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 10
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 10
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "cyberpunk-edgerunners-s1-ep1",
+            "number": 1,
+            "title": "Cyberpunk: Edgerunners - T1 Ep 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners/01.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners-dublado/01.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "cyberpunk-edgerunners-s1-ep2",
+            "number": 2,
+            "title": "Cyberpunk: Edgerunners - T1 Ep 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners/02.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners-dublado/02.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "cyberpunk-edgerunners-s1-ep3",
+            "number": 3,
+            "title": "Cyberpunk: Edgerunners - T1 Ep 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners/03.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners-dublado/03.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "cyberpunk-edgerunners-s1-ep4",
+            "number": 4,
+            "title": "Cyberpunk: Edgerunners - T1 Ep 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners/04.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners-dublado/04.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "cyberpunk-edgerunners-s1-ep5",
+            "number": 5,
+            "title": "Cyberpunk: Edgerunners - T1 Ep 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners/05.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners-dublado/05.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "cyberpunk-edgerunners-s1-ep6",
+            "number": 6,
+            "title": "Cyberpunk: Edgerunners - T1 Ep 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners/06.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners-dublado/06.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "cyberpunk-edgerunners-s1-ep7",
+            "number": 7,
+            "title": "Cyberpunk: Edgerunners - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners/07.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners-dublado/07.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "cyberpunk-edgerunners-s1-ep8",
+            "number": 8,
+            "title": "Cyberpunk: Edgerunners - T1 Ep 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners/08.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners-dublado/08.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "cyberpunk-edgerunners-s1-ep9",
+            "number": 9,
+            "title": "Cyberpunk: Edgerunners - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners/09.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners-dublado/09.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "cyberpunk-edgerunners-s1-ep10",
+            "number": 10,
+            "title": "Cyberpunk: Edgerunners - T1 Ep 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners/10.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/cyberpunk-edgerunners-dublado/10.mp4/index.m3u8&nocache1772327351171\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
   }
 ]

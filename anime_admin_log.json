@@ -75,5 +75,19 @@
     "title": "Adicionado: Ore dake Level Up na Ken",
     "detail": "T1 · 12 eps · Série",
     "level": "info"
+  },
+  {
+    "ts": "2026-02-28 21:56:44",
+    "kind": "git",
+    "title": "Git Push: chore: update database [28/02/2026 21:56]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   6e1a3a9..a24e065  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-02-28 22:09:11",
+    "kind": "add",
+    "title": "Adicionado: Cyberpunk: Edgerunners",
+    "detail": "T1 · 10 eps · Série",
+    "level": "info"
   }
 ]

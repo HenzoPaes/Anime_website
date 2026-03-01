@@ -8391,5 +8391,341 @@
         ]
       }
     ]
+  },
+  {
+    "id": "dandadan",
+    "title": "Dandadan",
+    "titleRomaji": "Dandadan",
+    "titleJapanese": "ダンダダン",
+    "genre": [
+      "Action",
+      "Comedy",
+      "Supernatural"
+    ],
+    "studio": "Science SARU",
+    "recommended": false,
+    "malId": 57334,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1721/149001l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/G6P5WVEQ6-backdrop_wide",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2024,
+        "episodes": 12,
+        "currentEpisode": 12,
+        "status": "finished",
+        "score": 8.43,
+        "synopsis": "Reeling from her recent breakup, Momo Ayase, a popular high schooler, shows kindness to her socially awkward schoolmate, Ken Takakura, by standing up to his bullies. Takakura misunderstands her intentions, believing he has made a new friend who shares his obsession with aliens and UFOs. However, Momo's own eccentric occult beliefs lie in the supernatural realm; she thinks aliens do not exist. A rivalry quickly brews as each becomes determined to prove the other wrong.\n\nDespite their initial clash over their opposing beliefs, Momo and Takakura form an unexpected but intimate friendship, a bond forged in a series of supernatural battles and bizarre encounters with urban legends and paranormal entities. As both develop unique superhuman abilities, they learn to supplement each other's weaknesses, leading them to wonder if their newfound partnership may be about more than just survival.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 12
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 12
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "dandadan-s1-ep1",
+            "number": 1,
+            "title": "Dandadan - T1 Ep 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan/01.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/01.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s1-ep2",
+            "number": 2,
+            "title": "Dandadan - T1 Ep 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan/02.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/02.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s1-ep3",
+            "number": 3,
+            "title": "Dandadan - T1 Ep 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan/03.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/03.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s1-ep4",
+            "number": 4,
+            "title": "Dandadan - T1 Ep 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan/04.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/04.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s1-ep5",
+            "number": 5,
+            "title": "Dandadan - T1 Ep 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan/05.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/05.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s1-ep6",
+            "number": 6,
+            "title": "Dandadan - T1 Ep 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan/06.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/06.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s1-ep7",
+            "number": 7,
+            "title": "Dandadan - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan/07.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/07.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s1-ep8",
+            "number": 8,
+            "title": "Dandadan - T1 Ep 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan/08.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/08.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s1-ep9",
+            "number": 9,
+            "title": "Dandadan - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan/09.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/09.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s1-ep10",
+            "number": 10,
+            "title": "Dandadan - T1 Ep 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan/10.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/10.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s1-ep11",
+            "number": 11,
+            "title": "Dandadan - T1 Ep 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan/11.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/11.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s1-ep12",
+            "number": 12,
+            "title": "Dandadan - T1 Ep 12",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan/12.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/12.mp4/index.m3u8&nocache1772324017220\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "year": 2025,
+        "episodes": 12,
+        "currentEpisode": 12,
+        "status": "finished",
+        "score": 8.42,
+        "synopsis": "While the mission to exorcise Jin \"Jiji\" Enjouji's family home is underway, things are not going as expected. Momo Ayase narrowly evades an attempted abduction while Ken \"Okarun\" Takakura and Jiji are ambushed by the Kitou family—the unsettling landlords of the cursed estate. The trio's efforts threaten the foundation of this enigmatic town shrouded in legends and mysteries.\n\nAs Momo, Okarun, and Jiji are drawn deeper into the maze of folklore and supernatural entities, they must each utilize their unique powers if they want to survive and unravel the secrets of the uncanny town.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 12
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 12
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "dandadan-s2-ep1",
+            "number": 1,
+            "title": "Dandadan 2nd Season - T2 Ep 1",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2/01.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/01.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s2-ep2",
+            "number": 2,
+            "title": "Dandadan 2nd Season - T2 Ep 2",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2/02.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/02.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s2-ep3",
+            "number": 3,
+            "title": "Dandadan 2nd Season - T2 Ep 3",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2/03.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/03.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s2-ep4",
+            "number": 4,
+            "title": "Dandadan 2nd Season - T2 Ep 4",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2/04.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/04.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s2-ep5",
+            "number": 5,
+            "title": "Dandadan 2nd Season - T2 Ep 5",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2/05.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/05.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s2-ep6",
+            "number": 6,
+            "title": "Dandadan 2nd Season - T2 Ep 6",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2/06.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/06.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s2-ep7",
+            "number": 7,
+            "title": "Dandadan 2nd Season - T2 Ep 7",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2/07.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/07.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s2-ep8",
+            "number": 8,
+            "title": "Dandadan 2nd Season - T2 Ep 8",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2/08.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/08.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s2-ep9",
+            "number": 9,
+            "title": "Dandadan 2nd Season - T2 Ep 9",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2/09.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/09.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s2-ep10",
+            "number": 10,
+            "title": "Dandadan 2nd Season - T2 Ep 10",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2/10.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/10.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s2-ep11",
+            "number": 11,
+            "title": "Dandadan 2nd Season - T2 Ep 11",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2/11.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/11.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "dandadan-s2-ep12",
+            "number": 12,
+            "title": "Dandadan 2nd Season - T2 Ep 12",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2/12.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/12.mp4/index.m3u8&nocache1772324092009\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
   }
 ]

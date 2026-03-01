@@ -40,5 +40,19 @@
     "title": "Git Push: chore: update database [28/02/2026 20:35]",
     "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   5df8ca9..427181d  data -> data",
     "level": "info"
+  },
+  {
+    "ts": "2026-02-28 20:47:47",
+    "kind": "git",
+    "title": "Git Push: chore: update database [28/02/2026 20:47]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   427181d..816c156  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-02-28 21:13:37",
+    "kind": "add",
+    "title": "Adicionado: Dandadan",
+    "detail": "T1 · 12 eps · Série",
+    "level": "info"
   }
 ]

@@ -4,7 +4,7 @@
   "heroCtaText": "Assistir agora",
   "siteTitle": "AnimeVerse — Seu portal de animes",
   "catalogTitle": "Todos os Animes",
-  "showRandomButton": true,
+  "showRandomButton": false,
   "featuredBannerBlur": true,
   "pinnedGenres": [],
   "announcement": {

@@ -1,16 +1,18 @@
 {
-  "featuredAnimeId": "seihantai-na-kimi-to-boku",
-  "heroBadgeText": "👀 Proximo Episódio",
+  "featuredAnimeId": "jujutsu-kaisen",
+  "heroBadgeText": "⭐ Em Alta!",
   "heroCtaText": "Assistir agora",
   "siteTitle": "AnimeVerse — Seu portal de animes",
   "catalogTitle": "Todos os Animes",
   "showRandomButton": false,
-  "featuredBannerBlur": true,
-  "pinnedGenres": [],
+  "featuredBannerBlur": false,
+  "pinnedGenres": [
+    "Action"
+  ],
   "announcement": {
     "enabled": true,
-    "text": "Seihantai na Kimi to Boku - Proximo episódio: HOJE!",
-    "type": "warning",
+    "text": "Jujutsu Kaisen - Em alta ultimamente!",
+    "type": "info",
     "dismissible": true
   },
   "lastUpdated": "2026-03-01"

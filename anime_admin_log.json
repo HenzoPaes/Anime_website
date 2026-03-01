@@ -124,5 +124,26 @@
     "title": "Git Push: chore: update database [28/02/2026 23:25]",
     "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   2aec564..18e9076  data -> data",
     "level": "info"
+  },
+  {
+    "ts": "2026-02-28 23:27:30",
+    "kind": "git",
+    "title": "Git Push: chore: update database [28/02/2026 23:27]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   18e9076..0d85dbb  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-02-28 23:31:35",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=seihantai-na-kimi-to-boku",
+    "level": "info"
+  },
+  {
+    "ts": "2026-02-28 23:31:37",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=seihantai-na-kimi-to-boku",
+    "level": "info"
   }
 ]

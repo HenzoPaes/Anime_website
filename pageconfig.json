@@ -1,5 +1,5 @@
 {
-  "featuredAnimeId": "",
+  "featuredAnimeId": "seihantai-na-kimi-to-boku",
   "heroBadgeText": "⭐ Melhor avaliado",
   "heroCtaText": "Assistir agora",
   "siteTitle": "AnimeVerse — Seu portal de animes",
@@ -8,9 +8,9 @@
   "featuredBannerBlur": false,
   "pinnedGenres": [],
   "announcement": {
-    "enabled": false,
-    "text": "",
-    "type": "info",
+    "enabled": true,
+    "text": "Seihantai na Kimi to Boku - Proximo episódio: amanhã!",
+    "type": "warning",
     "dismissible": true
   },
   "lastUpdated": "2026-02-28"

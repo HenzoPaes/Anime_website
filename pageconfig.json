@@ -1,7 +1,7 @@
 {
-  "featuredAnimeId": "jujutsu-kaisen",
-  "heroBadgeText": "⭐ Em Alta!",
-  "heroCtaText": "Assistir agora",
+  "featuredAnimeId": "chainsaw-man",
+  "heroBadgeText": "⭐ Assista o filme agora mesmo!",
+  "heroCtaText": "Assistir Filme",
   "siteTitle": "AnimeVerse — Seu portal de animes",
   "catalogTitle": "Todos os Animes",
   "showRandomButton": false,
@@ -11,8 +11,8 @@
   ],
   "announcement": {
     "enabled": true,
-    "text": "Jujutsu Kaisen - Em alta ultimamente!",
-    "type": "info",
+    "text": "Chainsaw-man - Arco da reze o filme!",
+    "type": "success",
     "dismissible": true
   },
   "lastUpdated": "2026-03-01"

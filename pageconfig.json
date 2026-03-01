@@ -11,7 +11,7 @@
     "enabled": true,
     "text": "Seihantai na Kimi to Boku - Proximo episódio: amanhã!",
     "type": "warning",
-    "dismissible": true
+    "dismissible": false
   },
   "lastUpdated": "2026-02-28"
 }

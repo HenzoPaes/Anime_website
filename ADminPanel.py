@@ -537,6 +537,7 @@ class Sidebar(ctk.CTkFrame):
         ("🔍", "Verificar Eps", "check"),
         ("📊", "Estatísticas",  "stats"),
         ("📜", "Logs & Hist.",  "logs"),
+        ("⚙️", "Config Página", "pageconfig"),
         ("─",  "",              "sep"),
         ("☁️", "Push GitHub",   "push"),
         ("⬇️", "Pull GitHub",   "pull"),
@@ -797,7 +798,8 @@ class EditAnimeDialog(Dialog):
         self._v_cover   = self._field(sg, "Cover URL",       a.get("coverImage", ""))
         self._v_banner  = self._field(sg, "Banner URL",      a.get("bannerImage", ""))
         self._v_mal_id  = self._field(sg, "MAL ID",          str(a.get("malId", "")))
-        self._v_rec     = self._switch(sg, "Recomendado?",   bool(a.get("recommended", False)))
+        self._v_rec     = self._switch(sg, "Recomendado?",    bool(a.get("recommended", False)))
+        self._v_adult   = self._switch(sg, "🔞 Conteúdo Adulto (+18)?", bool(a.get("adultContent", False)))
 
         # Botão para re-buscar dados do MAL
         mal_row = ctk.CTkFrame(sg, fg_color="transparent")
@@ -934,14 +936,15 @@ class EditAnimeDialog(Dialog):
     def _submit(self):
         # Geral
         result = {
-            "title":   self._v_title.get(),
-            "title_j": self._v_title_j.get(),
-            "studio":  self._v_studio.get(),
-            "genres":  [g.strip() for g in self._v_genres.get().split(",") if g.strip()],
-            "cover":   self._v_cover.get(),
-            "banner":  self._v_banner.get(),
-            "mal_id":  self._v_mal_id.get(),
-            "rec":     self._v_rec.get(),
+            "title":        self._v_title.get(),
+            "title_j":      self._v_title_j.get(),
+            "studio":       self._v_studio.get(),
+            "genres":       [g.strip() for g in self._v_genres.get().split(",") if g.strip()],
+            "cover":        self._v_cover.get(),
+            "banner":       self._v_banner.get(),
+            "mal_id":       self._v_mal_id.get(),
+            "rec":          self._v_rec.get(),
+            "adult":        self._v_adult.get(),
             "seasons": [],
         }
         # Temporadas
@@ -1020,6 +1023,7 @@ class AddAnimeDialog(Dialog):
 
         self._has_sub = self._switch(sc, "Tem Legendado?", True)
         self._has_dub = self._switch(sc, "Tem Dublado?",   False)
+        self._adult   = self._switch(sc, "🔞 Conteúdo Adulto (+18)?", False)
 
         # Campos de Filme (inicialmente ocultos)
         self._movie_frame = ctk.CTkFrame(sc, fg_color="transparent")
@@ -1055,9 +1059,10 @@ class AddAnimeDialog(Dialog):
             "max_eps":   self._max_eps.get().strip(),
             "season":    self._season.get().strip(),
             "avslug":    self._avslug.get().strip(),
-            "is_movie":  self._type.get() == "Filme",
-            "has_sub":   self._has_sub.get(),
-            "has_dub":   self._has_dub.get(),
+            "is_movie":   self._type.get() == "Filme",
+            "has_sub":    self._has_sub.get(),
+            "has_dub":    self._has_dub.get(),
+            "adult":      self._adult.get(),
             "inc_season": self._inc_season.get(),
         }
         if data["is_movie"]:
@@ -1189,29 +1194,31 @@ class AnimeAdminApp(ctk.CTk):
             w.destroy()
         self.current_page = page
         titles = {
-            "dashboard": "🏠  Dashboard",
-            "list":      "📋  Lista de Animes",
-            "update":    "🔄  Auto-Update",
-            "check":     "🔍  Verificar Episódios",
-            "stats":     "📊  Estatísticas",
-            "logs":      "📜  Logs & Histórico",
-            "add":       "➕  Adicionar Anime",
-            "import":    "📂  Importar JSON",
-            "push":      "☁️  Git Push",
-            "pull":      "⬇️  Pull GitHub",
+            "dashboard":  "🏠  Dashboard",
+            "list":       "📋  Lista de Animes",
+            "update":     "🔄  Auto-Update",
+            "check":      "🔍  Verificar Episódios",
+            "stats":      "📊  Estatísticas",
+            "logs":       "📜  Logs & Histórico",
+            "pageconfig": "⚙️  Configurações da Página",
+            "add":        "➕  Adicionar Anime",
+            "import":     "📂  Importar JSON",
+            "push":       "☁️  Git Push",
+            "pull":       "⬇️  Pull GitHub",
         }
         self._page_lbl.configure(text=titles.get(page, page))
 
-        if   page == "dashboard": self._page_dashboard()
-        elif page == "list":      self._page_list()
-        elif page == "update":    self._page_update(dry=False)
-        elif page == "check":     self._page_update(dry=True)
-        elif page == "stats":     self._page_stats()
-        elif page == "logs":      self._page_logs()
-        elif page == "add":       AddAnimeDialog(self, self._do_add)
-        elif page == "import":    ImportDialog(self,   self._do_import)
-        elif page == "push":      PushDialog(self,     self._do_push)
-        elif page == "pull":      self._do_pull()
+        if   page == "dashboard":  self._page_dashboard()
+        elif page == "list":       self._page_list()
+        elif page == "update":     self._page_update(dry=False)
+        elif page == "check":      self._page_update(dry=True)
+        elif page == "stats":      self._page_stats()
+        elif page == "logs":       self._page_logs()
+        elif page == "pageconfig": self._page_config()
+        elif page == "add":        AddAnimeDialog(self, self._do_add)
+        elif page == "import":     ImportDialog(self,   self._do_import)
+        elif page == "push":       PushDialog(self,     self._do_push)
+        elif page == "pull":       self._do_pull()
 
     # ── Dashboard ─────────────────────────────────────────────────────────────
     def _page_dashboard(self):
@@ -1439,7 +1446,218 @@ class AnimeAdminApp(ctk.CTk):
                 text=f"S{len(a.get('seasons',[]))} · Ep {last.get('currentEpisode','?')}/{last.get('episodes','?')}",
                 font=("Segoe UI",12), text_color=TEXT_DIM).pack(side="right", padx=12)
 
-    # ── Logs & Histórico ──────────────────────────────────────────────────────
+    # ── Configurações da Página ───────────────────────────────────────────────
+    PAGECONFIG_FILE = "pageconfig.json"
+
+    _DEFAULT_PAGECONFIG = {
+        "featuredAnimeId":   "",
+        "heroBadgeText":     "⭐ Melhor avaliado",
+        "heroCtaText":       "Assistir agora",
+        "siteTitle":         "AnimeVerse — Seu portal de animes",
+        "catalogTitle":      "Todos os Animes",
+        "showRandomButton":  True,
+        "featuredBannerBlur": False,
+        "pinnedGenres":      [],
+        "announcement": {
+            "enabled":    False,
+            "text":       "",
+            "type":       "info",
+            "dismissible": True,
+        },
+        "lastUpdated": "",
+    }
+
+    def _load_pageconfig(self) -> dict:
+        if os.path.exists(self.PAGECONFIG_FILE):
+            try:
+                with open(self.PAGECONFIG_FILE, encoding="utf-8") as f:
+                    cfg = json.load(f)
+                return {**self._DEFAULT_PAGECONFIG, **cfg}
+            except:
+                pass
+        return dict(self._DEFAULT_PAGECONFIG)
+
+    def _save_pageconfig(self, cfg: dict):
+        cfg["lastUpdated"] = datetime.now().strftime("%Y-%m-%d")
+        with open(self.PAGECONFIG_FILE, "w", encoding="utf-8") as f:
+            json.dump(cfg, f, ensure_ascii=False, indent=2)
+        log_event("git", "pageconfig.json salvo", f"featuredAnimeId={cfg.get('featuredAnimeId','')}")
+
+    def _page_config(self):
+        cfg = self._load_pageconfig()
+
+        f = ctk.CTkScrollableFrame(self._content, fg_color="transparent",
+                                    scrollbar_button_color=BG3)
+        f.pack(fill="both", expand=True, padx=24, pady=16)
+
+        def section(title: str, icon: str):
+            hdr = ctk.CTkFrame(f, fg_color=CARD, corner_radius=10,
+                               border_width=1, border_color=BORDER)
+            hdr.pack(fill="x", pady=(14, 4))
+            ctk.CTkLabel(hdr, text=f" {icon}  {title}",
+                         font=("Segoe UI", 13, "bold"), text_color=ACCENT2,
+                         anchor="w").pack(anchor="w", padx=14, pady=10)
+            return hdr
+
+        def field_row(parent, label: str, var, placeholder: str = ""):
+            row = ctk.CTkFrame(parent, fg_color="transparent")
+            row.pack(fill="x", padx=12, pady=3)
+            ctk.CTkLabel(row, text=label, width=180, font=("Segoe UI", 12),
+                         text_color=TEXT_DIM, anchor="w").pack(side="left")
+            ctk.CTkEntry(row, textvariable=var, placeholder_text=placeholder,
+                         height=34, fg_color=BG3, border_color=BORDER,
+                         text_color=TEXT, font=("Segoe UI", 12)
+                         ).pack(side="left", fill="x", expand=True)
+
+        def switch_row(parent, label: str, var):
+            row = ctk.CTkFrame(parent, fg_color="transparent")
+            row.pack(fill="x", padx=12, pady=3)
+            ctk.CTkLabel(row, text=label, font=("Segoe UI", 12),
+                         text_color=TEXT_DIM, anchor="w").pack(side="left")
+            ctk.CTkSwitch(row, variable=var, text="",
+                          progress_color=ACCENT).pack(side="right")
+
+        # ── Anime em Destaque ─────────────────────────────────────────────────
+        sec1 = ctk.CTkFrame(f, fg_color=CARD, corner_radius=10,
+                            border_width=1, border_color=BORDER)
+        sec1.pack(fill="x", pady=(0, 6))
+        ctk.CTkLabel(sec1, text=" 🎬  Anime em Destaque (Hero)",
+                     font=("Segoe UI", 13, "bold"), text_color=ACCENT2,
+                     anchor="w").pack(anchor="w", padx=14, pady=(10, 4))
+
+        v_feat_id = ctk.StringVar(value=cfg.get("featuredAnimeId", ""))
+        field_row(sec1, "ID do Anime (slug):", v_feat_id, "ex: jujutsu-kaisen  (vazio = maior nota)")
+
+        # Dropdown rápido com os animes disponíveis
+        anime_ids = sorted([a.get("id","") for a in self.db if a.get("id")])
+        if anime_ids:
+            combo_row = ctk.CTkFrame(sec1, fg_color="transparent")
+            combo_row.pack(fill="x", padx=12, pady=3)
+            ctk.CTkLabel(combo_row, text="Escolher da lista:", width=180,
+                         font=("Segoe UI", 12), text_color=TEXT_DIM, anchor="w").pack(side="left")
+            combo = ctk.CTkOptionMenu(combo_row, values=["(manual)"] + anime_ids,
+                                      fg_color=BG3, button_color=ACCENT,
+                                      button_hover_color=ACCENT2, font=("Segoe UI", 12),
+                                      command=lambda v: v_feat_id.set(v if v != "(manual)" else ""))
+            combo.set(cfg.get("featuredAnimeId") or "(manual)")
+            combo.pack(side="left", padx=8)
+
+        ctk.CTkFrame(sec1, height=8, fg_color="transparent").pack()
+
+        # ── Textos do Hero ────────────────────────────────────────────────────
+        sec2 = ctk.CTkFrame(f, fg_color=CARD, corner_radius=10,
+                            border_width=1, border_color=BORDER)
+        sec2.pack(fill="x", pady=4)
+        ctk.CTkLabel(sec2, text=" ✍️  Textos do Hero",
+                     font=("Segoe UI", 13, "bold"), text_color=ACCENT2,
+                     anchor="w").pack(anchor="w", padx=14, pady=(10, 4))
+
+        v_badge   = ctk.StringVar(value=cfg.get("heroBadgeText",  ""))
+        v_cta     = ctk.StringVar(value=cfg.get("heroCtaText",    ""))
+        v_title   = ctk.StringVar(value=cfg.get("siteTitle",      ""))
+        v_cat_ttl = ctk.StringVar(value=cfg.get("catalogTitle",   ""))
+
+        field_row(sec2, "Badge do Hero:",       v_badge,   "⭐ Melhor avaliado")
+        field_row(sec2, "Texto do botão CTA:",  v_cta,     "Assistir agora")
+        field_row(sec2, "Título do site (aba):", v_title,  "AnimeVerse — Seu portal de animes")
+        field_row(sec2, "Título do Catálogo:",  v_cat_ttl, "Todos os Animes")
+        ctk.CTkFrame(sec2, height=8, fg_color="transparent").pack()
+
+        # ── Opções Visuais ────────────────────────────────────────────────────
+        sec3 = ctk.CTkFrame(f, fg_color=CARD, corner_radius=10,
+                            border_width=1, border_color=BORDER)
+        sec3.pack(fill="x", pady=4)
+        ctk.CTkLabel(sec3, text=" 🎨  Opções Visuais",
+                     font=("Segoe UI", 13, "bold"), text_color=ACCENT2,
+                     anchor="w").pack(anchor="w", padx=14, pady=(10, 4))
+
+        v_rand   = ctk.BooleanVar(value=bool(cfg.get("showRandomButton", True)))
+        v_blur   = ctk.BooleanVar(value=bool(cfg.get("featuredBannerBlur", False)))
+        switch_row(sec3, "Mostrar botão 'Anime Aleatório'?", v_rand)
+        switch_row(sec3, "Aplicar blur no banner do Hero?",  v_blur)
+        ctk.CTkFrame(sec3, height=8, fg_color="transparent").pack()
+
+        # ── Gêneros Fixados ───────────────────────────────────────────────────
+        sec4 = ctk.CTkFrame(f, fg_color=CARD, corner_radius=10,
+                            border_width=1, border_color=BORDER)
+        sec4.pack(fill="x", pady=4)
+        ctk.CTkLabel(sec4, text=" 📌  Gêneros Fixados no Filtro",
+                     font=("Segoe UI", 13, "bold"), text_color=ACCENT2,
+                     anchor="w").pack(anchor="w", padx=14, pady=(10, 4))
+
+        v_pinned = ctk.StringVar(value=", ".join(cfg.get("pinnedGenres", [])))
+        field_row(sec4, "Gêneros (vírgula):", v_pinned, "ex: Ação, Romance, Isekai")
+        ctk.CTkLabel(sec4,
+                     text="Esses gêneros aparecem primeiros e com 📌 no filtro da home.",
+                     font=("Segoe UI", 10), text_color=TEXT_DIM
+                     ).pack(anchor="w", padx=14, pady=(0, 8))
+
+        # ── Anúncio ───────────────────────────────────────────────────────────
+        ann = cfg.get("announcement", {})
+        sec5 = ctk.CTkFrame(f, fg_color=CARD, corner_radius=10,
+                            border_width=1, border_color=BORDER)
+        sec5.pack(fill="x", pady=4)
+        ctk.CTkLabel(sec5, text=" 📣  Banner de Anúncio (topo da home)",
+                     font=("Segoe UI", 13, "bold"), text_color=ACCENT2,
+                     anchor="w").pack(anchor="w", padx=14, pady=(10, 4))
+
+        v_ann_on   = ctk.BooleanVar(value=bool(ann.get("enabled", False)))
+        v_ann_txt  = ctk.StringVar(value=ann.get("text", ""))
+        v_ann_type = ctk.StringVar(value=ann.get("type", "info"))
+        v_ann_dis  = ctk.BooleanVar(value=bool(ann.get("dismissible", True)))
+
+        switch_row(sec5, "Ativar anúncio?",    v_ann_on)
+        switch_row(sec5, "Pode ser dispensado (×)?", v_ann_dis)
+        field_row(sec5,  "Texto do anúncio:", v_ann_txt, "ex: Novo anime adicionado!")
+
+        type_row = ctk.CTkFrame(sec5, fg_color="transparent")
+        type_row.pack(fill="x", padx=12, pady=3)
+        ctk.CTkLabel(type_row, text="Tipo / cor:", width=180,
+                     font=("Segoe UI", 12), text_color=TEXT_DIM, anchor="w").pack(side="left")
+        ctk.CTkSegmentedButton(type_row, values=["info", "warning", "success"],
+                               variable=v_ann_type, selected_color=ACCENT,
+                               font=("Segoe UI", 12)).pack(side="left")
+        ctk.CTkFrame(sec5, height=8, fg_color="transparent").pack()
+
+        # ── Botão Salvar ──────────────────────────────────────────────────────
+        btn_row = ctk.CTkFrame(f, fg_color="transparent")
+        btn_row.pack(fill="x", pady=20)
+        status_lbl = ctk.CTkLabel(btn_row, text="", font=("Segoe UI", 12), text_color=SUCCESS)
+        status_lbl.pack(side="right", padx=16)
+
+        def do_save():
+            new_cfg = {
+                "featuredAnimeId":   v_feat_id.get().strip(),
+                "heroBadgeText":     v_badge.get().strip()   or "⭐ Melhor avaliado",
+                "heroCtaText":       v_cta.get().strip()     or "Assistir agora",
+                "siteTitle":         v_title.get().strip()   or "AnimeVerse — Seu portal de animes",
+                "catalogTitle":      v_cat_ttl.get().strip() or "Todos os Animes",
+                "showRandomButton":  v_rand.get(),
+                "featuredBannerBlur": v_blur.get(),
+                "pinnedGenres":      [g.strip() for g in v_pinned.get().split(",") if g.strip()],
+                "announcement": {
+                    "enabled":    v_ann_on.get(),
+                    "text":       v_ann_txt.get().strip(),
+                    "type":       v_ann_type.get(),
+                    "dismissible": v_ann_dis.get(),
+                },
+            }
+            try:
+                self._save_pageconfig(new_cfg)
+                status_lbl.configure(text="✅ pageconfig.json salvo!", text_color=SUCCESS)
+                self._set_status("pageconfig.json salvo! Faça um Git Push para publicar.", SUCCESS)
+            except Exception as e:
+                status_lbl.configure(text=f"❌ Erro: {e}", text_color=DANGER)
+
+        ctk.CTkButton(btn_row, text="💾 Salvar pageconfig.json", height=42,
+                      fg_color=ACCENT, hover_color=ACCENT2, font=("Segoe UI", 13, "bold"),
+                      command=do_save).pack(side="left")
+        ctk.CTkButton(btn_row, text="☁️ Salvar + Git Push", height=42,
+                      fg_color="#6366f1", hover_color=ACCENT, font=("Segoe UI", 13, "bold"),
+                      command=lambda: [do_save(), self._navigate("push")]
+                      ).pack(side="left", padx=10)
+
+    # ── Logs & Histórico ──────────────────────────────────────────────────
     def _page_logs(self):
         f = ctk.CTkFrame(self._content, fg_color="transparent")
         f.pack(fill="both", expand=True, padx=20, pady=16)
@@ -1671,6 +1889,7 @@ class AnimeAdminApp(ctk.CTk):
                     "id": id_slug, "title": title_r, "titleRomaji": title_r,
                     "titleJapanese": title_j, "genre": genres, "studio": studio,
                     "recommended": False, "malId": mal_id,
+                    "adultContent": data.get("adult", False),
                     "coverImage": cover, "bannerImage": banner,
                     "seasons": [season_data],
                 }
@@ -1695,6 +1914,7 @@ class AnimeAdminApp(ctk.CTk):
         anime["coverImage"]    = data["cover"]
         anime["bannerImage"]   = data["banner"]
         anime["recommended"]   = data["rec"]
+        anime["adultContent"]  = data.get("adult", False)
         try: anime["malId"]    = int(data["mal_id"])
         except: pass
 

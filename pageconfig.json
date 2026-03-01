@@ -1,0 +1,17 @@
+{
+  "featuredAnimeId": "",
+  "heroBadgeText": "⭐ Melhor avaliado",
+  "heroCtaText": "Assistir agora",
+  "siteTitle": "AnimeVerse — Seu portal de animes",
+  "catalogTitle": "Todos os Animes",
+  "showRandomButton": true,
+  "featuredBannerBlur": false,
+  "pinnedGenres": [],
+  "announcement": {
+    "enabled": false,
+    "text": "",
+    "type": "info",
+    "dismissible": true
+  },
+  "lastUpdated": "2026-02-28"
+}

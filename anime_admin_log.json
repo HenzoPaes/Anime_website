@@ -103,5 +103,19 @@
     "title": "Git Push: chore: update database [28/02/2026 22:13]",
     "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   cca7147..ea0223e  data -> data",
     "level": "info"
+  },
+  {
+    "ts": "2026-02-28 22:15:48",
+    "kind": "git",
+    "title": "Git Push: chore: update database [28/02/2026 22:15]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   ea0223e..2aec564  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-02-28 23:25:36",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=",
+    "level": "info"
   }
 ]

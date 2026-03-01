@@ -10,7 +10,7 @@ import { createUserRouter } from "./userdata";
 import { createGitRouter, scheduleBackup } from "./gitsync";
 
 // ── Config ────────────────────────────────────────────────────────────────────
-const API_KEY    = process.env.API_KEY ?? "dev-key";
+const API_KEY    = process.env.API_KEY ?? "9f3a7c1d8e4b2a6f0c9e5d3b7a1f8c2e";
 const REMOTE_URL = "https://raw.githubusercontent.com/HenzoPaes/Anime_website/refs/heads/data/output.json";
 const BACKUP_DIR = path.join(process.cwd(), "backups");
 

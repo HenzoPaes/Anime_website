@@ -12,7 +12,7 @@ import { MongoClient, Db, ServerApiVersion } from "mongodb";
 import "dotenv/config";
 
 // ── Config ────────────────────────────────────────────────────────────────────
-const URI      = process.env.MONGODB_URI ?? "";
+const URI      = process.env.MONGODB_URI ?? "mongodb+srv://Admin1:eF3yxI37ByawBKB3@cluster0.sj0fsqz.mongodb.net/?appName=Cluster0";
 const DB_NAME  = process.env.MONGODB_DB  ?? "animeverse";
 
 export type MongoHealth = "connecting" | "ready" | "error" | "disabled";

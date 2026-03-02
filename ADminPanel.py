@@ -697,7 +697,7 @@ def api_add_anime_full():
         mal = fetch_mal_info(name)
         if mal:
             md = mal_to_season_data(mal, s_num, is_movie)
-            title_r  = md["title_r"]; title_j  = md["title_j"]
+            title_r  = name; title_j  = md["title_j"]
             genres   = md["genres"];  studio   = md["studio"]
             mal_id   = md["mal_id"];  cover    = md["cover"]
             score    = md["score"];   synopsis = md["synopsis"]

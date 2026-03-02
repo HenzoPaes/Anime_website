@@ -1,8 +1,8 @@
 {
-  "featuredAnimeId": "jujutsu-kaisen",
-  "heroBadgeText": "⭐ Episódio 7 Dublado: dia 5!",
+  "featuredAnimeId": "boku-no-hero",
+  "heroBadgeText": "⭐ Boku no hero Academia, recém adicionado!",
   "heroCtaText": "Assistir Agora",
-  "siteTitle": "AnimeVerse — Seu portal de animes",
+  "siteTitle": "Home",
   "catalogTitle": "Todos os Animes",
   "showRandomButton": true,
   "featuredBannerBlur": false,
@@ -10,9 +10,9 @@
     "Action"
   ],
   "announcement": {
-    "enabled": false,
-    "text": "",
-    "type": "success",
+    "enabled": true,
+    "text": "⭐ Numero de episódios do site: 1098 ⭐",
+    "type": "info",
     "dismissible": true
   },
   "lastUpdated": "2026-03-02"

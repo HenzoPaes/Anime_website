@@ -586,5 +586,54 @@
     "title": "Git Push: chore: update database [02/03/2026, 13:14]",
     "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   f4f60f6..bc32219  data -> data",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-02 13:16:19",
+    "kind": "git",
+    "title": "Git Push: chore: update database [02/03/2026, 13:16]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   bc32219..b8b3ce1  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 15:50:39",
+    "kind": "add",
+    "title": "Adicionado: Boku no Hero Academia",
+    "detail": "T1 · 13 eps · Série",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 15:53:49",
+    "kind": "add",
+    "title": "Adicionado: My Hero Academia",
+    "detail": "T1 · 13 eps · Série",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 15:54:12",
+    "kind": "delete",
+    "title": "Removido: My Hero Academia",
+    "detail": "",
+    "level": "warning"
+  },
+  {
+    "ts": "2026-03-02 15:59:02",
+    "kind": "add",
+    "title": "Adicionado: My Hero Academia",
+    "detail": "T2 · 25 eps · Série",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 15:59:19",
+    "kind": "delete",
+    "title": "Removido: My Hero Academia",
+    "detail": "",
+    "level": "warning"
+  },
+  {
+    "ts": "2026-03-02 16:12:46",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=boku-no-hero",
+    "level": "info"
   }
 ]

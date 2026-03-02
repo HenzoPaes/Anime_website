@@ -20,7 +20,7 @@ const PAGE = {
   exit: { opacity: 0 }
 };
 
-const WL_STATUSES: WatchStatus[] = ["assistindo", "quero-ver", "concluido", "droppado"];
+const WL_STATUSES: WatchStatus[] = ["assistindo", "quero-ver", "concluido", "droppado", "reassistindo"];
 
 const SORT_OPTIONS: DropdownOption<string>[] = [
   { value: "rating",   label: "Melhor avaliados" },

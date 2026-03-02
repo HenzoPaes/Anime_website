@@ -2,59 +2,101 @@
 import { useState, useEffect } from "react";
 
 /**
- * Detecta se o app está rodando como PWA instalado.
+ * Detecta:
+ *  - PWA real instalada (standalone / fullscreen / minimal-ui)
+ *  - Safari iOS standalone
+ *  - Lançamento via ícone (?utm_source=homescreen ou ?pwa=1)
+ *  - Flag de sessão
+ *  - Fullscreen manual (F11)
  *
- * Critérios (qualquer um basta):
- *  - display-mode: standalone / fullscreen / minimal-ui
- *  - navigator.standalone (Safari iOS)
- *  - URL contém ?utm_source=homescreen ou ?pwa=1
- *  - sessionStorage flag definida pelo service worker
- *
- * isLoading fica true apenas no primeiro render (SSR-safe).
+ * Retorna:
+ *  - isPWA (app instalado real)
+ *  - isFullscreen (F11 ou requestFullscreen)
+ *  - isBrowser (modo navegador normal)
+ *  - isLoading (primeiro render)
  */
+
 export function usePWACheck() {
   const [isPWA, setIsPWA] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    function detect(): boolean {
-      // 1. matchMedia — funciona em Chrome/Edge/Firefox/Samsung
-      const standaloneQuery = window.matchMedia("(display-mode: standalone)");
-      if (standaloneQuery.matches) return true;
+    if (typeof window === "undefined") return;
 
-      const fullscreenQuery = window.matchMedia("(display-mode: fullscreen)");
-      if (fullscreenQuery.matches) return true;
+    function detectPWA(): boolean {
+      // 1️⃣ display-mode (Chrome/Edge/Firefox/Samsung)
+      if (window.matchMedia("(display-mode: standalone)").matches)
+        return true;
 
-      const minimalQuery = window.matchMedia("(display-mode: minimal-ui)");
-      if (minimalQuery.matches) return true;
+      if (window.matchMedia("(display-mode: fullscreen)").matches)
+        return true;
 
-      // 2. Safari iOS
-      if ((navigator as any).standalone === true) return true;
+      if (window.matchMedia("(display-mode: minimal-ui)").matches)
+        return true;
 
-      // 3. Parâmetro na URL (deeplink do ícone)
+      // 2️⃣ Safari iOS
+      if ((navigator as any).standalone === true)
+        return true;
+
+      // 3️⃣ Parâmetros de lançamento
       const params = new URLSearchParams(window.location.search);
       if (params.get("utm_source") === "homescreen") return true;
       if (params.get("pwa") === "1") return true;
 
-      // 4. Flag gravada pelo service worker no sessionStorage
-      if (sessionStorage.getItem("pwa_launched") === "true") return true;
+      // 4️⃣ Flag persistida na sessão
+      if (sessionStorage.getItem("pwa_launched") === "true")
+        return true;
 
       return false;
     }
 
-    const result = detect();
-    setIsPWA(result);
+    function detectFullscreen(): boolean {
+      if (document.fullscreenElement) return true;
+
+      // F11 detection fallback
+      if (window.innerHeight === screen.height) return true;
+
+      return false;
+    }
+
+    function updateState() {
+      const pwa = detectPWA();
+      const fullscreen = detectFullscreen();
+
+      setIsPWA(pwa);
+      setIsFullscreen(fullscreen);
+
+      if (pwa) {
+        sessionStorage.setItem("pwa_launched", "true");
+      }
+    }
+
+    updateState();
     setIsLoading(false);
 
-    // Persiste flag na sessão para navegação interna (SPA)
-    if (result) sessionStorage.setItem("pwa_launched", "true");
+    // 🎧 Listeners
+    const standaloneMQ = window.matchMedia("(display-mode: standalone)");
+    const fullscreenMQ = window.matchMedia("(display-mode: fullscreen)");
 
-    // Ouve mudanças (caso o usuário abra numa janela standalone depois)
-    const mq = window.matchMedia("(display-mode: standalone)");
-    const handler = (e: MediaQueryListEvent) => setIsPWA(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
+    standaloneMQ.addEventListener("change", updateState);
+    fullscreenMQ.addEventListener("change", updateState);
+
+    window.addEventListener("resize", updateState);
+    document.addEventListener("fullscreenchange", updateState);
+
+    return () => {
+      standaloneMQ.removeEventListener("change", updateState);
+      fullscreenMQ.removeEventListener("change", updateState);
+      window.removeEventListener("resize", updateState);
+      document.removeEventListener("fullscreenchange", updateState);
+    };
   }, []);
 
-  return { isPWA, isLoading };
-} 
+  return {
+    isPWA,
+    isFullscreen,
+    isBrowser: !isPWA && !isFullscreen,
+    isLoading,
+  };
+}

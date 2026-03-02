@@ -1,5 +1,4 @@
-// src/App.tsx
-import { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react"; 
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/navbar";
@@ -41,7 +40,7 @@ function PWAOnly({ children }: { children: React.ReactNode }) {
 export default function App() {
   const location                  = useLocation();
   const { theme, toggleTheme }    = useTheme();
-  const { isPWA, isLoading }      = usePWACheck();
+  const { isPWA, isFullscreen, isBrowser, isLoading } = usePWACheck();
 
   const isEpisode      = location.pathname.includes("/ep/");
   const isDownloadPage = location.pathname === "/download";
@@ -50,13 +49,18 @@ export default function App() {
   if (isLoading) return <SplashLoader />;
 
   /**
-   * Regra de exibição:
-   *  - PWA instalado  → app completo
-   *  - Navegador web  → só a página /download (para incentivar instalação)
+   * Regra de exibição atualizada:
+   *  - isPWA verdadeiro -> app completo
+   *  - isFullscreen verdadeiro -> considerada experiência "app-like" (ex.: F11)
+   *  - isBrowser (navegador normal) -> redireciona para /download
    *
-   * A exceção /download sempre fica acessível (óbvio).
+   * Se preferir que apenas PWA instalada permita o app (e F11 NÃO conte),
+   * troque `showApp = isPWA || isFullscreen` por `showApp = isPWA`.
    */
-  const showApp = isPWA;
+  const showApp = isPWA || isFullscreen;
+
+  // Mostrar o prompt de instalação somente para navegador normal (sem fullscreen)
+  const showInstallPrompt = isBrowser;
 
   return (
     <div className={`min-h-screen flex flex-col ${theme === "dark" ? "dark" : ""}`}>
@@ -72,12 +76,12 @@ export default function App() {
               {/* ── Página de download (sempre acessível) ─────────────── */}
               <Route path="/download" element={<DownloadPage />} />
 
-              {/* ── Se não for PWA, todas as rotas vão para /download ─── */}
+              {/* ── Se não for app-like, todas as rotas vão para /download ─── */}
               {!showApp && (
                 <Route path="*" element={<Navigate to="/download" replace />} />
               )}
 
-              {/* ── Rotas do app (só acessíveis em modo PWA) ─────────── */}
+              {/* ── Rotas do app (só acessíveis em modo PWA ou fullscreen) ─── */}
               {showApp && (
                 <>
                   <Route path="/"                          element={<HomePage />} />
@@ -98,7 +102,7 @@ export default function App() {
       </main>
 
       {showApp && !isEpisode && <Footer />}
-      {showApp && <InstallPrompt />}
+      {showInstallPrompt && <InstallPrompt />}
     </div>
   );
 }

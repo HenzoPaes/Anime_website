@@ -11457,7 +11457,7 @@
     ],
     "id": "my-deer-friend-nokotan",
     "malId": 58426,
-    "recommended": false,
+    "recommended": true,
     "seasons": [
       {
         "audios": [
@@ -11468,8 +11468,8 @@
             "type": "sub"
           },
           {
-            "available": false,
-            "episodesAvailable": 0,
+            "available": true,
+            "episodesAvailable": 12,
             "label": "Dublado",
             "type": "dub"
           }
@@ -11479,7 +11479,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/01.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan-dublado/01.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/01.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "my-deer-friend-nokotan-s1-ep1",
             "number": 1,
@@ -11489,7 +11490,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/02.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan-dublado/02.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/02.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "my-deer-friend-nokotan-s1-ep2",
             "number": 2,
@@ -11499,7 +11501,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/03.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan-dublado/03.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/03.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "my-deer-friend-nokotan-s1-ep3",
             "number": 3,
@@ -11509,7 +11512,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/04.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan-dublado/04.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/04.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "my-deer-friend-nokotan-s1-ep4",
             "number": 4,
@@ -11519,7 +11523,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/05.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan-dublado/05.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/05.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "my-deer-friend-nokotan-s1-ep5",
             "number": 5,
@@ -11529,7 +11534,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/06.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan-dublado/06.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/06.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "my-deer-friend-nokotan-s1-ep6",
             "number": 6,
@@ -11539,7 +11545,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/07.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan-dublado/07.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/07.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "my-deer-friend-nokotan-s1-ep7",
             "number": 7,
@@ -11549,7 +11556,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/08.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan-dublado/08.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/08.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "my-deer-friend-nokotan-s1-ep8",
             "number": 8,
@@ -11559,7 +11567,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/09.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan-dublado/09.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/09.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "my-deer-friend-nokotan-s1-ep9",
             "number": 9,
@@ -11569,7 +11578,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/10.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan-dublado/10.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/10.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "my-deer-friend-nokotan-s1-ep10",
             "number": 10,
@@ -11579,7 +11589,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/11.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan-dublado/11.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/11.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "my-deer-friend-nokotan-s1-ep11",
             "number": 11,
@@ -11589,7 +11600,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/12.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan-dublado/12.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/12.mp4/index.m3u8&nocache1772468045010\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "my-deer-friend-nokotan-s1-ep12",
             "number": 12,

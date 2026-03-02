@@ -10848,5 +10848,110 @@
         ]
       }
     ]
+  },
+  {
+    "id": "kaya-chan-isnt-scary",
+    "title": "Kaya-chan wa Kowakunai",
+    "titleRomaji": "Kaya-chan wa Kowakunai",
+    "titleJapanese": "カヤちゃんはコワくない",
+    "genre": [
+      "Horror",
+      "Supernatural"
+    ],
+    "studio": "East Fish Studio",
+    "recommended": false,
+    "malId": 60223,
+    "adultContent": false,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1194/153705l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GT00365583-backdrop_wide",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2026,
+        "episodes": 6,
+        "currentEpisode": 6,
+        "status": "ongoing",
+        "score": 7.24,
+        "synopsis": "Kaya-chan is infamous at kindergarten for being a troublemaker. But Ms. Chie, who's been assigned to look after her, soon discovers Kaya's hidden abilities. Get ready for the ultimate horror-action adventure set in kindergarten!\n\n(Source: MAL News)",
+        "trailer": "",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 6
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "kaya-chan-isnt-scary-s1-ep1",
+            "number": 1,
+            "title": "Kaya-chan wa Kowakunai - T1 Ep 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaya-chan-wa-kowakunai/01.mp4/index.m3u8&nocache1772446429890\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kaya-chan-isnt-scary-s1-ep2",
+            "number": 2,
+            "title": "Kaya-chan wa Kowakunai - T1 Ep 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaya-chan-wa-kowakunai/02.mp4/index.m3u8&nocache1772446429890\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kaya-chan-isnt-scary-s1-ep3",
+            "number": 3,
+            "title": "Kaya-chan wa Kowakunai - T1 Ep 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaya-chan-wa-kowakunai/03.mp4/index.m3u8&nocache1772446429890\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kaya-chan-isnt-scary-s1-ep4",
+            "number": 4,
+            "title": "Kaya-chan wa Kowakunai - T1 Ep 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaya-chan-wa-kowakunai/04.mp4/index.m3u8&nocache1772446429890\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kaya-chan-isnt-scary-s1-ep5",
+            "number": 5,
+            "title": "Kaya-chan wa Kowakunai - T1 Ep 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaya-chan-wa-kowakunai/05.mp4/index.m3u8&nocache1772446429890\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kaya-chan-isnt-scary-s1-ep6",
+            "number": 6,
+            "title": "Kaya-chan wa Kowakunai - T1 Ep 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaya-chan-wa-kowakunai/06.mp4/index.m3u8&nocache1772446429890\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
   }
 ]

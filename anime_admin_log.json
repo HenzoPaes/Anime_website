@@ -705,5 +705,19 @@
     "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
     "detail": "[DUB] ⚠️ sem stream_path.",
     "level": "error"
+  },
+  {
+    "ts": "2026-03-02 16:34:21",
+    "kind": "git",
+    "title": "Git Push: chore: update database [02/03/2026, 16:34]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   aa699c7..2586f86  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 16:36:10",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=boku-no-hero",
+    "level": "info"
   }
 ]

@@ -10869,8 +10869,8 @@
         "season": 1,
         "seasonLabel": "1ª Temporada",
         "year": 2026,
-        "episodes": 6,
-        "currentEpisode": 6,
+        "episodes": 12,
+        "currentEpisode": 8,
         "status": "ongoing",
         "score": 7.24,
         "synopsis": "Kaya-chan is infamous at kindergarten for being a troublemaker. But Ms. Chie, who's been assigned to look after her, soon discovers Kaya's hidden abilities. Get ready for the ultimate horror-action adventure set in kindergarten!\n\n(Source: MAL News)",
@@ -10880,7 +10880,7 @@
             "type": "sub",
             "label": "Legendado",
             "available": true,
-            "episodesAvailable": 6
+            "episodesAvailable": 8
           },
           {
             "type": "dub",
@@ -10947,6 +10947,26 @@
             "season": "1",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaya-chan-wa-kowakunai/06.mp4/index.m3u8&nocache1772446429890\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kaya-chan-isnt-scary-s1-ep7",
+            "number": 7,
+            "title": "Kaya-chan wa Kowakunai - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaya-chan-wa-kowakunai/07.mp4/index.m3u8&nocache1772446803456\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kaya-chan-isnt-scary-s1-ep8",
+            "number": 8,
+            "title": "Kaya-chan wa Kowakunai - T1 Ep 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaya-chan-wa-kowakunai/08.mp4/index.m3u8&nocache1772446810165\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }

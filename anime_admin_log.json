@@ -453,5 +453,68 @@
     "title": "Adicionado: Kaya-chan wa Kowakunai",
     "detail": "T1 · 6 eps · Série",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-02 07:14:09",
+    "kind": "git",
+    "title": "Git Push: chore: update database [02/03/2026 07:14]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   06dc956..cee4caa  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 07:20:03",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-02 07:20:03",
+    "kind": "update",
+    "title": "Eps adicionados: Kaya-chan wa Kowakunai",
+    "detail": "[LEG] ✅ Ep 07 disponível!",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 07:20:03",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-02 07:20:09",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-02 07:20:10",
+    "kind": "update",
+    "title": "Eps adicionados: Kaya-chan wa Kowakunai",
+    "detail": "[LEG] ✅ Ep 08 disponível!",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 07:20:10",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-02 07:20:16",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-02 07:20:17",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
   }
 ]

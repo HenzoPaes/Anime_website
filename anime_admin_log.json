@@ -642,5 +642,68 @@
     "title": "Git Push: chore: update database [02/03/2026, 16:12]",
     "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   b8b3ce1..8de3b7a  data -> data",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-02 16:15:42",
+    "kind": "git",
+    "title": "Git Push: chore: update database [02/03/2026, 16:15]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   8de3b7a..aa699c7  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 16:24:52",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-02 16:24:53",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-02 16:24:53",
+    "kind": "stream",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-02 16:29:55",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-02 16:29:57",
+    "kind": "update",
+    "title": "Eps adicionados: Spy x Family",
+    "detail": "[LEG] ✅ Ep 13 disponível! | [DUB] ✅ Ep 13 disponível!",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 16:29:57",
+    "kind": "stream",
+    "title": "Spy x Family",
+    "detail": "[LEG] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-02 16:29:57",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-02 16:29:58",
+    "kind": "stream",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
   }
 ]

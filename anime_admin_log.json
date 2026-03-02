@@ -418,5 +418,26 @@
     "title": "Adicionado: Fullmetal Alchemist: Brotherhood",
     "detail": "T1 · 64 eps · Série",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-02 06:40:13",
+    "kind": "git",
+    "title": "Git Push: chore: update database [02/03/2026 06:40]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   15caf9a..c1ae1d6  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 06:50:58",
+    "kind": "add",
+    "title": "Adicionado: Kakegurui",
+    "detail": "T1 · 12 eps · Série",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 06:57:01",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=jujutsu-kaisen",
+    "level": "info"
   }
 ]

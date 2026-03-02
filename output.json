@@ -10535,5 +10535,318 @@
         ]
       }
     ]
+  },
+  {
+    "id": "kakegurui",
+    "title": "Kakegurui",
+    "titleRomaji": "Kakegurui",
+    "titleJapanese": "賭ケグルイ",
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Suspense"
+    ],
+    "studio": "MAPPA",
+    "recommended": false,
+    "malId": 34933,
+    "adultContent": false,
+    "coverImage": "https://myanimelist.net/images/anime/1496/96519l.jpg",
+    "bannerImage": "https://w0.peakpx.com/wallpaper/184/246/HD-wallpaper-netflix-kakegurui.jpg",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2017,
+        "episodes": 12,
+        "currentEpisode": 12,
+        "status": "finished",
+        "score": 7.21,
+        "synopsis": "Unlike many schools, attending Hyakkaou Private Academy prepares students for their time in the real world. Since many of the students are the children of the richest people in the world, the academy has its quirks that separate it from all the others. By day, it is a normal school, educating its pupils in history, languages, and the like. But at night, it turns into a gambling den, educating them in the art of dealing with money and manipulating people. Money is power; those who come out on top in the games stand at the top of the school.\n\nYumeko Jabami, a seemingly naive and beautiful transfer student, is ready to try her hand at Hyakkaou's special curriculum. Unlike the rest, she doesn't play to win, but for the thrill of the gamble, and her borderline insane way of gambling might just bring too many new cards to the table.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 12
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "kakegurui-s1-ep1",
+            "number": 1,
+            "title": "Kakegurui - T1 Ep 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui/01.mp4/index.m3u8&nocache1772445058064\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s1-ep2",
+            "number": 2,
+            "title": "Kakegurui - T1 Ep 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui/02.mp4/index.m3u8&nocache1772445058064\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s1-ep3",
+            "number": 3,
+            "title": "Kakegurui - T1 Ep 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui/03.mp4/index.m3u8&nocache1772445058064\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s1-ep4",
+            "number": 4,
+            "title": "Kakegurui - T1 Ep 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui/04.mp4/index.m3u8&nocache1772445058064\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s1-ep5",
+            "number": 5,
+            "title": "Kakegurui - T1 Ep 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui/05.mp4/index.m3u8&nocache1772445058064\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s1-ep6",
+            "number": 6,
+            "title": "Kakegurui - T1 Ep 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui/06.mp4/index.m3u8&nocache1772445058064\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s1-ep7",
+            "number": 7,
+            "title": "Kakegurui - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui/07.mp4/index.m3u8&nocache1772445058064\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s1-ep8",
+            "number": 8,
+            "title": "Kakegurui - T1 Ep 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui/08.mp4/index.m3u8&nocache1772445058064\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s1-ep9",
+            "number": 9,
+            "title": "Kakegurui - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui/09.mp4/index.m3u8&nocache1772445058064\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s1-ep10",
+            "number": 10,
+            "title": "Kakegurui - T1 Ep 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui/10.mp4/index.m3u8&nocache1772445058064\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s1-ep11",
+            "number": 11,
+            "title": "Kakegurui - T1 Ep 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui/11.mp4/index.m3u8&nocache1772445058064\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s1-ep12",
+            "number": 12,
+            "title": "Kakegurui - T1 Ep 12",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui/12.mp4/index.m3u8&nocache1772445058064\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "year": 2019,
+        "episodes": 12,
+        "currentEpisode": 12,
+        "status": "finished",
+        "score": 7.18,
+        "synopsis": "As Yumeko Jabami's fame grows and the reputation of the student council dwindles, Kirari Momobami decides to revolutionize the group. To this end, she announces an election for its next president. The rules are simple: each student in the school receives one chip. Whoever has the most chips by the end of thirty days becomes both the new president and the head of the Momobami clan.\n\nUpon receiving news of this development, the Momobami branch families spring into action. Eleven transfer students arrive at Hyakkao Private Academy, each aiming to lead both the school and the Momobami clan. Equipped with unique talents, they will compete to get as many chips as possible—but their chips are not the only things on the line.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 12
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "kakegurui-s2-ep1",
+            "number": 1,
+            "title": "Kakegurui×× - T2 Ep 1",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui-2/01.mp4/index.m3u8&nocache1772445243636\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s2-ep2",
+            "number": 2,
+            "title": "Kakegurui×× - T2 Ep 2",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui-2/02.mp4/index.m3u8&nocache1772445243636\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s2-ep3",
+            "number": 3,
+            "title": "Kakegurui×× - T2 Ep 3",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui-2/03.mp4/index.m3u8&nocache1772445243636\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s2-ep4",
+            "number": 4,
+            "title": "Kakegurui×× - T2 Ep 4",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui-2/04.mp4/index.m3u8&nocache1772445243636\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s2-ep5",
+            "number": 5,
+            "title": "Kakegurui×× - T2 Ep 5",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui-2/05.mp4/index.m3u8&nocache1772445243636\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s2-ep6",
+            "number": 6,
+            "title": "Kakegurui×× - T2 Ep 6",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui-2/06.mp4/index.m3u8&nocache1772445243636\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s2-ep7",
+            "number": 7,
+            "title": "Kakegurui×× - T2 Ep 7",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui-2/07.mp4/index.m3u8&nocache1772445243636\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s2-ep8",
+            "number": 8,
+            "title": "Kakegurui×× - T2 Ep 8",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui-2/08.mp4/index.m3u8&nocache1772445243636\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s2-ep9",
+            "number": 9,
+            "title": "Kakegurui×× - T2 Ep 9",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui-2/09.mp4/index.m3u8&nocache1772445243636\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s2-ep10",
+            "number": 10,
+            "title": "Kakegurui×× - T2 Ep 10",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui-2/10.mp4/index.m3u8&nocache1772445243636\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s2-ep11",
+            "number": 11,
+            "title": "Kakegurui×× - T2 Ep 11",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui-2/11.mp4/index.m3u8&nocache1772445243636\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kakegurui-s2-ep12",
+            "number": 12,
+            "title": "Kakegurui×× - T2 Ep 12",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kakegurui-2/12.mp4/index.m3u8&nocache1772445243636\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -10973,5 +10973,180 @@
         ]
       }
     ]
+  },
+  {
+    "adultContent": false,
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GR09X52WR-backdrop_wide",
+    "coverImage": "https://myanimelist.net/images/anime/4/75509l.jpg",
+    "genre": [
+      "Horror",
+      "Mystery"
+    ],
+    "id": "another",
+    "malId": 11111,
+    "recommended": false,
+    "seasons": [
+      {
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 13,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 13,
+        "episodeList": [
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/01.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep1",
+            "number": 1,
+            "season": "1",
+            "title": "Another - T1 Ep 1"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/02.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep2",
+            "number": 2,
+            "season": "1",
+            "title": "Another - T1 Ep 2"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/03.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep3",
+            "number": 3,
+            "season": "1",
+            "title": "Another - T1 Ep 3"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/04.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep4",
+            "number": 4,
+            "season": "1",
+            "title": "Another - T1 Ep 4"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/05.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep5",
+            "number": 5,
+            "season": "1",
+            "title": "Another - T1 Ep 5"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/06.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep6",
+            "number": 6,
+            "season": "1",
+            "title": "Another - T1 Ep 6"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/07.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep7",
+            "number": 7,
+            "season": "1",
+            "title": "Another - T1 Ep 7"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/08.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep8",
+            "number": 8,
+            "season": "1",
+            "title": "Another - T1 Ep 8"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/09.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep9",
+            "number": 9,
+            "season": "1",
+            "title": "Another - T1 Ep 9"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/10.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep10",
+            "number": 10,
+            "season": "1",
+            "title": "Another - T1 Ep 10"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/11.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep11",
+            "number": 11,
+            "season": "1",
+            "title": "Another - T1 Ep 11"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/12.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep12",
+            "number": 12,
+            "season": "1",
+            "title": "Another - T1 Ep 12"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/another/13.mp4/index.m3u8&nocache1772466905911\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "another-s1-ep13",
+            "number": 13,
+            "season": "1",
+            "title": "Another - T1 Ep 13"
+          }
+        ],
+        "episodes": 13,
+        "score": 7.46,
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "status": "finished",
+        "synopsis": "In class 3-3 of Yomiyama North Junior High, transfer student Kouichi Sakakibara makes his return after taking a sick leave for the first month of school. Among his new classmates, he is inexplicably drawn toward Mei Misaki—a reserved girl with an eyepatch whom he met in the hospital during his absence. But none of his classmates acknowledge her existence; they warn him not to acquaint himself with things that do not exist. Against their words of caution, Kouichi befriends Mei—soon learning of the sinister truth behind his friends' apprehension.\n\nThe ominous rumors revolve around a former student of the class 3-3. However, no one will share the full details of the grim event with Kouichi. Engrossed in the curse that plagues his class, Kouichi sets out to discover its connection to his new friend. As a series of tragedies arise around them, it is now up to Kouichi, Mei, and their classmates to unravel the eerie mystery—but doing so will come at a hefty price.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "year": 2012
+      }
+    ],
+    "studio": "P.A. Works",
+    "title": "Another",
+    "titleJapanese": "アナザー",
+    "titleRomaji": "Another"
   }
 ]

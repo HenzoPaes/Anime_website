@@ -516,5 +516,19 @@
     "title": "Kaya-chan wa Kowakunai",
     "detail": "[DUB] ⚠️ sem stream_path.",
     "level": "error"
+  },
+  {
+    "ts": "2026-03-02 07:20:22",
+    "kind": "git",
+    "title": "Git Push: chore: update database [02/03/2026 07:20]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   cee4caa..8af1913  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 12:55:05",
+    "kind": "add",
+    "title": "Adicionado: Another",
+    "detail": "T1 · 13 eps · Série",
+    "level": "info"
   }
 ]

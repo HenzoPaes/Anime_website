@@ -1,6 +1,6 @@
 {
-  "featuredAnimeId": "boku-no-hero",
-  "heroBadgeText": "⭐ Boku no hero Academia, recém adicionado!",
+  "featuredAnimeId": "dandadan",
+  "heroBadgeText": "👽 Espíritos? Aliens? E oque mais?",
   "heroCtaText": "Assistir Agora",
   "siteTitle": "Home",
   "catalogTitle": "Todos os Animes",
@@ -10,8 +10,8 @@
     "Action"
   ],
   "announcement": {
-    "enabled": true,
-    "text": "⭐ Numero de episódios do site: 1099 ⭐",
+    "enabled": false,
+    "text": "",
     "type": "info",
     "dismissible": true
   },

@@ -13738,5 +13738,372 @@
     "title": "My Hero Academia",
     "titleJapanese": "僕のヒーローアカデミア",
     "titleRomaji": "My Hero Academia"
+  },
+  {
+    "adultContent": false,
+    "bannerImage": "https://cdn.myanimelist.net/images/anime/1370/140362l.jpg",
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1370/140362l.jpg",
+    "genre": [
+      "Action",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "id": "kaijuu-8-gou",
+    "malId": 52588,
+    "recommended": false,
+    "seasons": [
+      {
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 12,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": true,
+            "episodesAvailable": 12,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 12,
+        "episodeList": [
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-dublado/01.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou/01.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s1-ep1",
+            "number": 1,
+            "season": "1",
+            "title": "Kaiju No. 8 - T1 Ep 1"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-dublado/02.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou/02.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s1-ep2",
+            "number": 2,
+            "season": "1",
+            "title": "Kaiju No. 8 - T1 Ep 2"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-dublado/03.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou/03.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s1-ep3",
+            "number": 3,
+            "season": "1",
+            "title": "Kaiju No. 8 - T1 Ep 3"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-dublado/04.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou/04.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s1-ep4",
+            "number": 4,
+            "season": "1",
+            "title": "Kaiju No. 8 - T1 Ep 4"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-dublado/05.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou/05.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s1-ep5",
+            "number": 5,
+            "season": "1",
+            "title": "Kaiju No. 8 - T1 Ep 5"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-dublado/06.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou/06.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s1-ep6",
+            "number": 6,
+            "season": "1",
+            "title": "Kaiju No. 8 - T1 Ep 6"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-dublado/07.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou/07.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s1-ep7",
+            "number": 7,
+            "season": "1",
+            "title": "Kaiju No. 8 - T1 Ep 7"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-dublado/08.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou/08.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s1-ep8",
+            "number": 8,
+            "season": "1",
+            "title": "Kaiju No. 8 - T1 Ep 8"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-dublado/09.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou/09.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s1-ep9",
+            "number": 9,
+            "season": "1",
+            "title": "Kaiju No. 8 - T1 Ep 9"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-dublado/10.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou/10.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s1-ep10",
+            "number": 10,
+            "season": "1",
+            "title": "Kaiju No. 8 - T1 Ep 10"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-dublado/11.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou/11.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s1-ep11",
+            "number": 11,
+            "season": "1",
+            "title": "Kaiju No. 8 - T1 Ep 11"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-dublado/12.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou/12.mp4/index.m3u8&nocache1772483993004\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s1-ep12",
+            "number": 12,
+            "season": "1",
+            "title": "Kaiju No. 8 - T1 Ep 12"
+          }
+        ],
+        "episodes": 12,
+        "score": 8.23,
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "status": "finished",
+        "synopsis": "After the destruction of their hometown, childhood friends Kafka Hibino and Mina Ashiro make a pact to become officers in the Defense Force—a militarized organization tasked with protecting Japan from colossal monsters known as \"kaijuu.\" Decades later, the 32-year-old Kafka has all but given up on his dreams of heroism. Instead, he cleans up the remains of the slaughtered kaijuu after they are defeated by valiant soldiers—including Mina, who has successfully achieved their shared goal.\n\nUpon meeting his new coworker, Reno Ichikawa, Kafka faces a mirror of his past self: an ambitious young man whose one desire is to fight as a member of the Defense Force. Unfortunately, the two are soon involved in a freak encounter with a rogue kaijuu. Though Kafka demonstrates his innate heroic nature and rescues Reno from certain doom, he is left gravely injured.\n\nWhile both men recover in a hospital, Kafka is seemingly attacked by another one of the beasts. As a result, he gains the ability to transform into a humanoid kaijuu with the strength and powers of the massive monsters menacing Japan. Dubbed \"Kaijuu No. 8\" by the military, Kafka resolves to use his newfound gifts for the greater good. Tied together by mutual respect, Kafka and Reno set out to join warriors like Mina at the forefront of the Defense Force.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "year": 2024
+      },
+      {
+        "accentColor": "#1E2A38",
+        "ageRating": "16+",
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 1,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": true,
+            "episodesAvailable": 1,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "awards": [
+          "Crunchyroll Anime Awards Indicação Melhor Anime de Ação",
+          "Indicação Melhor Personagem Masculino"
+        ],
+        "cast": [],
+        "currentEpisode": 1,
+        "director": "Shigeyuki Miya",
+        "episodeList": [
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-movie-dublado/01.mp4/index.m3u8&nocache1772484736679\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-movie/01.mp4/index.m3u8&nocache1772484736679\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s2-ep1",
+            "number": 1,
+            "season": "2",
+            "title": "Kaiju No. 8: Mission Recon - T2 Ep 1"
+          }
+        ],
+        "episodes": 1,
+        "movieTitle": "Kaiju No. 8: Mission Recon",
+        "posterImage": "https://myanimelist.net/images/anime/1127/146604.jpg",
+        "runtime": 119,
+        "score": 8.23,
+        "season": 2,
+        "seasonLabel": "Kaiju No. 8: Mission Recon",
+        "status": "finished",
+        "stills": [],
+        "synopsis": "After the destruction of their hometown, childhood friends Kafka Hibino and Mina Ashiro make a pact to become officers in the Defense Force—a militarized organization tasked with protecting Japan from colossal monsters known as \"kaijuu.\" Decades later, the 32-year-old Kafka has all but given up on his dreams of heroism. Instead, he cleans up the remains of the slaughtered kaijuu after they are defeated by valiant soldiers—including Mina, who has successfully achieved their shared goal.\n\nUpon meeting his new coworker, Reno Ichikawa, Kafka faces a mirror of his past self: an ambitious young man whose one desire is to fight as a member of the Defense Force. Unfortunately, the two are soon involved in a freak encounter with a rogue kaijuu. Though Kafka demonstrates his innate heroic nature and rescues Reno from certain doom, he is left gravely injured.\n\nWhile both men recover in a hospital, Kafka is seemingly attacked by another one of the beasts. As a result, he gains the ability to transform into a humanoid kaijuu with the strength and powers of the massive monsters menacing Japan. Dubbed \"Kaijuu No. 8\" by the military, Kafka resolves to use his newfound gifts for the greater good. Tied together by mutual respect, Kafka and Reno set out to join warriors like Mina at the forefront of the Defense Force.\n\n[Written by MAL Rewrite]",
+        "tagline": "Quando o monstro vive dentro de você, a única escolha é decidir por quem ele vai lutar.",
+        "trailer": "",
+        "type": "movie",
+        "year": 2024
+      },
+      {
+        "audios": [
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": true,
+            "episodesAvailable": 11,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 11,
+        "episodeList": [
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-2-dublado/01.mp4/index.m3u8&nocache1772484256328\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s3-ep1",
+            "number": 1,
+            "season": "3",
+            "title": "Kaiju No. 8 Season 2 - T3 Ep 1"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-2-dublado/02.mp4/index.m3u8&nocache1772484256328\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s3-ep2",
+            "number": 2,
+            "season": "3",
+            "title": "Kaiju No. 8 Season 2 - T3 Ep 2"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-2-dublado/03.mp4/index.m3u8&nocache1772484256328\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s3-ep3",
+            "number": 3,
+            "season": "3",
+            "title": "Kaiju No. 8 Season 2 - T3 Ep 3"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-2-dublado/04.mp4/index.m3u8&nocache1772484256328\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s3-ep4",
+            "number": 4,
+            "season": "3",
+            "title": "Kaiju No. 8 Season 2 - T3 Ep 4"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-2-dublado/05.mp4/index.m3u8&nocache1772484256328\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s3-ep5",
+            "number": 5,
+            "season": "3",
+            "title": "Kaiju No. 8 Season 2 - T3 Ep 5"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-2-dublado/06.mp4/index.m3u8&nocache1772484256328\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s3-ep6",
+            "number": 6,
+            "season": "3",
+            "title": "Kaiju No. 8 Season 2 - T3 Ep 6"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-2-dublado/07.mp4/index.m3u8&nocache1772484256328\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s3-ep7",
+            "number": 7,
+            "season": "3",
+            "title": "Kaiju No. 8 Season 2 - T3 Ep 7"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-2-dublado/08.mp4/index.m3u8&nocache1772484256328\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s3-ep8",
+            "number": 8,
+            "season": "3",
+            "title": "Kaiju No. 8 Season 2 - T3 Ep 8"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-2-dublado/09.mp4/index.m3u8&nocache1772484256328\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s3-ep9",
+            "number": 9,
+            "season": "3",
+            "title": "Kaiju No. 8 Season 2 - T3 Ep 9"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-2-dublado/10.mp4/index.m3u8&nocache1772484256328\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s3-ep10",
+            "number": 10,
+            "season": "3",
+            "title": "Kaiju No. 8 Season 2 - T3 Ep 10"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaijuu-8-gou-2-dublado/11.mp4/index.m3u8&nocache1772484256328\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kaijuu-8-gou-s3-ep11",
+            "number": 11,
+            "season": "3",
+            "title": "Kaiju No. 8 Season 2 - T3 Ep 11"
+          }
+        ],
+        "episodes": 11,
+        "score": 7.79,
+        "season": 3,
+        "seasonLabel": "2ª Temporada",
+        "status": "finished",
+        "synopsis": "Following the massive operation that led to the confinement of recent recruit Kafka Hibino, otherwise known as Kaijuu No. 8, the Defense Force has been puzzled by how to deal with him. Kafka is the first kaijuu to side with humans, and after careful consideration, he is eventually transferred to the Defense Force's First Division in the hope of adding his power to the strongest division, capable of handling any threat. However, some people are still doubtful about Kafka, and he must prove his worth in the next mission.\n\nKafka and the First Division are soon dispatched when a massive horde of ant-like kaijuu begins wreaking havoc. Thanks to the combined strength of Kafka's friend Kikoru Shinomiya and their captain, Gen Narumi, the mission seems to progress as it should. However, when Kafka fails to transform into his kaijuu form, the dreadful Kaijuu No. 9 joins the battle with only one goal—to eliminate him and steal his power. Although the situation is looking grim, Kafka must overcome his most difficult trial yet with the others if he wants to keep pursuing his dream: fighting side by side with his childhood friend and Third Division captain, Mina Ashiro.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "year": 2025
+      }
+    ],
+    "studio": "Production I.G",
+    "title": "Kaiju No. 8",
+    "titleJapanese": "怪獣8号",
+    "titleRomaji": "Kaiju No. 8"
   }
 ]

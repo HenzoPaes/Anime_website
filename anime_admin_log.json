@@ -719,5 +719,26 @@
     "title": "pageconfig.json salvo",
     "detail": "featuredAnimeId=boku-no-hero",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-02 16:36:13",
+    "kind": "git",
+    "title": "Git Push: chore: update database [02/03/2026, 16:36]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   2586f86..23c23b8  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 17:39:53",
+    "kind": "add",
+    "title": "Adicionado: Kaiju No. 8",
+    "detail": "T1 · 12 eps · Série",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 17:55:23",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=dandadan",
+    "level": "info"
   }
 ]

@@ -6,219 +6,126 @@ import express from "express";
 import cors from "cors";
 import axios from "axios";
 
-// Configurações
-const ANIMES_DIR = path.join(process.cwd(), "Api", "Animes");
-const BACKUP_DIR = path.join(process.cwd(), "backups");
-const API_KEY = process.env.API_KEY || "dev-key";
-const REMOTE_URL = "https://raw.githubusercontent.com/HenzoPaes/Anime_website/refs/heads/data/output.json";
+// ── Configuração ─────────────────────────────────────────────
+const ANIMES_DIR    = path.join(process.cwd(), "Api", "Animes");
+const API_KEY       = process.env.API_KEY || "dev-key";
 
-// Interface básica para tipagem
+const GITHUB_OWNER  = process.env.GITHUB_OWNER || "HenzoPaes";
+const GITHUB_REPO   = process.env.GITHUB_REPO  || "Anime_website";
+const GITHUB_BRANCH = "data";
+const GITHUB_FILE   = "output.json";
+
+const REMOTE_URL = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/refs/heads/${GITHUB_BRANCH}/${GITHUB_FILE}`;
+
+// ── Tipagem ──────────────────────────────────────────────────
 interface Anime {
   id: string | number;
   title: string;
   [key: string]: any;
 }
 
-export function ensureDirs() {
-  if (!fs.existsSync(ANIMES_DIR)) fs.mkdirSync(ANIMES_DIR, { recursive: true });
-  if (!fs.existsSync(BACKUP_DIR)) fs.mkdirSync(BACKUP_DIR, { recursive: true });
-}
+// ── Cache ────────────────────────────────────────────────────
+let _remoteCache: Anime[] | null = null;
+let _cacheTTL = 0;
+const CACHE_MS = 60_000; // 1 min
 
-/**
- * Tenta buscar animes do GitHub. 
- * Se falhar, retorna null para que o sistema use o fallback local.
- */
+// ── Buscar do GitHub (apenas leitura) ────────────────────────
 async function fetchRemoteAnimes(): Promise<Anime[] | null> {
-  try {
-    console.log("🌐 Tentando buscar dados remotos do GitHub...");
-    const response = await axios.get(REMOTE_URL, { timeout: 5000 });
-    
-    if (Array.isArray(response.data)) {
-      console.log(`✅ ${response.data.length} animes carregados do GitHub.`);
-      return response.data;
-    }
-    
-    // Caso o JSON do GitHub venha como objeto único com IDs como chaves
-    if (typeof response.data === 'object') {
-      return Object.values(response.data);
-    }
+  const now = Date.now();
 
-    return null;
+  if (_remoteCache && now < _cacheTTL) {
+    console.log("⚡ Cache hit");
+    return _remoteCache;
+  }
+
+  try {
+    console.log("🌐 Buscando do GitHub...");
+    const res  = await axios.get(REMOTE_URL, { timeout: 8000 });
+    const data = Array.isArray(res.data)
+      ? res.data
+      : Object.values(res.data as object);
+
+    _remoteCache = data as Anime[];
+    _cacheTTL = now + CACHE_MS;
+
+    console.log(`✅ ${_remoteCache.length} animes carregados`);
+    return _remoteCache;
   } catch (e: any) {
-    console.warn(`⚠️ Falha ao buscar GitHub: ${e.message}. Usando arquivos locais.`);
+    console.warn("⚠️ GitHub inacessível, usando local");
     return null;
   }
 }
 
-/**
- * Lê todos os animes (Tenta Remoto -> Senão Local)
- */
-export async function readAllAnimes(): Promise<Anime[]> {
-  // 1. Tenta Remoto
-  const remoteData = await fetchRemoteAnimes();
-  if (remoteData) return remoteData;
+// ── Fallback local ───────────────────────────────────────────
+async function readLocalAnimes(): Promise<Anime[]> {
+  if (!fs.existsSync(ANIMES_DIR)) return [];
 
-  // 2. Fallback Local
-  try {
-    if (!fs.existsSync(ANIMES_DIR)) return [];
-    
-    const files = fs.readdirSync(ANIMES_DIR).filter(f => f.endsWith(".json"));
-    const localAnimes = files.map(f => {
-      try {
-        const content = fs.readFileSync(path.join(ANIMES_DIR, f), "utf-8");
-        return JSON.parse(content);
-      } catch (e) {
-        return null;
-      }
-    }).filter(Boolean) as Anime[];
+  const files = fs.readdirSync(ANIMES_DIR)
+    .filter(f => f.endsWith(".json"));
 
-    console.log(`📂 ${localAnimes.length} animes carregados localmente.`);
-    return localAnimes;
-  } catch (e: any) {
-    console.error("❌ Erro crítico ao ler pasta local:", e.message);
-    return [];
-  }
-}
-
-/**
- * Busca um anime específico por ID
- */
-export async function readAnime(id: string): Promise<Anime | null> {
-  // Primeiro, verifica se ele existe no remoto (para manter consistência)
-  const all = await readAllAnimes();
-  const found = all.find(a => String(a.id) === String(id));
-  
-  if (found) return found;
-
-  // Se não achou na lista geral (caso a lista geral falhe), tenta o arquivo individual local
-  const p = path.join(ANIMES_DIR, `${id}.json`);
-  if (fs.existsSync(p)) {
+  return files.map(f => {
     try {
-      return JSON.parse(fs.readFileSync(p, "utf-8"));
-    } catch (e) {
+      return JSON.parse(
+        fs.readFileSync(path.join(ANIMES_DIR, f), "utf-8")
+      );
+    } catch {
       return null;
     }
-  }
-  return null;
+  }).filter(Boolean) as Anime[];
 }
 
-export function writeAnime(anime: Anime) {
-  const id = anime.id;
-  const p = path.join(ANIMES_DIR, `${id}.json`);
-  
-  if (fs.existsSync(p)) {
-    const ts = new Date().toISOString().replace(/[:.]/g, "-");
-    fs.copyFileSync(p, path.join(BACKUP_DIR, `backup_${id}_${ts}.json`));
-  }
-  
-  const tmp = p + ".tmp";
-  fs.writeFileSync(tmp, JSON.stringify(anime, null, 2), "utf-8");
-  fs.renameSync(tmp, p);
+// ── Leitura principal ────────────────────────────────────────
+export async function readAllAnimes(): Promise<Anime[]> {
+  const remote = await fetchRemoteAnimes();
+  if (remote) return remote;
+  return await readLocalAnimes();
 }
 
-export function removeAnime(id: string): boolean {
-  const p = path.join(ANIMES_DIR, `${id}.json`);
-  if (!fs.existsSync(p)) return false;
-  
-  const ts = new Date().toISOString().replace(/[:.]/g, "-");
-  fs.copyFileSync(p, path.join(BACKUP_DIR, `backup_${id}_${ts}.json`));
-  fs.unlinkSync(p);
-  return true;
+export async function readAnime(id: string): Promise<Anime | null> {
+  const all = await readAllAnimes();
+  return all.find(a => String(a.id) === String(id)) ?? null;
 }
 
-export function fetchBackupsSync(): string[] {
-  if (!fs.existsSync(BACKUP_DIR)) return [];
-  return fs.readdirSync(BACKUP_DIR)
-    .filter(f => f.endsWith(".json"))
-    .reverse();
-}
-
-export function restoreBackup(name: string) {
-  const src = path.join(BACKUP_DIR, path.basename(name));
-  if (!fs.existsSync(src)) throw new Error("Backup não encontrado");
-  const data = JSON.parse(fs.readFileSync(src, "utf-8"));
-  writeAnime(data);
-  return data;
-}
-
-// ── Servidor API ─────────────────────────────────────────────────────
-
+// ── Servidor ─────────────────────────────────────────────────
 export async function startServer() {
-  ensureDirs();
-  const app = express();
+  const app  = express();
   const PORT = process.env.PORT || 8080;
 
   app.use(cors());
-  app.use(express.json({ limit: "50mb" })); // Aumentado para animes grandes
+  app.use(express.json());
 
-  // Middleware de Auth
   const auth = (req: any, res: any, next: any) => {
-    const apiKey = req.headers["x-api-key"];
-    if (apiKey !== API_KEY) return res.status(401).json({ error: "Unauthorized" });
+    if (req.headers["x-api-key"] !== API_KEY)
+      return res.status(401).json({ error: "Unauthorized" });
     next();
   };
 
-  // Listar todos os animes
+  // GET todos
   app.get("/api/animes", async (_req, res) => {
     const data = await readAllAnimes();
     res.json(data);
   });
 
-  // Obter um anime
+  // GET por id
   app.get("/api/animes/:id", async (req, res) => {
     const anime = await readAnime(req.params.id);
-    if (!anime) return res.status(404).json({ error: "Anime não encontrado" });
+    if (!anime)
+      return res.status(404).json({ error: "Anime não encontrado" });
     res.json(anime);
   });
 
-  // Salvar/Editar
-  app.post("/api/animes", auth, (req, res) => {
-    const anime = req.body;
-    if (!anime?.id || !anime?.title) {
-      return res.status(400).json({ error: "id e title são obrigatórios" });
-    }
-    writeAnime(anime);
-    res.json({ success: true, message: `Salvo com sucesso!`, anime });
+  // Bloqueia qualquer escrita
+  app.all("/api/*", (req, res, next) => {
+    if (req.method !== "GET")
+      return res.status(405).json({ error: "Servidor em modo somente leitura" });
+    next();
   });
-
-  // Deletar
-  app.delete("/api/animes/:id", auth, (req, res) => {
-    const ok = removeAnime(req.params.id);
-    if (!ok) return res.status(404).json({ error: "Arquivo local não encontrado" });
-    res.json({ success: true, message: "Removido localmente. Backup criado." });
-  });
-
-  // Backups
-  app.get("/api/backups", auth, (_req, res) => {
-    res.json(fetchBackupsSync());
-  });
-
-  app.post("/api/backups/:name/restore", auth, (req, res) => {
-    try {
-      const data = restoreBackup(req.params.name);
-      res.json({ success: true, data });
-    } catch (err: any) {
-      res.status(404).json({ error: err.message });
-    }
-  });
-
-  // Frontend Static Files
-  const distPath = path.resolve(process.cwd(), "dist");
-  if (fs.existsSync(distPath)) {
-    app.use(express.static(distPath));
-    app.get("*", (req, res) => {
-      if (!req.path.startsWith("/api")) {
-        res.sendFile(path.join(distPath, "index.html"));
-      }
-    });
-  }
 
   app.listen(PORT, () => {
     console.log(`
-🚀 Servidor Rodando em Porta: ${PORT}
-📂 Pasta Local: ${ANIMES_DIR}
-🔗 URL Remota: ${REMOTE_URL}
-🔑 API_KEY: ${API_KEY === "dev-key" ? "⚠️ PADRÃO (Mude no .env)" : "✅ Protegida"}
+🚀 Servidor na porta: ${PORT}
+📖 MODO: SOMENTE LEITURA
+🐙 GitHub: ${GITHUB_OWNER}/${GITHUB_REPO} → ${GITHUB_BRANCH}/${GITHUB_FILE}
     `);
   });
 }

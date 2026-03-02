@@ -369,5 +369,26 @@
     "title": "Git Push: chore: update database [01/03/2026 21:04]",
     "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   3649023..e5fe157  data -> data",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-01 21:16:12",
+    "kind": "git",
+    "title": "Git Push: chore: update database [01/03/2026 21:16]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   e5fe157..155b9dd  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 21:32:16",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-01 21:35:45",
+    "kind": "add",
+    "title": "Adicionado: Death Note",
+    "detail": "T1 · 37 eps · Série",
+    "level": "info"
   }
 ]

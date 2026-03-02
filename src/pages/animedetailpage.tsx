@@ -1,7 +1,7 @@
 // src/pages/AnimeDetailPage.tsx
 import { useState, useMemo, useEffect, useRef } from "react";
 import { useAnimeById, useRelated, FlatAnime } from "../hooks/useanimes";
-import { AnimeSeason, AnimeType, isAdultAnime } from "../types/anime";
+import { AnimeSeason, AnimeType } from "../types/anime";
 import { CustomDropdown, DropdownOption } from "../components/customdropdown";
 import AnimeCard from "../components/animecard";
 import { useParams, useNavigate } from "react-router-dom";
@@ -58,144 +58,6 @@ async function requestPushPermission(): Promise<boolean> {
   if (Notification.permission === "granted") return true;
   const perm = await Notification.requestPermission();
   return perm === "granted";
-}
-
-// ── Adult Content Modal ───────────────────────────────────────────────────────
-
-function AdultContentModal({ animeTitle, onAccept, onReject }: {
-  animeTitle: string;
-  onAccept: () => void;
-  onReject: () => void;
-}) {
-  const [checked, setChecked] = useState(false);
-
-  return (
-    <AnimatePresence>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        style={{
-          position: "fixed", inset: 0, zIndex: 9999,
-          background: "rgba(0,0,0,0.88)",
-          backdropFilter: "blur(20px)",
-          display: "flex", alignItems: "center", justifyContent: "center",
-          padding: "20px",
-        }}
-      >
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.9, y: 20 }}
-          transition={{ type: "spring", stiffness: 380, damping: 28 }}
-          style={{
-            background: "#0f0f1a",
-            border: "1px solid rgba(239,68,68,0.3)",
-            borderRadius: 20,
-            padding: "36px 32px",
-            maxWidth: 460,
-            width: "100%",
-            boxShadow: "0 0 0 1px rgba(239,68,68,0.1), 0 32px 80px rgba(0,0,0,0.8)",
-          }}
-        >
-          {/* Icon */}
-          <div style={{
-            width: 64, height: 64, borderRadius: 16,
-            background: "rgba(239,68,68,0.12)",
-            border: "1px solid rgba(239,68,68,0.2)",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: 28, marginBottom: 20,
-          }}>
-            🔞
-          </div>
-
-          {/* Badge */}
-          <div style={{
-            display: "inline-flex", alignItems: "center", gap: 6,
-            background: "rgba(239,68,68,0.12)",
-            border: "1px solid rgba(239,68,68,0.25)",
-            borderRadius: 8, padding: "4px 10px",
-            marginBottom: 14,
-          }}>
-            <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#ef4444", display: "inline-block" }} />
-            <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.1em", color: "#ef4444", textTransform: "uppercase" }}>
-              Conteúdo Adulto — 18+
-            </span>
-          </div>
-
-          <h2 style={{ fontSize: 22, fontWeight: 800, color: "#fff", marginBottom: 8, lineHeight: 1.2 }}>
-            {animeTitle}
-          </h2>
-          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, marginBottom: 24 }}>
-            Este anime contém conteúdo recomendado apenas para adultos, incluindo cenas de violência intensa, nudez
-            e/ou linguagem explícita. Ao continuar, você confirma que é maior de 18 anos.
-          </p>
-
-          {/* Checkbox */}
-          <label style={{
-            display: "flex", alignItems: "flex-start", gap: 10,
-            cursor: "pointer", marginBottom: 24,
-          }}>
-            <div
-              onClick={() => setChecked(c => !c)}
-              style={{
-                width: 20, height: 20, borderRadius: 5, flexShrink: 0, marginTop: 1,
-                background: checked ? "#ef4444" : "transparent",
-                border: `2px solid ${checked ? "#ef4444" : "rgba(255,255,255,0.2)"}`,
-                display: "flex", alignItems: "center", justifyContent: "center",
-                transition: "all 0.15s", cursor: "pointer",
-              }}
-            >
-              {checked && <span style={{ color: "#fff", fontSize: 12, lineHeight: 1 }}>✓</span>}
-            </div>
-            <span style={{ fontSize: 13, color: "rgba(255,255,255,0.65)", lineHeight: 1.5 }}>
-              Confirmo que tenho <strong style={{ color: "#fff" }}>18 anos ou mais</strong> e sou{" "}
-              <strong style={{ color: "#fff" }}>totalmente responsável</strong> pelo conteúdo que escolho assistir.
-            </span>
-          </label>
-
-          {/* Actions */}
-          <div style={{ display: "flex", gap: 10 }}>
-            <button
-              onClick={onReject}
-              style={{
-                flex: 1, height: 44, borderRadius: 10,
-                background: "rgba(255,255,255,0.05)",
-                border: "1px solid rgba(255,255,255,0.09)",
-                color: "rgba(255,255,255,0.5)",
-                fontSize: 14, fontWeight: 500, cursor: "pointer",
-                transition: "all 0.15s",
-              }}
-              onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.08)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.05)"; }}
-            >
-              ← Voltar
-            </button>
-            <button
-              onClick={() => { if (checked) onAccept(); }}
-              disabled={!checked}
-              style={{
-                flex: 2, height: 44, borderRadius: 10,
-                background: checked ? "linear-gradient(135deg, #ef4444, #dc2626)" : "rgba(239,68,68,0.1)",
-                border: checked ? "none" : "1px solid rgba(239,68,68,0.2)",
-                color: checked ? "#fff" : "rgba(239,68,68,0.35)",
-                fontSize: 14, fontWeight: 700,
-                cursor: checked ? "pointer" : "not-allowed",
-                transition: "all 0.2s",
-                boxShadow: checked ? "0 4px 20px rgba(239,68,68,0.3)" : "none",
-              }}
-            >
-              Entendi, continuar →
-            </button>
-          </div>
-
-          <p style={{ marginTop: 14, fontSize: 11, color: "rgba(255,255,255,0.2)", textAlign: "center" }}>
-            Sua escolha fica salva durante esta sessão.
-          </p>
-        </motion.div>
-      </motion.div>
-    </AnimatePresence>
-  );
 }
 
 // ── Notification Panel ────────────────────────────────────────────────────────
@@ -303,11 +165,13 @@ function NotificationPanel({ animeId, animeTitle, subscribed, onToggle }: NotifP
               overflow: "hidden",
             }}
           >
+            {/* Header */}
             <div style={{ padding: "14px 16px 10px", borderBottom: "1px solid rgba(255,255,255,0.06)", background: "rgba(255,255,255,0.02)" }}>
               <p style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.9)", marginBottom: 2 }}>Notificações</p>
               <p style={{ fontSize: 11, color: "rgba(255,255,255,0.35)" }}>{animeTitle}</p>
             </div>
 
+            {/* Frequency options */}
             <div style={{ padding: "10px 8px" }}>
               <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", padding: "0 8px", marginBottom: 6 }}>
                 Frequência de notificação
@@ -328,7 +192,12 @@ function NotificationPanel({ animeId, animeTitle, subscribed, onToggle }: NotifP
                     onMouseEnter={e => { if (!isActive) (e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.04)"; }}
                     onMouseLeave={e => { if (!isActive) (e.currentTarget as HTMLButtonElement).style.background = "transparent"; }}
                   >
-                    <span style={{ width: 30, height: 30, borderRadius: 8, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", background: isActive ? "rgba(124,58,237,0.2)" : "rgba(255,255,255,0.05)", fontSize: 14 }}>
+                    <span style={{
+                      width: 30, height: 30, borderRadius: 8, flexShrink: 0,
+                      display: "flex", alignItems: "center", justifyContent: "center",
+                      background: isActive ? "rgba(124,58,237,0.2)" : "rgba(255,255,255,0.05)",
+                      fontSize: 14,
+                    }}>
                       {opt.icon}
                     </span>
                     <div style={{ flex: 1 }}>
@@ -343,6 +212,7 @@ function NotificationPanel({ animeId, animeTitle, subscribed, onToggle }: NotifP
               })}
             </div>
 
+            {/* Push toggle */}
             <div style={{ margin: "0 8px 8px", padding: "10px 12px", background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 10 }}>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                 <div>
@@ -358,8 +228,8 @@ function NotificationPanel({ animeId, animeTitle, subscribed, onToggle }: NotifP
                     width: 40, height: 22, borderRadius: 11,
                     background: settings.pushEnabled ? "#7c3aed" : "rgba(255,255,255,0.1)",
                     border: "none", cursor: pushStatus === "denied" ? "not-allowed" : "pointer",
-                    position: "relative", flexShrink: 0, transition: "background 0.2s",
-                    opacity: pushStatus === "denied" ? 0.4 : 1,
+                    position: "relative", flexShrink: 0,
+                    transition: "background 0.2s", opacity: pushStatus === "denied" ? 0.4 : 1,
                   }}
                 >
                   <motion.span
@@ -372,6 +242,7 @@ function NotificationPanel({ animeId, animeTitle, subscribed, onToggle }: NotifP
               {pushStatus === "requesting" && <p style={{ fontSize: 11, color: "#f59e0b", marginTop: 6 }}>⏳ Aguardando permissão…</p>}
             </div>
 
+            {/* Unsubscribe */}
             {subscribed && (
               <div style={{ padding: "0 8px 8px" }}>
                 <button
@@ -412,26 +283,6 @@ export function AnimeDetailPage({
   const { isSubscribed, toggleSubscription } = useNotifications(notifAnimes);
   const subscribed = isSubscribed(animeId);
 
-  // ── Adult Content Gate ────────────────────────────────────────────────────
-  const isAdult = isAdultAnime(anime);
-  const [adultAccepted, setAdultAccepted] = useState(() => {
-    // Verifica na sessão atual (sem persistir entre abas fechadas)
-    try { return sessionStorage.getItem(`adult-ok:${animeId}`) === "yes"; }
-    catch { return false; }
-  });
-
-  const handleAdultAccept = () => {
-    try { sessionStorage.setItem(`adult-ok:${animeId}`, "yes"); }
-    catch {}
-    setAdultAccepted(true);
-  };
-
-  const handleAdultReject = () => {
-    if (onBack) { onBack(); return; }
-    navigate(-1);
-  };
-  // ─────────────────────────────────────────────────────────────────────────
-
   const [selectedSeason,   setSelectedSeason]   = useState<number>(initialSeason ?? (anime?.seasons[anime.seasons.length - 1]?.season ?? 1));
   const [selectedAudio,    setSelectedAudio]    = useState<AnimeType>(initialAudio);
   const [showTrailer,      setShowTrailer]      = useState(false);
@@ -449,11 +300,6 @@ export function AnimeDetailPage({
     setSynopsisExpanded(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
     document.title = `${anime.title} — AnimeVerse`;
-    // Reset gate when anime changes
-    setAdultAccepted(() => {
-      try { return sessionStorage.getItem(`adult-ok:${animeId}`) === "yes"; }
-      catch { return false; }
-    });
   }, [animeId]);
 
   const relatedAnimes = useRelated(anime);
@@ -521,17 +367,7 @@ export function AnimeDetailPage({
     );
   }
 
-  // ── Adult content gate — bloqueia renderização até aceitar ───────────────
-  if (isAdult && !adultAccepted) {
-    return (
-      <AdultContentModal
-        animeTitle={anime.title}
-        onAccept={handleAdultAccept}
-        onReject={handleAdultReject}
-      />
-    );
-  }
-
+  // ── PATCH ▸ season options com ícone 🎬 para filmes ──────────────────────
   const seasonOptions: DropdownOption<number>[] = anime.seasons.map(s => ({
     value: s.season,
     label: (s as any).type === "movie" ? `🎬 ${s.seasonLabel}` : s.seasonLabel,
@@ -540,6 +376,7 @@ export function AnimeDetailPage({
       : `${s.currentEpisode} eps`,
   }));
 
+  // ── PATCH ▸ redireciona para MovieDetailPage se a season for tipo "movie" ─
   const handleSeasonChange = (v: number) => {
     const target = anime.seasons.find(s => s.season === v);
     if ((target as any)?.type === "movie") {
@@ -565,7 +402,7 @@ export function AnimeDetailPage({
     navigate(`/anime/${encodeURIComponent(anime.id)}/ep/${ep1.id}?audio=${effectiveAudio}`);
   };
 
-  const nextEpisode    = filteredEpisodes.find(ep => !isWatched(anime.id, ep.id));
+  const nextEpisode   = filteredEpisodes.find(ep => !isWatched(anime.id, ep.id));
   const handleContinue = () => {
     if (!nextEpisode) return;
     navigate(`/anime/${encodeURIComponent(anime.id)}/ep/${nextEpisode.id}?audio=${effectiveAudio}`);
@@ -616,23 +453,6 @@ export function AnimeDetailPage({
             </motion.button>
           )}
 
-          {/* Adult content badge on hero */}
-          {isAdult && (
-            <div style={{
-              position: "absolute", top: 20, right: 24,
-              background: "rgba(239,68,68,0.15)",
-              border: "1px solid rgba(239,68,68,0.35)",
-              borderRadius: 8, padding: "5px 11px",
-              display: "flex", alignItems: "center", gap: 6,
-              backdropFilter: "blur(8px)",
-            }}>
-              <span style={{ fontSize: 12 }}>🔞</span>
-              <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.08em", color: "#f87171", textTransform: "uppercase" }}>
-                18+
-              </span>
-            </div>
-          )}
-
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: imgLoaded ? 1 : 0, x: imgLoaded ? 0 : 20 }}
@@ -660,11 +480,6 @@ export function AnimeDetailPage({
               {anime.recommended && (
                 <span style={{ fontSize: 10, fontWeight: 700, padding: "4px 10px", borderRadius: 6, background: "rgba(245,158,11,0.1)", border: "1px solid rgba(245,158,11,0.25)", color: "#f59e0b", textTransform: "uppercase", letterSpacing: "0.08em" }}>
                   ⭐ Recomendado
-                </span>
-              )}
-              {isAdult && (
-                <span style={{ fontSize: 10, fontWeight: 700, padding: "4px 10px", borderRadius: 6, background: "rgba(239,68,68,0.1)", border: "1px solid rgba(239,68,68,0.25)", color: "#f87171", textTransform: "uppercase", letterSpacing: "0.08em" }}>
-                  🔞 Conteúdo adulto
                 </span>
               )}
             </div>
@@ -706,6 +521,7 @@ export function AnimeDetailPage({
 
       {/* ── CONTROLS BAR ──────────────────────────────────────────────────── */}
       <div style={{ padding: "20px clamp(20px, 5vw, 72px)", borderBottom: "1px solid rgba(255,255,255,0.05)", display: "flex", flexWrap: "wrap", gap: 10, alignItems: "flex-end" }}>
+
         {anime.seasons.length > 1 && (
           <div style={{ minWidth: 190 }}>
             <CustomDropdown<number>
@@ -821,6 +637,7 @@ export function AnimeDetailPage({
           </p>
         </div>
 
+        {/* Stats card */}
         <div style={{ background: "#111318", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "18px 22px", minWidth: 190, display: "flex", flexDirection: "column", gap: 14, alignSelf: "start" }}>
           <div>
             <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(255,255,255,0.25)", marginBottom: 6 }}>Progresso</p>
@@ -977,8 +794,12 @@ function EpisodeBtn({ episode, watched, isNext, onPlay }: {
       {episode.thumbnail ? (
         <div style={{ width: 52, height: 38, borderRadius: 6, overflow: "hidden", flexShrink: 0, background: "rgba(255,255,255,0.05)", position: "relative" }}>
           <img src={episode.thumbnail} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-          {hovered && <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.5)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14 }}>▶</div>}
-          {watched && !hovered && <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.45)", display: "flex", alignItems: "center", justifyContent: "center", color: "#4ade80", fontSize: 14 }}>✓</div>}
+          {hovered && (
+            <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.5)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14 }}>▶</div>
+          )}
+          {watched && !hovered && (
+            <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.45)", display: "flex", alignItems: "center", justifyContent: "center", color: "#4ade80", fontSize: 14 }}>✓</div>
+          )}
         </div>
       ) : (
         <span style={{

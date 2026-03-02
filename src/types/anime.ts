@@ -40,23 +40,6 @@ export interface Anime {
   coverImage:           string;
   bannerImage:          string;
   seasons:              AnimeSeason[];
-  adultContent?:        boolean;
-}
-
-// Genres that indicate adult content
-export const ADULT_GENRES = [
-  "hentai", "ecchi", "adult", "sexual", "nsfw", "erotic", "pornography",
-  "boys love", "girls love", "yaoi", "yuri", "harem", "incest",
-  "voyeur", "fetish", "bdsm", "milf", "loli", "shota", "netorare", "trap", "femboy"
-];
-
-// Helper to check if anime is adult content based on genres or explicit flag
-export function isAdultAnime(anime: Anime): boolean {
-  if (anime.adultContent === true) return true;
-  const lowerGenres = anime.genre.map(g => g.toLowerCase());
-  return ADULT_GENRES.some(adult => 
-    lowerGenres.some(genre => genre.includes(adult))
-  );
 }
 
 // Helper: retorna a temporada mais recente de um anime

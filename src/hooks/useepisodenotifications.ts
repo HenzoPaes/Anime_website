@@ -1,116 +1,122 @@
-// src/hooks/useEpisodeNotifications.ts — versão DB
-// Rastreia novos episódios sem precisar de inscrição explícita.
-// Usa /api/user/:userId/ep-counts para persistir as contagens.
-// Interface pública idêntica à versão localStorage.
-
 import { useState, useEffect, useCallback } from "react";
-import { useUserData } from "./useuserdata";
-
-// ── Tipos ─────────────────────────────────────────────────────────────────────
 
 export interface Anime {
-  id:        string;
-  title:     string;
-  episodes:  { id: string }[] | number;
+  id: string;
+  title: string;
+  episodes: { id: string }[] | number; // array or count
   thumbnail?: string;
+  seriesId?: string;
+  season?: number;
 }
 
 export interface EpisodeNotification {
-  animeId:       string;
-  title:         string;
-  thumbnail?:    string;
-  newEpisodes:   number;
+  animeId: string;
+  title: string;
+  thumbnail?: string;
+  newEpisodes: number;
   totalEpisodes: number;
 }
 
-type CountsMap = Record<string, number>;
+const STORAGE_KEY = "animeverse_episode_counts";
 
-function getCount(anime: Anime): number {
-  if (Array.isArray(anime.episodes)) return anime.episodes.length;
-  if (typeof anime.episodes === "number") return anime.episodes;
-  return 0;
-}
-
-// ── Hook ─────────────────────────────────────────────────────────────────────
-
+/**
+ * Hook to track new episodes across animes.
+ *
+ * Usage:
+ *   const { notifications, totalNew, markAsRead, markAllRead } = useEpisodeNotifications(animes);
+ */
 export function useEpisodeNotifications(animes: Anime[]) {
-  const {
-    data: savedCounts,
-    setData: setSavedCounts,
-    loading,
-  } = useUserData<CountsMap>("ep-counts", {});
-
   const [notifications, setNotifications] = useState<EpisodeNotification[]>([]);
 
-  // Detecta novos eps quando os dados do servidor chegarem
-  useEffect(() => {
-    if (loading || !animes.length) return;
+  const getEpisodeCount = (anime: Anime): number => {
+    if (Array.isArray(anime.episodes)) return anime.episodes.length;
+    if (typeof anime.episodes === "number") return anime.episodes;
+    return 0;
+  };
 
+  const loadStoredCounts = (): Record<string, number> => {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : {};
+    } catch {
+      return {};
+    }
+  };
+
+  const saveStoredCounts = (counts: Record<string, number>) => {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(counts));
+    } catch {}
+  };
+
+  useEffect(() => {
+    if (!animes || animes.length === 0) return;
+
+    const stored = loadStoredCounts();
     const newNotifications: EpisodeNotification[] = [];
-    const updated: CountsMap = { ...savedCounts };
-    let hasChanges = false;
+    const updatedCounts: Record<string, number> = { ...stored };
 
     for (const anime of animes) {
-      const current  = getCount(anime);
-      const previous = savedCounts[anime.id];
+      const current = getEpisodeCount(anime);
+      const previous = stored[anime.id];
 
       if (previous === undefined) {
-        updated[anime.id] = current;
-        hasChanges = true;
+        // First time seeing this anime — store count, no notification
+        updatedCounts[anime.id] = current;
       } else if (current > previous) {
+        // New episodes detected!
         newNotifications.push({
-          animeId:       anime.id,
-          title:         anime.title,
-          thumbnail:     anime.thumbnail,
-          newEpisodes:   current - previous,
+          animeId: anime.id,
+          title: anime.title,
+          thumbnail: anime.thumbnail,
+          newEpisodes: current - previous,
           totalEpisodes: current,
         });
-        // Não atualiza o count até markAsRead
+        // Don't update stored count yet — user needs to mark as read
       }
     }
 
-    if (hasChanges) setSavedCounts(updated);
-    if (newNotifications.length > 0) setNotifications(newNotifications);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [loading, animes.length]);
+    saveStoredCounts(updatedCounts);
+    setNotifications(newNotifications);
+  }, [animes]);
 
-  /** Marca um anime como lido (atualiza contagem salva) */
-  const markAsRead = useCallback(
-    (animeId: string) => {
-      const anime = animes.find(a => a.id === animeId);
-      if (!anime) return;
-      setSavedCounts(prev => ({ ...prev, [animeId]: getCount(anime) }));
-      setNotifications(prev => prev.filter(n => n.animeId !== animeId));
-    },
-    [animes, setSavedCounts],
-  );
+  /** Mark a single anime's notifications as read */
+  const markAsRead = useCallback((animeId: string) => {
+    const anime = animes.find((a) => a.id === animeId);
+    if (!anime) return;
 
-  /** Marca todos como lidos */
+    const stored = loadStoredCounts();
+    stored[animeId] = getEpisodeCount(anime);
+    saveStoredCounts(stored);
+
+    setNotifications((prev) => prev.filter((n) => n.animeId !== animeId));
+  }, [animes]);
+
+  /** Mark all notifications as read */
   const markAllRead = useCallback(() => {
-    const updated: CountsMap = {};
+    const stored = loadStoredCounts();
     for (const anime of animes) {
-      updated[anime.id] = getCount(anime);
+      stored[anime.id] = getEpisodeCount(anime);
     }
-    setSavedCounts(prev => ({ ...prev, ...updated }));
+    saveStoredCounts(stored);
     setNotifications([]);
-  }, [animes, setSavedCounts]);
+  }, [animes]);
 
-  /** Inicializa todos como vistos (evita falsos positivos no primeiro load) */
+  /** Force-initialize all animes as seen (useful on first app load to avoid false positives) */
   const initializeAll = useCallback(() => {
-    const counts: CountsMap = {};
+    const counts: Record<string, number> = {};
     for (const anime of animes) {
-      counts[anime.id] = getCount(anime);
+      counts[anime.id] = getEpisodeCount(anime);
     }
-    setSavedCounts(counts);
+    saveStoredCounts(counts);
     setNotifications([]);
-  }, [animes, setSavedCounts]);
+  }, [animes]);
 
   return {
     notifications,
-    totalNew:    notifications.reduce((s, n) => s + n.newEpisodes, 0),
+    totalNew: notifications.reduce((sum, n) => sum + n.newEpisodes, 0),
     markAsRead,
     markAllRead,
     initializeAll,
-    loading,
   };
 }

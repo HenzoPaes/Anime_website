@@ -1947,7 +1947,7 @@
         "status": "finished",
         "score": 7.94,
         "synopsis": "Kou Yamori is an average middle school student who struggles with grasping the complex concept of love. Because he sees little sense in surrendering to the norm, he soon stops going to school. Plagued with insomnia due to his idleness, Kou begins roaming the lonesome streets at night.\n\nOne night, Kou encounters a bizarre girl named Nazuna Nanakusa who believes that people stay awake during the night because they are dissatisfied with how they spent their day and cannot rest until they release their inhibitions. Nazuna offers to help Kou with his sleep issues and invites him over to her place, where she convinces him to share a futon with her. Feeling uncomfortable, Kou only pretends to doze off—which is when Nazuna suddenly bites his neck, revealing herself to be a vampire!\n\nWhile Kou thinks the bite will turn him into a vampire, the specifics of transforming are not that simple. In order to change, he must be bitten by someone he truly loves. Ready to let go of his dreary mortal life, Kou decides on a new goal: he will fall in love with Nazuna and become a vampire himself.\n\n[Written by MAL Rewrite]",
-        "trailer": null,
+        "trailer": "https://youtu.be/a4bSbmqwhso",
         "audios": [
           {
             "type": "sub",
@@ -2098,13 +2098,13 @@
       {
         "season": 2,
         "seasonLabel": "2ª Temporada",
-        "year": 2022,
+        "year": 2025,
         "episodes": 12,
         "currentEpisode": 12,
         "status": "finished",
-        "score": 7.94,
-        "synopsis": "Kou Yamori is an average middle school student who struggles with grasping the complex concept of love. Because he sees little sense in surrendering to the norm, he soon stops going to school. Plagued with insomnia due to his idleness, Kou begins roaming the lonesome streets at night.\n\nOne night, Kou encounters a bizarre girl named Nazuna Nanakusa who believes that people stay awake during the night because they are dissatisfied with how they spent their day and cannot rest until they release their inhibitions. Nazuna offers to help Kou with his sleep issues and invites him over to her place, where she convinces him to share a futon with her. Feeling uncomfortable, Kou only pretends to doze off—which is when Nazuna suddenly bites his neck, revealing herself to be a vampire!\n\nWhile Kou thinks the bite will turn him into a vampire, the specifics of transforming are not that simple. In order to change, he must be bitten by someone he truly loves. Ready to let go of his dreary mortal life, Kou decides on a new goal: he will fall in love with Nazuna and become a vampire himself.\n\n[Written by MAL Rewrite]",
-        "trailer": null,
+        "score": 8.34,
+        "synopsis": "A human may become a vampire only if they fall in love with one—and 14-year-old Kou Yamori wishes for nothing more. Kou has decided to fall in love with a vampire named Nazuna Nanakusa, and he has only 10 months of nightly rendezvous left to realize his goal.\n\nKou's friends, Mahiru Seki and Akira Asai, are slowly coming to terms with the existence of vampires and Kou's decision to become one. As Kou realizes that a woman close to Mahiru is a vampire, he is unsure whether to support this relationship.\n\nMeanwhile, Anko Uguisu, the human detective bent on killing vampires, closes in on Nazuna and her coven. When an encounter leaves one of the vampires seriously injured, they learn that their human memories hold the key to a weakness that can be their demise—and to protect Nazuna, Kou must find out about her past.\n\n[Written by MAL Rewrite]",
+        "trailer": "https://youtu.be/m3yAIWZQ6gM",
         "audios": [
           {
             "type": "sub",
@@ -2242,7 +2242,8 @@
           }
         ]
       }
-    ]
+    ],
+    "adultContent": false
   },
   {
     "id": "gachiakuta",

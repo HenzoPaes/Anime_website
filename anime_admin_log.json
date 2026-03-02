@@ -544,5 +544,33 @@
     "title": "pageconfig.json salvo",
     "detail": "featuredAnimeId=jujutsu-kaisen",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-02 12:59:24",
+    "kind": "git",
+    "title": "Git Push: chore: update database [02/03/2026, 12:59]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   8ef3cb1..7ad4ab4  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 13:03:38",
+    "kind": "add",
+    "title": "Adicionado: Charlotte",
+    "detail": "T1 · 13 eps · Série",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 13:08:32",
+    "kind": "add",
+    "title": "Adicionado: Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "T1 · 8 eps · Série",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 13:11:28",
+    "kind": "add",
+    "title": "Adicionado: Shikanoko Nokonoko Koshitantan",
+    "detail": "T1 · 12 eps · Série",
+    "level": "info"
   }
 ]

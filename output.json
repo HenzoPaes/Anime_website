@@ -11148,5 +11148,468 @@
     "title": "Another",
     "titleJapanese": "アナザー",
     "titleRomaji": "Another"
+  },
+  {
+    "adultContent": false,
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GYGG99WDY-backdrop_wide",
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1826/147276l.jpg",
+    "genre": [
+      "Drama"
+    ],
+    "id": "charlotte",
+    "malId": 28999,
+    "recommended": false,
+    "seasons": [
+      {
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 13,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 13,
+        "episodeList": [
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/01.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep1",
+            "number": 1,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 1"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/02.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep2",
+            "number": 2,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 2"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/03.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep3",
+            "number": 3,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 3"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/04.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep4",
+            "number": 4,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 4"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/05.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep5",
+            "number": 5,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 5"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/06.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep6",
+            "number": 6,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 6"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/07.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep7",
+            "number": 7,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 7"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/08.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep8",
+            "number": 8,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 8"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/09.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep9",
+            "number": 9,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 9"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/10.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep10",
+            "number": 10,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 10"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/11.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep11",
+            "number": 11,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 11"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/12.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep12",
+            "number": 12,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 12"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/charlotte/13.mp4/index.m3u8&nocache1772467418468\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "charlotte-s1-ep13",
+            "number": 13,
+            "season": "1",
+            "title": "Charlotte - T1 Ep 13"
+          }
+        ],
+        "episodes": 13,
+        "score": 7.76,
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "status": "finished",
+        "synopsis": "If not for his ability to take over people's mind and body, Yuu Otosaka would be an ordinary high school student. Though it only lasts for five seconds at a time, Yuu's mysterious power allowed him to cheat his way to the top of his class and  enter a prestigious high school, where he continues his dishonest acts.\n\nHis shenanigans are eventually stopped by Nao Tomori—the headstrong student council president from Hoshinoumi Academy—who sees through his deceit. Through coercion, Nao convinces Yuu to transfer to Hoshinoumi and join the student council. Hoshinoumi Academy is secretly an institution created for adolescents who possess supernatural abilities—with the student council serving as a means of locating those who abuse their powers.\n\nWith Yuu begrudgingly assisting in council affairs, the group sets out to find and protect new ability users from harm. However, as they further investigate the abilities, their findings entangle them in far more complicated matters than they could ever imagine.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "year": 2015
+      }
+    ],
+    "studio": "P.A. Works",
+    "title": "Charlotte",
+    "titleJapanese": "Charlotte（シャーロット）",
+    "titleRomaji": "Charlotte"
+  },
+  {
+    "adultContent": false,
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GT00365542-backdrop_wide",
+    "coverImage": "https://myanimelist.net/images/anime/1387/154934l.jpg",
+    "genre": [
+      "Drama",
+      "Supernatural"
+    ],
+    "id": "a-misanthrope-teaches-a-class-for-demi-humans",
+    "malId": 62432,
+    "recommended": false,
+    "seasons": [
+      {
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 8,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 8,
+        "episodeList": [
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jingai-kyoushitsu-no-ningengirai-kyoushi/01.mp4/index.m3u8&nocache1772467712816\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "a-misanthrope-teaches-a-class-for-demi-humans-s1-ep1",
+            "number": 1,
+            "season": "1",
+            "title": "Jingai Kyoushitsu no Ningengirai Kyoushi - T1 Ep 1"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jingai-kyoushitsu-no-ningengirai-kyoushi/02.mp4/index.m3u8&nocache1772467712816\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "a-misanthrope-teaches-a-class-for-demi-humans-s1-ep2",
+            "number": 2,
+            "season": "1",
+            "title": "Jingai Kyoushitsu no Ningengirai Kyoushi - T1 Ep 2"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jingai-kyoushitsu-no-ningengirai-kyoushi/03.mp4/index.m3u8&nocache1772467712816\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "a-misanthrope-teaches-a-class-for-demi-humans-s1-ep3",
+            "number": 3,
+            "season": "1",
+            "title": "Jingai Kyoushitsu no Ningengirai Kyoushi - T1 Ep 3"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jingai-kyoushitsu-no-ningengirai-kyoushi/04.mp4/index.m3u8&nocache1772467712816\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "a-misanthrope-teaches-a-class-for-demi-humans-s1-ep4",
+            "number": 4,
+            "season": "1",
+            "title": "Jingai Kyoushitsu no Ningengirai Kyoushi - T1 Ep 4"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jingai-kyoushitsu-no-ningengirai-kyoushi/05.mp4/index.m3u8&nocache1772467712816\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "a-misanthrope-teaches-a-class-for-demi-humans-s1-ep5",
+            "number": 5,
+            "season": "1",
+            "title": "Jingai Kyoushitsu no Ningengirai Kyoushi - T1 Ep 5"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jingai-kyoushitsu-no-ningengirai-kyoushi/06.mp4/index.m3u8&nocache1772467712816\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "a-misanthrope-teaches-a-class-for-demi-humans-s1-ep6",
+            "number": 6,
+            "season": "1",
+            "title": "Jingai Kyoushitsu no Ningengirai Kyoushi - T1 Ep 6"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jingai-kyoushitsu-no-ningengirai-kyoushi/07.mp4/index.m3u8&nocache1772467712816\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "a-misanthrope-teaches-a-class-for-demi-humans-s1-ep7",
+            "number": 7,
+            "season": "1",
+            "title": "Jingai Kyoushitsu no Ningengirai Kyoushi - T1 Ep 7"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jingai-kyoushitsu-no-ningengirai-kyoushi/08.mp4/index.m3u8&nocache1772467712816\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "a-misanthrope-teaches-a-class-for-demi-humans-s1-ep8",
+            "number": 8,
+            "season": "1",
+            "title": "Jingai Kyoushitsu no Ningengirai Kyoushi - T1 Ep 8"
+          }
+        ],
+        "episodes": 12,
+        "score": 6.24,
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "status": "ongoing",
+        "synopsis": "I'm Rei Hitoma, a self-professed misanthrope thanks to some past trauma. Just when I thought my new teaching job in the mountains would provide a chill, rejuvenating environment, it turns out that this school is actually for demi-humans who want to become full-fledged human beings! There's a mermaid, a werewolf, a rabbit, and a bird...all of whom are now my charges. It's my duty to teach them about humankind—and maybe in the process, I'll learn a few things myself. This isn't an alternate world or a case of reincarnation. It's just the story of a teacher at a somewhat peculiar school, and his students who are striving to become human.\n\n(Source: Yen Press)",
+        "trailer": "",
+        "year": 2026
+      }
+    ],
+    "studio": "asread.",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "titleJapanese": "人外教室の人間嫌い教師",
+    "titleRomaji": "Jingai Kyoushitsu no Ningengirai Kyoushi"
+  },
+  {
+    "adultContent": false,
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/G0XHWM100-backdrop_wide",
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1094/143324l.jpg",
+    "genre": [
+      "Comedy"
+    ],
+    "id": "my-deer-friend-nokotan",
+    "malId": 58426,
+    "recommended": false,
+    "seasons": [
+      {
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 12,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 12,
+        "episodeList": [
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/01.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "my-deer-friend-nokotan-s1-ep1",
+            "number": 1,
+            "season": "1",
+            "title": "Shikanoko Nokonoko Koshitantan - T1 Ep 1"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/02.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "my-deer-friend-nokotan-s1-ep2",
+            "number": 2,
+            "season": "1",
+            "title": "Shikanoko Nokonoko Koshitantan - T1 Ep 2"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/03.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "my-deer-friend-nokotan-s1-ep3",
+            "number": 3,
+            "season": "1",
+            "title": "Shikanoko Nokonoko Koshitantan - T1 Ep 3"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/04.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "my-deer-friend-nokotan-s1-ep4",
+            "number": 4,
+            "season": "1",
+            "title": "Shikanoko Nokonoko Koshitantan - T1 Ep 4"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/05.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "my-deer-friend-nokotan-s1-ep5",
+            "number": 5,
+            "season": "1",
+            "title": "Shikanoko Nokonoko Koshitantan - T1 Ep 5"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/06.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "my-deer-friend-nokotan-s1-ep6",
+            "number": 6,
+            "season": "1",
+            "title": "Shikanoko Nokonoko Koshitantan - T1 Ep 6"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/07.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "my-deer-friend-nokotan-s1-ep7",
+            "number": 7,
+            "season": "1",
+            "title": "Shikanoko Nokonoko Koshitantan - T1 Ep 7"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/08.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "my-deer-friend-nokotan-s1-ep8",
+            "number": 8,
+            "season": "1",
+            "title": "Shikanoko Nokonoko Koshitantan - T1 Ep 8"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/09.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "my-deer-friend-nokotan-s1-ep9",
+            "number": 9,
+            "season": "1",
+            "title": "Shikanoko Nokonoko Koshitantan - T1 Ep 9"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/10.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "my-deer-friend-nokotan-s1-ep10",
+            "number": 10,
+            "season": "1",
+            "title": "Shikanoko Nokonoko Koshitantan - T1 Ep 10"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/11.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "my-deer-friend-nokotan-s1-ep11",
+            "number": 11,
+            "season": "1",
+            "title": "Shikanoko Nokonoko Koshitantan - T1 Ep 11"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shikanoko-nokonoko-koshitantan/12.mp4/index.m3u8&nocache1772467888377\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "my-deer-friend-nokotan-s1-ep12",
+            "number": 12,
+            "season": "1",
+            "title": "Shikanoko Nokonoko Koshitantan - T1 Ep 12"
+          }
+        ],
+        "episodes": 12,
+        "score": 6.95,
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "status": "finished",
+        "synopsis": "Torako Koshi is the epitome of perfection. With her peerless beauty, top-notch grades, and position as student council president, her popularity in school is unrivaled. However, she harbors a dark secret—she was a delinquent back in middle school—and this is something she conceals to the best of her abilities.\n\nUnfortunately, when she meets the mysterious deer girl Noko Shikanoko, Torako's hidden shame is constantly on the precipice of being exposed due to Shikanoko's rather weird antics. To maintain the reputation she worked so hard for, Torako must go along with Shikanoko's whims, even going so far as to become president of the newly established Deer Club. All her efforts will be rewarded if she can prevent the menacing doe from accidentally blurting out damaging details about her personal history that will undoubtedly unleash Torako's greatest nightmare.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "year": 2024
+      }
+    ],
+    "studio": "Wit Studio",
+    "title": "Shikanoko Nokonoko Koshitantan",
+    "titleJapanese": "しかのこのこのここしたんたん",
+    "titleRomaji": "Shikanoko Nokonoko Koshitantan"
   }
 ]

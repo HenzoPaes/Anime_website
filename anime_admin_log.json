@@ -404,5 +404,19 @@
     "title": "Git Push: Hotfix",
     "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   276dfbc..2638c1b  data -> data",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-02 06:21:09",
+    "kind": "git",
+    "title": "Git Push: chore: update database [02/03/2026 06:21]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   2638c1b..15caf9a  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 06:39:15",
+    "kind": "add",
+    "title": "Adicionado: Fullmetal Alchemist: Brotherhood",
+    "detail": "T1 · 64 eps · Série",
+    "level": "info"
   }
 ]

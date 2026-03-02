@@ -215,5 +215,152 @@
     "title": "pageconfig.json salvo",
     "detail": "featuredAnimeId=seihantai-na-kimi-to-boku",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-01 00:06:19",
+    "kind": "git",
+    "title": "Git Push: chore: update database [01/03/2026 00:06]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   55d1bca..3649950  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:07:48",
+    "kind": "update",
+    "title": "Eps adicionados: You and I Are Polar Opposites",
+    "detail": "[LEG] ✅ Ep 08 disponível!",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:07:50",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-01 10:08:09",
+    "kind": "git",
+    "title": "Git Push: chore: update database [01/03/2026 10:08]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   3649950..d0f2768  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:09:27",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=seihantai-na-kimi-to-boku",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:09:30",
+    "kind": "git",
+    "title": "Git Push: chore: update database [01/03/2026 10:09]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   d0f2768..0cb7584  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:35:32",
+    "kind": "git",
+    "title": "Backup GitHub (direto)",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   0cb7584..22e4fac  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:37:16",
+    "kind": "git",
+    "title": "Git Backup: chore: update database [01/03/2026 10:37]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   22e4fac..eedcd99  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:39:11",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=jujutsu-kaisen",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:39:14",
+    "kind": "git",
+    "title": "Git Backup: chore: update database [01/03/2026 10:39]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   eedcd99..a1dd2a9  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:51:57",
+    "kind": "git",
+    "title": "Backup GitHub (direto)",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   a1dd2a9..4cbae4d  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:51:58",
+    "kind": "git",
+    "title": "Backup GitHub (direto)",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n ! [remote rejected] data -> data (cannot lock ref 'refs/heads/data': ",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:52:00",
+    "kind": "git",
+    "title": "Backup GitHub (direto)",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   bd2fd3e..6079835  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:52:21",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=bleach",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:52:28",
+    "kind": "git",
+    "title": "Git Backup: chore: update database [01/03/2026 10:52]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   6079835..b052890  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:52:44",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=jujutsu-kaisen",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 10:52:47",
+    "kind": "git",
+    "title": "Git Backup: chore: update database [01/03/2026 10:52]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   b052890..583051a  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 14:20:08",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=chainsaw-man",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 14:20:13",
+    "kind": "git",
+    "title": "Git Backup: chore: update database [01/03/2026 14:20]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   583051a..3649023  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-01 21:02:04",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-01 21:02:56",
+    "kind": "add",
+    "title": "Adicionado: Alma-chan wa Kazoku ni Naritai",
+    "detail": "T1 · 11 eps · Série",
+    "level": "info"
   }
 ]

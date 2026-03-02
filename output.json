@@ -9239,5 +9239,161 @@
       }
     ],
     "adultContent": true
+  },
+  {
+    "id": "alma-chan-wants-to-be-a-family",
+    "title": "Alma-chan wa Kazoku ni Naritai",
+    "titleRomaji": "Alma-chan wa Kazoku ni Naritai",
+    "titleJapanese": "アルマちゃんは家族になりたい",
+    "genre": [
+      "Comedy",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "studio": "Studio Flad",
+    "recommended": false,
+    "malId": 60781,
+    "adultContent": false,
+    "coverImage": "https://cdn.myanimelist.net/images/anime/1631/153644l.jpg",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GXJHM3GZJ-backdrop_wide",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2025,
+        "episodes": 11,
+        "currentEpisode": 11,
+        "status": "finished",
+        "score": 7.1,
+        "synopsis": "Alma, an autonomous self-learning robot with advanced combat capabilities, was created by two genius scientists, Enji Kamisato and Suzume Yobane, who developed Alma's artificial intelligence and robotics, respectively. After being mocked by their former acquaintances, the duo have worked together in order to show the world their true talents. But even though they cooperate in their work, the two scientists cannot seem to get along in their personal lives.\n\nHowever, despite their constant bickering, Enji and Suzume develop a glint of mutual affection—feelings that do not go unnoticed by their adorable robotic creation. Now curious, Alma starts to question the true nature of her creators' relationship. As she learns more about humanity from those around her, Alma's bonds with Enji and Suzume only grow stronger.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 11
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "alma-chan-wants-to-be-a-family-s1-ep1",
+            "number": 1,
+            "title": "Alma-chan wa Kazoku ni Naritai - T1 Ep 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/alma-chan-wa-kazoku-ni-naritai/01.mp4/index.m3u8&nocache1772409776587\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "alma-chan-wants-to-be-a-family-s1-ep2",
+            "number": 2,
+            "title": "Alma-chan wa Kazoku ni Naritai - T1 Ep 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/alma-chan-wa-kazoku-ni-naritai/02.mp4/index.m3u8&nocache1772409776587\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "alma-chan-wants-to-be-a-family-s1-ep3",
+            "number": 3,
+            "title": "Alma-chan wa Kazoku ni Naritai - T1 Ep 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/alma-chan-wa-kazoku-ni-naritai/03.mp4/index.m3u8&nocache1772409776587\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "alma-chan-wants-to-be-a-family-s1-ep4",
+            "number": 4,
+            "title": "Alma-chan wa Kazoku ni Naritai - T1 Ep 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/alma-chan-wa-kazoku-ni-naritai/04.mp4/index.m3u8&nocache1772409776587\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "alma-chan-wants-to-be-a-family-s1-ep5",
+            "number": 5,
+            "title": "Alma-chan wa Kazoku ni Naritai - T1 Ep 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/alma-chan-wa-kazoku-ni-naritai/05.mp4/index.m3u8&nocache1772409776587\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "alma-chan-wants-to-be-a-family-s1-ep6",
+            "number": 6,
+            "title": "Alma-chan wa Kazoku ni Naritai - T1 Ep 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/alma-chan-wa-kazoku-ni-naritai/06.mp4/index.m3u8&nocache1772409776587\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "alma-chan-wants-to-be-a-family-s1-ep7",
+            "number": 7,
+            "title": "Alma-chan wa Kazoku ni Naritai - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/alma-chan-wa-kazoku-ni-naritai/07.mp4/index.m3u8&nocache1772409776587\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "alma-chan-wants-to-be-a-family-s1-ep8",
+            "number": 8,
+            "title": "Alma-chan wa Kazoku ni Naritai - T1 Ep 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/alma-chan-wa-kazoku-ni-naritai/08.mp4/index.m3u8&nocache1772409776587\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "alma-chan-wants-to-be-a-family-s1-ep9",
+            "number": 9,
+            "title": "Alma-chan wa Kazoku ni Naritai - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/alma-chan-wa-kazoku-ni-naritai/09.mp4/index.m3u8&nocache1772409776587\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "alma-chan-wants-to-be-a-family-s1-ep10",
+            "number": 10,
+            "title": "Alma-chan wa Kazoku ni Naritai - T1 Ep 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/alma-chan-wa-kazoku-ni-naritai/10.mp4/index.m3u8&nocache1772409776587\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "alma-chan-wants-to-be-a-family-s1-ep11",
+            "number": 11,
+            "title": "Alma-chan wa Kazoku ni Naritai - T1 Ep 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/a/alma-chan-wa-kazoku-ni-naritai/11.mp4/index.m3u8&nocache1772409776587\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
   }
 ]

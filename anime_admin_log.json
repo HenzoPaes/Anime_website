@@ -530,5 +530,19 @@
     "title": "Adicionado: Another",
     "detail": "T1 · 13 eps · Série",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-02 12:57:23",
+    "kind": "git",
+    "title": "Git Push: +1 anime!",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   8af1913..8ef3cb1  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 12:59:19",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=jujutsu-kaisen",
+    "level": "info"
   }
 ]

@@ -5,7 +5,7 @@
   "siteTitle": "AnimeVerse — Seu portal de animes",
   "catalogTitle": "Todos os Animes",
   "showRandomButton": true,
-  "featuredBannerBlur": true,
+  "featuredBannerBlur": false,
   "pinnedGenres": [
     "Action"
   ],

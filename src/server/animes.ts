@@ -10,7 +10,7 @@ import axios from "axios";
 const ANIMES_DIR = path.join(process.cwd(), "Api", "Animes");
 const BACKUP_DIR = path.join(process.cwd(), "backups");
 const API_KEY = process.env.API_KEY || "dev-key";
-const REMOTE_URL = "https://raw.githubusercontent.com/HenzoPaes/Anime_website/refs/heads/main/output.json";
+const REMOTE_URL = "https://raw.githubusercontent.com/HenzoPaes/Anime_website/refs/heads/data/output.json";
 
 // Interface básica para tipagem
 interface Anime {

@@ -14105,5 +14105,317 @@
     "title": "Kaiju No. 8",
     "titleJapanese": "怪獣8号",
     "titleRomaji": "Kaiju No. 8"
+  },
+  {
+    "adultContent": false,
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GNVHKN933-backdrop_wide",
+    "coverImage": "https://myanimelist.net/images/anime/1093/145470l.jpg",
+    "genre": [
+      "Comedy",
+      "Romance"
+    ],
+    "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo",
+    "malId": 62811,
+    "recommended": true,
+    "seasons": [
+      {
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 12,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 12,
+        "episodeList": [
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo/01.mp4/index.m3u8&nocache1772502855031\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s1-ep1",
+            "number": 1,
+            "season": "1",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo - T1 Ep 1"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo/02.mp4/index.m3u8&nocache1772502855031\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s1-ep2",
+            "number": 2,
+            "season": "1",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo - T1 Ep 2"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo/03.mp4/index.m3u8&nocache1772502855031\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s1-ep3",
+            "number": 3,
+            "season": "1",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo - T1 Ep 3"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo/04.mp4/index.m3u8&nocache1772502855031\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s1-ep4",
+            "number": 4,
+            "season": "1",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo - T1 Ep 4"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo/05.mp4/index.m3u8&nocache1772502855031\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s1-ep5",
+            "number": 5,
+            "season": "1",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo - T1 Ep 5"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo/06.mp4/index.m3u8&nocache1772502855031\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s1-ep6",
+            "number": 6,
+            "season": "1",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo - T1 Ep 6"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo/07.mp4/index.m3u8&nocache1772502855031\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s1-ep7",
+            "number": 7,
+            "season": "1",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo - T1 Ep 7"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo/08.mp4/index.m3u8&nocache1772502855031\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s1-ep8",
+            "number": 8,
+            "season": "1",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo - T1 Ep 8"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo/09.mp4/index.m3u8&nocache1772502855031\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s1-ep9",
+            "number": 9,
+            "season": "1",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo - T1 Ep 9"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo/10.mp4/index.m3u8&nocache1772502855031\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s1-ep10",
+            "number": 10,
+            "season": "1",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo - T1 Ep 10"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo/11.mp4/index.m3u8&nocache1772502855031\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s1-ep11",
+            "number": 11,
+            "season": "1",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo - T1 Ep 11"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo/12.mp4/index.m3u8&nocache1772502855031\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s1-ep12",
+            "number": 12,
+            "season": "1",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo - T1 Ep 12"
+          }
+        ],
+        "episodes": 12,
+        "score": 0,
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "status": "paused",
+        "synopsis": "Third season of Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo.",
+        "trailer": "",
+        "year": 2026
+      },
+      {
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 12,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 12,
+        "episodeList": [
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-2/01.mp4/index.m3u8&nocache1772502891567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s2-ep1",
+            "number": 1,
+            "season": "2",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2 - T2 Ep 1"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-2/02.mp4/index.m3u8&nocache1772502891567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s2-ep2",
+            "number": 2,
+            "season": "2",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2 - T2 Ep 2"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-2/03.mp4/index.m3u8&nocache1772502891567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s2-ep3",
+            "number": 3,
+            "season": "2",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2 - T2 Ep 3"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-2/04.mp4/index.m3u8&nocache1772502891567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s2-ep4",
+            "number": 4,
+            "season": "2",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2 - T2 Ep 4"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-2/05.mp4/index.m3u8&nocache1772502891567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s2-ep5",
+            "number": 5,
+            "season": "2",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2 - T2 Ep 5"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-2/06.mp4/index.m3u8&nocache1772502891567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s2-ep6",
+            "number": 6,
+            "season": "2",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2 - T2 Ep 6"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-2/07.mp4/index.m3u8&nocache1772502891567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s2-ep7",
+            "number": 7,
+            "season": "2",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2 - T2 Ep 7"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-2/08.mp4/index.m3u8&nocache1772502891567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s2-ep8",
+            "number": 8,
+            "season": "2",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2 - T2 Ep 8"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-2/09.mp4/index.m3u8&nocache1772502891567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s2-ep9",
+            "number": 9,
+            "season": "2",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2 - T2 Ep 9"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-2/10.mp4/index.m3u8&nocache1772502891567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s2-ep10",
+            "number": 10,
+            "season": "2",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2 - T2 Ep 10"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-2/11.mp4/index.m3u8&nocache1772502891567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s2-ep11",
+            "number": 11,
+            "season": "2",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2 - T2 Ep 11"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-2/12.mp4/index.m3u8&nocache1772502891567\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-s2-ep12",
+            "number": 12,
+            "season": "2",
+            "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 2 - T2 Ep 12"
+          }
+        ],
+        "episodes": 12,
+        "score": 7.89,
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "status": "finished",
+        "synopsis": "Ever since Rentarou Aijou found out that he would meet a total of one hundred soulmates in high school, his life has been anything but boring. Now with six girlfriends—each with their own unique quirks—Rentarou has never been happier.\n\nThe group expands once again when Rentarou meets Kurumi Haraga, a girl with a never-ending appetite; and Mei Meido, the maid of the Hanazono family. As he encounters more of his soulmates, Rentarou has to juggle ways to date them all, since failure results in a grim fate. Fortunately, Rentarou has no shortage of love to give to each of his girlfriends!\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "year": 2025
+      }
+    ],
+    "studio": "Bibury Animation Studios",
+    "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "titleJapanese": "君のことが大大大大大好きな100人の彼女 3期",
+    "titleRomaji": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo"
   }
 ]

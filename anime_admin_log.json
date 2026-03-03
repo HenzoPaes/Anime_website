@@ -747,5 +747,19 @@
     "title": "Git Push: chore: update database [02/03/2026, 17:55]",
     "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   23c23b8..ff06770  data -> data",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-02 18:00:57",
+    "kind": "git",
+    "title": "Git Push: chore: update database [02/03/2026, 18:00]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   ff06770..6bcfc29  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-02 22:54:15",
+    "kind": "add",
+    "title": "Adicionado: Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "detail": "T1 · 12 eps · Série",
+    "level": "info"
   }
 ]

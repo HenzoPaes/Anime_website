@@ -11,11 +11,11 @@ export default defineConfig({
       manifest: {
         name: "AnimeVerse - Assista Animes Online",
         short_name: "AnimeVerse",
-        description: "Seu portal de animes legendados e dublados. Assista online ou offline!",
+        description: "Seu portal de animes legendados e dublados. Assista online!",
         theme_color: "#0f0f1a",
         background_color: "#0f0f1a",
         display: "standalone",
-        orientation: "portrait-primary",
+        orientation: "any",
         scope: "/",
         start_url: "/",
         lang: "pt-BR",

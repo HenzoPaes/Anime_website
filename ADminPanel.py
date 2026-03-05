@@ -160,8 +160,13 @@ def scrape_topanimes_ep(slug: str, ep: int, is_dub: bool = False,
             return {}
 
         if source_num is not None:
-            filtered = {k: v for k, v in sources.items() if k == source_num}
-            return filtered if filtered else {}
+            if source_num in sources:
+                return {source_num: sources[source_num]}
+            # Fonte selecionada não encontrada — usa a primeira disponível
+            first_k = sorted(sources)[0]
+            sources[first_k]["_fallback"] = True
+            sources[first_k]["_wanted"] = source_num
+            return {first_k: sources[first_k]}
 
         return sources
     except Exception:
@@ -663,9 +668,15 @@ def try_add_next_ep(anime: dict) -> list[str]:
                 has_sub = "sub" in embeds
                 has_dub = "dub" in embeds
                 tags = []
-                if sub_raw: tags.append(f"LEG({len(sub_raw)}src)")
-                if dub_raw: tags.append(f"DUB({len(dub_raw)}src)")
-                logs.append(f"    [TOPANIMES] ✅ Ep {next_e:02d} disponível! [{' '.join(tags)}]")
+                for label, res in (("LEG", sub_raw), ("DUB", dub_raw)):
+                    if not res: continue
+                    v = next(iter(res.values()))
+                    num = next(iter(res.keys()))
+                    if v.get("_fallback"):
+                        tags.append(f"{label}(#{num} fallback — #{v['_wanted']} ausente)")
+                    else:
+                        tags.append(f"{label}(#{num})")
+                logs.append(f"    [TOPANIMES] ✅ Ep {next_e:02d} disponível! [{' | '.join(tags)}]")
 
                 if next_e in ep_map:
                     ep_map[next_e].setdefault("embeds", {}).update(embeds)
@@ -1217,9 +1228,15 @@ def api_add_anime_full():
                 result_dub = scrape_topanimes_ep(ta_slug_dub or ta_slug_sub+"-dublado", ep_i, is_dub=False, source_num=ta_dub_src) if has_dub else {}
                 embeds  = topanimes_build_embeds(result_sub, result_dub)
                 tags    = []
-                if result_sub: tags.append("LEG")
-                if result_dub: tags.append("DUB")
-                wlog(f"  Ep {ep_i:02d}: [{' '.join(tags) or '❌'}]",
+                for label, res in (("LEG", result_sub), ("DUB", result_dub)):
+                    if not res: continue
+                    v = next(iter(res.values()))
+                    num = next(iter(res.keys()))
+                    if v.get("_fallback"):
+                        tags.append(f"{label}✅(#{num} fallback, #{v['_wanted']} ausente)")
+                    else:
+                        tags.append(f"{label}✅(#{num})")
+                wlog(f"  Ep {ep_i:02d}: [{' | '.join(tags) or '❌'}]",
                      "success" if embeds else "error")
                 ep_list.append({
                     "id":     f"{id_slug}-s{s_num}-ep{ep_i}",

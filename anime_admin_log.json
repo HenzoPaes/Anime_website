@@ -1027,5 +1027,47 @@
     "title": "Git Push: chore: update database [05/03/2026, 18:27]",
     "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   4f962e4..8ee0b87  data -> data",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-05 18:29:33",
+    "kind": "git",
+    "title": "Git Push: chore: update database [05/03/2026, 18:29]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   8ee0b87..3b36b02  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-05 18:31:21",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-05 18:31:21",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-05 18:31:22",
+    "kind": "stream",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-05 18:31:22",
+    "kind": "stream",
+    "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-05 20:03:54",
+    "kind": "add",
+    "title": "Adicionado: One Piece",
+    "detail": "T1 · 1155 eps · Série · AniVideo (one-piece)",
+    "level": "info"
   }
 ]

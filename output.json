@@ -1,199 +1,195 @@
 [
   {
-    "id": "chainsaw-man",
-    "title": "Chainsaw Man",
-    "titleRomaji": "Chainsaw Man",
-    "titleJapanese": "チェンソーマン",
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GVDHX8QNW-backdrop_wide",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171627-ZN9D7P46yHnw.png",
     "genre": [
       "Action",
-      "Fantasy"
+      "Drama",
+      "Horror",
+      "Romance",
+      "Supernatural"
     ],
-    "studio": "MAPPA",
-    "recommended": true,
+    "id": "chainsaw-man",
     "malId": 44511,
-    "coverImage": "https://cdn.myanimelist.net/images/anime/1806/126216l.jpg",
-    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GVDHX8QNW-backdrop_wide",
+    "recommended": true,
     "seasons": [
       {
-        "season": 1,
-        "seasonLabel": "1ª Temporada",
-        "year": 2022,
-        "episodes": 12,
-        "currentEpisode": 12,
-        "status": "finished",
-        "score": 8.43,
-        "synopsis": "Denji is robbed of a normal teenage life, left with nothing but his deadbeat father's overwhelming debt. His only companion is his pet, the chainsaw devil Pochita, with whom he slays devils for money that inevitably ends up in the yakuza's pockets. All Denji can do is dream of a good, simple life: one with delicious food and a beautiful girlfriend by his side. But an act of greedy betrayal by the yakuza leads to Denji's brutal, untimely death, crushing all hope of him ever achieving happiness.\n\nRemarkably, an old contract allows Pochita to merge with the deceased Denji and bestow devil powers on him, changing him into a hybrid able to transform his body parts into chainsaws. Because Denji's new abilities pose a significant risk to society, the Public Safety Bureau's elite devil hunter Makima takes him in, letting him live as long as he obeys her command. Guided by the promise of a content life alongside an attractive woman, Denji devotes everything and fights with all his might to make his naive dreams a reality.\n\n[Written by MAL Rewrite]",
-        "trailer": null,
         "audios": [
           {
-            "type": "sub",
-            "label": "Legendado",
             "available": true,
-            "episodesAvailable": 12
+            "episodesAvailable": 12,
+            "label": "Legendado",
+            "type": "sub"
           },
           {
-            "type": "dub",
-            "label": "Dublado",
             "available": true,
-            "episodesAvailable": 12
+            "episodesAvailable": 12,
+            "label": "Dublado",
+            "type": "dub"
           }
         ],
+        "currentEpisode": 12,
         "episodeList": [
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/01.mp4/index.m3u8&nocache1772229673955\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/01.mp4/index.m3u8&nocache1772229673955\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-s1-ep1",
             "number": 1,
-            "title": "Chainsaw Man - T1 Episódio 1",
             "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/01.mp4/index.m3u8&nocache1772229673955\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/01.mp4/index.m3u8&nocache1772229673955\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man - T1 Episódio 1"
           },
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/02.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/02.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-s1-ep2",
             "number": 2,
-            "title": "Chainsaw Man - T1 Episódio 2",
             "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/02.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/02.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man - T1 Episódio 2"
           },
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/03.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/03.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-s1-ep3",
             "number": 3,
-            "title": "Chainsaw Man - T1 Episódio 3",
             "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/03.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/03.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man - T1 Episódio 3"
           },
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/04.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/04.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-s1-ep4",
             "number": 4,
-            "title": "Chainsaw Man - T1 Episódio 4",
             "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/04.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/04.mp4/index.m3u8&nocache1772229673956\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man - T1 Episódio 4"
           },
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/05.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/05.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-s1-ep5",
             "number": 5,
-            "title": "Chainsaw Man - T1 Episódio 5",
             "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/05.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/05.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man - T1 Episódio 5"
           },
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/06.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/06.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-s1-ep6",
             "number": 6,
-            "title": "Chainsaw Man - T1 Episódio 6",
             "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/06.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/06.mp4/index.m3u8&nocache1772229673957\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man - T1 Episódio 6"
           },
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/07.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/07.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-s1-ep7",
             "number": 7,
-            "title": "Chainsaw Man - T1 Episódio 7",
             "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/07.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/07.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man - T1 Episódio 7"
           },
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/08.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/08.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-s1-ep8",
             "number": 8,
-            "title": "Chainsaw Man - T1 Episódio 8",
             "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/08.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/08.mp4/index.m3u8&nocache1772229673958\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man - T1 Episódio 8"
           },
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/09.mp4/index.m3u8&nocache1772229673959\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/09.mp4/index.m3u8&nocache1772229673959\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-s1-ep9",
             "number": 9,
-            "title": "Chainsaw Man - T1 Episódio 9",
             "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/09.mp4/index.m3u8&nocache1772229673959\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/09.mp4/index.m3u8&nocache1772229673959\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man - T1 Episódio 9"
           },
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/10.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/10.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-s1-ep10",
             "number": 10,
-            "title": "Chainsaw Man - T1 Episódio 10",
             "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/10.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/10.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man - T1 Episódio 10"
           },
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/11.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/11.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-s1-ep11",
             "number": 11,
-            "title": "Chainsaw Man - T1 Episódio 11",
             "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/11.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/11.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man - T1 Episódio 11"
           },
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/12.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/12.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-s1-ep12",
             "number": 12,
-            "title": "Chainsaw Man - T1 Episódio 12",
             "season": "1",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man/12.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-dublado/12.mp4/index.m3u8&nocache1772229673960\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man - T1 Episódio 12"
           }
-        ]
+        ],
+        "episodes": 12,
+        "score": 8.43,
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "status": "finished",
+        "synopsis": "Denji is robbed of a normal teenage life, left with nothing but his deadbeat father's overwhelming debt. His only companion is his pet, the chainsaw devil Pochita, with whom he slays devils for money that inevitably ends up in the yakuza's pockets. All Denji can do is dream of a good, simple life: one with delicious food and a beautiful girlfriend by his side. But an act of greedy betrayal by the yakuza leads to Denji's brutal, untimely death, crushing all hope of him ever achieving happiness.\n\nRemarkably, an old contract allows Pochita to merge with the deceased Denji and bestow devil powers on him, changing him into a hybrid able to transform his body parts into chainsaws. Because Denji's new abilities pose a significant risk to society, the Public Safety Bureau's elite devil hunter Makima takes him in, letting him live as long as he obeys her command. Guided by the promise of a content life alongside an attractive woman, Denji devotes everything and fights with all his might to make his naive dreams a reality.\n\n[Written by MAL Rewrite]",
+        "trailer": null,
+        "year": 2022
       },
       {
-        "season": 2,
-        "type": "movie",
-        "seasonLabel": "Chainsaw Man – Reze Arc",
-        "movieTitle": "Chainsaw Man – Reze Arc",
-        "tagline": "Amor pode ser mais perigoso que demônios.",
-        "year": 2025,
-        "episodes": 1,
-        "currentEpisode": 1,
-        "status": "finished",
-        "score": 9.5,
-        "runtime": 110,
-        "director": "Tatsuya Yoshihara",
-        "ageRating": "16+",
         "accentColor": "#FF2E2E",
-        "posterImage": "https://animesdigital.org/wp-content/uploads/2025/12/Chainsaw-Man-Movie-Reze-hen-categoria.jpg",
-        "stills": [
-          "https://imgs.search.brave.com/48cKGo3ot_LXA2M6blukodoGrGTRZJLucN-3EYu2olE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzEyL2Rlbmpp/LTMuanBnP3E9NzAm/Zml0PWNyb3Amdz04/MjUmZHByPTE",
-          "https://imgs.search.brave.com/CGd7fO36O5hYng0EzPmTebPXKUCnbzfS3kKu58R5k4Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzEwLzk0OTFm/OWZkLWQ3N2MtNDBl/YS1hYzI3LTdjY2Vm/ZjAxZDVjMy5qcGVn/P3E9NDkmZml0PWNy/b3Amdz04MjUmZHBy/PTI",
-          "https://images8.alphacoders.com/140/thumbbig-1403574.webp"
+        "ageRating": "16+",
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 1,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": true,
+            "episodesAvailable": 1,
+            "label": "Dublado",
+            "type": "dub"
+          }
         ],
+        "awards": [],
         "cast": [
           {
             "character": "Denji",
@@ -216,38 +212,47 @@
             "voiceDub": "Reagan Murdock"
           }
         ],
-        "awards": [],
-        "synopsis": "Denji conhece Reze, uma garota misteriosa que parece oferecer a ele algo simples e raro: carinho genuíno. Porém, por trás do romance surge um conflito explosivo envolvendo demônios, traição e escolhas impossíveis.",
-        "trailer": "https://www.youtube.com/watch?v=WSCSZFNsm4g",
-        "audios": [
-          {
-            "type": "sub",
-            "label": "Legendado",
-            "available": true,
-            "episodesAvailable": 1
-          },
-          {
-            "type": "dub",
-            "label": "Dublado",
-            "available": true,
-            "episodesAvailable": 1
-          }
-        ],
+        "currentEpisode": 1,
+        "director": "Tatsuya Yoshihara",
         "episodeList": [
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width='100%' height='100%' src='https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-movie-reze-hen-dublado/01.mp4/index.m3u8&nocache1772220374' frameborder='0' allowfullscreen></iframe>",
+              "sub": "<iframe width='100%' height='100%' src='https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-movie-reze-hen/01.mp4/index.m3u8&nocache1772220374' frameborder='0' allowfullscreen></iframe>"
+            },
             "id": "chainsaw-man-reze-filme",
             "number": 1,
-            "title": "Chainsaw Man – Reze Arc (Mini-review)",
             "season": "2",
-            "embeds": {
-              "sub": "<iframe width='100%' height='100%' src='https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-movie-reze-hen/01.mp4/index.m3u8&nocache1772220374' frameborder='0' allowfullscreen></iframe>",
-              "dub": "<iframe width='100%' height='100%' src='https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/c/chainsaw-man-movie-reze-hen-dublado/01.mp4/index.m3u8&nocache1772220374' frameborder='0' allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Chainsaw Man – Reze Arc (Mini-review)"
           }
-        ]
+        ],
+        "episodes": 1,
+        "movieTitle": "Chainsaw Man – Reze Arc",
+        "posterImage": "https://animesdigital.org/wp-content/uploads/2025/12/Chainsaw-Man-Movie-Reze-hen-categoria.jpg",
+        "runtime": 110,
+        "score": 9.5,
+        "season": 2,
+        "seasonLabel": "Chainsaw Man – Reze Arc",
+        "status": "finished",
+        "stills": [
+          "https://imgs.search.brave.com/48cKGo3ot_LXA2M6blukodoGrGTRZJLucN-3EYu2olE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzEyL2Rlbmpp/LTMuanBnP3E9NzAm/Zml0PWNyb3Amdz04/MjUmZHByPTE",
+          "https://imgs.search.brave.com/CGd7fO36O5hYng0EzPmTebPXKUCnbzfS3kKu58R5k4Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzEwLzk0OTFm/OWZkLWQ3N2MtNDBl/YS1hYzI3LTdjY2Vm/ZjAxZDVjMy5qcGVn/P3E9NDkmZml0PWNy/b3Amdz04MjUmZHBy/PTI",
+          "https://images8.alphacoders.com/140/thumbbig-1403574.webp"
+        ],
+        "synopsis": "Denji conhece Reze, uma garota misteriosa que parece oferecer a ele algo simples e raro: carinho genuíno. Porém, por trás do romance surge um conflito explosivo envolvendo demônios, traição e escolhas impossíveis.",
+        "tagline": "Amor pode ser mais perigoso que demônios.",
+        "trailer": "https://www.youtube.com/watch?v=WSCSZFNsm4g",
+        "type": "movie",
+        "year": 2025
       }
-    ]
+    ],
+    "studio": "MAPPA",
+    "title": "Chainsaw Man: Reze-hen",
+    "titleJapanese": "チェンソーマン レゼ篇",
+    "titleRomaji": "Chainsaw Man: Reze-hen",
+    "adultContent": true,
+    "anilistId": 171627
   },
   {
     "adultContent": true,
@@ -2580,376 +2585,379 @@
     ]
   },
   {
-    "id": "made-in-abyss",
-    "title": "Made in Abyss",
-    "titleRomaji": "Made in Abyss",
-    "titleJapanese": "メイドインアビス",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97986-C55UnbJKB7ZF.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97986-TQ7dCgbS3y5s.jpg",
     "genre": [
       "Adventure",
       "Drama",
       "Fantasy",
+      "Horror",
       "Mystery",
       "Sci-Fi"
     ],
-    "studio": "Kinema Citrus",
-    "recommended": true,
+    "id": "made-in-abyss",
     "malId": 34599,
-    "coverImage": "https://cdn.myanimelist.net/images/anime/6/86733l.jpg",
-    "bannerImage": "https://imgs.search.brave.com/dlMfDnCGbhq_a5eMFpGBRjjcFR0hfbolNaElk6Y2iQM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9teWhv/dHBvc3RlcnMuY29t/L2Nkbi9zaG9wL3By/b2R1Y3RzL21MMDIz/OV8xMDI0eDEwMjQu/anBnP3Y9MTc0ODUz/ODEyNg",
+    "recommended": true,
     "seasons": [
       {
-        "season": 1,
-        "seasonLabel": "1ª Temporada",
-        "year": 2017,
-        "episodes": 13,
-        "currentEpisode": 13,
-        "status": "finished",
-        "score": 8.63,
-        "synopsis": "The Abyss—a gaping chasm stretching down into the depths of the earth, filled with mysterious creatures and relics from a time long past. How did it come to be? What lies at the bottom? Countless brave individuals, known as Divers, have sought to solve these mysteries of the Abyss, fearlessly descending into its darkest realms. The best and bravest of the Divers, the White Whistles, are hailed as legends by those who remain on the surface.\n\nRiko, daughter of the missing White Whistle Lyza the Annihilator, aspires to become like her mother and explore the furthest reaches of the Abyss. However, just a novice Red Whistle herself, she is only permitted to roam its most upper layer. Even so, Riko has a chance encounter with a mysterious robot with the appearance of an ordinary young boy. She comes to name him Reg, and he has no recollection of the events preceding his discovery. Certain that the technology to create Reg must come from deep within the Abyss, the two decide to venture forth into the chasm to recover his memories and see the bottom of the great pit with their own eyes. However, they know not of the harsh reality that is the true existence of the Abyss.\n\n[Written by MAL Rewrite]",
-        "trailer": "",
         "audios": [
           {
-            "type": "sub",
-            "label": "Legendado",
             "available": true,
-            "episodesAvailable": 13
+            "episodesAvailable": 13,
+            "label": "Legendado",
+            "type": "sub"
           },
           {
-            "type": "dub",
-            "label": "Dublado",
             "available": false,
-            "episodesAvailable": 0
+            "episodesAvailable": 0,
+            "label": "Dublado",
+            "type": "dub"
           }
         ],
+        "currentEpisode": 13,
         "episodeList": [
           {
-            "id": "made-in-abyss-s1-ep1",
-            "number": 1,
-            "title": "Made in Abyss - T1 Ep 1",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/01.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s1-ep1",
+            "number": 1,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 1"
           },
           {
-            "id": "made-in-abyss-s1-ep2",
-            "number": 2,
-            "title": "Made in Abyss - T1 Ep 2",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/02.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s1-ep2",
+            "number": 2,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 2"
           },
           {
-            "id": "made-in-abyss-s1-ep3",
-            "number": 3,
-            "title": "Made in Abyss - T1 Ep 3",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/03.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s1-ep3",
+            "number": 3,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 3"
           },
           {
-            "id": "made-in-abyss-s1-ep4",
-            "number": 4,
-            "title": "Made in Abyss - T1 Ep 4",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/04.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s1-ep4",
+            "number": 4,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 4"
           },
           {
-            "id": "made-in-abyss-s1-ep5",
-            "number": 5,
-            "title": "Made in Abyss - T1 Ep 5",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/05.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s1-ep5",
+            "number": 5,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 5"
           },
           {
-            "id": "made-in-abyss-s1-ep6",
-            "number": 6,
-            "title": "Made in Abyss - T1 Ep 6",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/06.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s1-ep6",
+            "number": 6,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 6"
           },
           {
-            "id": "made-in-abyss-s1-ep7",
-            "number": 7,
-            "title": "Made in Abyss - T1 Ep 7",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/07.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s1-ep7",
+            "number": 7,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 7"
           },
           {
-            "id": "made-in-abyss-s1-ep8",
-            "number": 8,
-            "title": "Made in Abyss - T1 Ep 8",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/08.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s1-ep8",
+            "number": 8,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 8"
           },
           {
-            "id": "made-in-abyss-s1-ep9",
-            "number": 9,
-            "title": "Made in Abyss - T1 Ep 9",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/09.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s1-ep9",
+            "number": 9,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 9"
           },
           {
-            "id": "made-in-abyss-s1-ep10",
-            "number": 10,
-            "title": "Made in Abyss - T1 Ep 10",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/10.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s1-ep10",
+            "number": 10,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 10"
           },
           {
-            "id": "made-in-abyss-s1-ep11",
-            "number": 11,
-            "title": "Made in Abyss - T1 Ep 11",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/11.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s1-ep11",
+            "number": 11,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 11"
           },
           {
-            "id": "made-in-abyss-s1-ep12",
-            "number": 12,
-            "title": "Made in Abyss - T1 Ep 12",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/12.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s1-ep12",
+            "number": 12,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 12"
           },
           {
-            "id": "made-in-abyss-s1-ep13",
-            "number": 13,
-            "title": "Made in Abyss - T1 Ep 13",
-            "season": "1",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss/13.mp4/index.m3u8&nocache1772305769941\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
-          }
-        ]
-      },
-      {
-        "season": 2,
-        "seasonLabel": "2ª Temporada",
-        "year": 2022,
-        "episodes": 12,
-        "currentEpisode": 12,
-        "status": "finished",
-        "score": 8.63,
-        "synopsis": "The Abyss—a gaping chasm stretching down into the depths of the earth, filled with mysterious creatures and relics from a time long past. How did it come to be? What lies at the bottom? Countless brave individuals, known as Divers, have sought to solve these mysteries of the Abyss, fearlessly descending into its darkest realms. The best and bravest of the Divers, the White Whistles, are hailed as legends by those who remain on the surface.\n\nRiko, daughter of the missing White Whistle Lyza the Annihilator, aspires to become like her mother and explore the furthest reaches of the Abyss. However, just a novice Red Whistle herself, she is only permitted to roam its most upper layer. Even so, Riko has a chance encounter with a mysterious robot with the appearance of an ordinary young boy. She comes to name him Reg, and he has no recollection of the events preceding his discovery. Certain that the technology to create Reg must come from deep within the Abyss, the two decide to venture forth into the chasm to recover his memories and see the bottom of the great pit with their own eyes. However, they know not of the harsh reality that is the true existence of the Abyss.\n\n[Written by MAL Rewrite]",
-        "trailer": "",
-        "audios": [
-          {
-            "type": "sub",
-            "label": "Legendado",
-            "available": true,
-            "episodesAvailable": 12
-          },
-          {
-            "type": "dub",
-            "label": "Dublado",
-            "available": false,
-            "episodesAvailable": 0
+            "id": "made-in-abyss-s1-ep13",
+            "number": 13,
+            "season": "1",
+            "title": "Made in Abyss - T1 Ep 13"
           }
         ],
+        "episodes": 13,
+        "score": 8.63,
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "status": "finished",
+        "synopsis": "The Abyss—a gaping chasm stretching down into the depths of the earth, filled with mysterious creatures and relics from a time long past. How did it come to be? What lies at the bottom? Countless brave individuals, known as Divers, have sought to solve these mysteries of the Abyss, fearlessly descending into its darkest realms. The best and bravest of the Divers, the White Whistles, are hailed as legends by those who remain on the surface.\n\nRiko, daughter of the missing White Whistle Lyza the Annihilator, aspires to become like her mother and explore the furthest reaches of the Abyss. However, just a novice Red Whistle herself, she is only permitted to roam its most upper layer. Even so, Riko has a chance encounter with a mysterious robot with the appearance of an ordinary young boy. She comes to name him Reg, and he has no recollection of the events preceding his discovery. Certain that the technology to create Reg must come from deep within the Abyss, the two decide to venture forth into the chasm to recover his memories and see the bottom of the great pit with their own eyes. However, they know not of the harsh reality that is the true existence of the Abyss.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "year": 2017
+      },
+      {
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 12,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 12,
         "episodeList": [
           {
-            "id": "made-in-abyss-s2-ep1",
-            "number": 1,
-            "title": "Made in Abyss - T2 Ep 1",
-            "season": "2",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-2/01.mp4/index.m3u8&nocache1772305791787\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s2-ep1",
+            "number": 1,
+            "season": "2",
+            "title": "Made in Abyss - T2 Ep 1"
           },
           {
-            "id": "made-in-abyss-s2-ep2",
-            "number": 2,
-            "title": "Made in Abyss - T2 Ep 2",
-            "season": "2",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-2/02.mp4/index.m3u8&nocache1772305791788\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s2-ep2",
+            "number": 2,
+            "season": "2",
+            "title": "Made in Abyss - T2 Ep 2"
           },
           {
-            "id": "made-in-abyss-s2-ep3",
-            "number": 3,
-            "title": "Made in Abyss - T2 Ep 3",
-            "season": "2",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-2/03.mp4/index.m3u8&nocache1772305791788\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s2-ep3",
+            "number": 3,
+            "season": "2",
+            "title": "Made in Abyss - T2 Ep 3"
           },
           {
-            "id": "made-in-abyss-s2-ep4",
-            "number": 4,
-            "title": "Made in Abyss - T2 Ep 4",
-            "season": "2",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-2/04.mp4/index.m3u8&nocache1772305791788\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s2-ep4",
+            "number": 4,
+            "season": "2",
+            "title": "Made in Abyss - T2 Ep 4"
           },
           {
-            "id": "made-in-abyss-s2-ep5",
-            "number": 5,
-            "title": "Made in Abyss - T2 Ep 5",
-            "season": "2",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-2/05.mp4/index.m3u8&nocache1772305791788\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s2-ep5",
+            "number": 5,
+            "season": "2",
+            "title": "Made in Abyss - T2 Ep 5"
           },
           {
-            "id": "made-in-abyss-s2-ep6",
-            "number": 6,
-            "title": "Made in Abyss - T2 Ep 6",
-            "season": "2",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-2/06.mp4/index.m3u8&nocache1772305791788\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s2-ep6",
+            "number": 6,
+            "season": "2",
+            "title": "Made in Abyss - T2 Ep 6"
           },
           {
-            "id": "made-in-abyss-s2-ep7",
-            "number": 7,
-            "title": "Made in Abyss - T2 Ep 7",
-            "season": "2",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-2/07.mp4/index.m3u8&nocache1772305791788\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s2-ep7",
+            "number": 7,
+            "season": "2",
+            "title": "Made in Abyss - T2 Ep 7"
           },
           {
-            "id": "made-in-abyss-s2-ep8",
-            "number": 8,
-            "title": "Made in Abyss - T2 Ep 8",
-            "season": "2",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-2/08.mp4/index.m3u8&nocache1772305791788\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s2-ep8",
+            "number": 8,
+            "season": "2",
+            "title": "Made in Abyss - T2 Ep 8"
           },
           {
-            "id": "made-in-abyss-s2-ep9",
-            "number": 9,
-            "title": "Made in Abyss - T2 Ep 9",
-            "season": "2",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-2/09.mp4/index.m3u8&nocache1772305791788\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s2-ep9",
+            "number": 9,
+            "season": "2",
+            "title": "Made in Abyss - T2 Ep 9"
           },
           {
-            "id": "made-in-abyss-s2-ep10",
-            "number": 10,
-            "title": "Made in Abyss - T2 Ep 10",
-            "season": "2",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-2/10.mp4/index.m3u8&nocache1772305791788\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s2-ep10",
+            "number": 10,
+            "season": "2",
+            "title": "Made in Abyss - T2 Ep 10"
           },
           {
-            "id": "made-in-abyss-s2-ep11",
-            "number": 11,
-            "title": "Made in Abyss - T2 Ep 11",
-            "season": "2",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-2/11.mp4/index.m3u8&nocache1772305791788\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s2-ep11",
+            "number": 11,
+            "season": "2",
+            "title": "Made in Abyss - T2 Ep 11"
           },
           {
-            "id": "made-in-abyss-s2-ep12",
-            "number": 12,
-            "title": "Made in Abyss - T2 Ep 12",
-            "season": "2",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-2/12.mp4/index.m3u8&nocache1772305791788\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
-          }
-        ]
-      },
-      {
-        "season": 3,
-        "seasonLabel": "Made in Abyss Movie 1: Tabidachi no Yoake",
-        "year": 2019,
-        "episodes": 1,
-        "currentEpisode": 1,
-        "status": "finished",
-        "score": 8.63,
-        "synopsis": "The Abyss—a gaping chasm stretching down into the depths of the earth, filled with mysterious creatures and relics from a time long past. How did it come to be? What lies at the bottom? Countless brave individuals, known as Divers, have sought to solve these mysteries of the Abyss, fearlessly descending into its darkest realms. The best and bravest of the Divers, the White Whistles, are hailed as legends by those who remain on the surface.\n\nRiko, daughter of the missing White Whistle Lyza the Annihilator, aspires to become like her mother and explore the furthest reaches of the Abyss. However, just a novice Red Whistle herself, she is only permitted to roam its most upper layer. Even so, Riko has a chance encounter with a mysterious robot with the appearance of an ordinary young boy. She comes to name him Reg, and he has no recollection of the events preceding his discovery. Certain that the technology to create Reg must come from deep within the Abyss, the two decide to venture forth into the chasm to recover his memories and see the bottom of the great pit with their own eyes. However, they know not of the harsh reality that is the true existence of the Abyss.\n\n[Written by MAL Rewrite]",
-        "trailer": "",
-        "audios": [
-          {
-            "type": "sub",
-            "label": "Legendado",
-            "available": true,
-            "episodesAvailable": 1
-          },
-          {
-            "type": "dub",
-            "label": "Dublado",
-            "available": false,
-            "episodesAvailable": 0
+            "id": "made-in-abyss-s2-ep12",
+            "number": 12,
+            "season": "2",
+            "title": "Made in Abyss - T2 Ep 12"
           }
         ],
+        "episodes": 12,
+        "score": 8.63,
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "status": "finished",
+        "synopsis": "The Abyss—a gaping chasm stretching down into the depths of the earth, filled with mysterious creatures and relics from a time long past. How did it come to be? What lies at the bottom? Countless brave individuals, known as Divers, have sought to solve these mysteries of the Abyss, fearlessly descending into its darkest realms. The best and bravest of the Divers, the White Whistles, are hailed as legends by those who remain on the surface.\n\nRiko, daughter of the missing White Whistle Lyza the Annihilator, aspires to become like her mother and explore the furthest reaches of the Abyss. However, just a novice Red Whistle herself, she is only permitted to roam its most upper layer. Even so, Riko has a chance encounter with a mysterious robot with the appearance of an ordinary young boy. She comes to name him Reg, and he has no recollection of the events preceding his discovery. Certain that the technology to create Reg must come from deep within the Abyss, the two decide to venture forth into the chasm to recover his memories and see the bottom of the great pit with their own eyes. However, they know not of the harsh reality that is the true existence of the Abyss.\n\n[Written by MAL Rewrite]",
+        "trailer": "",
+        "year": 2022
+      },
+      {
+        "accentColor": "#FF2E2E",
+        "ageRating": "",
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 1,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "awards": [],
+        "cast": [],
+        "currentEpisode": 1,
+        "director": "",
         "episodeList": [
           {
-            "id": "made-in-abyss-s3-ep1",
-            "number": 1,
-            "title": "Made in Abyss - T3 Ep 1",
-            "season": "3",
+            "embedCredit": "api.anivideo.net",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/made-in-abyss-filmes/01.mp4/index.m3u8&nocache1772305830684\" frameborder=\"0\" allowfullscreen></iframe>"
             },
-            "embedCredit": "api.anivideo.net"
+            "id": "made-in-abyss-s3-ep1",
+            "number": 1,
+            "season": "3",
+            "title": "Made in Abyss - T3 Ep 1"
           }
         ],
-        "type": "movie",
+        "episodes": 1,
         "movieTitle": "Made in Abyss",
-        "tagline": "",
-        "director": "",
-        "ageRating": "",
-        "accentColor": "#FF2E2E",
         "posterImage": "",
-        "stills": [],
-        "awards": [],
         "runtime": 0,
-        "cast": []
+        "score": 8.63,
+        "season": 3,
+        "seasonLabel": "Made in Abyss Movie 1: Tabidachi no Yoake",
+        "status": "finished",
+        "stills": [],
+        "synopsis": "The Abyss—a gaping chasm stretching down into the depths of the earth, filled with mysterious creatures and relics from a time long past. How did it come to be? What lies at the bottom? Countless brave individuals, known as Divers, have sought to solve these mysteries of the Abyss, fearlessly descending into its darkest realms. The best and bravest of the Divers, the White Whistles, are hailed as legends by those who remain on the surface.\n\nRiko, daughter of the missing White Whistle Lyza the Annihilator, aspires to become like her mother and explore the furthest reaches of the Abyss. However, just a novice Red Whistle herself, she is only permitted to roam its most upper layer. Even so, Riko has a chance encounter with a mysterious robot with the appearance of an ordinary young boy. She comes to name him Reg, and he has no recollection of the events preceding his discovery. Certain that the technology to create Reg must come from deep within the Abyss, the two decide to venture forth into the chasm to recover his memories and see the bottom of the great pit with their own eyes. However, they know not of the harsh reality that is the true existence of the Abyss.\n\n[Written by MAL Rewrite]",
+        "tagline": "",
+        "trailer": "",
+        "type": "movie",
+        "year": 2019
       }
-    ]
+    ],
+    "studio": "Kinema Citrus",
+    "title": "Made in Abyss",
+    "titleJapanese": "メイドインアビス",
+    "titleRomaji": "Made in Abyss",
+    "adultContent": true,
+    "anilistId": 97986
   },
   {
     "id": "ansatsu-kyoushitsu",
@@ -7727,12 +7735,14 @@
     ]
   },
   {
-    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/G4PH0WXVJ-backdrop_wide",
-    "coverImage": "https://cdn.myanimelist.net/images/anime/1697/151793l.jpg",
+    "adultContent": true,
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/177937-jty4x7qBWG5n.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177937-Tzgg6rAdhCoH.jpg",
     "genre": [
       "Action",
-      "Award Winning",
-      "Comedy"
+      "Comedy",
+      "Slice of Life",
+      "Supernatural"
     ],
     "id": "spy-x-family",
     "malId": 50265,
@@ -8424,15 +8434,15 @@
             "title": "Spy x Family Season 3 - T4 Ep 12"
           },
           {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-3-dublado/13.mp4/index.m3u8&nocache1772479797045\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-3/13.mp4/index.m3u8&nocache1772479796435\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
             "id": "spy-x-family-s4-ep13",
             "number": 13,
-            "title": "Spy x Family - T4 Ep 13",
             "season": "4",
-            "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-3/13.mp4/index.m3u8&nocache1772479796435\" frameborder=\"0\" allowfullscreen></iframe>",
-              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/spy-x-family-3-dublado/13.mp4/index.m3u8&nocache1772479797045\" frameborder=\"0\" allowfullscreen></iframe>"
-            },
-            "embedCredit": "api.anivideo.net"
+            "title": "Spy x Family - T4 Ep 13"
           }
         ],
         "episodes": 13,
@@ -8445,11 +8455,11 @@
         "year": 2025
       }
     ],
-    "studio": "Wit Studio",
-    "title": "Spy x Family",
-    "titleJapanese": "SPY×FAMILY",
-    "titleRomaji": "Spy x Family",
-    "adultContent": true
+    "studio": "WIT STUDIO",
+    "title": "SPY×FAMILY Season 3",
+    "titleJapanese": "SPY×FAMILY Season 3",
+    "titleRomaji": "SPY×FAMILY Season 3",
+    "anilistId": 177937
   },
   {
     "id": "dandadan",

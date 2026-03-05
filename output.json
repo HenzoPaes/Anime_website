@@ -250,7 +250,9 @@
     ]
   },
   {
-    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/99423-OQfem628gdxD.jpg",
+    "adultContent": true,
+    "anilistId": 99423,
+    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920,blur=0/keyart/GY8VEQ95Y-backdrop_wide",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx99423-8MBxtwCeHf8B.png",
     "genre": [
       "Action",
@@ -559,13 +561,13 @@
     "studio": "TRIGGER",
     "title": "Darling in the Franxx",
     "titleJapanese": "ダーリン・イン・ザ・フランキス",
-    "titleRomaji": "Darling in the Franxx",
-    "adultContent": true,
-    "anilistId": 99423
+    "titleRomaji": "Darling in the Franxx"
   },
   {
-    "bannerImage": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=100,width=1920,blur=0/keyart/GRDV0019R-backdrop_wide",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-LHBAeoZDIsnF.jpg",
+    "adultContent": true,
+    "anilistId": 172463,
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/172463-3J2o3qQZadFJ.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172463-LnXqHzt74SJL.jpg",
     "genre": [
       "Action",
       "Drama",
@@ -1349,11 +1351,9 @@
       }
     ],
     "studio": "MAPPA",
-    "title": "Jujutsu Kaisen",
-    "titleJapanese": "呪術廻戦",
-    "titleRomaji": "Jujutsu Kaisen",
-    "adultContent": true,
-    "anilistId": 113415
+    "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+    "titleJapanese": "呪術廻戦 死滅回游 前編",
+    "titleRomaji": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen"
   },
   {
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184951-s8Lg2muPBhdX.jpg",

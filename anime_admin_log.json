@@ -824,5 +824,54 @@
     "title": "Adicionado: Black Clover",
     "detail": "T1 · 170 eps · Série",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-05 07:13:09",
+    "kind": "git",
+    "title": "Git Push: chore: update database [05/03/2026, 07:13]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   6bc3bfd..ea22509  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-05 12:13:50",
+    "kind": "add",
+    "title": "Adicionado: Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "detail": "T1 · 13 eps · Série · AnimesOnlineCC (seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai)",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-05 13:01:50",
+    "kind": "delete",
+    "title": "Removido: Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "detail": "",
+    "level": "warning"
+  },
+  {
+    "ts": "2026-03-05 13:04:02",
+    "kind": "add",
+    "title": "Adicionado: Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "detail": "T1 · 13 eps · Série · AnimesOnlineCC (seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai)",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-05 13:06:19",
+    "kind": "delete",
+    "title": "Removido: Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "detail": "",
+    "level": "warning"
+  },
+  {
+    "ts": "2026-03-05 13:18:00",
+    "kind": "add",
+    "title": "Adicionado: Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "detail": "T1 · 13 eps · Série · AnimesOnlineCC (seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai)",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-05 13:29:37",
+    "kind": "add",
+    "title": "Adicionado: High Score Girl",
+    "detail": "T1 · 12 eps · Série · AnimesOnlineCC (hi-score-girl)",
+    "level": "info"
   }
 ]

@@ -93,14 +93,14 @@ _AONLINECC_HEADERS = {
     "Accept-Language": "pt-BR,pt;q=0.9",
 }
 
-def aonlinecc_ep_url(slug: str, season: int, ep: int) -> str:
+def aonlinecc_ep_url(slug: str, season: int, ep: int, inc_season_num: bool = True) -> str:
     """
-    Temporada 1 → /episodio/{slug}-episodio-1/
-    Temporada 2 → /episodio/{slug}-2-episodio-1/
+    inc_season_num=True  → /episodio/{slug}-2-episodio-6/
+    inc_season_num=False → /episodio/{slug}-episodio-6/
     """
-    if season <= 1:
-        return f"{AONLINECC_BASE}/episodio/{slug}-episodio-{ep}/"
-    return f"{AONLINECC_BASE}/episodio/{slug}-{season}-episodio-{ep}/"
+    if inc_season_num and season > 1:
+        return f"{AONLINECC_BASE}/episodio/{slug}-{season}-episodio-{ep}/"
+    return f"{AONLINECC_BASE}/episodio/{slug}-episodio-{ep}/"
 
 def _normalize_iframe(raw: str) -> str:
     tag = raw.strip()
@@ -112,7 +112,7 @@ def _normalize_iframe(raw: str) -> str:
         tag = re.sub(r'\s*/?>$', '></iframe>', tag)
     return tag
 
-def scrape_aonlinecc_ep(slug: str, season: int, ep: int) -> dict | None:
+def scrape_aonlinecc_ep(slug: str, season: int, ep: int, inc_season_num: bool = True) -> dict | None:
     """
     Retorna embeds do episódio ou None se não encontrado.
 
@@ -120,7 +120,7 @@ def scrape_aonlinecc_ep(slug: str, season: int, ep: int) -> dict | None:
       • option-1 somente         → Legendado
       • option-1 + option-2      → option-1 = Dublado, option-2 = Legendado
     """
-    url = aonlinecc_ep_url(slug, season, ep)
+    url = aonlinecc_ep_url(slug, season, ep, inc_season_num)
     try:
         r = requests.get(url, timeout=15, headers=_AONLINECC_HEADERS, allow_redirects=True)
         if r.status_code >= 400:
@@ -155,70 +155,132 @@ def scrape_aonlinecc_ep(slug: str, season: int, ep: int) -> dict | None:
     except Exception:
         return None
 
-def aonlinecc_ep_exists(slug: str, season: int, ep: int) -> bool:
-    url = aonlinecc_ep_url(slug, season, ep)
+def aonlinecc_ep_exists(slug: str, season: int, ep: int, inc_season_num: bool = True) -> bool:
+    url = aonlinecc_ep_url(slug, season, ep, inc_season_num)
     try:
         r = requests.head(url, timeout=8, headers=_AONLINECC_HEADERS, allow_redirects=True)
         return r.status_code < 400
     except Exception:
         return False
 
-# ── MAL ───────────────────────────────────────────────────────────────────────
+# ── AniList ───────────────────────────────────────────────────────────────────
 
-def fetch_mal_info(query: str) -> dict | None:
-    url = f"https://api.jikan.moe/v4/anime?q={query}&limit=1"
-    try:
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
-        data = response.json()
-        if data.get('data'):
-            return data['data'][0]
-    except:
-        pass
-    return None
+ANILIST_URL = "https://graphql.anilist.co"
 
-def fetch_mal_by_id(mal_id: int) -> dict | None:
+_ANILIST_FIELDS = """
+  id
+  title { romaji english native }
+  genres
+  studios(isMain: true) { nodes { name } }
+  coverImage { extraLarge large }
+  bannerImage
+  averageScore
+  description(asHtml: false)
+  trailer { id site }
+  startDate { year }
+  episodes
+  duration
+  status
+  isAdult
+  format
+"""
+
+def _anilist_gql(query: str, variables: dict) -> dict | None:
     try:
-        r = requests.get(f"https://api.jikan.moe/v4/anime/{mal_id}", timeout=12)
+        r = requests.post(
+            ANILIST_URL,
+            json={"query": query, "variables": variables},
+            headers={"Content-Type": "application/json", "Accept": "application/json"},
+            timeout=12,
+        )
         r.raise_for_status()
-        return r.json().get("data")
-    except:
+        data = r.json()
+        if data.get("errors"):
+            return None
+        return data.get("data")
+    except Exception:
         return None
 
-def mal_to_season_data(mal: dict, s_num: int, is_movie=False) -> dict:
-    title_r  = mal.get('title', '')
-    title_j  = mal.get('title_japanese', title_r)
-    genres   = [g['name'] for g in mal.get('genres', [])]
-    studios  = [s['name'] for s in mal.get('studios', [])]
-    studio   = studios[0] if studios else "Desconhecido"
-    mal_id   = mal.get('mal_id', 0)
-    cover    = mal.get('images', {}).get('jpg', {}).get('large_image_url', '')
-    score    = float(mal.get('score') or 0.0)
-    synopsis = mal.get('synopsis', 'Sem sinopse disponível.')
-    trailer  = (mal.get('trailer') or {}).get('url') or ''
-    year     = mal.get('year') or datetime.now().year
-    eps_tot  = int(mal.get('episodes') or 1)
-    _s = mal.get('status', '')
-    if _s == "Finished Airing":
-        status = "finished"
-    elif _s == "Currently Airing":
-        status = "ongoing"
-    elif _s in ("Not yet aired", "On Hiatus"):
-        status = "paused"
+def fetch_anilist_info(query: str) -> dict | None:
+    gql = f"""
+    query ($search: String) {{
+      Media(search: $search, type: ANIME, sort: SEARCH_MATCH) {{
+        {_ANILIST_FIELDS}
+      }}
+    }}
+    """
+    data = _anilist_gql(gql, {"search": query})
+    return data["Media"] if data and data.get("Media") else None
+
+def fetch_anilist_by_id(al_id: int) -> dict | None:
+    gql = f"""
+    query ($id: Int) {{
+      Media(id: $id, type: ANIME) {{
+        {_ANILIST_FIELDS}
+      }}
+    }}
+    """
+    data = _anilist_gql(gql, {"id": al_id})
+    return data["Media"] if data and data.get("Media") else None
+
+def fetch_anilist_search_multi(query: str, per_page: int = 8) -> list[dict]:
+    """Retorna lista de resultados para o buscador do painel."""
+    gql = f"""
+    query ($search: String, $perPage: Int) {{
+      Page(perPage: $perPage) {{
+        media(search: $search, type: ANIME, sort: SEARCH_MATCH) {{
+          {_ANILIST_FIELDS}
+        }}
+      }}
+    }}
+    """
+    data = _anilist_gql(gql, {"search": query, "perPage": per_page})
+    if data and data.get("Page", {}).get("media"):
+        return data["Page"]["media"]
+    return []
+
+def _al_status(status: str) -> str:
+    return {
+        "FINISHED":          "finished",
+        "RELEASING":         "ongoing",
+        "NOT_YET_RELEASED":  "paused",
+        "CANCELLED":         "paused",
+        "HIATUS":            "paused",
+    }.get(status or "", "ongoing")
+
+def anilist_to_season_data(media: dict, s_num: int, is_movie: bool = False) -> dict:
+    titles   = media.get("title") or {}
+    title_r  = titles.get("romaji") or titles.get("english") or ""
+    title_j  = titles.get("native") or title_r
+    genres   = media.get("genres") or []
+    nodes    = (media.get("studios") or {}).get("nodes") or []
+    studio   = nodes[0]["name"] if nodes else "Desconhecido"
+    al_id    = media.get("id") or 0
+    cover    = (media.get("coverImage") or {}).get("extraLarge") or \
+               (media.get("coverImage") or {}).get("large") or ""
+    banner   = media.get("bannerImage") or ""
+    raw_score = media.get("averageScore") or 0
+    score    = round(raw_score / 10, 1)  # AniList usa 0-100 → 0-10
+    # Limpa HTML do synopsis
+    synopsis_raw = media.get("description") or "Sem sinopse disponível."
+    synopsis = re.sub(r'<[^>]+>', '', synopsis_raw).strip()
+    # Trailer
+    trailer_data = media.get("trailer") or {}
+    if trailer_data.get("site") == "youtube" and trailer_data.get("id"):
+        trailer = f"https://www.youtube.com/watch?v={trailer_data['id']}"
     else:
-        status = "ongoing"
-    dur_str = mal.get('duration') or "0 min"
-    try:
-        runtime = int(dur_str.split(" ")[0])
-    except:
-        runtime = 0
-    rating = mal.get('rating') or ''
+        trailer = ""
+    year     = (media.get("startDate") or {}).get("year") or datetime.now().year
+    eps_tot  = int(media.get("episodes") or 1)
+    status   = _al_status(media.get("status") or "")
+    runtime  = int(media.get("duration") or 0)
+    is_adult = bool(media.get("isAdult"))
     return {
         "title_r": title_r, "title_j": title_j, "studio": studio,
-        "genres": genres, "mal_id": mal_id, "cover": cover,
+        "genres": genres, "al_id": al_id, "cover": cover, "banner": banner,
         "year": year, "status": status, "score": score,
         "eps_tot": eps_tot, "synopsis": synopsis, "trailer": trailer,
-        "runtime": runtime, "rating": rating,
+        "runtime": runtime, "is_adult": is_adult,
     }
 
 # ── Crunchyroll Banner ────────────────────────────────────────────────────────
@@ -425,6 +487,7 @@ def try_add_next_ep(anime: dict) -> list[str]:
 
         # ── AnimesOnlineCC ─────────────────────────────────────────────
         if ao_slug:
+            ao_inc_s = bool(season.get("aonlinecc_inc_season", True))
             aud_sub = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "sub" and a.get("available")), 0)
             aud_dub = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "dub" and a.get("available")), 0)
             cur     = max(int(aud_sub or 0), int(aud_dub or 0))
@@ -433,7 +496,7 @@ def try_add_next_ep(anime: dict) -> list[str]:
                 continue
 
             logs.append(f"    [AONLINECC] slug={ao_slug} atual:{cur:02d} → Checando {next_e:02d}...")
-            result = scrape_aonlinecc_ep(ao_slug, s_num, next_e)
+            result = scrape_aonlinecc_ep(ao_slug, s_num, next_e, ao_inc_s)
 
             if result:
                 has_sub = "sub" in result
@@ -717,23 +780,27 @@ def api_save_pageconfig():
     log_event("git", "pageconfig.json salvo", f"featuredAnimeId={cfg.get('featuredAnimeId','')}")
     return jsonify({"ok": True})
 
-# ── MAL ───────────────────────────────────────────────────────────────────────
+# ── AniList ───────────────────────────────────────────────────────────────────
 
-@app.route('/api/mal/search')
-def api_mal_search():
-    q = request.args.get("q","")
+@app.route('/api/anilist/search')
+def api_anilist_search():
+    q = request.args.get("q","").strip()
     if not q:
         return jsonify({"error": "no query"}), 400
-    mal = fetch_mal_info(q)
-    if mal:
-        return jsonify(mal)
+    multi = request.args.get("multi","0") == "1"
+    if multi:
+        results = fetch_anilist_search_multi(q)
+        return jsonify(results)
+    media = fetch_anilist_info(q)
+    if media:
+        return jsonify(media)
     return jsonify({"error": "not found"}), 404
 
-@app.route('/api/mal/by_id/<int:mal_id>')
-def api_mal_by_id(mal_id):
-    mal = fetch_mal_by_id(mal_id)
-    if mal:
-        return jsonify(mal)
+@app.route('/api/anilist/by_id/<int:al_id>')
+def api_anilist_by_id(al_id):
+    media = fetch_anilist_by_id(al_id)
+    if media:
+        return jsonify(media)
     return jsonify({"error": "not found"}), 404
 
 # ── Git ───────────────────────────────────────────────────────────────────────
@@ -896,34 +963,43 @@ def api_add_anime_full():
         avslug    = (data.get("avslug") or "").strip()
         inc_s     = data.get("inc_season", True)
         ao_slug   = (data.get("ao_slug") or "").strip()
+        ao_inc_s  = bool(data.get("ao_inc_season", True))
 
-        wlog(f"[MAL] Buscando '{name}'...", "dim")
-        mal = fetch_mal_info(name)
-        if mal:
-            md = mal_to_season_data(mal, s_num, is_movie)
+        wlog(f"[ANILIST] Buscando '{name}'...", "dim")
+        prefill = data.get("_al_prefill")  # Pre-selected from modal search
+        media = prefill if prefill else fetch_anilist_info(name)
+        if media:
+            md = anilist_to_season_data(media, s_num, is_movie)
             title_r    = name; title_j    = md["title_j"]
             genres     = md["genres"];   studio     = md["studio"]
-            mal_id     = md["mal_id"];   cover      = md["cover"]
+            al_id      = md["al_id"];    cover      = md["cover"]
             score      = md["score"];    synopsis   = md["synopsis"]
             trailer    = md["trailer"];  year       = md["year"]
             status_api = md["status"];   runtime    = md["runtime"]
-            rating     = md["rating"]
-            wlog(f"[MAL] ✅ {title_r} ({year}) — {status_api} — ★{score}", "success")
+            al_banner  = md["banner"]
+            src = "prefill" if prefill else "busca"
+            wlog(f"[ANILIST] ✅ {title_r} ({year}) via {src} — {status_api} — ★{score}", "success")
         else:
             title_r = title_j = name; genres = []; studio = "Desconhecido"
-            mal_id = 0; cover = ""; score = 0.0; synopsis = ""; trailer = ""
-            year = datetime.now().year; status_api = "ongoing"; runtime = 0; rating = ""
-            wlog("[MAL] ⚠️ Não encontrado. Usando defaults.", "error")
+            al_id = 0; cover = ""; score = 0.0; synopsis = ""; trailer = ""
+            year = datetime.now().year; status_api = "ongoing"; runtime = 0; al_banner = ""
+            wlog("[ANILIST] ⚠️ Não encontrado. Usando defaults.", "error")
 
-        if PLAYWRIGHT_OK:
+        # Banner: prefere AniList → Crunchyroll → cover
+        if al_banner:
+            wlog(f"[ANILIST] ✅ Banner disponível via AniList.", "success")
+            banner = al_banner
+        elif PLAYWRIGHT_OK:
             wlog(f"[CR] Buscando banner Crunchyroll para '{title_r}'...", "dim")
+            cr_banner = fetch_crunchyroll_banner(title_r, fallback="")
+            if cr_banner:
+                wlog("[CR] ✅ Banner encontrado!", "success")
+                banner = cr_banner
+            else:
+                wlog("[CR] Não encontrado, usando cover como fallback.", "dim")
+                banner = cover
         else:
-            wlog("[CR] ⚠️ Playwright não instalado.", "error")
-        banner = fetch_crunchyroll_banner(title_r, fallback=cover)
-        if banner and banner != cover:
-            wlog("[CR] ✅ Banner encontrado!", "success")
-        else:
-            wlog("[CR] Banner não encontrado, usando cover como fallback.", "dim")
+            wlog("[CR] ⚠️ Playwright não instalado, usando cover.", "dim")
             banner = cover
 
         # ── Build episode list ────────────────────────────────────────
@@ -932,7 +1008,7 @@ def api_add_anime_full():
         if source == "aonlinecc" and ao_slug:
             wlog(f"[AONLINECC] Raspando {total_eps} ep(s) do slug '{ao_slug}'...", "dim")
             for ep_i in range(1, total_eps + 1):
-                result = scrape_aonlinecc_ep(ao_slug, s_num, ep_i)
+                result = scrape_aonlinecc_ep(ao_slug, s_num, ep_i, ao_inc_s)
                 embeds = result if result else {}
                 tags   = "+".join(t.upper() for t in embeds) if embeds else "❌"
                 wlog(f"  Ep {ep_i:02d}: [{tags}]", "success" if embeds else "error")
@@ -977,10 +1053,16 @@ def api_add_anime_full():
             dub_avail = total_eps if has_dub else 0
 
         # ── Build season ──────────────────────────────────────────────
+        # Override with values explicitly set in the modal (if provided)
+        _label  = data.get("season_label","").strip() or f"{s_num}ª Temporada"
+        _year   = int(data.get("season_year") or year or datetime.now().year)
+        _score  = float(data.get("season_score") or score or 0.0)
+        _status = data.get("season_status") or status_api
+
         season_data: dict = {
-            "season": s_num, "seasonLabel": f"{s_num}ª Temporada",
-            "year": year, "episodes": max_eps, "currentEpisode": total_eps,
-            "status": status_api, "score": score, "synopsis": synopsis, "trailer": trailer,
+            "season": s_num, "seasonLabel": _label,
+            "year": _year, "episodes": max_eps, "currentEpisode": total_eps,
+            "status": _status, "score": _score, "synopsis": synopsis, "trailer": trailer,
             "audios": [
                 {"type":"sub","label":"Legendado","available": has_sub, "episodesAvailable": sub_avail},
                 {"type":"dub","label":"Dublado",  "available": has_dub, "episodesAvailable": dub_avail},
@@ -991,6 +1073,7 @@ def api_add_anime_full():
         # Store aonlinecc slug for future auto-updates
         if source == "aonlinecc" and ao_slug:
             season_data["aonlinecc_slug"] = ao_slug
+            season_data["aonlinecc_inc_season"] = ao_inc_s
 
         if is_movie:
             season_data["type"]        = "movie"
@@ -1036,7 +1119,7 @@ def api_add_anime_full():
             new_anime = {
                 "id": id_slug, "title": title_r, "titleRomaji": title_r,
                 "titleJapanese": title_j, "genre": genres, "studio": studio,
-                "recommended": False, "malId": mal_id,
+                "recommended": False, "anilistId": al_id,
                 "adultContent": data.get("adult", False),
                 "coverImage": cover, "bannerImage": banner,
                 "seasons": [season_data],

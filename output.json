@@ -16230,7 +16230,7 @@
           }
         ],
         "episodes": 170,
-        "score": 2017,
+        "score": 8,
         "season": 1,
         "seasonLabel": "1ª Temporada",
         "status": "ongoing",
@@ -16242,6 +16242,702 @@
     "studio": "Desconhecido",
     "title": "Black Clover",
     "titleJapanese": "Black Clover",
-    "titleRomaji": "Black Clover"
+    "titleRomaji": "Black Clover",
+    "anilistId": 0
+  },
+  {
+    "adultContent": false,
+    "anilistId": 101291,
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/171046-PjeeUUfeaVyR.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171046-9leqLiNuOqNu.png",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Mystery",
+      "Psychological",
+      "Romance",
+      "Supernatural"
+    ],
+    "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai",
+    "recommended": true,
+    "seasons": [
+      {
+        "aonlinecc_inc_season": true,
+        "aonlinecc_slug": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai",
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 13,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 13,
+        "episodeList": [
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzUfRkhXFPwmYNEc7-8KmSLxiEAK4UTmzPnzz_bX946XqARhXa2jhmq641F89tjvPLQqi8uK5b-Ue9l1Mm4HbGnbcJjfoxIMk1KdHwGRWbHb7G5zh1oZWD8AkJehWwcpS77_Q\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep1",
+            "number": 1,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 1"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dw_i6b6URKr71tWVewrxH74kXl7Yjw70gW8M_ScOwxbSHnimUw_Iccy3trD3Ew9dq0z3vV0R-6KqrABq4ncoHd0Rhj7iGkYx6L3WL3jdaNw861rOXqL-NhcpUPSwKayW4TSCFi9\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep2",
+            "number": 2,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 2"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwD8ytt8ZAr_xTNAiFXZ3n6BrqFfXh9D2POiTSSvB5o6kau6o-gy7LZ_nUqb0I6c5_ndgTx1o30hAbNw4Bz7GAcDuTgn2i24qex3kbS5ig7Y1KulhelgoP7-Y3BQk8e6IkKoOA\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep3",
+            "number": 3,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 3"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxhJphawZqcSA76qVHb2JFsN_KNmlg2h-nJHo45ti8P4DLmtMHeP1tbGdavrFo9FpKwwBV0kkfu-SCNV1W0SovZNRdIQGJTMd7Ot3NJlBTZl32jkaNd7dnr7cwm43Y1xcvpTP7i\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep4",
+            "number": 4,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 4"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwxSxXhENv8cPIpC496Gy_x-pB1h2BhELRm19I4MZlgeLqTJ1j5ajA99rCWh3EkBdvp9rJjR8sgz4dqEC94on5HJsgNPV_iYq7ymfl449AQ2mQA5cctxA_OhZ85d_XrTwgqwtyH\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep5",
+            "number": 5,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 5"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzG1sfgUgVRqOq9aCilf4pFNSvbfwGdvYdNusl5Z53BCCdDjPhyIQHucDjaC296lPJdZNeI0PWjuPOmUbaaZDas0qR5Q9MjxQcIXZy5P7NuQEiz_VbMUFQkaCBKbDJKmMinGjs\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep6",
+            "number": 6,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 6"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyn2uZOaVCkdCzaQ026QHoabIHSP35yA_jLKPF35_-2eLvZTGxlqMXu8RSSN4s5_qIg4D4zw9z1803-9DnWRHtNDCF7cEFlH5N7-nI-k_7s-UotnfzD1pcGeha8MbrIbrWWvdA-\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep7",
+            "number": 7,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 7"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyuTShWkcHwRLm0Pw53--zLy5g2JQvvLaaIpXKObfv6Gg1aO7jszRGWI8xOpI0KNRvE9OWXYQ98Ef9CtgT4tp8PWkP_7cwT0SIPkMHqVZXBZ-TDHey9D6coSz-fxRDf4aJj8Rgu\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep8",
+            "number": 8,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 8"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzWAR8jLgg0ZYKOoj-PKztMMRGJ0xq1oC57rLOds_uYpOD9HZkVc2kiaqoKfjFGvQ2WNxrxh3oNXs8tgrUvKDOc5DSJqLN3w04ZbOpUHnC1N3J3oaqKAu4KWTINRFnwGI9ZVjU\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep9",
+            "number": 9,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 9"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyZbe68HhtwDOaL5gUUioBNK1RcEXsZyIo8iu-92nfgHARWhm8rgZFSm7M5sL-Si_mEAu-nZP8Pe8WsvjZrO4H6TTFgiV-IAV_uq4WYH1uDvj8XICryXmFFvL6L41vLDjLkjfo\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep10",
+            "number": 10,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 10"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dx53Rju73xwLBCGjbRma7W8t3B-F2N6bCrMw0GWgH-Q3dts_5Up_51sQEG-0lueL-lkB_QzoJnYS2U5WN9M4x5137AB1eDR_s0ZUZDyh9DcV3S12P0O-mCCvOgrGzxPCHIwOw7B\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep11",
+            "number": 11,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 11"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxMXJb7R4pH_xF_gDoqhgZE0uCAkvRvRsF7uu2q4XoN1UdK8Gh5kCxj3g4e41Hvc8X3C2q_z9twX9Aw3SqkN3IyZIDAQqjxgaiP9ghSyYVkoHiU7wbBwDuB8JOQiLG_qYmWiKM\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep12",
+            "number": 12,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 12"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzttZCl0UUzYWq64FSsgiblVYsYQODHnrmwQqh1Wp7YYpmXHlmEdBQbdzUTdU4MDOXIudRUETc78uh7V2wivUQhH5PoXETf5Tw8ATsVFUDc6xPk6Z2pq67mGNq18IWrqB1Fxw\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s1-ep13",
+            "number": 13,
+            "season": "1",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T1 Ep 13"
+          }
+        ],
+        "episodes": 13,
+        "score": 8.1,
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "status": "finished",
+        "synopsis": "There's a rumor about a mysterious phenomenon called \"puberty syndrome.\" For example, Sakuta Azusagawa is a high school student who suddenly sees a bunny girl appear in front of him. The girl is actually a girl named Mai Sakurajima, who is Sakuta's upperclassman who is also a famous actress who has gone on hiatus from the entertainment industry. For some reason, the people around Mai cannot see her bunny-girl figure. Sakuta sets out to solve this mystery, and as he spends time with Mai, he learns her secret feelings. Other heroines who have \"puberty syndrome\" start to appear in front of Sakuta.\n(Source: Anime News Network)",
+        "trailer": "https://www.youtube.com/watch?v=o0TZj_d3Yfg",
+        "year": 2018
+      },
+      {
+        "aonlinecc_inc_season": false,
+        "aonlinecc_slug": "seishun-buta-yarou-wa-santa-claus-no-yume-wo-minai",
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 8,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 8,
+        "episodeList": [
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dx9S0Tmqf56wPrTmhjJsNnLKFGURS6pmVgZIEMLFY9_6CFa6y-TVrZp6V7rWcTV1LRr6NkGHxlD5_nMnGCX_g5Om-z9GHMhcAFjEEzwarwZtoPMr7hBgmSFjonBxMe7JP7c0mz7\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep1",
+            "number": 1,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 1"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyPJa96oXYuQsCkZD2LjzjAniwsDx9i3AeRhjlbiQBzSOfpJ7ReODdKqr4tsJKAq9C5wtgFvJQCS26QKLd53JsrMmwz1JOZkudXLk6MwzeoQgwEICyn77z0DG9kmnhHQR2naKg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep2",
+            "number": 2,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 2"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzQzB6Txaklr_DJ8eFvYYikTMUjPRKHkwx47pRnnVBLu08EbiUlCXVaxuly0m-vhwOh8vHL3ylDOpRw5oT_Do3Xpr9sDPsxtc_vlRDegc_-ezr-bNi9jJl7BS_OlSNBxBZSWiSX\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep3",
+            "number": 3,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 3"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxx6LwIJ2wOInQxIAiAhpDuPRWHtQK-Ia7DCAH-2PncfmJHAtQW8Ir6QBe4X89mxfPuythavIuLYrfUb5Nb9-cgLWpZUT0_tlfYbyGiiGYW7Ns9omdxe7CM_F50gYJErttQJQQ\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep4",
+            "number": 4,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 4"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dz0UqAS5BDm8OrnHDjVQar_MRVmJsAVY-hGvORJrAfzZAzNpVS5EwHrW2Iht0s16ve1HpOsYv8zJR9EHjKo97oe6nFXNpiWWTbYVViYplAlN1bF-zb3IDpqDdxoFjsfrP7I6WU\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep5",
+            "number": 5,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 5"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxz4DqhpUHoWK4KzzJkQghip14cF03LO82iEpZVwp3H2rmUgFLGhO6Ae6lFUqgSwoTPk6eg5oCekaBncpdEASPRhl25UIvLycuRCaakOzCeZVElsQMVehSjqtTe-3sqDAjPRw1k\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep6",
+            "number": 6,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 6"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dywIG9jmLgcom6ei5dJCmuRZcru80dKjF48dhwLFabAMFYzr2RwbqijY4MWtwuf3dIIXmERvy7jZfeSBLWmK7n4rOaxNmIhWjEbZk8cmhx5uNUIcu9CzGHgh5r64V5hGy0MSN4\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep7",
+            "number": 7,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 7"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dx6U0DLQ-HwcBze5koH7EurdDuJhUkov_HrN_wfnbOFyTSaxYfgcLWCiNjNRXZtn5-2VENqlDMPklIe5VXbDBBU3eCtwWuLiZDpGmtrHSSxrE5u5_YqKJgQo9xYFt9pNEFeiDTz\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep8",
+            "number": 8,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 8"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {},
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep9",
+            "number": 9,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 9"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {},
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep10",
+            "number": 10,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 10"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {},
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep11",
+            "number": 11,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 11"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {},
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep12",
+            "number": 12,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 12"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {},
+            "id": "seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-s2-ep13",
+            "number": 13,
+            "season": "2",
+            "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai - T2 Ep 13"
+          }
+        ],
+        "episodes": 13,
+        "score": 8.1,
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "status": "finished",
+        "synopsis": "Sequel to the film Seishun Buta Yarou wa Randoseru Girl no Yume wo Minai.\n\n After encountering various girls going through Puberty Syndrome, Sakuta Azusagawa's high school days have come to a close, and he is now a university student. He enrolls at a university in Kanazawa-hakkei alongside his girlfriend Mai Sakurajima, a nationally famed actress. Off campus, he stumbles upon an out-of-season miniskirt Santa. Precognitive dreams, an anonymous online singer, poltergeists buzzing on social media... A mysterious tale with enigmatic phenomenons surrounding girls with wavering hearts starts again. Puberty continues...\n \n(Source: Crunchyroll)",
+        "trailer": "https://www.youtube.com/watch?v=WZeyt8KrrqY",
+        "year": 2025
+      }
+    ],
+    "studio": "CloverWorks",
+    "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "titleJapanese": "青春ブタ野郎はバニーガール先輩の夢を見ない",
+    "titleRomaji": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai"
+  },
+  {
+    "adultContent": false,
+    "anilistId": 20574,
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/104307-uckkpuMiag7P.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx104307-gbPLgyF1veUJ.jpg",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "id": "high-score-girl",
+    "recommended": false,
+    "seasons": [
+      {
+        "aonlinecc_inc_season": true,
+        "aonlinecc_slug": "high-score-girl",
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 12,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": true,
+            "episodesAvailable": 12,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 12,
+        "episodeList": [
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxrqQ41tGvAv16VkKPm74filMyAtxDUr6149fe89uR9uTngYXR9sFrqD2mgaEEVQIE2KiiTVDggVi5xuBdYy_OlbZU-s9lJhoewqLDQlbxwYQOpNCDDrKRdyiwZsyGse1qDMR4Z\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dz1-_JamkMMKhNW6ZCQErFEaKHiBJ2eF_Ud7tuShlnOiZ8qcPPd06Ork82eU1HeT8X8L3211yh24Vv8uTiXtvERHU3y3AYHLrME8vUFVBFCiVMwUjkxVPHv6NsdHBHzZtX20ZfM\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s1-ep1",
+            "number": 1,
+            "season": "1",
+            "title": "High Score Girl - T1 Ep 1"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyvgGuznlKrFjfvzkYq1yn2vFmxt0xfa-I8XZ8vnBthf-d5U1h1mwaG-1Fl4q1IsZPDW8kbXS_GmYL-vci-q7vY0DDulW0ZMKBd4eYNYxcLldRkFcfUz25CCwSy5jMJ-dKDkYI\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyQMoYqomcUdIZKphfvoZ2rfpk6YV27l7wlOOmeU0KQc-Mpre1SkYDOnTeDzA2X5tr6D1h-Ixcg95vLmq2EwX7_eUeKfRZt35FKpSzKDuZVhqFwKqUcKgT3gg1JLSwSi8ACaciG\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s1-ep2",
+            "number": 2,
+            "season": "1",
+            "title": "High Score Girl - T1 Ep 2"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyciCH2jyeyXUckxQ4VraAArnN-oyPdHT8yF_ka7wPEpWd9oAp-75SadYpCW4Za7W8yXk-o8uPPxtb4OCh4RqW6118Hgmhmi0ho6-pwxoKc6Mulyeobu71fISspi0ewV16KyuM\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzbPOq8UHXne1oFQHPsycsaEQOuAJXtgraaNLgMPPWv2mNOk-OUQ9sts03R_GfeOej5q0jLp1ivss5MvOQ_gJmMgA391lQk8R9gKSSIw3XEx7YHnXHVdprm5UA05v-qHbtQxkg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s1-ep3",
+            "number": 3,
+            "season": "1",
+            "title": "High Score Girl - T1 Ep 3"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dygTRHPc6zmthTlWsphniPorftBK_ajvfkXMOQDxaMjHyxMLc92DPdlViAvt3xW2prqbwy30peAjiW5SZut8_Xqyd2Bpr09p0gd7E7J6_ConM2fEAM5kwjZC3qhqUPAhkRb1_G0\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dybqHTrYZqEiV5dVpHbHZJ7S-_u1sdPts9pXh5QMtdFGB14WCotv0WdkXLiuC-o1QdINYPyX1QP0CQdT9VuVUU4p7DdF4Cmyv3mPmlAC3XZmv_YNKfI0jU-FUkvnkpFbjJGmJQ\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s1-ep4",
+            "number": 4,
+            "season": "1",
+            "title": "High Score Girl - T1 Ep 4"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxgcAbxzzs4KnrCrYBmwFFQVqjufD7462EtKwVC7vBQzpWXXvkIm1ujFFbvwONF8SSHXGLyvD_n4r9O13_YJjz7ChsCot0BPwpac4OEJ347dVLmKDxINeFFM2GE06uBuC5Sf0e4\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyEdWC_WlayVFCsLZRY0b7x4bKC20VrcPy8V5T3tJudIo_SGRSyuDS7q0tx0pDcbgx5ScjqkxHtHTypIniEbtvIxWYz_nd1RK5WN5Y2ow8mudzqm1ekkuO1nsxkXuTV1xbMrXc\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s1-ep5",
+            "number": 5,
+            "season": "1",
+            "title": "High Score Girl - T1 Ep 5"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwY60q-bfDxbZUmJvGyWStR8rtXZLEzG6Mw0O17tBq6fXKRo5V-7jIckiBZ_KnZ4oYfB7rAHK-GWini_5sMe7OgX_W6--Ei-tjnDc1pgDGTXINUrz_4dXtJdVPhiFwLJ4oNOdE\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzW1YDqlp8ZO1QD5w0uwDfgJ6zNYQkOxDNs5E3_6OSURcynDyk82j5y0lFaZkckfW-BNZCXDY_pKJR40kBypUtUyif2oJFGo1LNsaMQ4cDn8hfuRdtvO-9lxnEHdMOKgXhzLJg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s1-ep6",
+            "number": 6,
+            "season": "1",
+            "title": "High Score Girl - T1 Ep 6"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyHsTplLdAal9xFyHHfOj-U8WSf54lxKzOFq8wsInM2Q1W0fvA0RjJQb9Xh1VAXWBMJ1R69tAUWwrdYxLhkI5k8kBqcOKgRtA7Kuh7KI6ZSTYhExCRDy-SqtuRqZ_rZQqLmjeY\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dw_SylTg13mzd3xhGfVgYK7rOF_prM5hU7y3A7rEQ5DbMW5n01EJ8pKuo6JKZmke5Z1_99Q8KVOSjqEB1OOLCCfzitKCM2oGPLGUVZ5zMU_0h8lPJwDWhTZVrqyokYVpo5CVeFN\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s1-ep7",
+            "number": 7,
+            "season": "1",
+            "title": "High Score Girl - T1 Ep 7"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxeLTCT_vTwcYxxejOPETzI04loVI7qpte2_t_Zpq6DoRBVXmsfTwksYtXLFBUAUNfYkxY9Y1vIVexnmanNJJkgc8oaVc10C3y_q0WBI-lr8tzeHPZLEEk_SUEn7HmKd7RTsNzX\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dye5P8VGqAb9VEznTD0QccUNgbJfU5H53AExZDF2qATAANRhcvzMA6dWBqLO1cbqqeQVAhv4de0xLzvT4du_TzTuhdske8z-YfvQRosgO3eb98a5-wwFPwcoVCVGo9fiOg9ffQ\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s1-ep8",
+            "number": 8,
+            "season": "1",
+            "title": "High Score Girl - T1 Ep 8"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzFnM2p7fQW0mKGTCZIRu9edKFqph6ItORK1V4OAOberf388EWVpwO9-Zet8nFVAkPodIuyrCdnD6kGtvuKaXeCGq8pUd0Ah0wLzHRDUOe2ddHf0Xve0PSrSCRmE9Fb3JosHw\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dymg0AM9j_6dEWLF5IkiIf6vvsMoOZjlSmnqS-fNnfV_D1cpQCvw5Yz9V_q8Wl0_cYLKru06gHDzZE2U57mp1Fsc3ueSBNbeBluleBqAQPBSGnPvErgA43b6Kbv1AJ3SKjO74YN\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s1-ep9",
+            "number": 9,
+            "season": "1",
+            "title": "High Score Girl - T1 Ep 9"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzZKu4-akrEK3cgeuFOLdFVCpBIWFUHy6fLchN9zYOPvs-i7e77kvNUyuuwxA_BYGE3sWgl5jlqjpMLkx0ByA8gdYeIDFOkxvyGQzb5OUja3AEI0TJAk9rb8vPiYhA5_U32oflg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dy8nFwN6PgxPYM4z5H1djdL_BcgAUxIFae7M4kQRZKU6QUktMUiFYDVxbUv-8E8lv0u_SOPu90Cw73uZXgAymnNfhRk7DhL7_3oU5byG9UNPA-eaH3U9-nlSR9ot2x8XxX-tC0z\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s1-ep10",
+            "number": 10,
+            "season": "1",
+            "title": "High Score Girl - T1 Ep 10"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzcAVJYazbo2GQzIBotyKBsMgdowv19JzT5RR8UuWblsvK7Ub6PxmgvGvTLEM73EtlxX8_I-EKUMdt0Tty54VOyExI0vq9G6vsJ8Z9rlQ3q6Lt6Bc6HScJKaXfTbYMdc1hcBqIt\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzQ-hC5eSiTS024dRbG8qNLxIqdwiFYyrI_MJjyKgQaVDF42wKml5fIUFmu2pIZgebOrYAXJBzRnqcFnLkpACYeaQFNRR0_JddMmiU5hRd9fnmqwxFA8uFdNXCorrMNgnkNSko\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s1-ep11",
+            "number": 11,
+            "season": "1",
+            "title": "High Score Girl - T1 Ep 11"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzxbo1PBN_S-Rs58myKvFCIBmXFJUfb-dQruowNZBKnIr09z4_uxFXSDcHmV9-IqkqoFG3tQ9dQW15MwLYXKlz845kDb7KZJBltswaz2qI37OauWjZCfhyqE98v-D61rF6IiAU\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwx0dgTpWkaurgCrytJQ6gsMGuhatMQZhEv4ad-1TTt77K5VbctaN2LElJ5jEfhGoYhtLGYH4Yh20edJSjqbGKm9z6BreJ2D6yHHpXoCKaad-hphrxBJYNzKzDGA2QbZFxHEGE\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s1-ep12",
+            "number": 12,
+            "season": "1",
+            "title": "High Score Girl - T1 Ep 12"
+          }
+        ],
+        "episodes": 12,
+        "score": 7.5,
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "status": "finished",
+        "synopsis": "The year is 1991 and 6th grader Yaguchi Haruo only has video games to live for. He's not popular in school and he's neither handsome, funny, nice nor even friendly. The only thing he has going for him is that he is good at video games. One day at the local arcade, he plays Oono Akira, a fellow classmate but who's popular, smart, pretty and a rich girl that absolutely destroys him at Street Fighter II. Not only does he lose to her 30 times in a row, he can’t beat her at any game. Haruo can’t seem to shake Akira off as she follows him from arcade to arcade everyday after school and beats him every time. As weird as it sounds, the odd couple begins a strange bond and friendship.",
+        "trailer": "https://www.youtube.com/watch?v=IQiSibvRDiI",
+        "year": 2018
+      },
+      {
+        "aonlinecc_inc_season": true,
+        "aonlinecc_slug": "high-score-girl",
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 9,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": true,
+            "episodesAvailable": 9,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 9,
+        "episodeList": [
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxPlwqbzSQ1QzR0aNMtyEaIRh0jXf63IVYloQoQaJ6ao4LEi2W2JKZXsZf0T0uxayLSOh6rxCklhxVenowE8g-BYHUL8CqMAd78oQYJTGBOR4QUCb_7DCAZ2t446PTrDHK0u-Ol\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dw4ibhUkuPpTR_AhydV86nzv27iyoo7flbjlaAPR2MN6HPB4KX7ks3Ux16T3_UwGq4w264KxygoyFyW04SJClD1M8tWS4BAKyVl7xOgQqK8CJFsipoEn4Y_ko_cG_X-pX-QpZSo\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s2-ep1",
+            "number": 1,
+            "season": "2",
+            "title": "High Score Girl - T2 Ep 1"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwd3GYElVYYsEEzTJecQs8KGakG3QxSd_povF8dGRmrE0TvwyZpKt01SwX_B3BXCHz1NV0UlzzQ2egRCny2jm_xnojvnjHG4kqITfPCn4O8whDDE1Elb_4bBJdnaOQrwtnKS0Yf\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxGIaBJH5Rq_aC2mWkk4KhSLhzQ7J_xvQ8sSrdiWnbo_mDyj5w94nzbMM4ISLz1trT0sAFUOhEoclbOAUaN7Sd7sAh76aqtl5x7th3bBOLBH6B6VAsUu1Wb7MMfQTZcGtZa1fE\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s2-ep2",
+            "number": 2,
+            "season": "2",
+            "title": "High Score Girl - T2 Ep 2"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwtxuOktlsCw391B-JIl3h16wM09zGZB4EHCe3pSnr-ZDPWFPaixZUc1DFr6V3tlteKXWxdLiwyzTikWNdy0-XAvQ-KculvkWMYnDpKXx4_EvnLzR1TsMavsB0Q0x7syd5bqoFw\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwPrmYHs2vmjjqEDGL1K3hSOleSoOjc9ex4keIQkc3hY_wjZjsLfwTp_-ghF3ltImtHTu9XUUFXjnr-ChTAENYp1Rc32xasbkw7LeBzx6ECzbdNtnvhIqi8AYfGFdORk5PPUnQ\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s2-ep3",
+            "number": 3,
+            "season": "2",
+            "title": "High Score Girl - T2 Ep 3"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwWHrJi1h9207Ek6bWz5UG7Fteo96LeNu8eYrx9KVeHFHRH-ziueowFc0Ace-hIZHUr_37kAJK0_1bo7V8nDsD9h0S8n1w4lg_eQ35wOy5Y-1-rfzj3rCnsYLGmTh9mpbxF80nA\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzKLFaMa85D6p2WMdMc0Gw0adJ1l3EOePD1yKbQMXYUw19mDQqldxeYabZT37jSCx3XkKw5F47Jj60-wJe-m_x4Tq7FhnxBRPAM3wheuo4J9XOYkjLZaaotr5c-Dlpe1VeZ1Orb\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s2-ep4",
+            "number": 4,
+            "season": "2",
+            "title": "High Score Girl - T2 Ep 4"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxMFlj_dLQlHG81aIBJYKLPnbZRPZJs4ssAsEVJybSmTAd16YLY0bPJ1OgqZ6803lxjGHpWozu5LTPxGvecd9VXS07h8c4L0w4d4Kidnr44uM6P01JSPLyA8-fQQbNrjTgVcLE\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dy4NIV14Kdyi5ugP-kOCMrOMe5smFLka3HKqnVZBr9oPr0a10bZJyV4qainuUKl09ffPU0OKtFPKH-fqOwiWNVEBSN5wrqbcCU8DqiMJN4xTalVTGQVFaGHTxMxrrdgCOuX-dw\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s2-ep5",
+            "number": 5,
+            "season": "2",
+            "title": "High Score Girl - T2 Ep 5"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyc4U0Te4iFI33l70s9zQioPFYWeslD9IFGqIlJyUPwJAJTLzA5XnqCZeiRf6ACmZ0VNkTVVy8Rtl5vxeC7q5GukXQRszPgph8JSvYQz933sb2CpVjemcXF3iaUqCXxyNrkGeWJ\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dx0SeKm7TORxac8KNcN2cJMYzWR-jfXSD8DuIGhdhyQICbpSB8bKYpYtmuyepZlYilRjJMKDbmJU5vnIG6RLXhlEt4guWpTW_hFlTxgVvztuKrasoFlBOY5bjKV__QUr2nPaMjU\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s2-ep6",
+            "number": 6,
+            "season": "2",
+            "title": "High Score Girl - T2 Ep 6"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dy1HwQyN2kqMNEnbbdbqdBZEELM2gK3QlDwu8jqtSrWUzDHpS628FlNm_f4nRY14NDNEjf5hOL0PoYVa4iZViLSImK6UwlJY5RZWc6Afop-PTOL8WLOfdm78uNc9JRX3C3dXAg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwZDN8vSMuz1dIh2BPaO8Bib8_4yG9gTiIj1HhfXV8nfCAv9xv38ZIOPgPoZSohQ8m1Qpa43XjZ_XhnDaBVcbN2HQzhRfN_3SMxP2qX_cIV-oXDkortPO7dwAx4xZ1VahsYmWbI\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s2-ep7",
+            "number": 7,
+            "season": "2",
+            "title": "High Score Girl - T2 Ep 7"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwjEqqVcz0LXGW9wzwTR8TF_L_mLV98MCnyTN-Q5LCEPdEOIMOM1KsO38wTnJNKy6LEuUW8-GIAzKKrnu3N6QjUEP00ZjQn0USxLpv0G7PHKUYxe0Rd6FCBeIOTldlNCZtaI4_M\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxZktb_0nKDxg9WJvWbq1wN3zIeEcQddnD_HNs5zF80_g89XGIxoNGI9Ubge5ch-0RWjA3H5PpSF8XyZsuzvuxsQMo8BJ13q8ZUxoahB9mrvhJIQaov8M137HOiJrazvaxfaN4\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s2-ep8",
+            "number": 8,
+            "season": "2",
+            "title": "High Score Girl - T2 Ep 8"
+          },
+          {
+            "embedCredit": "animesonlinecc.to",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxCQMlQrbwbNLlwBALTPqPGPbZ9oYQyaN5KbjFYQBDAYXqvoXdMDhVZ0zsyvy60TTlsWRdGbYU8V-lNRHCmW4DgCijkD1HXaSR--8mDve2nCvXVZfJ2d4Joj_l1m5QU_3-iJds\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxVhV09JIyX2kHf5CsaghWEKhncjK-QJ7i5m_vJu2cM8g94k0jZ-j6FVMowSgpOzU-YZtdX7Pw94RDi55UUeVyv5WtmYZtDhY7l5oepS8fu68w-bMCf3SdyfqZFInHlCmyqt88\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s2-ep9",
+            "number": 9,
+            "season": "2",
+            "title": "High Score Girl - T2 Ep 9"
+          }
+        ],
+        "episodes": 9,
+        "score": 7.8,
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "status": "finished",
+        "synopsis": "The second season of High Score Girl.",
+        "trailer": "https://www.youtube.com/watch?v=aczv7OJO36w",
+        "year": 2019
+      },
+      {
+        "audios": [
+          {
+            "available": true,
+            "episodesAvailable": 3,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 3,
+        "episodeList": [
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/high-score-girl-extra-stage/01.mp4/index.m3u8&nocache1772728283177\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s3-ep1",
+            "number": 1,
+            "season": "3",
+            "title": "High Score Girl - T3 Ep 1"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/high-score-girl-extra-stage/02.mp4/index.m3u8&nocache1772728283177\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s3-ep2",
+            "number": 2,
+            "season": "3",
+            "title": "High Score Girl - T3 Ep 2"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/h/high-score-girl-extra-stage/03.mp4/index.m3u8&nocache1772728283177\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "high-score-girl-s3-ep3",
+            "number": 3,
+            "season": "3",
+            "title": "High Score Girl - T3 Ep 3"
+          }
+        ],
+        "episodes": 3,
+        "score": 7.8,
+        "season": 3,
+        "seasonLabel": "3ª Temporada",
+        "status": "finished",
+        "synopsis": "Episodes 13-15 of High Score Girl.\n\nEpisodes 13-15 had its televised debut starting October 4th, 2019.",
+        "trailer": "https://www.youtube.com/watch?v=_N-BnjZnJWk",
+        "year": 2019
+      }
+    ],
+    "studio": "J.C.STAFF",
+    "title": "High Score Girl",
+    "titleJapanese": "ハイスコアガール",
+    "titleRomaji": "High Score Girl"
   }
 ]

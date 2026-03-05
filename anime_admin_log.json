@@ -999,5 +999,26 @@
     "title": "Adicionado: Mayonaka Heart Tune",
     "detail": "T1 · 9 eps · Série · AniVideo (mayonaka-heart-tune)",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-05 18:23:39",
+    "kind": "git",
+    "title": "Git Push: chore: update database [05/03/2026, 18:23]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   9ccba1e..4f962e4  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-05 18:25:41",
+    "kind": "add",
+    "title": "Adicionado: Shibou Yuugi de Meshi wo Kuu",
+    "detail": "T1 · 9 eps · Série · AniVideo (shibou-yuugi-de-meshi-wo-kuu)",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-05 18:27:28",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=death-note",
+    "level": "info"
   }
 ]

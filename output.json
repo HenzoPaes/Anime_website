@@ -17616,5 +17616,155 @@
         "topanimes_dub_src": null
       }
     ]
+  },
+  {
+    "id": "shibou-yuugi-de-meshi-wo-kuu",
+    "title": "Shibou Yuugi de Meshi wo Kuu",
+    "titleRomaji": "Shibou Yuugi de Meshi wo Kuu",
+    "titleJapanese": "死亡遊戯で飯を食う。",
+    "genre": [
+      "Action",
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
+    "studio": "Studio DEEN",
+    "recommended": false,
+    "anilistId": 180746,
+    "adultContent": false,
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180746-eqDiHbzoHMFh.jpg",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/180746-AyfiOMkuHegF.jpg",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2026,
+        "episodes": 11,
+        "currentEpisode": 9,
+        "status": "ongoing",
+        "score": 7.4,
+        "synopsis": "At just seventeen, Yuki is a professional death game player. She’s survived enough rounds to know that survival is calculation, not luck—and that failure is final. For most players, the games are a nightmare with no escape. For Yuki, they’re simply business. Yet in a world where rooms turn into graves and every choice could be her last, even experience offers no protection.\n\n(Source: Crunchyroll)\n\nNote: The first episode aired with a runtime of ~47 minutes as opposed to the standard 24 minute long episode.",
+        "trailer": "https://www.youtube.com/watch?v=rqp_JkzslnM",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 9
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": true,
+            "episodesAvailable": 9
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "shibou-yuugi-de-meshi-wo-kuu-s1-ep1",
+            "number": 1,
+            "title": "Shibou Yuugi de Meshi wo Kuu - T1 Ep 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shibou-yuugi-de-meshi-wo-kuu/01.mp4/index.m3u8&nocache1767802633\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe src=\"https://topanimes.net/antivirus3/?id=SHIBOYUGI Jogos Mortais para Colocar Comida na Mesa - S01E01 [1080p].1080p.mp4&img=https://image.tmdb.org/t/p/original/v9eJECKDuOL2e6Fc059eF7f0Dm1.jpg&img=https://image.tmdb.org/t/p/original/v9eJECKDuOL2e6Fc059eF7f0Dm1.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "shibou-yuugi-de-meshi-wo-kuu-s1-ep2",
+            "number": 2,
+            "title": "Shibou Yuugi de Meshi wo Kuu - T1 Ep 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shibou-yuugi-de-meshi-wo-kuu/02.mp4/index.m3u8&nocache1768406455\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe src=\"https://litch.alibabacdn.net/?id=4878&s=1&e=2&audio=dub&img=https://image.tmdb.org/t/p/original/ygLolsbR9CexTBZM4sDfuWmOXmt.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "shibou-yuugi-de-meshi-wo-kuu-s1-ep3",
+            "number": 3,
+            "title": "Shibou Yuugi de Meshi wo Kuu - T1 Ep 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shibou-yuugi-de-meshi-wo-kuu/03.mp4/index.m3u8&nocache1769015010\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe src=\"https://topanimes.net/antivirus3/?id=SHIBOYUGI Jogos Mortais para Colocar Comida na Mesa - S01E03.dub.menor.mp4&img=https://image.tmdb.org/t/p/original/b72ykDp7gUOlp3RTM3DEGsGdoLg.jpg&img=https://image.tmdb.org/t/p/original/b72ykDp7gUOlp3RTM3DEGsGdoLg.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "shibou-yuugi-de-meshi-wo-kuu-s1-ep4",
+            "number": 4,
+            "title": "Shibou Yuugi de Meshi wo Kuu - T1 Ep 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://topanimes.net/antivirus3/?id=SHIBOYUGI Jogos Mortais para Colocar Comida na Mesa - S01E04.leg.1080p.mp4&img=https://image.tmdb.org/t/p/original/xqnuSuO8lr425HusyzGESDj738l.jpg&img=https://image.tmdb.org/t/p/original/xqnuSuO8lr425HusyzGESDj738l.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe src=\"https://topanimes.net/antivirus3/?id=SHIBOYUGI Jogos Mortais para Colocar Comida na Mesa - S01E04.dub.1080p.mp4&img=https://image.tmdb.org/t/p/original/xqnuSuO8lr425HusyzGESDj738l.jpg&img=https://image.tmdb.org/t/p/original/xqnuSuO8lr425HusyzGESDj738l.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "shibou-yuugi-de-meshi-wo-kuu-s1-ep5",
+            "number": 5,
+            "title": "Shibou Yuugi de Meshi wo Kuu - T1 Ep 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shibou-yuugi-de-meshi-wo-kuu/05.mp4/index.m3u8&nocache1770222888\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shibou-yuugi-de-meshi-wo-kuu-dublado/05.mp4/index.m3u8\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "shibou-yuugi-de-meshi-wo-kuu-s1-ep6",
+            "number": 6,
+            "title": "Shibou Yuugi de Meshi wo Kuu - T1 Ep 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://topanimes.net/antivirus2/yes/?id=sbt/f-cdn/google/node/playready/a-2/letra/s/shibou-yuugi-de-meshi-wo-kuu/06-leg/cdn_stream.m3u8&img=https://image.tmdb.org/t/p/original/kDpNiQE8blhwqbv4BUzVt52Igq3.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe src=\"https://topanimes.net/antivirus2/yes/?id=sbt/f-cdn/google/node/playready/a-2/letra/s/shibou-yuugi-de-meshi-wo-kuu/06-dub/cdn_stream.m3u8&img=https://image.tmdb.org/t/p/original/ccIs5X2VynB6e0JO4ZQyl6tAqxx.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "shibou-yuugi-de-meshi-wo-kuu-s1-ep7",
+            "number": 7,
+            "title": "Shibou Yuugi de Meshi wo Kuu - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://topanimes.net/antivirus3/?id=SHIBOYUGI.Playing.Death.Games.to.Put.Food.on.the.Table.S01E07.leg.mp4&img=https://image.tmdb.org/t/p/original/lpaXWHwG4hzcwh3MVuEOTccyuHo.jpg&img=https://image.tmdb.org/t/p/original/lpaXWHwG4hzcwh3MVuEOTccyuHo.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe src=\"https://topanimes.net/antivirus3/?id=SHIBOYUGI.Playing.Death.Games.to.Put.Food.on.the.Table.S01E07.dub.mp4&img=https://image.tmdb.org/t/p/original/lpaXWHwG4hzcwh3MVuEOTccyuHo.jpg&img=https://image.tmdb.org/t/p/original/lpaXWHwG4hzcwh3MVuEOTccyuHo.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "shibou-yuugi-de-meshi-wo-kuu-s1-ep8",
+            "number": 8,
+            "title": "Shibou Yuugi de Meshi wo Kuu - T1 Ep 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://topanimes.net/antivirus2/yes/?id=sbt/f-cdn/google/node/playready/a-2/letra/s/shibou-yuugi-de-meshi-wo-kuu/08-leg/cdn_stream.m3u8&img=https://image.tmdb.org/t/p/original/qFuS6F3sAvKeHWEjXSpS5bhksut.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe src=\"https://topanimes.net/antivirus2/yes/?id=sbt/f-cdn/google/node/playready/a-2/letra/s/shibou-yuugi-de-meshi-wo-kuu/08-dub/cdn_stream.m3u8&img=https://image.tmdb.org/t/p/original/qFuS6F3sAvKeHWEjXSpS5bhksut.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "shibou-yuugi-de-meshi-wo-kuu-s1-ep9",
+            "number": 9,
+            "title": "Shibou Yuugi de Meshi wo Kuu - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://topanimes.net/antivirus2/yes/?id=sbt/f-cdn/google/node/playready/a-2/letra/s/shibou-yuugi-de-meshi-wo-kuu/09-leg/cdn_stream.m3u8&img=https://image.tmdb.org/t/p/original/39xin054ZfgXdJjNNwnj7EzSqdU.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe src=\"https://topanimes.net/antivirus2/yes/?id=sbt/f-cdn/google/node/playready/a-2/letra/s/shibou-yuugi-de-meshi-wo-kuu/09-dub/cdn_stream.m3u8&img=https://image.tmdb.org/t/p/original/39xin054ZfgXdJjNNwnj7EzSqdU.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          }
+        ],
+        "topanimes_slug_sub": "shibou-yuugi-de-meshi-wo-kuu",
+        "topanimes_slug_dub": "shibou-yuugi-de-meshi-wo-kuu-dublado",
+        "topanimes_sub_src": 1,
+        "topanimes_dub_src": 1
+      }
+    ]
   }
 ]

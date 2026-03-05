@@ -978,5 +978,26 @@
     "title": "Adicionado: Mayonaka Heart Tune",
     "detail": "T1 · 12 eps · Série · AniVideo (mayonaka-heart-tune)",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-05 18:15:06",
+    "kind": "git",
+    "title": "Git Push: chore: update database [05/03/2026, 18:15]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   73139f2..9ccba1e  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-05 18:21:25",
+    "kind": "delete",
+    "title": "Removido: Mayonaka Heart Tune",
+    "detail": "",
+    "level": "warning"
+  },
+  {
+    "ts": "2026-03-05 18:23:10",
+    "kind": "add",
+    "title": "Adicionado: Mayonaka Heart Tune",
+    "detail": "T1 · 9 eps · Série · AniVideo (mayonaka-heart-tune)",
+    "level": "info"
   }
 ]

@@ -531,7 +531,7 @@ body::before {
               </div>
             </div>
             <div class="info-box" style="margin-top:8px;font-size:10px">
-              Selecione quais fontes salvar. Sem seleção = todas.
+              Escolha uma fonte para LEG e uma para DUB. Sem seleção = primeira disponível.
             </div>
           </div>
           <div id="sm-ta-url-preview" style="font-family:var(--mono);font-size:10px;color:var(--dim);margin-top:4px"></div>
@@ -943,7 +943,7 @@ async function submitAdd() {
       avslug: s.avslug || '', inc_season: s.inc_season,
       ao_slug: s.ao_slug || '', ao_inc_season: s.ao_inc_season,
       ta_slug_sub: s.ta_slug_sub || '', ta_slug_dub: s.ta_slug_dub || '',
-      ta_sub_sources: s.ta_sub_sources || [], ta_dub_sources: s.ta_dub_sources || [],
+      ta_sub_source: s.ta_sub_source ?? null, ta_dub_source: s.ta_dub_source ?? null,
       // Season metadata from modal
       season_label:  s.label || '',
       season_year:   s.year  || '',
@@ -1125,23 +1125,24 @@ async function smFetchTopanimesSources() {
   st.textContent = `✅ LEG: ${subTotal} fonte(s) · DUB: ${dubTotal} fonte(s)`;
   st.style.color = 'var(--green)';
 
-  function buildSourceChecks(sources, containerId) {
+  function buildSourceRadio(sources, containerId, groupName) {
     const el = $(containerId);
     if (!el) return;
     if (!sources || !sources.length) {
       el.innerHTML = '<span style="color:var(--dim);font-size:11px">Nenhuma fonte encontrada</span>';
       return;
     }
-    el.innerHTML = sources.map(s => `
-      <label style="display:flex;align-items:center;gap:8px;cursor:pointer;padding:6px 8px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:12px">
-        <input type="checkbox" value="${s.num}" checked style="accent-color:var(--accent2)">
+    el.innerHTML = sources.map((s, i) => `
+      <label style="display:flex;align-items:center;gap:8px;cursor:pointer;padding:6px 8px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:12px;transition:border-color .15s"
+        onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+        <input type="radio" name="${groupName}" value="${s.num}" ${i===0?'checked':''} style="accent-color:var(--accent2)">
         <span style="font-family:var(--mono);color:var(--accent2);font-size:10px;min-width:18px">#${s.num}</span>
         <span>${esc(s.name)}</span>
       </label>`).join('');
   }
 
-  buildSourceChecks(data.sub, 'sm-ta-sub-sources');
-  buildSourceChecks(data.dub, 'sm-ta-dub-sources');
+  buildSourceRadio(data.sub, 'sm-ta-sub-sources', 'ta-sub-radio');
+  buildSourceRadio(data.dub, 'sm-ta-dub-sources', 'ta-dub-radio');
   $('sm-ta-sources-box').style.display = 'block';
   updateTaUrlPreview();
 }
@@ -1175,8 +1176,10 @@ function smAddSeason() {
   const aoIncSeason = $('sm-ao-inc-season').checked;
   const taSlugSub  = $('sm-ta-slug-sub').value.trim();
   const taSlugDub  = $('sm-ta-slug-dub').value.trim();
-  const taSubSrcs  = [...document.querySelectorAll('#sm-ta-sub-sources input[type=checkbox]:checked')].map(c => parseInt(c.value));
-  const taDubSrcs  = [...document.querySelectorAll('#sm-ta-dub-sources input[type=checkbox]:checked')].map(c => parseInt(c.value));
+  const taSubSrcEl = document.querySelector('#sm-ta-sub-sources input[type=radio]:checked');
+  const taDubSrcEl = document.querySelector('#sm-ta-dub-sources input[type=radio]:checked');
+  const taSubSrc   = taSubSrcEl ? parseInt(taSubSrcEl.value) : null;
+  const taDubSrc   = taDubSrcEl ? parseInt(taDubSrcEl.value) : null;
   const cover   = _smSelected ? (((_smSelected.coverImage||{}).extraLarge)||((_smSelected.coverImage||{}).large)||'') : '';
 
   if (source === 'aonlinecc' && !aoSlug) {
@@ -1190,7 +1193,7 @@ function smAddSeason() {
     season_num: sNum, label, eps, max_eps: maxEps,
     year, score, status, source,
     avslug, ao_slug: aoSlug, inc_season: incSeason, ao_inc_season: aoIncSeason,
-    ta_slug_sub: taSlugSub, ta_slug_dub: taSlugDub, ta_sub_sources: taSubSrcs, ta_dub_sources: taDubSrcs,
+    ta_slug_sub: taSlugSub, ta_slug_dub: taSlugDub, ta_sub_source: taSubSrc, ta_dub_source: taDubSrc,
     has_sub: hasSub, has_dub: hasDub,
     cover,
     al_prefill: _smSelected || null,

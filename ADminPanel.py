@@ -122,10 +122,10 @@ def topanimes_ep_url(slug: str, ep: int, is_dub: bool = False) -> str:
     return f"{TOPANIMES_BASE}/episodio/{slug}-episodio-{ep}/"
 
 def scrape_topanimes_ep(slug: str, ep: int, is_dub: bool = False,
-                        source_nums: list | None = None) -> dict:
+                        source_num: int | None = None) -> dict:
     """
     Scrapes topanimes.net episode page.
-    Returns {num: {name, src}} for selected source_nums (or all if None).
+    Returns {num: {name, src}} for the selected source_num (or first found if None).
     Returns {} if page not found or no sources.
     """
     url = topanimes_ep_url(slug, ep, is_dub)
@@ -159,8 +159,8 @@ def scrape_topanimes_ep(slug: str, ep: int, is_dub: bool = False,
         if not sources:
             return {}
 
-        if source_nums:
-            filtered = {k: v for k, v in sources.items() if k in source_nums}
+        if source_num is not None:
+            filtered = {k: v for k, v in sources.items() if k == source_num}
             return filtered if filtered else {}
 
         return sources
@@ -169,17 +169,16 @@ def scrape_topanimes_ep(slug: str, ep: int, is_dub: bool = False,
 
 def topanimes_build_embeds(sub_sources: dict, dub_sources: dict) -> dict:
     """
-    Converts source dicts to embeds dict.
-    sub_sources: {1: {name, src}, 2: ...}
-    Keys: sub (first), sub2, sub3 ...  / dub, dub2, dub3 ...
+    Converts source dicts to embeds dict — single sub + single dub only.
+    sub_sources: {num: {name, src}} — uses first (lowest num) entry only.
     """
     embeds: dict = {}
-    for i, (_, v) in enumerate(sorted(sub_sources.items())):
-        key = "sub" if i == 0 else f"sub{i+1}"
-        embeds[key] = f'<iframe src="{v["src"]}" frameborder="0" allowfullscreen></iframe>'
-    for i, (_, v) in enumerate(sorted(dub_sources.items())):
-        key = "dub" if i == 0 else f"dub{i+1}"
-        embeds[key] = f'<iframe src="{v["src"]}" frameborder="0" allowfullscreen></iframe>'
+    if sub_sources:
+        v = sorted(sub_sources.items())[0][1]
+        embeds["sub"] = f'<iframe src="{v["src"]}" frameborder="0" allowfullscreen></iframe>'
+    if dub_sources:
+        v = sorted(dub_sources.items())[0][1]
+        embeds["dub"] = f'<iframe src="{v["src"]}" frameborder="0" allowfullscreen></iframe>'
     return embeds
 
 def _normalize_iframe(raw: str) -> str:
@@ -529,8 +528,8 @@ def check_next_ep_per_audio(anime: dict) -> list[dict]:
                 "season": s_num, "label": season.get("seasonLabel", f"S{s_num}"),
                 "source": "topanimes", "ta_slug_sub": ta_slug_sub,
                 "ta_slug_dub": season.get("topanimes_slug_dub", ta_slug_sub + "-dublado"),
-                "ta_sub_srcs": season.get("topanimes_sub_srcs", []),
-                "ta_dub_srcs": season.get("topanimes_dub_srcs", []),
+                "ta_sub_src": season.get("topanimes_sub_src"),
+                "ta_dub_src": season.get("topanimes_dub_src"),
                 "current": cur, "next_ep": next_e, "max": max_e,
             })
             continue
@@ -646,8 +645,8 @@ def try_add_next_ep(anime: dict) -> list[str]:
         ta_slug_sub = season.get("topanimes_slug_sub", "").strip()
         if ta_slug_sub and not ao_slug:
             ta_slug_dub = season.get("topanimes_slug_dub", ta_slug_sub + "-dublado")
-            ta_sub_srcs = season.get("topanimes_sub_srcs", []) or None
-            ta_dub_srcs = season.get("topanimes_dub_srcs", []) or None
+            ta_sub_src = season.get("topanimes_sub_src")
+            ta_dub_src = season.get("topanimes_dub_src")
             aud_sub = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "sub" and a.get("available")), 0)
             aud_dub = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "dub" and a.get("available")), 0)
             cur     = max(int(aud_sub or 0), int(aud_dub or 0))
@@ -656,8 +655,8 @@ def try_add_next_ep(anime: dict) -> list[str]:
                 continue
 
             logs.append(f"    [TOPANIMES] slug={ta_slug_sub} atual:{cur:02d} → Checando {next_e:02d}...")
-            sub_raw = scrape_topanimes_ep(ta_slug_sub, next_e, is_dub=False, source_nums=ta_sub_srcs)
-            dub_raw = scrape_topanimes_ep(ta_slug_dub, next_e, is_dub=False, source_nums=ta_dub_srcs) if aud_dub > 0 or sub_raw else {}
+            sub_raw = scrape_topanimes_ep(ta_slug_sub, next_e, is_dub=False, source_num=ta_sub_src)
+            dub_raw = scrape_topanimes_ep(ta_slug_dub, next_e, is_dub=False, source_num=ta_dub_src) if aud_dub > 0 or sub_raw else {}
             embeds  = topanimes_build_embeds(sub_raw, dub_raw)
 
             if embeds:
@@ -1145,8 +1144,8 @@ def api_add_anime_full():
         # TopAnimes
         ta_slug_sub  = (data.get("ta_slug_sub") or "").strip()
         ta_slug_dub  = (data.get("ta_slug_dub") or "").strip()
-        ta_sub_srcs  = [int(x) for x in (data.get("ta_sub_sources") or []) if str(x).isdigit()]
-        ta_dub_srcs  = [int(x) for x in (data.get("ta_dub_sources") or []) if str(x).isdigit()]
+        ta_sub_src   = int(data["ta_sub_source"]) if str(data.get("ta_sub_source","")).isdigit() else None
+        ta_dub_src   = int(data["ta_dub_source"]) if str(data.get("ta_dub_source","")).isdigit() else None
 
         wlog(f"[ANILIST] Buscando '{name}'...", "dim")
         prefill = data.get("_al_prefill")  # Pre-selected from modal search
@@ -1214,15 +1213,12 @@ def api_add_anime_full():
         elif source == "topanimes" and ta_slug_sub:
             wlog(f"[TOPANIMES] Raspando {total_eps} ep(s) — SUB slug: '{ta_slug_sub}' DUB slug: '{ta_slug_dub or ta_slug_sub+"-dublado"}'...", "dim")
             for ep_i in range(1, total_eps + 1):
-                sub_raw = scrape_topanimes_ep(ta_slug_sub, ep_i, is_dub=False,
-                                              source_nums=ta_sub_srcs or None)
-                dub_raw = scrape_topanimes_ep(ta_slug_dub or ta_slug_sub+"-dublado",
-                                              ep_i, is_dub=False,
-                                              source_nums=ta_dub_srcs or None) if has_dub else {}
-                embeds  = topanimes_build_embeds(sub_raw, dub_raw)
+                result_sub = scrape_topanimes_ep(ta_slug_sub, ep_i, is_dub=False, source_num=ta_sub_src)
+                result_dub = scrape_topanimes_ep(ta_slug_dub or ta_slug_sub+"-dublado", ep_i, is_dub=False, source_num=ta_dub_src) if has_dub else {}
+                embeds  = topanimes_build_embeds(result_sub, result_dub)
                 tags    = []
-                if sub_raw: tags.append(f"LEG({len(sub_raw)}src)")
-                if dub_raw: tags.append(f"DUB({len(dub_raw)}src)")
+                if result_sub: tags.append("LEG")
+                if result_dub: tags.append("DUB")
                 wlog(f"  Ep {ep_i:02d}: [{' '.join(tags) or '❌'}]",
                      "success" if embeds else "error")
                 ep_list.append({
@@ -1289,8 +1285,8 @@ def api_add_anime_full():
         if source == "topanimes" and ta_slug_sub:
             season_data["topanimes_slug_sub"]  = ta_slug_sub
             season_data["topanimes_slug_dub"]  = ta_slug_dub or (ta_slug_sub + "-dublado")
-            season_data["topanimes_sub_srcs"]  = ta_sub_srcs
-            season_data["topanimes_dub_srcs"]  = ta_dub_srcs
+            season_data["topanimes_sub_src"]   = ta_sub_src
+            season_data["topanimes_dub_src"]   = ta_dub_src
 
         if is_movie:
             season_data["type"]        = "movie"

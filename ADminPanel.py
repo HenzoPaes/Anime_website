@@ -22,14 +22,15 @@ from flask import Flask, jsonify, request, render_template, Response, stream_wit
 app = Flask(__name__)
 
 # ── Config ────────────────────────────────────────────────────────────────────
-LOG_FILE       = "anime_admin_log.json"
-GITHUB_RAW_URL = "https://raw.githubusercontent.com/HenzoPaes/Anime_website/refs/heads/data/output.json"
-GITHUB_REPO    = "https://github.com/HenzoPaes/Anime_website.git"
-GIT_BRANCH     = "data"
-ANIMES_FOLDER  = "./api/Animes"
-OUTPUT_FILE    = "output.json"
-ANIVIDEO_WRAP  = "https://api.anivideo.net/videohls.php"
-ANIVIDEO_CDN   = "https://cdn-s01.mywallpaper-4k-image.net/stream"
+LOG_FILE        = "anime_admin_log.json"
+GITHUB_RAW_URL  = "https://raw.githubusercontent.com/HenzoPaes/Anime_website/refs/heads/data/output.json"
+GITHUB_REPO     = "https://github.com/HenzoPaes/Anime_website.git"
+GIT_BRANCH      = "data"
+ANIMES_FOLDER   = "./api/Animes"
+OUTPUT_FILE     = "output.json"
+ANIVIDEO_WRAP   = "https://api.anivideo.net/videohls.php"
+ANIVIDEO_CDN    = "https://cdn-s01.mywallpaper-4k-image.net/stream"
+AONLINECC_BASE  = "https://animesonlinecc.to"
 PAGECONFIG_FILE = "pageconfig.json"
 
 _DEFAULT_PAGECONFIG = {
@@ -56,11 +57,13 @@ _LOG_LOCK = threading.Lock()
 
 
 # ═════════════════════════════════════════════════════════════════════════════
-# BUSINESS LOGIC  (preservado do original)
+# BUSINESS LOGIC
 # ═════════════════════════════════════════════════════════════════════════════
 
 def make_iframe(src: str) -> str:
     return f'<iframe width="100%" height="100%" src="{src}" frameborder="0" allowfullscreen></iframe>'
+
+# ── AniVideo ──────────────────────────────────────────────────────────────────
 
 def anivideo_url(path: str, ep: int) -> str:
     cdn = f"{ANIVIDEO_CDN}/{path}/{ep:02d}.mp4/index.m3u8"
@@ -78,6 +81,89 @@ def av_ep_exists(path: str, ep: int) -> bool:
         return r.status_code < 400
     except:
         return False
+
+# ── AnimesOnlineCC ────────────────────────────────────────────────────────────
+
+_AONLINECC_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0 Safari/537.36"
+    ),
+    "Accept-Language": "pt-BR,pt;q=0.9",
+}
+
+def aonlinecc_ep_url(slug: str, season: int, ep: int) -> str:
+    """
+    Temporada 1 → /episodio/{slug}-episodio-1/
+    Temporada 2 → /episodio/{slug}-2-episodio-1/
+    """
+    if season <= 1:
+        return f"{AONLINECC_BASE}/episodio/{slug}-episodio-{ep}/"
+    return f"{AONLINECC_BASE}/episodio/{slug}-{season}-episodio-{ep}/"
+
+def _normalize_iframe(raw: str) -> str:
+    tag = raw.strip()
+    if 'width=' not in tag:
+        tag = tag.replace('<iframe', '<iframe width="100%" height="100%"', 1)
+    if 'allowfullscreen' not in tag.lower():
+        tag = re.sub(r'(/?>)$', ' allowfullscreen></iframe>', tag)
+    if not tag.endswith('</iframe>'):
+        tag = re.sub(r'\s*/?>$', '></iframe>', tag)
+    return tag
+
+def scrape_aonlinecc_ep(slug: str, season: int, ep: int) -> dict | None:
+    """
+    Retorna embeds do episódio ou None se não encontrado.
+
+    Regra do site:
+      • option-1 somente         → Legendado
+      • option-1 + option-2      → option-1 = Dublado, option-2 = Legendado
+    """
+    url = aonlinecc_ep_url(slug, season, ep)
+    try:
+        r = requests.get(url, timeout=15, headers=_AONLINECC_HEADERS, allow_redirects=True)
+        if r.status_code >= 400:
+            return None
+
+        html = r.text
+
+        playex_m = re.search(
+            r'<div[^>]+class=["\'][^"\']*playex[^"\']*["\'][^>]*>(.*?)</div>\s*</div>\s*</div>',
+            html, re.S
+        )
+        scope = playex_m.group(0) if playex_m else html
+
+        def extract_option(opt_id: str, text: str):
+            blk = re.search(rf'id="{opt_id}"[^>]*>(.*?)</div>', text, re.S)
+            if not blk:
+                return None
+            ifr = re.search(r'(<iframe[^>]+src="([^"]+)"[^>]*/?>(?:</iframe>)?)', blk.group(1), re.S)
+            return ifr.group(1) if ifr else None
+
+        opt1 = extract_option("option-1", scope)
+        opt2 = extract_option("option-2", scope)
+
+        if not opt1:
+            return None
+
+        if opt2:
+            return {"dub": _normalize_iframe(opt1), "sub": _normalize_iframe(opt2)}
+        else:
+            return {"sub": _normalize_iframe(opt1)}
+
+    except Exception:
+        return None
+
+def aonlinecc_ep_exists(slug: str, season: int, ep: int) -> bool:
+    url = aonlinecc_ep_url(slug, season, ep)
+    try:
+        r = requests.head(url, timeout=8, headers=_AONLINECC_HEADERS, allow_redirects=True)
+        return r.status_code < 400
+    except Exception:
+        return False
+
+# ── MAL ───────────────────────────────────────────────────────────────────────
 
 def fetch_mal_info(query: str) -> dict | None:
     url = f"https://api.jikan.moe/v4/anime?q={query}&limit=1"
@@ -134,6 +220,8 @@ def mal_to_season_data(mal: dict, s_num: int, is_movie=False) -> dict:
         "eps_tot": eps_tot, "synopsis": synopsis, "trailer": trailer,
         "runtime": runtime, "rating": rating,
     }
+
+# ── Crunchyroll Banner ────────────────────────────────────────────────────────
 
 CR_KEYART_RE = re.compile(r'/keyart/([A-Z0-9]+)-', re.IGNORECASE)
 
@@ -202,6 +290,7 @@ def fetch_crunchyroll_banner(anime_name: str, fallback: str = "") -> str:
         return fallback
 
 # ── DB ────────────────────────────────────────────────────────────────────────
+
 def load_db() -> list:
     if os.path.exists(OUTPUT_FILE):
         with open(OUTPUT_FILE, encoding="utf-8") as f:
@@ -235,6 +324,7 @@ def save_pageconfig(cfg: dict):
         json.dump(cfg, f, ensure_ascii=False, indent=2)
 
 # ── Episodes ──────────────────────────────────────────────────────────────────
+
 def get_audio_ep_counts(anime: dict) -> list[dict]:
     result = []
     for season in anime.get("seasons", []):
@@ -251,6 +341,7 @@ def get_audio_ep_counts(anime: dict) -> list[dict]:
             "dub":    dub_count if has_dub else None,
             "max":    season.get("episodes", 0),
             "status": season.get("status", "?"),
+            "source": "aonlinecc" if season.get("aonlinecc_slug") else "anivideo",
         })
     return result
 
@@ -264,6 +355,25 @@ def check_next_ep_per_audio(anime: dict) -> list[dict]:
             continue
         s_num  = season["season"]
         audios = season.get("audios", [])
+
+        # AnimesOnlineCC path
+        ao_slug = season.get("aonlinecc_slug", "").strip()
+        if ao_slug:
+            sub_cur = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "sub" and a.get("available")), 0)
+            dub_cur = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "dub" and a.get("available")), 0)
+            cur     = max(sub_cur, dub_cur)
+            next_e  = cur + 1
+            max_e   = season.get("episodes", 0)
+            if max_e and next_e > max_e:
+                continue
+            results.append({
+                "season": s_num, "label": season.get("seasonLabel", f"S{s_num}"),
+                "source": "aonlinecc", "ao_slug": ao_slug,
+                "current": cur, "next_ep": next_e, "max": max_e,
+            })
+            continue
+
+        # AniVideo path
         sub_path = dub_path = None
         sub_cur = dub_cur = 0
         for ep in reversed(ep_list):
@@ -284,8 +394,8 @@ def check_next_ep_per_audio(anime: dict) -> list[dict]:
                 if max_e and next_e > max_e:
                     continue
                 results.append({"season": s_num, "label": season.get("seasonLabel", f"S{s_num}"),
-                                 "audio": "sub", "audio_label": "Legendado", "current": cur,
-                                 "next_ep": next_e, "max": max_e, "path": sub_path})
+                                 "source": "anivideo", "audio": "sub", "audio_label": "Legendado",
+                                 "current": cur, "next_ep": next_e, "max": max_e, "path": sub_path})
             if aud["type"] == "dub" and aud.get("available") and dub_path:
                 cur = max(dub_cur, aud.get("episodesAvailable", dub_cur))
                 next_e = cur + 1
@@ -293,8 +403,8 @@ def check_next_ep_per_audio(anime: dict) -> list[dict]:
                 if max_e and next_e > max_e:
                     continue
                 results.append({"season": s_num, "label": season.get("seasonLabel", f"S{s_num}"),
-                                 "audio": "dub", "audio_label": "Dublado", "current": cur,
-                                 "next_ep": next_e, "max": max_e, "path": dub_path})
+                                 "source": "anivideo", "audio": "dub", "audio_label": "Dublado",
+                                 "current": cur, "next_ep": next_e, "max": max_e, "path": dub_path})
     return results
 
 def try_add_next_ep(anime: dict) -> list[str]:
@@ -309,20 +419,82 @@ def try_add_next_ep(anime: dict) -> list[str]:
         if not ep_list:
             continue
         logs.append(f"  ── S{s_num} — {season.get('seasonLabel', '')} ──")
+
+        ao_slug = season.get("aonlinecc_slug", "").strip()
         ep_map: dict[int, dict] = {int(ep["number"]): ep for ep in ep_list}
+
+        # ── AnimesOnlineCC ─────────────────────────────────────────────
+        if ao_slug:
+            aud_sub = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "sub" and a.get("available")), 0)
+            aud_dub = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "dub" and a.get("available")), 0)
+            cur     = max(int(aud_sub or 0), int(aud_dub or 0))
+            next_e  = cur + 1
+            if max_e and next_e > max_e:
+                continue
+
+            logs.append(f"    [AONLINECC] slug={ao_slug} atual:{cur:02d} → Checando {next_e:02d}...")
+            result = scrape_aonlinecc_ep(ao_slug, s_num, next_e)
+
+            if result:
+                has_sub = "sub" in result
+                has_dub = "dub" in result
+                tags = "/".join(t.upper() for t in result)
+                logs.append(f"    [AONLINECC] ✅ Ep {next_e:02d} disponível! [{tags}]")
+
+                if next_e in ep_map:
+                    ep_map[next_e].setdefault("embeds", {})
+                    if has_sub: ep_map[next_e]["embeds"]["sub"] = result["sub"]
+                    if has_dub: ep_map[next_e]["embeds"]["dub"] = result["dub"]
+                    ep_map[next_e]["embedCredit"] = "animesonlinecc.to"
+                else:
+                    ep_map[next_e] = {
+                        "id":          f"{anime['id']}-s{s_num}-ep{next_e}",
+                        "number":      next_e,
+                        "title":       f"{anime.get('titleRomaji', anime['title'])} - T{s_num} Ep {next_e}",
+                        "season":      str(s_num),
+                        "embeds":      result,
+                        "embedCredit": "animesonlinecc.to",
+                    }
+
+                for aud in audios:
+                    if aud.get("type") == "sub" and has_sub:
+                        aud["available"] = True
+                        aud["episodesAvailable"] = next_e
+                    if aud.get("type") == "dub" and has_dub:
+                        aud["available"] = True
+                        aud["episodesAvailable"] = next_e
+
+                season["episodeList"] = sorted(ep_map.values(), key=lambda x: int(x["number"]))
+                all_nums = [int(ep["number"]) for ep in season["episodeList"] if ep.get("embeds")]
+                if all_nums:
+                    season["currentEpisode"] = max(all_nums)
+
+                sub_done = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "sub"), 0)
+                dub_done = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "dub"), 0)
+                if max_e and min(int(sub_done or 0), int(dub_done or 0)) >= max_e:
+                    season["status"] = "finished"
+                    logs.append(f"    🏁 Temporada {s_num} concluída!")
+            else:
+                logs.append(f"    [AONLINECC] ❌ Ep {next_e:02d} não disponível.")
+
+            continue  # pula AniVideo para esta temporada
+
+        # ── AniVideo ───────────────────────────────────────────────────
         last_sub_num = last_dub_num = 0
         last_sub_path = last_dub_path = None
+
         for ep in ep_list:
             num    = int(ep["number"])
             embeds = ep.get("embeds", {}) or {}
             if embeds.get("sub"):
-                last_sub_num  = max(last_sub_num, num)
+                last_sub_num = max(last_sub_num, num)
                 p = extract_av_path(embeds["sub"])
                 if p: last_sub_path = p
             if embeds.get("dub"):
-                last_dub_num  = max(last_dub_num, num)
+                last_dub_num = max(last_dub_num, num)
                 p = extract_av_path(embeds["dub"])
                 if p: last_dub_path = p
+
         aud_sub = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "sub" and a.get("available")), 0)
         aud_dub = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "dub" and a.get("available")), 0)
         sub_cur = max(last_sub_num, int(aud_sub or 0))
@@ -338,10 +510,13 @@ def try_add_next_ep(anime: dict) -> list[str]:
                     if sub_next in ep_map:
                         ep_map[sub_next].setdefault("embeds", {})["sub"] = make_iframe(anivideo_url(last_sub_path, sub_next))
                     else:
-                        ep_map[sub_next] = {"id": f"{anime['id']}-s{s_num}-ep{sub_next}", "number": sub_next,
-                                            "title": f"{anime.get('titleRomaji', anime['title'])} - T{s_num} Ep {sub_next}",
-                                            "season": str(s_num), "embeds": {"sub": make_iframe(anivideo_url(last_sub_path, sub_next))},
-                                            "embedCredit": "api.anivideo.net"}
+                        ep_map[sub_next] = {
+                            "id": f"{anime['id']}-s{s_num}-ep{sub_next}", "number": sub_next,
+                            "title": f"{anime.get('titleRomaji', anime['title'])} - T{s_num} Ep {sub_next}",
+                            "season": str(s_num),
+                            "embeds": {"sub": make_iframe(anivideo_url(last_sub_path, sub_next))},
+                            "embedCredit": "api.anivideo.net",
+                        }
                     for aud in audios:
                         if aud.get("type") == "sub": aud["episodesAvailable"] = sub_next
                     any_added = True
@@ -359,10 +534,13 @@ def try_add_next_ep(anime: dict) -> list[str]:
                     if dub_next in ep_map:
                         ep_map[dub_next].setdefault("embeds", {})["dub"] = make_iframe(anivideo_url(last_dub_path, dub_next))
                     else:
-                        ep_map[dub_next] = {"id": f"{anime['id']}-s{s_num}-ep{dub_next}", "number": dub_next,
-                                            "title": f"{anime.get('titleRomaji', anime['title'])} - T{s_num} Ep {dub_next}",
-                                            "season": str(s_num), "embeds": {"dub": make_iframe(anivideo_url(last_dub_path, dub_next))},
-                                            "embedCredit": "api.anivideo.net"}
+                        ep_map[dub_next] = {
+                            "id": f"{anime['id']}-s{s_num}-ep{dub_next}", "number": dub_next,
+                            "title": f"{anime.get('titleRomaji', anime['title'])} - T{s_num} Ep {dub_next}",
+                            "season": str(s_num),
+                            "embeds": {"dub": make_iframe(anivideo_url(last_dub_path, dub_next))},
+                            "embedCredit": "api.anivideo.net",
+                        }
                     for aud in audios:
                         if aud.get("type") == "dub": aud["episodesAvailable"] = dub_next
                     any_added = True
@@ -381,9 +559,11 @@ def try_add_next_ep(anime: dict) -> list[str]:
             if max_e and min(int(sub_done or 0), int(dub_done or 0)) >= max_e:
                 season["status"] = "finished"
                 logs.append(f"    🏁 Temporada {s_num} concluída!")
+
     return logs
 
 # ── Logs ──────────────────────────────────────────────────────────────────────
+
 def _load_logs() -> list[dict]:
     if os.path.exists(LOG_FILE):
         try:
@@ -437,6 +617,7 @@ def index():
     return render_template('index.html')
 
 # ── DB ────────────────────────────────────────────────────────────────────────
+
 @app.route('/api/db')
 def api_get_db():
     return jsonify(load_db())
@@ -480,6 +661,7 @@ def api_delete_anime(anime_id):
     return jsonify({"ok": True})
 
 # ── Stats ─────────────────────────────────────────────────────────────────────
+
 @app.route('/api/stats')
 def api_stats():
     db = load_db()
@@ -507,6 +689,7 @@ def api_stats():
     })
 
 # ── Logs ──────────────────────────────────────────────────────────────────────
+
 @app.route('/api/logs')
 def api_get_logs():
     kind = request.args.get("kind")
@@ -522,6 +705,7 @@ def api_clear_logs():
     return jsonify({"ok": True})
 
 # ── Pageconfig ────────────────────────────────────────────────────────────────
+
 @app.route('/api/pageconfig')
 def api_get_pageconfig():
     return jsonify(load_pageconfig())
@@ -534,6 +718,7 @@ def api_save_pageconfig():
     return jsonify({"ok": True})
 
 # ── MAL ───────────────────────────────────────────────────────────────────────
+
 @app.route('/api/mal/search')
 def api_mal_search():
     q = request.args.get("q","")
@@ -552,6 +737,7 @@ def api_mal_by_id(mal_id):
     return jsonify({"error": "not found"}), 404
 
 # ── Git ───────────────────────────────────────────────────────────────────────
+
 @app.route('/api/git/push', methods=['POST'])
 def api_git_push():
     msg = request.json.get("message","chore: update database")
@@ -571,6 +757,7 @@ def api_git_pull():
         return jsonify({"ok": False, "error": str(e)}), 500
 
 # ── SSE Stream ────────────────────────────────────────────────────────────────
+
 @app.route('/api/stream/<stream_id>')
 def api_stream(stream_id):
     def generate():
@@ -595,6 +782,7 @@ def api_stream(stream_id):
     )
 
 # ── Update / Check ────────────────────────────────────────────────────────────
+
 @app.route('/api/update', methods=['POST'])
 def api_run_update():
     dry   = request.json.get("dry", False)
@@ -620,8 +808,9 @@ def api_run_update():
                 parts = []
                 if info["sub"] is not None: parts.append(f"LEG: {info['sub']:02d}")
                 if info["dub"] is not None: parts.append(f"DUB: {info['dub']:02d}")
-                max_s = f"/{info['max']}" if info["max"] else ""
-                wlog(f"  [{info['label']}]  {' | '.join(parts)}{max_s}", "dim")
+                max_s  = f"/{info['max']}" if info["max"] else ""
+                src_lbl = f" [{info.get('source','?').upper()}]"
+                wlog(f"  [{info['label']}]  {' | '.join(parts)}{max_s}{src_lbl}", "dim")
 
             if dry:
                 checks = check_next_ep_per_audio(anime)
@@ -629,14 +818,24 @@ def api_run_update():
                     wlog("  (sem temporadas em andamento)", "dim"); continue
                 anime_changed = False
                 for chk in checks:
-                    tag = "LEG" if chk["audio"] == "sub" else "DUB"
                     max_s = f"/{chk['max']}" if chk["max"] else ""
-                    wlog(f"  [{tag}] S{chk['season']} atual:{chk['current']:02d}{max_s} → ep {chk['next_ep']:02d}...", "dim")
-                    if av_ep_exists(chk["path"], chk["next_ep"]):
-                        wlog(f"  [{tag}] ✅  Ep {chk['next_ep']:02d} DISPONÍVEL!", "success")
-                        anime_changed = True
+                    if chk["source"] == "aonlinecc":
+                        wlog(f"  [AONLINECC] S{chk['season']} atual:{chk['current']:02d}{max_s} → ep {chk['next_ep']:02d}...", "dim")
+                        result = scrape_aonlinecc_ep(chk["ao_slug"], chk["season"], chk["next_ep"])
+                        if result:
+                            tags = "/".join(t.upper() for t in result)
+                            wlog(f"  [AONLINECC] ✅  Ep {chk['next_ep']:02d} DISPONÍVEL! [{tags}]", "success")
+                            anime_changed = True
+                        else:
+                            wlog(f"  [AONLINECC] ❌  Ep {chk['next_ep']:02d} não disponível.", "error")
                     else:
-                        wlog(f"  [{tag}] ❌  Ep {chk['next_ep']:02d} não disponível.", "error")
+                        tag = "LEG" if chk["audio"] == "sub" else "DUB"
+                        wlog(f"  [{tag}] S{chk['season']} atual:{chk['current']:02d}{max_s} → ep {chk['next_ep']:02d}...", "dim")
+                        if av_ep_exists(chk["path"], chk["next_ep"]):
+                            wlog(f"  [{tag}] ✅  Ep {chk['next_ep']:02d} DISPONÍVEL!", "success")
+                            anime_changed = True
+                        else:
+                            wlog(f"  [{tag}] ❌  Ep {chk['next_ep']:02d} não disponível.", "error")
                 if anime_changed:
                     changed.append(title)
             else:
@@ -670,7 +869,8 @@ def api_run_update():
     threading.Thread(target=_worker, daemon=True).start()
     return jsonify({"stream_id": sid})
 
-# ── Add anime (with MAL fetch) ─────────────────────────────────────────────────
+# ── Add anime (with source selection) ────────────────────────────────────────
+
 @app.route('/api/add_anime', methods=['POST'])
 def api_add_anime_full():
     data  = request.json
@@ -682,27 +882,32 @@ def api_add_anime_full():
         q.put({"type": "log", "msg": msg, "lvl": lvl})
 
     def _worker():
-        name     = data["name"]
-        id_slug  = data.get("slug") or re.sub(r"[^a-z0-9]+","-",name.lower()).strip("-")
-        total_eps= int(data.get("eps",0) or 0)
-        max_eps  = int(data.get("max_eps",0) or 0) or total_eps
-        s_num    = int(data.get("season",1) or 1)
-        avslug   = (data.get("avslug") or "").strip()
-        has_sub  = data.get("has_sub", True)
-        has_dub  = data.get("has_dub", False)
-        is_movie = data.get("is_movie", False)
-        inc_s    = data.get("inc_season", True)
+        name      = data["name"]
+        id_slug   = data.get("slug") or re.sub(r"[^a-z0-9]+","-",name.lower()).strip("-")
+        total_eps = int(data.get("eps",0) or 0)
+        max_eps   = int(data.get("max_eps",0) or 0) or total_eps
+        s_num     = int(data.get("season",1) or 1)
+        source    = data.get("source", "anivideo")   # "anivideo" | "aonlinecc"
+        has_sub   = data.get("has_sub", True)
+        has_dub   = data.get("has_dub", False)
+        is_movie  = data.get("is_movie", False)
+
+        # Source-specific fields
+        avslug    = (data.get("avslug") or "").strip()
+        inc_s     = data.get("inc_season", True)
+        ao_slug   = (data.get("ao_slug") or "").strip()
 
         wlog(f"[MAL] Buscando '{name}'...", "dim")
         mal = fetch_mal_info(name)
         if mal:
             md = mal_to_season_data(mal, s_num, is_movie)
-            title_r  = name; title_j  = md["title_j"]
-            genres   = md["genres"];  studio   = md["studio"]
-            mal_id   = md["mal_id"];  cover    = md["cover"]
-            score    = md["score"];   synopsis = md["synopsis"]
-            trailer  = md["trailer"]; year     = md["year"]
-            status_api = md["status"]; runtime = md["runtime"]; rating = md["rating"]
+            title_r    = name; title_j    = md["title_j"]
+            genres     = md["genres"];   studio     = md["studio"]
+            mal_id     = md["mal_id"];   cover      = md["cover"]
+            score      = md["score"];    synopsis   = md["synopsis"]
+            trailer    = md["trailer"];  year       = md["year"]
+            status_api = md["status"];   runtime    = md["runtime"]
+            rating     = md["rating"]
             wlog(f"[MAL] ✅ {title_r} ({year}) — {status_api} — ★{score}", "success")
         else:
             title_r = title_j = name; genres = []; studio = "Desconhecido"
@@ -721,38 +926,71 @@ def api_add_anime_full():
             wlog("[CR] Banner não encontrado, usando cover como fallback.", "dim")
             banner = cover
 
-        av_sub = av_dub = None
-        if avslug:
-            letter = avslug[0].lower()
-            av_sub = f"{letter}/{avslug}"
-            if not is_movie and inc_s and s_num > 1:
-                av_sub += f"-{s_num}"
-            av_dub = av_sub + "-dublado"
-            wlog(f"AniVideo sub: {av_sub}", "dim")
-            wlog(f"AniVideo dub: {av_dub}", "dim")
-
+        # ── Build episode list ────────────────────────────────────────
         ep_list = []
-        for ep_i in range(1, total_eps+1):
-            embeds = {}
-            if av_sub and has_sub: embeds["sub"] = make_iframe(anivideo_url(av_sub, ep_i))
-            if av_dub and has_dub: embeds["dub"] = make_iframe(anivideo_url(av_dub, ep_i))
-            ep_list.append({
-                "id": f"{id_slug}-s{s_num}-ep{ep_i}", "number": ep_i,
-                "title": f"{title_r} - T{s_num} Ep {ep_i}",
-                "season": str(s_num), "embeds": embeds,
-                "embedCredit": "api.anivideo.net" if (av_sub or av_dub) else "",
-            })
 
+        if source == "aonlinecc" and ao_slug:
+            wlog(f"[AONLINECC] Raspando {total_eps} ep(s) do slug '{ao_slug}'...", "dim")
+            for ep_i in range(1, total_eps + 1):
+                result = scrape_aonlinecc_ep(ao_slug, s_num, ep_i)
+                embeds = result if result else {}
+                tags   = "+".join(t.upper() for t in embeds) if embeds else "❌"
+                wlog(f"  Ep {ep_i:02d}: [{tags}]", "success" if embeds else "error")
+                ep_list.append({
+                    "id":          f"{id_slug}-s{s_num}-ep{ep_i}",
+                    "number":      ep_i,
+                    "title":       f"{title_r} - T{s_num} Ep {ep_i}",
+                    "season":      str(s_num),
+                    "embeds":      embeds,
+                    "embedCredit": "animesonlinecc.to",
+                })
+            # Recalcula disponibilidade com base no que foi raspado
+            sub_avail = max((ep["number"] for ep in ep_list if ep.get("embeds", {}).get("sub")), default=0)
+            dub_avail = max((ep["number"] for ep in ep_list if ep.get("embeds", {}).get("dub")), default=0)
+            has_sub   = sub_avail > 0
+            has_dub   = dub_avail > 0
+            total_eps = max(sub_avail, dub_avail) or total_eps
+            wlog(f"[AONLINECC] ✅ Raspagem concluída — LEG:{sub_avail} DUB:{dub_avail}", "success")
+
+        else:
+            # AniVideo
+            av_sub = av_dub = None
+            if avslug:
+                letter = avslug[0].lower()
+                av_sub = f"{letter}/{avslug}"
+                if not is_movie and inc_s and s_num > 1:
+                    av_sub += f"-{s_num}"
+                av_dub = av_sub + "-dublado"
+                wlog(f"[ANIVIDEO] sub: {av_sub}", "dim")
+                wlog(f"[ANIVIDEO] dub: {av_dub}", "dim")
+            for ep_i in range(1, total_eps + 1):
+                embeds = {}
+                if av_sub and has_sub: embeds["sub"] = make_iframe(anivideo_url(av_sub, ep_i))
+                if av_dub and has_dub: embeds["dub"] = make_iframe(anivideo_url(av_dub, ep_i))
+                ep_list.append({
+                    "id": f"{id_slug}-s{s_num}-ep{ep_i}", "number": ep_i,
+                    "title": f"{title_r} - T{s_num} Ep {ep_i}",
+                    "season": str(s_num), "embeds": embeds,
+                    "embedCredit": "api.anivideo.net" if (av_sub or av_dub) else "",
+                })
+            sub_avail = total_eps if has_sub else 0
+            dub_avail = total_eps if has_dub else 0
+
+        # ── Build season ──────────────────────────────────────────────
         season_data: dict = {
             "season": s_num, "seasonLabel": f"{s_num}ª Temporada",
             "year": year, "episodes": max_eps, "currentEpisode": total_eps,
             "status": status_api, "score": score, "synopsis": synopsis, "trailer": trailer,
             "audios": [
-                {"type":"sub","label":"Legendado","available":has_sub,"episodesAvailable": total_eps if has_sub else 0},
-                {"type":"dub","label":"Dublado","available":has_dub,"episodesAvailable": total_eps if has_dub else 0},
+                {"type":"sub","label":"Legendado","available": has_sub, "episodesAvailable": sub_avail},
+                {"type":"dub","label":"Dublado",  "available": has_dub, "episodesAvailable": dub_avail},
             ],
             "episodeList": ep_list,
         }
+
+        # Store aonlinecc slug for future auto-updates
+        if source == "aonlinecc" and ao_slug:
+            season_data["aonlinecc_slug"] = ao_slug
 
         if is_movie:
             season_data["type"]        = "movie"
@@ -765,17 +1003,18 @@ def api_add_anime_full():
             season_data["accentColor"] = data.get("mv_acc", "#FF2E2E")
             season_data["posterImage"] = data.get("mv_post", "") or cover
             raw_stills = data.get("mv_stills","")
-            season_data["stills"]  = [s.strip() for s in raw_stills.split(",") if s.strip()]
+            season_data["stills"] = [s.strip() for s in raw_stills.split(",") if s.strip()]
             cast_list = []
             for line in (data.get("mv_cast","") or "").strip().splitlines():
                 parts = [p.strip() for p in line.split("|")]
                 if len(parts) >= 2:
                     cast_list.append({"character": parts[0], "voice": parts[1],
                                        "voiceDub": parts[2] if len(parts) > 2 else "—"})
-            season_data["cast"]   = cast_list
+            season_data["cast"] = cast_list
             raw_awards = data.get("mv_awards","")
             season_data["awards"] = [a.strip() for a in raw_awards.split(",") if a.strip()]
 
+        # ── Save to DB ────────────────────────────────────────────────
         db = load_db()
         existing = next((a for a in db if a.get("id") == id_slug), None)
         if existing:
@@ -803,8 +1042,10 @@ def api_add_anime_full():
                 "seasons": [season_data],
             }
             db.append(new_anime)
-            wlog(f"✅ '{title_r}' criado com {total_eps} eps (T{s_num})!", "success")
-            log_event("add", f"Adicionado: {title_r}", f"T{s_num} · {total_eps} eps · {'Filme' if is_movie else 'Série'}")
+            src_label = f"AnimesOnlineCC ({ao_slug})" if source == "aonlinecc" else f"AniVideo ({avslug or 'sem slug'})"
+            wlog(f"✅ '{title_r}' criado com {total_eps} eps (T{s_num}) via {src_label}!", "success")
+            log_event("add", f"Adicionado: {title_r}",
+                      f"T{s_num} · {total_eps} eps · {'Filme' if is_movie else 'Série'} · {src_label}")
 
         save_db(db)
         q.put({"type": "done", "anime_id": id_slug})
@@ -814,6 +1055,7 @@ def api_add_anime_full():
     return jsonify({"stream_id": sid})
 
 # ── Update single anime ───────────────────────────────────────────────────────
+
 @app.route('/api/update_one/<anime_id>', methods=['POST'])
 def api_update_one(anime_id):
     db = load_db()
@@ -836,7 +1078,8 @@ def api_update_one(anime_id):
             if info["sub"] is not None: parts.append(f"LEG:{info['sub']:02d}")
             if info["dub"] is not None: parts.append(f"DUB:{info['dub']:02d}")
             max_s = f"/{info['max']}" if info["max"] else ""
-            wlog(f"  [{info['label']}]  {' | '.join(parts)}{max_s}", "dim")
+            src_lbl = f" [{info.get('source','?').upper()}]"
+            wlog(f"  [{info['label']}]  {' | '.join(parts)}{max_s}{src_lbl}", "dim")
         wlog("")
         msgs = try_add_next_ep(anime)
         added_eps = [m for m in msgs if "✅" in m]
@@ -854,13 +1097,159 @@ def api_update_one(anime_id):
     threading.Thread(target=_worker, daemon=True).start()
     return jsonify({"stream_id": sid})
 
-# ── CR Banner fetch ───────────────────────────────────────────────────────────
+# ── CR Banner ─────────────────────────────────────────────────────────────────
+
 @app.route('/api/cr_banner')
 def api_cr_banner():
     name     = request.args.get("name","")
     fallback = request.args.get("fallback","")
     banner   = fetch_crunchyroll_banner(name, fallback)
     return jsonify({"banner": banner, "found": banner != fallback})
+
+# ── AnimesOnlineCC endpoints ──────────────────────────────────────────────────
+
+@app.route('/api/aonlinecc/ep')
+def api_aonlinecc_ep():
+    slug   = request.args.get("slug", "").strip()
+    season = int(request.args.get("season", 1))
+    ep     = int(request.args.get("ep", 1))
+    if not slug:
+        return jsonify({"error": "slug obrigatório"}), 400
+    url    = aonlinecc_ep_url(slug, season, ep)
+    result = scrape_aonlinecc_ep(slug, season, ep)
+    if result is None:
+        return jsonify({"found": False, "url": url}), 404
+    return jsonify({"found": True, "url": url, "has_sub": "sub" in result, "has_dub": "dub" in result, **result})
+
+@app.route('/api/aonlinecc/set_slug', methods=['POST'])
+def api_aonlinecc_set_slug():
+    data     = request.json
+    anime_id = data.get("anime_id", "")
+    season_n = int(data.get("season", 1))
+    slug     = data.get("slug", "").strip()
+    if not anime_id or not slug:
+        return jsonify({"error": "anime_id e slug são obrigatórios"}), 400
+    db    = load_db()
+    anime = next((a for a in db if a.get("id") == anime_id), None)
+    if not anime:
+        return jsonify({"error": "anime não encontrado"}), 404
+    season_obj = next((s for s in anime.get("seasons", []) if int(s.get("season", 0)) == season_n), None)
+    if not season_obj:
+        return jsonify({"error": f"temporada {season_n} não encontrada"}), 404
+    season_obj["aonlinecc_slug"] = slug
+    save_db(db)
+    log_event("source", f"AnimesOnlineCC slug definido: {anime['title']} T{season_n}", slug)
+    return jsonify({"ok": True})
+
+@app.route('/api/aonlinecc/bulk_scrape', methods=['POST'])
+def api_aonlinecc_bulk_scrape():
+    data = request.json
+    sid  = str(time.time_ns())
+    q: queue.Queue = queue.Queue()
+    _streams[sid] = q
+
+    def wlog(msg, lvl="info"):
+        q.put({"type": "log", "msg": msg, "lvl": lvl})
+
+    def _worker():
+        anime_id  = data.get("anime_id", "").strip()
+        season_n  = int(data.get("season", 1))
+        ao_slug   = data.get("slug", "").strip()
+        max_ep    = int(data.get("max_ep", 0) or 0)
+        overwrite = bool(data.get("overwrite", False))
+
+        if not anime_id or not ao_slug:
+            wlog("❌ anime_id e slug são obrigatórios!", "error")
+            q.put({"type": "done"}); q.put(None); return
+
+        db    = load_db()
+        anime = next((a for a in db if a.get("id") == anime_id), None)
+        if not anime:
+            wlog(f"❌ Anime '{anime_id}' não encontrado no DB!", "error")
+            q.put({"type": "done"}); q.put(None); return
+
+        season_obj = next((s for s in anime.get("seasons", []) if int(s.get("season", 0)) == season_n), None)
+        if not season_obj:
+            wlog(f"❌ Temporada {season_n} não encontrada no DB!", "error")
+            q.put({"type": "done"}); q.put(None); return
+
+        season_obj["aonlinecc_slug"] = ao_slug
+        wlog(f"▶  {anime['title']} — T{season_n}", "title")
+        wlog(f"   Slug: {ao_slug}  |  max_ep={max_ep or 'auto'}  |  overwrite={overwrite}", "dim")
+        wlog("─" * 54)
+
+        ep_map: dict[int, dict] = {int(ep["number"]): ep for ep in season_obj.get("episodeList", [])}
+        added_count = skipped_count = 0
+        ep_num = consecutive_fails = 1; consecutive_fails = 0
+
+        while True:
+            if max_ep and ep_num > max_ep:
+                break
+            if consecutive_fails >= 3:
+                wlog("  3 falhas consecutivas — encerrando busca.", "dim")
+                break
+            if not overwrite and ep_num in ep_map:
+                existing_embeds = ep_map[ep_num].get("embeds", {})
+                if existing_embeds.get("sub") or existing_embeds.get("dub"):
+                    wlog(f"  Ep {ep_num:02d}: ⏭  já tem embed, pulando.", "dim")
+                    skipped_count += 1
+                    consecutive_fails = 0
+                    ep_num += 1
+                    continue
+            wlog(f"  Ep {ep_num:02d}: buscando...", "dim")
+            result = scrape_aonlinecc_ep(ao_slug, season_n, ep_num)
+            if result is None:
+                wlog(f"  Ep {ep_num:02d}: ❌ não encontrado.", "error")
+                consecutive_fails += 1
+                ep_num += 1
+                continue
+            consecutive_fails = 0
+            tags = []; 
+            if "sub" in result: tags.append("LEG")
+            if "dub" in result: tags.append("DUB")
+            wlog(f"  Ep {ep_num:02d}: ✅ [{' + '.join(tags)}]", "success")
+            if ep_num in ep_map:
+                ep_map[ep_num].setdefault("embeds", {})
+                if "sub" in result: ep_map[ep_num]["embeds"]["sub"] = result["sub"]
+                if "dub" in result: ep_map[ep_num]["embeds"]["dub"] = result["dub"]
+                ep_map[ep_num]["embedCredit"] = "animesonlinecc.to"
+            else:
+                ep_map[ep_num] = {
+                    "id": f"{anime_id}-s{season_n}-ep{ep_num}", "number": ep_num,
+                    "title": f"{anime.get('titleRomaji', anime['title'])} - T{season_n} Ep {ep_num}",
+                    "season": str(season_n), "embeds": result, "embedCredit": "animesonlinecc.to",
+                }
+            added_count += 1
+            ep_num += 1
+
+        season_obj["episodeList"] = sorted(ep_map.values(), key=lambda x: int(x["number"]))
+        all_sub = sorted(n for n, ep in ep_map.items() if ep.get("embeds", {}).get("sub"))
+        all_dub = sorted(n for n, ep in ep_map.items() if ep.get("embeds", {}).get("dub"))
+        for aud in season_obj.get("audios", []):
+            if aud["type"] == "sub" and all_sub:
+                aud["available"] = True; aud["episodesAvailable"] = all_sub[-1]
+            if aud["type"] == "dub" and all_dub:
+                aud["available"] = True; aud["episodesAvailable"] = all_dub[-1]
+        if all_sub or all_dub:
+            season_obj["currentEpisode"] = max(all_sub[-1] if all_sub else 0, all_dub[-1] if all_dub else 0)
+        max_e    = season_obj.get("episodes", 0)
+        sub_done = all_sub[-1] if all_sub else 0
+        if max_e and sub_done >= max_e:
+            season_obj["status"] = "finished"
+            wlog("🏁 Temporada marcada como finalizada!", "success")
+        save_db(db)
+        wlog("", "dim")
+        wlog(f"✅  {added_count} eps adicionados  |  {skipped_count} pulados.", "success")
+        if all_sub: wlog(f"   Legendado: Ep 01–{all_sub[-1]:02d}", "success")
+        if all_dub: wlog(f"   Dublado:   Ep 01–{all_dub[-1]:02d}", "success")
+        wlog("══ Finalizado ══", "title")
+        log_event("add", f"AnimesOnlineCC bulk: {anime['title']} T{season_n}",
+                  f"{added_count} eps | sub:{all_sub[-1] if all_sub else 0} dub:{all_dub[-1] if all_dub else 0}")
+        q.put({"type": "done", "added": added_count, "skipped": skipped_count})
+        q.put(None)
+
+    threading.Thread(target=_worker, daemon=True).start()
+    return jsonify({"stream_id": sid})
 
 # ─────────────────────────────────────────────────────────────────────────────
 

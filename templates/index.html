@@ -44,31 +44,20 @@ body::before {
   display: flex; flex-direction: column;
   overflow-y: auto;
 }
-.logo {
-  padding: 20px 16px 16px;
-  border-bottom: 1px solid var(--border);
-}
+.logo { padding: 20px 16px 16px; border-bottom: 1px solid var(--border); }
 .logo-icon { font-size: 24px; }
-.logo-title {
-  font-family: var(--mono); font-size: 11px; font-weight: 600;
-  letter-spacing: .15em; color: var(--accent2);
-  text-transform: uppercase; margin-top: 6px;
-}
+.logo-title { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .15em; color: var(--accent2); text-transform: uppercase; margin-top: 6px; }
 .logo-sub { font-family: var(--mono); font-size: 9px; color: var(--dim); margin-top: 2px; }
 
-.nav-section {
-  padding: 12px 12px 4px;
-  font-family: var(--mono); font-size: 9px; letter-spacing: .12em;
-  color: var(--muted); text-transform: uppercase;
-}
+.nav-section { padding: 12px 12px 4px; font-family: var(--mono); font-size: 9px; letter-spacing: .12em; color: var(--muted); text-transform: uppercase; }
 .nav-sep { height: 1px; background: var(--border); margin: 8px 14px; }
 
 .nav-btn {
   display: flex; align-items: center; gap: 8px;
   padding: 9px 14px; border: none; background: none; cursor: pointer;
   color: var(--dim); font-family: var(--sans); font-size: 13px; font-weight: 400;
-  width: 100%; text-align: left; border-radius: 6px; margin: 1px 6px;
-  width: calc(100% - 12px); transition: all .15s;
+  width: calc(100% - 12px); text-align: left; border-radius: 6px; margin: 1px 6px;
+  transition: all .15s;
 }
 .nav-btn:hover { background: var(--bg3); color: var(--text); }
 .nav-btn.active { background: var(--accent); color: #fff; font-weight: 600; }
@@ -85,10 +74,9 @@ body::before {
 }
 #page-title { font-size: 15px; font-weight: 700; flex: 1; }
 #status-msg {
-  font-family: var(--mono); font-size: 11px;
-  padding: 4px 10px; border-radius: 4px;
-  background: var(--bg3); color: var(--green);
-  display: none; max-width: 400px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  font-family: var(--mono); font-size: 11px; padding: 4px 10px; border-radius: 4px;
+  background: var(--bg3); color: var(--green); display: none;
+  max-width: 400px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 #status-msg.show { display: block; }
 #status-msg.warn { color: var(--yellow); }
@@ -98,46 +86,26 @@ body::before {
 #content { flex: 1; overflow-y: auto; padding: 24px; }
 
 /* ── Cards & Grid ── */
-.stat-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px;
-  margin-bottom: 24px;
-}
-.stat-card {
-  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
-  padding: 16px 14px; text-align: center;
-}
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; margin-bottom: 24px; }
+.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 14px; text-align: center; }
 .stat-card .s-icon { font-size: 20px; margin-bottom: 4px; }
 .stat-card .s-val  { font-family: var(--mono); font-size: 26px; font-weight: 600; }
 .stat-card .s-lbl  { font-size: 11px; color: var(--dim); margin-top: 4px; }
 
-.section-title {
-  font-size: 14px; font-weight: 700; color: var(--accent2);
-  margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
-}
+.section-title { font-size: 14px; font-weight: 700; color: var(--accent2); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
 .section-title::after { content:''; flex:1; height:1px; background: var(--border); }
 
 /* ── Anime cards ── */
 .anime-list { display: flex; flex-direction: column; gap: 8px; }
-.anime-card {
-  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
-  display: flex; align-items: center; gap: 12px; padding: 12px 14px;
-  transition: border-color .2s;
-}
+.anime-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; display: flex; align-items: center; gap: 12px; padding: 12px 14px; transition: border-color .2s; }
 .anime-card:hover { border-color: var(--accent); }
-.anime-cover {
-  width: 52px; height: 74px; border-radius: 6px; object-fit: cover;
-  background: var(--bg3); flex-shrink: 0;
-  display: flex; align-items: center; justify-content: center; font-size: 20px;
-}
+.anime-cover { width: 52px; height: 74px; border-radius: 6px; object-fit: cover; background: var(--bg3); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 20px; }
 .anime-cover img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
 .anime-info { flex: 1; min-width: 0; }
 .anime-title { font-size: 14px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .anime-sub   { font-size: 11px; color: var(--dim); margin-top: 2px; font-family: var(--mono); }
 .badges      { display: flex; gap: 5px; margin-top: 6px; flex-wrap: wrap; }
-.badge {
-  font-family: var(--mono); font-size: 9px; font-weight: 600; letter-spacing: .04em;
-  padding: 2px 7px; border-radius: 4px; text-transform: uppercase;
-}
+.badge { font-family: var(--mono); font-size: 9px; font-weight: 600; letter-spacing: .04em; padding: 2px 7px; border-radius: 4px; text-transform: uppercase; }
 .badge-ongoing  { background: #0f2e1a; color: #22c55e; }
 .badge-finished { background: #1a0f2e; color: #a855f7; }
 .badge-paused   { background: #2e250f; color: #f59e0b; }
@@ -145,94 +113,78 @@ body::before {
 .badge-blue     { background: #0f1a2e; color: #60a5fa; }
 .badge-purple   { background: #1a0f2e; color: #c084fc; }
 .badge-gray     { background: #1a1a2e; color: #94a3b8; }
+.badge-teal     { background: #0f2a2a; color: #2dd4bf; }
 
 .anime-actions { display: flex; gap: 6px; flex-shrink: 0; }
-.icon-btn {
-  width: 30px; height: 30px; border-radius: 6px; border: 1px solid var(--border);
-  background: var(--bg3); cursor: pointer; display: flex; align-items: center;
-  justify-content: center; font-size: 13px; transition: all .15s; color: var(--text);
-}
+.icon-btn { width: 30px; height: 30px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg3); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 13px; transition: all .15s; color: var(--text); }
 .icon-btn:hover { background: var(--accent); border-color: var(--accent); }
 .icon-btn.del:hover { background: var(--red); border-color: var(--red); }
 .icon-btn.upd:hover { background: var(--green); border-color: var(--green); }
 
 /* ── Forms ── */
-.form-section {
-  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
-  padding: 20px; margin-bottom: 16px;
-}
-.form-section h3 {
-  font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .1em;
-  color: var(--accent2); text-transform: uppercase; margin-bottom: 14px;
-}
+.form-section { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 16px; }
+.form-section h3 { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .1em; color: var(--accent2); text-transform: uppercase; margin-bottom: 14px; }
 .field { margin-bottom: 12px; }
 .field label { display: block; font-size: 12px; color: var(--dim); margin-bottom: 4px; font-family: var(--mono); }
-.field input, .field textarea, .field select {
-  width: 100%; padding: 8px 11px; background: var(--bg3);
-  border: 1px solid var(--border); border-radius: 6px;
-  color: var(--text); font-size: 13px; font-family: var(--sans);
-  outline: none; transition: border-color .2s;
-}
+.field input, .field textarea, .field select { width: 100%; padding: 8px 11px; background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-size: 13px; font-family: var(--sans); outline: none; transition: border-color .2s; }
 .field input:focus, .field textarea:focus { border-color: var(--accent); }
 .field textarea { resize: vertical; min-height: 70px; font-family: var(--mono); font-size: 12px; }
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .field-row.three { grid-template-columns: 1fr 1fr 1fr; }
-.toggle-row {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 7px 0; border-bottom: 1px solid var(--border);
-}
+.toggle-row { display: flex; align-items: center; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid var(--border); }
 .toggle-row label { font-size: 13px; color: var(--dim); }
-.toggle-switch {
-  position: relative; width: 38px; height: 20px; cursor: pointer;
-}
+.toggle-switch { position: relative; width: 38px; height: 20px; cursor: pointer; }
 .toggle-switch input { opacity: 0; width: 0; height: 0; position: absolute; }
-.toggle-slider {
-  position: absolute; inset: 0; background: var(--muted); border-radius: 20px;
-  transition: .2s;
-}
-.toggle-slider::before {
-  content: ''; position: absolute; width: 14px; height: 14px;
-  left: 3px; top: 3px; background: var(--dim); border-radius: 50%; transition: .2s;
-}
+.toggle-slider { position: absolute; inset: 0; background: var(--muted); border-radius: 20px; transition: .2s; }
+.toggle-slider::before { content: ''; position: absolute; width: 14px; height: 14px; left: 3px; top: 3px; background: var(--dim); border-radius: 50%; transition: .2s; }
 .toggle-switch input:checked + .toggle-slider { background: var(--accent); }
 .toggle-switch input:checked + .toggle-slider::before { transform: translateX(18px); background: #fff; }
 
-/* ── Buttons ── */
-.btn {
-  padding: 9px 18px; border-radius: 7px; border: none; cursor: pointer;
-  font-family: var(--sans); font-size: 13px; font-weight: 600; transition: all .15s;
+/* ── Source Picker ── */
+.source-picker { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 4px; }
+.source-card {
+  border: 2px solid var(--border); border-radius: 10px;
+  padding: 14px 16px; cursor: pointer; transition: all .2s;
+  background: var(--bg3); position: relative; overflow: hidden;
+  user-select: none;
 }
-.btn-primary  { background: var(--accent);  color: #fff; }
+.source-card:hover { border-color: var(--accent); }
+.source-card.selected { border-color: var(--accent2); background: rgba(124,58,237,.12); }
+.source-card.selected::after {
+  content: '✓'; position: absolute; top: 8px; right: 10px;
+  color: var(--accent2); font-weight: 700; font-size: 13px;
+}
+.source-card-icon { font-size: 22px; margin-bottom: 6px; }
+.source-card-name { font-family: var(--mono); font-size: 12px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+.source-card-desc { font-size: 11px; color: var(--dim); line-height: 1.4; }
+.source-badge {
+  display: inline-block; font-family: var(--mono); font-size: 9px; font-weight: 600;
+  padding: 2px 6px; border-radius: 3px; margin-top: 6px; text-transform: uppercase;
+}
+.source-badge-av  { background: #0f1a2e; color: #60a5fa; }
+.source-badge-ao  { background: #0f2a1a; color: #34d399; }
+
+/* ── Buttons ── */
+.btn { padding: 9px 18px; border-radius: 7px; border: none; cursor: pointer; font-family: var(--sans); font-size: 13px; font-weight: 600; transition: all .15s; }
+.btn-primary { background: var(--accent);  color: #fff; }
 .btn-primary:hover  { background: var(--accent2); }
-.btn-success  { background: #16a34a; color: #fff; }
+.btn-success { background: #16a34a; color: #fff; }
 .btn-success:hover  { background: var(--green); }
-.btn-danger   { background: #dc2626; color: #fff; }
+.btn-danger  { background: #dc2626; color: #fff; }
 .btn-danger:hover   { background: var(--red); }
-.btn-ghost    { background: var(--bg3); color: var(--dim); border: 1px solid var(--border); }
+.btn-ghost   { background: var(--bg3); color: var(--dim); border: 1px solid var(--border); }
 .btn-ghost:hover    { color: var(--text); border-color: var(--dim); }
-.btn-blue     { background: #1d4ed8; color: #fff; }
+.btn-blue    { background: #1d4ed8; color: #fff; }
 .btn-blue:hover     { background: var(--blue); }
-.btn-row      { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn-row     { display: flex; gap: 10px; flex-wrap: wrap; }
 
 /* ── Search ── */
-.search-bar {
-  display: flex; gap: 10px; margin-bottom: 16px; align-items: center;
-}
-.search-bar input {
-  flex: 1; max-width: 320px;
-  padding: 8px 12px; background: var(--bg3);
-  border: 1px solid var(--border); border-radius: 7px;
-  color: var(--text); font-size: 13px; outline: none;
-}
+.search-bar { display: flex; gap: 10px; margin-bottom: 16px; align-items: center; }
+.search-bar input { flex: 1; max-width: 320px; padding: 8px 12px; background: var(--bg3); border: 1px solid var(--border); border-radius: 7px; color: var(--text); font-size: 13px; outline: none; }
 .search-bar input:focus { border-color: var(--accent); }
 
 /* ── Log terminal ── */
-.log-terminal {
-  background: #020208; border: 1px solid var(--border); border-radius: 8px;
-  padding: 14px 16px; height: 420px; overflow-y: auto;
-  font-family: var(--mono); font-size: 12px; line-height: 1.7;
-  flex: 1;
-}
+.log-terminal { background: #020208; border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; height: 420px; overflow-y: auto; font-family: var(--mono); font-size: 12px; line-height: 1.7; flex: 1; }
 .log-line         { color: #7a7a9a; }
 .log-line.success { color: #22c55e; }
 .log-line.error   { color: #ef4444; }
@@ -242,46 +194,22 @@ body::before {
 
 /* ── Tabs ── */
 .tabs { display: flex; gap: 4px; margin-bottom: 16px; flex-wrap: wrap; }
-.tab {
-  padding: 7px 14px; border-radius: 6px; border: 1px solid var(--border);
-  background: var(--bg3); color: var(--dim); cursor: pointer;
-  font-size: 12px; font-weight: 600; font-family: var(--mono); transition: all .15s;
-}
+.tab { padding: 7px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg3); color: var(--dim); cursor: pointer; font-size: 12px; font-weight: 600; font-family: var(--mono); transition: all .15s; }
 .tab:hover { color: var(--text); }
 .tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 /* ── Modal ── */
-.modal-backdrop {
-  position: fixed; inset: 0; background: rgba(0,0,0,.75);
-  display: flex; align-items: center; justify-content: center; z-index: 1000;
-}
-.modal {
-  background: var(--bg2); border: 1px solid var(--border); border-radius: 12px;
-  width: 680px; max-width: 95vw; max-height: 90vh;
-  display: flex; flex-direction: column; overflow: hidden;
-}
-.modal-header {
-  padding: 18px 22px 14px; border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: space-between;
-}
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.75); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.modal { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; width: 680px; max-width: 95vw; max-height: 90vh; display: flex; flex-direction: column; overflow: hidden; }
+.modal-header { padding: 18px 22px 14px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
 .modal-header h2 { font-size: 16px; font-weight: 700; color: var(--accent2); }
-.modal-close {
-  background: none; border: none; cursor: pointer;
-  color: var(--dim); font-size: 18px; padding: 0 4px;
-  transition: color .15s;
-}
+.modal-close { background: none; border: none; cursor: pointer; color: var(--dim); font-size: 18px; padding: 0 4px; transition: color .15s; }
 .modal-close:hover { color: var(--red); }
 .modal-body { flex: 1; overflow-y: auto; padding: 20px 22px; }
-.modal-footer {
-  padding: 14px 22px; border-top: 1px solid var(--border);
-  display: flex; gap: 10px; justify-content: flex-end;
-}
+.modal-footer { padding: 14px 22px; border-top: 1px solid var(--border); display: flex; gap: 10px; justify-content: flex-end; }
 
 /* ── Log entries ── */
-.log-entry {
-  background: var(--card); border: 1px solid var(--border); border-radius: 7px;
-  display: flex; gap: 0; overflow: hidden; margin-bottom: 6px;
-}
+.log-entry { background: var(--card); border: 1px solid var(--border); border-radius: 7px; display: flex; gap: 0; overflow: hidden; margin-bottom: 6px; }
 .log-entry-bar { width: 4px; flex-shrink: 0; }
 .log-entry-body { padding: 10px 12px; flex: 1; }
 .log-entry-head { display: flex; align-items: center; justify-content: space-between; }
@@ -299,11 +227,7 @@ body::before {
 
 /* ── Modal tabs ── */
 .mtabs { display: flex; gap: 4px; margin-bottom: 16px; flex-wrap: wrap; }
-.mtab {
-  padding: 5px 12px; border-radius: 5px; border: 1px solid var(--border);
-  background: var(--bg3); color: var(--dim); cursor: pointer;
-  font-size: 11px; font-family: var(--mono); transition: all .15s;
-}
+.mtab { padding: 5px 12px; border-radius: 5px; border: 1px solid var(--border); background: var(--bg3); color: var(--dim); cursor: pointer; font-size: 11px; font-family: var(--mono); transition: all .15s; }
 .mtab:hover { color: var(--text); }
 .mtab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 .mtab-panel { display: none; }
@@ -315,7 +239,7 @@ body::before {
 .progress.indeterminate .progress-fill { width: 40%; animation: progress-anim 1.2s ease-in-out infinite; }
 @keyframes progress-anim { 0%{transform:translateX(-100%)} 100%{transform:translateX(350%)} }
 
-/* ── Empty state ── */
+/* ── Empty ── */
 .empty { text-align: center; padding: 60px 20px; color: var(--dim); font-size: 14px; }
 .empty .empty-icon { font-size: 40px; margin-bottom: 12px; }
 
@@ -326,30 +250,12 @@ body::before {
 ::-webkit-scrollbar-thumb:hover { background: var(--dim); }
 
 /* ── Info box ── */
-.info-box {
-  background: var(--bg3); border: 1px solid var(--border); border-radius: 8px;
-  padding: 12px 16px; margin-bottom: 14px;
-  font-family: var(--mono); font-size: 11px; color: var(--dim);
-}
+.info-box { background: var(--bg3); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; font-family: var(--mono); font-size: 11px; color: var(--dim); }
 .info-box b { color: var(--accent2); }
 
-.tag-chip {
-  display: inline-flex; gap: 4px; align-items: center;
-  padding: 4px 10px; border-radius: 999px;
-  font-size: 11px; font-family: var(--mono); cursor: pointer; transition: all .15s;
-}
-
-/* ── Loading overlay ── */
-#loading-overlay {
-  position: fixed; inset: 0; background: rgba(7,7,15,.9);
-  display: flex; align-items: center; justify-content: center;
-  flex-direction: column; gap: 14px; z-index: 2000;
-}
-.spinner {
-  width: 40px; height: 40px; border: 3px solid var(--border);
-  border-top-color: var(--accent); border-radius: 50%;
-  animation: spin .7s linear infinite;
-}
+/* ── Loading ── */
+#loading-overlay { position: fixed; inset: 0; background: rgba(7,7,15,.9); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 14px; z-index: 2000; }
+.spinner { width: 40px; height: 40px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .7s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 </style>
 </head>
@@ -361,14 +267,12 @@ body::before {
 </div>
 
 <div id="app">
-  <!-- Sidebar -->
   <nav id="sidebar">
     <div class="logo">
       <div class="logo-icon">🎌</div>
       <div class="logo-title">Anime Admin</div>
       <div class="logo-sub" id="db-count">— animes</div>
     </div>
-
     <div class="nav-section">Menu</div>
     <button class="nav-btn active" data-page="dashboard"><span class="icon">🏠</span> Dashboard</button>
     <button class="nav-btn" data-page="list"><span class="icon">📋</span> Lista Animes</button>
@@ -378,14 +282,12 @@ body::before {
     <button class="nav-btn" data-page="stats"><span class="icon">📊</span> Estatísticas</button>
     <button class="nav-btn" data-page="logs"><span class="icon">📜</span> Logs</button>
     <button class="nav-btn" data-page="pageconfig"><span class="icon">⚙️</span> Config Página</button>
-
     <div class="nav-sep"></div>
     <div class="nav-section">Git</div>
     <button class="nav-btn" data-page="push"><span class="icon">☁️</span> Push GitHub</button>
     <button class="nav-btn" data-page="pull"><span class="icon">⬇️</span> Pull GitHub</button>
   </nav>
 
-  <!-- Main -->
   <div id="main">
     <div id="topbar">
       <div id="page-title">Dashboard</div>
@@ -436,16 +338,11 @@ let currentPage = 'dashboard';
 let editAnime   = null;
 
 const pages = {
-  'dashboard': 'Dashboard',
-  'list':      '📋 Lista de Animes',
-  'add':       '➕ Adicionar Anime',
-  'update':    '🔄 Auto-Update',
-  'check':     '🔍 Verificar Episódios',
-  'stats':     '📊 Estatísticas',
-  'logs':      '📜 Logs & Histórico',
-  'pageconfig':'⚙️ Configurações da Página',
-  'push':      '☁️ Git Push',
-  'pull':      '⬇️ Pull GitHub',
+  'dashboard': 'Dashboard', 'list': '📋 Lista de Animes',
+  'add': '➕ Adicionar Anime', 'update': '🔄 Auto-Update',
+  'check': '🔍 Verificar Episódios', 'stats': '📊 Estatísticas',
+  'logs': '📜 Logs & Histórico', 'pageconfig': '⚙️ Configurações da Página',
+  'push': '☁️ Git Push', 'pull': '⬇️ Pull GitHub',
 };
 
 // ════════════════════════════════════════════════════════════
@@ -582,12 +479,10 @@ async function renderDashboard() {
     <div class="stat-card"><div class="s-icon">🎙️</div><div class="s-val" style="color:var(--accent2)">${s.has_dub}</div><div class="s-lbl">Com Dublagem</div></div>
     <div class="stat-card"><div class="s-icon">🎬</div><div class="s-val" style="color:var(--yellow)">${s.total_ep}</div><div class="s-lbl">Episódios</div></div>
   </div>
-
   <div class="info-box">
     <b>Repo:</b> <span style="color:var(--text)">HenzoPaes/Anime_website</span>
     &nbsp;&nbsp;<b>Branch:</b> <span style="color:var(--text)">data</span>
   </div>
-
   <div class="section-title">Ações Rápidas</div>
   <div class="btn-row" style="margin-bottom:24px">
     <button class="btn btn-primary" onclick="navigate('add')">➕ Adicionar</button>
@@ -595,8 +490,7 @@ async function renderDashboard() {
     <button class="btn btn-blue" onclick="navigate('check')">🔍 Verificar Eps</button>
     <button class="btn" style="background:#6366f1;color:#fff" onclick="navigate('push')">☁️ Push GitHub</button>
     <button class="btn btn-ghost" onclick="navigate('pull')">⬇️ Pull GitHub</button>
-  </div>
-  `;
+  </div>`;
 }
 
 // ════════════════════════════════════════════════════════════
@@ -609,8 +503,7 @@ function renderList() {
     <input type="text" id="search-input" placeholder="🔍 Buscar anime..." oninput="filterList(this.value)">
     <button class="btn btn-ghost" onclick="navigate('add')">➕ Adicionar</button>
   </div>
-  <div id="anime-list" class="anime-list"></div>
-  `;
+  <div id="anime-list" class="anime-list"></div>`;
   renderAnimeCards(DB);
 }
 
@@ -629,12 +522,13 @@ function renderAnimeCards(list) {
   }
   el.innerHTML = list.map(a => {
     const { seasons, last } = animeInfo(a);
-    const status   = last.status || '?';
-    const isMovie  = last.type === 'movie';
-    const cur      = last.currentEpisode ?? '?';
-    const tot      = last.episodes ?? '?';
-    const score    = parseFloat(last.score || 0);
-    const audios   = new Set();
+    const status  = last.status || '?';
+    const isMovie = last.type === 'movie';
+    const cur     = last.currentEpisode ?? '?';
+    const tot     = last.episodes ?? '?';
+    const score   = parseFloat(last.score || 0);
+    const audios  = new Set();
+    const hasAO   = seasons.some(s => s.aonlinecc_slug);
     seasons.forEach(s => s.audios?.forEach(au => { if(au.available) audios.add(au.type.toUpperCase()); }));
     return `
     <div class="anime-card">
@@ -648,6 +542,7 @@ function renderAnimeCards(list) {
           <span class="badge badge-gray">EP ${cur}/${tot}</span>
           ${score ? `<span class="badge badge-movie">★ ${score}</span>` : ''}
           ${[...audios].map(au => `<span class="badge badge-purple">${au}</span>`).join('')}
+          ${hasAO ? `<span class="badge badge-teal">AONLINE</span>` : ''}
         </div>
       </div>
       <div class="anime-actions">
@@ -658,7 +553,6 @@ function renderAnimeCards(list) {
     </div>`;
   }).join('');
 
-  // Lazy-load covers
   list.forEach(a => {
     if (!a.coverImage) return;
     const el = $(`cover-${a.id}`);
@@ -670,14 +564,16 @@ function renderAnimeCards(list) {
 }
 
 // ════════════════════════════════════════════════════════════
-// ADD ANIME
+// ADD ANIME — com seletor de fonte
 // ════════════════════════════════════════════════════════════
 function renderAdd() {
   const c = $('content');
   c.innerHTML = `
   <div style="max-width:740px">
+
+    <!-- Dados gerais -->
     <div class="form-section">
-      <h3>🔍 Busca MAL & Dados</h3>
+      <h3>🔍 Busca MAL & Dados Gerais</h3>
       <div class="field-row">
         ${field('add-name','Nome (busca MAL)','','ex: Jujutsu Kaisen')}
         ${field('add-slug','ID Slug (vazio = auto)','','ex: jujutsu-kaisen')}
@@ -687,12 +583,14 @@ function renderAdd() {
         ${field('add-max-eps','Máx eps (0 = igual)','0')}
         ${field('add-season','Nº temporada','1')}
       </div>
-      ${field('add-avslug','AniVideo slug base (vazio = pular)','','ex: jujutsu-kaisen')}
-      ${toggle('add-inc-season','Incluir nº da temporada no link AniVideo?', true)}
+      ${toggle('add-has-sub','Tem Legendado?', true)}
+      ${toggle('add-has-dub','Tem Dublado?', false)}
+      ${toggle('add-adult','🔞 Conteúdo Adulto (+18)?', false)}
     </div>
 
+    <!-- Tipo -->
     <div class="form-section">
-      <h3>🎞️ Tipo & Áudio</h3>
+      <h3>🎞️ Tipo</h3>
       <div class="field-row">
         <div class="field">
           <label>Tipo</label>
@@ -703,11 +601,50 @@ function renderAdd() {
         </div>
         <div></div>
       </div>
-      ${toggle('add-has-sub','Tem Legendado?', true)}
-      ${toggle('add-has-dub','Tem Dublado?', false)}
-      ${toggle('add-adult','🔞 Conteúdo Adulto (+18)?', false)}
     </div>
 
+    <!-- FONTE DE VÍDEO -->
+    <div class="form-section">
+      <h3>📡 Fonte de Vídeo</h3>
+      <p style="font-size:12px;color:var(--dim);margin-bottom:14px">
+        Escolha de onde os episódios serão obtidos. A fonte fica salva na temporada e é usada automaticamente no auto-update.
+      </p>
+      <div class="source-picker">
+        <div class="source-card selected" id="src-card-anivideo" onclick="selectSource('anivideo')">
+          <div class="source-card-icon">⚡</div>
+          <div class="source-card-name">api.anivideo.net</div>
+          <div class="source-card-desc">Links CDN diretos. Mais rápido, não faz scraping. Requer slug do anime.</div>
+          <span class="source-badge source-badge-av">CDN</span>
+        </div>
+        <div class="source-card" id="src-card-aonlinecc" onclick="selectSource('aonlinecc')">
+          <div class="source-card-icon">🕸️</div>
+          <div class="source-card-name">animesonlinecc.to</div>
+          <div class="source-card-desc">Scraping automático. Detecta DUB e LEG por página. Sem slug CDN necessário.</div>
+          <span class="source-badge source-badge-ao">SCRAPER</span>
+        </div>
+      </div>
+      <input type="hidden" id="add-source" value="anivideo">
+
+      <!-- Painel AniVideo -->
+      <div id="src-panel-anivideo" style="margin-top:14px">
+        ${field('add-avslug','Slug base do AniVideo (vazio = pular)','','ex: jujutsu-kaisen')}
+        ${toggle('add-inc-season','Incluir nº da temporada no link?', true)}
+        <div class="info-box" style="margin-top:8px;margin-bottom:0">
+          <b>Exemplo:</b> slug <code style="color:var(--text)">jujutsu-kaisen</code> + T2 → <code style="color:var(--text)">j/jujutsu-kaisen-2</code>
+        </div>
+      </div>
+
+      <!-- Painel AnimesOnlineCC -->
+      <div id="src-panel-aonlinecc" style="margin-top:14px;display:none">
+        ${field('add-ao-slug','Slug do anime no animesonlinecc.to','','ex: yofukashi-no-uta')}
+        <div class="info-box" style="margin-top:8px;margin-bottom:0">
+          <b>Exemplo URL:</b> <code style="color:var(--text)">animesonlinecc.to/episodio/<b>yofukashi-no-uta</b>-episodio-01/</code><br>
+          Se <b>Eps disponíveis &gt; 0</b>, raspa os eps agora. Se = 0, só salva o slug para o auto-update usar depois.
+        </div>
+      </div>
+    </div>
+
+    <!-- Campos de filme -->
     <div class="form-section" id="movie-fields" style="display:none">
       <h3>🎬 Campos do Filme</h3>
       <div class="field-row">
@@ -731,36 +668,63 @@ function renderAdd() {
     <div class="btn-row">
       <button class="btn btn-primary" onclick="submitAdd()">➕ Adicionar Anime</button>
     </div>
-  </div>
-  `;
+  </div>`;
+}
+
+function selectSource(src) {
+  $('add-source').value = src;
+  ['anivideo','aonlinecc'].forEach(s => {
+    $(`src-card-${s}`).classList.toggle('selected', s === src);
+    $(`src-panel-${s}`).style.display = s === src ? 'block' : 'none';
+  });
 }
 
 function toggleMovieFields() {
-  const v = $('add-type').value === 'movie';
-  $('movie-fields').style.display = v ? 'block' : 'none';
+  $('movie-fields').style.display = $('add-type').value === 'movie' ? 'block' : 'none';
 }
 
 async function submitAdd() {
   const name = $('add-name').value.trim();
   if (!name) { setStatus('Informe o nome do anime', 'err'); return; }
+
+  const source = $('add-source').value;
+
+  // Validação específica por fonte
+  if (source === 'aonlinecc' && !$('add-ao-slug').value.trim()) {
+    setStatus('Informe o slug do animesonlinecc.to', 'err'); return;
+  }
+
   const logEl = $('add-log');
   logEl.style.display = 'block';
   logEl.innerHTML = '';
-  writeLog(logEl, '▶ Iniciando...', 'title');
+  writeLog(logEl, `▶ Iniciando via ${source === 'aonlinecc' ? 'AnimesOnlineCC' : 'AniVideo'}...`, 'title');
 
   const data = {
-    name, slug: $('add-slug').value.trim(),
-    eps: $('add-eps').value, max_eps: $('add-max-eps').value,
-    season: $('add-season').value, avslug: $('add-avslug').value.trim(),
-    is_movie: $('add-type').value === 'movie',
-    has_sub: $('add-has-sub').checked, has_dub: $('add-has-dub').checked,
-    adult: $('add-adult').checked,
-    inc_season: $('add-inc-season').checked,
-    mv_title: $('mv-title')?.value||'', mv_tag: $('mv-tag')?.value||'',
-    mv_rt: $('mv-rt')?.value||'', mv_dir: $('mv-dir')?.value||'',
-    mv_age: $('mv-age')?.value||'', mv_post: $('mv-post')?.value||'',
-    mv_acc: $('mv-acc')?.value||'#FF2E2E', mv_stills: $('mv-stills')?.value||'',
-    mv_cast: $('mv-cast')?.value||'', mv_awards: $('mv-awards')?.value||'',
+    name, slug:      $('add-slug').value.trim(),
+    eps:             $('add-eps').value,
+    max_eps:         $('add-max-eps').value,
+    season:          $('add-season').value,
+    source,
+    has_sub:         $('add-has-sub').checked,
+    has_dub:         $('add-has-dub').checked,
+    adult:           $('add-adult').checked,
+    is_movie:        $('add-type').value === 'movie',
+    // AniVideo
+    avslug:          $('add-avslug')?.value?.trim() || '',
+    inc_season:      $('add-inc-season')?.checked ?? true,
+    // AnimesOnlineCC
+    ao_slug:         $('add-ao-slug')?.value?.trim() || '',
+    // Filme
+    mv_title:        $('mv-title')?.value||'',
+    mv_tag:          $('mv-tag')?.value||'',
+    mv_rt:           $('mv-rt')?.value||'',
+    mv_dir:          $('mv-dir')?.value||'',
+    mv_age:          $('mv-age')?.value||'',
+    mv_post:         $('mv-post')?.value||'',
+    mv_acc:          $('mv-acc')?.value||'#FF2E2E',
+    mv_stills:       $('mv-stills')?.value||'',
+    mv_cast:         $('mv-cast')?.value||'',
+    mv_awards:       $('mv-awards')?.value||'',
   };
 
   const res = await api('/api/add_anime', 'POST', data);
@@ -779,7 +743,7 @@ function renderUpdate(dry) {
   c.innerHTML = `
   <div style="max-width:820px">
     <p style="color:var(--dim);font-size:13px;margin-bottom:16px">
-      ${dry ? 'Apenas verifica disponibilidade, sem salvar nada.' : 'Verifica e adiciona novos episódios via AniVideo CDN.'}
+      ${dry ? 'Apenas verifica disponibilidade, sem salvar nada.' : 'Verifica e adiciona novos episódios (AniVideo CDN e AnimesOnlineCC).'}
     </p>
     <div class="btn-row" style="margin-bottom:14px">
       <button class="btn btn-primary" id="run-btn" onclick="runUpdate(${dry})">
@@ -802,7 +766,6 @@ async function runUpdate(dry) {
   log.innerHTML = '';
   prog.style.display = 'block';
   writeLog(log, `╔══ ${dry?'VERIFICAÇÃO (dry run)':'UPDATE COMPLETO'} ══╗`, 'title');
-
   const res = await api('/api/update', 'POST', {dry});
   startSSE(res.stream_id,
     (msg, lvl) => writeLog(log, msg, lvl),
@@ -856,7 +819,6 @@ async function renderStats() {
         </div>`).join('')}
       </div>
     </div>
-
     <div class="section-title">Em andamento</div>
     ${s.ongoing_list.map(a => `
     <div class="anime-card" style="margin-bottom:6px">
@@ -877,7 +839,7 @@ async function renderLogs(filter='todos') {
   <div style="max-width:900px">
     <div style="display:flex;gap:10px;align-items:center;margin-bottom:16px;flex-wrap:wrap">
       <div class="tabs" style="margin:0">
-        ${['todos','update','add','delete','error','git'].map(k =>
+        ${['todos','update','add','delete','error','git','source'].map(k =>
           `<button class="tab ${k===filter?'active':''}" onclick="renderLogs('${k}')">${k}</button>`
         ).join('')}
       </div>
@@ -892,8 +854,8 @@ async function renderLogs(filter='todos') {
     el.innerHTML = `<div class="empty"><div class="empty-icon">📜</div>Nenhum log encontrado.</div>`;
     return;
   }
-  const colors = { update:'#3b82f6', add:'#22c55e', error:'#ef4444', delete:'#f59e0b', git:'#a855f7', stream:'#ef4444' };
-  const icons  = { update:'🔄', add:'➕', error:'❌', delete:'🗑️', git:'☁️', stream:'📡' };
+  const colors = { update:'#3b82f6', add:'#22c55e', error:'#ef4444', delete:'#f59e0b', git:'#a855f7', stream:'#ef4444', source:'#2dd4bf' };
+  const icons  = { update:'🔄', add:'➕', error:'❌', delete:'🗑️', git:'☁️', stream:'📡', source:'🕸️' };
   el.innerHTML = logs.map(e => `
   <div class="log-entry">
     <div class="log-entry-bar" style="background:${colors[e.kind]||'#4a4a6a'}"></div>
@@ -921,7 +883,6 @@ async function renderPageconfig() {
   const ann = cfg.announcement || {};
   const ids = DB.map(a => a.id||'').filter(Boolean).sort();
   const c   = $('content');
-
   c.innerHTML = `
   <div style="max-width:740px">
     <div class="form-section">
@@ -935,7 +896,6 @@ async function renderPageconfig() {
         </select>
       </div>
     </div>
-
     <div class="form-section">
       <h3>✍️ Textos</h3>
       <div class="field-row">
@@ -947,18 +907,15 @@ async function renderPageconfig() {
         ${field('cfg-cat','Título Catálogo', cfg.catalogTitle||'')}
       </div>
     </div>
-
     <div class="form-section">
       <h3>🎨 Opções Visuais</h3>
       ${toggle('cfg-rand','Mostrar botão Anime Aleatório?', cfg.showRandomButton)}
       ${toggle('cfg-blur','Blur no banner do Hero?', cfg.featuredBannerBlur)}
     </div>
-
     <div class="form-section">
       <h3>📌 Gêneros Fixados</h3>
       ${field('cfg-pinned','Gêneros (separados por vírgula)', (cfg.pinnedGenres||[]).join(', '), 'ex: Ação, Romance')}
     </div>
-
     <div class="form-section">
       <h3>📣 Anúncio</h3>
       ${toggle('cfg-ann-on','Ativar anúncio?', ann.enabled)}
@@ -966,7 +923,6 @@ async function renderPageconfig() {
       ${field('cfg-ann-txt','Texto do anúncio', ann.text||'', 'ex: Novo anime adicionado!')}
       ${segmented('cfg-ann-type','Tipo / cor', ['info','warning','success'], ann.type||'info')}
     </div>
-
     <div id="cfg-status" style="font-family:var(--mono);font-size:12px;color:var(--green);margin-bottom:10px;height:18px"></div>
     <div class="btn-row">
       <button class="btn btn-primary" onclick="savePageconfig()">💾 Salvar pageconfig.json</button>
@@ -1025,8 +981,7 @@ function renderPush() {
 async function doPush() {
   const msg = $('push-msg')?.value?.trim() || 'chore: update database';
   const out = $('push-output');
-  out.style.display = 'block';
-  out.innerHTML = '';
+  out.style.display = 'block'; out.innerHTML = '';
   writeLog(out, 'Executando git push...', 'dim');
   const r = await api('/api/git/push', 'POST', {message: msg});
   writeLog(out, r.output || 'Concluído.', r.ok ? 'success' : 'error');
@@ -1050,8 +1005,7 @@ function renderPull() {
 
 async function doPull() {
   const out = $('pull-output');
-  out.style.display = 'block';
-  out.innerHTML = '';
+  out.style.display = 'block'; out.innerHTML = '';
   writeLog(out, 'Baixando do GitHub...', 'dim');
   const r = await api('/api/git/pull', 'POST');
   if (r.ok) {
@@ -1073,17 +1027,15 @@ function openEdit(animeId) {
   if (!editAnime) return;
   $('edit-modal-title').textContent = `✏️  ${editAnime.title || animeId}`;
   const body = $('edit-modal-body');
-
   const seasons = editAnime.seasons || [];
   const tabBtns  = [`<button class="mtab active" onclick="switchMTab(this,'etab-general')">🎌 Geral</button>`];
   const tabPanels = [`<div class="mtab-panel active" id="etab-general">${buildGeneralTab(editAnime)}</div>`];
 
   seasons.forEach((s, i) => {
     const isMovie = s.type === 'movie';
-    const icon = isMovie ? '🎬' : '📺';
-    const lbl  = s.seasonLabel || `S${s.season}`;
-    const tid  = `etab-s${i}`;
-    tabBtns.push(`<button class="mtab" onclick="switchMTab(this,'${tid}')">${icon} ${esc(lbl.slice(0,18))}</button>`);
+    const lbl = s.seasonLabel || `S${s.season}`;
+    const tid = `etab-s${i}`;
+    tabBtns.push(`<button class="mtab" onclick="switchMTab(this,'${tid}')">${isMovie?'🎬':'📺'} ${esc(lbl.slice(0,18))}</button>`);
     tabPanels.push(`<div class="mtab-panel" id="${tid}">${buildSeasonTab(s, i, isMovie)}</div>`);
   });
 
@@ -1128,6 +1080,7 @@ function buildSeasonTab(s, idx, isMovie) {
   const subEps  = audios.find(a => a.type==='sub')?.episodesAvailable || 0;
   const dubEps  = audios.find(a => a.type==='dub')?.episodesAvailable || 0;
   const sid     = `s${idx}`;
+  const aoSlug  = s.aonlinecc_slug || '';
 
   let html = `
   <div class="field-row">
@@ -1147,7 +1100,13 @@ function buildSeasonTab(s, idx, isMovie) {
   ${toggle(`e-${sid}-has-sub`,'Tem Legendado?', hasSub)}
   ${field(`e-${sid}-sub-eps`,'Eps legendado disponíveis', subEps)}
   ${toggle(`e-${sid}-has-dub`,'Tem Dublado?', hasDub)}
-  ${field(`e-${sid}-dub-eps`,'Eps dublado disponíveis', dubEps)}`;
+  ${field(`e-${sid}-dub-eps`,'Eps dublado disponíveis', dubEps)}
+
+  <div style="font-family:var(--mono);font-size:10px;color:var(--accent2);text-transform:uppercase;letter-spacing:.1em;margin:10px 0 6px">📡 Fonte</div>
+  <div class="info-box" style="margin-bottom:8px">
+    <b>Fonte atual:</b> <span style="color:var(--text)">${aoSlug ? `🕸️ AnimesOnlineCC (${aoSlug})` : '⚡ AniVideo'}</span>
+  </div>
+  ${field(`e-${sid}-ao-slug`,'Slug AnimesOnlineCC (vazio = AniVideo)', aoSlug, 'ex: yofukashi-no-uta')}`;
 
   if (isMovie) {
     html += `
@@ -1184,7 +1143,7 @@ function closeEditModal() { $('edit-modal').style.display = 'none'; editAnime = 
 async function submitEdit() {
   if (!editAnime) return;
   const a = editAnime;
-  a.title = a.titleRomaji = $('e-title').value;
+  a.title = a.titleRomaji  = $('e-title').value;
   a.titleJapanese = $('e-title-j').value;
   a.studio        = $('e-studio').value;
   a.genre         = $('e-genres').value.split(',').map(g=>g.trim()).filter(Boolean);
@@ -1197,14 +1156,20 @@ async function submitEdit() {
   (a.seasons||[]).forEach((s, i) => {
     const sid = `s${i}`;
     const isMovie = s.type === 'movie';
-    s.seasonLabel     = $(`e-${sid}-label`)?.value || s.seasonLabel;
-    s.year            = parseInt($(`e-${sid}-year`)?.value)||s.year;
-    s.episodes        = parseInt($(`e-${sid}-eps`)?.value)||s.episodes;
-    s.currentEpisode  = parseInt($(`e-${sid}-cur`)?.value)||s.currentEpisode;
-    s.score           = parseFloat($(`e-${sid}-score`)?.value)||s.score;
-    s.synopsis        = $(`e-${sid}-synopsis`)?.value || s.synopsis;
-    s.trailer         = $(`e-${sid}-trailer`)?.value || s.trailer;
-    s.status          = $(`e-${sid}-status`)?.value || s.status;
+    s.seasonLabel    = $(`e-${sid}-label`)?.value || s.seasonLabel;
+    s.year           = parseInt($(`e-${sid}-year`)?.value)||s.year;
+    s.episodes       = parseInt($(`e-${sid}-eps`)?.value)||s.episodes;
+    s.currentEpisode = parseInt($(`e-${sid}-cur`)?.value)||s.currentEpisode;
+    s.score          = parseFloat($(`e-${sid}-score`)?.value)||s.score;
+    s.synopsis       = $(`e-${sid}-synopsis`)?.value || s.synopsis;
+    s.trailer        = $(`e-${sid}-trailer`)?.value || s.trailer;
+    s.status         = $(`e-${sid}-status`)?.value || s.status;
+
+    // Fonte da temporada
+    const newAoSlug = $(`e-${sid}-ao-slug`)?.value?.trim() || '';
+    if (newAoSlug) s.aonlinecc_slug = newAoSlug;
+    else delete s.aonlinecc_slug;
+
     const hasSub = $(`e-${sid}-has-sub`)?.checked;
     const hasDub = $(`e-${sid}-has-dub`)?.checked;
     const subEps = parseInt($(`e-${sid}-sub-eps`)?.value)||0;
@@ -1221,12 +1186,9 @@ async function submitEdit() {
       s.accentColor = $(`e-${sid}-mv-acc`)?.value||'#FF2E2E';
       s.posterImage = $(`e-${sid}-mv-post`)?.value||'';
       s.runtime     = parseInt($(`e-${sid}-mv-rt`)?.value)||0;
-      const stills  = $(`e-${sid}-mv-stills`)?.value||'';
-      s.stills      = stills.split(',').map(x=>x.trim()).filter(Boolean);
-      const awards  = $(`e-${sid}-mv-awards`)?.value||'';
-      s.awards      = awards.split(',').map(x=>x.trim()).filter(Boolean);
-      const castRaw = $(`e-${sid}-mv-cast`)?.value||'';
-      s.cast        = castRaw.trim().split('\n').filter(Boolean).map(line => {
+      s.stills  = ($(`e-${sid}-mv-stills`)?.value||'').split(',').map(x=>x.trim()).filter(Boolean);
+      s.awards  = ($(`e-${sid}-mv-awards`)?.value||'').split(',').map(x=>x.trim()).filter(Boolean);
+      s.cast    = ($(`e-${sid}-mv-cast`)?.value||'').trim().split('\n').filter(Boolean).map(line => {
         const p = line.split('|').map(x=>x.trim());
         return {character:p[0]||'',voice:p[1]||'',voiceDub:p[2]||'—'};
       });
@@ -1256,8 +1218,8 @@ async function editRefetchMAL() {
 }
 
 async function editRefetchBanner() {
-  const name    = $('e-title')?.value?.trim();
-  const fallback= $('e-cover')?.value?.trim();
+  const name     = $('e-title')?.value?.trim();
+  const fallback = $('e-cover')?.value?.trim();
   if (!name) return;
   const st = $('edit-mal-status');
   st.style.color='var(--yellow)'; st.textContent='Buscando banner CR... (~15s)';
@@ -1288,9 +1250,7 @@ function closeConfirm() { $('confirm-modal').style.display = 'none'; _confirmCb 
 // ════════════════════════════════════════════════════════════
 // INIT
 // ════════════════════════════════════════════════════════════
-function updateDbCount() {
-  $('db-count').textContent = `${DB.length} animes`;
-}
+function updateDbCount() { $('db-count').textContent = `${DB.length} animes`; }
 
 async function init() {
   DB = await api('/api/db');

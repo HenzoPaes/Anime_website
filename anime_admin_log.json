@@ -810,5 +810,19 @@
     "title": "pageconfig.json salvo",
     "detail": "featuredAnimeId=jujutsu-kaisen",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-04 21:19:27",
+    "kind": "git",
+    "title": "Git Push: chore: update database [04/03/2026, 21:19]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   c8b4574..6bc3bfd  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-05 06:50:40",
+    "kind": "add",
+    "title": "Adicionado: Black Clover",
+    "detail": "T1 · 170 eps · Série",
+    "level": "info"
   }
 ]

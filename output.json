@@ -17477,5 +17477,185 @@
     "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
     "titleJapanese": "かぐや様は告らせたい～天才たちの恋愛頭脳戦～",
     "titleRomaji": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen"
+  },
+  {
+    "id": "mayonaka-heart-tune",
+    "title": "Mayonaka Heart Tune",
+    "titleRomaji": "Mayonaka Heart Tune",
+    "titleJapanese": "真夜中ハートチューン",
+    "genre": [
+      "Comedy",
+      "Romance"
+    ],
+    "studio": "Gekkou",
+    "recommended": false,
+    "anilistId": 187942,
+    "adultContent": false,
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187942-c2cZvunJGfiE.jpg",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187942-c2cZvunJGfiE.jpg",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2026,
+        "episodes": 12,
+        "currentEpisode": 9,
+        "status": "ongoing",
+        "score": 6.9,
+        "synopsis": "When Arisu Yamabuki was all alone in bed at night, he was able to find solace in the voice of a radio host who went by “Apollo.” However, one day, she simply stopped broadcasting without any explanation. Years then passed, and Arisu is now a second-year high-schooler. He makes it his mission to search for Apollo, as there is something he wants to tell her. He doesn’t know what she looks like, or even what her real name is, but he manages to get some leads on her in his school’s broadcasting club. That’s where he meets four girls who all dream to get a job where they can make full use of their voices! Just who is Apollo, and how will those four’s dreams pan out?\n\n(Source: K Manga)",
+        "trailer": "https://www.youtube.com/watch?v=poUibdNvxPQ",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 9
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "mayonaka-heart-tune-s1-ep1",
+            "number": 1,
+            "title": "Mayonaka Heart Tune - T1 Ep 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://streamingverde.com/newjeans/?id=dssott.com/a/letra/m/mayonaka-heart-tune/01.leg.mp4&img=https://image.tmdb.org/t/p/original/nDof5wv11Ipo10V3hWD29aVHM5G.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub2": "<iframe src=\"https://topanimes.net/aviso/?url=https%3A%2F%2Fpng.strp2p.com%2F%23e8nr1m%26poster%3Dhttps%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FnDof5wv11Ipo10V3hWD29aVHM5G.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub3": "<iframe src=\"https://topanimes.net/aviso/?url=https%3A%2F%2Fcsst.online%2Fembed%2F956319%26poster%3Dhttps%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FnDof5wv11Ipo10V3hWD29aVHM5G.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "mayonaka-heart-tune-s1-ep2",
+            "number": 2,
+            "title": "Mayonaka Heart Tune - T1 Ep 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mayonaka-heart-tune/02.mp4/index.m3u8&nocache1768320189\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub2": "<iframe src=\"https://www.blogger.com/video.g?token=AD6v5dxHa0Fx2sbzHhHuGjxNymWZeOWbUFtkNT3J8Xy7947h4G8gKXf5LvOLQQnc-wTqVj2u7xG4wKrvCZLyp6GgHDsYgvCg4krIXWKZopGZ6Ogsx4EYPRa0jivVPUxZC4oP0IBPI8rf&img=https://image.tmdb.org/t/p/original/dhxPZJO8i14jQs37KoMRiYBaLef.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "mayonaka-heart-tune-s1-ep3",
+            "number": 3,
+            "title": "Mayonaka Heart Tune - T1 Ep 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mayonaka-heart-tune/03.mp4/index.m3u8&nocache1768925734\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub2": "<iframe src=\"https://www.blogger.com/video.g?token=AD6v5dwy7Ke8s2py8svxLTQLPCWBkzveoKb7afPq77m2gHUevIz9PFLk4X-t86o2YOOWefuLdzxeUqQGpEqISNzEDfKdqMwn1h30B2S0_ShENzQ7kwgH5vn2pEmYDMXxhk0_HCl8p8_M&img=https://image.tmdb.org/t/p/original/wzHqWvzfuQziVlIruhgh5LwFSWY.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "mayonaka-heart-tune-s1-ep4",
+            "number": 4,
+            "title": "Mayonaka Heart Tune - T1 Ep 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://topanimes.net/aviso/?url=https%3A%2F%2Fpng.strp2p.com%2Fhttps%3A%2F%2Fcdn-s01.mywallpaper-4k-image.net%2Fstream%2Fm%2Fmayonaka-heart-tune%2F04.mp4%2Findex.m3u8%26nocache1769526799%26poster%3Dhttps%3A%2F%2Fimgsrv.crunchyroll.com%2Fcatalog%2Fcrunchyroll%2Fcfa124cc64533fefc6e1847f8dc4cd05.png\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub2": "<iframe src=\"https://www.blogger.com/video.g?token=AD6v5dxdRPtS6J5lDA54RXwrg0Wd-liHUuE202JNOQ4FzvZTpTKYRviWivpGeVKHfOB4J_ZXu623XIikeROQeVFe2sYc81wRkzUbi5doKu1ZAkw34UX09UFC9j6wmPoP6qfqENvIQA&img=https://imgsrv.crunchyroll.com/catalog/crunchyroll/cfa124cc64533fefc6e1847f8dc4cd05.png\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "mayonaka-heart-tune-s1-ep5",
+            "number": 5,
+            "title": "Mayonaka Heart Tune - T1 Ep 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mayonaka-heart-tune/05.mp4/index.m3u8\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub2": "<iframe src=\"https://sk-api.alibabacdn.net/?id=5VhGZfqVOQmQMZ8AEE0Ka-Tune-In-to-the-Midnight-Heart/5&img=https://image.tmdb.org/t/p/original/AcwSWQlk2Mg5yRpOYiwljU6SYRf.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub3": "<iframe src=\"https://litch.alibabacdn.net/?id=4865&s=1&e=5&audio=leg&img=https://image.tmdb.org/t/p/original/AcwSWQlk2Mg5yRpOYiwljU6SYRf.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "mayonaka-heart-tune-s1-ep6",
+            "number": 6,
+            "title": "Mayonaka Heart Tune - T1 Ep 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mayonaka-heart-tune/06.mp4/index.m3u8&nocache1770738287\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub2": "<iframe src=\"https://www.blogger.com/video.g?token=AD6v5dwotx1GagARUvB9m_2balZB6jii9jSx2Bm8Sepw5a3j76nvS2TTHFD0TwygvUED7vZskiuQGbfX9KsW4c8dWg4aPl_KMzgrZ0nYSRQsANAxr6JCK6NsBYQgGIUiCR5qBoGDUUI&img=https://image.tmdb.org/t/p/original/ztQA52xz7KTHviIARLPYQ5e58vW.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "mayonaka-heart-tune-s1-ep7",
+            "number": 7,
+            "title": "Mayonaka Heart Tune - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://topanimes.net/antivirus2/yes/?id=sbt/f-cdn/google/node/playready/a-2/letra/m/mayonaka-heart-tune/07/cdn_stream.m3u8&img=https://image.tmdb.org/t/p/original/ucq0q5gfJbnniQavPzdNVPJFmb6.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub2": "<iframe src=\"https://topanimes.net/antivirus3/?id=Tune In to the Midnight Heart - S01E07 [1080p].1080p.mp4&img=https://image.tmdb.org/t/p/original/ucq0q5gfJbnniQavPzdNVPJFmb6.jpg&img=https://image.tmdb.org/t/p/original/ucq0q5gfJbnniQavPzdNVPJFmb6.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub3": "<iframe src=\"https://topanimes.net/aviso/?url=https%3A%2F%2Fcsst.online%2Fembed%2F972084%26poster%3Dhttps%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fucq0q5gfJbnniQavPzdNVPJFmb6.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "mayonaka-heart-tune-s1-ep8",
+            "number": 8,
+            "title": "Mayonaka Heart Tune - T1 Ep 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://topanimes.net/antivirus2/yes/?id=sbt/f-cdn/google/node/playready/a-2/letra/m/mayonaka-heart-tune/08/cdn_stream.m3u8&img=https://image.tmdb.org/t/p/original/4bgC2AgK2Pymq4C18xQTW7tbC6L.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub2": "<iframe src=\"https://topanimes.net/antivirus3/?id=Tune In to the Midnight Heart - S01E08 [1080p].1080p.mp4&img=https://image.tmdb.org/t/p/original/4bgC2AgK2Pymq4C18xQTW7tbC6L.jpg&img=https://image.tmdb.org/t/p/original/4bgC2AgK2Pymq4C18xQTW7tbC6L.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub3": "<iframe src=\"https://topanimes.net/aviso/?url=https%3A%2F%2Fcsst.online%2Fembed%2F974059%26poster%3Dhttps%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F4bgC2AgK2Pymq4C18xQTW7tbC6L.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "mayonaka-heart-tune-s1-ep9",
+            "number": 9,
+            "title": "Mayonaka Heart Tune - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mayonaka-heart-tune/09.mp4/index.m3u8&nocache1772548753\" frameborder=\"0\" allowfullscreen></iframe>",
+              "sub2": "<iframe src=\"https://www.blogger.com/video.g?token=AD6v5dy3ar9mAXZ3E8GbC6-FV9DgZ4n5sst0DqMQsMBdwUYBTiJ469FZE15Q1WJ_GDk4ArtqLOKVYEsnyQLenyhDltSPA1MTqzZjAlmRvxjILU4k5UWzGGSdX4B4Etw-iJSs4pIL&img=https://image.tmdb.org/t/p/original/zJJQCD9xMhDD4MlQ6haaP3IBCHk.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "mayonaka-heart-tune-s1-ep10",
+            "number": 10,
+            "title": "Mayonaka Heart Tune - T1 Ep 10",
+            "season": "1",
+            "embeds": {},
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "mayonaka-heart-tune-s1-ep11",
+            "number": 11,
+            "title": "Mayonaka Heart Tune - T1 Ep 11",
+            "season": "1",
+            "embeds": {},
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "mayonaka-heart-tune-s1-ep12",
+            "number": 12,
+            "title": "Mayonaka Heart Tune - T1 Ep 12",
+            "season": "1",
+            "embeds": {},
+            "embedCredit": "topanimes.net"
+          }
+        ],
+        "topanimes_slug_sub": "mayonaka-heart-tune",
+        "topanimes_slug_dub": "mayonaka-heart-tune-dublado",
+        "topanimes_sub_srcs": [
+          1,
+          2,
+          3
+        ],
+        "topanimes_dub_srcs": []
+      }
+    ]
   }
 ]

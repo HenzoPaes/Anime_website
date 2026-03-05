@@ -936,5 +936,47 @@
     "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
     "detail": "[DUB] ⚠️ sem stream_path.",
     "level": "error"
+  },
+  {
+    "ts": "2026-03-05 15:00:28",
+    "kind": "git",
+    "title": "Git Push: chore: update database [05/03/2026, 15:00]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   353e4bf..73139f2  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-05 17:37:10",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-05 17:37:11",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-05 17:37:12",
+    "kind": "stream",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-05 17:37:12",
+    "kind": "stream",
+    "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-05 18:04:27",
+    "kind": "add",
+    "title": "Adicionado: Mayonaka Heart Tune",
+    "detail": "T1 · 12 eps · Série · AniVideo (mayonaka-heart-tune)",
+    "level": "info"
   }
 ]

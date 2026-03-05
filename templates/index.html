@@ -163,6 +163,7 @@ body::before {
 }
 .source-badge-av  { background: #0f1a2e; color: #60a5fa; }
 .source-badge-ao  { background: #0f2a1a; color: #34d399; }
+.source-badge-ta  { background: #2a1505; color: #fb923c; }
 
 /* ── Buttons ── */
 .btn { padding: 9px 18px; border-radius: 7px; border: none; cursor: pointer; font-family: var(--sans); font-size: 13px; font-weight: 600; transition: all .15s; }
@@ -467,6 +468,11 @@ body::before {
             <div class="source-card-name" style="font-size:11px">animesonlinecc.to</div>
             <span class="source-badge source-badge-ao">SCRAPER</span>
           </div>
+          <div class="source-card" id="sm-src-card-topanimes" onclick="smSelectSource('topanimes')">
+            <div class="source-card-icon" style="font-size:16px">🔥</div>
+            <div class="source-card-name" style="font-size:11px">topanimes.net</div>
+            <span class="source-badge source-badge-ta">SCRAPER</span>
+          </div>
         </div>
         <input type="hidden" id="sm-source" value="anivideo">
 
@@ -497,6 +503,38 @@ body::before {
             </label>
           </div>
           <div class="info-box" style="margin-top:6px;margin-bottom:0;font-size:11px" id="sm-ao-url-preview"></div>
+        </div>
+        <div id="sm-panel-topanimes" style="display:none">
+          <div class="field-row">
+            <div class="field">
+              <label>Slug LEG (sem -dublado)</label>
+              <input type="text" id="sm-ta-slug-sub" placeholder="ex: jujutsu-kaisen-3" oninput="updateTaUrlPreview()">
+            </div>
+            <div class="field">
+              <label>Slug DUB (vazio = slug + -dublado)</label>
+              <input type="text" id="sm-ta-slug-dub" placeholder="ex: jujutsu-kaisen-3-dublado" oninput="updateTaUrlPreview()">
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px">
+            <button class="btn btn-ghost" style="font-size:11px;padding:6px 10px" onclick="smFetchTopanimesSources()">🔍 Buscar Fontes (ep 1)</button>
+            <span id="sm-ta-fetch-status" style="font-family:var(--mono);font-size:10px;color:var(--dim)"></span>
+          </div>
+          <div id="sm-ta-sources-box" style="display:none">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div>
+                <div style="font-family:var(--mono);font-size:10px;color:var(--accent2);margin-bottom:6px">📺 Fontes LEG</div>
+                <div id="sm-ta-sub-sources" style="display:flex;flex-direction:column;gap:4px"></div>
+              </div>
+              <div>
+                <div style="font-family:var(--mono);font-size:10px;color:var(--accent2);margin-bottom:6px">🎙️ Fontes DUB</div>
+                <div id="sm-ta-dub-sources" style="display:flex;flex-direction:column;gap:4px"></div>
+              </div>
+            </div>
+            <div class="info-box" style="margin-top:8px;font-size:10px">
+              Selecione quais fontes salvar. Sem seleção = todas.
+            </div>
+          </div>
+          <div id="sm-ta-url-preview" style="font-family:var(--mono);font-size:10px;color:var(--dim);margin-top:4px"></div>
         </div>
 
         <!-- Áudio -->
@@ -856,7 +894,11 @@ function renderSeasonsList() {
   }
   const statusColors = { ongoing:'var(--green)', finished:'var(--accent2)', paused:'var(--yellow)' };
   el.innerHTML = _addSeasons.map((s, i) => {
-    const srcLabel = s.source === 'aonlinecc' ? `🕸️ ${s.ao_slug||'aonlinecc'}` : `⚡ ${s.avslug||'sem slug'}`;
+    const srcLabel = s.source === 'aonlinecc'
+      ? `🕸️ ${s.ao_slug||'aonlinecc'}`
+      : s.source === 'topanimes'
+        ? `🔥 ${s.ta_slug_sub||'topanimes'}`
+        : `⚡ ${s.avslug||'sem slug'}`;
     return `<div class="season-item">
       <div class="season-item-cover">${s.cover ? `<img src="${esc(s.cover)}">` : '🎌'}</div>
       <div class="season-item-info">
@@ -900,6 +942,8 @@ async function submitAdd() {
       is_movie: $('add-type').value === 'movie',
       avslug: s.avslug || '', inc_season: s.inc_season,
       ao_slug: s.ao_slug || '', ao_inc_season: s.ao_inc_season,
+      ta_slug_sub: s.ta_slug_sub || '', ta_slug_dub: s.ta_slug_dub || '',
+      ta_sub_sources: s.ta_sub_sources || [], ta_dub_sources: s.ta_dub_sources || [],
       // Season metadata from modal
       season_label:  s.label || '',
       season_year:   s.year  || '',
@@ -952,6 +996,13 @@ function openSeasonModal() {
   $('sm-avslug').value = '';
   $('sm-ao-slug').value = '';
   $('sm-ao-inc-season').checked = true;
+  $('sm-ta-slug-sub').value = '';
+  $('sm-ta-slug-dub').value = '';
+  $('sm-ta-sources-box').style.display = 'none';
+  $('sm-ta-sub-sources').innerHTML = '';
+  $('sm-ta-dub-sources').innerHTML = '';
+  $('sm-ta-fetch-status').textContent = '';
+  $('sm-ta-url-preview').textContent = '';
   $('sm-has-sub').checked = true;
   $('sm-has-dub').checked = false;
   $('season-modal').style.display = 'flex';
@@ -967,9 +1018,11 @@ function smSegSel(btn, val) {
 }
 
 function smSelectSource(src) {
-  ['anivideo','aonlinecc'].forEach(s => {
-    $(`sm-src-card-${s}`).classList.toggle('selected', s === src);
-    $(`sm-panel-${s}`).style.display = s === src ? 'block' : 'none';
+  ['anivideo','aonlinecc','topanimes'].forEach(s => {
+    const card = $(`sm-src-card-${s}`);
+    if (card) card.classList.toggle('selected', s === src);
+    const panel = $(`sm-panel-${s}`);
+    if (panel) panel.style.display = s === src ? 'block' : 'none';
   });
   $('sm-source').value = src;
 }
@@ -1040,6 +1093,57 @@ function smSelectMedia(idx, media) {
   const suggested = title.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   if (!$('sm-avslug').value) $('sm-avslug').value = suggested;
   if (!$('sm-ao-slug').value) $('sm-ao-slug').value = suggested;
+  if (!$('sm-ta-slug-sub').value) $('sm-ta-slug-sub').value = suggested;
+}
+
+function updateTaUrlPreview() {
+  const slug    = $('sm-ta-slug-sub')?.value?.trim() || 'slug';
+  const slugDub = $('sm-ta-slug-dub')?.value?.trim() || (slug + '-dublado');
+  const el = $('sm-ta-url-preview');
+  if (el) el.innerHTML =
+    `<b>LEG:</b> topanimes.net/episodio/${slug}-episodio-1/<br>` +
+    `<b>DUB:</b> topanimes.net/episodio/${slugDub}-episodio-1/`;
+}
+
+async function smFetchTopanimesSources() {
+  const slug = $('sm-ta-slug-sub')?.value?.trim();
+  if (!slug) { setStatus('Informe o slug LEG primeiro', 'err'); return; }
+  const ep = 1;
+  const st = $('sm-ta-fetch-status');
+  st.textContent = 'Buscando...';
+  st.style.color = 'var(--yellow)';
+
+  const data = await api(`/api/topanimes/sources?slug=${encodeURIComponent(slug)}&ep=${ep}`);
+  if (data.error) {
+    st.textContent = '❌ Não encontrado ou sem fontes.';
+    st.style.color = 'var(--red)';
+    return;
+  }
+
+  const subTotal = data.sub?.length || 0;
+  const dubTotal = data.dub?.length || 0;
+  st.textContent = `✅ LEG: ${subTotal} fonte(s) · DUB: ${dubTotal} fonte(s)`;
+  st.style.color = 'var(--green)';
+
+  function buildSourceChecks(sources, containerId) {
+    const el = $(containerId);
+    if (!el) return;
+    if (!sources || !sources.length) {
+      el.innerHTML = '<span style="color:var(--dim);font-size:11px">Nenhuma fonte encontrada</span>';
+      return;
+    }
+    el.innerHTML = sources.map(s => `
+      <label style="display:flex;align-items:center;gap:8px;cursor:pointer;padding:6px 8px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;font-size:12px">
+        <input type="checkbox" value="${s.num}" checked style="accent-color:var(--accent2)">
+        <span style="font-family:var(--mono);color:var(--accent2);font-size:10px;min-width:18px">#${s.num}</span>
+        <span>${esc(s.name)}</span>
+      </label>`).join('');
+  }
+
+  buildSourceChecks(data.sub, 'sm-ta-sub-sources');
+  buildSourceChecks(data.dub, 'sm-ta-dub-sources');
+  $('sm-ta-sources-box').style.display = 'block';
+  updateTaUrlPreview();
 }
 
 function updateAoUrlPreview(prefix) {
@@ -1069,16 +1173,24 @@ function smAddSeason() {
   const hasDub  = $('sm-has-dub').checked;
   const incSeason    = $('sm-inc-season').checked;
   const aoIncSeason = $('sm-ao-inc-season').checked;
+  const taSlugSub  = $('sm-ta-slug-sub').value.trim();
+  const taSlugDub  = $('sm-ta-slug-dub').value.trim();
+  const taSubSrcs  = [...document.querySelectorAll('#sm-ta-sub-sources input[type=checkbox]:checked')].map(c => parseInt(c.value));
+  const taDubSrcs  = [...document.querySelectorAll('#sm-ta-dub-sources input[type=checkbox]:checked')].map(c => parseInt(c.value));
   const cover   = _smSelected ? (((_smSelected.coverImage||{}).extraLarge)||((_smSelected.coverImage||{}).large)||'') : '';
 
   if (source === 'aonlinecc' && !aoSlug) {
     setStatus('Informe o slug do animesonlinecc.to', 'err'); return;
+  }
+  if (source === 'topanimes' && !taSlugSub) {
+    setStatus('Informe o slug LEG do topanimes.net', 'err'); return;
   }
 
   _addSeasons.push({
     season_num: sNum, label, eps, max_eps: maxEps,
     year, score, status, source,
     avslug, ao_slug: aoSlug, inc_season: incSeason, ao_inc_season: aoIncSeason,
+    ta_slug_sub: taSlugSub, ta_slug_dub: taSlugDub, ta_sub_sources: taSubSrcs, ta_dub_sources: taDubSrcs,
     has_sub: hasSub, has_dub: hasDub,
     cover,
     al_prefill: _smSelected || null,

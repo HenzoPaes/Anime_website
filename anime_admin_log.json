@@ -761,5 +761,54 @@
     "title": "Adicionado: Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
     "detail": "T1 · 12 eps · Série",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-02 22:55:28",
+    "kind": "git",
+    "title": "Git Push: chore: update database [02/03/2026, 22:55]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   6bcfc29..c8b4574  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-04 21:18:12",
+    "kind": "update",
+    "title": "Eps adicionados: [Oshi no Ko]",
+    "detail": "[LEG] ✅ Ep 08 disponível!",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-04 21:18:12",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-04 21:18:13",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-04 21:18:13",
+    "kind": "stream",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-04 21:18:13",
+    "kind": "stream",
+    "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-04 21:19:19",
+    "kind": "git",
+    "title": "pageconfig.json salvo",
+    "detail": "featuredAnimeId=jujutsu-kaisen",
+    "level": "info"
   }
 ]

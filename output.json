@@ -1240,18 +1240,18 @@
         "audios": [
           {
             "available": true,
-            "episodesAvailable": 8,
+            "episodesAvailable": 9,
             "label": "Legendado",
             "type": "sub"
           },
           {
             "available": true,
-            "episodesAvailable": 6,
+            "episodesAvailable": 7,
             "label": "Dublado",
             "type": "dub"
           }
         ],
-        "currentEpisode": 8,
+        "currentEpisode": 9,
         "episodeList": [
           {
             "embedCredit": "api.anivideo.net",
@@ -1322,7 +1322,8 @@
           {
             "embedCredit": "api.anivideo.net",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/07.mp4/index.m3u8&nocache1772201703131\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/07.mp4/index.m3u8&nocache1772201703131\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3-dublado/07.mp4/index.m3u8&nocache1772733617106\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "id": "jujutsu-kaisen-s3-ep7",
             "number": 7,
@@ -1338,6 +1339,16 @@
             "number": 8,
             "season": "3",
             "title": "Jujutsu Kaisen - T3 Episódio 8"
+          },
+          {
+            "id": "jujutsu-kaisen-s3-ep9",
+            "number": 9,
+            "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - T3 Ep 9",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/09.mp4/index.m3u8&nocache1772733616616\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
           }
         ],
         "episodes": 24,

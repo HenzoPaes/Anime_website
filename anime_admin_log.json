@@ -873,5 +873,19 @@
     "title": "Adicionado: High Score Girl",
     "detail": "T1 · 12 eps · Série · AnimesOnlineCC (hi-score-girl)",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-05 13:31:57",
+    "kind": "git",
+    "title": "Git Push: chore: update database [05/03/2026, 13:31]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   ea22509..1ecc3db  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-05 14:34:18",
+    "kind": "add",
+    "title": "Adicionado: Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+    "detail": "T1 · 12 eps · Série · AnimesOnlineCC (kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen)",
+    "level": "info"
   }
 ]

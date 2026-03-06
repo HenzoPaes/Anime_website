@@ -1076,5 +1076,19 @@
     "title": "Git Push: chore: update database [05/03/2026, 20:05]",
     "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   3b36b02..98bc9a5  data -> data",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-05 20:20:39",
+    "kind": "git",
+    "title": "Git Push: chore: update database [05/03/2026, 20:20]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   98bc9a5..91d1ffc  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-05 21:06:11",
+    "kind": "add",
+    "title": "Adicionado: Danganronpa",
+    "detail": "T1 · 13 eps · Série · AnimesOnlineCC (danganronpa-the-animation)",
+    "level": "info"
   }
 ]

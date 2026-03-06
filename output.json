@@ -30266,5 +30266,543 @@
         "topanimes_dub_src": 1
       }
     ]
+  },
+  {
+    "id": "danganronpa-animation",
+    "title": "Danganronpa",
+    "titleRomaji": "Danganronpa",
+    "titleJapanese": "ダンガンロンパ 希望の学園と絶望の高校生 The Animation",
+    "genre": [
+      "Horror",
+      "Mystery",
+      "Psychological",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "studio": "Lerche",
+    "recommended": false,
+    "anilistId": 16592,
+    "adultContent": false,
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97672-BRm6bIWQfI2v.jpg",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97672-IXTt0Kkapuqv.jpg",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2013,
+        "episodes": 13,
+        "currentEpisode": 13,
+        "status": "finished",
+        "score": 6.8,
+        "synopsis": "A group of 15 elite high school students are gathered at a very special, high class high school. To graduate from this high school essentially means you'll succeed in life, but graduating is very difficult. The school is presided over by a bear called Monokuma, and he explains to them that their graduation hinges around committing a murder. The only way to graduate is to kill one of your classmates and get away with it. If the other classmates discover the identity of the killer, the killer is the only one executed. However, if they fail to catch the killer, only the killer graduates and the others are annihilated. Which of the 15 will survive the bloodbath to come?",
+        "trailer": "https://www.youtube.com/watch?v=TmobY-jCjy4",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 13
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "danganronpa-animation-s1-ep1",
+            "number": 1,
+            "title": "Danganronpa - T1 Ep 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxxMYrymsiSMWzXyVt8eYErfT6O0k3hTp72iMK9iYPHbHx1vD7iWzF9rC9QnoxImzxbqpCdsVOG6f0y5CdTu863BeWLq__5kuu2a6X_TIr1WrU8aAv95H9tDoaqIvcwhEhPoZg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "danganronpa-animation-s1-ep2",
+            "number": 2,
+            "title": "Danganronpa - T1 Ep 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dz6_nEFC0QoYjJFQftDmaiJUvDRK-zS4w_a1Cv0yO-0q8Nj0gqfo6G_LGx_rghixgXk-CceHsxORM77ryKdeW8ctEIurbUTmlt8otvmCX4i_8CFjOOdgxsNhJAXAMZt_ndDMZCz\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "danganronpa-animation-s1-ep3",
+            "number": 3,
+            "title": "Danganronpa - T1 Ep 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dycUHzm67DDpuf0TxeEAR0T0lQupx7n6SYB2wWh2uNZvY47h8VlaRnVLjU9TVJIomWbNVIVKyAe_tX0HPgT1hTtTbAqnbdCz75ZuemElOVvQ_3qkHChkRYowQROBDfWh_giBVs\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "danganronpa-animation-s1-ep4",
+            "number": 4,
+            "title": "Danganronpa - T1 Ep 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxrQL3lYXdD-K_sp0UgBW5J7eAm2Lni_o1dE1MJiSR4ASjHp7SGUgWGcqbDsGrzbu2YNqbm1U9cuL_Uh7-kmziqxP7J0-0ahh0JJRBB8S6uKd3-2G6y45Mb07lImw4msjBwzLY\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "danganronpa-animation-s1-ep5",
+            "number": 5,
+            "title": "Danganronpa - T1 Ep 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyIBooe9begZZ-PUznsN6PS6_cJuROJW8z9ff3HVJo_CP0U5pVabCL2mmOKFDreYipWYIXYHppnrNjDkBFGqq1Dq5qD4JJO1XxLgy46qmb0L8UGc_N4ED7kantcSDhcV296RvE\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "danganronpa-animation-s1-ep6",
+            "number": 6,
+            "title": "Danganronpa - T1 Ep 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyho_KB0Uto8GvJbcMXEETOAYl4f0LIgQYjRAnB3OHPFJGuXfZNjp-WLnKdZcIhBOqcBiM1VcBNvbAgeYisTAl0wP5sZfE7YBUw7ebRhQYOPdGbSy40AtVTC-feF53APJ66YQ\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "danganronpa-animation-s1-ep7",
+            "number": 7,
+            "title": "Danganronpa - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzH6SDJyQb66iZlkV_RM8ZSNnP4TtvEeLDziPM1A2VBhJw8Pnc4cR58EbNMxb_UBxUeV921lWz0PgCdTXpZJQUF8Ep1zy2lYpoude6gBs2-Jk3tZhmGOMVUPKC_sw9oROgy\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "danganronpa-animation-s1-ep8",
+            "number": 8,
+            "title": "Danganronpa - T1 Ep 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dw-8qtg938LXsPf_pzPLCr8m5qCHlNO8Vw-049IIrCtjjNUNj-gQypgHPYM-vg138t54Z_owbpU-7JO6FLuUyhDnfPAtA0gHjxq5akIlQ_SgoGxY9Thp4zrYtfptLKWqexR2Yjm\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "danganronpa-animation-s1-ep9",
+            "number": 9,
+            "title": "Danganronpa - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwAQPzjCUbSa_It5_2QvvTM_DrNGUZNBbL6yqEN2aaxy9NuT1MFwmDhbM4VDhf7H6cMQD15ShpQVRBkncINf_hg1pBFu3uc1FJ8XsIKRRS2dtYNACMs0m0zO9uaf5g95i4a7xY\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "danganronpa-animation-s1-ep10",
+            "number": 10,
+            "title": "Danganronpa - T1 Ep 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dz4lxOKCSIgy1Q4mPn7h2xgH--AyUOqxuI_HkmJVxv0AecZMJ0oQ1OV8qMS0nTU0owRe2w8uRo8xqu-wS4oT9gl7gIS4l-mqsW9GBUX82y6m82bS_WTdhbB3SvQThgZIjYYu3Jn\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "danganronpa-animation-s1-ep11",
+            "number": 11,
+            "title": "Danganronpa - T1 Ep 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxJBVn27ATMr5dDd26uGigPhiuaCRP3J3dPs_0zGFc5yF_-qPUUOcVURYF-edgBkbcWlSM_2QGnUC8OAxWHl4KTDMYkOX4MxiSu6bOtg6C6wvMGPQqNr_8EAKwyZQKwbHjowzU\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "danganronpa-animation-s1-ep12",
+            "number": 12,
+            "title": "Danganronpa - T1 Ep 12",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dytAakyV0n_8NOn-c2JYoTbj1vq7nnxldicNnoIzhOmZ3VS8UVuT7A7VQJk96n6lMMVQd-AgnS_i77C1U-Osyn7kh8NmrcNddXOux7SoOW3K9IYH3xfQ89ICj9S1h0YJvUnzHs\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "danganronpa-animation-s1-ep13",
+            "number": 13,
+            "title": "Danganronpa - T1 Ep 13",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyfiFFo6kDGEYk3mSqiJh6c4nWw6YpKLSe_p55b0KfoZNeqbzGSoG24uw72aNf5l2VwEyr_9TAN6uZyUaOUZ0rFyBfEywskU-mMCGgZ6r6xPX7cOMo7vvSqPqUDO3-oMTuLNuw\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          }
+        ],
+        "aonlinecc_slug": "danganronpa-the-animation",
+        "aonlinecc_inc_season": true
+      },
+      {
+        "season": 2,
+        "seasonLabel": "Rota do Desespero",
+        "year": 2016,
+        "episodes": 11,
+        "currentEpisode": 11,
+        "status": "finished",
+        "score": 7.0,
+        "synopsis": "Chisa Yukizome begins her job as homeroom teacher for Hope's Peak Academy's 77th Class of Ultmate students. Meanwhile, Hajime Hinata, a student of the school's Reserve Course for students without talent, prepares to undergo an experiment to make him the Ultimate Hope. What follows is a series of tragic events which lead to the birth of the Remnants of Despair and the realization of \"The Biggest, Most Awful, Most Tragic Event in Human History.\"\n\nAired alongside of Danganronpa 3: Mirai-hen, with Mirai-hen starting first.",
+        "trailer": "https://www.youtube.com/watch?v=0AaOjY0cBzg",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 11
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "danganronpa-animation-s2-ep1",
+            "number": 1,
+            "title": "Danganronpa - T2 Ep 1",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen/01.mp4/index.m3u8&nocache1772755571998\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s2-ep2",
+            "number": 2,
+            "title": "Danganronpa - T2 Ep 2",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen/02.mp4/index.m3u8&nocache1772755571999\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s2-ep3",
+            "number": 3,
+            "title": "Danganronpa - T2 Ep 3",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen/03.mp4/index.m3u8&nocache1772755571999\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s2-ep4",
+            "number": 4,
+            "title": "Danganronpa - T2 Ep 4",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen/04.mp4/index.m3u8&nocache1772755571999\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s2-ep5",
+            "number": 5,
+            "title": "Danganronpa - T2 Ep 5",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen/05.mp4/index.m3u8&nocache1772755571999\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s2-ep6",
+            "number": 6,
+            "title": "Danganronpa - T2 Ep 6",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen/06.mp4/index.m3u8&nocache1772755571999\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s2-ep7",
+            "number": 7,
+            "title": "Danganronpa - T2 Ep 7",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen/07.mp4/index.m3u8&nocache1772755571999\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s2-ep8",
+            "number": 8,
+            "title": "Danganronpa - T2 Ep 8",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen/08.mp4/index.m3u8&nocache1772755571999\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s2-ep9",
+            "number": 9,
+            "title": "Danganronpa - T2 Ep 9",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen/09.mp4/index.m3u8&nocache1772755571999\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s2-ep10",
+            "number": 10,
+            "title": "Danganronpa - T2 Ep 10",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen/10.mp4/index.m3u8&nocache1772755571999\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s2-ep11",
+            "number": 11,
+            "title": "Danganronpa - T2 Ep 11",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen/11.mp4/index.m3u8&nocache1772755571999\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "seasonLabel": "Rota do Futuro",
+        "year": 2016,
+        "episodes": 12,
+        "currentEpisode": 12,
+        "status": "finished",
+        "score": 6.8,
+        "synopsis": "Makoto Naegi, the Ultimate Hope who defeated the Ultimate Despair, Junko Enoshima, is under suspicion of treason against the Future Foundation for harboring the Remnants of Despair who carried on her will. As top members of the Future Foundation, including Makoto's former classmates Kyoko Kirigiri, Aoi Asahina, and Yasuhiro Hagakure, are brought together to decide on Makoto's punishment, they are all imprisoned by Monokuma, who forces everyone to participate in a final killing game. They must try to find the traitor among them who will kill them in their sleep, while also trying to avoid being mortally poisoned by personalised forbidden actions. Thrust into a game where no one can trust each other, Makoto's ideals of hope are pushed to their very limits.\n\n(Source: IMDB, edited)\n\nAired alongside of Danganronpa 3: Zetsubou-hen, with Mirai-hen starting first.",
+        "trailer": "https://www.youtube.com/watch?v=0AaOjY0cBzg",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 12
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "danganronpa-animation-s3-ep1",
+            "number": 1,
+            "title": "Danganronpa - T3 Ep 1",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen/01.mp4/index.m3u8&nocache1772755572585\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s3-ep2",
+            "number": 2,
+            "title": "Danganronpa - T3 Ep 2",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen/02.mp4/index.m3u8&nocache1772755572585\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s3-ep3",
+            "number": 3,
+            "title": "Danganronpa - T3 Ep 3",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen/03.mp4/index.m3u8&nocache1772755572585\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s3-ep4",
+            "number": 4,
+            "title": "Danganronpa - T3 Ep 4",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen/04.mp4/index.m3u8&nocache1772755572585\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s3-ep5",
+            "number": 5,
+            "title": "Danganronpa - T3 Ep 5",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen/05.mp4/index.m3u8&nocache1772755572585\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s3-ep6",
+            "number": 6,
+            "title": "Danganronpa - T3 Ep 6",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen/06.mp4/index.m3u8&nocache1772755572585\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s3-ep7",
+            "number": 7,
+            "title": "Danganronpa - T3 Ep 7",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen/07.mp4/index.m3u8&nocache1772755572585\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s3-ep8",
+            "number": 8,
+            "title": "Danganronpa - T3 Ep 8",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen/08.mp4/index.m3u8&nocache1772755572585\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s3-ep9",
+            "number": 9,
+            "title": "Danganronpa - T3 Ep 9",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen/09.mp4/index.m3u8&nocache1772755572585\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s3-ep10",
+            "number": 10,
+            "title": "Danganronpa - T3 Ep 10",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen/10.mp4/index.m3u8&nocache1772755572585\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s3-ep11",
+            "number": 11,
+            "title": "Danganronpa - T3 Ep 11",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen/11.mp4/index.m3u8&nocache1772755572585\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "danganronpa-animation-s3-ep12",
+            "number": 12,
+            "title": "Danganronpa - T3 Ep 12",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen/12.mp4/index.m3u8&nocache1772755572585\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "seasonLabel": "Super Danganronpa 2.5 - Ova",
+        "year": 2017,
+        "episodes": 1,
+        "currentEpisode": 1,
+        "status": "finished",
+        "score": 7.0,
+        "synopsis": "Nagito Komaeda wakes up after experiencing death in the Neo World Program. What kind of world is he seeing and why did he wake up?\n\nNagito appears to be in a strange world, including students who have been seen before as well as people who never existed. He is an ordinary boy with no Ultimate Luck, attending an ordinary school. Constrained by being the protagonist, he thinks that having a big talent would interrupt his happiness. He believes that living an ordinary life, being moderately happy, while watching his classmates have a normal youth is what's wonderful.\n\nHowever, one day, a boy calling himself \"The Destroyer of the World\" appears, having the form of red-eyed Hajime Hinata. He begins the destruction of Nagito's world...\n\n(Source: Danganronpa Wikia)",
+        "trailer": "https://www.youtube.com/watch?v=sFhHlws4QGI",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 1
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "danganronpa-animation-s4-ep1",
+            "number": 1,
+            "title": "Danganronpa - T4 Ep 1",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/super-danganronpa-2-5-komaeda-nagito-to-sekai-no-hakaimono/01.mp4/index.m3u8&nocache1772755572900\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 5,
+        "seasonLabel": "Rota da Esperança",
+        "year": 2016,
+        "episodes": 1,
+        "currentEpisode": 1,
+        "status": "finished",
+        "score": 7.7,
+        "synopsis": "The Future Foundation is in shambles after the Final Killing Game and the revelation of the true culprit. As a desperate plot arises from one of the survivors to rid the world of despair once and for all, the remaining Future Foundation members must band together to stop it. Fortunately, they find themselves with help from a group of unlikely allies as they race against the clock to stop their world from being changed.\n\nAs a direct continuation of Mirai-hen, Kibou-hen serves as the finale to the Hope's Peak storyline of the Danganronpa series.",
+        "trailer": "",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 1
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "danganronpa-animation-s5-ep1",
+            "number": 1,
+            "title": "Danganronpa - T5 Ep 1",
+            "season": "5",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/d/danganronpa-3-the-end-of-kibougamine-gakuen-kibou-hen/01.mp4/index.m3u8&nocache1772755573210\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -1862,7 +1862,7 @@
         "seasonLabel": "2ª Temporada",
         "year": 2026,
         "episodes": 24,
-        "currentEpisode": 6,
+        "currentEpisode": 7,
         "status": "ongoing",
         "score": 9.28,
         "synopsis": "During their decade-long quest to defeat the Demon King, the members of the hero's party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through adventures and battles, creating unforgettable precious memories for most of them.\n\nHowever, the time that Frieren spends with her comrades is equivalent to merely a fraction of her life, which has lasted over a thousand years. When the party disbands after their victory, Frieren casually returns to her \"usual\" routine of collecting spells across the continent. Due to her different sense of time, she seemingly holds no strong feelings toward the experiences she went through.\n\nAs the years pass, Frieren gradually realizes how her days in the hero's party truly impacted her. Witnessing the deaths of two of her former companions, Frieren begins to regret having taken their presence for granted; she vows to better understand humans and create real personal connections. Although the story of that once memorable journey has long ended, a new tale is about to begin.\n\n[Written by MAL Rewrite]",
@@ -1872,13 +1872,13 @@
             "type": "sub",
             "label": "Legendado",
             "available": true,
-            "episodesAvailable": 6
+            "episodesAvailable": 7
           },
           {
             "type": "dub",
             "label": "Dublado",
             "available": true,
-            "episodesAvailable": 4
+            "episodesAvailable": 5
           }
         ],
         "episodeList": [
@@ -1932,7 +1932,8 @@
             "title": "Sousou no Frieren - T2 Episódio 5",
             "season": "2",
             "embeds": {
-              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/05.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/05.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2-dublado/05.mp4/index.m3u8&nocache1772902703290\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           },
@@ -1943,6 +1944,16 @@
             "season": "2",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/06.mp4/index.m3u8&nocache1772205056263\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "sousounof-s2-ep7",
+            "number": 7,
+            "title": "Sousou no Frieren - T2 Ep 7",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-2/07.mp4/index.m3u8&nocache1772902702205\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }
@@ -11463,7 +11474,7 @@
         "audios": [
           {
             "available": true,
-            "episodesAvailable": 8,
+            "episodesAvailable": 9,
             "label": "Legendado",
             "type": "sub"
           },
@@ -11474,7 +11485,7 @@
             "type": "dub"
           }
         ],
-        "currentEpisode": 8,
+        "currentEpisode": 9,
         "episodeList": [
           {
             "embedCredit": "api.anivideo.net",
@@ -11555,6 +11566,16 @@
             "number": 8,
             "season": "1",
             "title": "Jingai Kyoushitsu no Ningengirai Kyoushi - T1 Ep 8"
+          },
+          {
+            "id": "a-misanthrope-teaches-a-class-for-demi-humans-s1-ep9",
+            "number": 9,
+            "title": "Jingai Kyoushitsu no Ningengirai Kyoushi - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jingai-kyoushitsu-no-ningengirai-kyoushi/09.mp4/index.m3u8&nocache1772902707154\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
           }
         ],
         "episodes": 12,

@@ -1090,5 +1090,82 @@
     "title": "Adicionado: Danganronpa",
     "detail": "T1 · 13 eps · Série · AnimesOnlineCC (danganronpa-the-animation)",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-05 21:06:33",
+    "kind": "git",
+    "title": "Git Push: chore: update database [05/03/2026, 21:06]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   91d1ffc..9a5e1b8  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-07 13:58:23",
+    "kind": "update",
+    "title": "Eps adicionados: Sousou no Frieren",
+    "detail": "[LEG] ✅ Ep 07 disponível! | [DUB] ✅ Ep 05 disponível!",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-07 13:58:24",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-07 13:58:25",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-07 13:58:27",
+    "kind": "update",
+    "title": "Eps adicionados: Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[LEG] ✅ Ep 09 disponível!",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-07 13:58:27",
+    "kind": "stream",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-07 13:58:27",
+    "kind": "stream",
+    "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-07 13:58:48",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-07 13:58:49",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-07 13:58:50",
+    "kind": "stream",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-07 13:58:50",
+    "kind": "stream",
+    "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
   }
 ]

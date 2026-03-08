@@ -1388,7 +1388,7 @@
         "audios": [
           {
             "available": true,
-            "episodesAvailable": 8,
+            "episodesAvailable": 9,
             "label": "Legendado",
             "type": "sub"
           },
@@ -1399,7 +1399,7 @@
             "type": "dub"
           }
         ],
-        "currentEpisode": 8,
+        "currentEpisode": 9,
         "episodeList": [
           {
             "embedCredit": "api.anivideo.net",
@@ -1487,6 +1487,16 @@
             "number": 8,
             "season": "1",
             "title": "You and I Are Polar Opposites - T1 Ep 8"
+          },
+          {
+            "id": "seihantai-na-kimi-to-boku-s1-ep9",
+            "number": 9,
+            "title": "Seihantai na Kimi to Boku - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/seihantai-na-kimi-to-boku/09.mp4/index.m3u8&nocache1772999651830\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
           }
         ],
         "episodes": 12,
@@ -11005,7 +11015,7 @@
         "seasonLabel": "1ª Temporada",
         "year": 2026,
         "episodes": 12,
-        "currentEpisode": 8,
+        "currentEpisode": 9,
         "status": "ongoing",
         "score": 7.24,
         "synopsis": "Kaya-chan is infamous at kindergarten for being a troublemaker. But Ms. Chie, who's been assigned to look after her, soon discovers Kaya's hidden abilities. Get ready for the ultimate horror-action adventure set in kindergarten!\n\n(Source: MAL News)",
@@ -11015,7 +11025,7 @@
             "type": "sub",
             "label": "Legendado",
             "available": true,
-            "episodesAvailable": 8
+            "episodesAvailable": 9
           },
           {
             "type": "dub",
@@ -11102,6 +11112,16 @@
             "season": "1",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaya-chan-wa-kowakunai/08.mp4/index.m3u8&nocache1772446810165\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "kaya-chan-isnt-scary-s1-ep9",
+            "number": 9,
+            "title": "Kaya-chan wa Kowakunai - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/k/kaya-chan-wa-kowakunai/09.mp4/index.m3u8&nocache1772999655595\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }

@@ -1167,5 +1167,54 @@
     "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
     "detail": "[DUB] ⚠️ sem stream_path.",
     "level": "error"
+  },
+  {
+    "ts": "2026-03-07 14:00:59",
+    "kind": "git",
+    "title": "Git Push: chore: update database [07/03/2026, 14:00]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   9a5e1b8..a6d1533  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-08 16:54:12",
+    "kind": "update",
+    "title": "Eps adicionados: Seihantai na Kimi to Boku",
+    "detail": "[LEG] ✅ Ep 09 disponível!",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-08 16:54:14",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-08 16:54:15",
+    "kind": "update",
+    "title": "Eps adicionados: Kaya-chan wa Kowakunai",
+    "detail": "[LEG] ✅ Ep 09 disponível!",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-08 16:54:15",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-08 16:54:16",
+    "kind": "stream",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-08 16:54:16",
+    "kind": "stream",
+    "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
   }
 ]

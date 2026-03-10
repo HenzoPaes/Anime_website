@@ -7757,6 +7757,7 @@
   },
   {
     "adultContent": true,
+    "anilistId": 177937,
     "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/177937-jty4x7qBWG5n.jpg",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177937-Tzgg6rAdhCoH.jpg",
     "genre": [
@@ -8479,8 +8480,7 @@
     "studio": "WIT STUDIO",
     "title": "SPY×FAMILY Season 3",
     "titleJapanese": "SPY×FAMILY Season 3",
-    "titleRomaji": "SPY×FAMILY Season 3",
-    "anilistId": 177937
+    "titleRomaji": "SPY×FAMILY Season 3"
   },
   {
     "id": "dandadan",
@@ -30843,6 +30843,871 @@
             "embedCredit": "api.anivideo.net"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "haikyuu",
+    "title": "Haikyuu!!",
+    "titleRomaji": "Haikyuu!!",
+    "titleJapanese": "ハイキュー!!",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Sports"
+    ],
+    "studio": "Production I.G",
+    "recommended": false,
+    "anilistId": 20464,
+    "adultContent": false,
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx106625-UR22wB2NuNVi.png",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/106625-wab2Mx4NQqPQ.jpg",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2014,
+        "episodes": 25,
+        "currentEpisode": 25,
+        "status": "finished",
+        "score": 8.3,
+        "synopsis": "Inspired after watching a volleyball ace nicknamed \"Little Giant\" in action, small-statured Shouyou Hinata revives the volleyball club at his middle school. The newly-formed team even makes it to a tournament; however, their first match turns out to be their last when they are brutally squashed by the \"King of the Court,\" Tobio Kageyama. Hinata vows to surpass Kageyama, and so after graduating from middle school, he joins Karasuno High School's volleyball team—only to find that his sworn rival, Kageyama, is now his teammate.\n\nThanks to his short height, Hinata struggles to find his role on the team, even with his superior jumping power. Surprisingly, Kageyama has his own problems that only Hinata can help with, and learning to work together appears to be the only way for the team to be successful. Based on Haruichi Furudate's popular shounen manga of the same name, Haikyuu!! is an exhilarating and emotional sports comedy following two determined athletes as they attempt to patch a heated rivalry in order to make their high school volleyball team the best in Japan.\n\n[Written by MAL Rewrite]",
+        "trailer": "https://www.youtube.com/watch?v=9kLRkH9zC5k",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 25
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "haikyuu-s1-ep1",
+            "number": 1,
+            "title": "Haikyuu!! - T1 Ep 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxWJtJrNoPKnN4NHJxfgWm64KqHLggxCw7lH8tWHPZtrPmFnV4YlqZqpfQHnUxxAeMbTWdh-vMvSBUUcG_l_sfE4gatHcWSLwfXTHr1Oi796JNQsQ1YGFVzpG_HS2zv4dKo7jE\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep2",
+            "number": 2,
+            "title": "Haikyuu!! - T1 Ep 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzodIwkrllQ3zGLUY0kyWlwpds5nYXIXOApy6Z88Ycsjy0jJcNYSQK5Mgj7lRy0wcpsu-8Z660LoaRMkYXx0BqWWnjZXuFurY_mjtWh1HcJ62JvQ60wxRJrnVLaOONthVkSQCau\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep3",
+            "number": 3,
+            "title": "Haikyuu!! - T1 Ep 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzwZPY0zIovN2IADdPdllQ0wG-IflHUjXdvyVFzBWYqJV31s-dLHe1nYqTz2lL3uzYghxJgWXf3Hpo7GnKinJ1gJfkpD3ckv4E4FC1v3Ie6L1PAFKNXTahA8d4IkrckmTHtLV2s\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep4",
+            "number": 4,
+            "title": "Haikyuu!! - T1 Ep 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyrXZgK-sI8EsKJAIfIKZfx4sUq12EkY-0kDWwwM8LE8qgLUpXhR9QLV_CoBfbzoQce2vNSbTEBK6O_vNd30s1KZnazl_lcWap5acAREbHbqTot9n7AFskh7IGs1MZwWSSEfXaV\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep5",
+            "number": 5,
+            "title": "Haikyuu!! - T1 Ep 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dz1k9o4W21kFihRb26_7nhwi0_PWP4Aj7ZtVIjFnG9GmgqmMwaRvbDaT3MQbBRCPMFBdo4Nef1ps78wMgzKA8xt2UVolKIjshi1t2cosrqcOGXe55ecPwR8GDx4p2Qyiy5fz8tZ\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep6",
+            "number": 6,
+            "title": "Haikyuu!! - T1 Ep 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzdqW4_lID1MOnm9hQUf35kliFtFtVZksJQ0NM6bP4u6KG3vv8QE1Tf8TfxLHSOxaRQFxaa_D24OzLUisRV6pZSF6kNRjyctzeUlXWXerADewmzrYZEZ6n0jn2BcoBbked4LMs\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep7",
+            "number": 7,
+            "title": "Haikyuu!! - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwe_-Rh6aNnGUhHPg214966w0O9vNV_xbbQqUOvwXAP_WYKiiXGgnLis9sgB1NkBXMDt10FvQrV2Nesk1BvYy8y1Rr3jMcg-5LwIex1XcknPqkgrX9VEaHEl02Lqd8MW8cB1IQ\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep8",
+            "number": 8,
+            "title": "Haikyuu!! - T1 Ep 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwykcRZHV0yiuAMGM73K0AnhC3mU1CA3P_wZYGKAD9RWMWmh4J-CQCZLHpBRocQhA8QmDVx3-QNCbd4qv9es87P1QQrypOY4O7BDqMC76SwAnWLVzt_njEOEdA7n4sVVJUeUbOM\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep9",
+            "number": 9,
+            "title": "Haikyuu!! - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzo5zoUrykSzpJYTXGgmggZdary1MBbB3H3_f9FYOw305Bwk2fc0_55lLoxQ3SfiIqUw2P9jIeg8V0TP8Lpp_8VmzVC7MJlKqclKu-2aYGQ2yg8IXkep0ylP0AtTbjyrMORBJk\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep10",
+            "number": 10,
+            "title": "Haikyuu!! - T1 Ep 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwc7RzfhRwBxJV92gXa3budUyAguCKjNJp8pc2sFyE4OTIhUf2WsFSvBrFeoxZOPik6Neg97YGHlV_Yzk7haTQwuhJxsrHyEo_Wvvgj7zbU55cFWtWAHoCjZNHORQCr8cDgsTZl\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep11",
+            "number": 11,
+            "title": "Haikyuu!! - T1 Ep 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwkSqIxWNeStxQX7EppNQCrJ7_8HY5_f8UfnIGzvwEO64wK3TKfXJffHGj6-Qi_jzcB5XaCzQvtsozpk-AApiu7Q3yHgYzIp3VQ_S8li34AXhX7lBHkqjnQm5lIecvVSUD0Q5h6\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep12",
+            "number": 12,
+            "title": "Haikyuu!! - T1 Ep 12",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwYvBZ0x7S7tUgdQoCWgapWXmljXo7K9OLoRgu0Q89Fg828rFMj_CjRXzxe6HJhgXZ6XPFzKmJ4swaSl3I0rlRcJRU7WYwDd5Rm_9jb6rm9eaMyQXnprs93tR6FX5DTkU2KwcK4\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep13",
+            "number": 13,
+            "title": "Haikyuu!! - T1 Ep 13",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dx-WHdzFef86pwKjqUglon-CGiyNRf9cLex7d3MHp05Z1bhGhCHqUwIpIdhcvmYJTkhbgmlvVVLx4w0WnesP7Zn8alYKZqR_ZsC2kYcEej51_t7tNl2RHFz0NkmNr9EQNDugsEd\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep14",
+            "number": 14,
+            "title": "Haikyuu!! - T1 Ep 14",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dym_Y6E8h0dNGnRUoLjd37Ypze9MSa7pkF-7j_Jn1SYy6KrguqYSsuEFR78bR8KLmR2-jlBkTq5l5AwXNQyCNixUjVdJXeVWaDNHF2AimtVangjZqdci_W2dsHxIS8RfnvF96M\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep15",
+            "number": 15,
+            "title": "Haikyuu!! - T1 Ep 15",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwS-ZIwsv0IiFxO1JFJmsx9e7mFcPmIkbIrF22BT7O6RiizrasaLP01oj_OgZQOga5U2eOPXTmoy98OPiuesc9vyg4A49OSVssZND2qkQYgBf2XFVlBLmmZ2AuWK428yrzQZ6QH\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep16",
+            "number": 16,
+            "title": "Haikyuu!! - T1 Ep 16",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxaZZ1j6amZ8ELAQQu7InGa-OunUku_1KMSiP0EF4O0TOYfLJQ6iZig7cDw9i8ZWqxEIb6eXQuASbGLyX3q5zQ7gL723_S4Gqb9CGX1Zq1iqgR7C0_GDJn6HGa-IS022Zz6po77\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep17",
+            "number": 17,
+            "title": "Haikyuu!! - T1 Ep 17",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyuvjxlZXZECtXz0eyCT9pofFhZPsPOXq3RpLww-A4wiea2Ity9uK2KoFXJNNkBsI0dNOJxIqevZOsJvQl7AGA9mqJOZ8E3jy-FYeMt6evfO7X8uB_QfG6GLmnyHFmmPfASaak\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep18",
+            "number": 18,
+            "title": "Haikyuu!! - T1 Ep 18",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzWU60aA_jSMRNCRHO8m-BlcTcAhTZv1Df2WfcNF1vb1-QL6ojyGaTgy1_-3kwZRhLpby9Tslfo0uCT0I8sPjG2sfaJrgBUb5p4_ycInDYnQtKI10OuWjeVS0oy254hRE3pnsE\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep19",
+            "number": 19,
+            "title": "Haikyuu!! - T1 Ep 19",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwQF6sAwxdW3Ra6tpCpJ_q4dfI2l8-rlwTRelyziJKe7dboyMnD0kqa5sNhp9Di1CjlfNQpZ97Jbi-McKBTNOFU9XLWUdtcyWoVau0EWe68MQDGFxk2iruQlV1Dgiw218UY0TU\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep20",
+            "number": 20,
+            "title": "Haikyuu!! - T1 Ep 20",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyYZ_l0lfn_1Qo_exya1Wzvfbn6jrqHw1h4ua5NyPDw5M0WNNphOuhtOwjmp0YABkeYjCA2z5c9qLOiAvmsf04yCWLUFnF-SIfjL41hCs1T71nuWMSP5HfV1Z8Qs2q4RYTNYBjG\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep21",
+            "number": 21,
+            "title": "Haikyuu!! - T1 Ep 21",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxT3ZqbQ2T8fUUf43k2wBQTeskSk29FnZ--ccJpcPmQT9E4ffqLz3YnEfNp2mrzRJWEna83u5TjoZHXRjWqLKcKO6Qf4D1feW35nAnO6nU1B7T7an8lg3RzoJR_YR5cQqckUzdT\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep22",
+            "number": 22,
+            "title": "Haikyuu!! - T1 Ep 22",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzXqKmtTWgMyXDdmcfjD7sXMg4sdpogeS0g5RndMU61nxIofqoikn6lAX7wxs7DDYsRXalGNqkjXH8M95K8z45Dwz9gDBOsObK7l5qD84lC_cCyQQz1scpelcBxgv3cA_uhb6FZ\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep23",
+            "number": 23,
+            "title": "Haikyuu!! - T1 Ep 23",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyan9VY3c-ThQJjEULbb3kc_8hWbmap1fwrVyHC_KpqDu5oqOkKEfgvgvMfBhohHLHMKdWQjNdW_rFzV66FoUgD_5oKvD4kUmFKP2rmjNSSpRltFf3mhWD6AtwS1qP4G2Vmyb8D\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep24",
+            "number": 24,
+            "title": "Haikyuu!! - T1 Ep 24",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzy_goKfxKuMHIuh7AehTg1muhrT2nILITg5XPkE__7yzDUwiTUHk87efUz9UvqHAqHj8JrNfBaUf2H20ErWP0AcP4retYHXU2otwWywO-1gxPN1PkusF7rEP-jn_vxpCgtYagU\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s1-ep25",
+            "number": 25,
+            "title": "Haikyuu!! - T1 Ep 25",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzFYEc1NvQnF7cYZStNr3XOlWxldsrtlq0-TIOQQBvekeJVyPVWASnKnY2dyP5kr5cvRvTaSxRTth3p49QTI1RRxkDWdtWPeGNfMTs2vR7BuUQZixFFeNhgALWWar56ifjZakJf\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          }
+        ],
+        "aonlinecc_slug": "haikyuu",
+        "aonlinecc_inc_season": true
+      },
+      {
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "year": 2015,
+        "episodes": 25,
+        "currentEpisode": 25,
+        "status": "finished",
+        "score": 8.5,
+        "synopsis": "Following their participation at the Inter-High, the Karasuno High School volleyball team attempts to refocus their efforts, aiming to conquer the Spring tournament instead.\n\nWhen they receive an invitation from long-standing rival Nekoma High, Karasuno agrees to take part in a large training camp alongside many notable volleyball teams in Tokyo and even some national level players. By playing with some of the toughest teams in Japan, they hope not only to sharpen their skills, but also come up with new attacks that would strengthen them. Moreover, Hinata and Kageyama attempt to devise a more powerful weapon, one that could possibly break the sturdiest of blocks.\n\nFacing what may be their last chance at victory before the senior players graduate, the members of Karasuno's volleyball team must learn to settle their differences and train harder than ever if they hope to overcome formidable opponents old and new—including their archrival Aoba Jousai and its world-class setter Tooru Oikawa.\n\n[Written by MAL Rewrite]",
+        "trailer": "https://www.youtube.com/watch?v=qK_ASmBoiz0",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 25
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "haikyuu-s2-ep1",
+            "number": 1,
+            "title": "Haikyuu!! - T2 Ep 1",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dw7vqspgXviOODZcWzebdZcFge1OR3KCpHWGIPmG3MSH8TTu-JsGZrVdZgNz1iP06KFCGXqWNlENEK9THG9gJwZSdVbDS_KR_c9t9FF73BtsULNSi3-3xDcsl0Rq1LXF7rT55I\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep2",
+            "number": 2,
+            "title": "Haikyuu!! - T2 Ep 2",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dymiCVijYfim6UU7JJyyelfFlqvkPNrFkU8wPTjc4Z8S7NLqrjqUnXf3_qAPs-AO8TXwE7XQ5HU9mWMcw0HVpJI4tt5A658SJnQckM5ZBFnQEO47tXuNzXTh1eGZtvcBrIQc7I\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep3",
+            "number": 3,
+            "title": "Haikyuu!! - T2 Ep 3",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyxHVHhK5dzmXYOPEfWegp15AwIwkKM4nQhlR2EqPQz6l76e0GAjHb16EavkYjnQPe5i6bC9C_xv6hiS5H5o_eJX78Fl5iruqLPixMhJ8lfU_ZhKUp0h40REzAm6ENmpfpD643g\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep4",
+            "number": 4,
+            "title": "Haikyuu!! - T2 Ep 4",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxk-uK9bqg9X4S2JDW7K1tP2n44Fp6dErONXOtfstyYYhbkY9golwZDCRvAke-T1xaiwdsYk5y_Dvmtzgvb5mWXNOK_aENB76qLWR_DMpt1GyAxnuslDlQS_2ke5eNMRzVafDW7\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep5",
+            "number": 5,
+            "title": "Haikyuu!! - T2 Ep 5",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyvzkc8thAWgjyIi2lF6Jg8KIQ8y8RB9CotoeJ9JLMLC4qh5dGDAlk6hAcdBdBYc6JaUIN2BoeJwksf-t8eztv8k-5clVol7RuDg7cAB2HGFRYcqYU1__NTK2qfdg3oTG0COf3y\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep6",
+            "number": 6,
+            "title": "Haikyuu!! - T2 Ep 6",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dy5e9kpb5sfnngdaoMQO5zp6Y4gUaTIu4gMZubQCJGUDKGBhd2DMKd6ggJjDkSUbXGj2UkWH4zwljlTIIzLrkd9QQKN57eRZZOuXiv_rN1aYRUN5wxduELUjQcR384NCzNlK4d0\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep7",
+            "number": 7,
+            "title": "Haikyuu!! - T2 Ep 7",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzoSsstlXbkWXecDKSFJbx-OBtTwccOBCEW2DDQwLp3Hw9C4ExpcOCDloS2V62BXCZPqFFQeMy9EpP9QFY1ezR6px-oiKePCuOm24XNVUyNc5afiBau5pVUQzCFU4V0TyNd\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep8",
+            "number": 8,
+            "title": "Haikyuu!! - T2 Ep 8",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwf0AzqdMIwz4AXRLWojZWFaUYsvCtM64_VE62hCrq6QCk-QJZRIAi4o8JUMsukrZ0rOzQw8b5pMGp7w9_1SlpIj5hVgSihbmR6fazGjq6zB2asXAHvpwCMixz2iszOIkHvVd0\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep9",
+            "number": 9,
+            "title": "Haikyuu!! - T2 Ep 9",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxHIm-n0wt68dgWoP0rYEMGp4yO6oWMVrFXij7EJ7xb4_9BenKLe9cfwdGg1Ijlgb5ALEQMCsQ9RD_lyPKYf7RvXKM0AQ2zZnKXvQoGD0noSip1NzPFK6IYKmvRforRvaoF-wFu\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep10",
+            "number": 10,
+            "title": "Haikyuu!! - T2 Ep 10",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxUpO6oi0ODK6DorWkWLC4YrcoN8xGh1giRdrdpToqYRF8o2QFfJsPlfWrdv5jM-Pf2rAefLwoD8MdqAEPFCVdEK2OvMeHFpfCTJOC7pyEchPcCBJRouweB3riH6B4juxcGzzM\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep11",
+            "number": 11,
+            "title": "Haikyuu!! - T2 Ep 11",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxDHp5zTJxKOcQxWXKxMWGCx_Hg2fMxA4mGrjpX-FtXVbcEls_k9XmGHnde3ihNM9nG1f9lUWdnx7GkiJ2DhGZQjToAQ6YvO64__Eg5v1wGdvo80cj8pjPnZH8RBBVTEfGQ93Zo\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep12",
+            "number": 12,
+            "title": "Haikyuu!! - T2 Ep 12",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxFiEcOlIByg7rksrzwENnI2y8bQXCHA4Se-h6SehXNx0At_Amr8c3CUj7VWDe3_tqsAu5Uu69WQhnT9VcddjslxX4B0pmNmyEpt3DQO3B5yrN-tFH-e8TRLzO9FE-moF2jAj8\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep13",
+            "number": 13,
+            "title": "Haikyuu!! - T2 Ep 13",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxTODhZmotqZRsUGFC0WNV1XRlLCnsqoKIUfimSvuApIQj3nl7CNV-Mm4ft4u5PyLArbCvfxIYshTT03OsC4cBys4AeHqTcNQGRdJ4Qu4NvBNE16hlDRYASAUmgWg9FFKZYD3ik\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep14",
+            "number": 14,
+            "title": "Haikyuu!! - T2 Ep 14",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dz6zDH24TznE0aoGvvMkdODlf7nvFfvGFJP7YJMmO240119Nj8MMmuJdCsxWPK0p5gyKsVP1PKI1JgU9FixiDKSEZKfXsT-cZDmlnRMAALjMXZOuDgg3ruoFrE-L4aIdQWmNjs\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep15",
+            "number": 15,
+            "title": "Haikyuu!! - T2 Ep 15",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxfCztZxI8LAQLPTJEDpvJf7PrBSyX_f2eiSpyjC7_fg-SjRTw-oMSA_BRRUf_tCEf9XJ0hrsN5O62RdCldfDZMdEzbhyzqFmMc48W_VymtTlh5hS3ab0gmDMphkLZ2zDA9wrI\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep16",
+            "number": 16,
+            "title": "Haikyuu!! - T2 Ep 16",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzk1GRhYAGaTCEn0BCtYuwKXbvmI9QTt_zWO44PpikYigiHzoCY8A1r0uqCXN8X8Lrsnw-zA5HwsbN9xMjhekWlp2J0lrLJhCAgGhYEYmD4w54-D8ABUoFriTV5duudtFPzOy0V\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep17",
+            "number": 17,
+            "title": "Haikyuu!! - T2 Ep 17",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwPDyjOIFUx4IvE1v0bc1cTfVBJkP8PE5gdXjfbVYCFpxBTUwLUU8L6_iE89ephXUtJBUaErn6KOFnMx5-k7z1KnVPXraiwiyxfmU1f8AKyCYEWhXlf_nTy1avova72fzi3XO6t\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep18",
+            "number": 18,
+            "title": "Haikyuu!! - T2 Ep 18",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dx0_AWApbHk4d43sH-gVAKJvkH-XqF_WKKS9jr1gKpH1pk5dMANUjAmEJBv7sl7YRSpPT5LmXTyhgQXo1vaYH3thx_k6OQaqMrWPq5bgpgCOAZ5pqOuieW9aVVyQu7Hk0RxnQ9Y\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep19",
+            "number": 19,
+            "title": "Haikyuu!! - T2 Ep 19",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxkoY7WKZAYPi0az0Y0r7OAHMRLTypK53mzlZtPu4OTXIeDUI3jR6hWr1lI-VS3Degn5wEIgqjL9rYcId-1VhbvPjO6211mWyWVHmevib3T9r0sqJ70J1yTR66LedANV-y_bVan\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep20",
+            "number": 20,
+            "title": "Haikyuu!! - T2 Ep 20",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwZaaMHF5V3xP3jWh-drKExYO_q_Pqv7hmpDgbDintbv42u0UgD2MERSMItXGQQXkwQM-yZsych6ReZJAlLUqgHp7e8Gf_x9ZOyfqxe3vY3BiY9Od2DYeS1H_mLIWnL3z2cdJnL\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep21",
+            "number": 21,
+            "title": "Haikyuu!! - T2 Ep 21",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyO79YhnTsmJlK2Wgg4_kOJmaZ-999rzi66uhRkQ5GKZ_oZ9gQZuU-TnPuZEF9IMrxIS3Gi6n81BYPI67Eu1ACQREKvPp31DLQdPqhrwdX4s0Rj92uWhjGYF67Lw4VAvz36YNk\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep22",
+            "number": 22,
+            "title": "Haikyuu!! - T2 Ep 22",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwKkPxze1hfcPHwDtQFk1AkfqA9xTCFQT81dKp0bVgMPAeuOFpf6KzIVG7n2w5UPGfxTmX4k1MXPOPFd38EbiSGrqgPqaMf4CdPYBGSTutzEBAbmWZRI_b2DyVkwP0h0bzBdz8r\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep23",
+            "number": 23,
+            "title": "Haikyuu!! - T2 Ep 23",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxL06KmvWURS7c3KKN9Bhgp55sihgMfAuAJkbkcsHLBD8RFjjuQHHQMhxr2lw2i3McX-hcZnYjzfz8q9T6xz8n6X5lJ2_cQr5auMPhcDZDYiDiECqSlscCAAbXSFcv3PBDF1UWD\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep24",
+            "number": 24,
+            "title": "Haikyuu!! - T2 Ep 24",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyBOw0_bQSUgX_pG8Oi0BUEJzMIZKHa3lhlyrAvPh05a69z6Ys9Ig63c7MpuX85-knVZeBE8OwlRoBqwr8sool2eprBKCB3rawBvO5xu7a642QJpRpErxWEM2BEyXdKwrfJWXk\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s2-ep25",
+            "number": 25,
+            "title": "Haikyuu!! - T2 Ep 25",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzBxI_XCky5FrpME0L-TQcW5TMEIZTfphWvNGyePfRzm5uAdM0kjfDQ-Z_-qBRVt9r2dgJ1OdFtEZ1TMkoKrjA9fH6g2GDaCjXfJQGyruU8MDu0a3k_LQ5u7v9cGJz_s3zGlAuf\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          }
+        ],
+        "aonlinecc_slug": "haikyuu",
+        "aonlinecc_inc_season": true
+      },
+      {
+        "season": 3,
+        "seasonLabel": "3ª Temporada",
+        "year": 2016,
+        "episodes": 10,
+        "currentEpisode": 10,
+        "status": "finished",
+        "score": 8.7,
+        "synopsis": "After the victory against Aoba Jousai High, Karasuno High School, once called “a fallen powerhouse, a crow that can’t fly,” has finally reached the climax of the heated Spring tournament. Now, to advance to nationals, the Karasuno team has to defeat the powerhouse Shiratorizawa Academy. Karasuno’s greatest hurdle is their adversary’s ace, Wakatoshi Ushijima, the number one player in the Miyagi Prefecture, and one of the country’s top three aces.\n\nOnly the strongest team will make it to the national tournament. Since this match is the third-year players’ last chance to qualify for nationals, Karasuno has to use everything they learned during the training camp and prior matches to attain victory. Filled with restlessness and excitement, both teams are determined to come out on top in the third season of Haikyuu!!.\n\n[Written by MAL Rewrite]",
+        "trailer": "https://www.youtube.com/watch?v=kJfU5boNUIE",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 10
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "haikyuu-s3-ep1",
+            "number": 1,
+            "title": "Haikyuu!! - T3 Ep 1",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dy3cltXljhLWZAcVK6YvtONYT_74QaFZzsKkX_qSq8E4gA95CFrRDRrEdzDQMRymXsg8pGPZ7EsuLRPdxOtfoI8qgdw9fiXVZ64W2G1FV1nQYqi0AOCw9QyD1t4duPDmBtXGYE\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s3-ep2",
+            "number": 2,
+            "title": "Haikyuu!! - T3 Ep 2",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwawWq6405FNEQdTrpGwVf_3fQ7x451P9Nmb0Cc5AR6h8voV1xfY1NAeHqRdlhxplvoAul0M8E0xZ4MwP1wAsLJ_ipoErcMbiiac-iNz8TAp9hOamuiBg_JiGAFdS7UQ2nZLQ\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s3-ep3",
+            "number": 3,
+            "title": "Haikyuu!! - T3 Ep 3",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwBJKJGTkGwPTq14AXamOvuATvdIb1yzxqu_423vYVT5NP9Vf0qLAGfGyQCFMY3WMOp2lljFIi7uZQ6xa4L6-FHcB_iEK4fHZ1Z8zSsHP_a7CeLQpblEyEhdyTsgxjav0ycRscs\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s3-ep4",
+            "number": 4,
+            "title": "Haikyuu!! - T3 Ep 4",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwo7ASUU8r-psoMSOW9biTY_cFNRr6Oa1c6lQNXQ0E-nCiW9FSGTF6HIz4sbfDNeSoa5EibJLPkezSAG76rlab4Bz3dqMYhiWfugmvBmg-ZV6fSIZcPsTQshMsJ7GdaijxXJIc\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s3-ep5",
+            "number": 5,
+            "title": "Haikyuu!! - T3 Ep 5",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxRpKYeu4rqTXx7OqIa_d0Y8TrmZQnlnOQLw9Lg6junVkzh340yy5MAlsU_FhBZmvlXxeYRHZDjsqS4EMJsNAVdBwlJ5IwUQv1vsjlUhiPxL7v8_7f8F-739rDLWAkBO7qNa-Y\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s3-ep6",
+            "number": 6,
+            "title": "Haikyuu!! - T3 Ep 6",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxnJDHTpDVQ1xWTalf8FaaeHJqkdn60QMgkzsGI0CO5j5h5n1bfC1w2dxnWkfubM3w9MmTKu2KBiJGZCD36368-N5GHDguxInfwWNtcgHkv_Ss9Uob6C_qaYhxsGsGjOK8i2G1G\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s3-ep7",
+            "number": 7,
+            "title": "Haikyuu!! - T3 Ep 7",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzZGpMEMY_wVGjCs0_9ik4h-iJfAHRk6dazyMkaCvLYwqfaoRllAo-6ukUUloFJvklkbCxnHuT94FkaEWln6_U0lbEG0ot6hNFUpOq_Mvt8Z349SlAbiQjLm8OaNbcPp4RHsjY\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s3-ep8",
+            "number": 8,
+            "title": "Haikyuu!! - T3 Ep 8",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwtfcjvMPS_SEt30GnZE68ZWnLX7svt-KRmsuCfMTr73i8JWqfau6I9vJWO1n4iD5jNWZRh7rZUxT0y-MA49XS-AkQQuYHx3bqYHm1Gw9Bm87WK-f105tsleuBSH957y7_OxcHn\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s3-ep9",
+            "number": 9,
+            "title": "Haikyuu!! - T3 Ep 9",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzZwRz8NPxv8ixxdTaquTRmCLmMdOTr8lHH02V2fqIn-Fvia0D_Tl-jnKs87KU4feH05_bM6hkxUNOw5mQmPl5R63Y8R_zLE8FTsnaHlNf92FY0_sMBZkcS9TXPZJ7sgF6iad8\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s3-ep10",
+            "number": 10,
+            "title": "Haikyuu!! - T3 Ep 10",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dy5xHvQ6jR8Dsaw2aWhBP9nkKx1Z4mkIrke6murTjC5dxvIEz4ZBsDIYlfV_dwwqUPsY6gPSpUYtI7mlMmH9dyhOdJY7T_XGhdT9fDPQDFkv-9t45O1uEwBJfSWlPx1cBoQRHkQ\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          }
+        ],
+        "aonlinecc_slug": "haikyuu",
+        "aonlinecc_inc_season": true
+      },
+      {
+        "season": 4,
+        "seasonLabel": "4ª Temporada",
+        "year": 2020,
+        "episodes": 13,
+        "currentEpisode": 13,
+        "status": "finished",
+        "score": 8.3,
+        "synopsis": "The fourth season of Haikyuu!!The Karasuno High School Volleyball Club finally won their way into the nationals after an intense battle for the Miyagi Prefecture Spring Tournament qualifiers. As they were preparing for the nationals, Kageyama is invited to go to All-Japan Youth Training Camp. At the same time, Tsukishima is invited to go to a special rookie select training camp for first-years in Miyagi Prefecture. Hinata feels panic that he’s being left behind as one of the first-years and then decides to show up at the Miyagi Prefecture rookie select training camp anyway... (Source: Crunchyroll)",
+        "trailer": "https://www.youtube.com/watch?v=IZ8iIHpe4Lg",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 13
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "haikyuu-s4-ep1",
+            "number": 1,
+            "title": "Haikyuu!! - T4 Ep 1",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxeR4R3xHkz-Wh2ORqTeJKqkKPjvlwW5sJyYgPbUXPAyffCjEYkcjsHaByyXDVBmtNI-zY9vFxIpZ1VnT2of5TbrvwsgtwL8bpWksEmC6-MCuvdN1A-pIrq2PjRbqDHNo7d6MYX\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s4-ep2",
+            "number": 2,
+            "title": "Haikyuu!! - T4 Ep 2",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyjOgG-VwFGWHeT9WdA1-l0kDN_OHnpFtmyzisUABsB7wkHQrFZE9byWeWGv3x70-VylqsVyqDfecvmdwMYcYSP-jshw7J6XkZCUSNe6zQTUtIBDqn4VZ6w_x8Ygi-ExhjASHU\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s4-ep3",
+            "number": 3,
+            "title": "Haikyuu!! - T4 Ep 3",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwkRrLBzpIy13YTQx71JCiMJTV5_C5utTATRIq9QhK0REb5gxcEjomxlacSNNolhKCEYmCe9pxzasRKTyiDUebrckbOZNl4XEaXXs9uDUQgl6SlFAdzmmsuAjQcLwg4S-QQLOAl\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s4-ep4",
+            "number": 4,
+            "title": "Haikyuu!! - T4 Ep 4",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwfcoJU8apPRyg3J9Sb4rAeNXF-teCJcfTUCaVqzBYotwFk5awmGlARH1DS0yjQzagY5WURPwNxpksEooUXWj6l_cfAFj9BJqnDBIqTlVCkSwbKRR3JS35LHu36ah4Nsp-DCBDD\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s4-ep5",
+            "number": 5,
+            "title": "Haikyuu!! - T4 Ep 5",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxH6HfyKyTU4BWdyEwz9bSW5X2bskIob5Gpzcrs7yZBLgsBzjwKRnSsMpv17T3FBxPcnKlTawklEzej1nJyoZ9yK0O-uLMnT3AWQuZ_fM4FfPMjx6uLijqr-QQSFY3_H6vwNwk\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s4-ep6",
+            "number": 6,
+            "title": "Haikyuu!! - T4 Ep 6",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyQ0tyZmXmFP6pN-UoXrMMSvmmF5ueWvef5XOQ0yIta5G2ZQj5gtmbKtJ5Nz7opbxwRtQ-NdPDk_d79eV9Mg2ofGfl8tQzTGI2EhluUztxSCvNZtnYWHQmqSNYXGnMbJEvcAJY\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s4-ep7",
+            "number": 7,
+            "title": "Haikyuu!! - T4 Ep 7",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dyu8rdhtLagEuAQKgmFzYcqu-WnGUfPlJVQbP6af6vQvKgtlaySiNHt8LAbcKpKjK7_ec9Wlbe6zNh29vgwd_CWq3X2H83m9amAesjphzHgn7UoAd7E3Ns2qD8MZELWl8Vj8Cc\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s4-ep8",
+            "number": 8,
+            "title": "Haikyuu!! - T4 Ep 8",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dzWlh4N__v_Vf9s3WkiX4L-TgHQO3VagnOqG8r6IX2D7q9nwwwcl4OV0E1_wfklwqIf3TMnTc8yea0F2Cpl8Ppj1ob6MZnDMQSsmAOo2XfYW1sVA-enWxqRihmMyO-btguchV2Z\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s4-ep9",
+            "number": 9,
+            "title": "Haikyuu!! - T4 Ep 9",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwgrmXZtEsWf1QN6tgjBuPXbENs6xbF0oNRiKoYMU0CnXk0646uXoBCqBq-oQJtgQQcfrBFiGa0uvG98ujYJtQCHq1XCBQ_-IWRBnA2CFeG8EGGjKcgGrAkVpvmGBTEWsfJ2Sg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s4-ep10",
+            "number": 10,
+            "title": "Haikyuu!! - T4 Ep 10",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxeR4R3xHkz-Wh2ORqTeJKqkKPjvlwW5sJyYgPbUXPAyffCjEYkcjsHaByyXDVBmtNI-zY9vFxIpZ1VnT2of5TbrvwsgtwL8bpWksEmC6-MCuvdN1A-pIrq2PjRbqDHNo7d6MYX\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s4-ep11",
+            "number": 11,
+            "title": "Haikyuu!! - T4 Ep 11",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dwZO3GmimokJXySm0s_J3pBc9Mj_FSkEejpxKqodtaUDogXQikSxDfLwhGBOBQSFstsLEKx81_S1S0u9H6aYcr81bsnmDWvIuMG2zT6Tp0QSp7jEfQdm3EZVzQMKRja-bsfIpEL\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s4-ep12",
+            "number": 12,
+            "title": "Haikyuu!! - T4 Ep 12",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dw-YzWgqmtkqsS6d_aJCmNMj-b8ZW2jUda-TTbqwGmuYWx63gDQJTIMtIp_szjVWg86LKR2Dv380WYi79fStWyHi87P_ylelYPSHqLoEX0qT9OUoUTjMFZJ_C4e7T9W3KFnL38t\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          },
+          {
+            "id": "haikyuu-s4-ep13",
+            "number": 13,
+            "title": "Haikyuu!! - T4 Ep 13",
+            "season": "4",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" class=\"metaframe rptss\" src=\"https://www.blogger.com/video.g?token=AD6v5dxOF6GPbOOtogqOHV_aPYGsvCti8JarL7ex67e0uxqf4neIBvZDw7QtxVvJHhBjNQRXLaK-oHxFhUp7874uWQeyGFIXGshds5ntwgCaE-n7qUb3xyTe73HtmiKuCD_BL_VLODE\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "animesonlinecc.to"
+          }
+        ],
+        "aonlinecc_slug": "haikyuu-4-to-the-top",
+        "aonlinecc_inc_season": false
       }
     ]
   }

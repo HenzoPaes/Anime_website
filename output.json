@@ -17616,7 +17616,7 @@
         "seasonLabel": "1ª Temporada",
         "year": 2026,
         "episodes": 12,
-        "currentEpisode": 9,
+        "currentEpisode": 10,
         "status": "ongoing",
         "score": 6.9,
         "synopsis": "When Arisu Yamabuki was all alone in bed at night, he was able to find solace in the voice of a radio host who went by “Apollo.” However, one day, she simply stopped broadcasting without any explanation. Years then passed, and Arisu is now a second-year high-schooler. He makes it his mission to search for Apollo, as there is something he wants to tell her. He doesn’t know what she looks like, or even what her real name is, but he manages to get some leads on her in his school’s broadcasting club. That’s where he meets four girls who all dream to get a job where they can make full use of their voices! Just who is Apollo, and how will those four’s dreams pan out?\n\n(Source: K Manga)",
@@ -17626,7 +17626,7 @@
             "type": "sub",
             "label": "Legendado",
             "available": true,
-            "episodesAvailable": 9
+            "episodesAvailable": 10
           },
           {
             "type": "dub",
@@ -17723,6 +17723,16 @@
             "season": "1",
             "embeds": {
               "sub": "<iframe src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mayonaka-heart-tune/09.mp4/index.m3u8&nocache1772548753\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "mayonaka-heart-tune-s1-ep10",
+            "number": 10,
+            "title": "Mayonaka Heart Tune - T1 Ep 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://topanimes.net/antivirus2/yes/?id=sbt/f-cdn/google/node/playready/a-2/letra/m/mayonaka-heart-tune/10/cdn_stream.m3u8&img=https://imgsrv.crunchyroll.com/catalog/crunchyroll/ed5455e955a628e85ebdcca188463f62.png\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "topanimes.net"
           }

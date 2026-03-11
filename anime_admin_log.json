@@ -1286,5 +1286,75 @@
     "title": "Adicionado: Haikyuu!!",
     "detail": "T1 · 25 eps · Série · AnimesOnlineCC (haikyuu)",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-09 23:02:46",
+    "kind": "git",
+    "title": "Git Push: chore: update database [09/03/2026, 23:02]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   c0cffa1..1cebed8  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-10 22:33:40",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-10 22:33:41",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-10 22:33:43",
+    "kind": "stream",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-10 22:33:43",
+    "kind": "stream",
+    "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-10 22:33:48",
+    "kind": "update",
+    "title": "Eps adicionados: Mayonaka Heart Tune",
+    "detail": "[TOPANIMES] ✅ Ep 10 disponível! [LEG(#1)]",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-10 22:34:08",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-10 22:34:09",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-10 22:34:10",
+    "kind": "stream",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-10 22:34:10",
+    "kind": "stream",
+    "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
   }
 ]

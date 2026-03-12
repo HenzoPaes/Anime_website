@@ -7651,7 +7651,7 @@
         "seasonLabel": "3ª Temporada",
         "year": 2023,
         "episodes": 12,
-        "currentEpisode": 8,
+        "currentEpisode": 9,
         "status": "ongoing",
         "score": 8.54,
         "synopsis": "In the entertainment world, celebrities often show exaggerated versions of themselves to the public, concealing their true thoughts and struggles beneath elaborate lies. Fans buy into these fabrications, showering their idols with undying love and support, until something breaks the illusion. Sixteen-year-old rising star Ai Hoshino of pop idol group B Komachi has the world captivated; however, when she announces a hiatus due to health concerns, the news causes many to become worried.\n\nAs a huge fan of Ai, gynecologist Gorou Amemiya cheers her on from his countryside medical practice, wishing he could meet her in person one day. His wish comes true when Ai shows up at his hospital—not sick, but pregnant with twins! While the doctor promises Ai to safely deliver her children, he wonders if this encounter with the idol will forever change the nature of his relationship with her.\n\n[Written by MAL Rewrite]",
@@ -7661,7 +7661,7 @@
             "type": "sub",
             "label": "Legendado",
             "available": true,
-            "episodesAvailable": 8
+            "episodesAvailable": 9
           },
           {
             "type": "dub",
@@ -7748,6 +7748,16 @@
             "season": "3",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-3/08.mp4/index.m3u8&nocache1772669892792\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "oshi-no-ko-s3-ep9",
+            "number": 9,
+            "title": "[Oshi no Ko] - T3 Ep 9",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-3/09.mp4/index.m3u8&nocache1773283009587\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }
@@ -17767,7 +17777,7 @@
         "seasonLabel": "1ª Temporada",
         "year": 2026,
         "episodes": 11,
-        "currentEpisode": 9,
+        "currentEpisode": 10,
         "status": "ongoing",
         "score": 7.4,
         "synopsis": "At just seventeen, Yuki is a professional death game player. She’s survived enough rounds to know that survival is calculation, not luck—and that failure is final. For most players, the games are a nightmare with no escape. For Yuki, they’re simply business. Yet in a world where rooms turn into graves and every choice could be her last, even experience offers no protection.\n\n(Source: Crunchyroll)\n\nNote: The first episode aired with a runtime of ~47 minutes as opposed to the standard 24 minute long episode.",
@@ -17777,13 +17787,13 @@
             "type": "sub",
             "label": "Legendado",
             "available": true,
-            "episodesAvailable": 9
+            "episodesAvailable": 10
           },
           {
             "type": "dub",
             "label": "Dublado",
             "available": true,
-            "episodesAvailable": 9
+            "episodesAvailable": 10
           }
         ],
         "episodeList": [
@@ -17883,6 +17893,17 @@
             "embeds": {
               "sub": "<iframe src=\"https://topanimes.net/antivirus2/yes/?id=sbt/f-cdn/google/node/playready/a-2/letra/s/shibou-yuugi-de-meshi-wo-kuu/09-leg/cdn_stream.m3u8&img=https://image.tmdb.org/t/p/original/39xin054ZfgXdJjNNwnj7EzSqdU.jpg\" frameborder=\"0\" allowfullscreen></iframe>",
               "dub": "<iframe src=\"https://topanimes.net/antivirus2/yes/?id=sbt/f-cdn/google/node/playready/a-2/letra/s/shibou-yuugi-de-meshi-wo-kuu/09-dub/cdn_stream.m3u8&img=https://image.tmdb.org/t/p/original/39xin054ZfgXdJjNNwnj7EzSqdU.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "topanimes.net"
+          },
+          {
+            "id": "shibou-yuugi-de-meshi-wo-kuu-s1-ep10",
+            "number": 10,
+            "title": "Shibou Yuugi de Meshi wo Kuu - T1 Ep 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/s/shibou-yuugi-de-meshi-wo-kuu/10.mp4/index.m3u8&nocache1773247309\" frameborder=\"0\" allowfullscreen></iframe>",
+              "dub": "<iframe src=\"https://topanimes.net/antivirus2/yes/?id=sbt/f-cdn/google/node/playready/a-2/letra/s/shibou-yuugi-de-meshi-wo-kuu/10-dub/cdn_stream.m3u8&img=https://image.tmdb.org/t/p/original/4m3jIA2najo9wO69tylwL40Vb3e.jpg\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "topanimes.net"
           }

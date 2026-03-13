@@ -1447,5 +1447,47 @@
     "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
     "detail": "[DUB] ⚠️ sem stream_path.",
     "level": "error"
+  },
+  {
+    "ts": "2026-03-13 00:03:14",
+    "kind": "git",
+    "title": "Git Push: chore: update database [13/03/2026, 00:03]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   550a395..42c44b9  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 15:55:27",
+    "kind": "update",
+    "title": "Eps adicionados: Sousou no Frieren",
+    "detail": "[LEG] ✅ Ep 08 disponível!",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 15:55:28",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-13 15:55:28",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-13 15:55:29",
+    "kind": "stream",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-13 15:55:29",
+    "kind": "stream",
+    "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
   }
 ]

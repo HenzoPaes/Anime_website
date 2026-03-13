@@ -1,0 +1,13 @@
+{
+  "auto_update_enabled": false,
+  "auto_update_interval": 60,
+  "auto_update_times": [
+    "09:00",
+    "13:00",
+    "16:00",
+    "20:00"
+  ],
+  "auto_push_enabled": true,
+  "auto_verify_enabled": false,
+  "notify_log": true
+}

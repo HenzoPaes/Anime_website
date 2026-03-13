@@ -49,26 +49,26 @@ _DEFAULT_SETTINGS = {
 # Scheduler state (runtime only)
 _scheduler_lock  = threading.Lock()
 _scheduler_state = {
-    "thread": None,
-    "stop_event": threading.Event(),
-    "last_run": None,
-    "next_run": None,
-    "running_now": False,
+    "thread":         None,
+    "stop_event":     threading.Event(),
+    "last_run":       None,   # ISO string
+    "next_run":       None,   # ISO string
+    "running_now":    False,
 }
 
 _DEFAULT_PAGECONFIG = {
-    "featuredAnimeId": "",
-    "heroBadgeText": "⭐ Melhor avaliado",
-    "heroCtaText": "Assistir agora",
-    "siteTitle": "AnimeVerse — Seu portal de animes",
-    "catalogTitle": "Todos os Animes",
-    "showRandomButton": True,
+    "featuredAnimeId":    "",
+    "heroBadgeText":      "⭐ Melhor avaliado",
+    "heroCtaText":        "Assistir agora",
+    "siteTitle":          "AnimeVerse — Seu portal de animes",
+    "catalogTitle":       "Todos os Animes",
+    "showRandomButton":   True,
     "featuredBannerBlur": False,
-    "pinnedGenres": [],
+    "pinnedGenres":       [],
     "announcement": {
-        "enabled": False,
-        "text": "",
-        "type": "info",
+        "enabled":     False,
+        "text":        "",
+        "type":        "info",
         "dismissible": True,
     },
     "lastUpdated": "",
@@ -829,6 +829,36 @@ def scheduler_restart():
 
 # ═══════════════════════════════════════════════════════════════════════════════
 
+def _upsert_episode(ep_list: list, ep_num: int, audio: str, embed_html: str,
+                    anime_id: str = "", s_num: int = 1, credit: str = "goyabu.io"):
+    """Insert or update a single audio track on an episode in ep_list."""
+    ep_map = {int(e["number"]): e for e in ep_list}
+    if ep_num in ep_map:
+        ep_map[ep_num].setdefault("embeds", {})[audio] = embed_html
+        ep_map[ep_num]["embedCredit"] = credit
+    else:
+        ep_list.append({
+            "id":           f"{anime_id}-s{s_num}-ep{ep_num}",
+            "number":       ep_num,
+            "title":        f"Ep {ep_num}",
+            "season":       str(s_num),
+            "embeds":       {audio: embed_html},
+            "embedCredit":  credit,
+        })
+
+
+def _update_audio_counts(audios: list, ep_list: list):
+    """Recalculate episodesAvailable for each audio track from ep_list."""
+    for aud in audios:
+        atype = aud.get("type")
+        if not atype:
+            continue
+        avail_eps = [int(e["number"]) for e in ep_list if e.get("embeds", {}).get(atype)]
+        if avail_eps:
+            aud["available"]          = True
+            aud["episodesAvailable"]  = max(avail_eps)
+
+
 def get_audio_ep_counts(anime: dict) -> list[dict]:
     result = []
     for season in anime.get("seasons", []):
@@ -843,7 +873,7 @@ def get_audio_ep_counts(anime: dict) -> list[dict]:
             source = "aonlinecc"
         elif season.get("topanimes_slug_sub"):
             source = "topanimes"
-        elif season.get("goyabu_slug"):
+        elif season.get("goyabu_slug_dub") or season.get("goyabu_slug_sub") or season.get("goyabu_slug"):
             source = "goyabu"
         else:
             source = "anivideo"
@@ -909,18 +939,29 @@ def check_next_ep_per_audio(anime: dict) -> list[dict]:
             })
             continue
 
-        # Goyabu — TODO: implementar após HTML2
-        gb_slug = season.get("goyabu_slug", "").strip()
-        if gb_slug:
+        # Goyabu — contadores independentes por áudio
+        gb_slug_dub = season.get("goyabu_slug_dub", "") or season.get("goyabu_slug", "")
+        gb_slug_sub = season.get("goyabu_slug_sub", "")
+        if gb_slug_dub or gb_slug_sub:
+            dub_cur = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "dub" and a.get("available")), 0)
             sub_cur = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "sub" and a.get("available")), 0)
-            cur     = sub_cur
-            next_e  = cur + 1
-            if max_e and next_e > max_e:
+            next_dub = dub_cur + 1 if gb_slug_dub else None
+            next_sub = sub_cur + 1 if gb_slug_sub else None
+            # Só adiciona se pelo menos um dos próximos não ultrapassar o máximo
+            dub_ok = next_dub is not None and (not max_e or next_dub <= max_e)
+            sub_ok = next_sub is not None and (not max_e or next_sub <= max_e)
+            if not dub_ok and not sub_ok:
                 continue
             results.append({
                 "season": s_num, "label": season.get("seasonLabel", f"S{s_num}"),
-                "source": "goyabu", "gb_slug": gb_slug,
-                "current": cur, "next_ep": next_e, "max": max_e,
+                "source": "goyabu",
+                "gb_slug_dub": gb_slug_dub, "gb_slug_sub": gb_slug_sub,
+                "current_dub": dub_cur,    "current_sub": sub_cur,
+                "next_ep_dub": next_dub if dub_ok else None,
+                "next_ep_sub": next_sub if sub_ok else None,
+                # campo genérico para compatibilidade com display
+                "next_ep": min(x for x in [next_dub, next_sub] if x),
+                "max": max_e,
             })
             continue
 
@@ -1062,10 +1103,60 @@ def try_add_next_ep(anime: dict) -> list[str]:
                 logs.append(f"    [TOPANIMES] ❌ Ep {next_e:02d} não disponível.")
             continue
 
-        # ── Goyabu — TODO após HTML2 ───────────────────────────────────
-        gb_slug = season.get("goyabu_slug", "").strip()
-        if gb_slug:
-            logs.append(f"    [GOYABU] ⚠️ Scraper não implementado ainda. Aguardando HTML2.")
+        # ── Goyabu ─────────────────────────────────────────────────────
+        gb_slug_dub = season.get("goyabu_slug_dub", "") or season.get("goyabu_slug", "")
+        gb_slug_sub = season.get("goyabu_slug_sub", "")
+        if gb_slug_dub or gb_slug_sub:
+            next_ep_dub = chk.get("next_ep_dub")
+            next_ep_sub = chk.get("next_ep_sub")
+            added_any   = False
+
+            # ── DUB ──────────────────────────────────────────────────
+            if gb_slug_dub and next_ep_dub:
+                try:
+                    embeds = scrape_goyabu_ep(gb_slug_dub, next_ep_dub)
+                    if embeds:
+                        _upsert_episode(ep_list, next_ep_dub, "dub",
+                                        embeds.get("dub") or embeds.get("sub", ""),
+                                        anime.get("id",""), s_num)
+                        added_any = True
+                        logs.append(f"    [GOYABU] ✅ DUB ep {next_ep_dub:02d} adicionado")
+                    else:
+                        logs.append(f"    [GOYABU] ❌ DUB ep {next_ep_dub:02d} não disponível ainda")
+                except Exception as exc:
+                    logs.append(f"    [GOYABU] ⚠️ DUB ep {next_ep_dub:02d} erro: {exc}")
+
+            # ── SUB ──────────────────────────────────────────────────
+            if gb_slug_sub and next_ep_sub:
+                try:
+                    embeds = scrape_goyabu_ep(gb_slug_sub, next_ep_sub)
+                    if embeds:
+                        _upsert_episode(ep_list, next_ep_sub, "sub",
+                                        embeds.get("sub") or embeds.get("dub", ""),
+                                        anime.get("id",""), s_num)
+                        added_any = True
+                        logs.append(f"    [GOYABU] ✅ SUB ep {next_ep_sub:02d} adicionado")
+                    else:
+                        logs.append(f"    [GOYABU] ❌ SUB ep {next_ep_sub:02d} não disponível ainda")
+                except Exception as exc:
+                    logs.append(f"    [GOYABU] ⚠️ SUB ep {next_ep_sub:02d} erro: {exc}")
+
+            if added_any:
+                _update_audio_counts(audios, ep_list)
+                season["episodeList"] = sorted(ep_list, key=lambda x: int(x["number"]))
+                all_nums = [int(ep["number"]) for ep in season["episodeList"] if ep.get("embeds")]
+                if all_nums:
+                    season["currentEpisode"] = max(all_nums)
+                # Só marca finished se AMBOS (quando existem) atingiram o máximo
+                if max_e:
+                    dub_done = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "dub"), 0)
+                    sub_done = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "sub"), 0)
+                    check_vals = []
+                    if gb_slug_dub: check_vals.append(int(dub_done or 0))
+                    if gb_slug_sub: check_vals.append(int(sub_done or 0))
+                    if check_vals and min(check_vals) >= max_e:
+                        season["status"] = "finished"
+                        logs.append(f"    🏁 Temporada {s_num} concluída!")
             continue
 
         # ── AniVideo ───────────────────────────────────────────────────
@@ -1596,7 +1687,8 @@ def api_add_anime_full():
         ta_slug_dub= (data.get("ta_slug_dub") or "").strip()
         ta_sub_src = int(data["ta_sub_source"]) if str(data.get("ta_sub_source","")).isdigit() else None
         ta_dub_src = int(data["ta_dub_source"]) if str(data.get("ta_dub_source","")).isdigit() else None
-        gb_slug    = (data.get("goyabu_slug") or "").strip()
+        gb_slug_dub = (data.get("goyabu_slug_dub") or data.get("goyabu_slug") or "").strip()
+        gb_slug_sub = (data.get("goyabu_slug_sub") or "").strip()
 
         wlog(f"[ANILIST] Buscando '{name}'...", "dim")
         prefill = data.get("_al_prefill")
@@ -1672,18 +1764,49 @@ def api_add_anime_full():
             total_eps = max(sub_avail, dub_avail) or total_eps
             wlog(f"[TOPANIMES] ✅ LEG:{sub_avail} DUB:{dub_avail}", "success")
 
-        elif source == "goyabu" and gb_slug:
-            # TODO: implementar após HTML2
-            wlog("[GOYABU] ⚠️ Scraper não implementado ainda. Aguardando HTML2.", "warn")
-            wlog("[GOYABU] Criando placeholders de episódios sem embed...", "dim")
-            for ep_i in range(1, total_eps + 1):
-                ep_list.append({
-                    "id": f"{id_slug}-s{s_num}-ep{ep_i}", "number": ep_i,
-                    "title": f"{title_r} - T{s_num} Ep {ep_i}",
-                    "season": str(s_num), "embeds": {}, "embedCredit": "",
-                })
+        elif source == "goyabu" and (gb_slug_dub or gb_slug_sub):
+            wlog(f"[GOYABU] Buscando episódios (DUB:{gb_slug_dub or '—'} SUB:{gb_slug_sub or '—'})...", "dim")
             sub_avail = dub_avail = 0
-            wlog(f"[GOYABU] Placeholders criados — embed a ser preenchido após HTML2.", "warn")
+
+            # Scrape DUB
+            if gb_slug_dub:
+                for ep_i in range(1, total_eps + 1):
+                    try:
+                        embeds = scrape_goyabu_ep(gb_slug_dub, ep_i)
+                        if embeds:
+                            _upsert_episode(ep_list, ep_i, "dub",
+                                            embeds.get("dub") or embeds.get("sub", ""),
+                                            id_slug, s_num, "goyabu.io")
+                            dub_avail = ep_i
+                        else:
+                            wlog(f"[GOYABU] DUB ep {ep_i} não encontrado, parando.", "dim")
+                            break
+                    except Exception as exc:
+                        wlog(f"[GOYABU] DUB ep {ep_i} erro: {exc}", "warn")
+                        break
+
+            # Scrape SUB
+            if gb_slug_sub:
+                for ep_i in range(1, total_eps + 1):
+                    try:
+                        embeds = scrape_goyabu_ep(gb_slug_sub, ep_i)
+                        if embeds:
+                            _upsert_episode(ep_list, ep_i, "sub",
+                                            embeds.get("sub") or embeds.get("dub", ""),
+                                            id_slug, s_num, "goyabu.io")
+                            sub_avail = ep_i
+                        else:
+                            wlog(f"[GOYABU] SUB ep {ep_i} não encontrado, parando.", "dim")
+                            break
+                    except Exception as exc:
+                        wlog(f"[GOYABU] SUB ep {ep_i} erro: {exc}", "warn")
+                        break
+
+            ep_list.sort(key=lambda x: int(x["number"]))
+            has_sub = sub_avail > 0
+            has_dub = dub_avail > 0
+            total_eps = max(sub_avail, dub_avail) or total_eps
+            wlog(f"[GOYABU] ✅ LEG:{sub_avail} DUB:{dub_avail}", "success")
 
         else:
             # AniVideo
@@ -1734,8 +1857,9 @@ def api_add_anime_full():
             season_data["topanimes_slug_dub"] = ta_slug_dub or (ta_slug_sub + "-dublado")
             season_data["topanimes_sub_src"]  = ta_sub_src
             season_data["topanimes_dub_src"]  = ta_dub_src
-        if source == "goyabu" and gb_slug:
-            season_data["goyabu_slug"] = gb_slug   # stored for future auto-update
+        if source == "goyabu" and (gb_slug_dub or gb_slug_sub):
+            if gb_slug_dub: season_data["goyabu_slug_dub"] = gb_slug_dub
+            if gb_slug_sub: season_data["goyabu_slug_sub"] = gb_slug_sub
 
         if is_movie:
             season_data["type"]       = "movie"
@@ -1778,7 +1902,7 @@ def api_add_anime_full():
             src_label = (
                 f"AnimesOnlineCC ({ao_slug})" if source=="aonlinecc" else
                 f"TopAnimes ({ta_slug_sub})"  if source=="topanimes" else
-                f"Goyabu ({gb_slug})"         if source=="goyabu" and gb_slug else
+                f"Goyabu (dub:{gb_slug_dub or '—'} sub:{gb_slug_sub or '—'})" if source=="goyabu" and (gb_slug_dub or gb_slug_sub) else
                 f"AniVideo ({avslug or 'sem slug'})"
             )
             db.append({

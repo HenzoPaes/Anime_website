@@ -1510,5 +1510,47 @@
     "title": "Auto-update iniciado",
     "detail": "agendado",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:22:57",
+    "kind": "scheduler",
+    "title": "Git push automático realizado",
+    "detail": "auto-push",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:23:13",
+    "kind": "stream",
+    "title": "[Oshi no Ko]",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-13 20:23:13",
+    "kind": "stream",
+    "title": "Kaya-chan wa Kowakunai",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-13 20:23:14",
+    "kind": "stream",
+    "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-13 20:23:14",
+    "kind": "stream",
+    "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+    "detail": "[DUB] ⚠️ sem stream_path.",
+    "level": "error"
+  },
+  {
+    "ts": "2026-03-13 20:37:01",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
   }
 ]

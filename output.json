@@ -1245,7 +1245,7 @@
         "audios": [
           {
             "available": true,
-            "episodesAvailable": 9,
+            "episodesAvailable": 10,
             "label": "Legendado",
             "type": "sub"
           },
@@ -1256,7 +1256,7 @@
             "type": "dub"
           }
         ],
-        "currentEpisode": 9,
+        "currentEpisode": 10,
         "episodeList": [
           {
             "embedCredit": "api.anivideo.net",
@@ -1352,6 +1352,16 @@
             "season": "3",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/09.mp4/index.m3u8&nocache1772733616616\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "jujutsu-kaisen-s3-ep10",
+            "number": 10,
+            "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen - T3 Ep 10",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jujutsu-kaisen-3/10.mp4/index.m3u8&nocache1773370903141\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }

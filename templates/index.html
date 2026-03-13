@@ -1450,6 +1450,7 @@ async function submitAdd() {
       ao_slug:s.ao_slug||'', ao_inc_season:s.ao_inc_season,
       ta_slug_sub:s.ta_slug_sub||'', ta_slug_dub:s.ta_slug_dub||'',
       ta_sub_source:s.ta_sub_source??null, ta_dub_source:s.ta_dub_source??null,
+      goyabu_slug_dub:s.goyabu_slug_dub||'', goyabu_slug_sub:s.goyabu_slug_sub||'',
       season_label:s.label||'', season_year:s.year||'',
       season_score:s.score||'', season_status:s.status||'',
       mv_title:$('mv-title')?.value||'', mv_tag:$('mv-tag')?.value||'',
@@ -1684,17 +1685,6 @@ function smAddSeason() {
     ta_dub_source:taDubSrcEl?parseInt(taDubSrcEl.value):null,
     goyabu_slug_dub: goyabuSlugDub,
     goyabu_slug_sub: goyabuSlugSub,
-    has_sub:hasSub, has_dub:hasDub, cover, al_prefill:_smSelected||null,
-  });
-
-  _addSeasons.push({
-    season_num:sNum, label, eps, max_eps:maxEps, year, score, status, source,
-    avslug:$('sm-avslug').value.trim(), ao_slug:aoSlug,
-    inc_season:$('sm-inc-season').checked, ao_inc_season:$('sm-ao-inc-season').checked,
-    ta_slug_sub:taSlugSub, ta_slug_dub:taSlugDub,
-    ta_sub_source:taSubSrcEl?parseInt(taSubSrcEl.value):null,
-    ta_dub_source:taDubSrcEl?parseInt(taDubSrcEl.value):null,
-    goyabu_slug:goyabuSlug,
     has_sub:hasSub, has_dub:hasDub, cover, al_prefill:_smSelected||null,
   });
   closeSeasonModal();
@@ -2018,6 +2008,17 @@ function buildSeasonTab(s, idx, isMovie) {
   const dubEps  = audios.find(a=>a.type==='dub')?.episodesAvailable||0;
   const sid     = `s${idx}`;
   const aoSlug  = s.aonlinecc_slug||'';
+  const taSlugSub = s.topanimes_slug_sub||'';
+  const taSlugDub = s.topanimes_slug_dub||'';
+  const gbDub   = s.goyabu_slug_dub||s.goyabu_slug||'';
+  const gbSub   = s.goyabu_slug_sub||'';
+
+  // Detect source
+  const srcInfo = aoSlug   ? `🕸️ AnimesOnlineCC <code>${aoSlug}</code>` :
+                  taSlugSub? `🔥 TopAnimes LEG:<code>${taSlugSub}</code>` :
+                  (gbDub||gbSub) ? `🌐 Goyabu dub:<code>${gbDub||'—'}</code> sub:<code>${gbSub||'—'}</code>` :
+                  `⚡ AniVideo`;
+
   let html = `
   <div class="grid-2">
     ${fld(`e-${sid}-label`,'Season Label',s.seasonLabel||'')}
@@ -2035,8 +2036,19 @@ function buildSeasonTab(s, idx, isMovie) {
   ${toggle(`e-${sid}-has-dub`,'Tem Dublado?',hasDub)}
   ${fld(`e-${sid}-dub-eps`,'Eps dublado disponíveis',dubEps)}
   <div style="font-family:var(--mono);font-size:9px;letter-spacing:.1em;color:var(--cyan);text-transform:uppercase;margin:12px 0 8px">📡 Fonte</div>
-  <div class="info-box"><b>Fonte atual:</b> ${aoSlug?`🕸️ AnimesOnlineCC (${aoSlug})`:'⚡ AniVideo'}</div>
-  ${fld(`e-${sid}-ao-slug`,'Slug AnimesOnlineCC (vazio = AniVideo)',aoSlug,'ex: yofukashi-no-uta')}`;
+  <div class="info-box" style="margin-bottom:10px"><b>Fonte atual:</b> ${srcInfo}</div>
+  <div class="grid-2">
+    ${fld(`e-${sid}-ao-slug`,'Slug AnimesOnlineCC',aoSlug,'vazio = não usar')}
+    ${fld(`e-${sid}-avslug`,'Slug AniVideo',s.avslug||s.av_slug||'','vazio = não usar')}
+  </div>
+  <div class="grid-2">
+    ${fld(`e-${sid}-ta-sub`,'Slug TopAnimes LEG',taSlugSub,'vazio = não usar')}
+    ${fld(`e-${sid}-ta-dub`,'Slug TopAnimes DUB',taSlugDub,'')}
+  </div>
+  <div class="grid-2">
+    ${fld(`e-${sid}-gb-dub`,'Slug Goyabu DUB',gbDub,'ex: rezero-...dublado')}
+    ${fld(`e-${sid}-gb-sub`,'Slug Goyabu SUB',gbSub,'ex: rezero-kara...')}
+  </div>`;
 
   if (isMovie) html += `
   <div style="font-family:var(--mono);font-size:9px;letter-spacing:.1em;color:var(--cyan);text-transform:uppercase;margin:14px 0 10px">🎥 Campos do Filme</div>
@@ -2088,8 +2100,18 @@ async function submitEdit() {
     s.synopsis      =$(`e-${sid}-synopsis`)?.value||s.synopsis;
     s.trailer       =$(`e-${sid}-trailer`)?.value||s.trailer;
     s.status        =$(`e-${sid}-status`)?.value||s.status;
-    const newAo=$(`e-${sid}-ao-slug`)?.value?.trim()||'';
+    const newAo  = $(`e-${sid}-ao-slug`)?.value?.trim()||'';
+    const newAv  = $(`e-${sid}-avslug`)?.value?.trim()||'';
+    const newTaSub = $(`e-${sid}-ta-sub`)?.value?.trim()||'';
+    const newTaDub = $(`e-${sid}-ta-dub`)?.value?.trim()||'';
+    const newGbDub = $(`e-${sid}-gb-dub`)?.value?.trim()||'';
+    const newGbSub = $(`e-${sid}-gb-sub`)?.value?.trim()||'';
     if (newAo) s.aonlinecc_slug=newAo; else delete s.aonlinecc_slug;
+    if (newAv) s.avslug=newAv; else delete s.avslug;
+    if (newTaSub) s.topanimes_slug_sub=newTaSub; else delete s.topanimes_slug_sub;
+    if (newTaDub) s.topanimes_slug_dub=newTaDub; else delete s.topanimes_slug_dub;
+    if (newGbDub) s.goyabu_slug_dub=newGbDub; else delete s.goyabu_slug_dub;
+    if (newGbSub) s.goyabu_slug_sub=newGbSub; else delete s.goyabu_slug_sub;
     const hasSub=$(`e-${sid}-has-sub`)?.checked;
     const hasDub=$(`e-${sid}-has-dub`)?.checked;
     const subEps=parseInt($(`e-${sid}-sub-eps`)?.value)||0;

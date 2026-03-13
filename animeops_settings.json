@@ -1,5 +1,5 @@
 {
-  "auto_update_enabled": false,
+  "auto_update_enabled": true,
   "auto_update_interval": 60,
   "auto_update_times": [
     "09:00",

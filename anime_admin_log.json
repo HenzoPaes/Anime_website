@@ -1552,5 +1552,26 @@
     "title": "Auto-update iniciado",
     "detail": "agendado",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:37:01",
+    "kind": "settings",
+    "title": "Configurações salvas",
+    "detail": "{\"auto_update_enabled\": true, \"auto_update_interval\": 60, \"auto_update_times\": [\"09:00\", \"13:00\", \"16:00\", \"20:00\"], \"auto_push_enabled\": true}",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:37:04",
+    "kind": "scheduler",
+    "title": "Git push automático realizado",
+    "detail": "auto-push",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:47:53",
+    "kind": "add",
+    "title": "Adicionado: Re:Zero",
+    "detail": "T1 · 25 eps · Série · Goyabu (dub:rezero-kara-hajimeru-isekai-seikatsu-dublado sub:rezero-kara-hajimeru-isekai-seikatsu)",
+    "level": "info"
   }
 ]

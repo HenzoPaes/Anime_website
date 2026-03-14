@@ -1867,5 +1867,47 @@
     "title": "Configurações salvas",
     "detail": "{\"auto_update_enabled\": true, \"auto_update_interval\": 0, \"auto_update_times\": [\"09:00\", \"13:00\", \"16:00\", \"20:00\"], \"auto_push_enabled\": true}",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:01:30",
+    "kind": "git",
+    "title": "Git Push: chore: update database [13/03/2026, 21:01:23]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   7cb8cbd..ca5ee66  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:01:37",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:01:37",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:02:48",
+    "kind": "settings",
+    "title": "Configurações salvas",
+    "detail": "{\"auto_update_enabled\": false, \"auto_update_interval\": 0, \"auto_update_times\": [\"09:00\", \"13:00\", \"16:00\", \"20:00\"], \"auto_push_enabled\": true}",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:02:58",
+    "kind": "settings",
+    "title": "Configurações salvas",
+    "detail": "{\"auto_update_enabled\": true, \"auto_update_interval\": 0, \"auto_update_times\": [\"09:00\", \"13:00\", \"16:00\", \"20:00\"], \"auto_push_enabled\": true}",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:17:36",
+    "kind": "add",
+    "title": "Adicionado: One Piece - Live Action",
+    "detail": "T1 · 8 eps · Série · AniVideo (one-piece-a-serie)",
+    "level": "info"
   }
 ]

@@ -31761,5 +31761,240 @@
         "aonlinecc_inc_season": false
       }
     ]
+  },
+  {
+    "adultContent": false,
+    "anilistId": 21,
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
+    "coverImage": "https://animesdigital.org/wp-content/uploads/2026/03/assistir-one-piece-a-serie-2a-temporada-dublado-dublado-todos-os-episodios-online-animes-online.jpg",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Fantasy"
+    ],
+    "id": "one-piece-LA",
+    "recommended": false,
+    "seasons": [
+      {
+        "audios": [
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": true,
+            "episodesAvailable": 8,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 8,
+        "episodeList": [
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-dublado/01.mp4/index.m3u8&nocache1773447456364\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s1-ep1",
+            "number": 1,
+            "season": "1",
+            "title": "One Piece - Live Action - T1 Ep 1"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-dublado/02.mp4/index.m3u8&nocache1773447456364\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s1-ep2",
+            "number": 2,
+            "season": "1",
+            "title": "One Piece - Live Action - T1 Ep 2"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-dublado/03.mp4/index.m3u8&nocache1773447456364\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s1-ep3",
+            "number": 3,
+            "season": "1",
+            "title": "One Piece - Live Action - T1 Ep 3"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-dublado/04.mp4/index.m3u8&nocache1773447456364\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s1-ep4",
+            "number": 4,
+            "season": "1",
+            "title": "One Piece - Live Action - T1 Ep 4"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-dublado/05.mp4/index.m3u8&nocache1773447456364\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s1-ep5",
+            "number": 5,
+            "season": "1",
+            "title": "One Piece - Live Action - T1 Ep 5"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-dublado/06.mp4/index.m3u8&nocache1773447456364\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s1-ep6",
+            "number": 6,
+            "season": "1",
+            "title": "One Piece - Live Action - T1 Ep 6"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-dublado/07.mp4/index.m3u8&nocache1773447456364\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s1-ep7",
+            "number": 7,
+            "season": "1",
+            "title": "One Piece - Live Action - T1 Ep 7"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-dublado/08.mp4/index.m3u8&nocache1773447456364\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s1-ep8",
+            "number": 8,
+            "season": "1",
+            "title": "One Piece - Live Action - T1 Ep 8"
+          }
+        ],
+        "episodes": 8,
+        "score": 8.8,
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "status": "finished",
+        "synopsis": "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.\nEnter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.\n*This includes following special episodes:\n- Chopperman to the Rescue! Protect the TV Station by the Shore! (Episode 336)\n- The Strongest Tag-Team! Luffy and Toriko's Hard Struggle! (Episode 492)\n- Team Formation! Save Chopper (Episode 542)\n- History's Strongest Collaboration vs. Glutton of the Sea (Episode 590)\n- 20th Anniversary! Special Romance Dawn (Episode 907)",
+        "trailer": "",
+        "year": 2023
+      },
+      {
+        "audios": [
+          {
+            "available": false,
+            "episodesAvailable": 0,
+            "label": "Legendado",
+            "type": "sub"
+          },
+          {
+            "available": true,
+            "episodesAvailable": 8,
+            "label": "Dublado",
+            "type": "dub"
+          }
+        ],
+        "currentEpisode": 8,
+        "episodeList": [
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-2-temporada-dublado/01.mp4/index.m3u8&nocache1773447456718\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s2-ep1",
+            "number": 1,
+            "season": "2",
+            "title": "One Piece - Live Action - T2 Ep 1"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-2-temporada-dublado/02.mp4/index.m3u8&nocache1773447456718\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s2-ep2",
+            "number": 2,
+            "season": "2",
+            "title": "One Piece - Live Action - T2 Ep 2"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-2-temporada-dublado/03.mp4/index.m3u8&nocache1773447456718\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s2-ep3",
+            "number": 3,
+            "season": "2",
+            "title": "One Piece - Live Action - T2 Ep 3"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-2-temporada-dublado/04.mp4/index.m3u8&nocache1773447456718\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s2-ep4",
+            "number": 4,
+            "season": "2",
+            "title": "One Piece - Live Action - T2 Ep 4"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-2-temporada-dublado/05.mp4/index.m3u8&nocache1773447456718\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s2-ep5",
+            "number": 5,
+            "season": "2",
+            "title": "One Piece - Live Action - T2 Ep 5"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-2-temporada-dublado/06.mp4/index.m3u8&nocache1773447456718\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s2-ep6",
+            "number": 6,
+            "season": "2",
+            "title": "One Piece - Live Action - T2 Ep 6"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-2-temporada-dublado/07.mp4/index.m3u8&nocache1773447456718\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s2-ep7",
+            "number": 7,
+            "season": "2",
+            "title": "One Piece - Live Action - T2 Ep 7"
+          },
+          {
+            "embedCredit": "api.anivideo.net",
+            "embeds": {
+              "dub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-a-serie-2-temporada-dublado/08.mp4/index.m3u8&nocache1773447456718\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "id": "one-piece-LA-s2-ep8",
+            "number": 8,
+            "season": "2",
+            "title": "One Piece - Live Action - T2 Ep 8"
+          }
+        ],
+        "episodes": 8,
+        "score": 9,
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "status": "finished",
+        "synopsis": "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.\nEnter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.\n*This includes following special episodes:\n- Chopperman to the Rescue! Protect the TV Station by the Shore! (Episode 336)\n- The Strongest Tag-Team! Luffy and Toriko's Hard Struggle! (Episode 492)\n- Team Formation! Save Chopper (Episode 542)\n- History's Strongest Collaboration vs. Glutton of the Sea (Episode 590)\n- 20th Anniversary! Special Romance Dawn (Episode 907)",
+        "trailer": "",
+        "year": 2026
+      }
+    ],
+    "studio": "Toei Animation",
+    "title": "One Piece - Live Action",
+    "titleJapanese": "One Piece - Live Action",
+    "titleRomaji": "One Piece - Live Action"
   }
 ]

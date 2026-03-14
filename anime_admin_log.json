@@ -1573,5 +1573,299 @@
     "title": "Adicionado: Re:Zero",
     "detail": "T1 · 25 eps · Série · Goyabu (dub:rezero-kara-hajimeru-isekai-seikatsu-dublado sub:rezero-kara-hajimeru-isekai-seikatsu)",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:48:35",
+    "kind": "git",
+    "title": "Git Push: chore: update database [13/03/2026, 20:48:31]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   882f34d..7cb8cbd  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:48:47",
+    "kind": "settings",
+    "title": "Configurações salvas",
+    "detail": "{\"auto_update_enabled\": true, \"auto_update_interval\": 1, \"auto_update_times\": [\"09:00\", \"13:00\", \"16:00\", \"20:00\"], \"auto_push_enabled\": true}",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:48:51",
+    "kind": "settings",
+    "title": "Configurações salvas",
+    "detail": "{\"auto_update_enabled\": true, \"auto_update_interval\": 1, \"auto_update_times\": [\"09:00\", \"13:00\", \"16:00\", \"20:00\"], \"auto_push_enabled\": true}",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:49:53",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:49:53",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:50:53",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:50:53",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:51:54",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:51:54",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:53:13",
+    "kind": "delete",
+    "title": "Removido: Re:Zero",
+    "detail": "",
+    "level": "warning"
+  },
+  {
+    "ts": "2026-03-13 20:54:03",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:54:03",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:54:04",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:54:04",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:55:03",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:55:03",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:55:04",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:55:04",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:56:04",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:56:04",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:56:05",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:56:05",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:57:04",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:57:04",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:57:06",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:57:06",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:58:05",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:58:05",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:58:06",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:58:06",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:59:06",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:59:06",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:59:07",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 20:59:07",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:00:36",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:00:36",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:00:37",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:00:37",
+    "kind": "scheduler",
+    "title": "Erro no auto-update: name 'api_check_next_ep' is not defined",
+    "detail": "error",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:00:58",
+    "kind": "add",
+    "title": "Adicionado: Re:Zero",
+    "detail": "T1 · 25 eps · Série · Goyabu (dub:rezero-kara-hajimeru-isekai-seikatsu-dublado sub:rezero-kara-hajimeru-isekai-seikatsu)",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:01:08",
+    "kind": "delete",
+    "title": "Removido: Re:Zero",
+    "detail": "",
+    "level": "warning"
+  },
+  {
+    "ts": "2026-03-13 21:01:11",
+    "kind": "settings",
+    "title": "Configurações salvas",
+    "detail": "{\"auto_update_enabled\": true, \"auto_update_interval\": 1, \"auto_update_times\": [\"09:00\", \"13:00\", \"16:00\", \"20:00\"], \"auto_push_enabled\": true}",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-13 21:01:20",
+    "kind": "settings",
+    "title": "Configurações salvas",
+    "detail": "{\"auto_update_enabled\": true, \"auto_update_interval\": 0, \"auto_update_times\": [\"09:00\", \"13:00\", \"16:00\", \"20:00\"], \"auto_push_enabled\": true}",
+    "level": "info"
   }
 ]

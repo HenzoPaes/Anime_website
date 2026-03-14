@@ -924,8 +924,22 @@ body::before {
             <input type="text" id="sm-goyabu-slug-sub" placeholder="ex: rezero-kara...">
           </div>
         </div>
-        <div style="display:flex;gap:8px;align-items:center;margin-top:4px">
-          <button class="btn btn-ghost" style="font-size:11px;padding:6px 12px" onclick="smFetchGoyabuInfo()">🔍 Verificar Slugs</button>
+        <div class="grid-2" style="margin-top:8px">
+          <div class="field">
+            <label>Anime ID DUB <span style="font-size:10px;color:var(--amber)">direto</span></label>
+            <input type="number" id="sm-goyabu-id-dub" placeholder="ex: 41079" min="1">
+          </div>
+          <div class="field">
+            <label>Anime ID SUB <span style="font-size:10px;color:var(--amber)">direto</span></label>
+            <input type="number" id="sm-goyabu-id-sub" placeholder="ex: 12345" min="1">
+          </div>
+        </div>
+        <div style="font-size:10px;color:var(--muted);margin-bottom:8px;font-family:var(--mono)">
+          💡 O Anime ID está na URL do episódio no Goyabu: goyabu.io/<b style="color:var(--amber)">41081</b> → clique no anime para ver a lista de eps e o ID aparece nas URLs.
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="btn btn-primary" style="font-size:12px;padding:7px 16px" onclick="smFetchGoyabuInfo()">🔍 Verificar e Preencher</button>
+          <button class="btn btn-ghost" style="font-size:11px;padding:6px 12px" onclick="smGoyabuDebug()">🐛 Debug</button>
           <span id="sm-goyabu-status" style="font-family:var(--mono);font-size:10px;color:var(--muted)"></span>
         </div>
         <div class="info-box" style="margin-top:8px;display:none" id="sm-goyabu-preview"></div>
@@ -1451,6 +1465,7 @@ async function submitAdd() {
       ta_slug_sub:s.ta_slug_sub||'', ta_slug_dub:s.ta_slug_dub||'',
       ta_sub_source:s.ta_sub_source??null, ta_dub_source:s.ta_dub_source??null,
       goyabu_slug_dub:s.goyabu_slug_dub||'', goyabu_slug_sub:s.goyabu_slug_sub||'',
+      goyabu_id_dub:s.goyabu_id_dub||'',   goyabu_id_sub:s.goyabu_id_sub||'',
       season_label:s.label||'', season_year:s.year||'',
       season_score:s.score||'', season_status:s.status||'',
       mv_title:$('mv-title')?.value||'', mv_tag:$('mv-tag')?.value||'',
@@ -1621,7 +1636,12 @@ async function smFetchTopanimesSources() {
 async function smFetchGoyabuInfo() {
   const slugDub = $('sm-goyabu-slug-dub')?.value?.trim();
   const slugSub = $('sm-goyabu-slug-sub')?.value?.trim();
-  if (!slugDub && !slugSub) { setStatus('Informe pelo menos um slug do Goyabu', 'err'); return; }
+  const idDub   = $('sm-goyabu-id-dub')?.value?.trim();
+  const idSub   = $('sm-goyabu-id-sub')?.value?.trim();
+
+  if (!slugDub && !slugSub && !idDub && !idSub) {
+    setStatus('Informe slug ou Anime ID do Goyabu', 'err'); return;
+  }
   const st  = $('sm-goyabu-status');
   const pre = $('sm-goyabu-preview');
   st.textContent = '↻ Verificando...'; st.style.color = 'var(--amber)';
@@ -1629,27 +1649,65 @@ async function smFetchGoyabuInfo() {
 
   const results = [];
   const errors  = [];
+  let maxEps = 0;
 
-  if (slugDub) {
-    const d = await api(`/api/goyabu/episodes?slug=${encodeURIComponent(slugDub)}`);
-    if (d.error) errors.push(`DUB: ${d.error}`);
-    else results.push(`<span style="color:var(--pink)">DUB</span> <b style="color:var(--cyan)">${d.count}</b> eps`);
+  // Helper: build query string preferring anime_id over slug
+  const buildQ = (slug, id) => id ? `anime_id=${encodeURIComponent(id)}` : `slug=${encodeURIComponent(slug)}`;
+
+  if (slugDub || idDub) {
+    const d = await api(`/api/goyabu/episodes?${buildQ(slugDub, idDub)}`);
+    if (d.error) errors.push(`DUB: ${d.error}${d.dica ? ' — '+d.dica : ''}`);
+    else {
+      results.push(`<span style="color:var(--pink)">DUB</span> <b style="color:var(--cyan)">${d.count}</b> eps (id:${d.anime_id})`);
+      maxEps = Math.max(maxEps, d.count);
+      if ($('sm-has-dub')) $('sm-has-dub').checked = true;
+      // store resolved id back in field
+      if (d.anime_id && !idDub) $('sm-goyabu-id-dub').value = d.anime_id;
+    }
   }
-  if (slugSub) {
-    const d = await api(`/api/goyabu/episodes?slug=${encodeURIComponent(slugSub)}`);
-    if (d.error) errors.push(`SUB: ${d.error}`);
-    else results.push(`<span style="color:var(--green)">SUB</span> <b style="color:var(--cyan)">${d.count}</b> eps`);
+  if (slugSub || idSub) {
+    const d = await api(`/api/goyabu/episodes?${buildQ(slugSub, idSub)}`);
+    if (d.error) errors.push(`SUB: ${d.error}${d.dica ? ' — '+d.dica : ''}`);
+    else {
+      results.push(`<span style="color:var(--green)">SUB</span> <b style="color:var(--cyan)">${d.count}</b> eps (id:${d.anime_id})`);
+      maxEps = Math.max(maxEps, d.count);
+      if ($('sm-has-sub')) $('sm-has-sub').checked = true;
+      if (d.anime_id && !idSub) $('sm-goyabu-id-sub').value = d.anime_id;
+    }
+  }
+
+  if (!slugDub && !idDub && $('sm-has-dub')) $('sm-has-dub').checked = false;
+  if (!slugSub && !idSub && $('sm-has-sub')) $('sm-has-sub').checked = false;
+
+  if (maxEps > 0) {
+    $('sm-eps').value     = maxEps;
+    $('sm-max-eps').value = maxEps;
   }
 
   if (errors.length && !results.length) {
     st.textContent = '✕ Não encontrado'; st.style.color = 'var(--red)';
-    pre.innerHTML  = errors.map(e => `<span style="color:var(--red)">${esc(e)}</span>`).join('<br>');
+    pre.innerHTML  = errors.map(e => `<span style="color:var(--red);font-size:11px">${esc(e)}</span>`).join('<br>');
   } else {
-    st.textContent = '✓ OK'; st.style.color = 'var(--green)';
-    pre.innerHTML  = `<span style="font-family:var(--mono);font-size:10px">${results.join(' &nbsp;·&nbsp; ')}</span>`;
-    if (errors.length) pre.innerHTML += `<br><span style="font-size:10px;color:var(--amber)">${errors.join(', ')}</span>`;
+    st.textContent = `✓ ${maxEps} eps`; st.style.color = 'var(--green)';
+    pre.innerHTML  = `<span style="font-family:var(--mono);font-size:10px">${results.join(' &nbsp;·&nbsp; ')} — <b style="color:var(--amber)">${maxEps}</b> eps auto-preenchido</span>`;
+    if (errors.length) pre.innerHTML += `<br><span style="font-size:10px;color:var(--amber)">${errors.map(esc).join(' | ')}</span>`;
   }
   pre.style.display = 'block';
+}
+
+async function smGoyabuDebug() {
+  const slug = $('sm-goyabu-slug-dub')?.value?.trim() || $('sm-goyabu-slug-sub')?.value?.trim() || 'rezero-kara-hajimeru-isekai-seikatsu-dublado';
+  const pre  = $('sm-goyabu-preview');
+  pre.style.display = 'block';
+  pre.innerHTML = '<span style="color:var(--amber)">↻ Rodando diagnóstico...</span>';
+  const d = await api(`/api/goyabu/debug?slug=${encodeURIComponent(slug)}`);
+  const lines = Object.entries(d).map(([k,v]) => {
+    const status = v.status || v.error || '?';
+    const body   = (v.body||v.error||'').replace(/</g,'&lt;').slice(0,200);
+    const color  = v.error ? 'var(--red)' : v.status === 200 ? 'var(--green)' : 'var(--amber)';
+    return `<div style="margin-bottom:6px"><b style="color:${color}">${k}</b> [${status}]<br><span style="color:var(--muted);font-size:10px">${body}</span></div>`;
+  });
+  pre.innerHTML = `<div style="font-family:var(--mono);font-size:11px">${lines.join('')}</div>`;
 }
 
 function smAddSeason() {
@@ -1668,6 +1726,8 @@ function smAddSeason() {
   const taSlugDub      = $('sm-ta-slug-dub').value.trim();
   const goyabuSlugDub  = $('sm-goyabu-slug-dub')?.value?.trim() || '';
   const goyabuSlugSub  = $('sm-goyabu-slug-sub')?.value?.trim() || '';
+  const goyabuIdDub    = $('sm-goyabu-id-dub')?.value?.trim() || '';
+  const goyabuIdSub    = $('sm-goyabu-id-sub')?.value?.trim() || '';
   const taSubSrcEl = document.querySelector('#sm-ta-sub-sources input[type=radio]:checked');
   const taDubSrcEl = document.querySelector('#sm-ta-dub-sources input[type=radio]:checked');
   const cover  = _smSelected?(((_smSelected.coverImage||{}).extraLarge)||((_smSelected.coverImage||{}).large)||''):'';
@@ -1685,6 +1745,8 @@ function smAddSeason() {
     ta_dub_source:taDubSrcEl?parseInt(taDubSrcEl.value):null,
     goyabu_slug_dub: goyabuSlugDub,
     goyabu_slug_sub: goyabuSlugSub,
+    goyabu_id_dub:   goyabuIdDub,
+    goyabu_id_sub:   goyabuIdSub,
     has_sub:hasSub, has_dub:hasDub, cover, al_prefill:_smSelected||null,
   });
   closeSeasonModal();

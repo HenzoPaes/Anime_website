@@ -31996,5 +31996,488 @@
     "title": "One Piece - Live Action",
     "titleJapanese": "One Piece - Live Action",
     "titleRomaji": "One Piece - Live Action"
+  },
+  {
+    "id": "mob-psycho-100",
+    "title": "Mob Psycho 100",
+    "titleRomaji": "Mob Psycho 100",
+    "titleJapanese": "モブサイコ100",
+    "genre": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Psychological",
+      "Slice of Life",
+      "Supernatural"
+    ],
+    "studio": "bones",
+    "recommended": false,
+    "anilistId": 21507,
+    "adultContent": false,
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx140439-bPKmhe1wNxc9.jpg",
+    "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/140439-r9SRh0q0UgX1.jpg",
+    "seasons": [
+      {
+        "season": 1,
+        "seasonLabel": "1ª Temporada",
+        "year": 2016,
+        "episodes": 12,
+        "currentEpisode": 12,
+        "status": "finished",
+        "score": 8.4,
+        "synopsis": "The story revolves around \"Mob,\" a boy who will explode if his emotional capacity reaches 100%. This boy with psychic powers earned his nickname \"Mob\" because he does not stand out among other people. He keeps his psychic powers bottled up so he can live normally, but if his emotional level reaches 100, something will overwhelm his entire body.\n\n(Source: Anime News Network)",
+        "trailer": "https://www.youtube.com/watch?v=mV39saBlBLI",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 12
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "mob-psycho-100-s1-ep1",
+            "number": 1,
+            "title": "Mob Psycho 100 - T1 Ep 1",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100/01.mp4/index.m3u8&nocache1773492551000\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s1-ep2",
+            "number": 2,
+            "title": "Mob Psycho 100 - T1 Ep 2",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100/02.mp4/index.m3u8&nocache1773492551001\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s1-ep3",
+            "number": 3,
+            "title": "Mob Psycho 100 - T1 Ep 3",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100/03.mp4/index.m3u8&nocache1773492551001\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s1-ep4",
+            "number": 4,
+            "title": "Mob Psycho 100 - T1 Ep 4",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100/04.mp4/index.m3u8&nocache1773492551001\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s1-ep5",
+            "number": 5,
+            "title": "Mob Psycho 100 - T1 Ep 5",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100/05.mp4/index.m3u8&nocache1773492551001\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s1-ep6",
+            "number": 6,
+            "title": "Mob Psycho 100 - T1 Ep 6",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100/06.mp4/index.m3u8&nocache1773492551001\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s1-ep7",
+            "number": 7,
+            "title": "Mob Psycho 100 - T1 Ep 7",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100/07.mp4/index.m3u8&nocache1773492551001\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s1-ep8",
+            "number": 8,
+            "title": "Mob Psycho 100 - T1 Ep 8",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100/08.mp4/index.m3u8&nocache1773492551001\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s1-ep9",
+            "number": 9,
+            "title": "Mob Psycho 100 - T1 Ep 9",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100/09.mp4/index.m3u8&nocache1773492551001\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s1-ep10",
+            "number": 10,
+            "title": "Mob Psycho 100 - T1 Ep 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100/10.mp4/index.m3u8&nocache1773492551001\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s1-ep11",
+            "number": 11,
+            "title": "Mob Psycho 100 - T1 Ep 11",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100/11.mp4/index.m3u8&nocache1773492551001\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s1-ep12",
+            "number": 12,
+            "title": "Mob Psycho 100 - T1 Ep 12",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100/12.mp4/index.m3u8&nocache1773492551001\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "seasonLabel": "2ª Temporada",
+        "year": 2019,
+        "episodes": 14,
+        "currentEpisode": 14,
+        "status": "finished",
+        "score": 8.7,
+        "synopsis": "The second season of Mob Psycho 100. \nKageyama is an ordinary 8th grader who just wants to live a normal life. Although he can disappear in the crowd in a flash, he was actually the most powerful psychic. The lives of those around Mob and his numerous feelings that softly piles up for the eventual explosion. The mysterious group \"Claw\" stands before him once again. In the midst of his youthful days, where will his roaring heart take him!?\n\n\n(Source: Crunchyroll)",
+        "trailer": "https://www.youtube.com/watch?v=Pr43Sayk37s",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 14
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "mob-psycho-100-s2-ep1",
+            "number": 1,
+            "title": "Mob Psycho 100 - T2 Ep 1",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/01.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep2",
+            "number": 2,
+            "title": "Mob Psycho 100 - T2 Ep 2",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/02.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep3",
+            "number": 3,
+            "title": "Mob Psycho 100 - T2 Ep 3",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/03.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep4",
+            "number": 4,
+            "title": "Mob Psycho 100 - T2 Ep 4",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/04.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep5",
+            "number": 5,
+            "title": "Mob Psycho 100 - T2 Ep 5",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/05.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep6",
+            "number": 6,
+            "title": "Mob Psycho 100 - T2 Ep 6",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/06.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep7",
+            "number": 7,
+            "title": "Mob Psycho 100 - T2 Ep 7",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/07.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep8",
+            "number": 8,
+            "title": "Mob Psycho 100 - T2 Ep 8",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/08.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep9",
+            "number": 9,
+            "title": "Mob Psycho 100 - T2 Ep 9",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/09.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep10",
+            "number": 10,
+            "title": "Mob Psycho 100 - T2 Ep 10",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/10.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep11",
+            "number": 11,
+            "title": "Mob Psycho 100 - T2 Ep 11",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/11.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep12",
+            "number": 12,
+            "title": "Mob Psycho 100 - T2 Ep 12",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/12.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep13",
+            "number": 13,
+            "title": "Mob Psycho 100 - T2 Ep 13",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/13.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s2-ep14",
+            "number": 14,
+            "title": "Mob Psycho 100 - T2 Ep 14",
+            "season": "2",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-ii/14.mp4/index.m3u8&nocache1773492551313\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "seasonLabel": "3ª Temporada",
+        "year": 2022,
+        "episodes": 12,
+        "currentEpisode": 12,
+        "status": "finished",
+        "score": 8.7,
+        "synopsis": "The third season of Mob Psycho 100. \nThe appearance of a divine tree and new religion turns Mob and Reigen's city upside down!\n(Source: Crunchyroll)",
+        "trailer": "https://www.youtube.com/watch?v=Ah7lTT-NKMw",
+        "audios": [
+          {
+            "type": "sub",
+            "label": "Legendado",
+            "available": true,
+            "episodesAvailable": 12
+          },
+          {
+            "type": "dub",
+            "label": "Dublado",
+            "available": false,
+            "episodesAvailable": 0
+          }
+        ],
+        "episodeList": [
+          {
+            "id": "mob-psycho-100-s3-ep1",
+            "number": 1,
+            "title": "Mob Psycho 100 - T3 Ep 1",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-iii/01.mp4/index.m3u8&nocache1773492551641\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s3-ep2",
+            "number": 2,
+            "title": "Mob Psycho 100 - T3 Ep 2",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-iii/02.mp4/index.m3u8&nocache1773492551641\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s3-ep3",
+            "number": 3,
+            "title": "Mob Psycho 100 - T3 Ep 3",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-iii/03.mp4/index.m3u8&nocache1773492551641\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s3-ep4",
+            "number": 4,
+            "title": "Mob Psycho 100 - T3 Ep 4",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-iii/04.mp4/index.m3u8&nocache1773492551641\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s3-ep5",
+            "number": 5,
+            "title": "Mob Psycho 100 - T3 Ep 5",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-iii/05.mp4/index.m3u8&nocache1773492551641\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s3-ep6",
+            "number": 6,
+            "title": "Mob Psycho 100 - T3 Ep 6",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-iii/06.mp4/index.m3u8&nocache1773492551641\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s3-ep7",
+            "number": 7,
+            "title": "Mob Psycho 100 - T3 Ep 7",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-iii/07.mp4/index.m3u8&nocache1773492551641\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s3-ep8",
+            "number": 8,
+            "title": "Mob Psycho 100 - T3 Ep 8",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-iii/08.mp4/index.m3u8&nocache1773492551641\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s3-ep9",
+            "number": 9,
+            "title": "Mob Psycho 100 - T3 Ep 9",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-iii/09.mp4/index.m3u8&nocache1773492551641\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s3-ep10",
+            "number": 10,
+            "title": "Mob Psycho 100 - T3 Ep 10",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-iii/10.mp4/index.m3u8&nocache1773492551641\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s3-ep11",
+            "number": 11,
+            "title": "Mob Psycho 100 - T3 Ep 11",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-iii/11.mp4/index.m3u8&nocache1773492551641\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "mob-psycho-100-s3-ep12",
+            "number": 12,
+            "title": "Mob Psycho 100 - T3 Ep 12",
+            "season": "3",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/m/mob-psycho-100-iii/12.mp4/index.m3u8&nocache1773492551641\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -32,8 +32,7 @@ ANIVIDEO_WRAP   = "https://api.anivideo.net/videohls.php"
 ANIVIDEO_CDN    = "https://cdn-s01.mywallpaper-4k-image.net/stream"
 AONLINECC_BASE  = "https://animesonlinecc.to"
 TOPANIMES_BASE  = "https://topanimes.net"
-GOYABU_BASE     = "https://goyabu.io"              # domínio real confirmado via HTML2
-GOYABU_AJAX     = f"{GOYABU_BASE}/wp-admin/admin-ajax.php"
+SUSHI_BASE      = "https://sushianimes.com.br"
 PAGECONFIG_FILE = "pageconfig.json"
 SETTINGS_FILE   = "animeops_settings.json"
 
@@ -245,251 +244,190 @@ def topanimes_build_embeds(sub_sources: dict, dub_sources: dict) -> dict:
 # SOURCE: Goyabu  ← TODO: implementar quando o HTML2 chegar
 # ═══════════════════════════════════════════════════════════════════════════════
 
-_GOYABU_HEADERS = {
+_SUSHI_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/124.0 Safari/537.36"
     ),
     "Accept-Language": "pt-BR,pt;q=0.9",
-    "Referer": f"{GOYABU_BASE}/",
-    "X-Requested-With": "XMLHttpRequest",
+    "Referer": f"{SUSHI_BASE}/",
 }
 
-# ── Goyabu helpers ─────────────────────────────────────────────────────────────
+# ── SushiAnimes helpers ────────────────────────────────────────────────────────
 
-def goyabu_get_anime_id(slug: str) -> str | None:
+def sushi_ep_url(slug: str, player: int, ep: int) -> str:
     """
-    Resolve slug → streamer_id (WordPress post ID do anime).
-    Tenta 3 estratégias em sequência:
-      1. WP REST API /wp-json/wp/v2/posts?slug=...   (sem bloqueio)
-      2. WP REST API /wp-json/wp/v2/anime?slug=...   (CPT)
-      3. Busca no HTML da página /anime/{slug}        (fallback)
+    slug  = 'jujutsu-kaisen-329'  (título + ID do anime no site)
+    player= 1, 2 ou 3             (cada um é um servidor/áudio diferente)
+    ep    = número do episódio
+
+    URL: https://sushianimes.com.br/anime/jujutsu-kaisen-329-2-season-5-episode
     """
-    # ── Estratégia 1: REST API posts ────────────────────────────────────────
-    for endpoint in ("posts", "anime", "animes"):
+    return f"{SUSHI_BASE}/anime/{slug}-{player}-season-{ep}-episode"
+
+def sushi_anime_url(slug: str) -> str:
+    return f"{SUSHI_BASE}/anime/{slug}"
+
+def sushi_get_episode_count(slug: str) -> int:
+    """Retorna o total de episódios listados na página do anime."""
+    try:
+        r = requests.get(sushi_anime_url(slug), timeout=12, headers=_SUSHI_HEADERS)
+        if r.status_code >= 400:
+            return 0
+        # "23 contém conteúdo"
+        m = re.search(r'(\d+)\s+cont[eé]m\s+conte[uú]do', r.text)
+        if m:
+            return int(m.group(1))
+        # fallback: contar episódios listados
+        eps = re.findall(r'class="episode-title[^"]*"', r.text)
+        return len(eps) if eps else 0
+    except Exception:
+        return 0
+
+def sushi_get_players(slug: str) -> list[dict]:
+    """
+    Retorna lista de players disponíveis para o anime.
+    Cada item: {"player": 1, "total": 23}
+    Testa player 1, 2 e 3.
+    """
+    results = []
+    for p in (1, 2, 3):
+        url = sushi_ep_url(slug, p, 1)
         try:
-            r = requests.get(
-                f"{GOYABU_BASE}/wp-json/wp/v2/{endpoint}",
-                params={"slug": slug, "_fields": "id,slug", "per_page": 1},
-                timeout=10, headers=_GOYABU_HEADERS,
-            )
-            if r.status_code == 200:
-                data = r.json()
-                if isinstance(data, list) and data:
-                    return str(data[0]["id"])
+            r = requests.head(url, timeout=6, headers=_SUSHI_HEADERS, allow_redirects=True)
+            if r.status_code < 400:
+                total = sushi_get_episode_count(slug)
+                results.append({"player": p, "total": total, "url": url})
         except Exception:
             pass
+    return results
 
-    # ── Estratégia 2: REST API search ───────────────────────────────────────
-    try:
-        r = requests.get(
-            f"{GOYABU_BASE}/wp-json/wp/v2/search",
-            params={"search": slug.replace("-", " "), "type": "post",
-                    "_fields": "id,slug,title", "per_page": 5},
-            timeout=10, headers=_GOYABU_HEADERS,
-        )
-        if r.status_code == 200:
-            results = r.json()
-            if isinstance(results, list):
-                # prefer exact slug match
-                for item in results:
-                    if item.get("slug") == slug:
-                        return str(item["id"])
-                if results:
-                    return str(results[0]["id"])
-    except Exception:
-        pass
-
-    # ── Estratégia 3: HTML scrape da página do anime ─────────────────────────
-    for url in (f"{GOYABU_BASE}/anime/{slug}", f"{GOYABU_BASE}/{slug}"):
-        try:
-            r = requests.get(url, timeout=12, headers=_GOYABU_HEADERS,
-                             allow_redirects=True)
-            if r.status_code >= 400:
-                continue
-            m = re.search(r'var\s+streamer_id\s*=\s*Number\(["\'](\d+)["\']\)', r.text)
-            if m:
-                return m.group(1)
-            m2 = re.search(r'"streamer_id"\s*:\s*["\']?(\d+)', r.text)
-            if m2:
-                return m2.group(1)
-            # WP canonical link: <link rel="canonical" href="https://goyabu.io/12345" />
-            m3 = re.search(r'goyabu\.io/(\d{4,6})"', r.text)
-            if m3:
-                return m3.group(1)
-        except Exception:
-            pass
-
+def _sushi_get_embed_id(html: str) -> str | None:
+    """Extrai o embed ID do HTML da página do episódio."""
+    # <div class="play-btn" data-id="16214">
+    m = re.search(r'class=["\']play-btn["\'][^>]+data-id=["\'](\d+)["\']', html)
+    if m:
+        return m.group(1)
+    # data-embed="16214" no dropdown
+    m = re.search(r'data-embed=["\'](\d+)["\']', html)
+    if m:
+        return m.group(1)
     return None
 
-def goyabu_get_episodes(anime_id: str) -> list[dict]:
+def _sushi_fetch_embed_url(embed_id: str) -> str | None:
     """
-    Retorna lista de episódios via AJAX do WordPress.
-    Cada item: {"id": post_id, "episodio": "1", "link": "/41081/", ...}
+    Tenta obter a URL real do player via endpoints comuns do SushiAnimes.
+    Estratégias em cascata.
     """
-    try:
-        r = requests.get(
-            GOYABU_AJAX,
-            params={"action": "get_anime_episodes", "anime_id": anime_id},
-            timeout=12, headers=_GOYABU_HEADERS,
-        )
-        data = r.json()
-        return data.get("data", []) if data.get("success") else []
-    except Exception:
-        return []
+    headers = {**_SUSHI_HEADERS, "X-Requested-With": "XMLHttpRequest"}
 
-def goyabu_get_post_id(slug: str, ep: int | str) -> int | None:
-    """
-    Resolve slug + número do episódio → post_id do WordPress.
-    """
-    anime_id = goyabu_get_anime_id(slug)
-    if not anime_id:
-        return None
-    episodes = goyabu_get_episodes(anime_id)
-    for item in episodes:
-        if str(item.get("episodio", "")).lstrip("0") == str(ep).lstrip("0"):
-            return int(item["id"])
-    return None
-
-def _goyabu_decode_token(blogger_token: str) -> list[dict]:
-    """
-    Chama admin-ajax.php?action=decode_blogger_video e retorna lista de sources.
-    Cada source: {"size": 720, "sizeText": "HD", "src": "https://...", "type": "video/mp4"}
-    """
+    # Estratégia 1: POST /anime/embed com id=embed_id
     try:
         r = requests.post(
-            GOYABU_AJAX,
-            data={"action": "decode_blogger_video", "token": blogger_token},
-            timeout=20, headers=_GOYABU_HEADERS,
+            f"{SUSHI_BASE}/anime/embed",
+            data={"id": embed_id},
+            timeout=10, headers=headers,
         )
-        result = r.json()
-        if result.get("success"):
-            return result.get("data", {}).get("play", [])
+        if r.status_code == 200 and len(r.text) > 20:
+            # JSON com url/src/embed
+            try:
+                d = r.json()
+                for k in ("url", "src", "embed", "source", "file", "link"):
+                    if d.get(k) and d[k].startswith("http"):
+                        return d[k]
+            except Exception:
+                pass
+            # HTML com iframe
+            m = re.search(r'<iframe[^>]+src=["\']([^"\']+)["\']', r.text)
+            if m:
+                return m.group(1)
     except Exception:
         pass
-    return []
 
-def _goyabu_decrypt_url(encrypted: str) -> str | None:
+    # Estratégia 2: GET /embed/{id}
+    for path in (f"/embed/{embed_id}", f"/anime/sources/{embed_id}",
+                 f"/api/embed/{embed_id}", f"/player/{embed_id}"):
+        try:
+            r = requests.get(
+                f"{SUSHI_BASE}{path}", timeout=8, headers=headers,
+            )
+            if r.status_code == 200 and len(r.text) > 20:
+                try:
+                    d = r.json()
+                    for k in ("url", "src", "embed", "source", "file", "link"):
+                        if d.get(k) and str(d[k]).startswith("http"):
+                            return d[k]
+                except Exception:
+                    pass
+                m = re.search(r'<iframe[^>]+src=["\']([^"\']+)["\']', r.text)
+                if m:
+                    return m.group(1)
+                m = re.search(r'(https?://[^\s\'"<>]+\.(?:mp4|m3u8)[^\s\'"<>]*)', r.text)
+                if m:
+                    return m.group(1)
+        except Exception:
+            pass
+
+    return None
+
+def scrape_sushi_ep(slug: str, player: int, ep: int) -> dict | None:
     """
-    Decifra a URL criptografada do Player 2 (iframe):
-    atob(encrypted).split('').reverse().join('')
+    Raspa um episódio do SushiAnimes e retorna o embed.
+
+    Fluxo:
+      1. Fetch página do episódio
+      2. Extrai embed_id do HTML
+      3. Requisita embed URL via AJAX
+      4. Retorna {"sub": "<iframe...>"} ou {"dub": "<iframe...>"}
+         (player 1 = LEG por padrão, player 2+ = DUB)
+
+    Retorna None se episódio não encontrado.
     """
+    url = sushi_ep_url(slug, player, ep)
     try:
-        decoded = base64.b64decode(encrypted + "==").decode("utf-8", errors="ignore")
-        return decoded[::-1]
-    except Exception:
-        return None
-
-def scrape_goyabu_ep(slug: str, ep: int | str, anime_id: str | None = None) -> dict | None:
-    """
-    Raspa um episódio do Goyabu.io e retorna os embeds.
-    Se anime_id for fornecido, pula a resolução slug→id (mais rápido e confiável).
-    """
-    if anime_id:
-        # Buscar post_id diretamente via AJAX sem precisar do HTML da página
-        episodes = goyabu_get_episodes(anime_id)
-        post_id  = None
-        for item in episodes:
-            if str(item.get("episodio", "")).lstrip("0") == str(ep).lstrip("0"):
-                post_id = int(item["id"])
-                break
-    else:
-        post_id = goyabu_get_post_id(slug, ep)
-    if not post_id:
-        return None
-
-    try:
-        r = requests.get(
-            f"{GOYABU_BASE}/{post_id}",
-            timeout=12, headers=_GOYABU_HEADERS,
-        )
+        r = requests.get(url, timeout=12, headers=_SUSHI_HEADERS, allow_redirects=True)
         if r.status_code >= 400:
             return None
         html = r.text
     except Exception:
         return None
 
-    # Detectar DUB/SUB pelo título da página
-    title_m = re.search(r'<b[^>]*class="title-post[^"]*"[^>]*>(.*?)</b>', html, re.DOTALL)
-    title_txt = (title_m.group(1) if title_m else "").lower()
-    audio_key = "dub" if "dublado" in title_txt else "sub"
+    embed_id = _sushi_get_embed_id(html)
 
-    # ── Estratégia 1: blogger_token no playersData ───────────────────────────
-    token_m = re.search(r'"blogger_token"\s*:\s*"([^"]+)"', html)
-    if token_m:
-        sources = _goyabu_decode_token(token_m.group(1))
-        if sources:
-            sources.sort(key=lambda x: x.get("size", 0), reverse=True)
-            # Preferir 720p+, senão melhor disponível
-            best = next((s for s in sources if s.get("size", 0) >= 720), sources[0])
-            video_url = best.get("src", "")
-            if video_url:
-                iframe = (
-                    f'<video src="{video_url}" controls width="100%" '
-                    f'style="width:100%;height:100%;max-height:480px;background:#000" '
-                    f'preload="metadata"></video>'
-                )
-                return {audio_key: iframe}
-
-    # ── Estratégia 2: URL cifrada do Player HD (iframe) ──────────────────────
-    enc_m = re.search(r'data-blogger-url-encrypted="([^"]+)"', html)
-    if enc_m:
-        url = _goyabu_decrypt_url(enc_m.group(1))
-        if url and url.startswith("http"):
+    if embed_id:
+        embed_url = _sushi_fetch_embed_url(embed_id)
+        if embed_url:
             iframe = (
-                f'<iframe src="{url}" frameborder="0" scrolling="no" '
-                f'allowfullscreen width="100%" height="100%" '
-                f'style="width:100%;height:100%"></iframe>'
+                f'<iframe src="{embed_url}" frameborder="0" allowfullscreen '
+                f'width="100%" height="100%" style="width:100%;height:100%"></iframe>'
             )
-            return {audio_key: iframe}
-
-    # ── Estratégia 3: qualquer iframe de vídeo na página ────────────────────
-    iframe_m = re.search(
-        r'<iframe[^>]+src="(https?://(?:www\.blogger\.com|e7cod\.com|21wiz\.com)[^"]+)"',
-        html,
-    )
-    if iframe_m:
+        else:
+            # fallback: iframe direto na página do episódio (pode não funcionar por X-Frame-Options)
+            iframe = (
+                f'<iframe src="{url}" frameborder="0" allowfullscreen '
+                f'width="100%" height="100%" style="width:100%;height:100%"></iframe>'
+            )
+    else:
+        # Se não achou embed_id, usar iframe da página
         iframe = (
-            f'<iframe src="{iframe_m.group(1)}" frameborder="0" '
-            f'allowfullscreen width="100%" height="100%" '
-            f'style="width:100%;height:100%"></iframe>'
+            f'<iframe src="{url}" frameborder="0" allowfullscreen '
+            f'width="100%" height="100%" style="width:100%;height:100%"></iframe>'
         )
-        return {audio_key: iframe}
 
-    return None
+    # player 1 = LEG, player 2+ = DUB
+    audio_key = "sub" if player == 1 else "dub"
+    return {audio_key: iframe}
 
-def goyabu_build_ep_list(slug: str, total_eps: int) -> list[dict]:
-    """
-    Raspa lista completa de episódios do Goyabu e retorna no formato
-    compatível com o sistema de animes do projeto.
-    """
-    anime_id = goyabu_get_anime_id(slug)
-    if not anime_id:
-        raise ValueError(f"Anime '{slug}' não encontrado no Goyabu.")
-
-    all_episodes = goyabu_get_episodes(anime_id)
-    # Limitar ao total pedido, ordenado por número
-    all_episodes.sort(key=lambda x: float(str(x.get("episodio", 0)) or 0))
-    results = []
-
-    for item in all_episodes[:total_eps]:
-        ep_num = int(str(item.get("episodio", 0)).lstrip("0") or "0")
-        embed = scrape_goyabu_ep(slug, ep_num)
-        results.append({
-            "episode":  ep_num,
-            "embeds":   embed or {},
-            "post_id":  item.get("id"),
-        })
-
-    return results
-
-def goyabu_ep_exists(slug: str, ep: int) -> bool:
-    """Verifica rapidamente se um episódio existe (resolve post_id)."""
+def sushi_ep_exists(slug: str, player: int, ep: int) -> bool:
+    """Verifica rapidamente se um episódio existe."""
+    url = sushi_ep_url(slug, player, ep)
     try:
-        return goyabu_get_post_id(slug, ep) is not None
+        r = requests.head(url, timeout=6, headers=_SUSHI_HEADERS, allow_redirects=True)
+        return r.status_code < 400
     except Exception:
         return False
+
 
 
 
@@ -749,26 +687,35 @@ def _scheduler_do_auto_update():
         if settings.get("notify_log"):
             log_event("scheduler", "Auto-update iniciado", "agendado")
 
-        # Verifica episódios novos
-        if settings.get("auto_verify_enabled"):
-            with app.test_request_context():
-                api_check_next_ep()   # reutiliza lógica existente
+        db      = load_db()
+        changed = []
+        for anime in db:
+            if not any(s.get("status") in ("ongoing", "paused")
+                       for s in anime.get("seasons", [])):
+                continue
+            msgs = try_add_next_ep(anime)
+            if any("✅" in m for m in msgs):
+                changed.append(anime["title"])
 
-        # Git push
-        if settings.get("auto_push_enabled"):
-            subprocess.run(
-                ["git", "add", "-A"],
-                capture_output=True, text=True, cwd=os.getcwd(),
-            )
+        if changed:
+            save_db(db)
+            if settings.get("notify_log"):
+                log_event("scheduler", f"Auto-update: {len(changed)} anime(s) atualizados",
+                          ", ".join(changed[:5]))
+        else:
+            if settings.get("notify_log"):
+                log_event("scheduler", "Auto-update concluído — nenhuma novidade", "ok")
+
+        if settings.get("auto_push_enabled") and changed:
+            subprocess.run(["git", "add", "-A"],
+                           capture_output=True, text=True, cwd=os.getcwd())
             subprocess.run(
                 ["git", "commit", "-m",
                  f"auto-update {datetime.now().strftime('%Y-%m-%d %H:%M')}"],
                 capture_output=True, text=True, cwd=os.getcwd(),
             )
-            subprocess.run(
-                ["git", "push", "origin", GIT_BRANCH],
-                capture_output=True, text=True, cwd=os.getcwd(),
-            )
+            subprocess.run(["git", "push", "origin", GIT_BRANCH],
+                           capture_output=True, text=True, cwd=os.getcwd())
             if settings.get("notify_log"):
                 log_event("scheduler", "Git push automático realizado", "auto-push")
 
@@ -878,7 +825,7 @@ def scheduler_restart():
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def _upsert_episode(ep_list: list, ep_num: int, audio: str, embed_html: str,
-                    anime_id: str = "", s_num: int = 1, credit: str = "goyabu.io"):
+                    anime_id: str = "", s_num: int = 1, credit: str = "sushianimes.com.br"):
     """Insert or update a single audio track on an episode in ep_list."""
     ep_map = {int(e["number"]): e for e in ep_list}
     if ep_num in ep_map:
@@ -921,8 +868,8 @@ def get_audio_ep_counts(anime: dict) -> list[dict]:
             source = "aonlinecc"
         elif season.get("topanimes_slug_sub"):
             source = "topanimes"
-        elif season.get("goyabu_slug_dub") or season.get("goyabu_slug_sub") or season.get("goyabu_slug"):
-            source = "goyabu"
+        elif season.get("sushi_slug"):
+            source = "sushi"
         else:
             source = "anivideo"
 
@@ -988,8 +935,11 @@ def check_next_ep_per_audio(anime: dict) -> list[dict]:
             continue
 
         # Goyabu — contadores independentes por áudio
-        gb_slug_dub = season.get("goyabu_slug_dub", "") or season.get("goyabu_slug", "")
-        gb_slug_sub = season.get("goyabu_slug_sub", "")
+        su_slug    = season.get("sushi_slug", "").strip()
+        su_player_sub = int(season.get("sushi_player_sub") or 1)
+        su_player_dub = int(season.get("sushi_player_dub") or 2)
+        gb_slug_dub = su_slug
+        gb_slug_sub = su_slug
         if gb_slug_dub or gb_slug_sub:
             dub_cur = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "dub" and a.get("available")), 0)
             sub_cur = next((a.get("episodesAvailable", 0) for a in audios if a.get("type") == "sub" and a.get("available")), 0)
@@ -1002,7 +952,7 @@ def check_next_ep_per_audio(anime: dict) -> list[dict]:
                 continue
             results.append({
                 "season": s_num, "label": season.get("seasonLabel", f"S{s_num}"),
-                "source": "goyabu",
+                "source": "sushi",
                 "gb_slug_dub": gb_slug_dub, "gb_slug_sub": gb_slug_sub,
                 "current_dub": dub_cur,    "current_sub": sub_cur,
                 "next_ep_dub": next_dub if dub_ok else None,
@@ -1152,8 +1102,11 @@ def try_add_next_ep(anime: dict) -> list[str]:
             continue
 
         # ── Goyabu ─────────────────────────────────────────────────────
-        gb_slug_dub = season.get("goyabu_slug_dub", "") or season.get("goyabu_slug", "")
-        gb_slug_sub = season.get("goyabu_slug_sub", "")
+        su_slug    = season.get("sushi_slug", "").strip()
+        su_player_sub = int(season.get("sushi_player_sub") or 1)
+        su_player_dub = int(season.get("sushi_player_dub") or 2)
+        gb_slug_dub = su_slug
+        gb_slug_sub = su_slug
         if gb_slug_dub or gb_slug_sub:
             next_ep_dub = chk.get("next_ep_dub")
             next_ep_sub = chk.get("next_ep_sub")
@@ -1162,32 +1115,32 @@ def try_add_next_ep(anime: dict) -> list[str]:
             # ── DUB ──────────────────────────────────────────────────
             if gb_slug_dub and next_ep_dub:
                 try:
-                    embeds = scrape_goyabu_ep(gb_slug_dub, next_ep_dub)
+                    embeds = scrape_sushi_ep(gb_slug_dub, su_player_dub, next_ep_dub)
                     if embeds:
                         _upsert_episode(ep_list, next_ep_dub, "dub",
                                         embeds.get("dub") or embeds.get("sub", ""),
                                         anime.get("id",""), s_num)
                         added_any = True
-                        logs.append(f"    [GOYABU] ✅ DUB ep {next_ep_dub:02d} adicionado")
+                        logs.append(f"    [SUSHI] ✅ DUB ep {next_ep_dub:02d} adicionado")
                     else:
-                        logs.append(f"    [GOYABU] ❌ DUB ep {next_ep_dub:02d} não disponível ainda")
+                        logs.append(f"    [SUSHI] ❌ DUB ep {next_ep_dub:02d} não disponível ainda")
                 except Exception as exc:
-                    logs.append(f"    [GOYABU] ⚠️ DUB ep {next_ep_dub:02d} erro: {exc}")
+                    logs.append(f"    [SUSHI] ⚠️ DUB ep {next_ep_dub:02d} erro: {exc}")
 
             # ── SUB ──────────────────────────────────────────────────
             if gb_slug_sub and next_ep_sub:
                 try:
-                    embeds = scrape_goyabu_ep(gb_slug_sub, next_ep_sub)
+                    embeds = scrape_sushi_ep(gb_slug_sub, su_player_sub, next_ep_sub)
                     if embeds:
                         _upsert_episode(ep_list, next_ep_sub, "sub",
                                         embeds.get("sub") or embeds.get("dub", ""),
                                         anime.get("id",""), s_num)
                         added_any = True
-                        logs.append(f"    [GOYABU] ✅ SUB ep {next_ep_sub:02d} adicionado")
+                        logs.append(f"    [SUSHI] ✅ SUB ep {next_ep_sub:02d} adicionado")
                     else:
-                        logs.append(f"    [GOYABU] ❌ SUB ep {next_ep_sub:02d} não disponível ainda")
+                        logs.append(f"    [SUSHI] ❌ SUB ep {next_ep_sub:02d} não disponível ainda")
                 except Exception as exc:
-                    logs.append(f"    [GOYABU] ⚠️ SUB ep {next_ep_sub:02d} erro: {exc}")
+                    logs.append(f"    [SUSHI] ⚠️ SUB ep {next_ep_sub:02d} erro: {exc}")
 
             if added_any:
                 _update_audio_counts(audios, ep_list)
@@ -1482,83 +1435,37 @@ def api_topanimes_sources():
         "dub_url": topanimes_ep_url(slug, ep, True),
     })
 
-# ── Goyabu ─────────────────────────────────────────────────────────────────────
+# ── SushiAnimes ─────────────────────────────────────────────────────────────────
 
-@app.route('/api/goyabu/ep')
-def api_goyabu_ep():
-    """Raspa embed de um episódio do Goyabu.io."""
-    slug = request.args.get("slug", "").strip()
-    ep   = request.args.get("ep", "1").strip()
+@app.route('/api/sushi/ep')
+def api_sushi_ep():
+    """Raspa embed de um episódio do SushiAnimes."""
+    slug   = request.args.get("slug", "").strip()
+    player = int(request.args.get("player", 1) or 1)
+    ep     = int(request.args.get("ep", 1) or 1)
     if not slug:
         return jsonify({"error": "slug obrigatório"}), 400
     try:
-        result = scrape_goyabu_ep(slug, ep)
+        result = scrape_sushi_ep(slug, player, ep)
         if result is None:
-            return jsonify({"error": "Episódio não encontrado no Goyabu"}), 404
-        return jsonify({"ok": True, "embeds": result})
+            return jsonify({"error": "Episódio não encontrado"}), 404
+        return jsonify({"ok": True, "embeds": result,
+                        "url": sushi_ep_url(slug, player, ep)})
     except Exception as exc:
         return jsonify({"error": str(exc)}), 500
 
-@app.route('/api/goyabu/anime_id')
-def api_goyabu_anime_id():
-    """Retorna o streamer_id (WP post ID do anime) a partir do slug."""
+@app.route('/api/sushi/info')
+def api_sushi_info():
+    """Retorna info do anime: total eps e players disponíveis."""
     slug = request.args.get("slug", "").strip()
     if not slug:
         return jsonify({"error": "slug obrigatório"}), 400
-    anime_id = goyabu_get_anime_id(slug)
-    if not anime_id:
-        return jsonify({"error": "Anime não encontrado", "slug": slug,
-                        "dica": "Tente passar anime_id direto via ?anime_id=XXXXX"}), 404
-    return jsonify({"ok": True, "anime_id": anime_id})
+    total   = sushi_get_episode_count(slug)
+    players = sushi_get_players(slug)
+    return jsonify({"ok": True, "slug": slug,
+                    "total_eps": total, "players": players,
+                    "anime_url": sushi_anime_url(slug)})
 
-@app.route('/api/goyabu/episodes')
-def api_goyabu_episodes():
-    """Retorna lista de episódios. Aceita slug ou anime_id direto."""
-    slug     = request.args.get("slug", "").strip()
-    anime_id = request.args.get("anime_id", "").strip()
-
-    if not slug and not anime_id:
-        return jsonify({"error": "slug ou anime_id obrigatório"}), 400
-
-    # Se anime_id não veio diretamente, resolver via slug
-    if not anime_id:
-        anime_id = goyabu_get_anime_id(slug)
-        if not anime_id:
-            return jsonify({
-                "error": "Anime não encontrado",
-                "slug":  slug,
-                "dica":  "Se souber o anime_id (número na URL do Goyabu), passe-o direto: ?anime_id=41079",
-            }), 404
-
-    episodes = goyabu_get_episodes(anime_id)
-    return jsonify({"ok": True, "anime_id": anime_id, "count": len(episodes), "episodes": episodes})
-
-@app.route('/api/goyabu/debug')
-def api_goyabu_debug():
-    """Debug: testa conectividade e mostra o que cada estratégia retorna."""
-    slug = request.args.get("slug", "rezero-kara-hajimeru-isekai-seikatsu-dublado")
-    results = {}
-
-    # REST API
-    for ep in ("posts", "anime", "animes"):
-        try:
-            r = requests.get(f"{GOYABU_BASE}/wp-json/wp/v2/{ep}",
-                             params={"slug": slug, "_fields": "id,slug", "per_page": 1},
-                             timeout=8, headers=_GOYABU_HEADERS)
-            results[f"rest_{ep}"] = {"status": r.status_code, "body": r.text[:300]}
-        except Exception as exc:
-            results[f"rest_{ep}"] = {"error": str(exc)}
-
-    # AJAX direto
-    try:
-        r = requests.get(GOYABU_AJAX,
-                         params={"action": "get_anime_episodes", "anime_id": "41079"},
-                         timeout=8, headers=_GOYABU_HEADERS)
-        results["ajax_test"] = {"status": r.status_code, "body": r.text[:500]}
-    except Exception as exc:
-        results["ajax_test"] = {"error": str(exc)}
-
-    return jsonify(results)
 
 # ── Settings ────────────────────────────────────────────────────────────────────
 
@@ -1704,8 +1611,8 @@ def api_run_update():
                             anime_changed = True
                         else:
                             wlog(f"  [AONLINECC] ❌ Ep {chk['next_ep']:02d} não disponível.", "error")
-                    elif chk["source"] == "goyabu":
-                        wlog(f"  [GOYABU] ⚠️ Scraper não implementado ainda.", "warn")
+                    elif chk["source"] == "sushi":
+                        wlog(f"  [SUSHI] ⚠️ Scraper não implementado ainda.", "warn")
                     elif chk["source"] in ("anivideo",):
                         tag = "LEG" if chk.get("audio") == "sub" else "DUB"
                         wlog(f"  [{tag}] S{chk['season']} atual:{chk['current']:02d}{max_s} → ep {chk['next_ep']:02d}...", "dim")
@@ -1773,10 +1680,13 @@ def api_add_anime_full():
         ta_slug_dub= (data.get("ta_slug_dub") or "").strip()
         ta_sub_src = int(data["ta_sub_source"]) if str(data.get("ta_sub_source","")).isdigit() else None
         ta_dub_src = int(data["ta_dub_source"]) if str(data.get("ta_dub_source","")).isdigit() else None
-        gb_slug_dub = (data.get("goyabu_slug_dub") or data.get("goyabu_slug") or "").strip()
-        gb_slug_sub = (data.get("goyabu_slug_sub") or "").strip()
-        gb_id_dub   = (data.get("goyabu_id_dub") or "").strip()
-        gb_id_sub   = (data.get("goyabu_id_sub") or "").strip()
+        su_slug     = (data.get("sushi_slug") or "").strip()
+        su_player_sub = int(data.get("sushi_player_sub") or 1)
+        su_player_dub = int(data.get("sushi_player_dub") or 2)
+        gb_slug_dub   = su_slug
+        gb_slug_sub = su_slug
+        
+        
 
         wlog(f"[ANILIST] Buscando '{name}'...", "dim")
         prefill = data.get("_al_prefill")
@@ -1852,82 +1762,67 @@ def api_add_anime_full():
             total_eps = max(sub_avail, dub_avail) or total_eps
             wlog(f"[TOPANIMES] ✅ LEG:{sub_avail} DUB:{dub_avail}", "success")
 
-        elif source == "goyabu" and (gb_slug_dub or gb_slug_sub or gb_id_dub or gb_id_sub):
-            wlog(f"[GOYABU] Buscando episódios (DUB:{gb_slug_dub or gb_id_dub or '—'} SUB:{gb_slug_sub or gb_id_sub or '—'})...", "dim")
+        elif source == "sushi" and (gb_slug_dub or gb_slug_sub or gb_id_dub or gb_id_sub):
+            wlog(f"[SUSHI] Buscando episódios — slug:{su_slug} player_sub:{su_player_sub} player_dub:{su_player_dub}...", "dim")
             sub_avail = dub_avail = 0
 
             # Auto-detect total_eps from Goyabu if not provided
             if total_eps == 0:
-                wlog("[GOYABU] total_eps=0, detectando automaticamente...", "dim")
-                ref_slug = gb_slug_dub or gb_slug_sub
-                ref_id   = gb_id_dub   or gb_id_sub
+                wlog("[SUSHI] total_eps=0, detectando via sushi_get_episode_count...", "dim")
                 try:
-                    if ref_id:
-                        episodes = goyabu_get_episodes(ref_id)
-                        total_eps = len(episodes)
-                    elif ref_slug:
-                        anime_id = goyabu_get_anime_id(ref_slug)
-                        if anime_id:
-                            episodes  = goyabu_get_episodes(anime_id)
-                            total_eps = len(episodes)
+                    total_eps = sushi_get_episode_count(su_slug)
                     if total_eps:
                         max_eps = max_eps or total_eps
-                        wlog(f"[GOYABU] {total_eps} episódios detectados.", "success")
+                        wlog(f"[SUSHI] {total_eps} episódios detectados.", "success")
                     else:
-                        wlog("[GOYABU] ⚠️ Não conseguiu detectar total de eps.", "warn")
+                        wlog("[SUSHI] ⚠️ Não conseguiu detectar total de eps.", "warn")
                 except Exception as exc:
-                    wlog(f"[GOYABU] Erro ao detectar eps: {exc}", "warn")
+                    wlog(f"[SUSHI] Erro ao detectar eps: {exc}", "warn")
 
             if total_eps == 0:
-                wlog("[GOYABU] ❌ total_eps ainda 0 — nenhum episódio a raspar.", "error")
+                wlog("[SUSHI] ❌ total_eps ainda 0 — nenhum episódio a raspar.", "error")
             else:
                 # Scrape DUB — resolve anime_id once, then reuse
-                if gb_slug_dub or gb_id_dub:
-                    _dub_aid = gb_id_dub or goyabu_get_anime_id(gb_slug_dub) or None
-                    if _dub_aid:
-                        wlog(f"[GOYABU] DUB anime_id={_dub_aid}", "dim")
+                if su_slug:
                     for ep_i in range(1, total_eps + 1):
                         try:
-                            embeds = scrape_goyabu_ep(gb_slug_dub or "", ep_i, anime_id=_dub_aid)
+                            embeds = scrape_sushi_ep(su_slug, su_player_dub, ep_i)
                             if embeds:
                                 _upsert_episode(ep_list, ep_i, "dub",
                                                 embeds.get("dub") or embeds.get("sub", ""),
-                                                id_slug, s_num, "goyabu.io")
+                                                id_slug, s_num, "sushianimes.com.br")
                                 dub_avail = ep_i
-                                wlog(f"  [GOYABU] DUB ep {ep_i:02d} ✅", "success")
+                                wlog(f"  [SUSHI] DUB ep {ep_i:02d} ✅", "success")
                             else:
-                                wlog(f"  [GOYABU] DUB ep {ep_i:02d} ❌ não encontrado, parando.", "dim")
+                                wlog(f"  [SUSHI] DUB ep {ep_i:02d} ❌ não encontrado, parando.", "dim")
                                 break
                         except Exception as exc:
-                            wlog(f"  [GOYABU] DUB ep {ep_i:02d} erro: {exc}", "warn")
+                            wlog(f"  [SUSHI] DUB ep {ep_i:02d} erro: {exc}", "warn")
                             break
 
                 # Scrape SUB — resolve anime_id once, then reuse
-                if gb_slug_sub or gb_id_sub:
-                    _sub_aid = gb_id_sub or goyabu_get_anime_id(gb_slug_sub) or None
-                    if _sub_aid:
-                        wlog(f"[GOYABU] SUB anime_id={_sub_aid}", "dim")
+                if su_slug:
                     for ep_i in range(1, total_eps + 1):
                         try:
-                            embeds = scrape_goyabu_ep(gb_slug_sub or "", ep_i, anime_id=_sub_aid)
+                            embeds = scrape_sushi_ep(su_slug, su_player_sub, ep_i)
                             if embeds:
                                 _upsert_episode(ep_list, ep_i, "sub",
                                                 embeds.get("sub") or embeds.get("dub", ""),
-                                                id_slug, s_num, "goyabu.io")
+                                                id_slug, s_num, "sushianimes.com.br")
                                 sub_avail = ep_i
-                                wlog(f"  [GOYABU] SUB ep {ep_i:02d} ✅", "success")
+                                wlog(f"  [SUSHI] SUB ep {ep_i:02d} ✅", "success")
                             else:
-                                wlog(f"  [GOYABU] SUB ep {ep_i:02d} ❌ não encontrado, parando.", "dim")
+                                wlog(f"  [SUSHI] SUB ep {ep_i:02d} ❌ não encontrado, parando.", "dim")
                                 break
                         except Exception as exc:
-                            wlog(f"  [GOYABU] SUB ep {ep_i:02d} erro: {exc}", "warn")
+                            wlog(f"  [SUSHI] SUB ep {ep_i:02d} erro: {exc}", "warn")
                             break
 
                 ep_list.sort(key=lambda x: int(x["number"]))
                 has_sub   = sub_avail > 0
                 has_dub   = dub_avail > 0
                 total_eps = max(sub_avail, dub_avail) or total_eps
-                wlog(f"[GOYABU] ✅ LEG:{sub_avail} DUB:{dub_avail}", "success")
+                wlog(f"[SUSHI] ✅ LEG:{sub_avail} DUB:{dub_avail}", "success")
 
         else:
             # AniVideo
@@ -1978,11 +1873,10 @@ def api_add_anime_full():
             season_data["topanimes_slug_dub"] = ta_slug_dub or (ta_slug_sub + "-dublado")
             season_data["topanimes_sub_src"]  = ta_sub_src
             season_data["topanimes_dub_src"]  = ta_dub_src
-        if source == "goyabu" and (gb_slug_dub or gb_slug_sub or gb_id_dub or gb_id_sub):
-            if gb_slug_dub: season_data["goyabu_slug_dub"] = gb_slug_dub
-            if gb_slug_sub: season_data["goyabu_slug_sub"] = gb_slug_sub
-            if gb_id_dub:   season_data["goyabu_id_dub"]   = gb_id_dub
-            if gb_id_sub:   season_data["goyabu_id_sub"]   = gb_id_sub
+        if source == "sushi" and su_slug:
+            season_data["sushi_slug"]       = su_slug
+            season_data["sushi_player_sub"] = su_player_sub
+            season_data["sushi_player_dub"] = su_player_dub
 
         if is_movie:
             season_data["type"]       = "movie"
@@ -2025,7 +1919,7 @@ def api_add_anime_full():
             src_label = (
                 f"AnimesOnlineCC ({ao_slug})" if source=="aonlinecc" else
                 f"TopAnimes ({ta_slug_sub})"  if source=="topanimes" else
-                f"Goyabu (dub:{gb_slug_dub or '—'} sub:{gb_slug_sub or '—'})" if source=="goyabu" and (gb_slug_dub or gb_slug_sub) else
+                f"SushiAnimes ({su_slug})" if source=="sushi" and su_slug else
                 f"AniVideo ({avslug or 'sem slug'})"
             )
             db.append({

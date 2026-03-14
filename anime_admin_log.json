@@ -4863,5 +4863,3449 @@
     "title": "Auto-update concluído — nenhuma novidade",
     "detail": "ok",
     "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:50:24",
+    "kind": "git",
+    "title": "Git Push: chore: update database [14/03/2026, 09:50:20]",
+    "detail": "To https://github.com/HenzoPaes/Anime_website.git\n   9310e18..635f6e3  data -> data",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:51:01",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:51:04",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:51:13",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:51:13",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:52:02",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:52:04",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:52:16",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:52:16",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:53:04",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:53:06",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:53:26",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:53:26",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:54:04",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:54:07",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:54:22",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:54:22",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:55:05",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:55:08",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:55:21",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:55:23",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:56:06",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:56:09",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:56:22",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:56:25",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:57:06",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:57:10",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:57:23",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:57:26",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:58:07",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:58:11",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:58:23",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:58:27",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:59:08",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:59:13",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:59:29",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 09:59:33",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:00:08",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:00:13",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:00:30",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:00:32",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:01:09",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:01:14",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:01:24",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:01:29",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:02:10",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:02:15",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:02:27",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:02:32",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:03:12",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:03:17",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:03:31",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:03:33",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:04:13",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:04:18",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:04:30",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:04:34",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:05:14",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:05:19",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:05:30",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:05:34",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:06:15",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:06:20",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:06:27",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:06:33",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:07:16",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:07:21",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:07:29",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:07:33",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:08:17",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:08:22",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:08:28",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:08:32",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:09:19",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:09:23",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:09:38",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:09:40",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:10:20",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:10:23",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:10:32",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:10:35",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:11:21",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:11:25",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:11:36",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:11:39",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:12:22",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:12:26",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:12:42",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:12:45",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:13:23",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:13:27",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:13:38",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:13:41",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:14:25",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:14:28",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:14:40",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:14:43",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:15:25",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:15:29",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:15:42",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:15:45",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:16:26",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:16:31",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:16:38",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:16:42",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:17:27",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:17:32",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:17:39",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:17:43",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:18:27",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:18:33",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:18:39",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:18:47",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:19:28",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:19:34",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:19:41",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:19:45",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:20:29",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:20:35",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:20:41",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:20:46",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:21:30",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:21:36",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:21:43",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:21:49",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:22:30",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:22:37",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:22:43",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:22:49",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:23:32",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:23:38",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:23:43",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:23:50",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:24:33",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:24:39",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:24:45",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:24:52",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:25:33",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:25:40",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:25:45",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:25:52",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:26:35",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:26:42",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:26:47",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:26:53",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:27:36",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:27:43",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:27:53",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:27:59",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:28:37",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:28:44",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:28:51",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:28:56",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:29:39",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:29:45",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:29:51",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:29:57",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:30:40",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:30:46",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:30:53",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:31:00",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:31:41",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:31:47",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:31:53",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:31:59",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:32:42",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:32:48",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:32:54",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:33:00",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:33:42",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:33:49",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:33:55",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:34:02",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:34:43",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:34:50",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:34:56",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:35:03",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:35:44",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:35:51",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:35:56",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:36:03",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:36:45",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:36:52",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:36:57",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:37:04",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:37:46",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:37:53",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:37:59",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:38:05",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:38:47",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:38:53",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:38:59",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:39:06",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:39:48",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:39:54",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:40:01",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:40:07",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:40:49",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:40:56",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:41:01",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:41:07",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:41:49",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:41:57",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:42:00",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:42:08",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:42:50",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:42:58",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:43:02",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:43:10",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:43:51",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:43:59",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:44:03",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:44:10",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:44:51",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:45:00",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:45:00",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:45:09",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:45:52",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:46:01",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:46:06",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:46:17",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:46:53",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:47:03",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:47:12",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:47:15",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:47:55",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:48:04",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:48:05",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:48:15",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:48:56",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:49:04",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:49:07",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:49:17",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:49:57",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:50:05",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:50:08",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:50:18",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:50:58",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:51:06",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:51:10",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:51:18",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:51:59",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:52:07",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:52:12",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:52:19",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:53:00",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:53:08",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:53:12",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:53:19",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:54:01",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:54:09",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:54:13",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:54:21",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:55:02",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:55:10",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:55:19",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:55:26",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:56:04",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:56:10",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:56:17",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:56:23",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:57:05",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:57:11",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:57:17",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:57:23",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:58:05",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:58:12",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:58:18",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:58:26",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:59:06",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:59:13",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:59:21",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 10:59:34",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:00:07",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:00:14",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:00:19",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:00:25",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:01:08",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:01:15",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:01:21",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:01:27",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:02:09",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:02:16",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:02:19",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:02:26",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:03:10",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:03:16",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:03:21",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:03:27",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:04:11",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:04:17",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:04:22",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:04:29",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:05:12",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:05:18",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:05:23",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:05:28",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:06:12",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:06:19",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:06:31",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:06:32",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:07:14",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:07:20",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:07:26",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:07:32",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:08:14",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:08:21",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:08:27",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:08:32",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:09:15",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:09:23",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:09:31",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:09:36",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:10:16",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:10:24",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:10:34",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:10:43",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:11:17",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:11:25",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:11:31",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:11:38",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:12:18",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:12:26",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:12:32",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:12:39",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:13:19",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:13:26",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:13:34",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:13:41",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:14:20",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:14:27",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:14:34",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:14:40",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:15:21",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:15:28",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:15:34",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:15:41",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:16:22",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:16:29",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:16:38",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:16:45",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:17:23",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:17:30",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:17:38",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:17:44",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:18:24",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:18:30",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:18:38",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:18:45",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:19:26",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:19:32",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:19:44",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:19:51",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:20:27",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:20:32",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:20:41",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:20:46",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:21:28",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:21:33",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:21:43",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:21:47",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:22:30",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:22:34",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:22:45",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:22:49",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:23:31",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:23:35",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:23:45",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:23:50",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:24:32",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:24:36",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:24:47",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:24:50",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:25:33",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:25:37",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:25:47",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:25:51",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:26:34",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:26:38",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:26:49",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:26:53",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:27:34",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:27:39",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:27:50",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:27:56",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:28:35",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:28:39",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:28:50",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:28:54",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:29:36",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:29:40",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:29:50",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:29:53",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:30:36",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:30:41",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:30:50",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:30:56",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:31:37",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:31:42",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:31:53",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:31:57",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:32:37",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:32:42",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:32:52",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:32:57",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:33:38",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:33:44",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:33:51",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:33:55",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:34:39",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:34:45",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:34:53",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:34:58",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:35:40",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:35:46",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:35:53",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:36:02",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:36:41",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:36:47",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:36:55",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:37:02",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:37:41",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:37:47",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:37:54",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:38:00",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:38:42",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:38:48",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:38:55",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:39:00",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:39:44",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:39:50",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:40:00",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:40:04",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:40:45",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:40:50",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:40:59",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:41:05",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:41:45",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:41:51",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:42:00",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:42:05",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:42:46",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:42:52",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:42:55",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:43:00",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:43:47",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:43:53",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:43:56",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:44:02",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:44:48",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:44:54",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:44:57",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:45:02",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:45:49",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:45:54",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:46:01",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:46:04",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:46:49",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:46:55",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:46:59",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:47:04",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:47:50",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:47:55",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:47:59",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:48:04",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:48:51",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:48:56",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:49:00",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:49:05",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:49:51",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:49:57",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:50:01",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:50:06",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:50:52",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:50:57",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:51:02",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:51:06",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:51:53",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:51:58",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:52:04",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:52:09",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:52:54",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:52:59",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:53:04",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:53:09",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:53:55",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 11:54:00",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 14:24:51",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 14:24:52",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 14:25:07",
+    "kind": "scheduler",
+    "title": "Auto-update concluído — nenhuma novidade",
+    "detail": "ok",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 14:25:07",
+    "kind": "scheduler",
+    "title": "Auto-update iniciado",
+    "detail": "agendado",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-14 14:25:14",
+    "kind": "scheduler",
+    "title": "Auto-update: 1 anime(s) atualizados",
+    "detail": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "level": "info"
   }
 ]

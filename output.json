@@ -11524,7 +11524,7 @@
         "audios": [
           {
             "available": true,
-            "episodesAvailable": 9,
+            "episodesAvailable": 10,
             "label": "Legendado",
             "type": "sub"
           },
@@ -11535,7 +11535,7 @@
             "type": "dub"
           }
         ],
-        "currentEpisode": 9,
+        "currentEpisode": 10,
         "episodeList": [
           {
             "embedCredit": "api.anivideo.net",
@@ -11624,6 +11624,16 @@
             "season": "1",
             "embeds": {
               "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jingai-kyoushitsu-no-ningengirai-kyoushi/09.mp4/index.m3u8&nocache1772902707154\" frameborder=\"0\" allowfullscreen></iframe>"
+            },
+            "embedCredit": "api.anivideo.net"
+          },
+          {
+            "id": "a-misanthrope-teaches-a-class-for-demi-humans-s1-ep10",
+            "number": 10,
+            "title": "Jingai Kyoushitsu no Ningengirai Kyoushi - T1 Ep 10",
+            "season": "1",
+            "embeds": {
+              "sub": "<iframe width=\"100%\" height=\"100%\" src=\"https://api.anivideo.net/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/j/jingai-kyoushitsu-no-ningengirai-kyoushi/10.mp4/index.m3u8&nocache1773509108968\" frameborder=\"0\" allowfullscreen></iframe>"
             },
             "embedCredit": "api.anivideo.net"
           }

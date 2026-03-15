@@ -1,12 +1,5 @@
 [
   {
-    "ts": "2026-03-14 14:30:05",
-    "kind": "scheduler",
-    "title": "Auto-update concluído — nenhuma novidade",
-    "detail": "ok",
-    "level": "info"
-  },
-  {
     "ts": "2026-03-14 14:30:11",
     "kind": "scheduler",
     "title": "Auto-update iniciado",
@@ -13994,6 +13987,13 @@
   },
   {
     "ts": "2026-03-15 11:10:41",
+    "kind": "scheduler",
+    "title": "Auto-update: 2 anime(s) atualizados",
+    "detail": "Seihantai na Kimi to Boku, Kaya-chan wa Kowakunai",
+    "level": "info"
+  },
+  {
+    "ts": "2026-03-15 11:10:42",
     "kind": "scheduler",
     "title": "Auto-update: 2 anime(s) atualizados",
     "detail": "Seihantai na Kimi to Boku, Kaya-chan wa Kowakunai",
